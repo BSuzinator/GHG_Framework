@@ -1,0 +1,13 @@
+//Set Player Factions
+//List of acceptable factions: usArmy, usMC
+bluFaction = "usArmy";
+opfFaction = "usMC";
+indFaction = "usArmy";
+
+//Set Player Camo Pattern
+//List of acceptable Camos:
+//usArmy: OEFCP, OCP, UCP, UCPD, ERDL
+//usMC: mpD, mpWD
+bluCamo = "ERDL";
+opfCamo = "mpD";
+indCamo = "UCPD";

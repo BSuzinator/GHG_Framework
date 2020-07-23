@@ -1,0 +1,68 @@
+/*======================================
+	Loadout for Jet Pilots
+======================================*/
+params ["_linkItems", "_uniform", "_headgear", "_goggle"];
+
+[
+  [],
+  [],
+  [
+    "rhsusf_weap_m9",
+    "",
+    "",
+    "",
+    [
+      "rhsusf_mag_15Rnd_9x19_FMJ",
+      15
+    ],
+    [],
+    ""
+  ],
+  [
+    "U_B_PilotCoveralls",
+    []
+  ],
+  [
+    "V_Rangemaster_belt",
+    [
+      [
+        "ACE_IR_Strobe_Item",
+        1
+      ],
+      [
+        "ACE_microDAGR",
+        1
+      ],
+      [
+        "rhsusf_mag_15Rnd_9x19_FMJ",
+        3,
+        15
+      ],
+      [
+        "SmokeShellRed",
+        1,
+        1
+      ],
+      [
+        "SmokeShellGreen",
+        1,
+        1
+      ],
+      [
+        "ACE_Chemlight_HiGreen",
+        1,
+        1
+      ],
+      [
+        "ACE_Chemlight_HiRed",
+        1,
+        1
+      ]
+    ]
+  ],
+  [],
+  "RHS_jetpilot_usaf",
+  "rhsusf_oakley_goggles_clr",
+  [],
+  _linkItems
+]

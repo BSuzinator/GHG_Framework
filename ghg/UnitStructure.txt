@@ -1,0 +1,80 @@
+Platoon Command
+	PLT Lead
+	PLT Medic
+	PLT FAC
+	PLT Rifleman
+Alpha Squad
+	Alpha Squad Leader
+	Alpha Medic
+Alpha Fireteam 1
+	Alpha 1 Fire Team Leader
+	Alpha 1 Automatic Rifleman
+	Alpha 1 Assistant Autorifleman
+	Alpha 1 Rifleman(AT)
+	Alpha 1 Rifleman
+	Alpha 1 Rifleman
+Alpha Fireteam 2
+	Alpha 2 Fire Team Leader
+	Alpha 2 Automatic Rifleman
+	Alpha 2 Assistant Autorifleman
+	Alpha 2 Rifleman(AT)
+	Alpha 2 Rifleman
+	Alpha 2 Rifleman
+Bravo Squad
+	Bravo Squad Leader
+	Bravo Medic
+Bravo Fireteam 1
+	Bravo 1 Fire Team Leader
+	Bravo 1 Automatic Rifleman
+	Bravo 1 Assistant Autorifleman
+	Bravo 1 Rifleman(AT)
+	Bravo 1 Rifleman
+	Bravo 1 Rifleman
+Bravo Fireteam 2
+	Bravo 2 Fire Team Leader
+	Bravo 2 Automatic Rifleman
+	Bravo 2 Assistant Autorifleman
+	Bravo 2 Rifleman(AT)
+	Bravo 2 Rifleman
+	Bravo 2 Rifleman
+Medium AT
+	Medium AT Spotter (Leader)
+	Medium AT Gunner
+	Medium AT Ammo Bearer
+Medium MG
+	Medium MG Spotter (Leader)
+	Medium MG Gunner
+	Medium MG Ammo Bearer
+Recon
+	RCN Team Lead
+	Sniper
+	Spotter
+Logistics
+	Logi Team Lead
+	Explosives Specialist
+	EOD Tech
+	Repair Specialist
+	Repair Specialist
+	Repair Specialist
+Wolf 1
+	Wolf 1 Commander
+	Wolf 1 Gunner
+	Wolf 1 Driver
+Wolf 2
+	Wolf 2 Commander
+	Wolf 2 Gunner
+	Wolf 2 Driver
+Phantom 1
+	Phantom 1 Pilot
+	Phantom 1 Co-Pilot
+	Phantom 1 Crew
+	Phantom 1 Crew
+Phantom 2
+	Phantom 2 Pilot
+	Phantom 2 Co-Pilot
+	Phantom 2 Crew
+	Phantom 2 Crew
+Raptor 1
+	Raptor 1 Pilot
+Raptor 2
+	Raptor 2 Pilot
