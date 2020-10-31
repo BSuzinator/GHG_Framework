@@ -6,6 +6,7 @@ private _briefFile = switch ( playerSide ) do
 	case east: { "briefing\opfor.sqf" };
 	case resistance: { "briefing\indfor.sqf" };
 	case sideLogic: { "briefing\zeus.sqf" };
+	case civilian: { "briefing\zeus.sqf" };
 };
 
 private _brief = call compile preprocessFileLineNumbers _briefFile;
