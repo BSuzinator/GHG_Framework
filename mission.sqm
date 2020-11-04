@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=113;
+		nextID=115;
 	};
 	class Camera
 	{
-		pos[]={511.90768,12.258247,1387.1863};
-		dir[]={0.012008717,-0.20739919,-0.97830993};
-		up[]={0.0025489593,0.97818863,-0.20755684};
-		aside[]={-0.99999732,1.9663685e-006,-0.01228102};
+		pos[]={511.9874,21.342241,1408.297};
+		dir[]={0.01373299,-0.35637048,-0.93437743};
+		up[]={0.0052404581,0.93425882,-0.356473};
+		aside[]={-0.99996483,9.9773933e-007,-0.014703299};
 	};
 };
 binarizationWanted=0;
@@ -74,6 +74,7 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Static_F",
 	"A3_Characters_F_Common",
+	"itc_land_veh_GLTD",
 	"A3_Static_F_Mark_Designator_01",
 	"A3_Static_F_AA_01",
 	"A3_Structures_F_Civ_Camping",
@@ -118,7 +119,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=47;
+		items=48;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -158,7 +159,7 @@ class AddonsMetaData
 		class Item6
 		{
 			className="A3_Props_F_Enoch";
-			name="Arma 3 Enoch - Decorative and Mission Objects";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -339,101 +340,106 @@ class AddonsMetaData
 		};
 		class Item32
 		{
+			className="itc_land_veh_GLTD";
+			name="itc_land_veh_GLTD";
+		};
+		class Item33
+		{
 			className="A3_Static_F_Mark";
 			name="Arma 3 Marksmen - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="acex_sitting";
 			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item34
+		class Item35
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item36
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item37
 		{
 			className="acex_field_rations";
 			name="ACEX - Field Rations";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item37
+		class Item38
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item39
 		{
 			className="A3_Boat_F_Jets";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item40
 		{
 			className="A3_Air_F_Jets";
 			name="Arma 3 Jets - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item41
 		{
 			className="A3_Static_F_Jets";
 			name="Arma 3 Jets - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item41
+		class Item42
 		{
 			className="A3_Boat_F_Destroyer";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item42
+		class Item43
 		{
 			className="A3_Static_F_Destroyer";
 			name="CFGPATCHES_A3_Static_F_Destroyer";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item44
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item46
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item46
+		class Item47
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
@@ -450,7 +456,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -33677,13 +33683,13 @@ class Mission
 				angles[]={6.2571039,0,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				receiveRemoteTargets=1;
 			};
 			id=697;
 			type="B_Ship_Gun_01_F";
-			atlOffset=26.604378;
 		};
 		class Item414
 		{

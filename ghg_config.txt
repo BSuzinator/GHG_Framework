@@ -2,7 +2,7 @@
 //List of acceptable factions: usArmy, usMC
 bluFaction = "usArmy";
 opfFaction = "usMC";
-indFaction = "usArmy";
+indFaction = "russian";
 
 //Set Player Camo Pattern
 //List of acceptable Camos:
@@ -10,4 +10,4 @@ indFaction = "usArmy";
 //usMC: mpD, mpWD
 bluCamo = "ERDL";
 opfCamo = "mpD";
-indCamo = "UCPD";
+indCamo = "flora";
