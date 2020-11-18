@@ -47,6 +47,10 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
       [
         "ToolKit",
         1
+      ],
+	  [
+        "ACE_Fortify",
+        1
       ]
     ]
   ],

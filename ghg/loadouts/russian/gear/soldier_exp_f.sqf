@@ -66,6 +66,10 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
         3,
         1
       ],
+	  [
+        "ACE_Fortify",
+        1
+      ],
       [
         "SatchelCharge_Remote_Mag",
         1,

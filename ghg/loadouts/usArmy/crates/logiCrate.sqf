@@ -16,6 +16,7 @@ _crate addItemCargoGlobal ["ACE_elasticBandage", 6];
 _crate addItemCargoGlobal ["ACE_packingBandage", 6]; 
 _crate addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 24];
 _crate addItemCargoGlobal ["ToolKit", 2];
+_crate addItemCargoGlobal ["ACE_Fortify", 2];
 _crate addItemCargoGlobal ["MineDetector", 2];
 _crate addItemCargoGlobal ["SatchelCharge_Remote_Mag", 2];
 _crate addItemCargoGlobal ["rhsusf_m112x4_mag", 2];

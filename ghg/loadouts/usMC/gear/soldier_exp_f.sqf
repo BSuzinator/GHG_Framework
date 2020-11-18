@@ -65,6 +65,10 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
         "SatchelCharge_Remote_Mag",
         1,
         1
+      ],
+	  [
+        "ACE_Fortify",
+        1
       ]
     ]
   ],

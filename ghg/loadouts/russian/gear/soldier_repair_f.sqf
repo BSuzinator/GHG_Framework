@@ -47,6 +47,10 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
       [
         "ToolKit",
         1
+      ],
+	  [
+        "ACE_Fortify",
+        1
       ]
     ]
   ],

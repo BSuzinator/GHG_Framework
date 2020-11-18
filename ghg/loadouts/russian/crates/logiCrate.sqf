@@ -16,6 +16,7 @@ _crate addItemCargoGlobal ["ACE_elasticBandage", 6];
 _crate addItemCargoGlobal ["ACE_packingBandage", 6]; 
 _crate addItemCargoGlobal ["rhs_30Rnd_545x39_7N10_AK", 24];
 _crate addItemCargoGlobal ["ToolKit", 2];
+_crate addItemCargoGlobal ["ACE_Fortify", 2];
 _crate addItemCargoGlobal ["MineDetector", 2];
 _crate addItemCargoGlobal ["SatchelCharge_Remote_Mag", 2];
 _crate addItemCargoGlobal ["rhs_tm500_mag", 2];
