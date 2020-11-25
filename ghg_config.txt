@@ -1,5 +1,5 @@
 //Set Player Factions
-//List of acceptable factions: usArmy, usMC
+//List of acceptable factions: usArmy, usMC, russian
 bluFaction = "usArmy";
 opfFaction = "usMC";
 indFaction = "russian";
@@ -8,6 +8,7 @@ indFaction = "russian";
 //List of acceptable Camos:
 //usArmy: OEFCP, OCP, UCP, UCPD, ERDL
 //usMC: mpD, mpWD
+//russian: emr, emrd, flora
 bluCamo = "ERDL";
 opfCamo = "mpD";
 indCamo = "flora";
