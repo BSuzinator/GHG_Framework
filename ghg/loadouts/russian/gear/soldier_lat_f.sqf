@@ -17,12 +17,12 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     ""
   ],
   [
-    "rhs_weap_M136",
+    "rhs_weap_rpg26",
     "",
     "",
     "",
     [
-      "rhs_m136_mag",
+      "rhs_rpg26_mag",
       1
     ],
     [],
