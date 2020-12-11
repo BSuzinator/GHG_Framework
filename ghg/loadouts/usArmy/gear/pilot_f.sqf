@@ -1,5 +1,5 @@
-/*======================================
-	Loadout for Jet Pilots
+1/*======================================
+	Loadout for Jet Pilots (usArmy)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
 
@@ -11,10 +11,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     "",
     "",
     "",
-    [
-      "rhsusf_mag_15Rnd_9x19_FMJ",
-      15
-    ],
+    ["rhsusf_mag_15Rnd_9x19_FMJ",15],
     [],
     ""
   ],
@@ -25,39 +22,13 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     "V_Rangemaster_belt",
     [
-      [
-        "ACE_IR_Strobe_Item",
-        1
-      ],
-      [
-        "ACE_microDAGR",
-        1
-      ],
-      [
-        "rhsusf_mag_15Rnd_9x19_FMJ",
-        3,
-        15
-      ],
-      [
-        "SmokeShellRed",
-        1,
-        1
-      ],
-      [
-        "SmokeShellGreen",
-        1,
-        1
-      ],
-      [
-        "ACE_Chemlight_HiGreen",
-        1,
-        1
-      ],
-      [
-        "ACE_Chemlight_HiRed",
-        1,
-        1
-      ]
+      ["ACE_IR_Strobe_Item",1],
+      ["ACE_microDAGR",1],
+      ["rhsusf_mag_15Rnd_9x19_FMJ",3,15],
+      ["SmokeShellRed",1,1],
+      ["SmokeShellGreen",1,1],
+      ["ACE_Chemlight_HiGreen",1,1],
+      ["ACE_Chemlight_HiRed",1,1]
     ]
   ],
   [],

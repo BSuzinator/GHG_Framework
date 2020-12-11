@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Repair Specialist
+	Loadout for Repair Specialist (usMC)
 ======================================*/
 params ["_linkItems", "_uniform", "_headgear", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "rhsusf_acc_anpeq15",
     "rhsusf_acc_compm4",
-    [
-      "rhs_mag_30Rnd_556x45_M855_Stanag",
-      30
-    ],
+    ["rhs_mag_30Rnd_556x45_M855_Stanag",30],
     [],
     "rhsusf_acc_kac_grip"
   ],
@@ -23,35 +20,18 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     []
   ],
   [
-    "rhsusf_spc_patchless_radio",
+  "rhsusf_spc_patchless_radio",
     [
-      [
-        "ACE_microDAGR",
-        1
-      ],
-      [
-        "rhs_mag_30Rnd_556x45_M855_Stanag",
-        8,
-        30
-      ],
-      [
-        "rhs_mag_m18_red",
-        1,
-        1
-      ]
+      ["ACE_microDAGR",1],
+      ["rhs_mag_30Rnd_556x45_M855_Stanag",8,30],
+      ["rhs_mag_m18_red",1,1]
     ]
   ],
   [
     "rhsusf_assault_eagleaiii_coy",
     [
-      [
-        "ToolKit",
-        1
-      ],
-	  [
-        "ACE_Fortify",
-        1
-      ]
+      ["ToolKit",1],
+	  ["ACE_Fortify",1]
     ]
   ],
   _headgear select 0,

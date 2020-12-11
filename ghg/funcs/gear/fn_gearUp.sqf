@@ -51,15 +51,6 @@ private _uniformItems = [
 	["ACE_Flashlight_XL50", 1]
 ];
 
-// Add optional second scope
-if ( count (_unitLoadout select 0) > 3 ) then
-{
-    if ( ((_unitLoadout select 0) select 3) isEqualTo "rhsusf_acc_compm4" ) then
-    {
-        _uniformItems pushBack ["rhsusf_acc_eotech_552", 1];
-    };
-};
-
 (_unitLoadout select 0) set [2, "rhsusf_acc_anpeq15_bk"];
 ((_unitLoadout select 3) select 1) append _uniformItems;
 

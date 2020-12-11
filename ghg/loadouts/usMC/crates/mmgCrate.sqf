@@ -1,7 +1,7 @@
 /*======================================
 		Creates MMG Crate and
 		loads into vehicle it was
-		called from (usArmy)
+		called from (usMC)
 ======================================*/
 
 params ["_pos", "_dir"];

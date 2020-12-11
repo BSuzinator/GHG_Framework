@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Rifleman(AT)
+	Loadout for Rifleman(AT) (usMC)
 ======================================*/
 params ["_linkItems", "_uniform", "_headgear", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "rhsusf_acc_anpeq15",
     "rhsusf_acc_compm4",
-    [
-      "rhs_mag_30Rnd_556x45_M855_Stanag",
-      30
-    ],
+    ["rhs_mag_30Rnd_556x45_M855_Stanag",30],
     [],
     ""
   ],
@@ -21,10 +18,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "",
     "",
-    [
-      "rhs_m136_mag",
-      1
-	],
+    ["rhs_m136_mag",1],
     [],
     ""
   ],
@@ -37,21 +31,9 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "rhsusf_spc_rifleman",
     [
-      [
-        "rhs_mag_30Rnd_556x45_M855_Stanag",
-        8,
-        30
-      ],
-      [
-        "SmokeShell",
-        1,
-        1
-      ],
-      [
-        "rhs_mag_m67",
-        2,
-        1
-      ]
+      ["rhs_mag_30Rnd_556x45_M855_Stanag",8,30],
+      ["SmokeShell",1,1],
+      ["rhs_mag_m67",2,1]
     ]
   ],
   [],

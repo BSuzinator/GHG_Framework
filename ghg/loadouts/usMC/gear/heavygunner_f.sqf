@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MMG Gunner
+	Loadout for MMG Gunner (usMC)
 ======================================*/
 params ["_linkItems", "_uniform", "_headgear", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "rhsusf_acc_anpeq15_bk",
     "rhsusf_acc_su230a",
-    [
-      "rhsusf_100Rnd_762x51",
-      100
-    ],
+    ["rhsusf_100Rnd_762x51",100],
     [],
     ""
   ],
@@ -25,26 +22,14 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "rhsusf_spc_mg",
     [
-      [
-        "rhsusf_100Rnd_762x51",
-        3,
-        100
-      ],
-      [
-        "rhs_mag_m67",
-        1,
-        1
-      ]
+      ["rhsusf_100Rnd_762x51",3,100],
+      ["rhs_mag_m67",1,1]
     ]
   ],
   [
     "rhsusf_assault_eagleaiii_coy",
     [
-      [
-        "rhsusf_100Rnd_762x51",
-        3,
-        100
-      ]
+      ["rhsusf_100Rnd_762x51",3,100]
     ]
   ],
   _headgear select 1,

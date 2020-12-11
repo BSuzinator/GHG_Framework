@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Rifleman
+	Loadout for EW Specialist (usMC)
 ======================================*/
 params ["_linkItems", "_uniform", "_headgear", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "rhsusf_acc_anpeq15",
     "rhsusf_acc_compm4",
-    [
-      "rhs_mag_30Rnd_556x45_M855_Stanag",
-      30
-    ],
+    ["rhs_mag_30Rnd_556x45_M855_Stanag",30],
     [],
     ""
   ],
@@ -23,10 +20,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "",
     [],
-    [
-      "ESD_01_DummyMagazine_1",
-      4331
-    ],
+    ["ESD_01_DummyMagazine_1",4331],
     ""
   ],
   [
@@ -36,21 +30,9 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "rhsusf_spc_rifleman",
     [
-      [
-        "rhs_mag_30Rnd_556x45_M855_Stanag",
-        8,
-        30
-      ],
-      [
-        "SmokeShell",
-        1,
-        1
-      ],
-      [
-        "rhs_mag_m67",
-        2,
-        1
-      ]
+      ["rhs_mag_30Rnd_556x45_M855_Stanag",8,30],
+      ["SmokeShell",1,1],
+      ["rhs_mag_m67",2,1]
     ]
   ],
   [],

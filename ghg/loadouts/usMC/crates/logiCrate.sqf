@@ -1,5 +1,5 @@
 /*======================================
-		Creates Logi Crate (usArmy)
+		Creates Logi Crate (usMC)
 ======================================*/
 
 params ["_pos", "_dir"];

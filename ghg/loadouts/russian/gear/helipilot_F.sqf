@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for HeliPilots
+	Loadout for HeliPilots (russian)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     "",
     "rhs_acc_perst1ik",
     "rhs_acc_okp7_dovetail",
-    [
-      "rhs_30Rnd_545x39_7N10_AK",
-      30
-    ],
+    ["rhs_30Rnd_545x39_7N10_AK",30],
     [],
     ""
   ],
@@ -21,20 +18,13 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _uniform select 1,
     [
-	  [
-        "ACE_microDAGR",
-        1
-      ]
+	  ["ACE_microDAGR",1]
 	]
   ],
   [
    _vests select 6,
     [
-      [
-        "rhs_30Rnd_545x39_7N10_AK",
-        4,
-        30
-      ]
+      ["rhs_30Rnd_545x39_7N10_AK",4,30]
     ]
   ],
   [],

@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Autorifleman
+	Loadout for Autorifleman (russian)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     "",
     "rhs_acc_perst1ik",
     "rhs_acc_okp7_dovetail",
-    [
-      "rhs_100Rnd_762x54mmR",
-      200
-    ],
+    ["rhs_100Rnd_762x54mmR",200],
     [],
     "rhsusf_acc_saw_bipod"
   ],
@@ -25,26 +22,14 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _vests select 4,
     [
-      [
-        "rhs_100Rnd_762x54mmR",
-        2,
-        200
-      ],
-      [
-        "rhs_mag_rgo",
-        1,
-        1
-      ]
+      ["rhs_100Rnd_762x54mmR",2,200],
+      ["rhs_mag_rgo",1,1]
     ]
   ],
   [
     _backpacks select 2,
     [
-      [
-        "rhs_100Rnd_762x54mmR",
-        4,
-        200
-      ]
+      ["rhs_100Rnd_762x54mmR",4,200]
     ]
   ],
   _headgear select 1,

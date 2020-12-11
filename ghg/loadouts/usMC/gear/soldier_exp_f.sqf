@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Explosive Specialist
+	Loadout for Explosive Specialist (usMC)
 ======================================*/
 params ["_linkItems", "_uniform", "_headgear", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "rhsusf_acc_anpeq15",
     "rhsusf_acc_compm4",
-    [
-      "rhs_mag_30Rnd_556x45_M855_Stanag",
-      30
-    ],
+    ["rhs_mag_30Rnd_556x45_M855_Stanag",30],
     [],
     ""
   ],
@@ -24,52 +21,20 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "rhsusf_spc_patchless_radio",
     [
-      [
-        "ACE_Clacker",
-        1
-      ],
-      [
-        "ACE_M26_Clacker",
-        1
-      ],
-      [
-        "rhs_mag_30Rnd_556x45_M855_Stanag",
-        8,
-        30
-      ],
-      [
-        "rhs_mag_m18_red",
-        1,
-        1
-      ]
+      ["ACE_Clacker",1],
+      ["ACE_M26_Clacker",1],
+      ["rhs_mag_30Rnd_556x45_M855_Stanag",8,30],
+      ["rhs_mag_m18_red",1,1]
     ]
   ],
   [
     "rhsusf_assault_eagleaiii_coy",
     [
-      [
-        "MineDetector",
-        1
-      ],
-      [
-        "rhsusf_m112x4_mag",
-        1,
-        1
-      ],
-      [
-        "rhsusf_m112_mag",
-        3,
-        1
-      ],
-      [
-        "SatchelCharge_Remote_Mag",
-        1,
-        1
-      ],
-	  [
-        "ACE_Fortify",
-        1
-      ]
+      ["MineDetector",1],
+      ["rhsusf_m112x4_mag",1,1],
+      ["rhsusf_m112_mag",3,1],
+      ["SatchelCharge_Remote_Mag",1,1],
+	  ["ACE_Fortify",1]
     ]
   ],
   _headgear select 0,

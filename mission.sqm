@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1089;
+		nextID=1091;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=115;
+		nextID=127;
 	};
 	class Camera
 	{
-		pos[]={511.9874,21.342241,1408.297};
-		dir[]={0.01373299,-0.35637048,-0.93437743};
-		up[]={0.0052404581,0.93425882,-0.356473};
-		aside[]={-0.99996483,9.9773933e-007,-0.014703299};
+		pos[]={512.33417,15.438461,1383.4866};
+		dir[]={0.0056831362,-0.320007,-0.94753063};
+		up[]={0.0019211535,0.94732606,-0.32015142};
+		aside[]={-1.0000508,6.4202538e-007,-0.0060055144};
 	};
 };
 binarizationWanted=0;
@@ -113,7 +113,8 @@ addons[]=
 	"ace_gforces",
 	"ace_parachute",
 	"CUP_Buildings_Config",
-	"A3_Data_F_Curator_Virtual"
+	"A3_Data_F_Curator_Virtual",
+	"A3_Structures_F_Ind_Cargo"
 };
 class AddonsMetaData
 {
@@ -456,7 +457,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -726,7 +727,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=471;
+		items=472;
 		class Item0
 		{
 			dataType="Group";
@@ -41538,9 +41539,9 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={560,5,1288};
+				position[]={564.83801,5,1287.386};
 			};
-			title="Resupply Depot (Only works on this type of building)";
+			title="Resupply Depot (Only works on these types of buildings)";
 			id=995;
 		};
 		class Item462
@@ -41928,6 +41929,111 @@ class Mission
 			isPlayable=1;
 			id=1088;
 			type="HeadlessClient_F";
+		};
+		class Item471
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={567.91998,6.3243098,1292.818};
+				angles[]={0,4.712389,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				ammo=0;
+				init="call{[this] call ghg_fnc_resupplyPoint;}";
+			};
+			id=1090;
+			type="Land_Cargo20_military_green_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="DoorStates";
+					expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=3;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=10;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections

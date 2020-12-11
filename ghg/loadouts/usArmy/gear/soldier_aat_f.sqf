@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Assistant MAT
+	Loadout for Assistant MAT (usArmy)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     "",
     "rhsusf_acc_anpeq15_bk",
     "rhsusf_acc_compm4",
-    [
-      "rhs_mag_30Rnd_556x45_M855A1_Stanag",
-      30
-    ],
+    ["rhs_mag_30Rnd_556x45_M855A1_Stanag",30],
     [],
     ""
   ],
@@ -25,43 +22,19 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _vests select 3,
     [
-      [
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag",
-        8,
-        30
-      ],
-      [
-        "SmokeShell",
-        1,
-        1
-      ],
-      [
-        "rhs_mag_m67",
-        2,
-        1
-      ]
+      ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8,30],
+      ["SmokeShell",1,1],
+      ["rhs_mag_m67",2,1]
     ]
   ],
   [
     _backpacks select 3,
     [
-      [
-        "rhs_fgm148_magazine_AT",
-        1,
-        1
-      ]
+      ["rhs_fgm148_magazine_AT",1,1]
     ]
   ],
   _headgear select 1,
   "rhsusf_oakley_goggles_clr",
-  [
-    "Binocular",
-    "",
-    "",
-    "",
-    [],
-    [],
-    ""
-  ],
+  ["Binocular","","","",[],[],""],
   _linkItems
 ]

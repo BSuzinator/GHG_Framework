@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Medics
+	Loadout for Medics (russian)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     "",
     "rhs_acc_perst1ik",
     "rhs_acc_okp7_dovetail",
-    [
-      "rhs_30Rnd_545x39_7N10_AK",
-      30
-    ],
+    ["rhs_30Rnd_545x39_7N10_AK",30],
     [],
     ""
   ],
@@ -25,85 +22,29 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _vests select 1,
     [
-      [
-        "ACE_fieldDressing",
-        1
-      ],
-      [
-        "ACE_morphine",
-        1
-      ],
-      [
-        "ACE_tourniquet",
-        1
-      ],
-      [
-        "rhs_30Rnd_545x39_7N10_AK",
-        8,
-        30
-      ],
-      [
-        "rhs_mag_m18_red",
-        1,
-        1
-      ]
+      ["ACE_fieldDressing",1],
+      ["ACE_morphine",1],
+      ["ACE_tourniquet",1],
+      ["rhs_30Rnd_545x39_7N10_AK",8,30],
+      ["rhs_mag_m18_red",1,1]
     ]
   ],
   [
     _backpacks select 0,
     [
-      [
-        "ACE_elasticBandage",
-        24
-      ],
-      [
-        "ACE_packingBandage",
-        24
-      ],
-      [
-        "ACE_quikclot",
-        20
-      ],
-      [
-        "ACE_fieldDressing",
-        12
-      ],
-      [
-        "ACE_bloodIV_250",
-        8
-      ],
-      [
-        "ACE_bloodIV_500",
-        4
-      ],
-      [
-        "ACE_bloodIV",
-        4
-      ],
-      [
-        "ACE_surgicalKit",
-        1
-      ],
-      [
-        "ACE_personalAidKit",
-        2
-      ],
-      [
-        "ACE_splint",
-        10
-      ],
-      [
-        "ACE_morphine",
-        12
-      ],
-      [
-        "ACE_epinephrine",
-        12
-      ],
-      [
-        "ACE_EarPlugs",
-        1
-      ]
+      ["ACE_elasticBandage",24],
+      ["ACE_packingBandage",24],
+      ["ACE_quikclot",20],
+      ["ACE_fieldDressing",12],
+      ["ACE_bloodIV_250",8],
+      ["ACE_bloodIV_500",4],
+      ["ACE_bloodIV",4],
+      ["ACE_surgicalKit",1],
+      ["ACE_personalAidKit",2],
+      ["ACE_splint",10],
+      ["ACE_morphine",12],
+      ["ACE_epinephrine",12],
+      ["ACE_EarPlugs",1]
     ]
   ],
   _headgear select 1,

@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MMG Gunner
+	Loadout for MMG Gunner (usArmy)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
 
@@ -25,26 +25,14 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _vests select 4,
     [
-      [
-        "rhsusf_100Rnd_762x51",
-        3,
-        100
-      ],
-      [
-        "rhs_mag_m67",
-        1,
-        1
-      ]
+      ["rhsusf_100Rnd_762x51",3,100],
+      ["rhs_mag_m67",1,1]
     ]
   ],
   [
     _backpacks select 2,
     [
-      [
-        "rhsusf_100Rnd_762x51",
-        3,
-        100
-      ]
+      ["rhsusf_100Rnd_762x51",3,100]
     ]
   ],
   _headgear select 1,

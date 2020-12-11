@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Medics
+	Loadout for Medics (usMC)
 ======================================*/
 params ["_linkItems", "_uniform", "_headgear", "_goggle"];
 
@@ -9,10 +9,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "",
     "rhsusf_acc_anpeq15_bk",
     "rhsusf_acc_compm4",
-    [
-      "rhs_mag_30Rnd_556x45_M855_Stanag",
-      30
-    ],
+    ["rhs_mag_30Rnd_556x45_M855_Stanag",30],
     [],
     ""
   ],
@@ -25,73 +22,26 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "rhsusf_spc_corpsman",
     [
-      [
-        "rhs_mag_30Rnd_556x45_M855_Stanag",
-        8,
-        30
-      ],
-      [
-        "rhs_mag_m18_red",
-        1,
-        1
-      ]
+      ["rhs_mag_30Rnd_556x45_M855_Stanag",8,30],
+      ["rhs_mag_m18_red",1,1]
     ]
   ],
   [
     "rhsusf_assault_eagleaiii_coy_medic",
     [
-      [
-        "ACE_elasticBandage",
-        24
-      ],
-      [
-        "ACE_packingBandage",
-        24
-      ],
-      [
-        "ACE_quikclot",
-        20
-      ],
-      [
-        "ACE_fieldDressing",
-        12
-      ],
-      [
-        "ACE_bloodIV_250",
-        8
-      ],
-      [
-        "ACE_bloodIV_500",
-        4
-      ],
-      [
-        "ACE_bloodIV",
-        4
-      ],
-      [
-        "ACE_surgicalKit",
-        1
-      ],
-      [
-        "ACE_personalAidKit",
-        2
-      ],
-      [
-        "ACE_splint",
-        10
-      ],
-      [
-        "ACE_morphine",
-        12
-      ],
-      [
-        "ACE_epinephrine",
-        12
-      ],
-      [
-        "ACE_EarPlugs",
-        1
-      ]
+      ["ACE_elasticBandage",24],
+      ["ACE_packingBandage",24],
+      ["ACE_quikclot",20],
+      ["ACE_fieldDressing",12],
+      ["ACE_bloodIV_250",8],
+      ["ACE_bloodIV_500",4],
+      ["ACE_bloodIV",4],
+      ["ACE_surgicalKit",1],
+      ["ACE_personalAidKit",2],
+      ["ACE_splint",10],
+      ["ACE_morphine",12],
+      ["ACE_epinephrine",12],
+      ["ACE_EarPlugs",1]
     ]
   ],
   _headgear select 1,
