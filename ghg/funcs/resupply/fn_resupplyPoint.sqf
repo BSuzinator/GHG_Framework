@@ -16,12 +16,12 @@ if ( isServer ) then
 			// Add the laptop
 			_laptop = createVehicle [
 				"Land_Laptop_03_black_F",
-				_obj modelToWorld [-2.25, 4.5, 0.9],
+				(ASLtoATL (_obj modelToWorld [-2.25, 4.5, 0.9])),
 				[],
 				0,
 				"CAN_COLLIDE"
 			];
-		
+			_laptop setObjectTextureGlobal [1, "ghg\images\header.paa"];
 			_laptop setDir getDir _obj;
 			_laptop allowDamage false;
 			_obj setVariable ["laptop_obj", _laptop, true];
@@ -36,11 +36,12 @@ if ( isServer ) then
 			// Add the laptop
 			_laptop = createVehicle [
 				"Land_Laptop_03_black_F",
-				_obj modelToWorld [1.528, 0.682, 0.05],
+				(ASLtoATL (_obj modelToWorldWorld [1.528, 0.682, 0.05])),
 				[],
 				0,
 				"CAN_COLLIDE"
 			];
+			_laptop setObjectTextureGlobal [1, "ghg\images\ghgHeader.paa"];
 			_laptop setDir (getDir _obj + 90);
 			_laptop allowDamage false;
 			_laptop enableSimulation false;
@@ -52,7 +53,7 @@ if ( isServer ) then
 			// Add the box
 			_box = createVehicle [
 				"Land_PaperBox_closed_F",
-				_obj modelToWorld [2.076, 0.338, -1.15],
+				(ASLtoATL (_obj modelToWorldWorld [2.076, 0.338, -1.15])),
 				[],
 				0,
 				"CAN_COLLIDE"
