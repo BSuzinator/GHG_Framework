@@ -21,7 +21,7 @@ if ( isServer ) then
 				0,
 				"CAN_COLLIDE"
 			];
-			_laptop setObjectTextureGlobal [1, "ghg\images\header.paa"];
+			_laptop setObjectTextureGlobal [1, "ghg\images\ghgHeader.paa"];
 			_laptop setDir getDir _obj;
 			_laptop allowDamage false;
 			_obj setVariable ["laptop_obj", _laptop, true];
