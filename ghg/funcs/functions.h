@@ -1,12 +1,15 @@
 class ghg
 {
+	#include "acre\functions.h"
+	#include "deploy\functions.h"
 	#include "diaries\functions.h"
-	#include "jammer\functions.h"
 	#include "gear\functions.h"
+	#include "hacking\functions.h"
+	#include "jammer\functions.h"
 	#include "markers\functions.h"
 	#include "misc\functions.h"
 	#include "respawn\functions.h"
-	#include "safemode\functions.h"
-	#include "acre\functions.h"
 	#include "resupply\functions.h"
+	#include "safemode\functions.h"
+	#include "zeus\functions.h"
 };

@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_spectrumDevice
+	Sets up the spectrum device to track Jammers in the AO
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 missionNamespace setVariable ["#EM_FMin", 433];

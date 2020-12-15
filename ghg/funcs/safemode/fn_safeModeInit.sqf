@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_safeModeInit
+	Adds Zeus module for safemode and starts safe mode
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 SAFE_MODE_ENABLED = true;

@@ -1,6 +1,9 @@
-/*
-	Allow Planes To Reverse
-*/
+/*======================================
+	ghg_fnc_reversePlanes
+	Allows planes to reverse when on ground and stopped
+	Called on mission start
+	
+======================================*/
 if (!hasInterface) exitwith {};
 
 ["AllowPlanesToReverseCheck", "onEachFrame", {

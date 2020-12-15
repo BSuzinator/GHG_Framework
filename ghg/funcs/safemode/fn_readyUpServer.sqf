@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_readyUpServer
+	Disables safemode when all sides are ready
+	Author: Quantx
+======================================*/
 if ( !isServer ) exitWith {};
 
 // Check if it's time to start

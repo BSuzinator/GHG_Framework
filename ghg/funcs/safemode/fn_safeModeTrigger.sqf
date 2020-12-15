@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_safeModeTrigger
+	
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 params ["_safeModeEnabled", "_messageAfter", ["_delay", 0], "_messageBefore"];

@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_respawnUpdateUI
+	Updates spectator UI option for optout
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 params ["_control", "_button", "_xPos", "_yPos", "_shift", "_ctrl", "_alt"];

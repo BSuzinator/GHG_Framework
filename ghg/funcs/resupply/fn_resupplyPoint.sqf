@@ -1,6 +1,11 @@
+/*======================================
+	ghg_fnc_resupplyPoint
+	Adds laptop and extras to resupply containers
+	Called by init box of resupply container
+	this call ghg_fnc_resupplyPoint;
+	Author: Quantx
+======================================*/
 params ["_obj"];
-
-//if ( !(typeOf _obj == "Land_Ammostore2") ) exitWith { hint "Resupply depot is not type Land_Ammostore2"; };
 
 private _laptop;
 

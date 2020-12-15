@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_readyUpCheck
+	Checks who get the ready up action
+	Author: Quantx
+======================================*/
 params ["_target", "_player"];
 
 private _rankList = [

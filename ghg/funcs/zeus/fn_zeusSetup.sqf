@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_zeusSetup
+	Creates zeus module for unit
+	Author: Quantx
+======================================*/
 if ( !isServer ) exitWith {};
 
 params ["_unit", "_uid"];

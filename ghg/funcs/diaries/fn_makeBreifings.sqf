@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_makeBriefings
+	Compiles briefings for each side and adds to players
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 private _briefFile = switch ( playerSide ) do
@@ -6,7 +11,7 @@ private _briefFile = switch ( playerSide ) do
 	case east: { "briefing\opfor.sqf" };
 	case resistance: { "briefing\indfor.sqf" };
 	case sideLogic: { "briefing\zeus.sqf" };
-	case civilian: { "briefing\zeus.sqf" };
+	case civilian: { "briefing\civilian.sqf" };
 };
 
 private _brief = call compile preprocessFileLineNumbers _briefFile;

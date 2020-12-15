@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_acreInit
+	Sets long range radio channel names
+	Author: Quantx
+======================================*/
 {
 	private _preset = _x;
 	{

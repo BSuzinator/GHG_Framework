@@ -1,6 +1,6 @@
 /*
 
-	INDFOR
+	CIVILIAN
 
 	Each element of the arry should be in this format (note the comma at the end):
 	[ "TITLE", "SUBJECT" ],
@@ -9,7 +9,7 @@
 	NOTE: DO NOT PUT THE ENTRIES IN BACKWARDS!!!
 */
 [
-	["Overview", "<font size='24' face='TahomaB'>Overview</font><br />
+["Overview", "<font size='24' face='TahomaB'>Overview</font><br />
 		Last week one of the officers from SOCOM was taken hostage from a routine convoy in Takistan. Earlier this morning we got intel that he was being held here in Zargabad, and a local insurgent cell wants to negotiate for his release. These insurgents have been a thorn in the local authorities collective side, and they have also contacted us to aid in ousting them. The Russians have an Airbase in the region, however they have made a point of staying quiet throughout all this. We suspect they are supplying the insurgents, but no evidence can be found, so no action can be taken.
 	"],
 	["Commander's Intent", "

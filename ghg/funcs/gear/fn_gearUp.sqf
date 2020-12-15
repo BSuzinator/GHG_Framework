@@ -1,5 +1,7 @@
 /*======================================
+	ghg_fnc_gearUp
     Applies loadouts to players
+	Called at mission start, JIP, and respawn
 ======================================*/
 if ( !hasInterface ) exitWith {};
 
@@ -33,7 +35,7 @@ if ( isNil "_faction" ) exitWith {};
 
 private _gearArgs = [["ItemMap", "", "", "ItemCompass", "ACE_Altimeter", "ACE_NVG_Wide"]];
 
-// Add cammo arguments
+// Add camo arguments
 _gearArgs append parseSimpleArray preprocessFile format [ "ghg\loadouts\%1\camo\%2.sqf", _faction select 0, _faction select 1 ];
 
 private _unitLoadout = _gearArgs call compile preprocessFileLineNumbers format [ "ghg\loadouts\%1\gear\%2.sqf", _faction select 0, _unitType ];
@@ -46,12 +48,11 @@ private _uniformItems = [
 	["ACE_packingBandage", 5],
 	["ACE_morphine", 2],
 	["ACE_epinephrine", 1],
-	["ACE_tourniquet", 1],
+	["ACE_tourniquet", 2],
 	["ACE_splint", 1],
 	["ACE_Flashlight_XL50", 1]
 ];
 
-(_unitLoadout select 0) set [2, "rhsusf_acc_anpeq15_bk"];
 ((_unitLoadout select 3) select 1) append _uniformItems;
 
 _unit setUnitLoadout _unitLoadout;

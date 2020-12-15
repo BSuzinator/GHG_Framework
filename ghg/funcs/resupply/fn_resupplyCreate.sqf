@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_resupplyCreate
+	Spawns selected resupply crate
+	Author: Quantx
+======================================*/
 (_this select 0) params ["_crateScript"];
 (_this select 1) params ["_target", "_player", "_building", "_faction"];
 

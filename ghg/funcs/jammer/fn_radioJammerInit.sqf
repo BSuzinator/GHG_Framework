@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_radioJammerInit
+	Called on mission start to activate all jammers
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 [{

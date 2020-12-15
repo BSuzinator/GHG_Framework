@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_resupplyMenu
+	Creates list of crates availible to players based on faction
+	Author: Quantx
+======================================*/
 params ["_target", "_player"];
 (_this select 2) params ["_building"];
 

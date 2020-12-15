@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_acreSetDefaultChannel
+	Sets active radio channel for each unit
+	Author: Quantx
+======================================*/
 params ["_unit"];
 
 waitUntil { [_unit] call acre_api_fnc_isInitialized; };

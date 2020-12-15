@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_fileExists
+	Checks to see if a file exists
+	Author: Quantx
+======================================*/
 private ["_ctrl", "_fileExists"];
 disableSerialization;
 _ctrl = findDisplay 0 ctrlCreate ["RscHTML", -1];

@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_groupMarkers
+	Updates map positions
+	Author: Quantx
+======================================*/
 params ["_map"];
 
 {

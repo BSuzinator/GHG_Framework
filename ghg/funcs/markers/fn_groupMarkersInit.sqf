@@ -1,3 +1,9 @@
+/*======================================
+	ghg_fnc_groupMarkersInit
+	Removes default markers and creates icons for each per side
+	Called on mission start
+	Author: Quantx
+======================================*/
 // Only run on real players
 if ( !hasInterface ) exitWith {};
 

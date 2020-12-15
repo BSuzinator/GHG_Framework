@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_readyUp
+	Notifies which side is ready
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 params ["_target", "_player"];

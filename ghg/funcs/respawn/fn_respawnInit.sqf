@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_respawnInit
+	Called on mission start, sets up respawn parameters
+	Author: Quantx
+======================================*/
 if ( !hasInterface ) exitWith {};
 
 ZEUS_WAVE_RESPAWN_OPTOUT = true;

@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_acreDefineRadios
+	Defines radios and channel names
+	Author: Quantx
+======================================*/
 GHG_ACRE_RADIOS = [
     "ACRE_PRC152",
     "ACRE_PRC148",

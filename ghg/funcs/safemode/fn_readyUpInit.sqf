@@ -1,3 +1,8 @@
+/*======================================
+	ghg_fnc_readyUpInit
+	Adds action to unit to ready up side
+	Author: Quantx
+======================================*/
 if ( isNil "SAFE_MODE_READY_BLU" ) then
 {
 	SAFE_MODE_READY_BLU = true;
