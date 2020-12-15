@@ -52,7 +52,7 @@ Recon
 Logistics
 	Logi Team Lead
 	Explosives Specialist
-	EOD Tech
+	Explosives Specialist
 	Repair Specialist
 	Repair Specialist
 	Repair Specialist
