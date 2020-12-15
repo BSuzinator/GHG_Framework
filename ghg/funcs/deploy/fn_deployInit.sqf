@@ -4,8 +4,9 @@
 	Author: BSuz
 ======================================*/
 if !(hasInterface) exitWith{};
+if (isNil ("deployZone")) exitWith {"deployZone Marker not found" remoteExec ["systemChat", -2];};
 private _deployType = getText (missionConfigFile >> "CfgGHG" >> "deployType");
-if !((_deployType isEqualTo "LALO") || (_deployType isEqualTo "HALO") || (_deployType isEqualTo "WATER"))exitWith{};
+if !((_deployType isEqualTo "LALO") || (_deployType isEqualTo "HALO") || (_deployType isEqualTo "WATER")) exitWith{"deployType not defined in ghg_config.txt" remoteExec ["systemChat", -2];};
 private _deployRange = getText (missionConfigFile >> "CfgGHG" >> "deployRange")
 
 private _deployEventID = addMissionEventHandler ["MapSingleClick", ghg_fnc_deploy];
