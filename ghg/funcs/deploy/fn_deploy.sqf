@@ -6,14 +6,13 @@
 if (isNil "deployParams") exitWith{};
 params ["_units", "_pos", "_alt", "_shift"];
 deployParams params ["_target", "_player", "_actionParams"];
-_actionParams params ["_deployEventID","_deployMapID","action"];
+_actionParams params ["_deployEventID","_deployMapID"];
 private _deployType = getText (missionConfigFile >> "CfgGHG" >> "deployType");
 
 _pos set [2,1];
 
-if !(_pos inArea "deployZone") then {
+if !(_pos inArea "deployZone") exitWith {
 	_target vehicleChat "Selected Area not in Zone";
-	exitWith{};
 };
 
 _target setVehiclePosition [_pos,[],0,"CAN_COLLIDE"];
@@ -23,7 +22,7 @@ switch (_deployType) do {
 
 		//Low Altitude Low Opening
 		case "LALO": {
-			[_target,300] spawn bis_fnc_HALO;			
+			[_target,200] spawn bis_fnc_HALO;			
 		};
 		//High Altitude Low Opening
 		case "HALO": {

@@ -21,7 +21,7 @@ if ( isServer ) then
 			// Add the laptop
 			_laptop = createVehicle [
 				"Land_Laptop_03_black_F",
-				(ASLtoATL (_obj modelToWorld [-2.25, 4.5, 0.9])),
+				(ASLtoATL (_obj modelToWorldWorld [-2.25, 4.5, 0.8])),
 				[],
 				0,
 				"CAN_COLLIDE"
@@ -67,6 +67,7 @@ if ( isServer ) then
 			_box enableSimulation false;
 			_box allowDamage false;
 			[_box, -1] call ace_cargo_fnc_setSize;
+			[_box, 0] call ace_cargo_fnc_setSpace;
 		};
 		default {hint "Resupply depot is not in allowed list"; deleteVehicle _obj;};
 	};
