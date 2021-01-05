@@ -9,7 +9,7 @@ private _deployType = getText ( missionConfigFile >> "CfgGHG" >> "deployType" );
 
 if !((_deployType isEqualTo "LALO")
   || (_deployType isEqualTo "HALO")
-  || (_deployType isEqualTo "WATER")) exitWith { systemChat "deployType not defined in ghg_config.txt" };
+  || (_deployType isEqualTo "SURFACE")) exitWith { systemChat "deployType not defined in ghg_config.txt" };
 
 private _deployRange = getNumber ( missionConfigFile >> "CfgGHG" >> "deployRange" );
 

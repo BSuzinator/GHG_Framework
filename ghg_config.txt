@@ -1,5 +1,5 @@
 //Set deploy configuration
-//List of acceptable types: LALO, HALO, WATER, none
+//List of acceptable types: LALO, HALO, SURFACE, none
 //deployRange is how far in meters you can do deploy from main base respawn marker
 deployType = "LALO";
 deployRange = "100";
