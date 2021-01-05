@@ -11,8 +11,8 @@ DSM_DONE = false;
 DSM addAction ["Take DSM", ghg_fnc_dsmTake];
 
 //Get file count to upload / download
-private _dsmFiles = getText (missionConfigFile >> "CfgGHG" >> "dsmFiles");
-
+private _dsmFiles = getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles");
+_dsmFiles = parseNumber _dsmFiles;
 // Grab the main display
 _dsp = findDisplay 46;
 
@@ -24,6 +24,7 @@ _zbox = controlNull;
 
 _sum = 0;
 {
+	//ERROR HERE
 	_sum = _sum + _x;
 	if ( _sum > _dsmFiles ) then
 	{
