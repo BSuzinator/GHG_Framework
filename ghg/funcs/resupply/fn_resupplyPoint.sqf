@@ -21,7 +21,7 @@ if ( isServer ) then
 			// Add the laptop
 			_laptop = createVehicle [
 				"Land_Laptop_03_black_F",
-				(ASLtoATL (_obj modelToWorldWorld [-2.25, 4.5, 0.8])),
+				(ASLtoATL (_obj modelToWorldWorld [-2.25, 4.5, -1.75])),
 				[],
 				0,
 				"CAN_COLLIDE"
@@ -30,12 +30,14 @@ if ( isServer ) then
 			_laptop setDir getDir _obj;
 			_laptop allowDamage false;
 			_obj setVariable ["laptop_obj", _laptop, true];
+			[_laptop, _obj] call BIS_fnc_attachToRelative;
 		};
 		//Cargo Container
 		case "Land_Cargo20_military_green_F": {
 			// Make container indestructible
-			_obj enableSimulation false;
 			_obj allowDamage false;
+			
+			//Stop the container from being loaded or loaded into
 			[_obj, -1] call ace_cargo_fnc_setSize;
 			[_obj, 0] call ace_cargo_fnc_setSpace;
 			// Add the laptop
@@ -47,7 +49,7 @@ if ( isServer ) then
 				"CAN_COLLIDE"
 			];
 			_laptop setObjectTextureGlobal [1, "ghg\images\ghgHeader.paa"];
-			_laptop setDir (getDir _obj + 90);
+			_laptop setDir (getDir _obj) + 90;
 			_laptop allowDamage false;
 			_laptop enableSimulation false;
 			_obj setVariable ["crate_pos", [-1.789,0,1], true];
@@ -68,6 +70,11 @@ if ( isServer ) then
 			_box allowDamage false;
 			[_box, -1] call ace_cargo_fnc_setSize;
 			[_box, 0] call ace_cargo_fnc_setSpace;
+			[_box, _obj] call BIS_fnc_attachToRelative;
+			[_laptop, _obj] call BIS_fnc_attachToRelative;
+			
+			//Stop the container from being moved
+			_obj enableSimulation false;
 		};
 		default {hint "Resupply depot is not in allowed list"; deleteVehicle _obj;};
 	};
