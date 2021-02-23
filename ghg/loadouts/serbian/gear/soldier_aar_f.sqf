@@ -34,7 +34,7 @@ params ["_linkItems", "_uniform", "_vests", "_headgear", "_backpacks"];
       ["rhsusf_200rnd_556x45_M855_box",3,100]
     ]
   ],
-  _headgear select 7,
+  _headgear select 8,
   "rhsusf_oakley_goggles_clr",
   ["Binocular","","","",[],[],""],
   _linkItems

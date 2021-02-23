@@ -13,7 +13,14 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     [],
     ""
   ],
-  [],
+  ["ACE_VMH3",
+	"",
+	"",
+	"",
+	[],
+	[],
+	""
+  ],
   [],
   [
     _uniform,
@@ -32,7 +39,6 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _backpacks select 2,
     [
-      ["MineDetector",1],
       ["rhsusf_m112x4_mag",1,1],
       ["rhsusf_m112_mag",3,1],
       ["SatchelCharge_Remote_Mag",1,1],

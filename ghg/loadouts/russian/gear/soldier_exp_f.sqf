@@ -13,7 +13,14 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     [],
     ""
   ],
-  [],
+  ["ACE_VMH3",
+	"",
+	"",
+	"",
+	[],
+	[],
+	""
+  ],
   [],
   [
     _uniform select 0,
@@ -32,7 +39,6 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _backpacks select 2,
     [
-      ["MineDetector",1],
       ["rhssaf_tm500_mag",2,1],
       ["rhssaf_tm200_mag",3,1],
 	  ["ACE_Fortify",1],

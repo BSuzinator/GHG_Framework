@@ -32,7 +32,7 @@ params ["_linkItems", "_uniform", "_vests", "_headgear", "_backpacks"];
       ["rhsusf_200Rnd_556x45_box",4,200]
     ]
   ],
-  _headgear select 0,
+  _headgear select 8,
   "rhsusf_oakley_goggles_clr",
   [],
   _linkItems

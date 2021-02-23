@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=0.25;
@@ -16,17 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=143;
+		nextID=147;
 	};
 	class Camera
 	{
 		pos[]={512.35028,22.473845,1402.9132};
-		dir[]={0.025588332,-0.30289078,-0.95281076};
-		up[]={0.0081395051,0.95292169,-0.30294821};
-		aside[]={-0.99970031,-2.084289e-007,-0.026856139};
+		dir[]={0.025585588,-0.30285347,-0.95269364};
+		up[]={0.0081305159,0.95303714,-0.3027443};
+		aside[]={-0.99963957,0,-0.026846372};
 	};
 };
 binarizationWanted=0;
+sourceName="GHG_COOP_Template_BSuz";
 addons[]=
 {
 	"A3_Characters_F",

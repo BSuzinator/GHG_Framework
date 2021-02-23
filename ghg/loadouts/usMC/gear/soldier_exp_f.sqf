@@ -13,6 +13,14 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     [],
     ""
   ],
+  ["ACE_VMH3",
+	"",
+	"",
+	"",
+	[],
+	[],
+	""
+  ],
   [],
   [
     _uniform,
@@ -30,8 +38,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "rhsusf_assault_eagleaiii_coy",
     [
-      ["MineDetector",1],
-      ["rhsusf_m112x4_mag",1,1],
+	  ["rhsusf_m112x4_mag",1,1],
       ["rhsusf_m112_mag",3,1],
       ["SatchelCharge_Remote_Mag",1,1],
 	  ["ACE_Fortify",1]
