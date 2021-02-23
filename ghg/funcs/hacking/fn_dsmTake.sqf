@@ -3,15 +3,17 @@
 	Called by ghg_fnc_dsmRun on completion
 	Author: Quantx
 ======================================*/
-
-_object = _this select 0;
-_caller = _this select 1;
-_id = _this select 2;
+params ["_target", "_caller", "_actionId", "_arguments"];
 
 if ( DSM_DONE ) then
 {
-	[_object, "removeAllActions", true, true] call BIS_fnc_MP;
-	[_object, "hideObject", true, true] call BIS_fnc_MP;
+	[_target, "removeAllActions", true, true] call BIS_fnc_MP;
+	[_target, "hideObject", true, true] call BIS_fnc_MP;
+	_str = format ["Player: %1 has completed hacking for side: %2", name _caller, side _caller];
+	_str remoteExec ["systemChat", sideLogic];
+	_str2 = format ["Player: %1 has completed the hack", name _caller];
+	_str2 remoteExec ["systemChat", side _caller]; 
+	
 }
 else
 {

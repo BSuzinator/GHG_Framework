@@ -3,6 +3,7 @@
 	Called by ghg_fnc_dsmPlant
 	Author: Quantx
 ======================================*/
+params ["_out"];
 
 // Reveal the DSM
 DSM hideObject false;
@@ -12,7 +13,6 @@ DSM addAction ["Take DSM", ghg_fnc_dsmTake];
 
 //Get file count to upload / download
 private _dsmFiles = getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles");
-_dsmFiles = parseNumber _dsmFiles;
 // Grab the main display
 _dsp = findDisplay 46;
 
