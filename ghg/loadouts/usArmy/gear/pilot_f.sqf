@@ -1,4 +1,4 @@
-1/*======================================
+/*======================================
 	Loadout for Jet Pilots (usArmy)
 ======================================*/
 params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks", "_goggle"];
