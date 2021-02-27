@@ -8,7 +8,7 @@ params ["_linkItems", "_uniform", "_vests", "_headgear", "_backpacks"];
     "rhs_weap_g36kv_ag36",
     "",
     "rhsusf_acc_anpeq15side_bk",
-    "rhsusf_acc_ACOG_RMR",
+    "rhsusf_acc_EOTECH",
     ["rhssaf_30rnd_556x45_EPR_G36",30],
     ["rhs_mag_M441_HE",1],
     ""

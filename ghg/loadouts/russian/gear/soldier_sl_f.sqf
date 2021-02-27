@@ -8,9 +8,9 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     _weapons select 1,
     "",
     "rhs_acc_perst1ik",
-    "rhs_acc_1p29",
+    "rhs_acc_okp7_dovetail",
     ["rhs_30Rnd_545x39_7N10_AK",30],
-    [],
+    ["rhs_VOG25",1],
     ""
   ],
   [],
