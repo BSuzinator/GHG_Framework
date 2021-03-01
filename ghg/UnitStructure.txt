@@ -6,14 +6,14 @@ Platoon Command
 Alpha Squad
 	Alpha Squad Leader
 	Alpha Medic
-Alpha Fireteam 1
+  Alpha Fireteam 1
 	Alpha 1 Fire Team Leader
 	Alpha 1 Automatic Rifleman
 	Alpha 1 Assistant Autorifleman
 	Alpha 1 Rifleman(AT)
 	Alpha 1 Rifleman
 	Alpha 1 Rifleman
-Alpha Fireteam 2
+  Alpha Fireteam 2
 	Alpha 2 Fire Team Leader
 	Alpha 2 Automatic Rifleman
 	Alpha 2 Assistant Autorifleman
@@ -23,14 +23,14 @@ Alpha Fireteam 2
 Bravo Squad
 	Bravo Squad Leader
 	Bravo Medic
-Bravo Fireteam 1
+  Bravo Fireteam 1
 	Bravo 1 Fire Team Leader
 	Bravo 1 Automatic Rifleman
 	Bravo 1 Assistant Autorifleman
 	Bravo 1 Rifleman(AT)
 	Bravo 1 Rifleman
 	Bravo 1 Rifleman
-Bravo Fireteam 2
+  Bravo Fireteam 2
 	Bravo 2 Fire Team Leader
 	Bravo 2 Automatic Rifleman
 	Bravo 2 Assistant Autorifleman
