@@ -9,30 +9,33 @@
 	NOTE: DO NOT PUT THE ENTRIES IN BACKWARDS!!!
 */
 [
-["Overview", "<font size='24' face='TahomaB'>Overview</font><br />
-		Last week one of the officers from SOCOM was taken hostage from a routine convoy in Takistan. Earlier this morning we got intel that he was being held here in Zargabad, and a local insurgent cell wants to negotiate for his release. These insurgents have been a thorn in the local authorities collective side, and they have also contacted us to aid in ousting them. The Russians have an Airbase in the region, however they have made a point of staying quiet throughout all this. We suspect they are supplying the insurgents, but no evidence can be found, so no action can be taken.
+	["Overview", "<font size='24' face='TahomaB'>Overview</font><br />
+		It's early morning in the Al Rayak Region. We just dropped anchor off the Southern Coast. Yesterday the local police force recieved a tip of a band of insurgents setting up a camp in an unnamed village. Given the trouble with the last band of insurgents that wanted to roost here, the police immediately called for us to step in. Our platoon will use the coastal night fog to insert by boat, and hike the rest of the way in. We don't want to upset the local civpop if we can avoid it, and we don't want to let the potential insurgents know we're on to them until it's too late. For the same reason, the Phantom support will be grounded until you make first contact. Once they're on station, that will serve as your extract. Don't worry about the boats.
+		<br />
+		<br />
+		There will be civillians in the AO. Three civillians killed is mission fail.	
 	"],
 	["Commander's Intent", "
 		<font size='24' face='TahomaB'>Commander's Intent</font><br />
-			We need to rescue the Officer by any means necessary. There have been rumors of where the insurgent HQ is, however we are not here to kick a hornets' nest unless we have to. We lost the last drone we flew over the area from interference, so be on the lookout for a Jammer.
+			Find the village and determine if the tip was credible. If it was, wipe out all insurgents in the area, and give it a while (15 minutes) to see if there are any reinforcements in the area. Once you think the last of them are dealt with, blow the entire place and deny any and all assets.
 		<br /><br /><font size='18' face='TahomaB'>Task List</font>
-			<br />-Find and Rescue the Officer
-			<br />-Destroy all Jammers
+			<br />-Locate the potential camp
+			<br />-Eliminate all insurgents
+			<br />-Destroy camp and all assets
 			<br />-RTB
 		<br /><br /><font size='18' face='TahomaB'>Friendly Assets</font>
-			<br />-HUMVEEs for troop transport
-			<br />-M113 for LOGI Support
-			<br />-1x Medical Crate
-			<br />-2x Fireteam Crates
-			<br />-1x LOGI Crate
+			<br />-RHIBs for transport
+			<br />-1x Medical Crate + 2x Fireteam Crates / Squad
+			<br />-Extra explosive supplies
 	"],
 	["Expected Contacts", "<font size='24' face='TahomaB'>Expected Contacts</font>
 			<br />-Company+ Insurgents
-			<br />-IEDs/Mines
+			<br />-Technicals
+			<br />-Light APCs
 	"],
 	["Zeus Instructions", "<font size='24' face='TahomaB'>Zeus Instructions</font>
-		<br />Deploy a few IEDs on the road leading into Zargabad, with 2-3 Middle Easten Militia infantry somewhere near them.
-		<br />After the players engage either the <marker name='jammer'>jammer</marker> site or the Mosque, send the Ural with troops in it from the HQ as reinforcements. 
+		<br />Leave the river clear, let the suspense build up.
+		<br />After the players engage, sporadically send in the reinforcements from around the AO
 		<br />No additional units should be spawned.
 	"]
 ]
