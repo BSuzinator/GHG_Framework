@@ -1,7 +1,7 @@
 [ //ERDL
 	[ //Weapons
-		"rhs_weap_m4a1_blockII_wd",
-		"rhs_weap_m4a1_blockII_M203_wd",
+		"rhs_weap_m4a1_wd",
+		"rhs_weap_m4a1_M203s_wd",
 		"rhs_weap_XM2010_wd"
 	],
 	//Uniform

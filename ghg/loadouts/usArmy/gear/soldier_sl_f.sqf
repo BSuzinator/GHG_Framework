@@ -8,7 +8,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     _weapons select 1,
     "",
     "rhsusf_acc_anpeq15_bk",
-    "rhsusf_acc_compm4",
+    "rhsusf_acc_ACOG_RMR",
     [
       "rhs_mag_30Rnd_556x45_M855A1_Stanag",
       30

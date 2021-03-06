@@ -1,7 +1,7 @@
 [ //UCPD
 	[ //Weapons
-		"rhs_weap_m4a1_blockII_d",
-		"rhs_weap_m4a1_blockII_M203_d",
+		"rhs_weap_m4a1_d",
+		"rhs_weap_m4a1_M203s_d",
 		"rhs_weap_XM2010_d"
 	],
 	//Uniform

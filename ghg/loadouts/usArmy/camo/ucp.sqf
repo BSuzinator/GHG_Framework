@@ -1,7 +1,7 @@
 [ //UCP
 	[ //Weapons
-		"rhs_weap_m4a1_blockII",
-		"rhs_weap_m4a1_blockII_M203",
+		"rhs_weap_m4a1",
+		"rhs_weap_m4a1_M203s",
 		"rhs_weap_XM2010"
 	],
 	//Uniform
