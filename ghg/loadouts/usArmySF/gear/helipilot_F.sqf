@@ -32,7 +32,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   ],
   [],
   "rhsusf_hgu56p_visor_black",
-  _goggles select 1,,
+  _goggles select 1,
   [],
   _linkItems
 ]

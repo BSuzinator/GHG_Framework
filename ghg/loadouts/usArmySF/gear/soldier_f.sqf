@@ -31,7 +31,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   ],
   [],
   _headgear select 1,
-  _goggles select 1,,
+  _goggles select 1,
   [],
   _linkItems
 ]
