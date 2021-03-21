@@ -8,6 +8,8 @@ if ( !isServer ) exitWith {};
 // Check if it's time to start
 if ( SAFE_MODE_READY_BLU && SAFE_MODE_READY_OPF && SAFE_MODE_READY_IND ) then
 {
+	skipTime (SAFE_MODE_TIME - daytime); // Roll back time to the start of the mission
+
 	[
 		false,
 		"Safe Mode is now disabled, weapons are hot!",
