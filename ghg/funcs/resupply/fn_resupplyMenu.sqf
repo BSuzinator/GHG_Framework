@@ -6,7 +6,7 @@
 params ["_target", "_player"];
 (_this select 2) params ["_building"];
 
-private _faction = switch ( playerSide ) do {
+private _faction = switch ( side player ) do {
 	case west: { getText (missionConfigFile >> "CfgGHG" >> "bluFaction") };
 	case east: { getText (missionConfigFile >> "CfgGHG" >> "opfFaction") };
 	case resistance: { getText (missionConfigFile >> "CfgGHG" >> "indFaction") };
