@@ -5,6 +5,10 @@
 ======================================*/
 if (isNil "deployParams") exitWith {}; // Not called from deployment function
 
+if ! ( SAFE_MODE_READY_BLU && SAFE_MODE_READY_OPF && SAFE_MODE_READY_IND ) exitWith {
+	systemChat "Cannot deploy, not all sides are ready";
+};
+
 params ["_units", "_pos", "_alt", "_shift"];
 
 deployParams params ["_target", "_player", "_actParams"];
