@@ -7,18 +7,22 @@ deployRange = "100";
 //Set DSM File Count
 dsmFiles = "";
 
+//Enable road checks and penalties (true/false)
+roadCheck = "true";
+
 //Set Player Factions
-//List of acceptable factions: usArmy, usMC, russian, serbian
-bluFaction = "serbian";
+//List of acceptable factions: usArmy, usArmySF, usMC, russian, serbian
+bluFaction = "usArmy";
 opfFaction = "usMC";
 indFaction = "russian";
 
 //Set Player Camo Pattern
 //List of acceptable Camos:
 //usArmy: OEFCP, OCP, UCP, UCPD, ERDL
+//usArmySF: black, desert, woodland
 //usMC: mpD, mpWD
 //russian: emr, emrd, flora
 //serbian: m81
-bluCamo = "m81";
+bluCamo = "ERDL";
 opfCamo = "mpD";
 indCamo = "flora";
