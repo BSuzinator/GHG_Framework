@@ -38,8 +38,6 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     [
     _backpacks select 3,
     [
-       _backpacks select 3,
-    [
       ["rhs_rpg7_PG7VL_mag",2,1]
     ]
   ],
