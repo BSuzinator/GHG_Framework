@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={512.14636,17.117716,1406.7029};
-		dir[]={-0.010651108,-0.26388592,-0.96449518};
-		up[]={-0.0029139658,0.96455389,-0.26386982};
-		aside[]={-0.99993908,0,0.011042522};
+		pos[]={489.91525,34.401379,1306.0039};
+		dir[]={0.34654346,-0.65181929,0.67456597};
+		up[]={0.29785255,0.75837439,0.57978642};
+		aside[]={0.88948953,0,-0.45695573};
 	};
 };
 binarizationWanted=0;
@@ -13601,9 +13601,9 @@ class Mission
 		class Item72
 		{
 			dataType="Marker";
-			position[]={485.01971,5,1389.5068};
+			position[]={485.01999,5,1389.507};
 			name="ghg_grp_RPTR_3";
-			text="RPTR 2";
+			text="RPTR 3";
 			type="b_plane";
 			colorName="ColorBlue";
 			a=0.75;
@@ -13613,9 +13613,9 @@ class Mission
 		class Item73
 		{
 			dataType="Marker";
-			position[]={485.01971,5,1388.4702};
+			position[]={485.01999,5,1388.47};
 			name="ghg_grp_RPTR_4";
-			text="RPTR 2";
+			text="RPTR 4";
 			type="b_plane";
 			colorName="ColorBlue";
 			a=0.75;
