@@ -52,6 +52,10 @@ Medium MG
 	Medium MG Spotter (Leader)
 	Medium MG Gunner
 	Medium MG Ammo Bearer
+Mortar
+	MTR Team Lead
+	Mortar Gunner
+	Mortar Ammo Bearer
 Recon
 	RCN Team Lead
 	Sniper
@@ -63,20 +67,20 @@ Logistics
 		Explosives Specialist
 		Repair Specialist
 	LOGI 1
-		Repair Specialist
 		Explosives Specialist
+		Explosives Specialist
+		Repair Specialist
+		Repair Specialist
 	LOGI 2
-		Repair Specialist
 		Explosives Specialist
+		Explosives Specialist
+		Repair Specialist
+		Repair Specialist
 	LOGI 3
-		Repair Specialist
 		Explosives Specialist
-	LOGI 4
-		Repair Specialist
 		Explosives Specialist
-	LOGI 5
 		Repair Specialist
-		Explosives Specialist
+		Repair Specialist
 Wolf 1
 	Wolf 1 Commander
 	Wolf 1 Gunner
@@ -85,6 +89,14 @@ Wolf 2
 	Wolf 2 Commander
 	Wolf 2 Gunner
 	Wolf 2 Driver
+Wolf 3
+	Wolf 3 Commander
+	Wolf 3 Gunner
+	Wolf 3 Driver
+Wolf 4
+	Wolf 4 Commander
+	Wolf 4 Gunner
+	Wolf 4 Driver
 Phantom 1
 	Phantom 1 Pilot
 	Phantom 1 Co-Pilot
@@ -95,7 +107,25 @@ Phantom 2
 	Phantom 2 Co-Pilot
 	Phantom 2 Crew
 	Phantom 2 Crew
+Phantom 3
+	Phantom 3 Pilot
+	Phantom 3 Co-Pilot
+	Phantom 3 Crew
+	Phantom 3 Crew
+Phantom 4
+	Phantom 4 Pilot
+	Phantom 4 Co-Pilot
+	Phantom 4 Crew
+	Phantom 4 Crew
 Raptor 1
 	Raptor 1 Pilot
+	Raptor 1 CoPilot
 Raptor 2
 	Raptor 2 Pilot
+	Raptor 2 CoPilot
+Raptor 3
+	Raptor 3 Pilot
+	Raptor 3 CoPilot
+Raptor 4
+	Raptor 3 Pilot
+	Raptor 3 CoPilot
