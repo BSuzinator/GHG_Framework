@@ -15,7 +15,7 @@
 		} forEach GHG_ACRE_LABELS;
 	} forEach GHG_ACRE_RADIOS;
 } forEach [ "default", "default2", "default3", "default4" ];
-
+[allPlayers, 0] call acre_api_fnc_godModeModifyGroup;
 if ( !hasInterface ) exitWith {};
 
 // Mute the radio
