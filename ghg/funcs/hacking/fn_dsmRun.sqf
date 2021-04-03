@@ -59,5 +59,10 @@ if ( ! isNull _zbox ) then
 	ctrlDelete _zbox;
 };
 
+_str = format ["Player: %1 has completed hacking for side: %2", name _caller, side _caller];
+_str remoteExec ["systemChat", sideLogic];
+_str2 = format ["Player: %1 has completed the hack", name _caller];
+_str2 remoteExec ["systemChat", side _caller]; 
+
 DSM_DONE = true;
 publicVariable "DSM_DONE";
