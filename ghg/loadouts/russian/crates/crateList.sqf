@@ -2,6 +2,7 @@
 	["FireTeam", "ftCrate"],
 	["Medium Anti-Tank", "matCrate"],
 	["Medium Machine Gun", "mmgCrate"],
+	["Mortar", "mtrCrate"],
 	["Recon", "rcnCrate"],
 	["Logistics", "logiCrate"],
 	["GMG Gun", "gmgGunCrate"],
