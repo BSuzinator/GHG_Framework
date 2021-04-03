@@ -29,7 +29,7 @@ _respawnPos = markerPos _respawnMkr;
 	
 	while {_roadCheckEnabled isEqualTo "true"} do {
 		waitUntil {vehicle player isNotEqualTo player};
-		_roadList = player nearRoads 20;
+		_roadList = player nearRoads 50;
 		if (((vehicle player distance2D _respawnPos) > 250) && (_roadList isEqualTo []) && ((driver (vehicle player)) isEqualTo player) && (((getPosATL (vehicle player)) select 2) < 2) && ((vehicle player isKindOf "LandVehicle")) && !(vehicle player getVariable ["roadCheckExclude", false]) ) then
 			{
 				_pVehicle = vehicle player;			
