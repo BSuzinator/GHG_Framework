@@ -30,7 +30,7 @@ _respawnPos = markerPos _respawnMkr;
 	while {_roadCheckEnabled isEqualTo "true"} do {
 		waitUntil {vehicle player isNotEqualTo player};
 		_roadList = player nearRoads 10;
-		if (((vehicle player distance2D _respawnPos) > 250) && (_roadList isEqualTo []) && ((driver (vehicle player)) isEqualTo player) && ((vehicle player isKindOf "LandVehicle")) && !(vehicle player getVariable ["roadCheckExclude", false]) ) then
+		if (((vehicle player distance2D _respawnPos) > 250) && (_roadList isEqualTo []) && ((driver (vehicle player)) isEqualTo player) && (((getPosATL (vehicle player)) select 2) < 2) && ((vehicle player isKindOf "LandVehicle")) && !(vehicle player getVariable ["roadCheckExclude", false]) ) then
 			{
 				_pVehicle = vehicle player;			
 				_pVehicleLFW = _pVehicle getHit getText(configFile >> "cfgVehicles" >> (TypeOf _pVehicle) >> "HitPoints" >> "HitLFWheel" >> "name");
