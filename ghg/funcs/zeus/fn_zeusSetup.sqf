@@ -19,6 +19,7 @@ if ( _uid in _authZeus || _virtual ) then
 	_logic setVariable ["addons", 3, true];
 	_logic setVariable ["forced", parseNumber _virtual, true];
 	_logic setVariable ["birdType", "", true];
+	_logic setVariable ["showNotification", false];
 	
 	[_logic, [], true] call BIS_fnc_modulecurator;
 	
