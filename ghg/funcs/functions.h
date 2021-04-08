@@ -11,5 +11,6 @@ class ghg
 	#include "respawn\functions.h"
 	#include "resupply\functions.h"
 	#include "safemode\functions.h"
+	#include "taskManager\functions.h"
 	#include "zeus\functions.h"
 };
