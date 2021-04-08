@@ -29,9 +29,13 @@ _respawnPos = markerPos _respawnMkr;
 	
 	while {_roadCheckEnabled isEqualTo "true"} do {
 		waitUntil {vehicle player isNotEqualTo player};
+		waitUntil {(driver (vehicle player)) isEqualTo player};
 		_roadList = player nearRoads 50;
 		if (((vehicle player distance2D _respawnPos) > 250) && (_roadList isEqualTo []) && ((driver (vehicle player)) isEqualTo player) && (((getPosATL (vehicle player)) select 2) < 2) && ((vehicle player isKindOf "LandVehicle")) && !(vehicle player getVariable ["roadCheckExclude", false]) ) then
 			{
+				systemChat "Your wheels are being damaged. Return to the road.";
+				hint "Your wheels are being damaged. Return to the road.";
+				
 				_pVehicle = vehicle player;			
 				_pVehicleLFW = _pVehicle getHit getText(configFile >> "cfgVehicles" >> (TypeOf _pVehicle) >> "HitPoints" >> "HitLFWheel" >> "name");
 				_pVehicleRFW = _pVehicle getHit getText(configFile >> "cfgVehicles" >> (TypeOf _pVehicle) >> "HitPoints" >> "HitRFWheel" >> "name");
@@ -59,9 +63,6 @@ _respawnPos = markerPos _respawnMkr;
 				_pVehicle setHit [getText(configFile >> "cfgVehicles" >> (TypeOf _pVehicle) >> "HitPoints" >> "HitRMWheel" >> "name"),_pVehicleRMW];
 				_pVehicle setHit [getText(configFile >> "cfgVehicles" >> (TypeOf _pVehicle) >> "HitPoints" >> "HitLBWheel" >> "name"),_pVehicleLBW];
 				_pVehicle setHit [getText(configFile >> "cfgVehicles" >> (TypeOf _pVehicle) >> "HitPoints" >> "HitRBWheel" >> "name"),_pVehicleRBW];
-			
-			systemChat "Return to roads or your wheels will be damaged.";
-			hint "Return to roads or your wheels will be damaged.";
 			};
 		sleep 5;
 	};
