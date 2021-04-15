@@ -98,7 +98,8 @@ addMissionEventHandler ["Map", {
 		if ( (side _cgrp) isEqualTo playerSide || playerSide isEqualTo sideLogic ) then {
 		private _mrkInfo = _cgrp getVariable ["ghg_group_mrk_info", []];
 		_mrkInfo params ["_mrk", "_mrkShape", "_mrkType", "_mrkCol", "_mrkSize", "_mrkText", "_mrkName"];
-		_mrkName setMarkerPosLocal (getPos (leader _cgrp);		
+		_newPos = [(getPos (leader _cgrp) select 0),(getPos (leader _cgrp) select 1)];
+		_mrk setMarkerPosLocal _newPos;		
 	} forEach allGroups;
 	sleep 1;
 };
