@@ -87,7 +87,7 @@ addMissionEventHandler ["Map", {
 	params ["_mapIsOpened", "_mapIsForced"];
 	
 	if ( _mapIsOpened ) then {
-		GHG_GROUP_MARKER_EHIND = findDisplay 12 displayCtrl 51 ctrlAddEventHandler ["Draw", ghg_fnc_groupMarkers];
+		GHG_GROUP_MARKER_EHIND = findDisplay 12 displayCtrl 51 ctrlAddEventHandler ["Draw", ghg_fnc_teamMarkers];
 	} else {
 		findDisplay 12 displayCtrl 51 ctrlRemoveEventHandler ["Draw", GHG_GROUP_MARKER_EHIND];
 	};
