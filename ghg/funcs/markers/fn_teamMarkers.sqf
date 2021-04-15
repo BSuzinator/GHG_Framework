@@ -32,8 +32,8 @@ params ["_map"];
 				if ((_unit getVariable ["ACE_isEOD", _unit getUnitTrait "explosiveSpecialist"]) in [1, true]) then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManExplosive_ca.paa";};
 				if (getText(configFile >> "CfgWeapons" >> (primaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_mg_ca.paa") then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManMG_ca.paa";};
 				if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_at_ca.paa") then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManAT_ca.paa";};
-				if (GVAR(ace_medic) && {_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0}) then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";};
-				if (!GVAR(ace_medic) && {_unit getUnitTrait "medic"}) then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";};
+				if (([_unit] call ace_medical_treatment_fnc_isMedic) && {_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0}) then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";};
+				if (!([_unit] call ace_medical_treatment_fnc_isMedic) && {_unit getUnitTrait "medic"}) then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";};
 				if ((leader _unit) isEqualTo _unit) then {_iconSTR = "\A3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";};
 				
 					_map drawIcon [
