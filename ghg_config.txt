@@ -1,3 +1,7 @@
+/*======================================
+	ghg_config.txt
+	Main configuration for missions
+======================================*/
 //Set deploy configuration
 //List of acceptable types: LALO, HALO, SURFACE, none
 //deployRange is how far in meters you can do deploy from main base respawn marker
