@@ -57,5 +57,7 @@ private _uniformItems = [
 
 _unit setUnitLoadout _unitLoadout;
 
+[_unit, _unitType, _faction] call ghg_fnc_scopeChoice;
+
 //Set GHG patch
 [_unit,"GHG"] call BIS_fnc_setUnitInsignia;
