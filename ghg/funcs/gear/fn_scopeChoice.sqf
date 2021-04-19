@@ -9,13 +9,21 @@ params ["_unit", "_unitType", "_faction"];
 
 //List of units excluded from scope selection
 _excludeList = [
-	"soldier_sl_f",
-	"soldier_tl_f",
-	"officer_f",
-	"sniper_f",
-	"soldier_uav_f",
-	"support_MG_f"
+	"soldier_sl_f", //Squad/SpecialTeam Lead
+	"soldier_tl_f", //FTLs
+	"officer_f", //PLT Lead
+	"sniper_f", //Recon Sniper
+	"soldier_uav_f", //FAC
+	"support_MG_f",  //MMG Gunner
+	"pilot_f" //Pilots
 	];
+	
+_limitedList = [
+	"crew_f", // Wolf Crew
+	"helicrew_f", //Heli Crew
+	"helipilot_f" //Heli Pilots	
+	];
+
 if (_unitType in _excludeList) exitWith {};
 
 //Get respawn marker for distance check
@@ -68,7 +76,6 @@ _usScopes =
 "rhsusf_acc_compm4" //red dot
 ];
 
-
 //RU Backed Forces
 _ruScopes = 
 [
@@ -77,6 +84,11 @@ _ruScopes =
 "rhs_acc_okp7_dovetail", //reflex
 "rhs_acc_1p63" //varient red dot
 ];
+
+if (_unitType in _limitedList) then {
+	_usScopes deleteRange [0,1];
+	_ruScopes deleteRange [0];
+};
 
 _scopeChoice = [];
 _scopeFlag = "";
