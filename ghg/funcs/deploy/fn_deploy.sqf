@@ -67,10 +67,13 @@ private _msg = format [
 [_msg] remoteExec ["systemChat", side _player]; // Notify team members
 [_msg] remoteExec ["systemChat", sideLogic ]; // Notify zeus
 
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+} 
+else {
 hasDeployed = true;
-
 removeMissionEventHandler ["Map", _deployMapID];
 removeMissionEventHandler ["MapSingleClick", _deployEventID];
+};
 
 openMap false;
 deployParams = nil;

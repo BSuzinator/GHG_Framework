@@ -71,3 +71,14 @@ if ( _brief isEqualType [] ) then
 		player createDiaryRecord ["Diary", _x];
 	} forEach _brief;
 };
+
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+	player createDiarySubject ["locations","Locations"];
+	private _locationBrief = call compile preprocessFileLineNumbers 	"briefing\locations.sqf";
+	// Add items in reverse order
+	reverse _locationBrief;
+		
+	{
+		player createDiaryRecord ["locations", _x];
+	} forEach _locationBrief;
+}; 

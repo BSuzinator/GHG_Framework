@@ -21,3 +21,6 @@ else
 	sleep 3;
 	hint "";
 };
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+DSM_Host addAction ["Setup DSM", ghg_fnc_dsmPlant];
+};

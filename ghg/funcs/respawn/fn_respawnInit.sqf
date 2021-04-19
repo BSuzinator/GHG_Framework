@@ -15,7 +15,12 @@ call compile (profileNamespace getVariable ["ghg_local_function", ""]);
 	{ _this remoteExecCall ["ghg_fnc_respawnTrigger"]; }
 ] call zen_custom_modules_fnc_register;
 
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+setPlayerRespawnTime 30;
+} 
+else {
 setPlayerRespawnTime 5000;
+};
 
 [ "ace_spectator_displayLoaded", ghg_fnc_respawnOptout ] call CBA_fnc_addEventHandler;
 player addEventHandler [ "Respawn", ghg_fnc_respawnHandler ];
