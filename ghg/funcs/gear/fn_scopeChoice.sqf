@@ -86,8 +86,8 @@ _ruScopes =
 ];
 
 if (_unitType in _limitedList) then {
-	_usScopes deleteRange [0,1];
-	_ruScopes deleteRange [0];
+	_usScopes deleteAt [0,2];
+	_ruScopes deleteRange [0,1];
 };
 
 _scopeChoice = [];
