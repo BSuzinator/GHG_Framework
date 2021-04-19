@@ -14,11 +14,11 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     ""
   ],
   [
-    "rhs_weap_fgm148",
+    "rhs_weap_smaw_green",
     "",
     "",
-    "",
-    ["rhs_fgm148_magazine_AT",1],
+    "rhs_weap_optic_smaw",
+    ["rhs_mag_smaw_HEAA",1],
     [],
     ""
   ],
@@ -37,7 +37,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "B_Carryall_cbr",
     [
-      ["rhs_fgm148_magazine_AT",1,1]
+      ["rhs_mag_smaw_HEAA",2,1]
     ]
   ],
   _headgear select 1,

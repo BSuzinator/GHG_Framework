@@ -5,7 +5,7 @@
 ["ACE_elasticBandage", 6], 
 ["ACE_packingBandage", 6], 
 ["rhs_mag_30Rnd_556x45_M855_Stanag", 16], 
-["rhs_fgm148_magazine_AT", 4], 
+["rhs_mag_smaw_HEAA", 5], 
 ["rhs_mag_m67", 3], 
 ["rhs_mag_an_m8hc", 6],
 ["rhs_mag_M441_HE", 8], 

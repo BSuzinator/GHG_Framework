@@ -30,7 +30,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
   [
     "B_Carryall_cbr",
     [
-      ["rhs_fgm148_magazine_AT",1,1]
+      ["rhs_mag_smaw_HEAA",2,1]
     ]
   ],
   _headgear select 1,

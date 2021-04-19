@@ -14,11 +14,11 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     ""
   ],
   [
-    "rhs_weap_fgm148",
+    "rhs_weap_smaw_green",
     "",
     "",
-    "",
-    ["rhs_fgm148_magazine_AT",1],
+    "rhs_weap_optic_smaw",
+    ["rhs_mag_smaw_HEAA",1],
     [],
     ""
   ],
@@ -38,7 +38,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
   _backpacks select 3,
     [
-      ["rhs_fgm148_magazine_AT",1,1]
+      ["rhs_mag_smaw_HEAA",2,1]
     ]
   ],
   _headgear select 1,

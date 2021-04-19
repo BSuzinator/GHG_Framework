@@ -32,7 +32,7 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
   [
     _backpacks select 2,
     [
-      ["rhs_fgm148_magazine_AT",1,1]
+      ["rhs_mag_smaw_HEAA",2,1]
     ]
   ],
   _headgear select 1,
