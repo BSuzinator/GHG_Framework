@@ -8,7 +8,7 @@ params ["_linkItems", "_uniform", "_vests", "_headgear", "_backpacks"];
     "rhs_weap_m240G",
     "",
     "rhsusf_acc_anpeq15side_bk",
-    "rhsusf_acc_su230a",
+    "rhsusf_acc_ELCAN",
     ["rhsusf_100Rnd_762x51",100],
     [],
     "rhsusf_acc_rvg_blk"

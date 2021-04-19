@@ -8,7 +8,7 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "rhs_weap_m240b_elcan",
     "",
     "rhsusf_acc_anpeq15_bk",
-    "rhsusf_acc_su230a",
+    "rhsusf_acc_ELCAN",
     ["rhsusf_100Rnd_762x51",100],
     [],
     ""
