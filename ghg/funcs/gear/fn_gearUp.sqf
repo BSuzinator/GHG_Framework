@@ -57,7 +57,12 @@ private _uniformItems = [
 
 _unit setUnitLoadout _unitLoadout;
 
-[_unit, _unitType, _faction] call ghg_fnc_scopeChoice;
+private _hasScopeChoice = _unit getVariable "hasScopeChoice";
+if ((isNil "_hasScopeChoice") || ("_hasScopeChoice" isEqualTo false)) then
+{
+	_unit setVariable ["hasScopeChoice", true]; 
+	[_unit, _unitType, _faction] call ghg_fnc_scopeChoice;
+};
 
 //Set GHG patch
 [_unit,"GHG"] call BIS_fnc_setUnitInsignia;
