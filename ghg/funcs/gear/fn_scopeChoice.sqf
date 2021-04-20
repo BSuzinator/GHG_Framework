@@ -7,6 +7,9 @@
 if ( !hasInterface ) exitWith {};
 params ["_unit", "_unitType", "_faction"];
 
+_limitedList = [];
+_excludeList = [];
+
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
 	_limitedList = [];
 	_excludeList = [];
@@ -41,8 +44,12 @@ _respawnPos = markerPos _respawnMkr;
 _player = _unit;
 
 //Condition for changing scopes
-_actionCondition = {SAFE_MODE_ENABLED};
-
+_actionCondition = {};
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+	_actionCondition = {true};
+} else {
+	_actionCondition = {SAFE_MODE_ENABLED};
+};
 //Add root action
 _action = ["GHG_Scopes","Scope Selection","\a3\ui_f\data\gui\rsc\rscdisplayarsenal\itemoptic_ca.paa",{systemChat ""},_actionCondition] call ace_interact_menu_fnc_createAction;
 [_unit, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
