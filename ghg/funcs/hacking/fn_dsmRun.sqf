@@ -3,13 +3,18 @@
 	Called by ghg_fnc_dsmPlant
 	Author: Quantx
 ======================================*/
-params ["_out"];
+params ["_out","_caller"];
 
 // Reveal the DSM
 DSM hideObject false;
 // Add the action
 DSM_DONE = false;
 DSM addAction ["Take DSM", ghg_fnc_dsmTake];
+
+_str = format ["Player: %1 has started the hack!: %2", name _caller, side _caller];
+_str remoteExec ["systemChat", sideLogic];
+_str2 = format ["Player: %1 has started the hack!", name _caller];
+_str2 remoteExec ["systemChat", side _caller]; 
 
 //Get file count to upload / download
 private _dsmFiles = getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles");
@@ -50,7 +55,7 @@ _sum = 0;
 		_zbox ctrlSetStructuredText parseText format ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
 	};
 	uiSleep 1;
-} forEach _this;
+} forEach _out;
 
 ctrlDelete _box;
 
@@ -59,10 +64,10 @@ if ( ! isNull _zbox ) then
 	ctrlDelete _zbox;
 };
 
-_str = format ["Player: %1 has completed hacking for side: %2", name _caller, side _caller];
-_str remoteExec ["systemChat", sideLogic];
-_str2 = format ["Player: %1 has completed the hack", name _caller];
-_str2 remoteExec ["systemChat", side _caller]; 
-
 DSM_DONE = true;
 publicVariable "DSM_DONE";
+
+_str3 = format ["Player: %1 has completed the hack!: %2", name _caller, side _caller];
+_str3 remoteExec ["systemChat", sideLogic];
+_str4 = format ["Player: %1 has completed the hack!", name _caller];
+_str4 remoteExec ["systemChat", side _caller];

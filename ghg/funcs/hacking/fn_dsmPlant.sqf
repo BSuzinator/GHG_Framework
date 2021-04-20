@@ -21,4 +21,4 @@ while {_i <= _dsmFiles} do
 [_target, "removeAllActions", true, true] call BIS_fnc_MP;
 // Start the UI script
 //[[_out, ghg_fnc_dsmRun], "BIS_fnc_execVM"] call BIS_fnc_MP;
-_out remoteExec ["ghg_fnc_dsmRun", side _caller, false];
+[_out,_caller] remoteExec ["ghg_fnc_dsmRun", side _caller, false];
