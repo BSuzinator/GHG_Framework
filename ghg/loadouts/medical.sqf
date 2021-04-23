@@ -4,7 +4,7 @@
 		called from
 ======================================*/
 
-params ["_pos", "_dir", "_isAirdrop"];
+params ["_pos", "_dir"];
 
 _crate = createVehicle ["ACE_medicalSupplyCrate", _pos, [], 0, "CAN_COLLIDE"];
 _crate setDir _dir;
@@ -26,13 +26,4 @@ _crate addItemCargoGlobal ["ACE_bodyBag", 16];
 _crate addItemCargoGlobal ["ACE_tourniquet", 16];  
 _crate addItemCargoGlobal ["ACE_EarPlugs", 8];
 
-{
-	_curator = _x;
-	_curator addCuratorEditableObjects [[_crate], true];
-} forEach allCurators;
-
-if (_isAirdrop) then {
-	_parachute = createVehicle ["B_Parachute_02_F",_modulePos, [], 0, "FLY"];
-	_parachute setPosATL [getPosATL _parachute select 0, getPosATL _parachute select 1, 200];
-	_crate attachTo [_parachute,[0,0,0]];
-};
+_crate

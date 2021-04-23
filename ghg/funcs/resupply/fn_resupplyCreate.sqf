@@ -6,12 +6,14 @@
 (_this select 0) params ["_crateScript"];
 (_this select 1) params ["_target", "_player", "_building", "_faction"];
 
+_crate = objNull;
+
 private _pos = (ASLtoATL (_building modelToWorldWorld (_building getVariable ["crate_pos", [0,0,1]])));
 private _dir = (getDir _building) + (_building getVariable ["crate_dir", 0]);
 
 if ( _crateScript isEqualTo "ghg_medical_placeholder" ) then
 {
-	[_pos, _dir] call compile preprocessFileLineNumbers "ghg\loadouts\medical.sqf";
+	_crate = [_pos, _dir] call compile preprocessFileLineNumbers "ghg\loadouts\medical.sqf";
 }
 else
 {
@@ -33,8 +35,9 @@ else
 	[_crate, true, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
 	[_crate, 1] call ace_cargo_fnc_setSize;
 	
-	{
+};
+
+{
 	_curator = _x;
 	_curator addCuratorEditableObjects [[_crate], true];
-	} forEach allCurators;
-};
+} forEach allCurators;

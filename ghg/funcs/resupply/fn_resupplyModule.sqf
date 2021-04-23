@@ -22,7 +22,8 @@ _function = {
 			[
 				"SIDES",
 				"Select Side of resupply crate",
-				[west]
+				[west],
+				true
 			],
 			[
 				"LIST",
@@ -37,7 +38,8 @@ _function = {
 			[
 					"CHECKBOX",
 					"Airdrop Crate",
-					false
+					false,
+					true
 			]
 		],
 		ghg_fnc_zeusSpawnResupplyCrate,
