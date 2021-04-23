@@ -6,8 +6,6 @@
 (_this select 0) params ["_side", "_crateScript", "_isAirdrop"];
 (_this select 1) params ["_modulePos","_attachedObject"];
 
-systemChat format ["%1, %2, %3, %4",_side,_crateScript,_modulePos,_attachedObject];
-
 private _faction = switch ( _side select 0 ) do {
 	case west: { getText (missionConfigFile >> "CfgGHG" >> "bluFaction") };
 	case east: { getText (missionConfigFile >> "CfgGHG" >> "opfFaction") };

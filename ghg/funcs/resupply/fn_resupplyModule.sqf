@@ -6,12 +6,7 @@
 _function = {
 	params ["_modulePos","_attachedObject"];
 
-	private _bluFaction = getText (missionConfigFile >> "CfgGHG" >> "bluFaction");
-	private _opfFaction = getText (missionConfigFile >> "CfgGHG" >> "opfFaction");
-	private _indFaction = getText (missionConfigFile >> "CfgGHG" >> "indFaction");
-	
-
-	private _baseCratesList = parseSimpleArray (preprocessFile format ["ghg\loadouts\%1\crates\crateList.sqf", _bluFaction]);
+	private _baseCratesList = parseSimpleArray (preprocessFile format ["ghg\loadouts\baseCrateList.sqf"]);
 	
 	private _baseCrateName = ["Medical"];
 	private _baseCrateFile = ["ghg_medical_placeholder"];
