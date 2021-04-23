@@ -5,11 +5,48 @@
 ======================================*/
 _function = {
 	params ["_modulePos","_attachedObject"];
-	//Open dialog to select which crates
+
+	private _bluFaction = getText (missionConfigFile >> "CfgGHG" >> "bluFaction");
+	private _opfFaction = getText (missionConfigFile >> "CfgGHG" >> "opfFaction");
+	private _indFaction = getText (missionConfigFile >> "CfgGHG" >> "indFaction");
 	
-	//Spawn Crate
+
+	private _baseCratesList = parseSimpleArray (preprocessFile format ["ghg\loadouts\%1\crates\crateList.sqf", _bluFaction]);
 	
-	//If attachedObject isNotEqualTo objNull then load crate into attached vehicle
-	
+	private _baseCrateName = ["Medical"];
+	private _baseCrateFile = ["ghg_medical_placeholder"];
+
+	{
+		_baseCrateName pushBack (_x select 0);
+		_baseCrateFile pushBack (_x select 1);
+	} forEach _baseCratesList;
+
+	[
+		"Spawn Resupply",
+		[
+			[
+				"SIDES",
+				"Select Side of resupply crate",
+				[west]
+			],
+			[
+				"LIST",
+				"Choose a resupply package",
+				[
+					_baseCrateFile,
+					_baseCrateName,
+					0,
+					(10 min ((count _baseCrateName) + 0.5))
+				]
+			]
+		],
+		ghg_fnc_zeusSpawnResupplyCrate,
+		{},
+		[
+			_modulePos,
+			_attachedObject
+		]
+	] call zen_dialog_fnc_create;	
+
 };
 ["Resupply", "Spawn Crate", _function] call zen_custom_modules_fnc_register;
