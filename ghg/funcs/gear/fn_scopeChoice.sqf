@@ -7,35 +7,29 @@
 if ( !hasInterface ) exitWith {};
 params ["_unit", "_unitType", "_faction"];
 
-_limitedList = [];
-_excludeList = [];
+//List of units excluded from scope selection
+_excludeList = [
+	"soldier_sl_f", //Squad/SpecialTeam Lead
+	"soldier_tl_f", //FTLs
+	"officer_f", //PLT Lead
+	"sniper_f", //Recon Sniper
+	"soldier_uav_f", //FAC
+	"support_MG_f",  //MMG Gunner
+	"pilot_f" //Pilots
+];
+		
+_limitedList = [
+	"crew_f", // Wolf Crew
+	"helicrew_f", //Heli Crew
+	"helipilot_f" //Heli Pilots	
+];
 
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
 	_limitedList = [];
 	_excludeList = [];
-} else {
-	//List of units excluded from scope selection
-	_excludeList = [
-		"soldier_sl_f", //Squad/SpecialTeam Lead
-		"soldier_tl_f", //FTLs
-		"officer_f", //PLT Lead
-		"sniper_f", //Recon Sniper
-		"soldier_uav_f", //FAC
-		"support_MG_f",  //MMG Gunner
-		"pilot_f" //Pilots
-	];
-		
-	_limitedList = [
-		"crew_f", // Wolf Crew
-		"helicrew_f", //Heli Crew
-		"helipilot_f" //Heli Pilots	
-	];
+};
 
-	if (_unitType in _excludeList) exitWith {};
-
-}; 
-
-
+if (_unitType in _excludeList) exitWith {};
 
 //Get respawn marker for distance check
 _pside = side _unit;
