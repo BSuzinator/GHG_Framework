@@ -38,6 +38,11 @@ _function = {
 					0,
 					(10 min ((count _baseCrateName) + 0.5))
 				]
+			],
+			[
+					"CHECKBOX",
+					"Airdrop Crate",
+					false
 			]
 		],
 		ghg_fnc_zeusSpawnResupplyCrate,

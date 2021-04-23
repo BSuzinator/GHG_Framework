@@ -32,4 +32,9 @@ else
 	[_crate, true, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;
 	[_crate, true, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
 	[_crate, 1] call ace_cargo_fnc_setSize;
+	
+	{
+	_curator = _x;
+	_curator addCuratorEditableObjects [[_crate], true];
+	} forEach allCurators;
 };
