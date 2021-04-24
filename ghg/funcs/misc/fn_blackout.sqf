@@ -13,7 +13,7 @@ _statement = {
 	params ["_hostObject", "_player", "_actionParams"];
 	_actionParams params ["_radius"];
 	
-	_hostObject animateSource ["switchposition",1];
+	_hostObject animateSource ["switchposition",0];
 	_hostObject setDamage 1;
 	_hostObject setObjectTextureGlobal [1,"#(argb,8,8,3)color(1,0,0,0.05,ca)"];
 	
@@ -44,7 +44,7 @@ _statement = {
 		for "_i" from 0 to count getAllHitPointsDamage _x do
 		{
 			_x setHitIndex [_i, 0.97];
-			_x switchLight "OFF";
+			[_x, "OFF"] remoteExec ["switchLight",0,true];
 		};
 	} forEach _lamps;
 	
