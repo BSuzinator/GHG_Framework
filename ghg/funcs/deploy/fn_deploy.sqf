@@ -5,10 +5,6 @@
 ======================================*/
 if (isNil "deployParams") exitWith {}; // Not called from deployment function
 
-if ! ( SAFE_MODE_READY_BLU && SAFE_MODE_READY_OPF && SAFE_MODE_READY_IND ) exitWith {
-	systemChat "Cannot deploy, not all sides are ready";
-};
-
 params ["_units", "_pos", "_alt", "_shift"];
 
 deployParams params ["_target", "_player", "_actParams"];
@@ -50,6 +46,32 @@ switch (_deployType) do {
 	case "SURFACE": {
 		_target setVehiclePosition [_pos, [], 0];
 	};
+	case "iHALO": {
+		[_target, _pos] spawn {	
+			params ["_target", "_pos"];
+			_grp1 = group _target;
+			//{_x switchMove "halofreefall_non"} foreach units _grp1;
+			{_x setpos [_pos select 0, _pos select 1, 1500];} foreach units _grp1;
+			{_x spawn bis_fnc_halo} foreach units _grp1;
+			//{_x switchMove "halofreefall_non"} foreach units _grp1;
+			[_target] spawn bis_fnc_halo;
+			//sleep 1;
+			//_target switchMove "halofreefall_non";
+		};
+	};
+	case "iLALO": {
+		[_target, _pos] spawn {	
+			params ["_target", "_pos"];
+			_grp1 = group _target;
+			//{_x switchMove "halofreefall_non"} foreach units _grp1;
+			{_x setpos [_pos select 0, _pos select 1, 200];} foreach units _grp1;
+			{_x spawn bis_fnc_halo} foreach units _grp1;
+			//{_x switchMove "halofreefall_non"} foreach units _grp1;
+			[_target] spawn bis_fnc_halo;
+			//sleep 1;
+			//_target switchMove "halofreefall_non";
+		};
+	};
 };
 
 //Display notification for vehicle deployment to side and zeus
@@ -67,13 +89,10 @@ private _msg = format [
 [_msg] remoteExec ["systemChat", side _player]; // Notify team members
 [_msg] remoteExec ["systemChat", sideLogic ]; // Notify zeus
 
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
-} 
-else {
 hasDeployed = true;
+
 removeMissionEventHandler ["Map", _deployMapID];
 removeMissionEventHandler ["MapSingleClick", _deployEventID];
-};
 
 openMap false;
 deployParams = nil;
