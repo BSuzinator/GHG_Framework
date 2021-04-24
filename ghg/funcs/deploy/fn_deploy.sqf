@@ -86,6 +86,19 @@ private _msg = format [
 	side _player
 ];
 
+if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then {
+	
+	private _msg = format [
+	"%1 has deployed %2 to GRIDREF: %3 using type %4 for side %5",
+	name _player,
+	groupID (group _player),
+	_gridPos,
+	_deployType,
+	side _player
+	];
+
+};
+
 [_msg] remoteExec ["systemChat", side _player]; // Notify team members
 [_msg] remoteExec ["systemChat", sideLogic ]; // Notify zeus
 
