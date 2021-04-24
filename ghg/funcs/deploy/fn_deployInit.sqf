@@ -7,6 +7,8 @@ if ((!hasInterface) || (getMarkerColor "deployZone" isEqualTo "")) exitWith {};
 
 private _deployType = getText ( missionConfigFile >> "CfgGHG" >> "deployType" );
 
+if (_deployType isEqualTo "none") exitWith {};
+
 if !((_deployType isEqualTo "LALO")
   || (_deployType isEqualTo "HALO")
   || (_deployType isEqualTo "SURFACE")
