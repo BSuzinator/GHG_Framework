@@ -47,27 +47,27 @@ switch (_deployType) do {
 		_target setVehiclePosition [_pos, [], 0];
 	};
 	case "iHALO": {
-		[_target, _pos] spawn {	
-			params ["_target", "_pos"];
-			_grp1 = group _target;
+		[_player, _pos] spawn {	
+			params ["_player", "_pos"];
+			_grp1 = group _player;
 			//{_x switchMove "halofreefall_non"} foreach units _grp1;
 			{_x setpos [_pos select 0, _pos select 1, 1500];} foreach units _grp1;
 			{_x spawn bis_fnc_halo} foreach units _grp1;
 			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			[_target] spawn bis_fnc_halo;
+			[_player] spawn bis_fnc_halo;
 			//sleep 1;
 			//_target switchMove "halofreefall_non";
 		};
 	};
 	case "iLALO": {
-		[_target, _pos] spawn {	
-			params ["_target", "_pos"];
-			_grp1 = group _target;
+		[_player, _pos] spawn {	
+			params ["_player", "_pos"];
+			_grp1 = group _player;
 			//{_x switchMove "halofreefall_non"} foreach units _grp1;
 			{_x setpos [_pos select 0, _pos select 1, 200];} foreach units _grp1;
 			{_x spawn bis_fnc_halo} foreach units _grp1;
 			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			[_target] spawn bis_fnc_halo;
+			[_player] spawn bis_fnc_halo;
 			//sleep 1;
 			//_target switchMove "halofreefall_non";
 		};
