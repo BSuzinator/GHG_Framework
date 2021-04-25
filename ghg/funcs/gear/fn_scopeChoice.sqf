@@ -95,7 +95,7 @@ _ruScopes =
 ];
 
 if (_unitType in _limitedList) then {
-	_usScopes deleteAt [0,2];
+	_usScopes deleteRange [0,2];
 	_ruScopes deleteRange [0,1];
 };
 
