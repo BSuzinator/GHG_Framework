@@ -51,25 +51,33 @@ switch (_deployType) do {
 			params ["_player", "_pos"];
 			_grp1 = group _player;
 			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			{_x setpos [_pos select 0, _pos select 1, 1500];} foreach units _grp1;
-			{_x spawn bis_fnc_halo} foreach units _grp1;
-			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			[_player] spawn bis_fnc_halo;
-			//sleep 1;
-			//_target switchMove "halofreefall_non";
+			//{_x setpos [_pos select 0, _pos select 1, 1500];} foreach units _grp1;
+			//{_x spawn bis_fnc_halo} foreach units _grp1;
+
+			{
+			_x setpos [_pos select 0, _pos select 1, 1500];
+			_x spawn bis_fnc_halo;
+			[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
+			
+			} forEach units _grp1;
+			{
+			[] spawn {waitUntil {((getPos player) select 2) < 2}; removeAllActions player;};
+			} remoteExec ["call", units _grp1];	
 		};
 	};
 	case "iLALO": {
 		[_player, _pos] spawn {	
 			params ["_player", "_pos"];
 			_grp1 = group _player;
-			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			{_x setpos [_pos select 0, _pos select 1, 200];} foreach units _grp1;
-			{_x spawn bis_fnc_halo} foreach units _grp1;
-			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			[_player] spawn bis_fnc_halo;
-			//sleep 1;
-			//_target switchMove "halofreefall_non";
+			{
+			_x setpos [_pos select 0, _pos select 1, 200];
+			_x spawn bis_fnc_halo;
+			[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
+			
+			} forEach units _grp1;
+			{
+			[] spawn {waitUntil {((getPos player) select 2) < 2}; removeAllActions player;};
+			} remoteExec ["call", units _grp1];
 		};
 	};
 };
@@ -88,7 +96,7 @@ private _msg = format [
 
 if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then {
 	
-	private _msg = format [
+	_msg = format [
 	"%1 has deployed %2 to GRIDREF: %3 using type %4 for side %5",
 	name _player,
 	groupID (group _player),
