@@ -45,3 +45,4 @@ player allowDamage false;
 [ "ace_firedPlayerVehicle", ghg_fnc_safeMode ] call CBA_fnc_addEventHandler;
 
 systemChat "Safe Mode has been enabled, weapons will not fire!";
+[player, currentWeapon player, true] call ace_safemode_fnc_setWeaponSafety;
