@@ -48,32 +48,38 @@ switch (_deployType) do {
 	};
 	case "iHALO": {
 		[_player, _pos] spawn {	
-			params ["_player", "_pos"];
+			params ["_player","_pos"];
 			_grp1 = group _player;
-			//{_x switchMove "halofreefall_non"} foreach units _grp1;
-			//{_x setpos [_pos select 0, _pos select 1, 1500];} foreach units _grp1;
-			//{_x spawn bis_fnc_halo} foreach units _grp1;
-
+			_unitCount = count units _grp1;
+			_increment = 360 / _unitCount;
+			_incCount = 0;
 			{
-			_x setpos [_pos select 0, _pos select 1, 1500];
-			_x spawn bis_fnc_halo;
-			[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
-			
+				_incCount = _incCount + _increment;
+				_tpPos = _pos getPos [7, _incCount];
+				_x setpos [_tpPos select 0, _tpPos select 1, 1500];
+				_x setDir (_incCount + 180);
+				_x action ["WeaponOnBack", _x];
+				[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
 			} forEach units _grp1;
 			{
 			[] spawn {waitUntil {((getPos player) select 2) < 2}; removeAllActions player;};
-			} remoteExec ["call", units _grp1];	
+			} remoteExec ["call", units _grp1];
 		};
 	};
 	case "iLALO": {
-		[_player, _pos] spawn {	
-			params ["_player", "_pos"];
+		[_player, _pos] spawn {
+			params ["_player","_pos"];
 			_grp1 = group _player;
+			_unitCount = count units _grp1;
+			_increment = 360 / _unitCount;
+			_incCount = 0;
 			{
-			_x setpos [_pos select 0, _pos select 1, 200];
-			_x spawn bis_fnc_halo;
-			[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
-			
+				_incCount = _incCount + _increment;
+				_tpPos = _pos getPos [7, _incCount];
+				_x setpos [_tpPos select 0, _tpPos select 1, 300];
+				_x setDir (_incCount + 180);
+				_x action ["WeaponOnBack", _x];
+				[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
 			} forEach units _grp1;
 			{
 			[] spawn {waitUntil {((getPos player) select 2) < 2}; removeAllActions player;};
