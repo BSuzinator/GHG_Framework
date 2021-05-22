@@ -59,11 +59,13 @@ switch (_deployType) do {
 				_x setpos [_tpPos select 0, _tpPos select 1, 1500];
 				_x setDir (_incCount + 180);
 				_x action ["WeaponOnBack", _x];
-				[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
+				//[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
+				{
+					_actionID = player addaction ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"];
+					player setVariable ["ghg_iHaloActionID", _actionID];
+					[] spawn {waitUntil {((getPos player) select 2) < 2}; player removeAction (player getVariable "ghg_iHaloActionID");};
+				} remoteExec ["call", _x];
 			} forEach units _grp1;
-			{
-			[] spawn {waitUntil {((getPos player) select 2) < 2}; removeAllActions player;};
-			} remoteExec ["call", units _grp1];
 		};
 	};
 	case "iLALO": {
@@ -79,11 +81,12 @@ switch (_deployType) do {
 				_x setpos [_tpPos select 0, _tpPos select 1, 300];
 				_x setDir (_incCount + 180);
 				_x action ["WeaponOnBack", _x];
-				[_x, ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"]] remoteExec ["addAction", _x];
+				{
+					_actionID = player addaction ["<t color='#ff0000'>Open Chute</t>","A3\functions_f\misc\fn_HALO.sqf",[],1,true,true,"Eject"];
+					player setVariable ["ghg_iLaloActionID", _actionID];
+					[] spawn {waitUntil {((getPos player) select 2) < 2}; player removeAction (player getVariable "ghg_iLaloActionID");};
+				} remoteExec ["call", _x];
 			} forEach units _grp1;
-			{
-			[] spawn {waitUntil {((getPos player) select 2) < 2}; removeAllActions player;};
-			} remoteExec ["call", units _grp1];
 		};
 	};
 };
