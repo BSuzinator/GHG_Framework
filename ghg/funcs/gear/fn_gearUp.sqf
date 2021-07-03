@@ -47,7 +47,7 @@ private _uniformItems = [
 	["ACE_elasticBandage", 5],
 	["ACE_packingBandage", 5],
 	["ACE_morphine", 2],
-	["ACE_epinephrine", 1],
+	["ACE_epinephrine", 2],
 	["ACE_tourniquet", 2],
 	["ACE_splint", 1],
 	["ACE_Flashlight_XL50", 1]
