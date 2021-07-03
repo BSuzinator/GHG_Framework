@@ -28,8 +28,10 @@ if ( _uid in _authZeus || _virtual ) then
 		unassignCurator _logic;
 		[_unit, _logic] spawn {
 			params ["_unit", "_logic"];
-			waitUntil { time > 0 };
-			_unit assignCurator _logic ;
+			waitUntil { (time > 0) && (alive _unit) };
+			_unit assignCurator _logic;
+			sleep 0.5;
+			remoteExecCall ["openCuratorInterface", _unit];
 		};
 	};
 };
