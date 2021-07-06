@@ -7,14 +7,17 @@
 params ["_postInit", "_didJIP"];
 
 // Hide template markers
-{
-	private _mrk = [_x, 0, 7] call BIS_fnc_trimString;
-	
-	if ( _mrk isEqualTo "ghg_grp_" ) then
+[] spawn {
+	sleep 1;
 	{
-		_x setMarkerAlpha 0;
-	};
-} forEach allMapMarkers;
+		private _mrk = [_x, 0, 7] call BIS_fnc_trimString;
+		
+		if ( _mrk isEqualTo "ghg_grp_" ) then
+		{
+			_x setMarkerAlphaLocal 0;
+		};
+	} forEach allMapMarkers;
+};
 
 // Only run on real players
 if ( !hasInterface ) exitWith {};

@@ -22,27 +22,27 @@ if ( !hasInterface ) exitWith {};
 
 	if ( ! isNil "ACRE_RADIO_JAMMERS" && _Px > 0.01 ) then
 	{
-		private _rxJam = 1;
-		private _txJam = 1;
+		private _jam = 1;
 
 		private _rxPos = [_receiverClass] call acre_sys_radio_fnc_getRadioPos;
 		private _txPos = [_transmitterClass] call acre_sys_radio_fnc_getRadioPos;
 
 		{
-			private _jrng = _x getVariable ["ACRE_JAMMING_RANGE", -1];
+			private _jrng = _x getVariable ["acre_jamming_range", 0];
 			
-			private _rxDist = _rxPos distance2D _x;
-			private _txDist = _txPos distance2D _x;
+			private _rxDist = _rxPos distance _x;
+			private _txDist = _txPos distance _x;
 			
-			if ( _jrng >= 0 && (getDammage _x) < 0.95 ) then
-			{
-				_rxJam = ( ( ( _rxDist - _jrng ) / _jrng ) max 0 ) min _rxJam;
-				_txJam = ( ( ( _txDist - _jrng ) / _jrng ) max 0 ) min _txJam;
+			if ( _jrng > 0 && (getDammage _x) < 0.95 ) then
+			{	
+				private _rxJam = ( ( _rxDist - _jrng ) / _jrng ) max (_x getVariable ["acre_jamming_override", 0]);
+				private _txJam = ( ( _txDist - _jrng ) / _jrng ) max (_x getVariable ["acre_jamming_override", 0]);
+			
+				_jam = _jam min (_txJam min _rxJam);
 			};
 		} forEach ACRE_RADIO_JAMMERS;
-		
-		// Don't completely block out the transmission
-		_Px = (_Px * _rxJam * _txJam) max 0.01;
+
+		_Px = (_Px * _jam) max 0.01;
 	};
 
 	[_Px, _maxSignal];

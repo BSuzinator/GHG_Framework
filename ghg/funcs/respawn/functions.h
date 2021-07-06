@@ -6,4 +6,6 @@ class respawn
 	class respawnUpdateUI {};
 	class respawnTrigger {};
 	class respawnHandler {};
+	
+	class nearestAlly { postInit = 1; };
 };

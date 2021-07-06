@@ -13,6 +13,6 @@ if ( isNil "ACRE_RADIO_JAMMERS" ) then
 	ACRE_RADIO_JAMMERS = [];
 };
 
-_jammer setVariable ["ACRE_JAMMING_RANGE", _range];
+_jammer setVariable ["acre_jamming_range", _range];
 
 ACRE_RADIO_JAMMERS pushBackUnique _jammer;
