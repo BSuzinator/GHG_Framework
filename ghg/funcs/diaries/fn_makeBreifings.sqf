@@ -7,7 +7,7 @@
 if ( !hasInterface ) exitWith {};
 
 player createDiarySubject ["ghg_framework","GHG Framework"];
-_version = parseNumber loadFile "ghg\version.txt";
+_version = loadFile "ghg\version.txt";
 _versionString = format ["Current Version: %1", _version];
 player createDiaryRecord ["ghg_framework", ["Version", _versionString]];
 
