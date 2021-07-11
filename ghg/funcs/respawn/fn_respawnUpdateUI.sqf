@@ -12,11 +12,11 @@ ZEUS_WAVE_RESPAWN_OPTOUT = !ZEUS_WAVE_RESPAWN_OPTOUT;
 if ( ZEUS_WAVE_RESPAWN_OPTOUT ) then {
 	// Player currently DOES NOT want to respawn
 	_control ctrlSetText "\a3\Missions_F_Beta\data\img\portraitMPTypeDefense_ca.paa";
-	_control ctrlSetTooltip "You will remain as a spectator";
+	_control ctrlSetTooltip "Click to respawn in next wave";
 } else {
 	// Player currently DOES want to respawn
 	_control ctrlSetText "\a3\3den\data\cfgwaypoints\cycle_ca.paa";
-	_control ctrlSetTooltip "You will respawn with the next wave";
+	_control ctrlSetTooltip "Click to remain as a spectator";
 };
 
 _control ctrlCommit 0;
