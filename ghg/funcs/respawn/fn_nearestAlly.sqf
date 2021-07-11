@@ -27,7 +27,16 @@ GHG_NEAREST_ALLY_EH = -1;
 		GHG_NEAREST_ALLY_EH = [{
 			params ["_ctrl", "_handle"];
 			
-			if ( _ctrl isEqualTo controlNull ) exitWith { _handle call CBA_fnc_removePerFrameHandler; };
+			if ( _ctrl isEqualTo controlNull ) exitWith
+			{
+				_handle call CBA_fnc_removePerFrameHandler;
+			};
+
+			if ! ( ACE_player getVariable ["ACE_isUnconscious", false] ) exitWith
+			{
+				_handle call CBA_fnc_removePerFrameHandler;
+				ctrlDelete (_mainDisp displayCtrl 42454);
+			};
 			
 			private _dist = 1e39; // Infinity
 			private _unit = objNull;
