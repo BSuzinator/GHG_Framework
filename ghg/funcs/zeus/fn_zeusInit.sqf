@@ -3,14 +3,29 @@
 	Handles zeus slot management
 	Author: Quantx
 ======================================*/
-if ( isServer ) then
+if ( !hasInterface ) exitWith {};
+
+// Ensure virtual zeus players are invincible and force interface
+if ( player isKindOf "VirtualCurator_F" ) then
 {
-	addMissionEventHandler ["HandleDisconnect", ghg_fnc_zeusCleanup];
+	player allowDamage false;
+	bis_fnc_forceCuratorInterface_force = true;
+	
+	[{
+		if ( time > 0 ) then
+		{
+			params ["_args", "_handle"];
+		
+			if ( isNull curatorCamera ) then
+			{
+				openCuratorInterface;
+			}
+			else
+			{
+				_handle call CBA_fnc_removePerFrameHandler;
+			};
+		};
+	}, 0.25, []] call CBA_fnc_addPerFrameHandler;
 };
 
-if ( hasInterface ) then
-{
-	// Ensure virtual zeus players are invincible
-	if ( player isKindOf "VirtualCurator_F" ) then { player allowDamage false; };
-	[player, getPlayerUID player] remoteExecCall ["ghg_fnc_zeusSetup", 2];
-};
+[player] remoteExecCall ["ghg_fnc_zeusSetup", 2];

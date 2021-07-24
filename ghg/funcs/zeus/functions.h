@@ -4,4 +4,5 @@ class zeus
 	class zeusInit { postInit = 1; };
 	class zeusSetup {};
 	class zeusCleanup {};
+	class zeusInitObjects {};
 };
