@@ -127,5 +127,5 @@ Raptor 3
 	Raptor 3 Pilot
 	Raptor 3 CoPilot
 Raptor 4
-	Raptor 3 Pilot
-	Raptor 3 CoPilot
+	Raptor 4 Pilot
+	Raptor 4 CoPilot
