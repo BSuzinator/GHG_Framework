@@ -14,11 +14,11 @@ private _virtual = _unit isKindOf "VirtualCurator_F";
 
 if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) then
 {
-	[{ (! isNil "ghg_fnc_zeusObjects") && {(! isNil "bis_functions_mainscope") && { ! isNull bis_functions_mainscope }} },
+	[{ ! (isNil "ghg_fnc_zeusObjects" || isNil "ghg_fnc_zeusGroup") },
 	{
 		params ["_unit", "_owner"];
 	
-		private _logic = (group bis_functions_mainscope) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "CAN_COLLIDE"];
+		private _logic = ghg_fnc_zeusGroup createUnit ["ModuleCurator_F", [0,0,0], [], 0, "CAN_COLLIDE"];
 
 		_logic setCuratorCoef ["Place", 0];
 		_logic setCuratorCoef ["Edit", 0];

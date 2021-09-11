@@ -3,6 +3,11 @@
 	Handles zeus slot management
 	Author: Quantx
 ======================================*/
+if ( isServer ) then
+{
+    ghg_fnc_zeusGroup = createGroup sideLogic;
+};
+
 if ( !hasInterface ) exitWith {};
 
 // Ensure virtual zeus players are invincible and force interface
