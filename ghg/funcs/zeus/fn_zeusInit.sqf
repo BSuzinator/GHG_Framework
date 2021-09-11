@@ -5,6 +5,7 @@
 ======================================*/
 if ( isServer ) then
 {
+    ghg_fnc_zeusObjects = [];
     ghg_fnc_zeusGroup = createGroup sideLogic;
 };
 
