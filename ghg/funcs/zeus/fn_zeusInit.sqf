@@ -5,8 +5,15 @@
 ======================================*/
 if ( isServer ) then
 {
-    ghg_fnc_zeusObjects = [];
     ghg_fnc_zeusGroup = createGroup sideLogic;
+
+    // Failsafe if ghg_fnc_zeusInitObjects is not run
+    [{ time > 10 }, {
+        if ( isNil "ghg_fnc_zeusObjects" ) then
+        {
+            ghg_fnc_zeusObjects = [];
+        };
+    }] call CBA_fnc_waitUntilAndExecute;
 };
 
 if ( !hasInterface ) exitWith {};
@@ -34,4 +41,6 @@ if ( player isKindOf "VirtualCurator_F" ) then
 	}, 0.25, []] call CBA_fnc_addPerFrameHandler;
 };
 
-[player] remoteExecCall ["ghg_fnc_zeusSetup", 2];
+[{ time > 0 }, {
+    [player] remoteExecCall ["ghg_fnc_zeusSetup", 2];
+}] call CBA_fnc_waitUntilAndExecute;
