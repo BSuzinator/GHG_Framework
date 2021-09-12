@@ -45,23 +45,7 @@ if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) 
 		[ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;
 		
 		// Initialize local event handlers
-		[ [_logic, _unit], {
-			params ["_logic", "_unit"];
-			
-			_logic addEventHandler [ "curatorFeedbackMessage", bis_fnc_showCuratorFeedbackMessage ];
-			_logic addEventHandler [ "curatorPinged",          bis_fnc_curatorPinged ];
-			_logic addEventHandler [ "curatorObjectPlaced",    bis_fnc_curatorObjectPlaced ];
-			_logic addEventHandler [ "curatorObjectEdited",    bis_fnc_curatorObjectEdited ];
-			_logic addEventHandler [ "curatorWaypointPlaced",  bis_fnc_curatorWaypointPlaced ];
-
-			private _attrib = { (_this # 1) call bis_fnc_showCuratorAttributes; };
-			_logic addEventHandler ["curatorObjectDoubleClicked",   _attrib];
-			_logic addEventHandler ["curatorGroupDoubleClicked",    _attrib];
-			_logic addEventHandler ["curatorWaypointDoubleClicked", _attrib];
-			_logic addEventHandler ["curatorMarkerDoubleClicked",   _attrib];
-			
-			[ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;
-		}] remoteExecCall ["call", _unit];
+		[_logic, _unit] remoteExecCall ["ghg_fnc_zeusInitEh", _unit];
 	},
 	[_unit, _uid]] call CBA_fnc_waitUntilAndExecute;
 };

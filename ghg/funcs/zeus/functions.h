@@ -5,4 +5,5 @@ class zeus
 	class zeusSetup {};
 	class zeusCleanup {};
 	class zeusInitObjects {};
+    class zeusInitEh {};
 };
