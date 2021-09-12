@@ -22,6 +22,14 @@ private _respawnPos = markerPos (switch (side _unit) do {
 			case civilian: {"respawn_civilian"};
 		});
 
+// Transfer zeus module to new unit
+private _logic = getAssignedCuratorLogic _corpse;
+if ( ! isNull _logic ) then
+{
+    unassignCurator _logic;
+    _unit assignCurator _logic;
+};
+
 //Respawn all units as rifleman
 [_unit, "soldier_f"] call ghg_fnc_gearUp;
 //Sets respawn time
