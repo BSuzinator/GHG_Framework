@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_acreSetDefaultChannel
 	Sets active radio channel for each unit

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_markersInit
 	Removes default markers and sets up group and unit markers for each side

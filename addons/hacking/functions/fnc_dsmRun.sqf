@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_runDSM
 	Called by ghg_fnc_dsmPlant

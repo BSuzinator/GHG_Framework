@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_respawnInit
 	Called on mission start, sets up respawn parameters

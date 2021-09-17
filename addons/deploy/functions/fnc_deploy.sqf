@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_deploy
 	Teleports vehicle and crew to position in deployZone marker

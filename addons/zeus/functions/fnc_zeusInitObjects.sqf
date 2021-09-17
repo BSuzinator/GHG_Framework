@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_zeusInitObjects
 	Adds synced objects to zeus module on init

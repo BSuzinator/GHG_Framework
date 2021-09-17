@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_respawnTrigger
 	Called by zeus module, spawns wave of players

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_radioJammerInit
 	Called on mission start to activate all jammers

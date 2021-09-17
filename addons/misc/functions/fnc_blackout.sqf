@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_blackout
 	Adds action to object to turn off all lights within the given radius

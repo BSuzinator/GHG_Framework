@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_roadCheck
 	Damages Tires of wheeled vehicles for driving off roads

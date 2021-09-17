@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_getAllTaskInfo
     gets array of all tasks and descriptions in the mission

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_reversePlanes
 	Allows planes to reverse when on ground and stopped

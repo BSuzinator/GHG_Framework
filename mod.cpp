@@ -1,0 +1,12 @@
+name = "Ghost Hawk Gaming";
+picture = "ghg_logo.paa";
+logo = "ghg_logo.paa";
+logoOver = "ghg_logo.paa";
+actionName = "Website";
+action = "https://ghg.suznetworks.com/";
+description = "GHG";
+tooltip = "GHG";
+tooltipOwned = "GHG Owned";
+overview = "Ghost Hawk Gaming mission development framework";
+overviewPicture = "ghg_logo.paa";
+author = "GHG Team";

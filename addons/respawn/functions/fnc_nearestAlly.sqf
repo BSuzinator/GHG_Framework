@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_nearestAlly
 	Called on mission start, shows distance to nearest ally when unconscious

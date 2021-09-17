@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_engineOff
 	Adds option to turn off engine from outside ground vehicles

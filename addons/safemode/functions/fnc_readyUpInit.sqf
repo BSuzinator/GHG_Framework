@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_readyUpInit
 	Adds action to unit to ready up side

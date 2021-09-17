@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_readyUpCheck
 	Checks who get the ready up action

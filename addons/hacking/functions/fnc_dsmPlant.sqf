@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_plantDSM
 	Called by init box of computer, desk or laptop

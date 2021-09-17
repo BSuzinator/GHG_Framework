@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_checkFuelLevel
 	Adds option to check fuel levels from outside vehicles for engineers

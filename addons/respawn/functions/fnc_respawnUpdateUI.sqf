@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_respawnUpdateUI
 	Updates spectator UI option for optout

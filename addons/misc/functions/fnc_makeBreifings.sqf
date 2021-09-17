@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_makeBriefings
 	Compiles briefings for each side and adds to players

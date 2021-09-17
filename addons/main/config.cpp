@@ -9,7 +9,7 @@ class CfgPatches {
             url = "https://ghg.suznetworks.com/";
 
             // Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
-            requiredVersion = 1.98; 
+            requiredVersion = REQUIRED_VERSION; 
             // Required addons, used for setting load order.
             // When any of the addons is missing, pop-up warning will appear when launching the game.
             requiredAddons[] = {};
@@ -26,6 +26,8 @@ class CfgMods {
         name = "Ghost Hawk Gaming";
         picture = "ghg\main\ui\logo.paa";
         actionName = "Website";
+        hideName = 0;
+        hidePicture = 0;
         action = "https://ghg.suznetworks.com/";
         description = "Ghost Hawk Gaming Mission Framework";
     };

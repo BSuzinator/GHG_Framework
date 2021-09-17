@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_spectrumDeviceInit
 	Sets up the spectrum device to track Jammers in the AO

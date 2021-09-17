@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_systemChatTasks
     relays all tasks and info to systemChat

@@ -1,0 +1,1 @@
+#include "\x\ghg\addons\respawn\script_component.hpp"

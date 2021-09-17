@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_deployInit
 	Adds map event handlers and adds actions to vehicles able to deploy.

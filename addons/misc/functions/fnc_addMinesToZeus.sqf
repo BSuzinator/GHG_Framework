@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_addMinesToZeus
 	Converts and replaces 3den placed mines to zeus compatible ones

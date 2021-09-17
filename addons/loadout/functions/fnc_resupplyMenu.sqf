@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_resupplyMenu
 	Creates list of crates availible to players based on faction

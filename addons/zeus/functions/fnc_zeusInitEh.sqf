@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_zeusInitEh
 	Initialize event handlers for a new zeus interface

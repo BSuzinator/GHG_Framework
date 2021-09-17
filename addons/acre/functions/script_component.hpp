@@ -1,0 +1,1 @@
+#include "\x\ghg\addons\acre\script_component.hpp"

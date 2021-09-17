@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_scopeChoice
     Adds ACE option to choose varients of scopes during safe mode

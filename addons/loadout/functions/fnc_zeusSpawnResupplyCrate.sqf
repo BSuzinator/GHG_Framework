@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_zeusSpawnResupplyCrate
 	Function to spawn resupply crate from Zeus Module

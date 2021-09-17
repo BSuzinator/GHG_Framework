@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*======================================
 	ghg_fnc_respawnOptout
 	Adds option to spectator mode to stay in spectator or respawn with the next wave
