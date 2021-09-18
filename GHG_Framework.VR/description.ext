@@ -3,7 +3,7 @@
 		WHAT YOU'RE DOING
 		
 		Try editing the following filies instead:
-			ghg_mission.txt		ghg_config.txt
+			ghg\mission.txt		ghg\config.txt
 ==========================================================*/
 
 #include "ghg\mission.txt"
