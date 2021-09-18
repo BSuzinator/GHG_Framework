@@ -1,0 +1,32 @@
+/*======================================
+	ghg_config.txt
+	Main configuration for missions
+======================================*/
+//Set deploy configuration
+//List of acceptable types: LALO, HALO, SURFACE, none
+//deployRange is how far in meters you can do deploy from main base respawn marker
+deployType = "LALO";
+deployRange = "100";
+
+//Set DSM File Count
+dsmFiles = "";
+
+//Enable road checks and penalties (true/false)
+roadCheck = "true";
+
+//Set Player Factions
+//List of acceptable factions: usArmy, usArmySF, usMC, russian, serbian
+bluFaction = "usArmy";
+opfFaction = "usMC";
+indFaction = "russian";
+
+//Set Player Camo Pattern
+//List of acceptable Camos:
+//usArmy: OEFCP, OCP, UCP, UCPD, ERDL
+//usArmySF: black, desert, woodland
+//usMC: mpD, mpWD
+//russian: emr, emrd, flora
+//serbian: m81
+bluCamo = "ERDL";
+opfCamo = "mpD";
+indCamo = "flora";
