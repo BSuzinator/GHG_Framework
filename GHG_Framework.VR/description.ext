@@ -32,6 +32,8 @@ class Header
 
 class CfgGHG
 {
+    version = "1.0.0";
+
 	#include "ghg\config.txt"
     
     class Briefing

@@ -10,7 +10,7 @@ if ( !hasInterface ) exitWith {};
 private _ghg = missionConfigFile >> "CfgGHG";
 
 player createDiarySubject ["ghg_framework","GHG Framework"];
-private _version = loadFile "ghg\version.txt";
+private _version = getText (_ghg >> "version");
 private _versionString = format ["Current Version: %1", _version];
 player createDiaryRecord ["ghg_framework", ["Version", _versionString]];
 
@@ -95,7 +95,7 @@ private _addBreif = {
 if ( playerSide isEqualTo sideLogic ) then
 {
     {
-        private _subject = toLower _x;
+        private _subject = "brief_" + (toLower _x);
         player createDiarySubject [_subject, _x + " Briefing"];
 
         [_subject, _ghg >> "Briefing" >> _x] call _addBreif;
@@ -103,12 +103,7 @@ if ( playerSide isEqualTo sideLogic ) then
 };
 
 if (getNumber ( _ghg >> "isTraining" ) isEqualTo 1) then {
-	player createDiarySubject ["locations","Locations"];
-	private _locationBrief = call compile preprocessFileLineNumbers getMissionPath "briefing\locations.sqf";
-	// Add items in reverse order
-	reverse _locationBrief;
-		
-	{
-		player createDiaryRecord ["locations", _x];
-	} forEach _locationBrief;
+    private _subject = "locations";
+	player createDiarySubject [_subject, "Locations"];
+    [_subject, "locations"] call _addBreif;
 }; 
