@@ -6,7 +6,7 @@ class Entry1
         "It's early morning in the Al Rayak Region. We just dropped anchor off the Southern Coast. Yesterday the local police force recieved a tip of a band of insurgents setting up a camp in an unnamed village. Given the trouble with the last band of insurgents that wanted to roost here, the police immediately called for us to step in. Our platoon will use the coastal night fog to insert by boat, and hike the rest of the way in. We don't want to upset the local civpop if we can avoid it, and we don't want to let the potential insurgents know we're on to them until it's too late. For the same reason, the Phantom support will be grounded until you make first contact. Once they're on station, that will serve as your extract. Don't worry about the boats.",
         "",
         "There will be civillians in the AO. Three civillians killed is mission fail."
-    }
+    };
 };
 
 class Entry2
