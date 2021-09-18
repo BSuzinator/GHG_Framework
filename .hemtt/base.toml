@@ -1,7 +1,8 @@
-name = "Ghost Hawk Gaming"
+name = "GHG Framework"
 prefix = "ghg"
-author = "QuantX"
+author = "GHG Team"
 template = "cba"
-mainprefix = "z"
+mainprefix = "x"
+files = ["mod.cpp"]
 folder_optionals = true
 sig_version = 3

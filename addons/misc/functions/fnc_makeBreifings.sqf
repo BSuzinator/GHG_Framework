@@ -10,8 +10,10 @@ if ( !hasInterface ) exitWith {};
 private _ghg = missionConfigFile >> "CfgGHG";
 
 player createDiarySubject ["ghg_framework","GHG Framework"];
-private _version = getText (_ghg >> "version");
-private _versionString = format ["Current Version: %1", _version];
+private _missionVersion = getText (_ghg >> "version");
+private _modVersion = QUOTE(VERSION_STR);
+
+private _versionString = format ["Mod Version: %1<br/>Mission Version: %2", _modVersion, _missionVersion];
 player createDiaryRecord ["ghg_framework", ["Version", _versionString]];
 
 player createDiaryRecord ["ghg_framework", ["Radios", "<font size='24' face='TahomaB'>Debug Radios</font>

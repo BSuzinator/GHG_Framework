@@ -1,12 +1,12 @@
 name = "Ghost Hawk Gaming";
-picture = "ghg_logo.paa";
-logo = "ghg_logo.paa";
-logoOver = "ghg_logo.paa";
+picture = "\x\ghg\addons\main\ui\logo.paa";
+logo = "\x\ghg\addons\main\ui\logo.paa";
+logoOver = "\x\ghg\addons\main\ui\logo.paa";
 actionName = "Website";
 action = "https://ghg.suznetworks.com/";
 description = "GHG";
 tooltip = "GHG";
 tooltipOwned = "GHG Owned";
 overview = "Ghost Hawk Gaming mission development framework";
-overviewPicture = "ghg_logo.paa";
+overviewPicture = "\x\ghg\addons\main\ui\header.paa";
 author = "GHG Team";
