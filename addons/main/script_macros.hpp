@@ -4,6 +4,10 @@
 #undef PREP
 #undef PREPMAIN
 
+// COMMENT THIS LINE OUT WHEN BUILDING RELEASE VERSIONS!!!
+#define DISABLE_COMPILE_CACHE
+// COMMENT THIS LINE OUT WHEN BUILDING RELEASE VERSIONS!!!
+
 #ifdef DISABLE_COMPILE_CACHE
     #define PREP(fncName) FUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
     #define PREPMAIN(fncName) FUNCMAIN(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)

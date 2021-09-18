@@ -12,19 +12,19 @@ switch (side _player) do
 {
 	case west: {
         GVAR(ready_blu) = true;
-		publicVariable "SAFE_MODE_READY_BLU";
+		publicVariable QGVAR(ready_blu);
 		systemChat "BLUFOR is now ready for combat";
 		call FUNC(readyUpServer);
 	};
 	case east: {
 		GVAR(ready_opf) = true;
-		publicVariable "SAFE_MODE_READY_OPF";
+		publicVariable QGVAR(ready_opf);
 		systemChat "OPFOR is now ready for combat";
 		call FUNC(readyUpServer);
 	};
 	case resistance: {
 		GVAR(ready_ind) = true;
-		publicVariable "SAFE_MODE_READY_IND";
+		publicVariable QGVAR(ready_ind);
 		systemChat "INDFOR is now ready for combat";
 		call FUNC(readyUpServer);
 	};

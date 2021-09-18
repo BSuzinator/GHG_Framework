@@ -1,5 +1,5 @@
 PREP(zeusInit);
 PREP(zeusSetup);
 PREP(zeusCleanup);
-PREP(zeusInitObjects);
+PREPMAIN(zeusInitObjects);
 PREP(zeusInitEh);

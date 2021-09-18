@@ -1,6 +1,6 @@
 #include "script_component.hpp"
-if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
+#include "XEH_PREP.hpp"
 /*======================================
-    Everything in this file is run once on mission start
+    Everything in this file is run once prior to the main menu
 	Author: CBA_3
 ======================================*/

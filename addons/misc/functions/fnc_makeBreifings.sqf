@@ -7,9 +7,11 @@
 ======================================*/
 if ( !hasInterface ) exitWith {};
 
+private _ghg = missionConfigFile >> "CfgGHG";
+
 player createDiarySubject ["ghg_framework","GHG Framework"];
-_version = loadFile "ghg\version.txt";
-_versionString = format ["Current Version: %1", _version];
+private _version = loadFile "ghg\version.txt";
+private _versionString = format ["Current Version: %1", _version];
 player createDiaryRecord ["ghg_framework", ["Version", _versionString]];
 
 player createDiaryRecord ["ghg_framework", ["Radios", "<font size='24' face='TahomaB'>Debug Radios</font>
@@ -19,7 +21,7 @@ player createDiaryRecord ["ghg_framework", ["Radios", "<font size='24' face='Tah
 		<br /><executeClose expression='if (backpack player isEqualTo """") then {player addBackpack ""B_AssaultPack_blk"";};player addItemToBackpack ""ACRE_PRC117F"";_str = format [""%1 has spawned a AN/PRC 117F from debug menu"",name player];_str remoteExec [""systemChat"", 0, false];'>AN/PRC 117F</executeClose>
 	"]];
 
-_settingString = format ["<font size='24' face='TahomaB'>Mission Settings</font><br />
+private _settingString = format ["<font size='24' face='TahomaB'>Mission Settings</font><br />
 		Deploy Type:   %1 <br />
 		Deploy Range:  %2<br />
 		<br />
@@ -35,47 +37,74 @@ _settingString = format ["<font size='24' face='TahomaB'>Mission Settings</font>
 		IND Faction:   %9<br />
 		IND Camo:      %10<br />
 	",
-	getText ( missionConfigFile >> "CfgGHG" >> "deployType" ),
-	getNumber ( missionConfigFile >> "CfgGHG" >> "deployRange" ),
-	getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles"),
-	getText (missionConfigFile >> "CfgGHG" >> "roadCheck"),
-	getText (missionConfigFile >> "CfgGHG" >> "bluFaction"),
-    getText (missionConfigFile >> "CfgGHG" >> "bluCamo"),
-	getText (missionConfigFile >> "CfgGHG" >> "opfFaction"),
-    getText (missionConfigFile >> "CfgGHG" >> "opfCamo"),
-	getText (missionConfigFile >> "CfgGHG" >> "indFaction"),
-    getText (missionConfigFile >> "CfgGHG" >> "indCamo")	
+	getText ( _ghg >> "deployType" ),
+	getNumber ( _ghg >> "deployRange" ),
+	getNumber (_ghg >> "dsmFiles"),
+	getText (_ghg >> "roadCheck"),
+	getText (_ghg >> "bluFaction"),
+    getText (_ghg >> "bluCamo"),
+	getText (_ghg >> "opfFaction"),
+    getText (_ghg >> "opfCamo"),
+	getText (_ghg >> "indFaction"),
+    getText (_ghg >> "indCamo")	
 	];
 
 player createDiaryRecord ["ghg_framework", ["Mission Settings", _settingString]];
 
-
-private _briefFile = switch ( playerSide ) do
+private _briefSide = _ghg >> "Briefing" >> (switch ( playerSide ) do
 {
-	case west: { "briefing\blufor.sqf" };
-	case east: { "briefing\opfor.sqf" };
-	case resistance: { "briefing\indfor.sqf" };
-	case sideLogic: { "briefing\zeus.sqf" };
-	case civilian: { "briefing\civilian.sqf" };
+	case west: { "Blufor" };
+	case east: { "Opfor" };
+	case resistance: { "Indfor" };
+	case sideLogic: { "Zeus" };
+	case civilian: { "Civilian" };
+});
+
+private _addBreif = {
+    params ["_tab", "_briefSide"];
+
+    private _entries = _briefSide call Bis_fnc_getCfgSubClasses;
+
+    // Add items in reverse order
+    reverse _entries;
+
+    {
+        private _entry = _briefSide >> _x;
+        private _entryText = _entry >> "text";
+
+        private _title = getText (_entry >> "title" );
+        
+        // Merge arrays if needed
+        private _text = if ( isArray(_entryText) ) then
+        {
+            private _arr = getArray _entryText;
+            _arr joinString "<br/>";
+        }
+        else
+        {
+             getText _entryText;
+        };
+
+        player createDiaryRecord [_tab, [_title, _text]];
+    } forEach _entries;
 };
 
-private _brief = call compile preprocessFileLineNumbers _briefFile;
+["Diary", _briefSide] call _addBreif;
 
-if ( isNil "_brief" ) then { _brief = [] };
-
-if ( _brief isEqualType [] ) then
+// Show all breifings to zeus
+if ( playerSide isEqualTo sideLogic ) then
 {
-	// Add items in reverse order
-	reverse _brief;
-	
-	{
-		player createDiaryRecord ["Diary", _x];
-	} forEach _brief;
+    {
+        private _subject = toLower _x;
+        player createDiarySubject [_subject, _x + " Briefing"];
+
+        [_subject, _ghg >> "Briefing" >> _x] call _addBreif;
+    } forEach [ "Blufor", "Opfor", "Indfor", "Civilian" ];
 };
 
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+if (getNumber ( _ghg >> "isTraining" ) isEqualTo 1) then {
 	player createDiarySubject ["locations","Locations"];
-	private _locationBrief = call compile preprocessFileLineNumbers "briefing\locations.sqf";
+	private _locationBrief = call compile preprocessFileLineNumbers getMissionPath "briefing\locations.sqf";
 	// Add items in reverse order
 	reverse _locationBrief;
 		

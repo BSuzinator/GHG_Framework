@@ -1,8 +1,8 @@
 #include "script_component.hpp"
+if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 /*======================================
     Everything in this file is run once on mission start
 	Author: CBA_3
 ======================================*/
 
-private _args = [player, didJIP];
-_args call FUNC(deployInit);
+[] call FUNC(deployInit);

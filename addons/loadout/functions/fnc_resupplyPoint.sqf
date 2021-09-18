@@ -3,7 +3,7 @@
 	ghg_fnc_resupplyPoint
 	Adds laptop and extras to resupply containers
 	Called by init box of resupply container
-	this call ghg_fnc_resupplyPoint;
+	[this] call ghg_fnc_resupplyPoint;
 	Author: Quantx, BSuzinator
 ======================================*/
 params ["_obj"];
@@ -27,7 +27,7 @@ if ( isServer ) then
 				0,
 				"CAN_COLLIDE"
 			];
-			_laptop setObjectTextureGlobal [1, "ghg\images\ghgHeader.paa"];
+			_laptop setObjectTextureGlobal [1, "\x\ghg\addons\main\ui\header.paa"];
 			_laptop setDir getDir _obj;
 			_laptop allowDamage false;
 			_obj setVariable ["laptop_obj", _laptop, true];
@@ -49,7 +49,7 @@ if ( isServer ) then
 				0,
 				"CAN_COLLIDE"
 			];
-			_laptop setObjectTextureGlobal [1, "ghg\images\ghgHeader.paa"];
+			_laptop setObjectTextureGlobal [1, "\x\ghg\addons\main\ui\header.paa"];
 			_laptop setDir (getDir _obj) + 90;
 			_laptop allowDamage false;
 			_laptop enableSimulation false;

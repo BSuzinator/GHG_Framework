@@ -10,7 +10,7 @@
 ======================================*/
 params ["_hostObject", "_radius"];
 
-_statement = {
+private _statement = {
 	params ["_hostObject", "_player", "_actionParams"];
 	_actionParams params ["_radius"];
 	
@@ -53,6 +53,6 @@ _statement = {
 	
 };
 
-_action = ["blackout","Switch Off","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statement,{true},{},[_radius], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
+private _action = ["blackout","Switch Off","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statement,{true},{},[_radius], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 
 [_hostObject, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;

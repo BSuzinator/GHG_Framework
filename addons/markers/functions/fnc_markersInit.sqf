@@ -5,7 +5,6 @@
 	Called on mission start
 	Author: Quantx
 ======================================*/
-params ["_postInit", "_didJIP"];
 
 // Hide template markers
 [{ time > 0 }, {

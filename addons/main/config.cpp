@@ -32,3 +32,5 @@ class CfgMods {
         description = "Ghost Hawk Gaming Mission Framework";
     };
 };
+
+#include "CfgEventhandlers.hpp"

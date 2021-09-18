@@ -13,7 +13,7 @@ private _faction = switch ( side player ) do {
 	case resistance: { getText (missionConfigFile >> "CfgGHG" >> "indFaction") };
 };
 
-private _cratesList = parseSimpleArray (preprocessFile format ["ghg\loadouts\%1\crates\crateList.sqf", _faction]);
+private _cratesList = parseSimpleArray (preprocessFile format ["\x\ghg\addons\loadout\loadouts\%1\crates\crateList.sqf", _faction]);
 
 private _crateName = ["Medical"];
 private _crateFile = ["ghg_medical_placeholder"];

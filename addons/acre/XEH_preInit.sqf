@@ -6,7 +6,4 @@ ADDON = false;
 	Author: CBA_3
 ======================================*/
 
-
-
-// THIS LINE MUST BE LAST
 ADDON = true;

@@ -1,6 +1,6 @@
 PREP(gearUp);
 PREP(scopeChoice);
-PREP(resupplyPoint);
+PREPMAIN(resupplyPoint);
 PREP(resupplyMenu);
 PREP(resupplyModule);
 PREP(resupplyCreate);

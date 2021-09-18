@@ -1,13 +1,13 @@
 #include "script_component.hpp"
+if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 /*======================================
     Everything in this file is run once on mission start
 	Author: CBA_3
 ======================================*/
 
-private _args = [player, didJIP];
-_args call FUNC(addMinesToZeus);
-_args call FUNC(checkFuelLevel);
-_args call FUNC(engineOff);
-_args call FUNC(reversePlanes);
-_args call FUNC(roadCheck);
-_args call FUNC(makeBreifings);
+[] call FUNC(addMinesToZeus);
+[] call FUNC(checkFuelLevel);
+[] call FUNC(engineOff);
+[] call FUNC(reversePlanes);
+[] call FUNC(roadCheck);
+[] call FUNC(makeBreifings);
