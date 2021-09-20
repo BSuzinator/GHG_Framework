@@ -7,14 +7,14 @@
 (_this select 0) params ["_crateScript"];
 (_this select 1) params ["_target", "_player", "_building", "_faction"];
 
-_crate = objNull;
+private _crate = objNull;
 
 private _pos = (ASLtoATL (_building modelToWorldWorld (_building getVariable ["crate_pos", [0,0,1]])));
 private _dir = (getDir _building) + (_building getVariable ["crate_dir", 0]);
 
 if ( _crateScript isEqualTo "ghg_medical_placeholder" ) then
 {
-	_crate = [_pos, _dir] call compile preprocessFileLineNumbers "ghg\loadouts\medical.sqf";
+	_crate = [_pos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\loadout\loadouts\medical.sqf";
 }
 else
 {
@@ -26,7 +26,7 @@ else
 	clearWeaponCargoGlobal _crate;
 	clearBackpackCargoGlobal _crate;
 
-	_crateContents = call compile preprocessFileLineNumbers format ["ghg\loadouts\%1\crates\%2.sqf", _faction, _crateScript];
+	private _crateContents = call compile preprocessFileLineNumbers format ["\x\ghg\addons\loadout\loadouts\%1\crates\%2.sqf", _faction, _crateScript];
 
 	{
 		_crate addItemCargoGlobal _x;
@@ -39,6 +39,6 @@ else
 };
 
 {
-	_curator = _x;
+	private _curator = _x;
 	_curator addCuratorEditableObjects [[_crate], true];
 } forEach allCurators;

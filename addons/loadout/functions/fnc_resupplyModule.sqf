@@ -7,7 +7,7 @@
 private _function = {
 	params ["_modulePos","_attachedObject"];
 
-	private _baseCratesList = parseSimpleArray (preprocessFile format ["ghg\loadouts\baseCrateList.sqf"]);
+	private _baseCratesList = parseSimpleArray (preprocessFile format ["\x\ghg\addons\loadout\loadouts\baseCrateList.sqf"]);
 	
 	private _baseCrateName = ["Medical"];
 	private _baseCrateFile = ["ghg_medical_placeholder"];
