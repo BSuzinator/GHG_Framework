@@ -34,6 +34,8 @@ class CfgGHG
 {
     version = "1.0.0";
 
+    safemodeTimeout = -1;
+
 	#include "ghg\config.txt"
     
     class Briefing

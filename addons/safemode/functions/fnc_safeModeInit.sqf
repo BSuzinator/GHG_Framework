@@ -30,7 +30,7 @@ GVAR(safe) = false;
 					"Safe Mode is now disabled, weapons are hot!"
 				};
 				
-				if ( !(_checked isEqualTo GVAR(safe)) ) then
+				if ! ( _checked isEqualTo GVAR(safe) ) then
 				{
 					[_checked, _message] remoteExecCall [QFUNC(safeModeTrigger), 0, "ghg_safemode_update"]; // Make sure JIP's are notified
 				};
@@ -72,7 +72,7 @@ if ( _timeout != 0 ) then
                     false,
                     "Safe Mode is now disabled, weapons are hot!",
                     5,
-                    "All sides ready, weapons hot in five seconds!"
+                    "Safe Mode timeout expired, weapons hot in five seconds!"
                 ]
             ],
             (_timeout + 5)
