@@ -21,6 +21,8 @@ if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) 
 	
 		private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "CAN_COLLIDE"];
 
+        _logic allowDamage false;
+
 		_logic setCuratorCoef ["Place", 0];
 		_logic setCuratorCoef ["Edit", 0];
 		_logic setCuratorCoef ["Delete", 0];
