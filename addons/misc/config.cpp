@@ -29,8 +29,8 @@ class CfgMainMenuSpotlight
     delete Contact_Campaign;
     delete EastWind;
     delete OldMan;
-    delete Orange_Campaign;
     delete Orange_CampaignGerman;
+    delete Orange_Campaign;
     delete Orange_Showcase_IDAP;
     delete Orange_Showcase_LoW;
     delete SP_FD14;

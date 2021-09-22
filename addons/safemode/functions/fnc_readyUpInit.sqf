@@ -12,7 +12,7 @@ if ( isNil QGVAR(ready_blu) ) then
 
 	if ( isServer ) then
 	{
-		GVAR(start_time)= daytime;
+		GVAR(start_time) = daytime;
 	};
 
 	{

@@ -6,8 +6,7 @@
 ======================================*/
 if ( !hasInterface ) exitWith {};
 
-GVAR(safe) = true;
-player allowDamage false;
+GVAR(safe) = false;
 
 [
 	"Players",
@@ -45,5 +44,38 @@ player allowDamage false;
 [ "ace_firedPlayer", FUNC(safeMode) ] call CBA_fnc_addEventHandler;
 [ "ace_firedPlayerVehicle", FUNC(safeMode) ] call CBA_fnc_addEventHandler;
 
-systemChat "Safe Mode has been enabled, weapons will not fire!";
 [player, currentWeapon player, true] call ace_safemode_fnc_setWeaponSafety;
+
+private _ghg = missionConfigFile >> "CfgGHG";
+
+private _timeout = -1;
+
+if ( isNumber (_ghg >> "safemodeTimeout") ) then
+{
+    _timeout = getNumber (_ghg >> "safemodeTimeout");
+};
+
+if ( _timeout != 0 ) then
+{
+    GVAR(safe) = true;
+    player allowDamage false;
+    systemChat "Safe Mode has been enabled, weapons will not fire!";
+
+    if ( _timeout > 0 ) then
+    {
+        [
+            {time > (_this # 0)},
+            {(_this # 1) call FUNC(safeModeTrigger)},
+            [
+                _timeout,
+                [
+                    false,
+                    "Safe Mode is now disabled, weapons are hot!",
+                    5,
+                    "All sides ready, weapons hot in five seconds!"
+                ]
+            ],
+            (_timeout + 5)
+        ] call CBA_fnc_waitUntilAndExecute;
+    };
+}

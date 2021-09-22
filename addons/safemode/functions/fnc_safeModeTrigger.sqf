@@ -8,6 +8,9 @@ if ( !hasInterface ) exitWith {};
 
 params ["_safeModeEnabled", "_messageAfter", ["_delay", 0], "_messageBefore"];
 
+// Nothing to do
+if ( GVAR(safe) isEqualTo _safeModeEnabled ) exitWith {};
+
 if ( canSuspend && _delay > 0 ) then
 {
 	systemChat _messageBefore;
