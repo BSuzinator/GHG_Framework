@@ -1,5 +1,5 @@
 /*======================================
-		Creates Medical Crate and
+		Creates Vehicle Ammo Crate and
 		loads into vehicle it was
 		called from
 ======================================*/
@@ -11,6 +11,6 @@ _crate setDir _dir;
 clearItemCargoGlobal _crate; 
 
 _crate addItemCargoGlobal ["ToolKit", 2]; 
-_crate addItemCargoGlobal ["B_AssaultPack_blk", 2]; 
+_crate addBackPackCargoGlobal ["B_AssaultPack_blk", 2]; 
 
 _crate

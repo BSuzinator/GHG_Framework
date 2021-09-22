@@ -15,8 +15,8 @@ private _faction = switch ( side player ) do {
 
 private _cratesList = parseSimpleArray (preprocessFile format ["\x\ghg\addons\loadout\loadouts\%1\crates\crateList.sqf", _faction]);
 
-private _crateName = ["Medical"];
-private _crateFile = ["ghg_medical_placeholder"];
+private _crateName = ["Medical","Vehicle_Ammo"];
+private _crateFile = ["ghg_medical_placeholder","ghg_vehicle_ammo_placeholder"];
 
 {
 	_crateName pushBack (_x select 0);
