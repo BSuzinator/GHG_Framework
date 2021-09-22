@@ -34,6 +34,14 @@ if ( ! isNull _logic ) then
 //Respawn all units as rifleman
 [_unit, "soldier_f"] call FUNC_INNER(loadout,gearUp);
 //Sets respawn time
-setPlayerRespawnTime 5000;
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
+{
+	setPlayerRespawnTime 30;
+} 
+else
+{
+	setPlayerRespawnTime 5000;
+};
+
 
 [_unit, _respawnPos] call _setPosAGLS;

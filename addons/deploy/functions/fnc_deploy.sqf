@@ -120,10 +120,19 @@ if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then {
 [_msg] remoteExec ["systemChat", side _player]; // Notify team members
 [_msg] remoteExec ["systemChat", sideLogic ]; // Notify zeus
 
-GVAR(hasDeployed) = true;
+if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
+{
 
-removeMissionEventHandler ["Map", _deployMapID];
-removeMissionEventHandler ["MapSingleClick", _deployEventID];
+} 
+else
+{
+	GVAR(hasDeployed) = true;
+
+	removeMissionEventHandler ["Map", _deployMapID];
+	removeMissionEventHandler ["MapSingleClick", _deployEventID];
+};
+
+
 
 openMap false;
 GVAR(deployParams) = nil;
