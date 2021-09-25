@@ -15,13 +15,16 @@ private _faction = switch ( side player ) do {
 
 private _cratesList = parseSimpleArray (preprocessFile format ["\x\ghg\addons\loadout\loadouts\%1\crates\crateList.sqf", _faction]);
 
-private _crateName = ["Medical","Vehicle_Ammo"];
-private _crateFile = ["ghg_medical_placeholder","ghg_vehicle_ammo_placeholder"];
+private _crateName = ["Medical"];
+private _crateFile = ["ghg_medical_placeholder"];
 
 {
 	_crateName pushBack (_x select 0);
 	_crateFile pushBack (_x select 1);
 } forEach _cratesList;
+
+_crateName append ["Spare Wheel", "Spare Track", "Vehicle Ammo"];
+_crateFile append ["ghg_spare_wheel_placeholder", "ghg_spare_track_placeholder", "ghg_vehicle_ammo_placeholder"];
 
 [
 	"Request Resupply",

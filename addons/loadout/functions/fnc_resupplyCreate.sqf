@@ -17,9 +17,22 @@ switch (_crateScript) do {
 		{
 			_crate = [_pos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\loadout\loadouts\medical.sqf";
 		};
+	case "ghg_spare_wheel_placeholder":
+		{
+			_crate = createVehicle ["ACE_Wheel", _pos, [], 0, "CAN_COLLIDE"];
+			_crate allowDamage false;
+			_crate setDir _dir;
+			[_crate] spawn {params["_crate"];sleep 5; _crate allowDamage true;};
+		};
+	case "ghg_spare_track_placeholder":
+		{
+			_crate = createVehicle ["ACE_Track", _pos, [], 0, "CAN_COLLIDE"];
+			_crate allowDamage false;
+			_crate setDir _dir;
+			[_crate] spawn {params["_crate"];sleep 5; _crate allowDamage true;};
+		};
 	case "ghg_vehicle_ammo_placeholder":
 		{
-			//_crate = [_pos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\loadout\loadouts\vehicleAmmo.sqf";
 			_crate = createVehicle ["Box_NATO_AmmoVeh_F", _pos, [], 0, "CAN_COLLIDE"];
 			_crate setDir _dir;
 			clearItemCargoGlobal _crate; 
