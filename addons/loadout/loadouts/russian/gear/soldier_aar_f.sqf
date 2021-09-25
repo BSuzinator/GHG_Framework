@@ -24,7 +24,8 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     [
       ["rhs_30Rnd_545x39_7N10_AK",6,30],
       ["rhs_mag_rdg2_white",1,1],
-      ["rhs_mag_rgo",2,1]
+      ["rhs_mag_rgo",2,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [

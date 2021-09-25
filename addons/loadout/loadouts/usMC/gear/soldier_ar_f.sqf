@@ -23,7 +23,8 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     "rhsusf_spc_iar",
     [
       ["rhs_mag_100Rnd_556x45_M855_cmag",3,100],
-      ["rhs_mag_m67",1,1]
+      ["rhs_mag_m67",1,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [

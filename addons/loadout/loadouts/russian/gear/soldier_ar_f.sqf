@@ -23,7 +23,8 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     _vests select 4,
     [
       ["rhs_100Rnd_762x54mmR",2,200],
-      ["rhs_mag_rgo",1,1]
+      ["rhs_mag_rgo",1,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [

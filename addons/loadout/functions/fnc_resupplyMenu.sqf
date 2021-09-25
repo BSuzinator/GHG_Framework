@@ -23,6 +23,9 @@ private _crateFile = ["ghg_medical_placeholder"];
 	_crateFile pushBack (_x select 1);
 } forEach _cratesList;
 
+_crateName append ["Spare Wheel", "Spare Track", "Vehicle Ammo"];
+_crateFile append ["ghg_spare_wheel_placeholder", "ghg_spare_track_placeholder", "ghg_vehicle_ammo_placeholder"];
+
 [
 	"Request Resupply",
 	[

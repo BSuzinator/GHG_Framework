@@ -23,5 +23,6 @@
 ["rhs_mag_m713_Red", 1],
 ["rhs_mag_m715_Green", 1],
 ["rhs_mag_m714_White", 2],
-["ACE_EarPlugs", 2]
+["ACE_EarPlugs", 2],
+["diw_armor_plates_main_plate",8]
 ]

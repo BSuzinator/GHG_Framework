@@ -23,7 +23,8 @@ params ["_linkItems", "_uniform", "_vests", "_headgear", "_backpacks"];
     _vests select 2,
     [
       ["rhsusf_200Rnd_556x45_box",2,200],
-      ["rhs_mag_m67",1,1]
+      ["rhs_mag_m67",1,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [

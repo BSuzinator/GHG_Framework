@@ -23,5 +23,6 @@
 ["rhs_GRD40_Red", 1], 
 ["rhs_GRD40_Green", 1], 
 ["rhs_GRD40_White", 2], 
-["ACE_EarPlugs", 2]
+["ACE_EarPlugs", 2],
+["diw_armor_plates_main_plate",8]
 ]

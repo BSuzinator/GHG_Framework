@@ -53,7 +53,7 @@ if ( isServer ) then
 			_laptop setDir (getDir _obj) + 90;
 			_laptop allowDamage false;
 			_laptop enableSimulation false;
-			_obj setVariable ["crate_pos", [-1.789,0,1], true];
+			_obj setVariable ["crate_pos", [-1.789,0,0.3], true];
 			_obj setVariable ["crate_dir", 90, true];
 			_obj setVariable ["laptop_obj", _laptop, true];
 			

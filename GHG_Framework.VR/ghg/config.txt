@@ -11,6 +11,12 @@ deployRange = "100";
 //Set DSM File Count
 dsmFiles = "";
 
+//Safe Mode Timeout
+// -1 = Don't auto-disable safemode
+// 0 = Immediately auto-disable safemode
+// 123 = Disable safemode after 123 seconds
+safemodeTimeout = -1;
+
 //Enable road checks and penalties (true/false)
 roadCheck = "true";
 
