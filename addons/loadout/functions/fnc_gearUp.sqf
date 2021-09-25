@@ -50,7 +50,8 @@ private _uniformItems = [
 	["ACE_epinephrine", 2],
 	["ACE_tourniquet", 2],
 	["ACE_splint", 1],
-	["ACE_Flashlight_XL50", 1]
+	["ACE_Flashlight_XL50", 1],
+	["diw_armor_plates_main_plate",1]
 ];
 
 ((_unitLoadout select 3) select 1) append _uniformItems;
