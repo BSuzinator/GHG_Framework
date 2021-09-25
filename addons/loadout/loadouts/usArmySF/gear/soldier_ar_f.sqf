@@ -25,7 +25,8 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     _vests select 0,
     [
       ["rhsusf_200Rnd_556x45_soft_pouch",2,200],
-      ["rhs_mag_m67",1,1]
+      ["rhs_mag_m67",1,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [

@@ -24,7 +24,8 @@ params ["_linkItems", "_uniform", "_headgear", "_goggle"];
     [
       ["rhs_mag_30Rnd_556x45_M855_Stanag",8,30],
       ["SmokeShell",1,1],
-      ["rhs_mag_m67",2,1]
+      ["rhs_mag_m67",2,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [],

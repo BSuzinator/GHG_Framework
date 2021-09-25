@@ -24,7 +24,8 @@ params ["_linkItems", "_uniform", "_vests", "_headgear", "_backpacks"];
     [
       ["rhssaf_30rnd_556x45_EPR_G36",8,30],
       ["SmokeShell",1,1],
-      ["rhs_mag_m67",2,1]
+      ["rhs_mag_m67",2,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [

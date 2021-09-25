@@ -26,7 +26,8 @@ params ["_linkItems", "_weapons", "_uniform", "_vests", "_headgear", "_backpacks
     [
       ["rhs_mag_30Rnd_556x45_Mk318_Stanag",6,30],
       ["SmokeShell",1,1],
-      ["rhs_mag_m67",2,1]
+      ["rhs_mag_m67",2,1],
+	  ["ACE_EntrenchingTool",1]
     ]
   ],
   [
