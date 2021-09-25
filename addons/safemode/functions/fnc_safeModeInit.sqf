@@ -50,9 +50,9 @@ private _ghg = missionConfigFile >> "CfgGHG";
 
 private _timeout = -1;
 
-if ( isNumber (_ghg >> "safemodeTimeout") ) then
+if ( isNumber (_ghg >> "readyupTimeout") ) then
 {
-    _timeout = getNumber (_ghg >> "safemodeTimeout");
+    _timeout = getNumber (_ghg >> "readyupTimeout");
 };
 
 if ( _timeout != 0 ) then
@@ -60,22 +60,4 @@ if ( _timeout != 0 ) then
     GVAR(safe) = true;
     player allowDamage false;
     systemChat "Safe Mode has been enabled, weapons will not fire!";
-
-    if ( _timeout > 0 ) then
-    {
-        [
-            {time > (_this # 0)},
-            {(_this # 1) call FUNC(safeModeTrigger)},
-            [
-                _timeout,
-                [
-                    false,
-                    "Safe Mode is now disabled, weapons are hot!",
-                    5,
-                    "Safe Mode timeout expired, weapons hot in five seconds!"
-                ]
-            ],
-            (_timeout + 5)
-        ] call CBA_fnc_waitUntilAndExecute;
-    };
 }

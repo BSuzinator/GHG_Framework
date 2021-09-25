@@ -1,8 +1,32 @@
 name = "GHG Framework"
 prefix = "ghg"
 author = "GHG Team"
+
+files = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE"
+]
+
 template = "cba"
 mainprefix = "x"
-files = ["mod.cpp"]
+
 folder_optionals = true
 sig_version = 3
+
+check = [
+    "!cache_enable",
+    "!cache_disable"
+]
+
+[scripts.cache_enable]
+steps_windows = [
+    "powershell -Command '#define DISABLE_COMPILE_CACHE' > addons/main/script_cache.hpp"
+]
+only_development = true
+
+[scripts.cache_disable]
+steps_windows = [
+    "powershell -Command '' > addons/main/script_cache.hpp"
+]
+only_release = true

@@ -10,11 +10,6 @@ if ( isNil QGVAR(ready_blu) ) then
 	GVAR(ready_opf) = true;
 	GVAR(ready_ind) = true;
 
-	if ( isServer ) then
-	{
-		GVAR(start_time) = daytime;
-	};
-
 	{
 		switch ( side _x ) do
 		{
@@ -29,6 +24,44 @@ if ( isNil QGVAR(ready_blu) ) then
 QGVAR(ready_blu) addPublicVariableEventHandler { systemChat "BLUFOR is now ready for combat"; call FUNC(readyUpServer); };
 QGVAR(ready_opf) addPublicVariableEventHandler { systemChat "OPFOR is now ready for combat";  call FUNC(readyUpServer); };
 QGVAR(ready_ind) addPublicVariableEventHandler { systemChat "INDFOR is now ready for combat"; call FUNC(readyUpServer); };
+
+private _ghg = missionConfigFile >> "CfgGHG";
+
+private _timeout = -1;
+
+if ( isNumber (_ghg >> "readyupTimeout") ) then
+{
+    _timeout = getNumber (_ghg >> "readyupTimeout");
+};
+
+if ( isServer ) then
+{
+    GVAR(start_time) = daytime;
+    
+    if ( _timeout > 0 ) then
+    {
+        [
+            {time > _this},
+            {
+                GVAR(ready_blu) = true;
+                GVAR(ready_opf) = true;
+                GVAR(ready_ind) = true;
+                
+                publicVariable QGVAR(ready_blu);
+                publicVariable QGVAR(ready_opf);
+                publicVariable QGVAR(ready_ind);
+                
+                systemChat "BLUFOR is now ready for combat";
+                systemChat "OPFOR is now ready for combat";
+                systemChat "INDFOR is now ready for combat";
+                
+                call FUNC(readyUpServer);
+            },
+            _timeout,
+            _timeout + 5
+        ] call CBA_fnc_waitUntilAndExecute;
+    };
+};
 
 if ( hasInterface ) then
 {
@@ -54,16 +87,22 @@ if ( hasInterface ) then
 		_rdyAct
 	] call ace_interact_menu_fnc_addActionToObject;
 	
-    [{
-        params ["_args", "_handle"];
-        
-        if ( GVAR(ready_blu) && GVAR(ready_opf) && GVAR(ready_ind) ) then
-        {
-            _handle call CBA_fnc_removePerFrameHandler;
-        }
-        else
-        {
-            systemChat format["It has been %1 minutes since mission start, weapons are cold.", floor (time / 60)];
-        };
-    }, 60, []] call CBA_fnc_addPerFrameHandler;
+    if ( _timeout != 0 ) then
+    {
+        [{
+            params ["_args", "_handle"];
+            
+            if ( GVAR(ready_blu) && GVAR(ready_opf) && GVAR(ready_ind) ) then
+            {
+                _handle call CBA_fnc_removePerFrameHandler;
+            }
+            else
+            {
+                if ( time > 30 ) then
+                {
+                    systemChat format["It has been %1 minutes since mission start, weapons are cold.", round (time / 60)];
+                };
+            };
+        }, 60, []] call CBA_fnc_addPerFrameHandler;
+    };
 };

@@ -14,6 +14,12 @@ dsmFiles = "";
 //Enable road checks and penalties (true/false)
 roadCheck = "true";
 
+// Set Ready Up Timeout
+// -1   = Don't auto-ready up
+//  0   = Immediately auto-ready up
+//  123 = Auto-ready up after 123 seconds
+readyupTimeout = 10;
+
 //Set Player Factions
 //List of acceptable factions: usArmy, usArmySF, usMC, russian, serbian
 bluFaction = "usArmy";

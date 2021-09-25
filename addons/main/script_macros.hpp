@@ -4,9 +4,7 @@
 #undef PREP
 #undef PREPMAIN
 
-// COMMENT THIS LINE OUT WHEN BUILDING RELEASE VERSIONS!!!
-// #define DISABLE_COMPILE_CACHE
-// COMMENT THIS LINE OUT WHEN BUILDING RELEASE VERSIONS!!!
+#include "\x\ghg\addons\main\script_cache.hpp"
 
 #ifdef DISABLE_COMPILE_CACHE
     #define PREP(fncName) FUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
