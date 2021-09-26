@@ -50,7 +50,7 @@ private _sigs = [];
 	// Let the server know our new override status
 	if ( (_x getVariable ["acre_jamming_override_last", 0]) != _override ) then
 	{
-		[player, _x, _override] remoteExecCall ["ghg_fnc_spectrumDeviceOverride", 2];
+		[player, _x, _override] remoteExecCall [QFUNC(spectrumDeviceOverride), 2];
 		_x setVariable ["acre_jamming_override_last", _override];
 	};
 	
