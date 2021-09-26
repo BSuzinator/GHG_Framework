@@ -1,0 +1,1 @@
+#include "\x\ghg\addons\misc\script_component.hpp"

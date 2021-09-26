@@ -1,0 +1,1 @@
+#include "\x\ghg\addons\deploy\script_component.hpp"

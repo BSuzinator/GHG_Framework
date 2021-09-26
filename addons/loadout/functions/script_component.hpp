@@ -1,0 +1,1 @@
+#include "\x\ghg\addons\loadout\script_component.hpp"
