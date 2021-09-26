@@ -10,7 +10,7 @@ if ( !canSuspend ) exitWith { _this spawn FUNC(safeModeTrigger); };
 params ["_safeModeEnabled", "_messageAfter", ["_delay", 0], "_messageBefore"];
 
 // Nothing to do
-if ( GVAR(safe) isEqualTo _safeModeEnabled ) exitWith {};
+if ( (!isNil QGVAR(safe)) && {GVAR(safe) isEqualTo _safeModeEnabled} ) exitWith {};
 
 if ( _delay > 0 ) then
 {
