@@ -57,8 +57,7 @@ if ( isServer ) then
                 
                 call FUNC(readyUpServer);
             },
-            _timeout,
-            _timeout + 5
+            _timeout
         ] call CBA_fnc_waitUntilAndExecute;
     };
 };
