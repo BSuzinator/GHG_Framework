@@ -13,7 +13,7 @@ call compile (profileNamespace getVariable ["ghg_local_function", ""]);
 [
 	"Players",
 	"Respawn Wave",
-	{ _this remoteExecCall ["ghg_fnc_respawnTrigger"]; }
+	{ _this remoteExecCall [QFUNC(respawnTrigger)]; }
 ] call zen_custom_modules_fnc_register;
 
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
