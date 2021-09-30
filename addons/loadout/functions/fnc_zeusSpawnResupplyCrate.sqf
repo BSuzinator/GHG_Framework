@@ -28,7 +28,10 @@ switch (_crateScript) do {
 		{
 			_crate = createVehicle ["Box_Syndicate_Ammo_F", _pos, [], 0, "CAN_COLLIDE"];
 			_crate setDir _dir;
-			clearItemCargoGlobal _crate; 
+			clearItemCargoGlobal _crate;
+			clearMagazineCargoGlobal _crate;
+			clearWeaponCargoGlobal _crate;
+			clearBackpackCargoGlobal _crate;			
 			
 			_crate addItemCargoGlobal ["ACE_DefusalKit", 2];
 			_crate addItemCargoGlobal ["ACE_Clacker", 2];
