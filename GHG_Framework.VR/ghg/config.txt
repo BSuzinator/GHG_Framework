@@ -24,7 +24,7 @@ roadCheck = "true";
 // -1   = Don't auto-ready up
 //  0   = Immediately auto-ready up
 //  123 = Auto-ready up after 123 seconds
-readyupTimeout = 10;
+readyUpTimeout = 10;
 
 //Set Player Factions
 //List of acceptable factions: usArmy, usArmySF, usMC, russian, serbian

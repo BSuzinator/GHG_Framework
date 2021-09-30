@@ -29,9 +29,9 @@ private _ghg = missionConfigFile >> "CfgGHG";
 
 private _timeout = -1;
 
-if ( isNumber (_ghg >> "readyupTimeout") ) then
+if ( isNumber (_ghg >> "readyUpTimeout") ) then
 {
-    _timeout = getNumber (_ghg >> "readyupTimeout");
+    _timeout = getNumber (_ghg >> "readyUpTimeout");
 };
 
 if ( isServer ) then

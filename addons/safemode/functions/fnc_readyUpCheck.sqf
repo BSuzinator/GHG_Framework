@@ -6,6 +6,15 @@
 ======================================*/
 params ["_target", "_player"];
 
+private _ghg = missionConfigFile >> "CfgGHG";
+
+private _timeout = -1;
+
+if ( isNumber (_ghg >> "readyUpTimeout") ) then
+{
+    _timeout = getNumber (_ghg >> "readyUpTimeout");
+};
+
 private _rankList = [
 	"PRIVATE",
 	"CORPORAL",
@@ -45,4 +54,4 @@ private _sideReady = switch (_mySide) do
 	case resistance: { GVAR(ready_ind) };
 };
 
-(_myRank >= _maxRank) && (!_sideReady);
+(_myRank >= _maxRank) && (!_sideReady) && (_timeout != 0);
