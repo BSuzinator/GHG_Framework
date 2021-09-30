@@ -41,6 +41,15 @@ switch (_crateScript) do {
 			_crate addBackPackCargoGlobal ["B_AssaultPack_blk", 2];
 			[_crate, 4] call ace_cargo_fnc_setSize;
 		};
+	case "ghg_vehicle_fuel_placeholder":
+		{
+			_crate = createVehicle ["CargoNet_01_barrels_F", _modulePos, [], 0, "CAN_COLLIDE"];
+			_crate setDir _dir;
+			clearItemCargoGlobal _crate; 
+
+			[_crate, 100] call ace_refuel_fnc_setFuel;
+			[_crate, 4] call ace_cargo_fnc_setSize;
+		};
 	default
 		{
 			_crate = createVehicle ["Box_Syndicate_Ammo_F", _pos, [], 0, "CAN_COLLIDE"];
