@@ -4,7 +4,6 @@ PREP(checkFuelLevel);
 PREP(engineOff);
 PREP(fileExists);
 PREP(reversePlanes);
-PREP(roadCheck);
 PREP(makeBreifings);
 PREP(getAllTaskInfo);
 PREP(systemChatAllTasks);
