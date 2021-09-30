@@ -54,7 +54,7 @@ switch (_crateScript) do {
 			_crate setDir _dir;
 			clearItemCargoGlobal _crate; 
 
-			[_crate, 100] call ace_refuel_fnc_setFuel;
+			[_crate, 100] call ace_refuel_fnc_makeSource;
 			[_crate, 4] call ace_cargo_fnc_setSize;
 		};
 	default
