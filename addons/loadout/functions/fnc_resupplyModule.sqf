@@ -17,8 +17,8 @@ private _function = {
 		_baseCrateFile pushBack (_x select 1);
 	} forEach _baseCratesList;
 
-	_baseCrateName append ["Spare Wheel", "Spare Track", "Vehicle Fuel", "Vehicle Ammo"];
-	_baseCrateFile append ["ghg_spare_wheel_placeholder", "ghg_spare_track_placeholder", "ghg_vehicle_fuel_placeholder", "ghg_vehicle_ammo_placeholder"];
+	_baseCrateName append ["Demolitions", "Spare Wheel", "Spare Track", "Vehicle Fuel", "Vehicle Ammo"];
+	_baseCrateFile append ["ghg_demolition_placeholder", "ghg_spare_wheel_placeholder", "ghg_spare_track_placeholder", "ghg_vehicle_fuel_placeholder", "ghg_vehicle_ammo_placeholder"];
 
 	[
 		"Spawn Resupply",

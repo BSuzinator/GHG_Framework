@@ -17,6 +17,22 @@ switch (_crateScript) do {
 		{
 			_crate = [_pos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\loadout\loadouts\medical.sqf";
 		};
+	case "ghg_demolition_placeholder":
+		{
+			_crate = createVehicle ["Box_Syndicate_Ammo_F", _pos, [], 0, "CAN_COLLIDE"];
+			_crate setDir _dir;
+			clearItemCargoGlobal _crate; 
+			
+			_crate addItemCargoGlobal ["ACE_DefusalKit", 2];
+			_crate addItemCargoGlobal ["ACE_Clacker", 2];
+			_crate addItemCargoGlobal ["ACE_M26_Clacker", 2];
+			_crate addItemCargoGlobal ["SatchelCharge_Remote_Mag", 2];
+			_crate addItemCargoGlobal ["DemoCharge_Remote_Mag", 4];
+			_crate addItemCargoGlobal ["rhsusf_m112x4_mag", 4];
+			_crate addItemCargoGlobal ["rhsusf_m112_mag", 8];
+			_crate addBackPackCargoGlobal ["B_Kitbag_cbr", 2];
+			[_crate, 2] call ace_cargo_fnc_setSize;
+		};
 	case "ghg_spare_wheel_placeholder":
 		{
 			_crate = createVehicle ["ACE_Wheel", _pos, [], 0, "CAN_COLLIDE"];
