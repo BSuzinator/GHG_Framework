@@ -1,3 +1,5 @@
+PREP(aiGear);
+PREP(aiGearModule);
 PREP(gearUp);
 PREP(scopeChoice);
 PREPMAIN(resupplyPoint);
