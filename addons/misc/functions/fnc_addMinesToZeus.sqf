@@ -258,3 +258,16 @@ if ( !isServer ) exitWith {};
 	_curator addCuratorEditableObjects [[_newMine], true];
 	} forEach allCurators;
 } foreach allMines;
+
+_allModules = [];
+{
+_object = _x;
+_condition = ["module", typeOf _object, false] call BIS_fnc_inString;
+if (_condition) then {
+	{
+		_x addCuratorEditableObjects [[_object], true];
+	} forEach allCurators;
+	_allModules pushback _object;
+};
+} forEach allMissionObjects "";
+missionNameSpace setVariable ["ghg_mission_modules",_allModules,true];

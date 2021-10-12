@@ -7,3 +7,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 
 [] call FUNC(gearUp);
 [] call FUNC(resupplyModule);
+[] call FUNC(aiGearModule);
