@@ -29,7 +29,7 @@ private _settingString = format ["<font size='24' face='TahomaB'>Mission Setting
 		<br />
 		DSM Filecount: %3<br />
 		<br />
-		Road Check:    %4<br />
+		ReadyUp Timeout:    %4<br />
 		<br />
 		<font size='16' face='TahomaB'>Player Information:</font><br />
 		BLU Faction:   %5<br />
@@ -42,7 +42,7 @@ private _settingString = format ["<font size='24' face='TahomaB'>Mission Setting
 	getText ( _ghg >> "deployType" ),
 	getNumber ( _ghg >> "deployRange" ),
 	getNumber (_ghg >> "dsmFiles"),
-	getText (_ghg >> "roadCheck"),
+	getNumber (_ghg >> "readyUpTimeout"),
 	getText (_ghg >> "bluFaction"),
     getText (_ghg >> "bluCamo"),
 	getText (_ghg >> "opfFaction"),
