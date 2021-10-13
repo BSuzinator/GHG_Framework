@@ -22,4 +22,8 @@ clearBackpackCargoGlobal _newVehicle;
 ["ACE_Wheel", _newVehicle] call ace_cargo_fnc_removeCargoItem;
 _newVehicle setVehicleAmmo 0;
 _newVehicle setFuel 0;
+{
+	_x addCuratorEditableObjects [[_newVehicle], false];
+	[_x, [[_newVehicle], false]] remoteExec ["addCuratorEditableObjects", 2];
+} forEach allCurators;
 _newVehicle

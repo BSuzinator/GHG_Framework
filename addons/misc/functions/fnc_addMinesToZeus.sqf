@@ -254,8 +254,8 @@ if ( !isServer ) exitWith {};
 	};
 	_newMine setVectorUp surfaceNormal position _newMine;
 	{
-	_curator = _x;
-	_curator addCuratorEditableObjects [[_newMine], true];
+	_x addCuratorEditableObjects [[_newMine], false];
+	[_x, [[_newMine], false]] remoteExec ["addCuratorEditableObjects", 2];
 	} forEach allCurators;
 } foreach allMines;
 

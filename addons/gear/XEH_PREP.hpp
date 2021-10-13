@@ -8,5 +8,7 @@ PREP(resupplyModule);
 PREP(resupplyCreate);
 PREP(wreckInit);
 PREP(wreckRebuild);
+PREP(wreckRebuildModule);
 PREP(wreckRecover);
+PREP(wreckRecoverModule);
 PREP(zeusSpawnResupplyCrate);

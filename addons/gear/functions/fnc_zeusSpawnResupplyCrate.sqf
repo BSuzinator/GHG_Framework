@@ -99,8 +99,8 @@ switch (_crateScript) do {
 };
 
 {
-	_curator = _x;
-	_curator addCuratorEditableObjects [[_crate], true];
+	_x addCuratorEditableObjects [[_crate], false];
+	[_x, [[_crate], false]] remoteExec ["addCuratorEditableObjects", 2];
 } forEach allCurators;
 
 if (_isAirdrop) then {
