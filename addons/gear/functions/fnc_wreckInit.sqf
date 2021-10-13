@@ -24,12 +24,12 @@ _statement = {
 				_passedParams params ["_target","_player","_actionParams"];
 				_newVehicle = [_target] call FUNC(wreckRebuild);				
 			};
-			[5, [_target,_player,_actionParams], _rebuildProgressComplete, {_string = "Stopped Rebuilding"; hint _string;systemChat _string;}, "Rebuilding Wreck"] call ace_common_fnc_progressBar;
+			[30, [_target,_player,_actionParams], _rebuildProgressComplete, {_string = "Stopped Rebuilding"; hint _string;systemChat _string;}, "Rebuilding Wreck"] call ace_common_fnc_progressBar;
 		};
 		_rebuildAction = ["RebuildWreck", "Rebuild Wreck", "", _rebuildStatement, _rebuildCondition] call ace_interact_menu_fnc_createAction;
 		[_scrapObject, 0, ["ACE_MainActions"], _rebuildAction] call ace_interact_menu_fnc_addActionToObject;
 	};
-	[5, [_target,_player,_actionParams], _progressComplete, {_string = "Stopped Recovering"; hint _string;systemChat _string;}, "Recovering Wreck"] call ace_common_fnc_progressBar;
+	[30, [_target,_player,_actionParams], _progressComplete, {_string = "Stopped Recovering"; hint _string;systemChat _string;}, "Recovering Wreck"] call ace_common_fnc_progressBar;
 
 };
 _action = ["RecoverWreck", "Recover Wreck", "", _statement, _condition] call ace_interact_menu_fnc_createAction;
