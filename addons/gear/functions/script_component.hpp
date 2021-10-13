@@ -1,1 +1,1 @@
-#include "\x\ghg\addons\loadout\script_component.hpp"
+#include "\x\ghg\addons\gear\script_component.hpp"

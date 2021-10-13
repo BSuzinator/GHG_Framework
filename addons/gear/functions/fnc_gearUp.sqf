@@ -36,9 +36,9 @@ if ( isNil "_faction" ) exitWith {};
 private _gearArgs = [["ItemMap", "", "", "ItemCompass", "ACE_Altimeter", "ACE_NVG_Wide"]];
 
 // Add camo arguments
-_gearArgs append parseSimpleArray preprocessFile format [ "\x\ghg\addons\loadout\loadouts\%1\camo\%2.sqf", _faction select 0, _faction select 1 ];
+_gearArgs append parseSimpleArray preprocessFile format [ "\x\ghg\addons\gear\loadouts\%1\camo\%2.sqf", _faction select 0, _faction select 1 ];
 
-private _unitLoadout = _gearArgs call compile preprocessFileLineNumbers format [ "\x\ghg\addons\loadout\loadouts\%1\gear\%2.sqf", _faction select 0, _unitType ];
+private _unitLoadout = _gearArgs call compile preprocessFileLineNumbers format [ "\x\ghg\addons\gear\loadouts\%1\gear\%2.sqf", _faction select 0, _unitType ];
 
 // Add items to uniform
 private _uniformItems = [
