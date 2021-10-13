@@ -11,7 +11,7 @@ GVAR(optout) = true;
 call compile (profileNamespace getVariable ["ghg_local_function", ""]);
 
 [
-	"Players",
+	"Ghost Hawk Gaming",
 	"Respawn Wave",
 	{ _this remoteExecCall [QFUNC(respawnTrigger)]; }
 ] call zen_custom_modules_fnc_register;

@@ -5,4 +5,4 @@
 	Called at mission start, JIP, and respawn
 	Author: BSuz
 ======================================*/
-["GhostHawkGaming", "AI GearUp", FUNC(aiGear)] call zen_custom_modules_fnc_register;
+["Ghost Hawk Gaming", "AI GearUp", FUNC(aiGear)] call zen_custom_modules_fnc_register;

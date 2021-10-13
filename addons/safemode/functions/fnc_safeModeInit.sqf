@@ -9,7 +9,7 @@ if ( !hasInterface ) exitWith {};
 GVAR(safe) = false;
 
 [
-	"Players",
+	"Ghost Hawk Gaming",
 	"Safe Mode",
 	{
 		[
