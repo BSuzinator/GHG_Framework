@@ -7,7 +7,11 @@
 params ["_unit", "_id", "_uid", "_name"];
 
 private _logic = getAssignedCuratorUnit _unit;
-unassignCurator _logic;
-deleteVehicle _logic;
 
-true; // MUST BE LAST
+if ( ! isNull _logic ) then
+{
+    unassignCurator _logic;
+    deleteVehicle _logic;
+};
+
+true; // Prevents zeus slot from being deleted: MUST BE LAST

@@ -5,7 +5,7 @@
 	Author: Quantx
 ======================================*/
 params ["_logic", "_unit"];
-			
+
 _logic addEventHandler [ "curatorFeedbackMessage", bis_fnc_showCuratorFeedbackMessage ];
 _logic addEventHandler [ "curatorPinged",          bis_fnc_curatorPinged ];
 _logic addEventHandler [ "curatorObjectPlaced",    bis_fnc_curatorObjectPlaced ];

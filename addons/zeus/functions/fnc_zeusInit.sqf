@@ -6,9 +6,11 @@
 ======================================*/
 if ( isServer ) then
 {
+    addMissionEventHandler ["HandleDisconnect", FUNC(zeusCleanup)];
+
     GVAR(zeusGroup) = createGroup sideLogic;
 
-    // Failsafe if ghg_fnc_zeusInitObjects is not run
+    // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run
     [{ time > 10 }, {
         if ( isNil QGVAR(zeusObjects) ) then
         {
