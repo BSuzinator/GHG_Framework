@@ -14,4 +14,4 @@ if ( ! isNull _logic ) then
     deleteVehicle _logic;
 };
 
-true; // Prevents zeus slot from being deleted: MUST BE LAST
+false;
