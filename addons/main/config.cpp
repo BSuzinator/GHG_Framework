@@ -34,3 +34,4 @@ class CfgMods {
 };
 
 #include "CfgEventhandlers.hpp"
+#include "CfgGHG.hpp"
