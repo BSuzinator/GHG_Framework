@@ -21,12 +21,13 @@ _sqlResult isEqualTo [
 ]; // True
 
 ======================================*/
-if ( (typeName _this) != "STRING" ) exitWith {[]};
-if ( !isServer ) exitWith {[]};
+if ( (typeName _this) != "STRING" ) exitWith {[[], "argument passed was not a string"]};
+if ( !isServer ) exitWith {[[], "function was not called on server"]};
 
 private _result = [0, "SQL", _this] call FUNC(extDB3);
 _result params ["_type", "_data"];
 
+// Error
 if ( _type == 0 ) exitWith {[[], _data]};
 
 if ( _type == 2 ) then // Multi-part message
@@ -40,10 +41,10 @@ if ( _type == 2 ) then // Multi-part message
         // Need to call extension manually since it's not returning a full array here
         _lastmsg = "extDB3" callExtension _cmd;
         
-        _mpm = _mpm + _lastmsg;
+        _msg = _msg + _lastmsg;
     };
 
     _data = call compile _msg;
 };
 
-_data;
+[_data, ""];

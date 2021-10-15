@@ -12,7 +12,9 @@ params [
     [ "_netId", netId player, [0, objNull, "", sideLogic, grpNull, []] ]
 ];
 
-if (_msg == "") exitWith {};
+if (_msg == "") exitWith {
+    [_args, [], "no sql command provided"] remoteExecCall [_callback, _netId];
+};
 
 private _mode = if (_callback == "") then {1} else {2};
 

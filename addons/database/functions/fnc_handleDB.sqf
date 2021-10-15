@@ -37,10 +37,10 @@ private _remove = [];
                 // Need to call extension manually since it's not returning a full array here
                 _lastmsg = "extDB3" callExtension _cmd;
                 
-                _mpm = _mpm + _lastmsg;
+                _msg = _msg + _lastmsg;
             };
 
-            _data = call compile _msg;
+            _data = [] call compile _msg;
 
             [_y # 0, _data, ""] remoteExecCall (_y # 1);
             _remove pushBack _x;
