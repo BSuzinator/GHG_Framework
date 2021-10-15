@@ -25,7 +25,7 @@ _checkInfoStatement = {
 	hint _string;
 };
 _checkInfoAction = ["checkWreckInfo", "Wreck Info", "", _checkInfoStatement, {true}] call ace_interact_menu_fnc_createAction;
-[_scrapObject, 0, ["ACE_MainActions"], _checkInfoAction] call ace_interact_menu_fnc_addActionToObject;
+[_scrapObject, 0, ["ACE_MainActions"], _checkInfoAction] remoteExec ["ace_interact_menu_fnc_addActionToObject",-2];
 {
 	_x addCuratorEditableObjects [[_scrapObject], false];
 	[_x, [[_scrapObject], false]] remoteExec ["addCuratorEditableObjects", 2];
