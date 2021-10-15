@@ -1,4 +1,6 @@
 PREP(extDB3)
 PREP(databaseInit)
 PREP(requestDB)
-PREPMAIN(execDB)
+PREP(handleDB)
+PREPMAIN(spawnDB)
+PREPMAIN(callDB)

@@ -1,18 +1,20 @@
 #include "script_component.hpp"
 /*======================================
-    DO NOT CALL THIS DIRECTLY USE: ghg_fnc_execDB
+    DO NOT CALL THIS DIRECTLY USE: ghg_fnc_spawnDB or ghg_fnc_callDB
     Wrapper for extDB3 interactions
 	Author: Quantx
 ======================================*/
 params [
     [ "_callType", -1, [0] ],
-    [ "_protoName", "", [""] ],
+    [ "_protoName", "", ["", 0] ],
     ["_data", objNull, ["", []] ]
 ];
 
 // Check arguments
 _callType = floor _callType;
+_protoName = str _protoName;
 if ( _callType < 0 ) exitWith {[0, "invalid call type specified"]};
+if ( _callType == 5 ) exitWith {[0, "call type 5 is unsupported"]}; // This call returns a random string, not an array
 if ( _protoName == "" || { (_protoName find ":") >= 0 } ) exitWith {[0, "invalid protocol name"]};
 
 // Check environment
