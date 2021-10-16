@@ -35,7 +35,7 @@ _sqlResult isEqualTo [
 ======================================*/
 
 params [
-    [ "_msg", "", [""] ],
+    [ "_msg", objNull, ["", []] ],
     [ "_callback", "", [""] ],
     [ "_args", [], [[]] ],
     [ "_netId", netId player, [0, objNull, "", sideLogic, grpNull, []] ]
@@ -44,7 +44,7 @@ params [
 // Re-run this function on the server
 if ( !isServer ) exitWith
 {
-    if ( _msg == "" ) then 
+    if ( isNull _msg ) then
     {
         false; // Return value, must be last
     }
@@ -57,7 +57,7 @@ if ( !isServer ) exitWith
 
 // We must be on the server here
 
-if (_msg == "") exitWith {
+if ( isNull _msg ) exitWith {
     if ( _callback != "" ) then {
         [_args, [], "no sql command provided"] remoteExecCall [_callback, _netId];
     };
