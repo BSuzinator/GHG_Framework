@@ -21,7 +21,7 @@ _sqlResult isEqualTo [
 ]; // True
 
 ======================================*/
-if ( (typeName _this) != "STRING" ) exitWith {[[], "argument passed was not a string"]};
+if ! ( (typeName _this) == "STRING" || (typeName _this) == "ARRAY" ) exitWith {[[], "argument passed was not a string or array"]};
 if ( !isServer ) exitWith {[[], "function was not called on server"]};
 
 private _result = [0, "SQL", _this] call FUNC(extDB3);
