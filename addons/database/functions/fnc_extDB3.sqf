@@ -18,7 +18,7 @@ if ( _callType == 5 ) exitWith {[0, "call type 5 is unsupported"]}; // This call
 if ( _protoName == "" || { (_protoName find ":") >= 0 } ) exitWith {[0, "invalid protocol name"]};
 
 // Check environment
-if ( !([] call extDB3_fnc_isLoaded) ) exitWith {[0, "extDB3 is not loaded"]};
+if ( (isNil "extDB3_fnc_isLoaded") || { (!(extDB3_fnc_isLoaded isEqualType {})) || { !([] call extDB3_fnc_isLoaded) } } ) exitWith {[0, "extDB3 is not loaded"]};
 if ( !isServer ) exitWith {[0, "was not executed on server"]}
 
 private _args = (str _callType) + ":" + _protoName;

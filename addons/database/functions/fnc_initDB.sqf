@@ -4,11 +4,13 @@
 	Called on breifing start
 	Author: Quantx
 ======================================*/
-if ! ( isServer && ( [] call extDB3_fnc_isLoaded ) ) exitWith {};
+// Check enviornment
+private _res = [9, "VERSION"] call FUNC(extDB3);
+if ((_res # 0) == 0) exitWith {};
 
 private _database = getText( configFile >> "CfgGHG" >> "database" );
 
-// Add data
+// Add database
 [9, "ADD_DATABASE", _database] call FUNC(extDB3);
 [9, "ADD_DATABASE_PROTOCOL", [_database, "SQL", "SQL", "TEXT-NULL"]] call FUNC(extDB3);
 
