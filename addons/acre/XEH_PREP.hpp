@@ -1,4 +1,5 @@
 PREP(acreInit);
+PREP(acreOfficerGod);
 PREP(acreSetDefaultChannel);
 PREP(radioJammerInit);
 PREPMAIN(radioJammer);

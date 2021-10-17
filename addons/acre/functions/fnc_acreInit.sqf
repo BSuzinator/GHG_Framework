@@ -37,7 +37,12 @@ GVAR(labels) = [
 //Adds all players to God Mode Group 1
 [allPlayers, 0] call acre_api_fnc_godModeModifyGroup;
 //Adds all Officers to God Mode Group 2
-[["76561198080019809","76561198048060619","76561198044516211","76561198130276179","76561197991330133"], 1] call acre_api_fnc_godModeModifyGroup;
+if ( isServer ) then
+{
+    ["SELECT steamID64 FROM users WHERE isOfficer=1 OR isJuniorOfficer=1", QFUNC(acreOfficerGod), [], 0] call MAINFUNC(spawnDB);
+};
+
+
 if ( !hasInterface ) exitWith {};
 
 // Mute the radio
