@@ -5,3 +5,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 	Author: CBA_3
 ======================================*/
 
+if ( isServer ) then
+{
+    [FUNC(handleDB), 0.5, []] call CBA_fnc_addPerFrameHandler;
+};

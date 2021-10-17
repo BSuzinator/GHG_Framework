@@ -38,29 +38,31 @@ params [
     [ "_msg", objNull, ["", []] ],
     [ "_callback", "", [""] ],
     [ "_args", [], [[]] ],
-    [ "_netId", netId player, [0, objNull, "", sideLogic, grpNull, []] ]
+    [ "_netId", clientOwner, [0, objNull, "", sideLogic, grpNull, []] ]
 ];
 
 // Re-run this function on the server
 if ( !isServer ) exitWith
 {
-    if ( isNull _msg ) then
-    {
-        false; // Return value, must be last
-    }
-    else
+    if ( _msg isEqualTypeAny ["", []] ) then
     {
         _this remoteExecCall [QFUNC(spawnDB), 2];
         true; // Return value, must be last
+    }
+    else
+    {
+        false; // Return value, must be last
     };
 };
 
 // We must be on the server here
 
-if ( isNull _msg ) exitWith {
+if ! ( _msg isEqualTypeAny ["", []] ) exitWith {
     if ( _callback != "" ) then {
         [_args, [], "no sql command provided"] remoteExecCall [_callback, _netId];
     };
+    
+    false;
 };
 
 private _mode = if (_callback == "") then {1} else {2};
@@ -77,12 +79,16 @@ if (_type == 0) exitWith
     };
     
     diag_log format ["GHG extDB3 error: %1", _data];
+    
+    false;
 };
 
 if (_type == 2) then
 {
-    if ( _callback == "" ) exitWith { diag_log "GHG extDB3 error: returned ID, but no callback assigned" };
+    if ( _callback == "" ) exitWith { diag_log "GHG extDB3 error: returned ID, but no callback assigned"; false; };
 
     // Add call back to list
     GVAR(callbacks) set [ _data, [_args, [_callback, _netId]] ];
 };
+
+true;

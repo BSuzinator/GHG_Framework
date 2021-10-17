@@ -12,27 +12,20 @@ params [
 
 // Check arguments
 _callType = floor _callType;
-_protoName = str _protoName;
+if ( _protoName isEqualType 0 ) then { _protoName = str _protoName; };
 if ( _callType < 0 ) exitWith {[0, "invalid call type specified"]};
 if ( _callType == 5 ) exitWith {[0, "call type 5 is unsupported"]}; // This call returns a random string, not an array
 if ( _protoName == "" || { (_protoName find ":") >= 0 } ) exitWith {[0, "invalid protocol name"]};
 
 // Check environment
-if ( (isNil "extDB3_fnc_isLoaded") || { (!(extDB3_fnc_isLoaded isEqualType {})) || { !([] call extDB3_fnc_isLoaded) } } ) exitWith {[0, "extDB3 is not loaded"]};
-if ( !isServer ) exitWith {[0, "was not executed on server"]}
+if ( (isNil "extDB3_var_loaded") || { (!(extDB3_var_loaded isEqualType {})) || { !([] call extDB3_var_loaded) } } ) exitWith {[0, "extDB3 is not loaded"]};
+if ( !isServer ) exitWith {[0, "was not executed on server"]};
 
 private _args = (str _callType) + ":" + _protoName;
 
 // Append data to args
-if ( !isNull _data ) then
-{
-    _args = _args + ":" + switch (typeName _args) do
-    {
-        case "STRING": { _data };
-        case "ARRAY": { _data joinString ":" };
-        default {""}; // This shouldn't be possible because params filters the types for us
-    };
-};
+if ( _data isEqualType "" ) then { _args = _args + ":" + _data; };
+if ( _data isEqualType [] ) then { _args = _args + ":" + (_data joinString ":"); };
 
 private _result = [] call compile ("extDB3" callExtension _args);
 

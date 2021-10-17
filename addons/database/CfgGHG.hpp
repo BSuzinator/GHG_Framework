@@ -1,4 +1,4 @@
 class CfgGHG
 {
-    database = "ghg_a3";
+    database = "Database";
 };
