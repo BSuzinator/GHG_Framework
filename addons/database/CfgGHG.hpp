@@ -1,4 +1,4 @@
 class CfgGHG
 {
-    database = "Database";
+    databases[] = {"Database"};
 };

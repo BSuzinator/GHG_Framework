@@ -39,9 +39,8 @@ GVAR(labels) = [
 //Adds all Officers to God Mode Group 2
 if ( isServer ) then
 {
-    ["SELECT steamID64 FROM users WHERE isOfficer=1 OR isJuniorOfficer=1", QFUNC(acreOfficerGod), [], 0] call MAINFUNC(spawnDB);
+    ["SELECT steamID64 FROM users WHERE isOfficer=1 OR isJuniorOfficer=1", QFUNC(acreOfficerGod), [], 0] call FUNCMAIN(spawnDB);
 };
-
 
 if ( !hasInterface ) exitWith {};
 

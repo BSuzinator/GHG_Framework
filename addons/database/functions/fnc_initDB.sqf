@@ -12,11 +12,12 @@ if ((_lock # 0) == 0) then
 {
     [9, "RESET"] call FUNC(extDB3);
 
-    private _database = getText( configFile >> "CfgGHG" >> "database" );
+    private _databases = getArray( configFile >> "CfgGHG" >> "databases" );
 
-    // Add database
-    [9, "ADD_DATABASE", _database] call FUNC(extDB3);
-    [9, "ADD_DATABASE_PROTOCOL", [_database, "SQL", "SQL", "TEXT-NULL"]] call FUNC(extDB3);
+    { // Add databases
+        [9, "ADD_DATABASE", _x] call FUNC(extDB3);
+        [9, "ADD_DATABASE_PROTOCOL", [_x, "SQL", "SQL", "TEXT-NULL"]] call FUNC(extDB3);
+    } forEach _databases;
 
     #ifndef DISABLE_COMPILE_CACHE
     // This is a release version, we should be locking extDB3 for security
