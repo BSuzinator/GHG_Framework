@@ -6,7 +6,7 @@
 params ["_args", "_sqlResult", "_errorMessage" ];
 
 if ( _errorMessage != "" ) exitWith {
-    systemChat _errorMessage;
+    systemChat ("acre officer god group error: " + _errorMessage);
 };
 
 _sqlResult params ["_uids"];
