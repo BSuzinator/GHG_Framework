@@ -32,7 +32,7 @@ if ( ! isNull _logic ) then
 };
 
 //Respawn all units as rifleman
-[_unit, "soldier_f"] call FUNC_INNER(loadout,gearUp);
+[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp);
 //Sets respawn time
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
 {
