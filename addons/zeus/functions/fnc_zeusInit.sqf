@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*======================================
 	ghg_fnc_zeusInit
-	Handles zeus slot management
+	Handles Zeus slot management
 	Author: Quantx
 ======================================*/
 if ( isServer ) then
@@ -21,7 +21,9 @@ if ( isServer ) then
 
 if ( !hasInterface ) exitWith {};
 
-// Ensure virtual zeus players are invincible and force interface
+["zeusAssigned", FUNC(zeusAssigned)] call CBA_fnc_addEventHandler;
+
+// Ensure virtual Zeus players are invincible and force interface
 if ( player isKindOf "VirtualCurator_F" ) then
 {
 	player allowDamage false;
