@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_fnc_zeusInitEh
-	Initialize event handlers for a new zeus interface
+	Initialize event handlers for a new Zeus interface
 	Author: Quantx
 ======================================*/
 params ["_logic", "_unit"];
@@ -24,7 +23,7 @@ _logic addEventHandler ["curatorObjectPlaced", {
     clearItemCargoGlobal _entity;
     clearMagazineCargoGlobal _entity;
     clearWeaponCargoGlobal _entity;
-    clearBackpackCargoGlobal _entity;    
+    clearBackpackCargoGlobal _entity;
 }];
 
 [ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;
