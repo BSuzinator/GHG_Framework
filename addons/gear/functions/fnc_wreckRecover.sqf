@@ -16,6 +16,7 @@ _wreckInfo = [_wreckClassName,_wreckDisplayName];
 deleteVehicle _wreck;
 _scrapObject = createVehicle ["Land_ScrapHeap_1_F", _wreckPos, [], 0, "CAN_COLLIDE"];
 _scrapObject setVariable ["ghg_wreck_info", _wreckInfo, true];
+_scrapObject setVariable["ace_cargo_customname", _wreckDisplayName, true];
 _scrapObject setDir _wreckDir;
 [_scrapObject, 8] call ace_cargo_fnc_setSize;
 _checkInfoStatement = {
