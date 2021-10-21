@@ -8,12 +8,12 @@ params ["_unit"];
 if (isNull _unit) exitWith {[]};
 
 // Get list of all items in all inventories
-private _gear = (getItemCargo (uniformContainer _unit)) select 0;
-_gear append ((getItemCargo (vestContainer _unit)) select 0);
-_gear append ((getItemCargo (backpackContainer _unit)) select 0);
-_gear append (assignedItems _unit);
+private _papers = (getItemCargo (uniformContainer _unit)) select 0;
+_papers append ((getItemCargo (vestContainer _unit)) select 0);
+_papers append ((getItemCargo (backpackContainer _unit)) select 0);
+_papers append (assignedItems _unit);
 
 // Filter out all non paper related items
-_gear = _gear select {_x select [0, 11] == "GHG_Papers_"};
+_papers = _papers select {_x select [0, 11] == "GHG_Papers_"};
 
-_gear; // Return value, must be last
+_papers; // Return value, must be last

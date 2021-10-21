@@ -18,12 +18,12 @@ _logic addEventHandler ["curatorWaypointDoubleClicked", _attrib];
 _logic addEventHandler ["curatorMarkerDoubleClicked",   _attrib];
 
 _logic addEventHandler ["curatorObjectPlaced", {
-    params ["_curator", "_entity"];
+    params ["_logic", "_unit"];
     
-    clearItemCargoGlobal _entity;
-    clearMagazineCargoGlobal _entity;
-    clearWeaponCargoGlobal _entity;
-    clearBackpackCargoGlobal _entity;
+    clearItemCargoGlobal _unit;
+    clearMagazineCargoGlobal _unit;
+    clearWeaponCargoGlobal _unit;
+    clearBackpackCargoGlobal _unit;
 }];
 
 [ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;
