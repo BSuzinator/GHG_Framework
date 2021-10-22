@@ -33,6 +33,14 @@ if ( ! isNull _logic ) then
 
 //Respawn all units as rifleman
 [_unit, "soldier_f"] call FUNC_INNER(gear,gearUp);
+_unit setUnitTrait ["engineer", false];
+_unit setUnitTrait ["explosiveSpecialist", false];
+_unit setUnitTrait ["Medic", false];
+_unit setUnitTrait ["UAVHacker", false];
+_unit setVariable ["ace_medical_medicClass", 0, true];
+_unit setVariable ["ACE_isEOD", false, true];
+_unit setVariable ["ACE_isEngineer", false, true];
+
 //Sets respawn time
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
 {
