@@ -33,7 +33,7 @@ private _faction = switch(side _unit) do {
 
 if ( isNil "_faction" ) exitWith {};
 
-private _gearArgs = [["ItemMap", "", "", "ItemCompass", "ACE_Altimeter", "ACE_NVG_Wide"]];
+private _gearArgs = [["ItemMap", "", "", "ItemCompass", "ACE_Altimeter", "ACE_NVG_Wide_Black"]];
 
 // Add camo arguments
 _gearArgs append parseSimpleArray preprocessFile format [ "\x\ghg\addons\gear\loadouts\%1\camo\%2.sqf", _faction select 0, _faction select 1 ];
