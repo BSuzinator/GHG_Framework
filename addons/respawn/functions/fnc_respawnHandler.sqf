@@ -51,5 +51,7 @@ else
 	_unit setVariable ["ACE_isEngineer", false, true];
 };
 
+//Set Player Scope Select time
+_unit setVariable["ghg_last_respawn_time", time, true];
 
 [_unit, _respawnPos] call _setPosAGLS;
