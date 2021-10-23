@@ -8,62 +8,156 @@ if ( !hasInterface ) exitWith {};
 
 params [
     ["_unit", player, [objNull]],
-    ["_unitType", "unknown_unit_type", [""]]
+    ["_unitType", "", [""]]
 ];
 
-if ( _unitType isEqualTo "unknown_unit_type" ) then {
+if ( _unitType isEqualTo "" ) then {
     _unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
 };
 
-private _faction = switch(side _unit) do {
-    case west: {[
-        getText (missionConfigFile >> "CfgGHG" >> "bluFaction"),
-        getText (missionConfigFile >> "CfgGHG" >> "bluCamo")
-    ]};
-    case east: {[
-        getText (missionConfigFile >> "CfgGHG" >> "opfFaction"),
-        getText (missionConfigFile >> "CfgGHG" >> "opfCamo")
-    ]};
-    case resistance: {[
-        getText (missionConfigFile >> "CfgGHG" >> "indFaction"),
-        getText (missionConfigFile >> "CfgGHG" >> "indCamo")
-    ]};
-    default { nil };
+private _ghg = missionConfigFile >> "CfgGHG";
+
+private ["_faction", "_camo"];
+
+switch (side _unit) do {
+    case west: {
+        _faction = getText (_ghg >> "bluFaction");
+        _camo = getText (_ghg >> "bluCamo");
+    };
+    case east: {
+        _faction = getText (_ghg >> "opfFaction");
+        _camo = getText (_ghg >> "opfCamo");
+    };
+    case resistance: {
+        _faction = getText (_ghg >> "indFaction");
+        _camo = getText (_ghg >> "indCamo");
+    };
+    default {
+        _faction = nil;
+        _camo = nil;
+    };
 };
 
 if ( isNil "_faction" ) exitWith {};
 
-private _gearArgs = [["ItemMap", "", "", "ItemCompass", "ACE_Altimeter", "ACE_NVG_Wide_Black"]];
+// Check both config files for the loadout
+private _factionLoadout = _ghg >> "Loadouts" >> _faction;
+if ( isNull _factionLoadout ) then { _factionLoadout = (configFile >> "CfgGHG" >> "Loadouts" >> _faction); };
+if ( isNull _factionLoadout ) exitWith { systemChat format ["No loadouts for faction: %1", _faction]; };
 
-// Add camo arguments
-_gearArgs append parseSimpleArray preprocessFile format [ "\x\ghg\addons\gear\loadouts\%1\camo\%2.sqf", _faction select 0, _faction select 1 ];
+private _loadout = _factionLoadout >> _unitType;
+if ( isNull _loadout ) exitWith { systemChat format ["No loadout for unit type %1 in faction %2", _unitType, _faction]; };
 
-private _unitLoadout = _gearArgs call compile preprocessFileLineNumbers format [ "\x\ghg\addons\gear\loadouts\%1\gear\%2.sqf", _faction select 0, _unitType ];
+private _camoId = 0;
 
-// Add items to uniform
-private _uniformItems = [
-	["ACE_EarPlugs", 2],
-	["ACRE_PRC343", 1],
-	["ACE_elasticBandage", 5],
-	["ACE_packingBandage", 5],
-	["ACE_morphine", 2],
-	["ACE_epinephrine", 2],
-	["ACE_tourniquet", 2],
-	["ACE_splint", 1],
-	["ACE_Flashlight_XL50", 1],
-	["diw_armor_plates_main_plate",1]
+{
+    if ( _camo isEqualTo _x ) exitWith { _camoId = _forEachIndex; };
+} forEach getArray( _loadout >> "camo" );
+
+private _camoField = {
+    params ["_configField"];
+    
+    if ( isArray _configField ) then
+    {
+        (getArray _configField) select _camoId;
+    }
+    else
+    {
+        getText _configField;
+    };
+};
+
+private _magazineArray = {
+    params ["_mag"];
+    
+    if ( _mag isKindOf ["CA_Magazine", configFile >> "CfgMagazines"] ) then
+    {
+        _this pushBack 0;
+    };
+    
+    _this;
+};
+
+private _weaponArray = {
+    params ["_cfg"];
+
+    private _scope = "";
+    private _scopeList = configProperties [_cfg >> "Scopes"];
+    if ( (count _scopeList) > 0 ) then { _scope = [_scopeList select 0] call _camoField; };
+
+    private _ammo = [];
+    private _ammoTxt = getText (_cfg >> "ammo");
+    if ( _ammoTxt isNotEqualTo "" ) then { _ammo = [_ammoTxt] call _magazineArray; };
+    
+    private _grenade = [];
+    private _grenadeTxt = getText (_cfg >> "grenade");
+    if ( _grenadeTxt isNotEqualTo "" ) then { _grenade = [_grenadeTxt] call _magazineArray; };
+    
+    //[getText (_cfg >> "grenade")],
+
+    [
+        [_cfg >> "name"  ] call _camoField,
+        [_cfg >> "muzzle"] call _camoField,
+        [_cfg >> "laser" ] call _camoField,
+        _scope,
+        _ammo,
+        _grenade,
+        [_cfg >> "bipod"] call _camoField
+    ];
+};
+
+private _clothingArray = {
+    params ["_cfg"];
+    
+    private _name = [_cfg >> "name"] call _camoField;
+    if ( _name isEqualTo "" ) exitWith {[]};
+    
+    private _items = [];
+    
+    {
+        private _itemName = configName _x;
+        
+        if ( _itemName isNotEqualTo "name" ) then
+        {
+            private _itemAmount = getNumber _x;
+            
+            if ( _itemAmount > 0 ) then
+            {
+                _items pushBack ([ _itemName, _itemAmount ] call _magazineArray);
+            };
+        };
+    } forEach configProperties [_cfg];
+    
+    [ _name, _items ];
+};
+
+private _unitLoadout = [
+    [_loadout >> "Weapon_1"  ] call _weaponArray,
+    [_loadout >> "Weapon_3"  ] call _weaponArray,
+    [_loadout >> "Weapon_2"  ] call _weaponArray,
+    [_loadout >> "Uniform"   ] call _clothingArray,
+    [_loadout >> "Vest"      ] call _clothingArray,
+    [_loadout >> "Backpack"  ] call _clothingArray,
+    [_loadout >> "headgear"  ] call _camoField,
+    [_loadout >> "facewear"  ] call _camoField,
+    [_loadout >> "Binoculars"] call _weaponArray,
+    [
+        [_loadout >> "map"   ] call _camoField,
+        [_loadout >> "gps"   ] call _camoField,
+        "", // Radio should be left empty
+        [_loadout >> "compas"] call _camoField,
+        [_loadout >> "watch" ] call _camoField,
+        [_loadout >> "nvgs"  ] call _camoField
+    ]
 ];
 
-((_unitLoadout select 3) select 1) append _uniformItems;
+_unit setUnitLoadout [_unitLoadout, true];
 
-_unit setUnitLoadout _unitLoadout;
-
-private _hasScopeChoice = _unit getVariable "hasScopeChoice";
-if ((isNil "_hasScopeChoice") || ("_hasScopeChoice" isEqualTo false)) then
+if ( _unit getVariable ["hasScopeChoice", false] ) then
 {
 	_unit setVariable ["hasScopeChoice", true];
 	[_unit, _unitType, _faction] call FUNC(scopeChoice);
 };
 
 //Set GHG patch
-[_unit,"GHG"] call BIS_fnc_setUnitInsignia;
+[_unit, "GHG"] call BIS_fnc_setUnitInsignia;

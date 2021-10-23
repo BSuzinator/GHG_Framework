@@ -1,1 +1,1 @@
-#include "\x\ghg\addons\markers\script_component.hpp"
+#include "..\script_component.hpp"

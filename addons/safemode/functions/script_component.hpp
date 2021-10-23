@@ -1,1 +1,1 @@
-#include "\x\ghg\addons\safemode\script_component.hpp"
+#include "..\script_component.hpp"

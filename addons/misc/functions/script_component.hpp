@@ -1,1 +1,1 @@
-#include "\x\ghg\addons\misc\script_component.hpp"
+#include "..\script_component.hpp"

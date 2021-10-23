@@ -1,1 +1,1 @@
-#include "\x\ghg\addons\database\script_component.hpp"
+#include "..\script_component.hpp"

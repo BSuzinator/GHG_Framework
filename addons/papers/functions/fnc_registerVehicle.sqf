@@ -16,7 +16,7 @@ if ( "GHG_Papers_Vehicle" in _papers ) then
     
     if ( _id < 0 ) exitWith { systemChat "Unable to register vehicle, all IDs bound"; };
     
-    private _plate = getPlateNumber _target
+    private _plate = getPlateNumber _target;
     private _cid = [_player] call FUNC(getCID);
     
     if ( _plate == "" ) then { systemChat "Warning: registered vehicle with no license plate"; };

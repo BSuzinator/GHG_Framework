@@ -1,1 +1,1 @@
-#include "\x\ghg\addons\zeus\script_component.hpp"
+#include "..\script_component.hpp"

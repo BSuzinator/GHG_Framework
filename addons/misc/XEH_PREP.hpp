@@ -2,7 +2,6 @@ PREP(addMinesToZeus);
 PREP(blackout);
 PREP(checkFuelLevel);
 PREP(engineOff);
-PREPMAIN(fileExists);
 PREP(reversePlanes);
 PREP(makeBreifings);
 PREP(getAllTaskInfo);
