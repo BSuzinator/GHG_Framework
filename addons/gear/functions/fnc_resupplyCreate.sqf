@@ -16,6 +16,7 @@ switch (_crateScript) do {
 	case "ghg_medical_placeholder":
 		{
 			_crate = [_pos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\gear\loadouts\medical.sqf";
+			_crate setVariable["ace_cargo_customname", "GHG Medical", true];
 		};
 	case "ghg_demolition_placeholder":
 		{
@@ -68,7 +69,7 @@ switch (_crateScript) do {
 			_crate setDir _dir;
 			clearItemCargoGlobal _crate; 
 
-			[_crate, 100] call ace_refuel_fnc_makeSource;
+			[_crate, 100] remoteExec["ace_refuel_fnc_makeSource",2];
 			[_crate, 4] call ace_cargo_fnc_setSize;
 			_crate setVariable["ace_cargo_customname", "GHG Fuel", true];
 		};

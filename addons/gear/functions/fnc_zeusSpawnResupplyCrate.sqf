@@ -23,6 +23,7 @@ switch (_crateScript) do {
 	case "ghg_medical_placeholder":
 		{
 			_crate = [_modulePos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\gear\loadouts\medical.sqf";
+			_crate setVariable["ace_cargo_customname", "GHG Medical", true];
 		};
 	case "ghg_demolition_placeholder":
 		{
@@ -42,6 +43,7 @@ switch (_crateScript) do {
 			_crate addItemCargoGlobal ["rhsusf_m112_mag", 8];
 			_crate addBackPackCargoGlobal ["B_Kitbag_cbr", 2];
 			[_crate, 2] call ace_cargo_fnc_setSize;
+			_crate setVariable["ace_cargo_customname", "GHG Demolitions", true];
 		};
 	case "ghg_spare_wheel_placeholder":
 		{
@@ -66,6 +68,7 @@ switch (_crateScript) do {
 			_crate addItemCargoGlobal ["ToolKit", 2]; 
 			_crate addBackPackCargoGlobal ["B_AssaultPack_blk", 2];
 			[_crate, 4] call ace_cargo_fnc_setSize;
+			_crate setVariable["ace_cargo_customname", "GHG Vehicle Ammo", true];
 		};
 	case "ghg_vehicle_fuel_placeholder":
 		{
@@ -73,8 +76,9 @@ switch (_crateScript) do {
 			_crate setDir _dir;
 			clearItemCargoGlobal _crate; 
 
-			[_crate, 100] call ace_refuel_fnc_makeSource;
+			[_crate, 100] remoteExec["ace_refuel_fnc_makeSource",2];
 			[_crate, 4] call ace_cargo_fnc_setSize;
+			_crate setVariable["ace_cargo_customname", "GHG Fuel", true];
 		};
 	default
 		{
@@ -95,6 +99,22 @@ switch (_crateScript) do {
 			[_crate, true, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;
 			[_crate, true, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
 			[_crate, 1] call ace_cargo_fnc_setSize;
+			_name = "";
+			switch (_crateScript) do {
+				case "ftCrate":{_name = "GHG FireTeam";};
+				case "matCrate":{_name = "GHG MAT";};
+				case "mmgCrate":{_name = "GHG MMG";};
+				case "mtrCrate":{_name = "GHG Mortar";};
+				case "rcnCrate":{_name = "GHG Recon";};
+				case "logiCrate":{_name = "GHG Logistics";};
+				case "gmgGunCrate":{_name = "GHG GMG Gun";};
+				case "gmgAmmoCrate":{_name = "GHG GMG Ammo";};
+				case "hmgGunCrate":{_name = "GHG HMG Gun";};
+				case "hmgAmmoCrate":{_name = "GHG HMG Ammo";};
+				case "hatTubeCrate":{_name = "GHG HAT Tube";};
+				case "hatAmmoCrate":{_name = "GHG HAT Ammo";};
+			};
+			_crate setVariable["ace_cargo_customname", _name, true];
 		};
 };
 

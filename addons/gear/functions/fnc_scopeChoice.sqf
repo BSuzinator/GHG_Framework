@@ -43,7 +43,11 @@ _actionCondition = {};
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
 	_actionCondition = {true};
 } else {
-	_actionCondition = {EGVAR(safemode,safe)};
+	_actionCondition = {
+	_respawnTime = _player getVariable["ghg_last_respawn_time", 0];
+	_checkTime = _respawnTime + 60;
+	((EGVAR(safemode,safe)) || (time <= _checkTime))
+	};
 };
 //Add root action
 _action = ["GHG_Scopes","Scope Selection","\a3\ui_f\data\gui\rsc\rscdisplayarsenal\itemoptic_ca.paa",{systemChat ""},_actionCondition] call ace_interact_menu_fnc_createAction;

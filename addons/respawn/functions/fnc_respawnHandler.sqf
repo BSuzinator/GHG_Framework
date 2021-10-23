@@ -31,17 +31,27 @@ if ( ! isNull _logic ) then
     _unit assignCurator _logic;
 };
 
-//Respawn all units as rifleman
-[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp);
-//Sets respawn time
+//Handle if Training Server or not
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
 {
 	setPlayerRespawnTime 30;
+	[_unit] call FUNC_INNER(gear,gearUp);
 } 
 else
 {
 	setPlayerRespawnTime 5000;
+	//Respawn all units as rifleman
+	[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp);
+	_unit setUnitTrait ["engineer", false];
+	_unit setUnitTrait ["explosiveSpecialist", false];
+	_unit setUnitTrait ["Medic", false];
+	_unit setUnitTrait ["UAVHacker", false];
+	_unit setVariable ["ace_medical_medicClass", 0, true];
+	_unit setVariable ["ACE_isEOD", false, true];
+	_unit setVariable ["ACE_isEngineer", false, true];
 };
 
+//Set Player Scope Select time
+_unit setVariable["ghg_last_respawn_time", time, true];
 
 [_unit, _respawnPos] call _setPosAGLS;
