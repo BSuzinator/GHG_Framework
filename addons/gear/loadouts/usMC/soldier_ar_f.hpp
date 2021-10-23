@@ -6,7 +6,6 @@ class soldier_ar_f : soldier_f
     class Weapon_1 : Weapon_1 // Rifle
     {
         name = "rhs_weap_m27iar";
-        laser = "rhsusf_acc_anpeq15_bk";
         ammo = "rhs_mag_100Rnd_556x45_M855_cmag";
         bipod = "rhsusf_acc_harris_bipod";
         

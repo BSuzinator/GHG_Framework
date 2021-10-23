@@ -6,7 +6,6 @@ class soldier_tl_f : soldier_f
     class Weapon_1 : Weapon_1 // Rifle
     {
         name = "rhs_weap_m16a4_carryhandle_M203";
-        laser = "rhsusf_acc_anpeq15_bk";
         grenade = "rhs_mag_M441_HE";
 
         class Scopes: Scopes

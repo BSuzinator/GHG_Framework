@@ -82,8 +82,11 @@ private _weaponArray = {
     params ["_cfg"];
 
     private _scope = "";
-    private _scopeList = configProperties [_cfg >> "Scopes"];
-    if ( (count _scopeList) > 0 ) then { _scope = [_scopeList select 0] call _camoField; };
+    
+    {
+        private _scp = [_x] call _camoField;
+        if ( _scp isNotEqualTo "" ) exitWith { _scope = _scp; };
+    } forEach configProperties [_cfg >> "Scopes"];
 
     private _ammo = [];
     private _ammoTxt = getText (_cfg >> "ammo");
