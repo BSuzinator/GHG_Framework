@@ -21,6 +21,8 @@ if ( isServer ) then
 
 if ( !hasInterface ) exitWith {};
 
+GVAR(zeusLogic) = objNull;
+
 ["zeusAssigned", FUNC(zeusAssigned)] call CBA_fnc_addEventHandler;
 
 // Ensure virtual Zeus players are invincible and force interface

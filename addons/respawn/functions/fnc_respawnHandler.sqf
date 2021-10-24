@@ -24,7 +24,7 @@ private _respawnPos = markerPos (switch (side _unit) do {
 		});
 
 // Transfer zeus module to new unit
-private _logic = getAssignedCuratorLogic _corpse;
+private _logic = EGVAR(zeus,zeusLogic);
 if ( ! isNull _logic ) then
 {
     unassignCurator _logic;

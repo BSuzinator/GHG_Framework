@@ -8,7 +8,7 @@
 Example:
 
 private _scoreLimit = 10;
-private _myArgs = ["Arg1", 2, ["Arg3, 4]];
+private _myArgs = ["Arg1", 2, ["Arg3", 4]];
 
 [
     format [ "SELECT user, score FROM user_list WHERE score > %1", _scoreLimit ],
@@ -24,7 +24,7 @@ private _myArgs = ["Arg1", 2, ["Arg3, 4]];
 
 params ["_args", "_sqlResult", "_errorMessage" ];
 
-_args isEqualTo ["Arg1", 2, ["Arg3, 4]]; // True
+_args isEqualTo ["Arg1", 2, ["Arg3", 4]]; // True
 
 _sqlResult isEqualTo [
     [ "bob", "jane", "tommy", ... ], // first column of request is: users
