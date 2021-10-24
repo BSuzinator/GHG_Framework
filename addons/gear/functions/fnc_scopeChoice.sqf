@@ -6,7 +6,7 @@
 	Author: BSuz
 ======================================*/
 if ( !hasInterface ) exitWith {};
-params ["_unit", "_unitType", "_faction"];
+params ["_unit", "_unitType", "_faction", "_camoId"];
 
 //List of units excluded from scope selection
 _excludeList = [

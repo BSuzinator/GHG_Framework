@@ -16,10 +16,10 @@ GVAR(vehicle) = []; GVAR(vehicle) set [PAPERS_ID_LIST_LEN - 1, nil];
 if ( hasInterface ) then
 {
     private _viewPlate = ["viewPlate", "Check License Plate", "", {hint getPlateNumber _target}, {!((getPlateNumber _target) == "" || "spz" in (selectionNames _target))}] call ace_interact_menu_fnc_createAction;
-    ["LandVehicle", 0, ["ACE_MainActions"], _viewPlate, true] call ace_interact_menu_fnc_addActionToClass;
+    ["Car", 0, ["ACE_MainActions"], _viewPlate, true] call ace_interact_menu_fnc_addActionToClass;
     
     private _regVeh = ["regVeh", "Register Vehicle", "", FUNC(registerVehicle), {"GHG_Papers_Vehicle" in ([_player] call FUNC(getPapers))}] call ace_interact_menu_fnc_createAction;
-    ["LandVehicle", 0, ["ACE_MainActions"], _regVeh, true] call ace_interact_menu_fnc_addActionToClass;
+    ["Car", 0, ["ACE_MainActions"], _regVeh, true] call ace_interact_menu_fnc_addActionToClass;
     
     private _regId = ["regId", "Register Identity", "", FUNC(registerIdentity), {"GHG_Papers_Identity" in ([_player] call FUNC(getPapers))}] call ace_interact_menu_fnc_createAction;
     ["CAManBase", 0, ["ACE_SelfActions"], _regId, true] call ace_interact_menu_fnc_addActionToClass;

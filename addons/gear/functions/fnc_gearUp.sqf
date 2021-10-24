@@ -55,15 +55,15 @@ private _camoId = 0;
 } forEach getArray( _loadout >> "camo" );
 
 private _camoField = {
-    params ["_configField"];
+    params ["_cfg"];
     
-    if ( isArray _configField ) then
+    if ( isArray _cfg ) then
     {
-        (getArray _configField) select _camoId;
+        (getArray _cfg) select _camoId;
     }
     else
     {
-        getText _configField;
+        getText _cfg;
     };
 };
 
@@ -156,10 +156,10 @@ private _unitLoadout = [
 
 _unit setUnitLoadout [_unitLoadout, true];
 
-if ( _unit getVariable ["hasScopeChoice", false] ) then
+if ! ( _unit getVariable ["hasScopeChoice", false] ) then
 {
 	_unit setVariable ["hasScopeChoice", true];
-	[_unit, _unitType, _faction] call FUNC(scopeChoice);
+	[_unit, _unitType, _faction, _camoId] call FUNC(scopeChoice);
 };
 
 //Set GHG patch
