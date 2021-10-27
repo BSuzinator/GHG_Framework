@@ -3,24 +3,20 @@
 ======================================*/
 class soldier_tl_f : soldier_f
 {
-    class Weapon_1 : Weapon_1 // Rifle
+    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
+    class Weapon_1 // Rifle
     {
         name = "rhs_weap_m16a4_carryhandle_M203";
         grenade = "rhs_mag_M441_HE";
 
-        class Scopes: Scopes
+        class Scopes
         {
             acog = "rhsusf_acc_ACOG_RMR";
         };
     };
     
-    class Weapon_2 : Weapon_2 { class Scopes : Scopes {}; }; // Pistol
-    
-    class Weapon_3 : Weapon_3 { class Scopes : Scopes {}; }; // Launcher
-
-    class Uniform : Uniform {};
-    
-    class Vest : Vest
+    class Vest
     {
         name = "rhsusf_spc_teamleader";
         // Inherited item overrides
@@ -31,7 +27,7 @@ class soldier_tl_f : soldier_f
         
     };
     
-    class Backpack : Backpack
+    class Backpack
     {
         name = "rhsusf_falconii_coy";
         // List of items
@@ -45,6 +41,4 @@ class soldier_tl_f : soldier_f
     };
 
     headgear[] = { "rhsusf_lwh_helmet_marpatd_headset", "rhsusf_lwh_helmet_marpatwd_headset" };
-
-    class Binoculars : Binoculars { class Scopes: Scopes{}; };
 };

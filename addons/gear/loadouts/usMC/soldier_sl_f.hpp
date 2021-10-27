@@ -3,22 +3,12 @@
 ======================================*/
 class soldier_sl_f : soldier_tl_f
 {
-    class Weapon_1 : Weapon_1 { class Scopes : Scopes {}; }; // Rifle
+    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
-    class Weapon_2 : Weapon_2 { class Scopes : Scopes {}; }; // Pistol
-    
-    class Weapon_3 : Weapon_3 { class Scopes : Scopes {}; }; // Launcher
-
-    class Uniform : Uniform {};
-    
-    class Vest : Vest
+    class Vest
     {
         name = "rhsusf_spc_squadleader";
         // List of items
         ACRE_PRC152 = 1;
     };
-    
-    class Backpack : Backpack {};
-
-    class Binoculars : Binoculars { class Scopes : Scopes {}; };
 };

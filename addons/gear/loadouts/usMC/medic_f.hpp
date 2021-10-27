@@ -3,15 +3,9 @@
 ======================================*/
 class medic_f : soldier_f
 {
-    class Weapon_1 : Weapon_1 { class Scopes: Scopes {}; }; // Rifle
-    
-    class Weapon_2 : Weapon_2 { class Scopes: Scopes {}; }; // Pistol
-    
-    class Weapon_3 : Weapon_3 { class Scopes: Scopes {}; }; // Launcher
-    
-    class Uniform : Uniform {};
-    
-    class Vest : Vest
+    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+
+    class Vest
     {
         name = "rhsusf_spc_corpsman";
         // Inherited item overrides
@@ -21,7 +15,7 @@ class medic_f : soldier_f
         rhs_mag_m18_red = 1;
     };
     
-    class Backpack : Backpack
+    class Backpack
     {
         name = "rhsusf_assault_eagleaiii_coy_medic";
         // List of items
@@ -38,6 +32,4 @@ class medic_f : soldier_f
 		ACE_epinephrine = 12;
 		ACE_EarPlugs = 1;
     };
-
-    class Binoculars : Binoculars { class Scopes: Scopes {}; };
 };

@@ -12,3 +12,4 @@ PREP(wreckRebuildModule);
 PREP(wreckRecover);
 PREP(wreckRecoverModule);
 PREP(zeusSpawnResupplyCrate);
+PREPMAIN(dumpLoadout);
