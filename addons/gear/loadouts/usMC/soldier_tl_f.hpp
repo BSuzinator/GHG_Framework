@@ -18,13 +18,7 @@ class soldier_tl_f : soldier_f
     
     class Vest : Vest
     {
-        classname = "rhsusf_spc_teamleader";
-        // Inherited item overrides
-        SmokeShell = 0;
-        rhs_mag_m67 = 1;
-        // List of items
-        rhs_mag_M441_HE = 2;
-        
+        classname = "rhsusf_spc_teamleader";        
     };
     
     class Backpack : Backpack

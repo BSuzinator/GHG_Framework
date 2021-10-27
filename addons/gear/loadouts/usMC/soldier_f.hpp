@@ -32,7 +32,7 @@ class soldier_f : loadout_base
         classname = "rhsusf_spc_rifleman";
         // List of items
         rhs_mag_30Rnd_556x45_M855_Stanag = 8;
-        SmokeShell = 1;
+        SmokeShell = 2;
         rhs_mag_m67 = 2;
         ACE_EntrenchingTool = 1;
     };
