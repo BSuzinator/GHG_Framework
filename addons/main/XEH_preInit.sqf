@@ -6,6 +6,6 @@ ADDON = false;
 	Author: CBA_3
 ======================================*/
 
-GVARMAIN(is_mission_ghg) = isClass (missionConfigFile >> "CfgGHG");
+GVARMAIN(is_mission_ghg) = isMultiplayer && (isClass (missionConfigFile >> "CfgGHG"));
 
 ADDON = true;

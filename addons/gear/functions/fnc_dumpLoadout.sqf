@@ -67,6 +67,6 @@ private _out = format [
     {
         %11
     };
-};",
+};"
 
 ];
