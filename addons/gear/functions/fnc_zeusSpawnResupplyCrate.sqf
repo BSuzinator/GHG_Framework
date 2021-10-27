@@ -22,7 +22,7 @@ if (_isAirdrop) then {_modulePos set [2, 200]} else {_modulePos set [2, 1]};
 switch (_crateScript) do {
 	case "ghg_medical_placeholder":
 		{
-			_crate = [_modulePos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\gear\loadouts\medical.sqf";
+			_crate = [_modulePos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\gear\loadouts_old\medical.sqf";
 			_crate setVariable["ace_cargo_customname", "GHG Medical", true];
 		};
 	case "ghg_demolition_placeholder":
@@ -90,7 +90,7 @@ switch (_crateScript) do {
 			clearWeaponCargoGlobal _crate;
 			clearBackpackCargoGlobal _crate;
 			
-			private _crateContents = call compile preprocessFileLineNumbers format ["\x\ghg\addons\gear\loadouts\%1\crates\%2.sqf", _faction, _crateScript];
+			private _crateContents = call compile preprocessFileLineNumbers format ["\x\ghg\addons\gear\loadouts_old\%1\crates\%2.sqf", _faction, _crateScript];
 		
 			{
 				_crate addItemCargoGlobal _x;
