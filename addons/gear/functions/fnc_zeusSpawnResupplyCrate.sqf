@@ -27,7 +27,7 @@ switch (_crateScript) do {
 		};
 	case "ghg_demolition_placeholder":
 		{
-			_crate = createVehicle ["Box_Syndicate_Ammo_F", _pos, [], 0, "CAN_COLLIDE"];
+			_crate = createVehicle ["Box_Syndicate_Ammo_F", _modulePos, [], 0, "CAN_COLLIDE"];
 			_crate setDir _dir;
 			clearItemCargoGlobal _crate;
 			clearMagazineCargoGlobal _crate;
