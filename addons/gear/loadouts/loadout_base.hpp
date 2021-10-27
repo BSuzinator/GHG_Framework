@@ -5,7 +5,7 @@ class loadout_base
 {
     class Weapon_1 // Rifle
     {
-        name = "";
+        classname = "";
         muzzle = "";
         bipod = "";
         laser = "";
@@ -20,7 +20,7 @@ class loadout_base
     
     class Uniform
     {
-        name = "";
+        classname = "";
         // List of items
         ACE_EarPlugs = 2;
         ACRE_PRC343 = 1;
@@ -36,13 +36,13 @@ class loadout_base
     
     class Vest
     {
-        name = "";
+        classname = "";
         // List of items
     };
     
     class Backpack
     {
-        name = "";
+        classname = "";
         // List of items
     };
     
@@ -52,7 +52,7 @@ class loadout_base
 
     class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
     {
-        name = "Binocular";
+        classname = "Binocular";
 
         class Scopes {};
     };

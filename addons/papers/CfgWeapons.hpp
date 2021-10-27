@@ -19,7 +19,7 @@ class CfgWeapons {
         descriptionShort = "Identification Card (Unbound)";
         
         //model = QPATHTOF(models\identity.p3d);
-        picture = QPATHTOF(ui\identity.paa);
+        //picture = QPATHTOF(ui\identity.paa);
     };
     PAPERS_ID_LIST(GHG_Papers_Identity, "Identification Card")
     
@@ -29,7 +29,7 @@ class CfgWeapons {
         descriptionShort = "Work Permit (Unbound)";
         
         //model = QPATHTOF(models\work.p3d);
-        picture = QPATHTOF(ui\work.paa);
+        //picture = QPATHTOF(ui\work.paa);
     };
     PAPERS_ID_LIST(GHG_Papers_Work, "Work Permit")
     
@@ -39,7 +39,7 @@ class CfgWeapons {
         descriptionShort = "Entry Authorization (Unbound)";
         
         //model = QPATHTOF(models\entry.p3d);
-        picture = QPATHTOF(ui\entry.paa);
+        //picture = QPATHTOF(ui\entry.paa);
     };
     PAPERS_ID_LIST(GHG_Papers_Entry, "Entry Authorization")
     
@@ -49,7 +49,7 @@ class CfgWeapons {
         descriptionShort = "Vehicle Registration (Unbound)";
         
         //model = QPATHTOF(models\vehicle.p3d);
-        picture = QPATHTOF(ui\vehicle.paa);
+        //picture = QPATHTOF(ui\vehicle.paa);
     };
     PAPERS_ID_LIST(GHG_Papers_Vehicle, "Vehicle Registration")
 };

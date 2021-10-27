@@ -5,9 +5,9 @@ class soldier_f : loadout_base
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
-    class Weapon_1 // Rifle
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        name = "rhs_weap_m16a4_carryhandle";
+        classname = "rhs_weap_m16a4_carryhandle";
         laser = "rhsusf_acc_anpeq15";
         ammo = "rhs_mag_30Rnd_556x45_M855_Stanag";
         
@@ -18,18 +18,18 @@ class soldier_f : loadout_base
             red_dot_magnified = "rhsusf_acc_g33_t1";
             holo_magnified = "rhsusf_acc_g33_xps3";
             holo_alt = "rhsusf_acc_eotech_552";
-            holo_alt_camo[] = { "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd" };
+            //holo_alt_camo[] = { "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd" };
         };
     };
     
-    class Uniform
+    class Uniform : Uniform
     {
-        name[] = { "rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd" };
+        classname[] = { "rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd" };
     };
     
-    class Vest
+    class Vest : Vest
     {
-        name = "rhsusf_spc_rifleman";
+        classname = "rhsusf_spc_rifleman";
         // List of items
         rhs_mag_30Rnd_556x45_M855_Stanag = 8;
         SmokeShell = 1;

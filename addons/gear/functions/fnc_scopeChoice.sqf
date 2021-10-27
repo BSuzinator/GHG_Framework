@@ -6,145 +6,107 @@
 	Author: BSuz
 ======================================*/
 if ( !hasInterface ) exitWith {};
-params ["_unit", "_unitType", "_faction", "_camoId"];
+params ["_unit", "_cfg", "_camoId"];
 
-//List of units excluded from scope selection
-_excludeList = [
-	"soldier_sl_f", //Squad/SpecialTeam Lead
-	"soldier_tl_f", //FTLs
-	"officer_f", //PLT Lead
-	"sniper_f", //Recon Sniper
-	"soldier_uav_f", //FAC
-	"support_MG_f",  //MMG Gunner
-	"pilot_f" //Pilots
-];
-		
-_limitedList = [
-	"crew_f", // Wolf Crew
-	"helicrew_f", //Heli Crew
-	"helipilot_f" //Heli Pilots	
-];
+systemChat "HERE";
 
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
-	_limitedList = [];
-	_excludeList = [];
-};
+if ( _unit getVariable [QGVAR(hasScopeChoice), false] ) exitWith {};
 
-if (_unitType in _excludeList) exitWith {};
+systemChat "HERE2";
 
 //Get respawn marker for distance check
-_pside = side _unit;
-_respawnMkr = format ["respawn_%1",_pside];
-_respawnPos = markerPos _respawnMkr;
-_player = _unit;
+//private _respawnPos = markerPos format ["respawn_%1", side _unit];
 
 //Condition for changing scopes
-_actionCondition = {};
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
-	_actionCondition = {true};
+private _actionCondition = (if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+	{true};
 } else {
-	_actionCondition = {
-	_respawnTime = _player getVariable["ghg_last_respawn_time", 0];
-	_checkTime = _respawnTime + 60;
-	((EGVAR(safemode,safe)) || (time <= _checkTime))
+	{
+        private _checkTime = (_unit getVariable["ghg_last_respawn_time", 0]) + 60;
+        ((EGVAR(safemode,safe)) || (time <= _checkTime))
 	};
-};
+});
+
 //Add root action
-_action = ["GHG_Scopes","Scope Selection","\a3\ui_f\data\gui\rsc\rscdisplayarsenal\itemoptic_ca.paa",{systemChat ""},_actionCondition] call ace_interact_menu_fnc_createAction;
+private _action = ["GHG_Scopes","Scope Selection","\a3\ui_f\data\gui\rsc\rscdisplayarsenal\itemoptic_ca.paa",{},_actionCondition] call ace_interact_menu_fnc_createAction;
 [_unit, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 //Private funtion to get displayname of scopes
 private _getscreenname = {
 	// with thanks to hoverguy and tryteyker
-	private ["_suppliedtype","_type", "_cfg_type","_data", "_ret"];
-	params ["_suppliedtype"];
-	if ((typeName _suppliedtype) == "OBJECT") then
-		{
-		_type = (typeof _suppliedtype);
-		}
-		else
-		{
-		_type = _suppliedtype;
-		};
+	private ["_suppliedType","_type", "_cfgType","_data"];
+	params ["_suppliedType"];
+	if ((typeName _suppliedType) == "OBJECT") then {
+		_type = (typeof _suppliedType);
+	} else {
+		_type = _suppliedType;
+    };
 	//assume classname is provided. if object is provided, get its classname
     switch (true) do
     {
-        case(isClass(configFile >> "CfgMagazines" >> _type)): {_cfg_type = "CfgMagazines"};
-        case(isClass(configFile >> "CfgWeapons" >> _type)): {_cfg_type = "CfgWeapons"};
-        case(isClass(configFile >> "CfgVehicles" >> _type)): {_cfg_type = "CfgVehicles"};
-        case(isClass(configFile >> "CfgGlasses" >> _type)): {_cfg_type = "CfgGlasses"};
+        case(isClass(configFile >> "CfgMagazines" >> _type)): {_cfgType = "CfgMagazines"};
+        case(isClass(configFile >> "CfgWeapons" >> _type)): {_cfgType = "CfgWeapons"};
+        case(isClass(configFile >> "CfgVehicles" >> _type)): {_cfgType = "CfgVehicles"};
+        case(isClass(configFile >> "CfgGlasses" >> _type)): {_cfgType = "CfgGlasses"};
     };
-	_ret = getText (configFile >> _cfg_type >> _type >> "displayName");
-	_ret
+    
+	getText (configFile >> _cfgType >> _type >> "displayName");
 };
 
-//US Backed Forces
-_usScopes = 
-[
-"rhsusf_acc_g33_t1",	//red dot with magnifier
-"rhsusf_acc_g33_xps3",	//holo with magnifier
-"rhsusf_acc_eotech_xps3", //holo
-"rhsusf_acc_eotech_552", //holo but different
-"rhsusf_acc_eotech_552_d", //holo but desert camo
-"rhsusf_acc_eotech_552_wd", //holo but woodland camo
-"rhsusf_acc_compm4" //red dot
-];
-
-//RU Backed Forces
-_ruScopes = 
-[
-"rhs_acc_1p78",	//magnifier
-"rhs_acc_pkas", //red dot
-"rhs_acc_okp7_dovetail", //reflex
-"rhs_acc_1p63" //varient red dot
-];
-
-if (_unitType in _limitedList) then {
-	_usScopes deleteRange [0,2];
-	_ruScopes deleteRange [0,1];
-};
-
-_scopeChoice = [];
-_scopeFlag = "";
-
-//Set available scopes based on faction
-switch (_faction select 0) do
-{
-	case "usArmy": {_scopeChoice = _usScopes;_scopeFlag = "us";};
-	case "usArmySF": {_scopeChoice = _usScopes;_scopeFlag = "us";};
-	case "usMC": {_scopeChoice = _usScopes;_scopeFlag = "us";};
-	case "serbian": {_scopeChoice = _usScopes;_scopeFlag = "us";};
-	case "russian": {_scopeChoice = _ruScopes;_scopeFlag = "ru";};
-	default {_scopeChoice = _usScopes;_scopeFlag = "us";};
+private _camoField = {
+    params ["_cfg"];
+    if ( isArray _cfg ) then { (getArray _cfg) select _camoId; } else { getText _cfg; };
 };
 
 {
-	_scopeClass = _x;
-	_displayName = [_scopeClass] call _getscreenname;
-	
-	_scopeIcon = switch (_scopeFlag) do
-	{
-		case "ru": {format ["\rhsafrf\addons\rhs_inventoryicons\data\accessories\%1_ca.paa", _scopeClass]};
-		case "us": {format ["\rhsusf\addons\rhsusf_inventoryicons\data\accessories\%1_ca.paa", _scopeClass]};
-		default {format ["\rhsusf\addons\rhsusf_inventoryicons\data\accessories\%1_ca.paa", _scopeClass]};
-	};
+    private _wepCfg = _cfg >> _x;
+    private _wepInd = _forEachIndex;
+    
+    private _scopeChoices = [];
+    
+    {
+        _scopeChoices pushBack ([_x] call _camoField);
+    } forEach configProperties [_wepCfg >> "Scopes"];
+    
+    systemChat str (configProperties [_wepCfg >> "Scopes"]);
+    
+    if ( (count _scopeChoices) > 0 ) then
+    {
+        private _wepClass = [_wepCfg >> "classname"] call _camoField;
+        private _wepName = [_wepClass] call _getscreenname;
+    
+        private _wepAction = [format ["GHG_Scopes_Weapon%1", _wepInd], _wepName, "", {}, {true}] call ace_interact_menu_fnc_createAction;
+        [_unit, 1, ["ACE_SelfActions","GHG_Scopes"], _wepAction] call ace_interact_menu_fnc_addActionToObject;
 
-	_statement = {
-		params ["_target", "_player", "_actionParams"];
-		_scopeClass = _actionParams select 0;
-		_player removePrimaryWeaponItem (primaryWeaponItems _player select 2);
-		_player addPrimaryWeaponItem _scopeClass;
-		};
-	
-	_actionName = format ["ghg_scopes_%1", _scopeClass];
-	_action = [_actionName,_displayName,_scopeIcon,_statement,{true}, {}, [_scopeClass]] call ace_interact_menu_fnc_createAction;
-	[_unit, 1, ["ACE_SelfActions","GHG_Scopes"], _action] call ace_interact_menu_fnc_addActionToObject;
-	
-} forEach _scopeChoice;
+        private _actPath = ["ACE_SelfActions","GHG_Scopes",format ["GHG_Scopes_Weapon%1", _wepInd]];
 
-_statement = {
-		_player removePrimaryWeaponItem ((primaryWeaponItems _player) select 2);
-	};
+        {
+            private _scopeClass = _x;
+            private _displayName = [_scopeClass] call _getscreenname;
+            private _scopeIcon = "";
+            
+            {
+                private _path = format[_x, _scopeClass];
+                if ( fileExists _path ) exitWith { _scopeIcon = _path; };
+            } forEach [
+                "\rhsafrf\addons\rhs_inventoryicons\data\accessories\%1_ca.paa",
+                "\rhsusf\addons\rhsusf_inventoryicons\data\accessories\%1_ca.paa"
+            ];
 
-_action = ["ghg_scopes_clear","Remove Scope","\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa",_statement,{true}] call ace_interact_menu_fnc_createAction;
-[_unit, 1, ["ACE_SelfActions","GHG_Scopes"], _action] call ace_interact_menu_fnc_addActionToObject;
+            private _statement = {
+                params ["_target", "_unit", "_actionParams"];
+                private _scopeClass = _actionParams select 0;
+                _unit removePrimaryWeaponItem (primaryWeaponItems _unit select 2);
+                _unit addPrimaryWeaponItem _scopeClass;
+            };
+
+            private _action = [format ["ghg_scopes_%1", _scopeClass], _displayName, _scopeIcon, _statement, {true}, {}, [_scopeClass]] call ace_interact_menu_fnc_createAction;
+            [_unit, 1, _actPath, _action] call ace_interact_menu_fnc_addActionToObject;
+        } forEach _scopeChoices;
+        
+        _action = ["ghg_scopes_clear","Remove Scope","\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa",{_unit removePrimaryWeaponItem ((primaryWeaponItems _unit) select 2)},{true}] call ace_interact_menu_fnc_createAction;
+        [_unit, 1, _actPath, _action] call ace_interact_menu_fnc_addActionToObject;
+    };
+} forEach ["Weapon_1", "Weapon_2", "Weapon_3"];
+
+_unit setVariable [QGVAR(hasScopeChoice), true];

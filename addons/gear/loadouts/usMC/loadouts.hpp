@@ -2,6 +2,11 @@ class usMC
 {
     camo[] = { "mpD", "mpWD" };
     
+    class Magazines
+    {
+        
+    };
+    
     // Should be 24
     #include "..\loadout_base.hpp"
     #include "soldier_f.hpp"

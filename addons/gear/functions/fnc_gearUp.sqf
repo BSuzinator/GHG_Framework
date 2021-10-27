@@ -56,15 +56,7 @@ private _camoId = 0;
 
 private _camoField = {
     params ["_cfg"];
-    
-    if ( isArray _cfg ) then
-    {
-        (getArray _cfg) select _camoId;
-    }
-    else
-    {
-        getText _cfg;
-    };
+    if ( isArray _cfg ) then { (getArray _cfg) select _camoId; } else { getText _cfg; };
 };
 
 private _magazineArray = {
@@ -99,7 +91,7 @@ private _weaponArray = {
     //[getText (_cfg >> "grenade")],
 
     [
-        [_cfg >> "name"  ] call _camoField,
+        [_cfg >> "classname"  ] call _camoField,
         [_cfg >> "muzzle"] call _camoField,
         [_cfg >> "laser" ] call _camoField,
         _scope,
@@ -112,7 +104,7 @@ private _weaponArray = {
 private _clothingArray = {
     params ["_cfg"];
     
-    private _name = [_cfg >> "name"] call _camoField;
+    private _name = [_cfg >> "classname"] call _camoField;
     if ( _name isEqualTo "" ) exitWith {[]};
     
     private _items = [];
@@ -120,12 +112,15 @@ private _clothingArray = {
     {
         private _itemName = configName _x;
         
-        if ( _itemName isNotEqualTo "name" ) then
+        if ( _itemName isNotEqualTo "classname" ) then
         {
             private _itemAmount = getNumber _x;
             
             if ( _itemAmount > 0 ) then
             {
+                private _itemCamo = _factionLoadout >> "Magazines" >> _itemName;
+                if ( isArray(_itemCamo) ) then { _itemName = [_itemCamo] call _camoField; };
+            
                 _items pushBack ([ _itemName, _itemAmount ] call _magazineArray);
             };
         };
@@ -156,11 +151,7 @@ private _unitLoadout = [
 
 _unit setUnitLoadout [_unitLoadout, true];
 
-if ! ( _unit getVariable ["hasScopeChoice", false] ) then
-{
-	_unit setVariable ["hasScopeChoice", true];
-	[_unit, _unitType, _faction, _camoId] call FUNC(scopeChoice);
-};
+[_unit, _loadout, _camoId] call FUNC(scopeChoice);
 
 //Set GHG patch
 [_unit, "GHG"] call BIS_fnc_setUnitInsignia;

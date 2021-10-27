@@ -5,9 +5,9 @@ class medic_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
 
-    class Vest
+    class Vest : Vest
     {
-        name = "rhsusf_spc_corpsman";
+        classname = "rhsusf_spc_corpsman";
         // Inherited item overrides
         SmokeShell = 0;
         rhs_mag_m67 = 0;
@@ -15,9 +15,9 @@ class medic_f : soldier_f
         rhs_mag_m18_red = 1;
     };
     
-    class Backpack
+    class Backpack : Backpack
     {
-        name = "rhsusf_assault_eagleaiii_coy_medic";
+        classname = "rhsusf_assault_eagleaiii_coy_medic";
         // List of items
         ACE_elasticBandage = 32;
 		ACE_packingBandage = 32;

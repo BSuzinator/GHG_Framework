@@ -5,20 +5,20 @@ class soldier_tl_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
-    class Weapon_1 // Rifle
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        name = "rhs_weap_m16a4_carryhandle_M203";
+        classname = "rhs_weap_m16a4_carryhandle_M203";
         grenade = "rhs_mag_M441_HE";
 
-        class Scopes
+        class Scopes : Scopes
         {
             acog = "rhsusf_acc_ACOG_RMR";
         };
     };
     
-    class Vest
+    class Vest : Vest
     {
-        name = "rhsusf_spc_teamleader";
+        classname = "rhsusf_spc_teamleader";
         // Inherited item overrides
         SmokeShell = 0;
         rhs_mag_m67 = 1;
@@ -27,9 +27,9 @@ class soldier_tl_f : soldier_f
         
     };
     
-    class Backpack
+    class Backpack : Backpack
     {
-        name = "rhsusf_falconii_coy";
+        classname = "rhsusf_falconii_coy";
         // List of items
         rhs_mag_M441_HE = 10;
         rhs_mag_M585_white = 5;
