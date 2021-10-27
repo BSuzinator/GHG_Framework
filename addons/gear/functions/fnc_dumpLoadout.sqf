@@ -14,9 +14,8 @@ private _loadout = getUnitLoadout _unit;
 
 _loadout params ["_weapon1", "_weapon3", "_weapon2", "_uniform", "_vest", "_backpack", "_helmet", "_facewear", "_binoculars", "_linked"];
 
-private _out = format [
-"
-class %1 : loadout_base {
+private _out = format [ 
+"class %1 : loadout_base {
     #include ""..\loadout_inherit.hpp"" // This must the first line inside of the class!!!!
     
     class Weapon_1 : Weapon_1 // Rifle

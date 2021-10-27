@@ -7,12 +7,7 @@
 ======================================*/
 if ( !hasInterface ) exitWith {};
 params ["_unit", "_cfg", "_camoId"];
-
-systemChat "HERE";
-
 if ( _unit getVariable [QGVAR(hasScopeChoice), false] ) exitWith {};
-
-systemChat "HERE2";
 
 //Get respawn marker for distance check
 //private _respawnPos = markerPos format ["respawn_%1", side _unit];
@@ -67,8 +62,6 @@ private _camoField = {
     {
         _scopeChoices pushBack ([_x] call _camoField);
     } forEach configProperties [_wepCfg >> "Scopes"];
-    
-    systemChat str (configProperties [_wepCfg >> "Scopes"]);
     
     if ( (count _scopeChoices) > 0 ) then
     {
