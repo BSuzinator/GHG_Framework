@@ -17,8 +17,7 @@ class soldier_f : loadout_base
             holo = "rhsusf_acc_eotech_xps3";
             red_dot_magnified = "rhsusf_acc_g33_t1";
             holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt = "rhsusf_acc_eotech_552";
-            //holo_alt_camo[] = { "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd" };
+            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d" };
         };
     };
     
