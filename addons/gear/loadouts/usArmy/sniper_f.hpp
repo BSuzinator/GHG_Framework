@@ -1,28 +1,31 @@
 /*======================================
-	Loadout for Rifleman (usArmy)
+	Loadout for Recon Sniper (usArmy)
 ======================================*/
-class soldier_f : loadout_base
+class sniper_f : loadout_base
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_wd", "rhs_weap_m4a1", "rhs_weap_m4a1", "rhs_weap_m4a1", "rhs_weap_m4a1_d" };
+        classname[] = { "rhs_weap_XM2010_wd", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
+		muzzle = "rhsusf_acc_M2010S";
+		bipod = "rhsusf_acc_harris_bipod";
         laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-		bipod = "rhsusf_acc_kac_grip";
+        ammo = "rhsusf_5Rnd_300winmag_xm2010";
         
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
-			alt_holo = "";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d" };
+            sniper_optic = "rhsusf_acc_LEUPOLDMK4_2";
         };
     };
     
+	class Weapon_2 : Weapon_1 
+	{ 
+		classname = "rhsusf_weap_m9";
+        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
+		class Scopes {}; 
+	};
+	
     class Uniform : Uniform
     {
         classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
@@ -32,12 +35,18 @@ class soldier_f : loadout_base
     {
         classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
         // List of items
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 8;
+        rhsusf_5Rnd_300winmag_xm2010 = 4;
+		rhsusf_mag_15Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
-        ACE_EntrenchingTool = 1;
     };
     
     headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
     facewear = "rhsusf_oakley_goggles_clr";
+	
+	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
+    {
+        classname = "rhsusf_bino_lrf_Vector21";
+
+        class Scopes {};
+    };
 };

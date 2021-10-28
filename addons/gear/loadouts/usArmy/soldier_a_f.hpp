@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for Assistant Autorifleman (usArmy)
+	Loadout for MMG Ammo Bearer (usArmy)
 ======================================*/
-class soldier_aar_f : soldier_f
+class soldier_a_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
@@ -11,7 +11,7 @@ class soldier_aar_f : soldier_f
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhsusf_200Rnd_556x45_soft_pouch = 3;
+        rhsusf_100Rnd_762x51 = 5;
     };
 	
 	class Binoculars : Binoculars

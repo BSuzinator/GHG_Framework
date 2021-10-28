@@ -9,6 +9,7 @@ class medic_f : soldier_f
     {
         classname[] = { "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ucp_Medic", "rhsusf_iotv_ucp_Medic" };
         // Inherited item overrides
+		ACE_EntrenchingTool = 0;
         rhs_mag_m67 = 1;
         // List of items
         rhs_mag_m18_red = 2;
@@ -17,7 +18,6 @@ class medic_f : soldier_f
     class Backpack : Backpack
     {
         classname[] = { "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ucp_medic", "rhsusf_assault_eagleaiii_ucp_medic" };
-		ACE_EntrenchingTool = 0;
         // List of items
         ACE_elasticBandage = 32;
 		ACE_packingBandage = 32;

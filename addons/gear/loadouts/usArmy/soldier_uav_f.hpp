@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for FAC (usArmy)
 ======================================*/
-class soldier_uav : soldier_tl_f
+class soldier_uav_f : soldier_tl_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
@@ -12,8 +12,8 @@ class soldier_uav : soldier_tl_f
         rhs_mag_M585_white = 5;
         rhs_mag_m661_green = 3;
         rhs_mag_m662_red = 3;
-        rhs_mag_m713_Red = 3;
-        rhs_mag_m715_Green = 3;
+        rhs_mag_m713_Red = 4;
+        rhs_mag_m715_Green = 4;
         rhs_mag_m714_White = 4;
     };
 
