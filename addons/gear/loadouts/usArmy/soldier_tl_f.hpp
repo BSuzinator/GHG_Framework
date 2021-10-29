@@ -20,13 +20,13 @@ class soldier_tl_f : soldier_f
     {
         classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
 		ACE_MapTools = 1;
+		ACE_EntrenchingTool = 0;
     };
     
     class Backpack : Backpack
     {
         classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
-        ACE_EntrenchingTool = 0;
-		// List of items
+        // List of items
         rhs_mag_M441_HE = 10;
         rhs_mag_M585_white = 5;
         rhs_mag_m661_green = 2;
