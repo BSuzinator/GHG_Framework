@@ -16,7 +16,7 @@ class support_AMort_f : soldier_f
 		rhs_mag_30Rnd_556x45_M855A1_Stanag = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
-		ACE_RangeTable_82mm = 1;
+		ACE_artilleryTable = 1;
     };
 	
 	class Backpack : Backpack

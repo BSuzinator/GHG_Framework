@@ -19,6 +19,7 @@ class officer_f : soldier_f
 		classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
         // List of items
         ACRE_PRC152 = 1;
+		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
     };
 	

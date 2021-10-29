@@ -15,6 +15,9 @@ class support_Mort_f : soldier_f
         // List of items
 		rhs_mag_30Rnd_556x45_M855A1_Stanag = 6;
 		ACE_EntrenchingTool = 0;
+		ACE_Kestrel4500 = 1;
+		ACE_MapTools = 1;
+		ACE_artilleryTable = 1;
     };
 	
 	class Backpack : Backpack

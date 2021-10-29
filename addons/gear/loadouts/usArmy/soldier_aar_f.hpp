@@ -5,6 +5,11 @@ class soldier_aar_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
+	class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
+	
     class Backpack : Backpack
     {
         classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
