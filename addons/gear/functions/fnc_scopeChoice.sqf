@@ -60,7 +60,8 @@ private _camoField = {
     private _scopeChoices = [];
     
     {
-        _scopeChoices pushBack ([_x] call _camoField);
+        private _field = [_x] call _camoField;
+        if ( _field isNotEqualTo "" ) then { _scopeChoices pushBack _field; };
     } forEach configProperties [_wepCfg >> "Scopes"];
     
     if ( (count _scopeChoices) > 0 ) then
