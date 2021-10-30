@@ -42,6 +42,8 @@ else
 	setPlayerRespawnTime 5000;
 	//Respawn all units as rifleman
 	[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp);
+	/*
+	//Remove Traits from unit on respawn 
 	_unit setUnitTrait ["engineer", false];
 	_unit setUnitTrait ["explosiveSpecialist", false];
 	_unit setUnitTrait ["Medic", false];
@@ -49,6 +51,7 @@ else
 	_unit setVariable ["ace_medical_medicClass", 0, true];
 	_unit setVariable ["ACE_isEOD", false, true];
 	_unit setVariable ["ACE_isEngineer", false, true];
+	*/
 };
 
 //Set Player Scope Select time
