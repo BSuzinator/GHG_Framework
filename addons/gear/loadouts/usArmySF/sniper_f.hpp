@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Recon Sniper (usArmy)
+	Loadout for Recon Sniper (usArmySF)
 ======================================*/
 class sniper_f : loadout_base
 {
@@ -21,27 +21,29 @@ class sniper_f : loadout_base
     
 	class Weapon_2 : Weapon_1 
 	{ 
-		classname = "rhsusf_weap_m9";
-        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
+		classname = "rhsusf_weap_glock17g4";
+		muzzle = "rhsusf_acc_omega9k";
+		laser = "acc_flashlight_pistol";
+        ammo = "rhsusf_mag_17Rnd_9x19_FMJ";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
+        classname[] = { "rhs_uniform_g3_m81", "rhs_uniform_g3_blk", "rhs_uniform_g3_tan" };
     };
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
+        classname = "rhsusf_mbav_Rifleman";
         // List of items
         rhsusf_5Rnd_300winmag_xm2010 = 4;
-		rhsusf_mag_15Rnd_9x19_FMJ = 2;
+		rhsusf_mag_17Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
     };
     
-    headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
+    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
 	
 	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
     {

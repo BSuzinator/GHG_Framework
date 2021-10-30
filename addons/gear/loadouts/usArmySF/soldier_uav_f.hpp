@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for FAC (usArmy)
+	Loadout for FAC (usArmySF)
 ======================================*/
 class soldier_uav_f : soldier_tl_f
 {
