@@ -53,6 +53,11 @@ private _camoField = {
     if ( isArray _cfg ) then { (getArray _cfg) select _camoId; } else { getText _cfg; };
 };
 
+private _removeScope = {
+    params ["_target", "_player", "_params"];
+    _player removePrimaryWeaponItem ((primaryWeaponItems _player) select 2);
+};
+
 {
     private _wepCfg = _cfg >> _x;
     private _wepInd = _forEachIndex;
@@ -98,7 +103,7 @@ private _camoField = {
             [_unit, 1, _actPath, _action] call ace_interact_menu_fnc_addActionToObject;
         } forEach _scopeChoices;
         
-        _action = ["ghg_scopes_clear","Remove Scope","\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa",{_unit removePrimaryWeaponItem ((primaryWeaponItems _unit) select 2)},{true}] call ace_interact_menu_fnc_createAction;
+        _action = ["ghg_scopes_clear","Remove Scope","\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa",_removeScope,{true}] call ace_interact_menu_fnc_createAction;
         [_unit, 1, _actPath, _action] call ace_interact_menu_fnc_addActionToObject;
     };
 } forEach ["Weapon_1", "Weapon_2", "Weapon_3"];
