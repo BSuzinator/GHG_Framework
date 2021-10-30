@@ -5,6 +5,11 @@ class soldier_uav_f : soldier_tl_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
+	class Weapon_1 : Weapon_1 // Rifle
+    {
+        grenade = "rhs_mag_m713_Red";
+    };
+	
 	class Vest : Vest
     {
         ACE_MapTools = 1;

@@ -45,7 +45,7 @@ class sniper_f : loadout_base
 	
 	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
     {
-        classname = "rhsusf_bino_lrf_Vector21";
+        classname = "ACE_Yardage450";
 
         class Scopes {};
     };
