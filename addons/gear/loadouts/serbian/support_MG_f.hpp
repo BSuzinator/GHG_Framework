@@ -1,0 +1,33 @@
+/*======================================
+	Loadout for MMG Gunner (serbian)
+======================================*/
+class support_MG_f : soldier_f
+{
+    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+	
+	class Weapon_1 : Weapon_1 // Rifle
+    {
+        classname = "rhs_weap_m240G";
+        ammo = "rhsusf_100Rnd_762x51";
+        bipod = "rhsusf_acc_saw_bipod";
+		class Scopes : Scopes
+        {
+            mg_optic = "rhsusf_acc_ELCAN";
+        };
+    };
+	
+	class Vest : Vest
+    {
+        // List of items
+		rhssaf_30rnd_556x45_EPR_G36 = 0;
+		rhsusf_100Rnd_762x51 = 3;
+		ACE_EntrenchingTool = 0;
+    };
+	
+	class Backpack : Backpack
+    {
+        classname[] = { "rhssaf_kitbag_md2camo" };
+        // List of items
+        rhsusf_100Rnd_762x51 = 3;
+    };
+};
