@@ -18,7 +18,9 @@ class soldier_tl_f : soldier_f
     
     class Vest : Vest
     {
-        classname = "rhsusf_spc_teamleader";        
+        classname = "rhsusf_spc_teamleader";
+		ACE_MapTools = 1;
+		ACE_EntrenchingTool = 0;
     };
     
     class Backpack : Backpack
@@ -32,6 +34,11 @@ class soldier_tl_f : soldier_f
         rhs_mag_m713_Red = 2;
         rhs_mag_m715_Green = 2;
         rhs_mag_m714_White = 4;
+    };
+
+	class Binoculars : Binoculars
+    {
+        classname = "Binocular";
     };
 
     headgear[] = { "rhsusf_lwh_helmet_marpatd_headset", "rhsusf_lwh_helmet_marpatwd_headset" };

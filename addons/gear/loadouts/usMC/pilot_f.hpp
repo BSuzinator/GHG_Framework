@@ -24,10 +24,10 @@ class pilot_f : soldier_f
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_glock17g4";
-		muzzle = "rhsusf_acc_omega9k";
-        laser = "acc_flashlight_pistol";
-        ammo = "rhsusf_mag_17Rnd_9x19_FMJ";
+		classname = "rhsusf_weap_m9";
+		muzzle = "";
+        laser = "";
+        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
 		class Scopes {}; 
 	};
 	
@@ -40,12 +40,12 @@ class pilot_f : soldier_f
     {
         classname = "V_Rangemaster_belt";
         // List of item overrides
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 0;
+        rhs_mag_30Rnd_556x45_M855_Stanag = 0;
         rhs_mag_m67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
         // List of items
-		rhsusf_mag_17Rnd_9x19_FMJ = 3;
+		rhsusf_mag_15Rnd_9x19_FMJ = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

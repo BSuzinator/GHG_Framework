@@ -10,11 +10,6 @@ class soldier_uav_f : soldier_tl_f
         grenade = "rhs_mag_m713_Red";
     };
 	
-	class Vest : Vest
-    {
-        ACE_MapTools = 1;
-    };
-	
     class Backpack : Backpack
     {
         ACRE_PRC117F = 1;

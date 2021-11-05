@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Assistant MAT (usMC)
+	Loadout for MAT Gunner (usMC)
 ======================================*/
 class soldier_at_f : soldier_f
 {

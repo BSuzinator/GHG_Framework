@@ -17,7 +17,7 @@ class soldier_ar_f : soldier_f
         classname = "rhsusf_spc_iar";
         // Inherited item overrides
         rhs_mag_30Rnd_556x45_M855_Stanag = 0;
-        SmokeShell = 0;
+        SmokeShell = 1;
         rhs_mag_m67 = 1;
         // List of items
         rhs_mag_100Rnd_556x45_M855_cmag = 3;

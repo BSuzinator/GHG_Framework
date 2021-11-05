@@ -4,7 +4,19 @@
 class crew_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
-
+	
+	class Weapon_1 : Weapon_1 // Rifle
+    {
+        class Scopes : Scopes
+        {
+            red_dot = "rhsusf_acc_compm4";
+            holo = "rhsusf_acc_eotech_xps3";
+			holo_alt = "rhsusf_acc_eotech_552";
+            red_dot_magnified = "";
+            holo_magnified = "";
+        };
+    };
+	
     class Uniform : Uniform
     {
         ACE_microDAGR = 1;
