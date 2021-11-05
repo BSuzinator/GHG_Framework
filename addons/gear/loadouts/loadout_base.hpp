@@ -52,7 +52,7 @@ class loadout_base
 
     class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
     {
-        classname = "Binocular";
+        classname = "";
 
         class Scopes {};
     };
