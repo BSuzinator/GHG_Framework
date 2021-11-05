@@ -53,9 +53,15 @@ private _camoField = {
     if ( isArray _cfg ) then { (getArray _cfg) select _camoId; } else { getText _cfg; };
 };
 
-private _removeScope = {
-    params ["_target", "_player", "_params"];
-    _player removePrimaryWeaponItem ((primaryWeaponItems _player) select 2);
+private _changeScope = {
+    params ["_target", "_scopeUnit", "_args"];
+    _args params ["_wepInd", ["_scopeClass", ""]];
+    
+    switch (_wepInd) do {
+        case 0: { _scopeUnit removePrimaryWeaponItem   ((primaryWeaponItems _scopeUnit  ) # 2); _scopeUnit addPrimaryWeaponItem   _scopeClass };
+        case 1: { _scopeUnit removeHandgunItem         ((handgunItems _scopeUnit        ) # 2); _scopeUnit addHandgunItem         _scopeClass };
+        case 2: { _scopeUnit removeSecondaryWeaponItem ((secondaryWeaponItems _scopeUnit) # 2); _scopeUnit addSecondaryWeaponItem _scopeClass };
+    };
 };
 
 {
@@ -73,8 +79,20 @@ private _removeScope = {
     {
         private _wepClass = [_wepCfg >> "classname"] call _camoField;
         private _wepName = [_wepClass] call _getscreenname;
+        private _wepIcon = "";
+        
+        {
+            private _path = format[_x, _wepClass];
+            if ( fileExists _path ) exitWith { _wepIcon = _path; };
+        } forEach [
+            "\rhsafrf\addons\rhs_inventoryicons\data\weapons\%1_ca.paa",
+            "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\%1_ca.paa",
+            "\rhsgref\addons\rhsgref_inventoryicons\data\weapons\%1_ca.paa",
+            "\rhssaf\addons\rhssaf_inventoryicons\data\weapons\%1_ca.paa"
+        ];
     
-        private _wepAction = [format ["GHG_Scopes_Weapon%1", _wepInd], _wepName, "", {}, {true}] call ace_interact_menu_fnc_createAction;
+    
+        private _wepAction = [format ["GHG_Scopes_Weapon%1", _wepInd], _wepName, _wepIcon, {}, {true}] call ace_interact_menu_fnc_createAction;
         [_unit, 1, ["ACE_SelfActions","GHG_Scopes"], _wepAction] call ace_interact_menu_fnc_addActionToObject;
 
         private _actPath = ["ACE_SelfActions","GHG_Scopes",format ["GHG_Scopes_Weapon%1", _wepInd]];
@@ -89,22 +107,17 @@ private _removeScope = {
                 if ( fileExists _path ) exitWith { _scopeIcon = _path; };
             } forEach [
                 "\rhsafrf\addons\rhs_inventoryicons\data\accessories\%1_ca.paa",
-                "\rhsusf\addons\rhsusf_inventoryicons\data\accessories\%1_ca.paa"
+                "\rhsusf\addons\rhsusf_inventoryicons\data\accessories\%1_ca.paa",
+                "\rhsgref\addons\rhsgref_inventoryicons\data\accessories\%1_ca.paa",
+                "\rhssaf\addons\rhssaf_inventoryicons\data\accessories\%1_ca.paa"
             ];
 
-            private _statement = {
-                params ["_target", "_unit", "_actionParams"];
-                private _scopeClass = _actionParams select 0;
-                _unit removePrimaryWeaponItem (primaryWeaponItems _unit select 2);
-                _unit addPrimaryWeaponItem _scopeClass;
-            };
-
-            private _action = [format ["ghg_scopes_%1", _scopeClass], _displayName, _scopeIcon, _statement, {true}, {}, [_scopeClass]] call ace_interact_menu_fnc_createAction;
+            private _action = [format ["ghg_scopes_%1", _scopeClass], _displayName, _scopeIcon, _changeScope, {true}, {}, [_wepInd, _scopeClass]] call ace_interact_menu_fnc_createAction;
             [_unit, 1, _actPath, _action] call ace_interact_menu_fnc_addActionToObject;
         } forEach _scopeChoices;
         
-        _action = ["ghg_scopes_clear","Remove Scope","\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa",_removeScope,{true}] call ace_interact_menu_fnc_createAction;
-        [_unit, 1, _actPath, _action] call ace_interact_menu_fnc_addActionToObject;
+        private _remAction = ["ghg_scopes_clear", "Remove Scope", "\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa", _changeScope, {true}, {}, [_wepInd, ""]] call ace_interact_menu_fnc_createAction;
+        [_unit, 1, _actPath, _remAction] call ace_interact_menu_fnc_addActionToObject;
     };
 } forEach ["Weapon_1", "Weapon_2", "Weapon_3"];
 

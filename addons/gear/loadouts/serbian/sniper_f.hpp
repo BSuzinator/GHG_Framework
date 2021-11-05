@@ -19,7 +19,7 @@ class sniper_f : loadout_base
         };
     };
     
-	class Weapon_2 : Weapon_1 
+	class Weapon_2 : Weapon_2 
 	{ 
 		classname = "rhsusf_weap_m9";
         ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
@@ -43,7 +43,7 @@ class sniper_f : loadout_base
     headgear[] = { "rhssaf_helmet_m97_veil_oakleaf" };
     facewear = "rhsusf_oakley_goggles_clr";
 	
-	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
+	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
     {
         classname = "ACE_Yardage450";
 

@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Heli Pilot (usArmySF)
+	Loadout for Heli Pilot (usMC)
 ======================================*/
 class helipilot_f : helicrew_f
 {

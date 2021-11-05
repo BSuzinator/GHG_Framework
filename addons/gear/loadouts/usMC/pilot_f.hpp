@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Fixed Wing Pilots (serbian)
+	Loadout for Fixed Wing Pilots (usMC)
 ======================================*/
 class pilot_f : soldier_f
 {
@@ -24,32 +24,34 @@ class pilot_f : soldier_f
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m9";
-        laser = "";
-        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
+		classname = "rhsusf_weap_glock17g4";
+		muzzle = "rhsusf_acc_omega9k";
+        laser = "acc_flashlight_pistol";
+        ammo = "rhsusf_mag_17Rnd_9x19_FMJ";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname = "rhssaf_uniform_mig29_pilot";
+        classname = "U_B_PilotCoveralls";
     };
     
     class Vest : Vest
     {
         classname = "V_Rangemaster_belt";
-        // List of items
-        rhssaf_30rnd_556x45_EPR_G36 = 0;
+        // List of item overrides
+        rhs_mag_30Rnd_556x45_Mk318_Stanag = 0;
         rhs_mag_m67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
-		rhsusf_mag_15Rnd_9x19_FMJ = 3;
+        // List of items
+		rhsusf_mag_17Rnd_9x19_FMJ = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;
 		ACE_Chemlight_HiRed = 1;
     };
     
-    headgear = "H_PilotHelmetFighter_O";
+    headgear = "RHS_jetpilot_usaf";
     facewear = "rhsusf_oakley_goggles_clr";
 };

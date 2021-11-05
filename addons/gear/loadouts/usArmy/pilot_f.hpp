@@ -22,7 +22,7 @@ class pilot_f : soldier_f
         };
     };
     
-	class Weapon_2 : Weapon_1 
+	class Weapon_2 : Weapon_2 
 	{ 
 		classname = "rhsusf_weap_m9";
         laser = "";

@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Explosive Specialist (usArmy)
+	Loadout for Explosive Specialist (usMC)
 ======================================*/
 class soldier_exp_f : soldier_f
 {
@@ -14,7 +14,7 @@ class soldier_exp_f : soldier_f
 	
 	class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
+        classname = "rhsusf_spc_patchless_radio";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -24,7 +24,7 @@ class soldier_exp_f : soldier_f
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
         rhsusf_m112x4_mag = 1;
         rhsusf_m112_mag = 3;

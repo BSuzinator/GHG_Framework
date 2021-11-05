@@ -19,7 +19,7 @@ class sniper_f : loadout_base
         };
     };
     
-	class Weapon_2 : Weapon_1 
+	class Weapon_2 : Weapon_2 
 	{ 
 		classname = "rhsusf_weap_m9";
         ammo = "rhsusf_mag_15Rnd_9x19_FMJ";

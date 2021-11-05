@@ -1,14 +1,14 @@
 /*======================================
-	Loadout for Recon Sniper (usArmySF)
+	Loadout for Recon Sniper (usMC)
 ======================================*/
 class sniper_f : loadout_base
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
-    class Weapon_1 : Weapon_1 // Rifle
+    class Weapon_1 : Weapon_1
     {
-        classname[] = { "rhs_weap_XM2010_wd", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
-		muzzle = "rhsusf_acc_M2010S";
+        classname = "rhs_weap_XM2010";
+        muzzle = "rhsusf_acc_M2010S";
 		bipod = "rhsusf_acc_harris_bipod";
         laser = "rhsusf_acc_anpeq15_bk";
         ammo = "rhsusf_5Rnd_300winmag_xm2010";
@@ -19,31 +19,29 @@ class sniper_f : loadout_base
         };
     };
     
-	class Weapon_2 : Weapon_2 
+    class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_glock17g4";
-		muzzle = "rhsusf_acc_omega9k";
-		laser = "acc_flashlight_pistol";
-        ammo = "rhsusf_mag_17Rnd_9x19_FMJ";
+		classname = "rhsusf_weap_m9";
+        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_g3_m81", "rhs_uniform_g3_blk", "rhs_uniform_g3_tan" };
+        classname[] = {"rhs_uniform_FROG01_d", "rhsusf_lwh_helmet_marpatwd"};
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_mbav_Rifleman";
+        classname = "rhsusf_spc_rifleman";
         // List of items
         rhsusf_5Rnd_300winmag_xm2010 = 4;
-		rhsusf_mag_17Rnd_9x19_FMJ = 2;
+		rhsusf_mag_15Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
     };
     
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+    headgear[] = { "rhsusf_lwh_helmet_marpatd", "rhsusf_lwh_helmet_marpatwd" };
+    facewear = "rhsusf_oakley_goggles_clr";
 	
 	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
     {

@@ -1,18 +1,19 @@
 /*======================================
-	Loadout for FAC (usMC)
+	Loadout for Assistant MAT (usMC)
 ======================================*/
-class soldier_uav_f : soldier_tl_f
+class soldier_aat_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
-    
+	
     class Backpack : Backpack
     {
-        ACRE_PRC117F = 1;
+        classname = "B_Carryall_cbr";
+        // List of items
+        rhs_mag_smaw_HEAA = 2;
     };
-
-    class Binoculars : Binoculars
+	
+	class Binoculars : Binoculars
     {
-        classname = "Laserdesignator";
-        ammo = "Laserbatteries";
+        classname = "Binocular";
     };
 };

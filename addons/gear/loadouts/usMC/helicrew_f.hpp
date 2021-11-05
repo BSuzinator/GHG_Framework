@@ -1,15 +1,16 @@
 /*======================================
-	Loadout for Heli Pilot (usArmySF)
+	Loadout for Heli Crew (usMC)
 ======================================*/
-class helipilot_f : helicrew_f
+class helicrew_f : crew_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
 	
 	class Vest : Vest
     {
         // List of items
-        ACE_microDAGR = 1;
+		rhs_mag_m67 = 0;
     };
-    
-	headgear = "rhsusf_hgu56p_visor_black";
+
+	headgear = "rhsusf_hgu56p_visor_mask_black";
+    facewear = "rhsusf_oakley_goggles_clr";
 };
