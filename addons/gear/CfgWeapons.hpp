@@ -11,4 +11,34 @@ class CfgWeapons
     {
         magazineWell[] = { CBA_545x39_AK, CBA_545x39_RPK };
     };
+    
+    class arifle_MX_Base_F;
+    class rhs_weap_m4_Base : arifle_MX_Base_F
+    {
+        // Remove high capacity magazines
+        magazineWell[] = {
+            STANAG_556x45,
+            //STANAG_556x45_Large
+            CBA_556x45_STANAG
+            //CBA_556x45_STANAG_L,
+            //CBA_556x45_STANAG_XL,
+            //CBA_556x45_STANAG_2D,
+            //CBA_556x45_STANAG_2D_XL
+        };
+    };
+    
+    // M27 IAR needs big mags
+    class rhs_weap_m4a1;
+    class rhs_weap_m27iar: rhs_weap_m4a1
+    {
+        magazineWell[] = {
+            STANAG_556x45,
+            STANAG_556x45_Large,
+            CBA_556x45_STANAG,
+            CBA_556x45_STANAG_L,
+            CBA_556x45_STANAG_XL,
+            CBA_556x45_STANAG_2D,
+            CBA_556x45_STANAG_2D_XL
+        };
+    };
 };
