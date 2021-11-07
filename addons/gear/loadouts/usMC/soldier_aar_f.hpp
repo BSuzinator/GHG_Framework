@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Assistant Autorifleman (usMC)
 ======================================*/
-class soldier_arr_f : soldier_f
+class soldier_aar_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
