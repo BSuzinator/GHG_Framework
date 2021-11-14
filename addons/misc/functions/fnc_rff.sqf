@@ -65,14 +65,22 @@ if (isNil "_unit") then {_unit = player};
 		_ffInstances = _ffInstances + 1;
 		_instigator setVariable ["ghg_rff_instances", _ffInstances, true];
 		if ((_ffInstances >= 24) && (_ffInstances < 32)) then {
-			[ [format ["You have friendly fired too many times.\nThis is your only warning.\nCount: %1",player getVariable ["ghg_rff_instances", 3]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
+			_warned = _instigator getVariable ["ghg_rff_warned", false];
+			if (!_warned) then {
+				[ [format ["You have friendly fired too many times.\nThis is your only warning.\nCount: %1",player getVariable ["ghg_rff_instances", 3]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
+				_instigator setVariable ["ghg_rff_warned",true,true];
+			};
 		};
 		if (_ffInstances >= 50) then {
-			[ [format ["You have friendly fired too many times.\nDisconnecting...",player getVariable ["ghg_rff_instances", 0]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
-			"End1" remoteExec ["endMission", _instigator];
-			[format ["%1 has been kicked for friendly fire.",name _instigator]] remoteExec ["systemchat",-2];
-			_serverCommandStr = format ["#kick %1",name _instigator];
-			[_serverCommandStr] remoteExec ["serverCommand", 2];
+			_kicked = _instigator getVariable ["ghg_rff_kicked", false];
+			if (!_kicked) then {
+				[ [format ["You have friendly fired too many times.\nDisconnecting...",player getVariable ["ghg_rff_instances", 0]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
+				"End1" remoteExec ["endMission", _instigator];
+				[format ["%1 has been kicked for friendly fire.",name _instigator]] remoteExec ["systemchat",-2];
+				_serverCommandStr = format ["#kick %1",name _instigator];
+				[_serverCommandStr] remoteExec ["serverCommand", 2];
+				_instigator setVariable ["ghg_rff_kicked",true,true];
+			};
 		};
 		//Return 0 Vanilla damage
 		0
