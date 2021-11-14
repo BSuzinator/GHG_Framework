@@ -13,14 +13,18 @@ if (isNil "_unit") then {_unit = player};
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
 		if (side _unit != side _instigator) exitWith {};
 		_damageType = ["_projectile"] call ace_medical_damage_fnc_getTypeOfDamage;
-
+		
 		//Get Instigator's ff incidents
 		_ffInstances = _instigator getVariable ["ghg_rff_instances", 0];
 		_ffInstances = _ffInstances + 1;
 		
+		//Teleport Player out of map
+		//_instigator setPos [0,0,0];
+		
 		//Boost damage reflection
 		_damage = _damage + (_damage * 0.5);
 		
+		//Set correct hitpoint for ACE
 		_aceHitPoint = "body";
 		switch _hitPoint do {
 			//Null out other
@@ -45,7 +49,6 @@ if (isNil "_unit") then {_unit = player};
 			case "spine1":{_aceHitPoint = "body";};
 			case "spine2":{_aceHitPoint = "body";};
 			case "spine3":{_aceHitPoint = "body";};
-			case "body":{_aceHitPoint = "body";};
 			//Arms
 			case "hitarms":{_aceHitPoint = selectRandom ["hand_l","hand_r"];};
 			case "hithand":{_aceHitPoint = selectRandom ["hand_l","hand_r"];};
@@ -56,9 +59,10 @@ if (isNil "_unit") then {_unit = player};
 			case "hitlegs":{_aceHitPoint = selectRandom ["leg_l","leg_r"];};
 			case "hitleftleg":{_aceHitPoint = "leg_l";};
 			case "hitrightleg":{_aceHitPoint = "leg_r";};
-			
 			default {_aceHitPoint = "body";};			
 		};
+		
+		//Apply Damage to instigator
 		[_instigator, _damage, _aceHitPoint, _damageType, _instigator] remoteExec["ace_medical_fnc_addDamageToUnit",_instigator];
 		
 		//Make goggles dirty
