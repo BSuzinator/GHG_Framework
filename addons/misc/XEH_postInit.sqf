@@ -10,3 +10,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(engineOff);
 [] call FUNC(reversePlanes);
 [] call FUNC(makeBreifings);
+[] spawn FUNC(failDeadly);

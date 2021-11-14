@@ -4,5 +4,6 @@ PREP(checkFuelLevel);
 PREP(engineOff);
 PREP(reversePlanes);
 PREP(makeBreifings);
+PREP(failDeadly);
 PREP(getAllTaskInfo);
 PREP(systemChatAllTasks);
