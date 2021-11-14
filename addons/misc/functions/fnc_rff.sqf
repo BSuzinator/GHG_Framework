@@ -13,6 +13,10 @@ if (isNil "_unit") then {_unit = player};
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
 		if (side _unit != side _instigator) exitWith {};
 		_damageType = ["_projectile"] call ace_medical_damage_fnc_getTypeOfDamage;
+
+		//Get Instigator's ff incidents
+		_ffInstances = _instigator getVariable ["ghg_rff_instances", 0];
+		_ffInstances = _ffInstances + 1;
 		
 		//Boost damage reflection
 		_damage = _damage + (_damage * 0.5);
@@ -61,8 +65,6 @@ if (isNil "_unit") then {_unit = player};
 		remoteExecCall["ace_goggles_fnc_applyDirtEffect",_instigator];
 		
 		//Auto-kick after so many instances
-		_ffInstances = _instigator getVariable ["ghg_rff_instances", 0];
-		_ffInstances = _ffInstances + 1;
 		_instigator setVariable ["ghg_rff_instances", _ffInstances, true];
 		if ((_ffInstances >= 24) && (_ffInstances < 32)) then {
 			_warned = _instigator getVariable ["ghg_rff_warned", false];
@@ -75,7 +77,7 @@ if (isNil "_unit") then {_unit = player};
 			_kicked = _instigator getVariable ["ghg_rff_kicked", false];
 			if (!_kicked) then {
 				[ [format ["You have friendly fired too many times.\nDisconnecting...",player getVariable ["ghg_rff_instances", 0]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
-				"End1" remoteExec ["endMission", _instigator];
+				"FF_Removal" remoteExec ["endMission", _instigator];
 				[format ["%1 has been kicked for friendly fire.",name _instigator]] remoteExec ["systemchat",-2];
 				_serverCommandStr = format ["#kick %1",name _instigator];
 				[_serverCommandStr] remoteExec ["serverCommand", 2];

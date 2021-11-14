@@ -1,6 +1,6 @@
 class CfgDebriefing
 {  
-	class End1
+	class FF_Removal
 	{
 		title = "Traitor";
 		subtitle = "";
