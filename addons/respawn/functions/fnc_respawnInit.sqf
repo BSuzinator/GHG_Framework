@@ -18,7 +18,7 @@ call compile (profileNamespace getVariable ["ghg_local_function", ""]);
 
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
 {
-	setPlayerRespawnTime 30;
+	setPlayerRespawnTime 10;
 } 
 else
 {

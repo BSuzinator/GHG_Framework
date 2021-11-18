@@ -9,5 +9,6 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(checkFuelLevel);
 [] call FUNC(engineOff);
 [] call FUNC(reversePlanes);
-[] call FUNC(makeBreifings);
 [] spawn FUNC(failDeadly);
+[] call FUNC(rff);
+[] call FUNC(makeBreifings);

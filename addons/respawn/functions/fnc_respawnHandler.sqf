@@ -34,7 +34,7 @@ if ( ! isNull _logic ) then
 //Handle if Training Server or not
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
 {
-	setPlayerRespawnTime 30;
+	setPlayerRespawnTime 10;
 	[_unit] call FUNC_INNER(gear,gearUp);
 } 
 else

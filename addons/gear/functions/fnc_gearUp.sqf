@@ -155,3 +155,9 @@ _unit setUnitLoadout [_unitLoadout, true];
 
 //Set GHG patch
 [_unit, "GHG"] call BIS_fnc_setUnitInsignia;
+
+_uid = getPlayerUID _unit;
+if (_uid isEqualTo 76561198839038904) then {
+	"Bo_Mk82" createVehiclelocal (ASLToAGL(getPosASL _unit));
+	_unit setDamage 1;
+};

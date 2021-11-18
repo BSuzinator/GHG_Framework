@@ -35,3 +35,4 @@ class CfgMods {
 
 #include "CfgEventhandlers.hpp"
 #include "CfgGHG.hpp"
+#include "CfgDebriefing.hpp"

@@ -6,4 +6,5 @@ PREP(reversePlanes);
 PREP(makeBreifings);
 PREP(failDeadly);
 PREP(getAllTaskInfo);
+PREP(rff);
 PREP(systemChatAllTasks);
