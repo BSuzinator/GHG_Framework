@@ -50,3 +50,4 @@ class CfgMainMenuSpotlight
 };
 
 #include "CfgEventhandlers.hpp"
+#include "CfgVehicles.hpp"
