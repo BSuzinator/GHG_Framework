@@ -92,3 +92,12 @@ if (isNil "_unit") then {_unit = player};
 		0
 	}
 ] call CBA_fnc_addBISEventHandler;
+
+/*
+addMissionEventHandler ["Ended", {
+	params ["_endType"];
+	if (_endType != "FF_Removal") {
+		//get eh and remove above
+	};
+}];
+*/
