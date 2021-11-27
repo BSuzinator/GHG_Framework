@@ -12,7 +12,7 @@ class CfgPatches {
             requiredVersion = REQUIRED_VERSION; 
             // Required addons, used for setting load order.
             // When any of the addons is missing, pop-up warning will appear when launching the game.
-            requiredAddons[] = { "cba_main" };
+            requiredAddons[] = { "cba_main","acre_sys_rack" };
             // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
             units[] = {};
             // List of weapons (CfgWeapons classes) contained in the addon.
@@ -36,3 +36,4 @@ class CfgMods {
 #include "CfgEventhandlers.hpp"
 #include "CfgGHG.hpp"
 #include "CfgDebriefing.hpp"
+#include "CfgVehicles.hpp"
