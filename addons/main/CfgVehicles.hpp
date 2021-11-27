@@ -1,7 +1,7 @@
 class CfgVehicles {
-	class Land;
+	class LandVehicle;
 	class Car_F;
-	class LandVehicle : Land {
+	class Car : LandVehicle {
 		class AcreRacks {
             class Rack_0 {
                 displayName = "Console";      // Name displayed in the interaction menu
