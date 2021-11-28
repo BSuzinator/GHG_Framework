@@ -46,7 +46,7 @@ if ( !isServer ) exitWith
 {
     if ( _msg isEqualTypeAny ["", []] ) then
     {
-        _this remoteExecCall [QFUNC(spawnDB), 2];
+        [_msg, _callback, _args, _netId] remoteExecCall [QFUNCMAIN(spawnDB), 2];
         true; // Return value, must be last
     }
     else

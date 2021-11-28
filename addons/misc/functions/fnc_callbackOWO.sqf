@@ -15,4 +15,4 @@ _sqlResult params ["_owoCount"];
 if ( (count _owoCount > 0) && { (_owoCount # 0) >= 100 } ) then
 {
     GVAR(canOWO) = true;
-}
+};
