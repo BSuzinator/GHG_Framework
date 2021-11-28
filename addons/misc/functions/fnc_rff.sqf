@@ -74,6 +74,7 @@ if (isNil "_unit") then {_unit = player};
 			_warned = _instigator getVariable ["ghg_rff_warned", false];
 			if (!_warned) then {
 				[ [format ["You have friendly fired too many times.\nThis is your only warning.\nCount: %1",player getVariable ["ghg_rff_instances", 3]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
+				[5] remoteExec ["titleFadeOut",_instigator];
 				_instigator setVariable ["ghg_rff_warned",true,true];
 			};
 		};
@@ -86,6 +87,7 @@ if (isNil "_unit") then {_unit = player};
 				_serverCommandStr = format ["#kick %1",name _instigator];
 				[_serverCommandStr] remoteExec ["serverCommand", 2];
 				_instigator setVariable ["ghg_rff_kicked",true,true];
+				[5] remoteExec ["titleFadeOut",_instigator];
 			};
 		};
 		//Return 0 Vanilla damage
