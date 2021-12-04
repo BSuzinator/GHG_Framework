@@ -21,6 +21,6 @@ class soldier_aar_f : soldier_f
 	
 	class Binoculars : Binoculars
     {
-        classname = "vm_m19_binocs_grn";
+        classname = "vn_m19_binocs_grn";
     };
 };

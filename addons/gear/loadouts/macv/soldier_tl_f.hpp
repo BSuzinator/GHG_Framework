@@ -37,7 +37,7 @@ class soldier_tl_f : soldier_f
 
 	class Binoculars : Binoculars
     {
-        classname = "vm_m19_binocs_grn";
+        classname = "vn_m19_binocs_grn";
     };
 
     headgear[] = { "vn_b_helmet_m1_07_01_headset", "rhsusf_lwh_helmet_marpatwd_headset" };
