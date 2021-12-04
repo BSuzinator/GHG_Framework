@@ -23,7 +23,6 @@ class loadout_base
         classname = "";
         // List of items
         ACE_EarPlugs = 2;
-        ACRE_PRC343 = 1;
         ACE_elasticBandage = 5;
         ACE_packingBandage = 5;
         ACE_morphine = 2;

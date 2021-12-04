@@ -26,6 +26,7 @@ class soldier_f : loadout_base
     class Uniform : Uniform
     {
         classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
+		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest

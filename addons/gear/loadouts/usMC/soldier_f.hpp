@@ -25,6 +25,7 @@ class soldier_f : loadout_base
     class Uniform : Uniform
     {
         classname[] = { "rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd" };
+		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest

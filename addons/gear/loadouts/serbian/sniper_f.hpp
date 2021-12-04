@@ -29,6 +29,7 @@ class sniper_f : loadout_base
     class Uniform : Uniform
     {
         classname[] = { "rhssaf_uniform_m93_oakleaf" };
+		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
