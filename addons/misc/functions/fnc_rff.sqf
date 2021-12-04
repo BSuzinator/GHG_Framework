@@ -12,6 +12,7 @@ if (isNil "_unit") then {_unit = player};
 [_unit, "HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
 		if (side _unit != side _instigator) exitWith {};
+		if (_unit isEqualTo _instigator) exitWith {};
 		_damageType = ["_projectile"] call ace_medical_damage_fnc_getTypeOfDamage;
 		
 		//Get Instigator's ff incidents
