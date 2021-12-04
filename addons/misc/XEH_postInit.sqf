@@ -14,3 +14,5 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(makeBreifings);
 
 [] call FUNC(initOWO);
+
+[] call FUNC(cameraInit);

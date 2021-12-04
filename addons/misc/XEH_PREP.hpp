@@ -12,3 +12,5 @@ PREP(initOWO);
 PREP(callbackOWO);
 PREP(canOWO);
 PREP(doOWO);
+PREP(cameraScreenshot);
+PREP(cameraInit);
