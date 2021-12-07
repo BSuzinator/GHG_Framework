@@ -6,6 +6,7 @@ class macv
     
     // Should be 24
     #include "..\loadout_base.hpp"
+    #include "loadout_base_macv.hpp"
     #include "soldier_f.hpp"
     #include "soldier_lat_f.hpp"
     #include "soldier_ar_f.hpp"

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Recon Sniper (macv)
 ======================================*/
-class sniper_f : loadout_base
+class sniper_f : loadout_base_macv
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
@@ -19,10 +19,12 @@ class sniper_f : loadout_base
         };
     };
     
-    class Weapon_2 : Weapon_2 
+    class Weapon_2 : Weapon_2 // 1911 with flashlight
 	{ 
-		classname = "vn_m10";
-        ammo = "vn_m10_mag";
+		classname = "vn_mx991_m1911";
+		muzzle = "";
+        laser = "";
+        ammo = "vn_m1911_mag";
 		class Scopes {}; 
 	};
 	

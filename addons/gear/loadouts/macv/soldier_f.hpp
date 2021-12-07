@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Rifleman (macv)
 ======================================*/
-class soldier_f : loadout_base
+class soldier_f : loadout_base_macv
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
