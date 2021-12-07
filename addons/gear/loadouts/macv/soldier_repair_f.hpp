@@ -19,4 +19,6 @@ class soldier_repair_f : soldier_f
         ToolKit = 1;
         ACE_Fortify = 1;
     };
+    
+    headgear[] = { "vn_b_helmet_m1_05_01", "vn_b_helmet_m1_05_02" };
 };

@@ -11,5 +11,5 @@ class helipilot_f : helicrew_f
         ACE_microDAGR = 1;
     };
     
-	headgear = "vn_b_helmet_svh4_02_01";
+	headgear = "vn_b_helmet_svh4_01_06";
 };

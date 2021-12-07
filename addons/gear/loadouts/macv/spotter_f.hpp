@@ -20,4 +20,7 @@ class spotter_f : soldier_f
         classname = "vn_b_pack_lw_01";
         vn_m40a1_t_mag = 10;
     };
+    
+    headgear[] = { "vn_b_helmet_m1_06_01", "vn_b_helmet_m1_06_02" };
+    facewear = "vn_b_aviator";
 };

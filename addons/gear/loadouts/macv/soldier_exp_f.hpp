@@ -30,4 +30,6 @@ class soldier_exp_f : soldier_f
         rhsusf_m112_mag = 3;
 		SatchelCharge_Remote_Mag = 1;
     };
+    
+    headgear[] = { "vn_b_helmet_m1_05_01", "vn_b_helmet_m1_05_02" };
 };

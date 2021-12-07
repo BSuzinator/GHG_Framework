@@ -32,4 +32,6 @@ class medic_f : soldier_f
 		ACE_epinephrine = 12;
 		ACE_EarPlugs = 1;
     };
+    
+    headgear[] = { "vn_b_helmet_m1_07_01", "vn_b_helmet_m1_07_02" };
 };

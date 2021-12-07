@@ -23,4 +23,5 @@ class soldier_aar_f : soldier_f
     {
         classname = "vn_m19_binocs_grn";
     };
+    headgear[] = { "vn_b_helmet_m1_05_01", "vn_b_helmet_m1_05_02" };
 };

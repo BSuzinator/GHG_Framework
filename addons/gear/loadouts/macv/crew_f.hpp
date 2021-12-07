@@ -30,8 +30,8 @@ class crew_f : soldier_f
         ACE_EntrenchingTool = 0;
     };
     
-    headgear[] = {"vn_b_helmet_t56_01_02", "rhsusf_cvc_green_helmet"};
-    facewear[] = {"vn_b_acc_goggles_01", "rhsusf_shemagh2_grn"};
+    headgear = "vn_b_helmet_t56_01_01";
+    facewear = "vn_b_acc_goggles_01";
     
     class Binoculars : Binoculars
     {

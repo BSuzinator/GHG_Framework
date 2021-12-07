@@ -29,5 +29,5 @@ class soldier_ar_f : soldier_f
         // List of items
         vn_m63a_100_mag = 3;
     };
-	headgear[] = { "vn_b_helmet_m1_08_01", "rhsusf_lwh_helmet_marpatwd" };
+	headgear[] = { "vn_b_helmet_m1_05_01", "vn_b_helmet_m1_05_02" };
 };

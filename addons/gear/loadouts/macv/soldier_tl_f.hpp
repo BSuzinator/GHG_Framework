@@ -8,7 +8,7 @@ class soldier_tl_f : soldier_f
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "vn_m16_xm148";
-        grenade = "vm_40mm_m381_he_mag";
+        grenade = "vn_40mm_m381_he_mag";
 
         class Scopes : Scopes
         {
@@ -24,15 +24,15 @@ class soldier_tl_f : soldier_f
     
     class Backpack : Backpack
     {
-        classname = "vn_b_pack_lw_06";
+        classname = "vn_b_pack_lw_01";
         // List of items
-        vm_40mm_m381_he_mag = 10;
-        vm_40mm_m583_flare_w_mag = 5;
-        vm_40mm_m661_flare_g_mag = 2;
-        vm_40mm_m662_flare_r_mag = 2;
-        vm_40mm_m682_smoke_r_mag = 2;
-        vm_40mm_m715_smoke_g_mag = 2;
-        vm_40mm_m680_smoke_w_mag = 4;
+        vn_40mm_m381_he_mag = 10;
+        vn_40mm_m583_flare_w_mag = 5;
+        vn_40mm_m661_flare_g_mag = 2;
+        vn_40mm_m662_flare_r_mag = 2;
+        vn_40mm_m682_smoke_r_mag = 2;
+        vn_40mm_m715_smoke_g_mag = 2;
+        vn_40mm_m680_smoke_w_mag = 4;
     };
 
 	class Binoculars : Binoculars
@@ -40,5 +40,5 @@ class soldier_tl_f : soldier_f
         classname = "vn_m19_binocs_grn";
     };
 
-    headgear[] = { "vn_b_helmet_m1_07_01_headset", "rhsusf_lwh_helmet_marpatwd_headset" };
+    headgear[] = { "vn_b_helmet_m1_04_01", "vn_b_helmet_m1_04_02" };
 };

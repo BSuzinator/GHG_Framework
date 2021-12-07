@@ -5,8 +5,10 @@ class soldier_sl_f : soldier_tl_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
     
-    class Uniform : Uniform
+    class Backpack : Backpack
     {
-        ACRE_SEM52SL = 1;
+        classname = "vn_b_pack_lw_06";
+        
+        ACRE_PRC77 = 1;
     };
 };

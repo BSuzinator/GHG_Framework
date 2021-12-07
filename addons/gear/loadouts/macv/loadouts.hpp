@@ -1,6 +1,6 @@
 class macv
 {
-    camo[] = { "olive", "xxx" };
+    camo[] = { "olive", "leopard" };
     
     class Magazines {};
     

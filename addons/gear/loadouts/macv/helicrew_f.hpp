@@ -7,7 +7,7 @@ class helicrew_f : crew_f
 	
 	class Uniform : Uniform
     {
-        classname[] = { "vn_b_uniform_heli_01_01", "rhs_uniform_FROG01_wd" };
+        classname[] = { "vn_b_uniform_k2b_02_01", "vn_b_uniform_k2b_02_03" };
     };
 	
 	class Vest : Vest
@@ -16,6 +16,6 @@ class helicrew_f : crew_f
 		vn_m61_grenade_mag = 0;
     };
 
-	headgear = "vn_b_helmet_svh4_01_01";
+	headgear = "vn_b_helmet_svh4_01_04";
     facewear = "vn_b_aviator";
 };

@@ -22,7 +22,7 @@ class support_mort_f : soldier_f
 	
 	class Backpack : Backpack
     {
-        classname = "B_Carryall_green_F";
+        classname = "vn_b_pack_lw_01";
         // List of items
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;

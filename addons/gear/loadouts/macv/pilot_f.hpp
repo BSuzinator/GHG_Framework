@@ -52,6 +52,6 @@ class pilot_f : soldier_f
 		ACE_Chemlight_HiRed = 1;
     };
     
-    headgear = "vn_b_helmet_aph6_02_02";
+    headgear = "vn_b_helmet_aph6_01_01";
     facewear = "vn_b_aviator";
 };
