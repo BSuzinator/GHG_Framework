@@ -22,12 +22,12 @@ class pilot_f : soldier_f
         };
     };
     
-	class Weapon_2 : Weapon_2 
+	class Weapon_2 : Weapon_2  // 1911 with flashlight
 	{ 
-		classname = "vn_m10";
+		classname = "vn_mx991_m1911";
 		muzzle = "";
         laser = "";
-        ammo = "vn_m10_mag";
+        ammo = "vn_m1911_mag";
 		class Scopes {}; 
 	};
 	
@@ -45,7 +45,7 @@ class pilot_f : soldier_f
         ACE_EntrenchingTool = 0;
         vn_m18_white_mag = 0;
         // List of items
-		vn_m10_mag = 3;
+		vn_m1911_mag = 3;
 		vn_m18_white_magRed = 1;
 		vn_m18_white_magGreen = 1;
 		ACE_Chemlight_HiGreen = 1;
