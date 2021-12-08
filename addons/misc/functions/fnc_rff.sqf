@@ -9,7 +9,7 @@ params ["_unit"];
 if ( !hasInterface ) exitWith {};
 if (isNil "_unit") then {_unit = player};
 
-[_unit, "HandleDamage", {
+_ehID = [_unit, "HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
 		if (side _unit != side _instigator) exitWith {};
 		if (_unit isEqualTo _instigator) exitWith {};
@@ -83,24 +83,17 @@ if (isNil "_unit") then {_unit = player};
 			_kicked = _instigator getVariable ["ghg_rff_kicked", false];
 			if (!_kicked) then {
 				[ [format ["You have friendly fired too many times.\nDisconnecting...",player getVariable ["ghg_rff_instances", 0]],"BLACK FADED",5] ] remoteExec ["titleText",_instigator];
-				"FF_Removal" remoteExec ["endMission", _instigator];
 				[format ["%1 has been kicked for friendly fire.",name _instigator]] remoteExec ["systemchat",-2];
 				_serverCommandStr = format ["#kick %1",name _instigator];
 				[_serverCommandStr] remoteExec ["serverCommand", 2];
 				_instigator setVariable ["ghg_rff_kicked",true,true];
 				[5] remoteExec ["titleFadeOut",_instigator];
+				_ehID = _instigator getVariable ["ghg_rff_ehID"];
+				["fired", _ehID] remoteExec ["CBA_fnc_removeEventHandler", _instigator];
+				"FF_Removal" remoteExec ["endMission", _instigator];
 			};
 		};
 		//Return 0 Vanilla damage
 		0
 	}
 ] call CBA_fnc_addBISEventHandler;
-
-/*
-addMissionEventHandler ["Ended", {
-	params ["_endType"];
-	if (_endType != "FF_Removal") {
-		//get eh and remove above
-	};
-}];
-*/
