@@ -1,6 +1,7 @@
 PREP(addMinesToZeus);
 PREP(blackout);
 PREP(checkFuelLevel);
+PREP(ejectOnDeath);
 PREP(engineOff);
 PREP(reversePlanes);
 PREP(makeBreifings);

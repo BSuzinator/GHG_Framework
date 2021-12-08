@@ -7,6 +7,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 
 [] call FUNC(addMinesToZeus);
 [] call FUNC(checkFuelLevel);
+[] call FUNC(ejectOnDeath);
 [] call FUNC(engineOff);
 [] call FUNC(reversePlanes);
 [] spawn FUNC(failDeadly);
