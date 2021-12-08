@@ -118,10 +118,9 @@ switch (_crateScript) do {
 		};
 };
 
-{
-	_x addCuratorEditableObjects [[_crate], false];
-	[_x, [[_crate], false]] remoteExec ["addCuratorEditableObjects", 2];
-} forEach allCurators;
+["addCrateList", _crate] call CBA_fnc_serverEvent;
+
+["addZeusObject", _crate] call CBA_fnc_serverEvent;
 
 if (_isAirdrop) then {
 	_parachute = createVehicle ["B_Parachute_02_F",_modulePos, [], 0, "FLY"];

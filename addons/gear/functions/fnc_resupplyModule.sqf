@@ -4,6 +4,28 @@
 	Adds module for zeus to spawn resupply crates
 	Author: BSuz
 ======================================*/
+
+if ( isServer ) then
+{
+    GVAR(crateList) = [];
+
+    ["addCrateList", {
+        if ( _this isEqualType [] ) then
+        {
+            GVAR(crateList) append _this;
+            
+            { ["lockCrate", [_x, EGVAR(safemode,safe)], netId _x] call CBA_fnc_globalEventJIP; } forEach _this;
+        }
+        else
+        {
+            GVAR(crateList) pushBack _this;
+            ["lockCrate", [_this, EGVAR(safemode,safe)], netId _this] call CBA_fnc_globalEventJIP;
+        };
+    }] call CBA_fnc_addEventHandler;
+};
+
+["lockCrate", {(_this # 0) lockInventory (_this # 1)}] call CBA_fnc_addEventHandler;
+
 private _function = {
 	params ["_modulePos","_attachedObject"];
 

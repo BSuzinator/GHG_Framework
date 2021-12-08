@@ -8,6 +8,11 @@ if ( isServer ) then
 {
     addMissionEventHandler ["HandleDisconnect", FUNC(zeusCleanup)];
 
+    ["addZeusObject", {
+        private _objs = if ( _this isEqualType [] ) then { _this } else { [_this] };
+        { _x addCuratorEditableObjects [_objs, true]; } forEach allCurators;
+    }] call CBA_fnc_addEventHandler;
+
     GVAR(zeusGroup) = createGroup sideLogic;
 
     // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run

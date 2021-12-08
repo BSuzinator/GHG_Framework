@@ -111,7 +111,6 @@ switch (_crateScript) do {
 		};
 };
 
-{
-	_x addCuratorEditableObjects [[_crate], false];
-	[_x, [[_crate], false]] remoteExec ["addCuratorEditableObjects", 2];
-} forEach allCurators;
+["addCrateList", _crate] call CBA_fnc_serverEvent;
+
+["addZeusObject", _crate] call CBA_fnc_serverEvent;
