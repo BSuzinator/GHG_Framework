@@ -45,7 +45,7 @@ class pilot_f : soldier_f
         ACE_EntrenchingTool = 0;
         vn_m18_white_mag = 0;
         // List of items
-		vn_m1911_mag = 3;
+		vn_m1911_mag = 5;
 		vn_m18_white_magRed = 1;
 		vn_m18_white_magGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

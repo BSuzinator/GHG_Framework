@@ -5,6 +5,13 @@ class spotter_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
 	
+    class Weapon_2 : Weapon_2 {
+        classname = "vn_welrod";
+        ammo = "vn_welrod_mag";
+        
+        class Scopes {};
+    };
+    
 	class Vest : Vest
     {
 		vn_m16_20_mag = 6;
@@ -13,6 +20,7 @@ class spotter_f : soldier_f
 		ACE_RangeCard = 1;
 		ACE_SpottingScope = 1;
 		ACE_Tripod = 1;
+        vn_welrod_mag = 4;
     };
 	
 	class Backpack : Backpack

@@ -9,8 +9,8 @@ class CfgVehicles
         mass = 265;
         maximumLoad = 0;
 
-        model = "\x\ghg\addons\hacking\models\ruggednova";
-        picture = "\x\ghg\addons\hacking\models\ruggednova_icon.paa";
+        model = "\x\ghg\addons\hacking\models\ruggednova\ruggednova";
+        picture = "\x\ghg\addons\hacking\models\ruggednova\ruggednova_icon.paa";
 
         hiddenSelectionsTextures[] = {"a3\weapons_f\ammoboxes\bags\data\backpack_compact_blk_co.paa"};
     };

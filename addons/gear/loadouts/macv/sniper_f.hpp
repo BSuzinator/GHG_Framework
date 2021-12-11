@@ -38,8 +38,8 @@ class sniper_f : loadout_base_macv
         classname = "vn_b_vest_usarmy_08";
         // List of items
         vn_m40a1_t_mag = 4;
-		vn_m10_mag = 2;
         vn_m18_white_mag = 2;
+        vn_m1911_mag = 4;
     };
     
     headgear[] = { "vn_b_helmet_m1_06_01", "vn_b_helmet_m1_06_02" };
