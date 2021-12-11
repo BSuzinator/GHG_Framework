@@ -87,13 +87,13 @@ class CfgVehicles {
             class Rack_0 {
                 displayName = "Console";      // Name displayed in the interaction menu
                 shortName = "Con.";                  // Short name displayed on the HUD. Maximum of 5 characters
-                componentName = "ACRE_VRC64";        // Rack type (able to mount a PRC117F)
+                componentName = "ACRE_VRC64";        // Rack type
                 allowedPositions[] = {"external"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
                 disabledPositions[] = {};
                 defaultComponents[] = {};
                 mountedRadio = "ACRE_PRC77";        // Predefined mounted radio
                 isRadioRemovable = 0;                 // Radio cannot be removed
-                intercom[] = {};                      // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+                intercom[] = {"intercom_1"};                      // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
             };
 		};
 	};	

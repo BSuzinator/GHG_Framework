@@ -13,6 +13,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] spawn FUNC(failDeadly);
 [] call FUNC(rff);
 [] call FUNC(makeBreifings);
+[] spawn FUNC(initPropRadios);
 
 [] call FUNC(initOWO);
 

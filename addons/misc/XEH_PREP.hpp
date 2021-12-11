@@ -7,6 +7,7 @@ PREP(reversePlanes);
 PREP(makeBreifings);
 PREP(failDeadly);
 PREP(getAllTaskInfo);
+PREP(initPropRadios);
 PREP(rff);
 PREP(systemChatAllTasks);
 PREP(initOWO);
