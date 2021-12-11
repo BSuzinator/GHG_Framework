@@ -7,7 +7,7 @@
 ======================================*/
 if (!isServer) exitWith {};
 sleep 10;
-_radioObjects = []
+_radioObjects = [];
 _radioObjects = allMissionObjects "vn_b_prop_vrc12";
 {
 	_propRadio = _x;
