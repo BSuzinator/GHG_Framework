@@ -12,7 +12,7 @@ class CfgPatches {
             requiredVersion = REQUIRED_VERSION; 
             // Required addons, used for setting load order.
             // When any of the addons is missing, pop-up warning will appear when launching the game.
-            requiredAddons[] = { "ghg_main", "A3_Ui_F", "A3_Missions_F_Oldman", "A3_Ui_F_Orange", "A3_missions_f_aow","A3_missions_f_tacops" };
+            requiredAddons[] = { "ghg_main", "A3_Ui_F", "A3_Missions_F_Oldman", "A3_Ui_F_Orange", "A3_missions_f_aow","A3_missions_f_tacops","missions_f_lxws" };
             // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
             units[] = {};
             // List of weapons (CfgWeapons classes) contained in the addon.
@@ -43,8 +43,8 @@ class CfgMainMenuSpotlight
     delete Tacops_Campaign_02;
     delete Tacops_Campaign_01;
     delete Tanks_Campaign_01;
-	delete lxWS_Extraction;
-    delete lxWS_Showcase_VR;
+	delete Extraction_lxWS;
+    delete Showcase_VR_lxWS;
     
     class GHG_Connect
 	{
