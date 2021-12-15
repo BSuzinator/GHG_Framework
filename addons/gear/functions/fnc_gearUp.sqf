@@ -17,7 +17,8 @@ if ( _unitType isEqualTo "" ) then {
 
 private _ghg = missionConfigFile >> "CfgGHG";
 
-private ["_faction", "_camo"];
+private _faction = "";
+private _camo = "";
 
 switch (side _unit) do {
     case west: {
@@ -32,13 +33,9 @@ switch (side _unit) do {
         _faction = getText (_ghg >> "indFaction");
         _camo = getText (_ghg >> "indCamo");
     };
-    default {
-        _faction = nil;
-        _camo = nil;
-    };
 };
 
-if ( isNil "_faction" ) exitWith {};
+if ( _faction == "" ) exitWith { systemChat "No faction specified for gear up"; };
 
 // Check both config files for the loadout
 private _factionLoadout = _ghg >> "Loadouts" >> _faction;
@@ -50,9 +47,20 @@ if ( isNull _loadout ) exitWith { systemChat format ["No loadout for unit type %
 
 private _camoId = 0;
 
+if ( _camo != "" ) then
 {
-    if ( _camo isEqualTo _x ) exitWith { _camoId = _forEachIndex; };
-} forEach getArray( _loadout >> "camo" );
+    _camoId = -1;
+
+    {
+        if ( _camo isEqualTo _x ) exitWith { _camoId = _forEachIndex; };
+    } forEach getArray( _factionLoadout >> "camo" );
+
+    if ( _camoId < 0 ) then
+    {
+        systemChat format ["Unknown camo '%1' for faction '%2', using default camo instead!", _camo, _faction ];
+        _camoId = 0;
+    };
+};
 
 private _camoField = {
     params ["_cfg"];
