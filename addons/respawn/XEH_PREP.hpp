@@ -4,4 +4,4 @@ PREP(respawnUpdateUI);
 PREP(respawnTrigger);
 PREP(respawnHandler);
 PREP(nearestAlly);
-PREP(rff);
+PREPMAIN(rff);

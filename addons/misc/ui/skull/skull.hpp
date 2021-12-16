@@ -8,7 +8,7 @@ class RscSkull
     controlsBackground[] = {};
     class controls
     {
-        class RscPicture
+        class Skull
         {
             idc = 3;
             
@@ -34,7 +34,7 @@ class RscSkull
             tooltipColorShade[] = {0,0,0,0.65};
         };
         
-        class RscText
+        class Timer
         {
             idc = 4;
             
@@ -58,6 +58,19 @@ class RscSkull
             tooltipColorText[] = {1,1,1,1};
             tooltipColorBox[] = {1,1,1,1};
             tooltipColorShade[] = {0,0,0,0.65};
+        };
+        
+        class Message : Timer
+        {
+            idc = 5;
+            
+            style = 2;
+            
+            sizeEx = 0.05;
+            x = 0.35
+            w = 0.3;
+            
+            y = 0.05;
         };
     };
     objects[] = {};

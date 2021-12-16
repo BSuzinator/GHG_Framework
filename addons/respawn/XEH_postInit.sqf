@@ -7,4 +7,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 
 [] call FUNC(respawnInit);
 [] call FUNC(nearestAlly);
-[] call FUNC(rff);
+[] call FUNCMAIN(rff);
