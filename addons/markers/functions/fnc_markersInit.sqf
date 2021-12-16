@@ -21,7 +21,7 @@
 // Only run on real players
 if ( !hasInterface ) exitWith {};
 
-[FUNC(markersGroup), 0, _this] call CBA_fnc_addPerFrameHandler;
+[FUNC(markersGroup), 0, []] call CBA_fnc_addPerFrameHandler;
 
 // Draw the player markers
 GVAR(group_marker_ehind) = -1;

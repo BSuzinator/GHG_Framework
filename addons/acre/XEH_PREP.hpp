@@ -6,3 +6,4 @@ PREPMAIN(radioJammer);
 PREP(spectrumDeviceInit);
 PREP(spectrumDeviceOverride);
 PREP(spectrumDevice);
+PREP(initPropRadios);

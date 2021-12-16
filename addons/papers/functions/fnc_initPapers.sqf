@@ -22,5 +22,5 @@ if ( hasInterface ) then
     ["Car", 0, ["ACE_MainActions"], _regVeh, true] call ace_interact_menu_fnc_addActionToClass;
     
     private _regId = ["regId", "Register Identity", "", FUNC(registerIdentity), {"GHG_Papers_Identity" in ([_player] call FUNC(getPapers))}] call ace_interact_menu_fnc_createAction;
-    ["CAManBase", 0, ["ACE_SelfActions"], _regId, true] call ace_interact_menu_fnc_addActionToClass;
+    ["CAManBase", 1, ["ACE_SelfActions"], _regId, true] call ace_interact_menu_fnc_addActionToClass;
 };

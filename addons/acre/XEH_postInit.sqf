@@ -8,3 +8,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(acreInit);
 [] call FUNC(radioJammerInit);
 [] call FUNC(spectrumDeviceInit);
+[] spawn FUNC(initPropRadios);

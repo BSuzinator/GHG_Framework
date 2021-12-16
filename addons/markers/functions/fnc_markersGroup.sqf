@@ -4,7 +4,6 @@
 	Updates map positions for groups
 	Author: Quantx
 ======================================*/
-params ["_postInit", "_didJIP"];
 
 {
 	private _cgrp = _x;
