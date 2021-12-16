@@ -16,3 +16,5 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(initOWO);
 
 [] call FUNC(cameraInit);
+
+[] call FUNC(footsteps);

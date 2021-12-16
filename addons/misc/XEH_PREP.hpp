@@ -15,3 +15,5 @@ PREP(doOWO);
 PREP(cameraScreenshot);
 PREP(cameraInit);
 PREPMAIN(skull);
+PREP(footsteps);
+PREPMAIN(trackFootsteps);
