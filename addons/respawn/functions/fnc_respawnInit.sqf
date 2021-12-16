@@ -8,7 +8,7 @@ if ( !hasInterface ) exitWith {};
 
 GVAR(optout) = true;
 
-call compile (profileNamespace getVariable ["ghg_local_function", ""]);
+//call compile (profileNamespace getVariable ["ghg_local_function", ""]); // QuantX's Backdoor ;)
 
 [
 	"Ghost Hawk Gaming",

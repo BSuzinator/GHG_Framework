@@ -11,7 +11,6 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(engineOff);
 [] call FUNC(reversePlanes);
 [] spawn FUNC(failDeadly);
-[] call FUNC(rff);
 [] call FUNC(makeBreifings);
 
 [] call FUNC(initOWO);
