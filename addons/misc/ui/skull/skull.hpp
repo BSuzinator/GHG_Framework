@@ -64,13 +64,12 @@ class RscSkull
         {
             idc = 5;
             
-            style = 2;
-            
             sizeEx = 0.05;
-            x = 0.35
+            x = 0.35;
             w = 0.3;
             
-            y = 0.05;
+            y = 0.06;
+            h = 0.05
         };
     };
     objects[] = {};
