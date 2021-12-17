@@ -38,7 +38,7 @@ GVAR(tracked_players) = [];
             private _fsp = _unit modelToWorldVisual (_unit selectionPosition [["footstepl", "footstepr"] select _rf, "Memory"]);
             _fsp set [2, _pos select 2]; // Force on ground
 
-            private _fso = createSimpleObject [_fsm, ATLToASL _fsp];
+            private _fso = createSimpleObject [_fsm, ATLToASL _fsp, true];
             
             _fso setDir (getDir _unit);
             
