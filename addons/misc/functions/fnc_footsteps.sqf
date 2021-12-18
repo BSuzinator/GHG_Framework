@@ -5,7 +5,7 @@
 ======================================*/
 if ! (hasInterface) exitWith {};
 
-GVARMAIN(footstep_timeout) = 180;
+GVARMAIN(footstep_timeout) = 300;
 
 private _ghg = missionConfigFile >> "CfgGHG";
 
@@ -14,8 +14,12 @@ if ( isNumber (_ghg >> "footstep_timeout") ) then
     GVARMAIN(footstep_timeout) = 10 max (getNumber (_ghg >> "footstep_timeout"));
 };
 
+GVARMAIN(footstep_max_distance) = 50;
+GVARMAIN(footstep_max_count) = 100;
+
 GVAR(footsteps) = [];
 GVAR(tracked_players) = [];
+GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at any given time
 
 [{
     {
@@ -32,19 +36,13 @@ GVAR(tracked_players) = [];
             Unit is not in water
         */
         
-        if ( (_st == "STAND" || _st == "CROUCH") && ((getPos _unit) select 2) < 0.01 && (vehicle _unit == _unit) && (_pos distance _lpos) > 0.7 && {!surfaceIsWater _pos} ) then
+        if ( (alive _unit) && (_st == "STAND" || _st == "CROUCH") && ((getPos _unit) select 2) < 0.01 && (vehicle _unit == _unit) && (_pos distance _lpos) > 0.7 && {!surfaceIsWater _pos} ) then
         {
             private _fsm = ["Footprint_L", "Footprint_R"] select _rf;
             private _fsp = _unit modelToWorldVisual (_unit selectionPosition [["footstepl", "footstepr"] select _rf, "Memory"]);
             _fsp set [2, _pos select 2]; // Force on ground
-
-            private _fso = createSimpleObject [_fsm, ATLToASL _fsp, true];
             
-            _fso setDir (getDir _unit);
-            
-            _fso setVectorUp surfaceNormal _pos;
-            
-            GVAR(footsteps) pushBack [ _unit, _fso, diag_tickTime ];
+            GVAR(footsteps) insert [0, [[ _unit, objNull, _fsm, _fsp, getDir _unit, diag_tickTime ]], false];
             
             _x set [1, _pos];
             _x set [2, !_rf];
@@ -59,19 +57,41 @@ GVAR(tracked_players) = [];
         if ( _class == "MineDetectorDisplay" ) exitWith {  _hasTrapKit = _has; };
     } forEach _ips;
 
-    
+    GVAR(footsteps_rendered) = 0;
+
     {
-        _x params ["_unit", "_fso", "_age"];
+        _x params ["_unit", "_fso", "_fsm", "_fsp", "_fsd", "_age"];
         
-        if ( !isNull _fso ) then
+        private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (_hasTrapKit && { (player distance _fsp) < 5 });
+        
+        if ( isNull _fso ) then
         {
-            private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (_hasTrapKit && { (player distance _fso) < 5 });
-        
-            _fso setObjectMaterial  [0, _mat];
-        
-            if ( diag_tickTime - _age > GVARMAIN(footstep_timeout) ) then
+            if ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (player distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
+            {
+                private _fso = createSimpleObject [_fsm, ATLToASL _fsp, true];
+                
+                _fso setDir _fsd;
+                
+                _fso setVectorUp surfaceNormal _fsp;
+            
+                _fso setObjectMaterial [0, _mat];
+                
+                _x set [1, _fso];
+                
+                GVAR(footsteps_rendered) = GVAR(footsteps_rendered) + 1;
+            };
+        }
+        else
+        {
+            if ! ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (player distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
             {
                 deleteVehicle _fso;
+            }
+            else
+            {
+                _fso setObjectMaterial [0, _mat];
+            
+                GVAR(footsteps_rendered) = GVAR(footsteps_rendered) + 1;
             };
         };
     } forEach GVAR(footsteps);
