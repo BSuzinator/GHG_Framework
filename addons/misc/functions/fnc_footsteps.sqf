@@ -34,7 +34,7 @@ GVAR(tracked_players) = [];
         
         if ( (_st == "STAND" || _st == "CROUCH") && ((getPos _unit) select 2) < 0.01 && (vehicle _unit == _unit) && (_pos distance _lpos) > 0.7 && {!surfaceIsWater _pos} ) then
         {
-            private _fsm = format ["a3\characters_f\footstep_%1.p3d", ['l', 'r'] select _rf];
+            private _fsm = ["Footprint_L", "Footprint_R"] select _rf;
             private _fsp = _unit modelToWorldVisual (_unit selectionPosition [["footstepl", "footstepr"] select _rf, "Memory"]);
             _fsp set [2, _pos select 2]; // Force on ground
 
@@ -51,14 +51,29 @@ GVAR(tracked_players) = [];
         };
     } forEach GVAR(tracked_players);
     
+    private _ips = player infoPanelComponents "left";
+    private _hasTrapKit = false;
+    {
+        _x params [ "_class", "_type", "_has" ];
+        
+        if ( _class == "MineDetectorDisplay" ) exitWith {  _hasTrapKit = _has; };
+    } forEach _ips;
+
+    
     {
         _x params ["_unit", "_fso", "_age"];
         
-        if ( !isNUll _fso && {diag_tickTime - _age > GVARMAIN(footstep_timeout)} ) then
+        if ( !isNull _fso ) then
         {
-            deleteVehicle _fso;
-        };
+            private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (_hasTrapKit && { (player distance _fso) < 5 });
         
+            _fso setObjectMaterial  [0, _mat];
+        
+            if ( diag_tickTime - _age > GVARMAIN(footstep_timeout) ) then
+            {
+                deleteVehicle _fso;
+            };
+        };
     } forEach GVAR(footsteps);
     
 }, 0.1, []] call CBA_fnc_addPerFrameHandler;

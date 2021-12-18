@@ -12,4 +12,20 @@ class CfgVehicles {
             };
         };
     };
+    
+    class Thing;
+    class Footprint_L : Thing
+    {
+        scope=1;
+        model = "x\ghg\addons\misc\models\footprint\footprint_l.p3d";
+        
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"x\ghg\addons\misc\models\footprint\footprint_ca.paa"};
+        hiddenSelectionsMaterials[] = {"x\ghg\addons\misc\models\footprint\footprint.rvmat"};
+    };
+    
+    class Footprint_R : Footprint_L
+    {
+        model = "x\ghg\addons\misc\models\footprint\footprint_r.p3d";
+    };
 };
