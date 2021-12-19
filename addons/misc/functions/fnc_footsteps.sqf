@@ -18,7 +18,7 @@ GVARMAIN(footstep_max_distance) = 50;
 GVARMAIN(footstep_max_count) = 100;
 
 GVAR(footsteps) = [];
-GVAR(tracked_players) = [];
+if ( isNil QGVAR(tracked_players) ) then { GVAR(tracked_players) = [] };
 GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at any given time
 
 [{
