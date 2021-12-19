@@ -9,7 +9,7 @@ deployType = "LALO";
 deployRange = "100";
 
 // How long (in seconds) footsteps should persist for
-footstep_timeout = 180;
+footstep_timeout = 300;
 
 //Set DSM File Count
 dsmFiles = "";
