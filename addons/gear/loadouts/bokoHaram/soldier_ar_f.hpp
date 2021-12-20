@@ -26,6 +26,6 @@ class soldier_ar_f : soldier_f
     {
         classname = "B_AssaultPack_rgr";
         // List of items
-        rhs_100Rnd_545X39_7N6_RPK = 4;
+        rhs_100Rnd_545X39_7N6_RPK = 3;
     };
 };
