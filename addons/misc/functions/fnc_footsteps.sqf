@@ -64,9 +64,12 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
         
         private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (_hasTrapKit && { (player distance _fsp) < 5 });
         
+        private _plp = curatorCamera;
+        if ( isNull _plp ) then { _plp = player };
+        
         if ( isNull _fso ) then
         {
-            if ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (player distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
+            if ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (_plp distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
             {
                 private _fso = createSimpleObject [_fsm, ATLToASL _fsp, true];
                 
@@ -83,7 +86,7 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
         }
         else
         {
-            if ! ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (player distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
+            if ! ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (_plp distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
             {
                 deleteVehicle _fso;
             }
