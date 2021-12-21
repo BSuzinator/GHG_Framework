@@ -10,6 +10,6 @@ class soldier_aar_f : soldier_f
         classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
         ACE_SpareBarrel = 1;
-        rhs_mag_100Rnd_556x45_M855_cmag = 5;
+        rhs_mag_100Rnd_556x45_M855_cmag = 6;
     };
 };

@@ -20,7 +20,7 @@ class soldier_ar_f : soldier_f
         SmokeShell = 1;
         rhs_mag_m67 = 1;
         // List of items
-        rhs_mag_100Rnd_556x45_M855_cmag = 3;
+        rhs_mag_100Rnd_556x45_M855_cmag = 2;
     };
     
     class Backpack : Backpack

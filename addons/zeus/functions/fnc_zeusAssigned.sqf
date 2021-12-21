@@ -24,11 +24,7 @@ _logic addEventHandler ["curatorObjectPlaced", {
     clearMagazineCargoGlobal _unit;
     clearWeaponCargoGlobal _unit;
     clearBackpackCargoGlobal _unit;
-	
-	if (typeOf _unit in ["B_CTRG_Miller_F","I_G_Story_SF_Captain_F","B_Story_SF_Captain_F"]) {
-		deleteVehicle _unit;
-		systemChat "No Traitors allowed.";
-	};
+
 }];
 
 [ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;

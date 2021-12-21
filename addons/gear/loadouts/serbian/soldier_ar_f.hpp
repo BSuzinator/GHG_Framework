@@ -8,7 +8,7 @@ class soldier_ar_f : soldier_f
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "rhs_weap_m249_pip_ris";
-        ammo = "rhsusf_200Rnd_556x45_soft_pouch";
+        ammo = "rhsusf_100Rnd_556x45_soft_pouch";
         bipod = "rhsusf_acc_saw_bipod";
     };
     
@@ -19,13 +19,13 @@ class soldier_ar_f : soldier_f
         SmokeShell = 1;
         rhs_mag_m67 = 1;
         // List of items
-        rhsusf_200Rnd_556x45_soft_pouch = 2;
+        rhsusf_100Rnd_556x45_soft_pouch = 2;
     };
     
     class Backpack : Backpack
     {
         classname[] = { "rhssaf_kitbag_md2camo" };
         // List of items
-        rhsusf_200Rnd_556x45_soft_pouch = 4;
+        rhsusf_100Rnd_556x45_soft_pouch = 3;
     };
 };
