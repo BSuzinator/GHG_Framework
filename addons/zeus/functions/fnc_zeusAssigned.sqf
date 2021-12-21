@@ -31,6 +31,4 @@ _logic addEventHandler ["curatorObjectPlaced", {
 	};
 }];
 
-GVAR(zeusLogic) = _logic;
-
 [ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;

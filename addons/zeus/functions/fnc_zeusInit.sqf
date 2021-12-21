@@ -12,6 +12,18 @@ if ( isServer ) then
         private _objs = if ( _this isEqualType [] ) then { _this } else { [_this] };
         { _x addCuratorEditableObjects [_objs, true]; } forEach allCurators;
     }] call CBA_fnc_addEventHandler;
+    
+    ["unitRespawn", {
+        params ["_unit", "_corpse"];
+        
+        // Transfer zeus module to new unit
+        private _logic = getAssignedCuratorLogic _corpse;
+        if ( ! isNull _logic ) then
+        {
+            unassignCurator _logic;
+            _unit assignCurator _logic;
+        };
+    }] call CBA_fnc_addEventHandler;
 
     GVAR(zeusGroup) = createGroup sideLogic;
 
@@ -25,8 +37,6 @@ if ( isServer ) then
 };
 
 if ( !hasInterface ) exitWith {};
-
-GVAR(zeusLogic) = objNull;
 
 ["zeusAssigned", FUNC(zeusAssigned)] call CBA_fnc_addEventHandler;
 

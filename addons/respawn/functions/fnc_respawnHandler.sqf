@@ -6,6 +6,8 @@
 ======================================*/
 params ["_unit", "_corpse"];
 
+["unitRespawn", _this] call CBA_fnc_serverEvent;
+
 private _setPosAGLS = {
 	params ["_obj", "_pos", "_offset"];
 	_offset = _pos select 2;
@@ -17,19 +19,11 @@ private _setPosAGLS = {
 };
 
 private _respawnPos = markerPos (switch (side _unit) do {
-			case west: {"respawn_west"};
-			case east: {"respawn_east"};
-			case resistance: {"respawn_guerilla"};
-			case civilian: {"respawn_civilian"};
-		});
-
-// Transfer zeus module to new unit
-private _logic = EGVAR(zeus,zeusLogic);
-if ( ! isNull _logic ) then
-{
-    unassignCurator _logic;
-    _unit assignCurator _logic;
-};
+    case west: {"respawn_west"};
+    case east: {"respawn_east"};
+    case resistance: {"respawn_guerilla"};
+    case civilian: {"respawn_civilian"};
+});
 
 //Handle if Training Server or not
 if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
