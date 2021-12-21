@@ -46,7 +46,6 @@ if ( !hasInterface ) exitWith {};
 if ( player isKindOf "VirtualCurator_F" ) then
 {
 	player allowDamage false;
-    player setPosASL [0, 0, 0];
 	bis_fnc_forceCuratorInterface_force = true;
 	
 	[{
@@ -60,6 +59,7 @@ if ( player isKindOf "VirtualCurator_F" ) then
 			}
 			else
 			{
+                player setPosASL [0, 0, 0];
 				_handle call CBA_fnc_removePerFrameHandler;
 			};
 		};
