@@ -64,6 +64,33 @@ if ( player isKindOf "VirtualCurator_F" ) then
 			};
 		};
 	}, 0.25, []] call CBA_fnc_addPerFrameHandler;
+    
+    // Cleanup manifested zeus characters
+    ["zen_remoteControlStopped", {
+        params ["_unit"];
+        
+        if ( _unit getVariable [QGVAR(zeusManifest), false] ) then
+        {
+            deleteVehicle _unit;
+        };
+    }] call CBA_fnc_addEventHandler;
+
+    ["zen_curatorDisplayLoaded", {
+        _this displayAddEventHandler [ "KeyDown", {
+            params ["_disp", "_key", "_shift", "_ctrl", "_alt"];
+            
+            private _lpp = missionnamespace getVariable ["bis_fnc_curatorPinged_player", objNull];
+            
+            if ( (!isNull _lpp) && (_key == 57) /* Spacebar */ && _ctrl ) exitWith
+            {
+                [getPos _lpp] call FUNC(zeusManifest);
+                
+                true;
+            };
+            
+            false;
+        }];
+    }] call CBA_fnc_addEventHandler;
 };
 
 [{ time > 0 }, {
@@ -71,13 +98,3 @@ if ( player isKindOf "VirtualCurator_F" ) then
 }] call CBA_fnc_waitUntilAndExecute;
 
 [ "setName", {(_this select 0) setName (_this select 1);}] call CBA_fnc_addEventHandler;
-
-// Cleanup manifested zeus characters
-["zen_remoteControlStopped", {
-    params ["_unit"];
-    
-    if ( _unit getVariable [QGVAR(zeusMainfest), false] ) then
-    {
-        deleteVehicle _unit;
-    };
-}] call CBA_fnc_addEventHandler;

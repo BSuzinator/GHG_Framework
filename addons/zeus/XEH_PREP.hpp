@@ -4,3 +4,4 @@ PREP(zeusCleanup);
 PREPMAIN(zeusInitObjects);
 PREP(zeusAssigned);
 PREP(zeusManifest);
+PREP(teleportZeus);
