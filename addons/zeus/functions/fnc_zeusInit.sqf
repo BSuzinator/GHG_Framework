@@ -26,6 +26,8 @@ if ( isServer ) then
     }] call CBA_fnc_addEventHandler;
 
     GVAR(zeusGroup) = createGroup sideLogic;
+    GVAR(zeusManifestGroup) = createGroup civilian;
+    publicVariable QGVAR(zeusManifestGroup); // JIP compatible
 
     // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run
     [{ time > 10 }, {
@@ -44,6 +46,7 @@ if ( !hasInterface ) exitWith {};
 if ( player isKindOf "VirtualCurator_F" ) then
 {
 	player allowDamage false;
+    player setPosASL [0, 0, 0];
 	bis_fnc_forceCuratorInterface_force = true;
 	
 	[{
@@ -66,3 +69,13 @@ if ( player isKindOf "VirtualCurator_F" ) then
 [{ time > 0 }, {
     [player] remoteExecCall [QFUNC(zeusSetup), 2];
 }] call CBA_fnc_waitUntilAndExecute;
+
+// Cleanup manifested zeus characters
+["zen_remoteControlStopped", {
+    params ["_unit"];
+    
+    if ( _unit getVariable [QGVAR(zeusMainfest), false] ) then
+    {
+        deleteVehicle _unit;
+    };
+}] call CBA_fnc_addEventHandler;

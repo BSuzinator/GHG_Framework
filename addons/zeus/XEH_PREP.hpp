@@ -3,3 +3,4 @@ PREP(zeusSetup);
 PREP(zeusCleanup);
 PREPMAIN(zeusInitObjects);
 PREP(zeusAssigned);
+PREP(zeusManifest);
