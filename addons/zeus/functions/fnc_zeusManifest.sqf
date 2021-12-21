@@ -12,6 +12,10 @@ private _zpo = GVAR(zeusManifestGroup) createUnit ["C_Soldier_VR_F", _position, 
 
 if ( isNull _zpo ) exitWith { systemChat "Failed to create Zeus character" };
 
+_zpo allowDamage false;
+
+["setName", [_zpo, "Zeus"], netId _zpo] call CBA_fnc_globalEventJIP;
+
 _zpo setVariable [QGVAR(zeusMainfest), true];
 
 [_zpo] call zen_remote_control_fnc_start;

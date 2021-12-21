@@ -70,6 +70,8 @@ if ( player isKindOf "VirtualCurator_F" ) then
     [player] remoteExecCall [QFUNC(zeusSetup), 2];
 }] call CBA_fnc_waitUntilAndExecute;
 
+[ "setName", {(_this select 0) setName (_this select 1);}] call CBA_fnc_addEventHandler;
+
 // Cleanup manifested zeus characters
 ["zen_remoteControlStopped", {
     params ["_unit"];
