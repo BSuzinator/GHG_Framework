@@ -31,13 +31,20 @@ switch (_deployType) do {
 			(2 boundingBoxReal _target) params ["_tMin", "_tMax", "_tRad"];
 			
 			waitUntil { ((getPos _target) # 2) <= 50 };
-			
+			private _FHPD = getAllHitPointsDamage _target;
 			private _chutePos = ASLtoATL (_target modelToWorldWorld [0, 0, _tMax # 2]);
 			private _chute = createVehicle ["O_Parachute_02_F", _chutePos, [], 0, "CAN_COLLIDE"];
 			_chute setDir getDir _target;
 			_target attachTo [_chute, [0, 0, 0]];
-		
+			sleep 1;
+			{
+				_name = (_FHPD select 0) select _forEachIndex;
+				_value = (_FHPD select 2) select _forEachIndex;
+				_target setHitPointDamage [_name,_value,false,objNull];
+			} forEach (_FHPD select 0);
+			
 			waitUntil { ((getPos _target) # 2) < 10 };
+
 			detach _target;
 			
 			// Parachute will delete itself after it lands
