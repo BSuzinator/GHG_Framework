@@ -17,3 +17,4 @@ PREP(cameraInit);
 PREPMAIN(skull);
 PREP(footsteps);
 PREPMAIN(trackFootsteps);
+PREP(treatmentNotify);
