@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Assistant MAT (serbian)
+	Loadout for Assistant MAT (spetznaz)
 ======================================*/
 class soldier_aat_f : soldier_f
 {
@@ -7,7 +7,7 @@ class soldier_aat_f : soldier_f
 	
     class Backpack : Backpack
     {
-        classname[] = { "rhssaf_kitbag_md2camo" };
+        classname[] = {"UK3CB_BAF_B_Carryall_TAN","UK3CB_BAF_B_Carryall_DPMT","UK3CB_BAF_B_Carryall_Arctic","B_Carryall_oucamo"};
         // List of items
         rhs_rpg7_PG7VL_mag = 2; //AT
 		rhs_rpg7_OG7V_mag = 2; //HE

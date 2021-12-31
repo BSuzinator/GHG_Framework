@@ -1,17 +1,17 @@
 /*======================================
-	Loadout for Assistant MAT (serbian)
+	Loadout for MMG Ammo Bearer (spetznaz)
 ======================================*/
-class soldier_aat_f : soldier_f
+class soldier_a_f : soldier_f
 {
     #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
-	
+    
     class Backpack : Backpack
     {
-        classname[] = { "rhssaf_kitbag_md2camo" };
+        classname[] = { "UK3CB_TKA_O_B_RIF_Tan", "UK3CB_B_Tactical_Backpack", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_B", "UK3CB_B_Small_Pack" };
         // List of items
-        rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+		ACE_Canteen = 2;
+        ACE_SpareBarrel = 1;
+        rhs_100Rnd_762x54mmR = 5;
     };
 	
 	class Binoculars : Binoculars
