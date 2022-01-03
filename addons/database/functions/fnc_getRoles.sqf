@@ -6,19 +6,19 @@
 ======================================*/
 if ! (hasInterface) exitWith {};
 if (isServer && hasInterface && !isDedicated) then {
-	GVAR(isAdmin) = true;
-	GVAR(isOfficer) = true;
-	GVAR(isJuniorOfficer) = true;
-	GVAR(isDegenerate) = true;
-	_player setVariable [QGVAR(isAdmin), true];
-	_player setVariable [QGVAR(isOfficer), true];
-	_player setVariable [QGVAR(isJuniorOfficer), true];
-	_player setVariable [QGVAR(isDegenerate), true];
+	GVARMAIN(isAdmin) = true;
+	GVARMAIN(isOfficer) = true;
+	GVARMAIN(isJuniorOfficer) = true;
+	GVARMAIN(isDegenerate) = true;
+	_player setVariable [QGVARMAIN(isAdmin), true];
+	_player setVariable [QGVARMAIN(isOfficer), true];
+	_player setVariable [QGVARMAIN(isJuniorOfficer), true];
+	_player setVariable [QGVARMAIN(isDegenerate), true];
 } else {
-	GVAR(isAdmin) = false;
-	GVAR(isOfficer) = false;
-	GVAR(isJuniorOfficer) = false;
-	GVAR(isDegenerate) = false;
+	GVARMAIN(isAdmin) = false;
+	GVARMAIN(isOfficer) = false;
+	GVARMAIN(isJuniorOfficer) = false;
+	GVARMAIN(isDegenerate) = false;
 };
 private _query = format ["SELECT isAdmin,isOfficer,isJuniorOfficer,isDegenerate FROM users WHERE steamID64=%1", getPlayerUID player];
 
