@@ -4,3 +4,5 @@ PREP(handleDB);
 PREPMAIN(spawnDB);
 PREPMAIN(callDB);
 PREPMAIN(debugCallback);
+PREP(getRoles);
+PREP(getRolesCallback);
