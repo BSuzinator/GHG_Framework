@@ -8,13 +8,15 @@
 #include "\a3\ui_f\hpp\definedikcodes.inc" //Include all codes for keys
 
 [ 
-	"Ghost Hawk Gaming",  
-	"Open_Menu",
+	"Ghost Hawk Gaming","Open_Menu","Admin Menu",
 	[ 
 		"player",  
 		[],  
 		-100,  
-		"_this call ghg_adminMenu_fnc_menuDialog" 
+		"_this call ghg_adminMenu_fnc_menuDialog"
 	],  
-	[0x3B,false,true,false] 
-] call CBA_fnc_registerKeybindToFleximenu;
+	[0x3B,false,true,false],
+	false,
+	0,
+	false
+] call cba_fnc_addKeybindToFleximenu;
