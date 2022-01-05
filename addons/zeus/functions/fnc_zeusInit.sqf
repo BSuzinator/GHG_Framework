@@ -40,6 +40,9 @@ if ( isServer ) then
 
 if ( !hasInterface ) exitWith {};
 
+//Add death Icons for each player
+[player] call bis_fnc_drawCuratorDeaths;
+
 ["zeusAssigned", FUNC(zeusAssigned)] call CBA_fnc_addEventHandler;
 
 // Ensure virtual Zeus players are invincible and force interface
