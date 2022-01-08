@@ -3,6 +3,7 @@ PREP(acreOfficerGod);
 PREP(acreSetDefaultChannel);
 PREP(radioJammerInit);
 PREPMAIN(radioJammer);
+PREP(radioJammerEquip);
 PREP(spectrumDeviceInit);
 PREP(spectrumDeviceOverride);
 PREP(spectrumDevice);

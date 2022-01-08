@@ -5,9 +5,11 @@
 	[this, 500] call ghg_fnc_radioJammer;
 	Author: Quantx
 ======================================*/
-if ( !hasInterface ) exitWith {};
-
 params ["_jammer", "_range"];
+
+if (isServer) then {_this call FUNC(radioJammerEquip);};
+
+if ( !hasInterface ) exitWith {};
 
 if ( isNil QGVAR(jammers) ) then
 {
