@@ -1,0 +1,10 @@
+PREP(debugRadioMenu);
+PREP(kickPlayerDialog);
+PREP(menuDialog);
+PREP(menuInit);
+PREP(rearmVehicle);
+PREP(refuelVehicle);
+PREP(repairVehicle);
+PREP(spawnRadio);
+PREP(unflipVehicle);
+PREP(vehicleSubmenu);

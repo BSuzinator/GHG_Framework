@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_adminMenu_fnc_menuInit
-	Initializes adminMenu for all with Perms
+	ghg_playerMenu_fnc_menuInit
+	Initializes playerMenu for all with Perms
 	Opened with CTRL + F1
 	Author: BSuz
 ======================================*/
@@ -13,7 +13,7 @@
 		"player",  
 		[],  
 		-100,  
-		"_this call ghg_adminMenu_fnc_menuDialog"
+		"_this call ghg_playerMenu_fnc_menuDialog"
 	],  
 	[0x3B,false,true,false],
 	false,
