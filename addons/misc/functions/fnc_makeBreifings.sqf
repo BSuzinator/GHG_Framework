@@ -16,13 +16,6 @@ private _modVersion = QUOTE(VERSION_STR);
 private _versionString = format ["Mod Version: %1<br/>Mission Version: %2", _modVersion, _missionVersion];
 player createDiaryRecord ["ghg_framework", ["Version", _versionString]];
 
-player createDiaryRecord ["ghg_framework", ["Radios", "<font size='24' face='TahomaB'>Debug Radios</font>
-		<br />Click one a radio name below to add the radio to your inventory if space is availible. This should only be used with permsission from the current zeus or for debug purposes.
-		<br /><executeClose expression='player addItem ""ACRE_PRC343"";_str = format [""%1 has spawned a AN/PRC 343 from debug menu"",name player];_str remoteExec [""systemChat"", 0, false];'>AN/PRC 343</executeClose>
-		<br /><executeClose expression='player addItem ""ACRE_PRC152"";_str = format [""%1 has spawned a AN/PRC 152 from debug menu"",name player];_str remoteExec [""systemChat"", 0, false];'>AN/PRC 152</executeClose>
-		<br /><executeClose expression='if (backpack player isEqualTo """") then {player addBackpack ""B_AssaultPack_blk"";};player addItemToBackpack ""ACRE_PRC117F"";_str = format [""%1 has spawned a AN/PRC 117F from debug menu"",name player];_str remoteExec [""systemChat"", 0, false];'>AN/PRC 117F</executeClose>
-	"]];
-
 private _settingString = format ["<font size='24' face='TahomaB'>Mission Settings</font><br />
 		Deploy Type:   %1 <br />
 		Deploy Range:  %2<br />
