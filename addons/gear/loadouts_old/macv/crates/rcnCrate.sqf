@@ -6,6 +6,7 @@
 ["ACE_packingBandage", 6], 
 ["vn_m16_20_mag", 16], 
 ["vn_m40a1_t_mag", 10],  
+["vn_m1911_mag", 3], 
 ["vn_m61_grenade_mag", 6], 
 ["vn_m18_white_mag", 6], 
 ["vm_40mm_m381_he_mag", 8], 
