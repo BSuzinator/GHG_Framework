@@ -19,3 +19,4 @@ class CfgPatches {
             weapons[] = {};
     };
 };
+#include "CfgEventhandlers.hpp"
