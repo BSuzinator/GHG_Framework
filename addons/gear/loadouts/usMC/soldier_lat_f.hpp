@@ -10,4 +10,8 @@ class soldier_lat_f : soldier_f
         classname = "rhs_weap_M136";
         ammo = "rhs_m136_mag";
     };
+	class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
 };

@@ -10,4 +10,8 @@ class soldier_lat_f : soldier_f
         classname = "rhs_weap_rpg26";
         ammo = "rhs_rpg26_mag";
     };
+	class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
 };

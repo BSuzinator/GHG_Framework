@@ -10,6 +10,10 @@ class soldier_lat_f : soldier_f
         classname = "rhs_weap_rpg7";
         ammo = "rhs_rpg7_PG7VL_mag";
     };
+	class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
 	class Backpack : Backpack
     {
         classname = "B_AssaultPack_rgr";

@@ -10,4 +10,8 @@ class soldier_lat_f : soldier_f
         classname = "vn_m72";
         ammo = "vn_m72_mag";
     };
+	class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
 };
