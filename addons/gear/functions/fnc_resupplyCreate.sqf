@@ -18,6 +18,32 @@ switch (_crateScript) do {
 			_crate = [_pos, _dir] call compile preprocessFileLineNumbers "\x\ghg\addons\gear\loadouts_old\medical.sqf";
 			_crate setVariable["ace_cargo_customname", "GHG Medical", true];
 		};
+	case "ghg_chemlights_placeholder":
+		{
+			_crate = createVehicle ["Box_Syndicate_Ammo_F", _pos, [], 0, "CAN_COLLIDE"];
+			_crate setDir _dir;
+			clearItemCargoGlobal _crate;
+			clearMagazineCargoGlobal _crate;
+			clearWeaponCargoGlobal _crate;
+			clearBackpackCargoGlobal _crate;			
+			
+			_crate addItemCargoGlobal ["Chemlight_blue", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_HiBlue", 10];
+			_crate addItemCargoGlobal ["Chemlight_green", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_HiGreen", 10];
+			_crate addItemCargoGlobal ["Chemlight_red", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_HiRed", 10];
+			_crate addItemCargoGlobal ["Chemlight_yellow", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_HiYellow", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_White", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_HiWhite", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_Orange", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_UltraHiOrange", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_IR", 10];
+			_crate addItemCargoGlobal ["ACE_Chemlight_Shield", 20];
+			[_crate, 1] call ace_cargo_fnc_setSize;
+			_crate setVariable["ace_cargo_customname", "GHG Chemlights", true];
+		};
 	case "ghg_demolition_placeholder":
 		{
 			_crate = createVehicle ["Box_Syndicate_Ammo_F", _pos, [], 0, "CAN_COLLIDE"];
