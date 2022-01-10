@@ -60,6 +60,7 @@ switch (_crateScript) do {
 			clearWeaponCargoGlobal _crate;
 			clearBackpackCargoGlobal _crate;			
 			
+			_crate addItemCargoGlobal ["ACE_wirecutter", 2];
 			_crate addItemCargoGlobal ["ACE_DefusalKit", 2];
 			_crate addItemCargoGlobal ["ACE_Clacker", 2];
 			_crate addItemCargoGlobal ["ACE_M26_Clacker", 2];

@@ -12,6 +12,7 @@
 ["rhsusf_m112x4_mag", 2],
 ["rhsusf_m112_mag", 4],
 ["ACE_DefusalKit", 2],
+["ACE_wirecutter", 2],
 ["ACE_Clacker", 2],
 ["ACE_M26_Clacker", 1],
 ["rhs_mag_m67", 6],

@@ -12,6 +12,7 @@
 ["rhs_tm500_mag", 2],
 ["rhs_tm200_mag", 4],
 ["ACE_DefusalKit", 2],
+["ACE_wirecutter", 2],
 ["ACE_Clacker", 2],
 ["ACE_M26_Clacker", 1],
 ["rhs_mag_rgd5", 6], 
