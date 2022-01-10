@@ -25,6 +25,7 @@ class soldier_f : loadout_base
     {
         classname[] = { "rhs_uniform_gorka_r_y_gloves", "UK3CB_CHD_B_U_CombatSmock_07", "UK3CB_CHD_W_B_U_CombatSmock_07", "UK3CB_AAF_B_U_Diving_Uniform_DIGI_BLK" };
 		ACRE_PRC343 = 1;
+		ACE_Canteen = 1;
     };
     
     class Vest : Vest

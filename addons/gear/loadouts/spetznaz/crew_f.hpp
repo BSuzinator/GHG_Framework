@@ -27,6 +27,7 @@ class crew_f : soldier_f
 		SmokeShellRed = 1;
         rhs_mag_rgd5 = 1;
         ACE_EntrenchingTool = 0;
+		ACE_Canteen = 0;
     };
     
     facewear[] = { "rhsusf_shemagh2_tan", "rhsusf_shemagh2_grn", "rhsusf_shemagh_white", "G_B_Diving"};

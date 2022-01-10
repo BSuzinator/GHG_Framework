@@ -39,6 +39,7 @@ class sniper_f : loadout_base
         rhs_10Rnd_762x54mmR_7N1 = 4;
 		rhs_mag_9x19_17 = 2;
         SmokeShell = 2;
+		ACE_Canteen = 1;
     };
     
     headgear[] = { "UK3CB_ABP_B_H_6b27m_DES", "rhs_6b27m_green", "UK3CB_ANP_B_H_6b27m_GREY", "UK3CB_ANP_B_H_6b27m_BLK" };
