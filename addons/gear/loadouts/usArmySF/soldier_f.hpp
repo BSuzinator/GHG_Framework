@@ -38,6 +38,7 @@ class soldier_f : loadout_base
         SmokeShell = 2;
         rhs_mag_m67 = 2;
         ACE_EntrenchingTool = 1;
+		ACE_Canteen = 1;
     };
     
     headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };

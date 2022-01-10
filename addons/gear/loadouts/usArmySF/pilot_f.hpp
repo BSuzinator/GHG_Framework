@@ -49,6 +49,7 @@ class pilot_f : soldier_f
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;
 		ACE_Chemlight_HiRed = 1;
+		ACE_Canteen = 0;
     };
     
     headgear = "RHS_jetpilot_usaf";

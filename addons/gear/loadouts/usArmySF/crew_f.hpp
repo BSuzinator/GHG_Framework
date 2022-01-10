@@ -27,6 +27,7 @@ class crew_f : soldier_f
 		SmokeShellRed = 1;
         rhs_mag_m67 = 1;
         ACE_EntrenchingTool = 0;
+		ACE_Canteen = 0;
     };
 	headgear[] = { "rhsusf_cvc_green_helmet", "rhsusf_cvc_green_helmet", "rhsusf_cvc_helmet" };
     facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_od", "rhsusf_shemagh2_gogg_tan" };

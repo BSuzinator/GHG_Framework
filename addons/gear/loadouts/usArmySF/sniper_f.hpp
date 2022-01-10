@@ -41,6 +41,7 @@ class sniper_f : loadout_base
         rhsusf_5Rnd_300winmag_xm2010 = 4;
 		rhsusf_mag_17Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
+		ACE_Canteen = 1;
     };
     
     headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
