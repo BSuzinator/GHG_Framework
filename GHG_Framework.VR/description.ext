@@ -18,7 +18,6 @@ respawnDelay = 5000;
 respawnTemplates[] = {"ace_spectator"};
 
 //Admin Settings
-enableDebugConsole[]  = { "76561198080019809", "76561198044516211" }; // admins and players with their UID in this list have access
 enableZeusInterface[] = { "76561198080019809", "76561198044516211" };
 saving = 0;
 skiplobby = 0;

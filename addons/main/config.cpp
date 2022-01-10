@@ -32,7 +32,8 @@ class CfgMods {
         description = "Ghost Hawk Gaming Mission Framework";
     };
 };
-
+delete enableDebugConsole;
+enableDebugConsole[] = {"76561198080019809", "76561198044516211"};
 #include "CfgEventhandlers.hpp"
 #include "CfgGHG.hpp"
 #include "CfgDebriefing.hpp"
