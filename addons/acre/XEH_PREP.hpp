@@ -4,6 +4,8 @@ PREP(acreSetDefaultChannel);
 PREP(radioJammerInit);
 PREPMAIN(radioJammer);
 PREP(radioJammerEquip);
+PREP(radioJammerSpawn);
+PREP(radioJammerSpawnModule);
 PREP(spectrumDeviceInit);
 PREP(spectrumDeviceOverride);
 PREP(spectrumDevice);

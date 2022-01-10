@@ -9,3 +9,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(radioJammerInit);
 [] call FUNC(spectrumDeviceInit);
 [] spawn FUNC(initPropRadios);
+[] call FUNC(radioJammerSpawnModule);
