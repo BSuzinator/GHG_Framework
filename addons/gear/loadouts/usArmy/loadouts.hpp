@@ -32,6 +32,7 @@ class usArmy
     #include "medic_f.hpp"
     #include "soldier_uav_f.hpp"
     #include "soldier_lite_f.hpp"
+	#include "soldier_unarmed_f.hpp"
 	#include "sniper_f.hpp"
 
 };

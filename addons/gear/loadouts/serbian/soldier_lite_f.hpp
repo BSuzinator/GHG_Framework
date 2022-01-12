@@ -11,4 +11,8 @@ class soldier_lite_f : soldier_f
         muzzle = "muzzle_antenna_03_f";
         //ammo = "ESD_01_DummyMagazine_1"; // Ammo count is supposed to be 4331 (433.1MHz)
     };
+	class Backpack : Backpack
+    {
+        classname = "GHG_RuggedNova_khk";
+    };
 };
