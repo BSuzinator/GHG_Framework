@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=133;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=4920;
+		nextID=4921;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={546.20215,30,1241.7007};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={460.94943,28.480116,1370.1868};
+		dir[]={0.69262123,-0.39153758,-0.60578912};
+		up[]={0.29471654,0.92016155,-0.25776881};
+		aside[]={-0.65835029,-5.5093551e-008,-0.75271577};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,14 @@ addons[]=
 	"ace_explosives",
 	"ace_gforces",
 	"ace_parachute",
-	"ace_spectator"
+	"ace_spectator",
+	"UK3CB_Factions_TKA_B"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			className="Desert";
@@ -133,11 +134,19 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item12
+		{
+			className="UK3CB_Factions_TKA";
+			name="3CB Factions - TKA";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
 	};
 };
 dlcs[]=
 {
-	"RHS_AFRF"
+	"RHS_AFRF",
+	"RHS_USAF"
 };
 randomSeed=9005672;
 class ScenarioData
@@ -441,7 +450,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=128;
+		items=129;
 		class Item0
 		{
 			dataType="Comment";
@@ -4407,7 +4416,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						description="EWS ROLM";
+						description="EWS Computer";
 						isPlayable=1;
 					};
 					id=4506;
@@ -4467,7 +4476,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						description="EWS Teletype";
+						description="EWS Comms";
 						isPlayable=1;
 					};
 					id=4507;
@@ -4625,7 +4634,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						description="EWS ROLM";
+						description="EWS Computer";
 						isPlayable=1;
 					};
 					id=4510;
@@ -4685,7 +4694,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						description="EWS Teletype";
+						description="EWS Comms";
 						isPlayable=1;
 					};
 					id=4511;
@@ -13293,7 +13302,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						description="EWS ROLM";
+						description="EWS Computer";
 						isPlayable=1;
 					};
 					id=4639;
@@ -13374,7 +13383,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						description="EWS Teletype";
+						description="EWS Comms";
 						isPlayable=1;
 					};
 					id=4640;
@@ -13625,7 +13634,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						description="EWS ROLM";
+						description="EWS Computer";
 						isPlayable=1;
 					};
 					id=4643;
@@ -13706,7 +13715,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						description="EWS Teletype";
+						description="EWS Comms";
 						isPlayable=1;
 					};
 					id=4644;
@@ -23115,7 +23124,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="EWS ROLM";
+						description="EWS Computer";
 						isPlayable=1;
 					};
 					id=4772;
@@ -23174,7 +23183,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="EWS Teletype";
+						description="EWS Comms";
 						isPlayable=1;
 					};
 					id=4773;
@@ -23423,7 +23432,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="EWS ROLM";
+						description="EWS Computer";
 						isPlayable=1;
 					};
 					id=4776;
@@ -23482,7 +23491,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="EWS Teletype";
+						description="EWS Comms";
 						isPlayable=1;
 					};
 					id=4777;
@@ -29491,6 +29500,45 @@ class Mission
 			description="Spectator";
 			id=4919;
 			type="ace_spectator_virtual";
+		};
+		class Item128
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={490.48373,6.9449992,1295.9813};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this, 750] call ghg_fnc_radioJammer;";
+			};
+			id=4920;
+			type="UK3CB_TKA_B_M998_4DR";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[1]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
