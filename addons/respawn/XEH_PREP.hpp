@@ -5,3 +5,5 @@ PREP(respawnTrigger);
 PREP(respawnHandler);
 PREP(nearestAlly);
 PREPMAIN(rff);
+PREP(respawnKilled);
+PREP(respawnGearUp);

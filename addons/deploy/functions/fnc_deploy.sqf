@@ -127,11 +127,7 @@ if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then {
 [_msg] remoteExec ["systemChat", side _player]; // Notify team members
 [_msg] remoteExec ["systemChat", sideLogic ]; // Notify zeus
 
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
-{
-
-} 
-else
+if ! (GVARMAIN(is_training)) then
 {
 	GVAR(hasDeployed) = true;
 

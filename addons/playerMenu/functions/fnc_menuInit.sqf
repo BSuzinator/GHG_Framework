@@ -15,7 +15,7 @@
 		-100,  
 		"_this call ghg_playerMenu_fnc_menuDialog"
 	],  
-	[0x3B,false,true,false],
+	[DIK_F1,false,true,false],
 	false,
 	0,
 	false

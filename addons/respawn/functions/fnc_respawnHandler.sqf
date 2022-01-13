@@ -6,8 +6,6 @@
 ======================================*/
 params ["_unit", "_corpse"];
 
-["unitRespawn", _this] call CBA_fnc_serverEvent;
-
 private _setPosAGLS = {
 	params ["_obj", "_pos", "_offset"];
 	_offset = _pos select 2;
@@ -26,26 +24,15 @@ private _respawnPos = markerPos (switch (side _unit) do {
 });
 
 //Handle if Training Server or not
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
+if (GVARMAIN(is_training)) then
 {
 	setPlayerRespawnTime 10;
 	[_unit] call FUNC_INNER(gear,gearUp);
 } 
 else
 {
-	setPlayerRespawnTime 5000;
-	//Respawn all units as rifleman
-	[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp);
-	/*
-	//Remove Traits from unit on respawn 
-	_unit setUnitTrait ["engineer", false];
-	_unit setUnitTrait ["explosiveSpecialist", false];
-	_unit setUnitTrait ["Medic", false];
-	_unit setUnitTrait ["UAVHacker", false];
-	_unit setVariable ["ace_medical_medicClass", 0, true];
-	_unit setVariable ["ACE_isEOD", false, true];
-	_unit setVariable ["ACE_isEngineer", false, true];
-	*/
+	setPlayerRespawnTime 100000;
+	[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp); //Respawn all units as rifleman
 };
 
 //Set Player Scope Select time

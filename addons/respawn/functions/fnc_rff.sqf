@@ -9,7 +9,7 @@ params [
     ["_unit", player, [objNull]]
 ];
 
-[_unit, "HandleDamage", {
+[_unit, "HandleDamage", { // Does not persist on death
     params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
     if ((_unit isEqualTo _instigator) || (side _unit != side _instigator)) exitWith {_damage};
 

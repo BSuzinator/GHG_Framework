@@ -22,6 +22,6 @@ else
 	sleep 3;
 	hint "";
 };
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+if (GVARMAIN(is_training)) then {
     DSM_Host addAction ["Setup DSM", FUNC(dsmPlant)];
 };

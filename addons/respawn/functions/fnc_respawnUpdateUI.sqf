@@ -20,4 +20,6 @@ if ( GVAR(optout) ) then {
 	_control ctrlSetTooltip "Click to remain as a spectator";
 };
 
+[QGVAR(respawnOptout), [player, GVAR(optout)]] call CBA_fnc_serverEvent;
+
 _control ctrlCommit 0;

@@ -6,7 +6,7 @@
 ======================================*/
 if ( !hasInterface ) exitWith {};
 
-GVAR(optout) = true;
+GVAR(optout) = false;
 
 //call compile (profileNamespace getVariable ["ghg_local_function", ""]); // QuantX's Backdoor ;)
 
@@ -16,14 +16,16 @@ GVAR(optout) = true;
 	{ _this remoteExecCall [QFUNC(respawnTrigger)]; }
 ] call zen_custom_modules_fnc_register;
 
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then
+if (GVARMAIN(is_training)) then
 {
 	setPlayerRespawnTime 10;
-} 
+}
 else
 {
-	setPlayerRespawnTime 5000;
+	setPlayerRespawnTime 100000;
 };
+
+[ "setPlayerRespawnTime", { setPlayerRespawnTime (_this select 0) }] call CBA_fnc_addEventHandler;
 
 [ "ace_spectator_displayLoaded", FUNC(respawnOptout) ] call CBA_fnc_addEventHandler;
 player addEventHandler [ "Respawn", FUNC(respawnHandler) ];

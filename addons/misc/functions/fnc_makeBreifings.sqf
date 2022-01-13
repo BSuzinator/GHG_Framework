@@ -97,7 +97,7 @@ if ( playerSide isEqualTo sideLogic ) then
     } forEach [ "Blufor", "Opfor", "Indfor", "Civilian" ];
 };
 
-if (getNumber ( _ghg >> "isTraining" ) isEqualTo 1) then {
+if (GVARMAIN(is_training)) then {
     private _subject = "locations";
 	player createDiarySubject [_subject, "Locations"];
     [_subject, "locations"] call _addBreif;

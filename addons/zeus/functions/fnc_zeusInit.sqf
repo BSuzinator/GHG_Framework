@@ -13,7 +13,7 @@ if ( isServer ) then
         { _x addCuratorEditableObjects [_objs, true]; } forEach allCurators;
     }] call CBA_fnc_addEventHandler;
     
-    ["unitRespawn", {
+    addMissionEventHandler ["EntityRespawned", {
         params ["_unit", "_corpse"];
         
         // Transfer zeus module to new unit
@@ -23,7 +23,7 @@ if ( isServer ) then
             unassignCurator _logic;
             _unit assignCurator _logic;
         };
-    }] call CBA_fnc_addEventHandler;
+    }];
 
     GVAR(zeusGroup) = createGroup sideLogic;
     GVAR(zeusManifestGroup) = createGroup civilian;
@@ -48,7 +48,9 @@ if ( !hasInterface ) exitWith {};
 // Ensure virtual Zeus players are invincible and force interface
 if ( player isKindOf "VirtualCurator_F" ) then
 {
+    // Prevent zeus slot from being fucked with
 	player allowDamage false;
+    player setPosASL [0,0,0]; // Allows zeus modules to talk with each other, while staying out of the combat zone
 	bis_fnc_forceCuratorInterface_force = true;
 	
 	[{

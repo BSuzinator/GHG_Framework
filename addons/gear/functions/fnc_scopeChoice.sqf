@@ -13,7 +13,7 @@ if ( _unit getVariable [QGVAR(hasScopeChoice), false] ) exitWith {};
 //private _respawnPos = markerPos format ["respawn_%1", side _unit];
 
 //Condition for changing scopes
-private _actionCondition = (if (getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" ) isEqualTo 1) then {
+private _actionCondition = (if (GVARMAIN(is_training)) then {
 	{true};
 } else {
 	{
