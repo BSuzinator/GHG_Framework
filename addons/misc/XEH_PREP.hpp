@@ -1,9 +1,7 @@
 PREP(addMinesToZeus);
 PREP(blackout);
-PREP(checkFuelLevel);
 PREP(ejectOnDeath);
-PREP(engineOff);
-PREP(reversePlanes);
+PREP(vehicleActions);
 PREP(makeBreifings);
 PREP(failDeadly);
 PREP(getAllTaskInfo);
