@@ -12,6 +12,12 @@ _omniAnt = objNull;
 
 _jammer setVariable ["ghg_jammer_maxRange",_range, true];
 
+private _greenHumvees = ["rhsusf_m998_w_s_4dr","rhsusf_m998_w_4dr","rhsgref_hidf_m998_4dr","UK3CB_ANA_B_M998_4DR","UK3CB_CW_US_B_LATE_M998_4DR","UK3CB_MDF_B_M998_4DR","UK3CB_MDF_O_M998_4DR","UK3CB_MDF_I_M998_4DR","LOP_GRE_M998_D_4DR"];
+
+private _sandHumvees = ["rhsusf_m998_d_s_4dr","rhsusf_m998_d_4dr","UK3CB_TKA_B_M998_4DR","LOP_AA_M998_D_4DR","LOP_IA_M998_D_4DR","LOP_PESH_M998_D_4DR","LOP_PESH_IND_M998_D_4DR"];
+
+private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
+
 if (_jammer isKindOf "rhs_zil131_flatbed_base") then {
 	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
 	_tswitch setVariable ["BIS_enableRandomization", true]; 
@@ -26,6 +32,63 @@ if (_jammer isKindOf "rhs_zil131_flatbed_base") then {
 	_satAnt attachTo[_jammer,[0,1.411,0.77]]; 
 	_gen attachTo[_jammer,[0,-0.224,0.22]]; 
 	_omniAnt attachTo[_jammer,[0.034,-2.132,1.5]];
+	_tswitch animateSource ["switchposition",1];
+};
+
+if (typeOf _jammer in _greenHumvees) then {
+	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
+	_tswitch setVariable ["BIS_enableRandomization", true]; 
+	_satAnt = "SatelliteAntenna_01_Mounted_Olive_F" createVehicle [0,0,0]; 
+	_satAnt setVariable ["BIS_enableRandomization", true]; 
+	_gen = "Land_Portable_generator_F" createVehicle [0,0,0]; 
+	_gen setVariable ["BIS_enableRandomization", true]; 
+	_omniAnt = "OmniDirectionalAntenna_01_olive_F" createVehicle [0,0,0]; 
+	_omniAnt setVariable ["BIS_enableRandomization", true]; 
+	_tswitch attachTo[_jammer,[-0.440748,-2.27531,-1.259]]; 
+	//_tswitch setVectorDirAndUp [[1,0,0], [0,0,1]];
+	_satAnt attachTo[_jammer,[0.00425148,1.44269,-0.775328]]; 
+	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.928999]]; 
+	_omniAnt attachTo[_jammer,[0.142252,-1.62931,-0.914999]];
+	_tswitch animateSource ["switchposition",1];
+};
+
+if (typeOf _jammer in _sandHumvees) then {
+	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
+	_tswitch setVariable ["BIS_enableRandomization", true]; 
+	_satAnt = "SatelliteAntenna_01_Mounted_Sand_F" createVehicle [0,0,0]; 
+	_satAnt setVariable ["BIS_enableRandomization", true]; 
+	_gen = "Land_Portable_generator_F" createVehicle [0,0,0]; 
+	_gen setVariable ["BIS_enableRandomization", true]; 
+	_omniAnt = "OmniDirectionalAntenna_01_sand_F" createVehicle [0,0,0]; 
+	_omniAnt setVariable ["BIS_enableRandomization", true]; 
+	
+	_tswitch attachTo[_jammer,[-0.440748,-2.27531,-1.259]]; 
+	
+	_satAnt attachTo[_jammer,[0,1.45,0]]; 
+	_satAnt setVectorDirAndUp [[0.5,0,0], [0,0,0]];
+	
+	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.47]]; 
+	_gen setVectorDirAndUp [[1,0,0], [0,0,1]];
+	
+	_omniAnt attachTo[_jammer,[0.142252,-1.62931,1.15]];
+	
+	_tswitch animateSource ["switchposition",1];
+};
+
+if (typeOf _jammer in _blackHumvees) then {
+	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
+	_tswitch setVariable ["BIS_enableRandomization", true]; 
+	_satAnt = "SatelliteAntenna_01_Mounted_Black_F" createVehicle [0,0,0]; 
+	_satAnt setVariable ["BIS_enableRandomization", true]; 
+	_gen = "Land_Portable_generator_F" createVehicle [0,0,0]; 
+	_gen setVariable ["BIS_enableRandomization", true]; 
+	_omniAnt = "OmniDirectionalAntenna_01_black_F" createVehicle [0,0,0]; 
+	_omniAnt setVariable ["BIS_enableRandomization", true]; 
+	_tswitch attachTo[_jammer,[-0.440748,-2.27531,-1.259]]; 
+	//_tswitch setVectorDirAndUp [[1,0,0], [0,0,1]];
+	_satAnt attachTo[_jammer,[0.00425148,1.44269,-0.775328]]; 
+	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.928999]]; 
+	_omniAnt attachTo[_jammer,[0.142252,-1.62931,-0.914999]];
 	_tswitch animateSource ["switchposition",1];
 };
 
