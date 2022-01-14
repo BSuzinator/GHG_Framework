@@ -1,17 +1,19 @@
 #include "script_component.hpp"
 /*======================================
-    Callback for ghg_statistics_fnc_getStatsCallback
+	ghg_statistics_fnc_doStoreStatsCallback
+    Check at mission start for current stats
 	Author: BSuz
 ======================================*/
-
 params ["_args", "_sqlResult", "_errorMessage" ];
 _player = _args select 0;
-systemChat str _player;
 /*
 if ( _errorMessage != "" ) exitWith {
     systemChat ("GHG interact misc 3 error: " + _errorMessage);
 };
 */
+systemchat format _sqlResult;
+systemchat format _errorMessage;
+/*
 _sqlResult params [
 "_selfFieldDressings","_othersFieldDressings","_selfElasticBandages","_othersElasticBandages","_selfPackingBandages","_othersPackingBandages","_selfQuikclot","_othersQuikclot",
 "_self250Blood","_others250Blood","_self500Blood","_others500Blood","_self1000Blood","_others1000Blood",
@@ -38,3 +40,4 @@ if _selfFieldDressings then {
 };
 
 player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];
+*/

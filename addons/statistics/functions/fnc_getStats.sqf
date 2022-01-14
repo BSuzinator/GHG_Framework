@@ -5,21 +5,24 @@
 	Author: BSuz
 ======================================*/
 if ! (hasInterface) exitWith {};
-if (isServer && hasInterface && !isDedicated) then {
-	GVARMAIN(isAdmin) = true;
-	GVARMAIN(isOfficer) = true;
-	GVARMAIN(isJuniorOfficer) = true;
-	GVARMAIN(isDegenerate) = true;
-	_player setVariable [QGVARMAIN(isAdmin), true];
-	_player setVariable [QGVARMAIN(isOfficer), true];
-	_player setVariable [QGVARMAIN(isJuniorOfficer), true];
-	_player setVariable [QGVARMAIN(isDegenerate), true];
-} else {
-	GVARMAIN(isAdmin) = false;
-	GVARMAIN(isOfficer) = false;
-	GVARMAIN(isJuniorOfficer) = false;
-	GVARMAIN(isDegenerate) = false;
-};
-private _query = format ["SELECT isAdmin,isOfficer,isJuniorOfficer,isDegenerate FROM users WHERE steamID64=%1", getPlayerUID player];
 
-[_query, QFUNC(getRolesCallback),[player]] call FUNCMAIN(spawnDB);
+if (isServer && hasInterface && !isDedicated) then {
+	GVAR(treatmentArray) = [
+	//Bandages
+	[0,0,0,0,0,0,0,0],
+	//Blood
+	[0,0,0,0,0,0],
+	//Plasma
+	[0,0,0,0,0,0],
+	//Saline
+	[0,0,0,0,0,0],
+	//Medicines
+	[0,0,0,0,0,0],
+	//Kits / Others
+	[0,0,0,0,0,0,0,0,0,0]
+	];
+};
+
+private _query = format ["SELECT selfFieldDressings,othersFieldDressings,selfElasticBandages,othersElasticBandages,selfPackingBandages,othersPackingBandages,selfQuikclot,othersQuikclot,self250Blood,others250Blood,self500Blood,others500Blood,self1000Blood,others1000Blood,self250Plasma,others250Plasma,self500Plasma,others500Plasma,self1000Plasma,others1000Plasma,self250Saline,others250Saline,self500Saline,others500Saline,self1000Saline,others1000Saline,selfAdenosine,othersAdenosine,selfEpinephrine,othersEpinephrine,selfMorphine,othersMorphine,selfBodyBag,othersBodyBag,selfPersonalAidKit,othersPersonalAidKit,selfSplint,othersSplint,selfStitch,othersStitch,selfTourniquet,othersTourniquet FROM statistics WHERE steamID64=%1", getPlayerUID player];
+
+[_query, QFUNC(getStatsCallback),[player]] call FUNCMAIN(spawnDB);

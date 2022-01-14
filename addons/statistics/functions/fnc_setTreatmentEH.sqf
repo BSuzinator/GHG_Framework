@@ -1,23 +1,24 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_statistics_fnc_setTrackingEH
+	ghg_statistics_fnc_setTreatmentEH
 	Sets event handlers for tracking statistics
 	Author: BSuz
 ======================================*/
 if (!hasInterface) exitWith {};
 //if (isNil QGVAR(ghg_misc_fnc_treatmentNotifyEHID) && hasInterface) then {};
-
+systemchat "setTreatmentEH called";
 GVAR(treatmentComplete) = ["ace_treatmentSucceded", {
 	params ["_caller", "_target", "_selectionName", "_className", "_itemUser", "_usedItem"];
 	
 	//Get all current values
-	GVAR(treatmentArray) params ["_bandageArray","_medicineArray","_kitsArray","_bloodArray","_plasmaArray","_salineArray"];
+	GVAR(treatmentArray) params ["_bandageArray","_bloodArray","_plasmaArray","_salineArray","_medicineArray","_kitsArray"];
 	_bandageArray params ["_selfFieldDressings","_othersFieldDressings","_selfElasticBandages","_othersElasticBandages","_selfPackingBandages","_othersPackingBandages","_selfQuikclot","_othersQuikclot"];
-	_medicineArray params ["_selfAdenosine","_othersAdenosine","_selfEpinephrine","_othersEpinephrine","_selfMorphine","_othersMorphine"];
-	_kitsArray params ["_selfBodyBag","_othersBodyBag","_selfPersonalAidKit","_othersPersonalAidKit","_selfSplint","_othersSplint","_selfStitch","_othersStitch","_selfTourniquet","_othersTourniquet"];
 	_bloodArray params ["_self250Blood","_others250Blood","_self500Blood","_others500Blood","_self1000Blood","_others1000Blood"];
 	_plasmaArray params ["_self250Plasma","_others250Plasma","_self500Plasma","_others500Plasma","_self1000Plasma","_others1000Plasma"];
 	_salineArray params ["_self250Saline","_others250Saline","_self500Saline","_others500Saline","_self1000Saline","_others1000Saline"];
+	_medicineArray params ["_selfAdenosine","_othersAdenosine","_selfEpinephrine","_othersEpinephrine","_selfMorphine","_othersMorphine"];
+	_kitsArray params ["_selfBodyBag","_othersBodyBag","_selfPersonalAidKit","_othersPersonalAidKit","_selfSplint","_othersSplint","_selfStitch","_othersStitch","_selfTourniquet","_othersTourniquet"];
+	
 	//Check if you are treating yourself or someone else
 	_treatingSelf = _caller isEqualTo _target;
 	
@@ -50,16 +51,20 @@ GVAR(treatmentComplete) = ["ace_treatmentSucceded", {
 GVAR(treatmentArray) = [
 	//Bandages
 	[_selfFieldDressings,_othersFieldDressings,_selfElasticBandages,_othersElasticBandages,_selfPackingBandages,_othersPackingBandages,_selfQuikclot,_othersQuikclot],
-	//Medicines
-	[_selfAdenosine,_othersAdenosine,_selfEpinephrine,_othersEpinephrine,_selfMorphine,_othersMorphine],
-	//Kits / Others
-	[_selfBodyBag,_othersBodyBag,_selfPersonalAidKit,_othersPersonalAidKit,_selfSplint,_othersSplint,_selfStitch,_othersStitch,_selfTourniquet,_othersTourniquet],
 	//Blood
 	[_self250Blood,_others250Blood,_self500Blood,_others500Blood,_self1000Blood,_others1000Blood],
 	//Plasma
 	[_self250Plasma,_others250Plasma,_self500Plasma,_others500Plasma,_self1000Plasma,_others1000Plasma],
 	//Saline
-	[_self250Saline,_others250Saline,_self500Saline,_others500Saline,_self1000Saline,_others1000Saline]
+	[_self250Saline,_others250Saline,_self500Saline,_others500Saline,_self1000Saline,_others1000Saline],
+	//Medicines
+	[_selfAdenosine,_othersAdenosine,_selfEpinephrine,_othersEpinephrine,_selfMorphine,_othersMorphine],
+	//Kits / Others
+	[_selfBodyBag,_othersBodyBag,_selfPersonalAidKit,_othersPersonalAidKit,_selfSplint,_othersSplint,_selfStitch,_othersStitch,_selfTourniquet,_othersTourniquet]
 ];
 
+player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];
+
 }] call CBA_fnc_addEventHandler;
+
+player setVariable ["ghg_treatmentSTATSEH",GVAR(treatmentComplete),true];

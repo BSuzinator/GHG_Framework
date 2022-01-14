@@ -5,4 +5,5 @@
 	Author: BSuz
 ======================================*/
 if (!hasInterface) exitWith {};
-_this call FUNC(setTreatmentEH);
+systemchat "handlerInits called";
+[] call FUNC(setTreatmentEH);
