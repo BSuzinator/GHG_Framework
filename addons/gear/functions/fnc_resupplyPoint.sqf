@@ -33,7 +33,8 @@ if ( isServer ) then
 			_obj setVariable ["laptop_obj", _laptop, true];
 			[_laptop, _obj] call BIS_fnc_attachToRelative;
 		};
-		//Cargo Container
+		//Cargo Containers
+		case "Land_Cargo20_sand_F": {};
 		case "Land_Cargo20_military_green_F": {
 			// Make container indestructible
 			_obj allowDamage false;
