@@ -4,6 +4,7 @@
 	Sets event handlers for tracking statistics
 	Author: BSuz
 ======================================*/
+[] call FUNC(storeStatsEH);
 if (!hasInterface) exitWith {};
-systemchat "handlerInits called";
 [] call FUNC(setTreatmentEH);
+systemchat "statistics handlerInits called";

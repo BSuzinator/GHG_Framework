@@ -1,7 +1,8 @@
 #include "script_component.hpp"
 /*======================================
 	ghg_statistics_fnc_doStoreStats
-    Check at mission start for current stats
+    Store statistics to database on disconnect or mission end
+	Called from: ghg_statistics_fnc_storeStatsEH
 	Author: BSuz
 ======================================*/
 if ! (hasInterface) exitWith {};

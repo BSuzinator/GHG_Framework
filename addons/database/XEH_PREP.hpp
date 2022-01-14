@@ -6,3 +6,4 @@ PREPMAIN(callDB);
 PREPMAIN(debugCallback);
 PREP(getRoles);
 PREP(getRolesCallback);
+PREPMAIN(toBool);
