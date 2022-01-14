@@ -24,7 +24,13 @@ _logic addEventHandler ["curatorObjectPlaced", {
     clearMagazineCargoGlobal _unit;
     clearWeaponCargoGlobal _unit;
     clearBackpackCargoGlobal _unit;
-
+	
+	if ((_unit isKindOf "AllVehicles") && !(_unit isKindOf "Man")) then {
+	[_unit, "killed", {
+		params ["_unit", "_killer", "_instigator", "_useEffects"];
+		if ((_unit isKindOf "AllVehicles") && !(_unit isKindOf "Man")) then {[_unit] call FUNC(ejectOnDeath);};
+	}] remoteExec ["CBA_fnc_addBISEventHandler",0,true];
+	};
 }];
 
 [ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;
