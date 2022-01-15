@@ -5,7 +5,7 @@
 	Opened with CTRL + F1
 	Author: BSuz
 ======================================*/
-#include "\a3\ui_f\hpp\definedikcodes.inc" //Include all codes for keys
+if ! ( hasInterface ) exitWith {};
 
 [ 
 	"Ghost Hawk Gaming","Open_Menu","Admin Menu",
@@ -15,7 +15,7 @@
 		-100,  
 		"_this call ghg_playerMenu_fnc_menuDialog"
 	],  
-	[DIK_F1,false,true,false],
+	[59 ,false,true,false],
 	false,
 	0,
 	false
