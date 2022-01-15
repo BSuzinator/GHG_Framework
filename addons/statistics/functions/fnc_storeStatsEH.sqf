@@ -6,17 +6,14 @@
 ======================================*/
 //if ! (hasInterface) exitWith {};
 
-private _playerDisconnectedEH = addMissionEventHandler ["PlayerDisconnected",
-{
-	params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
-	[] call FUNC(doStoreStats);
-	systemChat "Player statistics stored to database";
-}];
+private _playerDisconnectedEH = addMissionEventHandler ["PlayerDisconnected", FUNC(doStoreStats)];
 
-private _mpEndedEH = addMissionEventHandler ["MPEnded", {
-	[] call FUNC(doStoreStats);
-	systemChat "Player statistics stored to database";
-}];
+private _mpEndedEH = addMissionEventHandler ["MPEnded", FUNC(doStoreStats)];
+
+private _EndedEH = addMissionEventHandler ["Ended", FUNC(doStoreStats)];
 
 player setVariable["ghg_statistics_playerDisconnectedEHID", _playerDisconnectedEH, true];
 player setVariable["ghg_statistics_mpEndedEHID", _mpEndedEH, true];
+player setVariable["ghg_statistics_EndedEHID", _mpEndedEH, true];
+
+diag_log "store data EH loaded";

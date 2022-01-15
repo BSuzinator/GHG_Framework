@@ -11,8 +11,8 @@ if ( _errorMessage != "" ) exitWith {
     systemChat ("GHG interact misc 3 error: " + _errorMessage);
 };
 */
-systemchat format _sqlResult;
-systemchat format _errorMessage;
+diag_log _sqlResult;
+diag_log _errorMessage;
 /*
 _sqlResult params [
 "_selfFieldDressings","_othersFieldDressings","_selfElasticBandages","_othersElasticBandages","_selfPackingBandages","_othersPackingBandages","_selfQuikclot","_othersQuikclot",

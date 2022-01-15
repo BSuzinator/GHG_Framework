@@ -6,7 +6,7 @@
 ======================================*/
 if (!hasInterface) exitWith {};
 //if (isNil QGVAR(ghg_misc_fnc_treatmentNotifyEHID) && hasInterface) then {};
-systemchat "setTreatmentEH called";
+diag_log "setTreatmentEH called";
 GVAR(treatmentComplete) = ["ace_treatmentSucceded", {
 	params ["_caller", "_target", "_selectionName", "_className", "_itemUser", "_usedItem"];
 	
@@ -63,7 +63,7 @@ GVAR(treatmentArray) = [
 	[_selfBodyBag,_othersBodyBag,_selfPersonalAidKit,_othersPersonalAidKit,_selfSplint,_othersSplint,_selfStitch,_othersStitch,_selfTourniquet,_othersTourniquet]
 ];
 
-player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];
+//player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];
 
 }] call CBA_fnc_addEventHandler;
 

@@ -14,6 +14,7 @@ _menuOptions = [];
 
 //Define Actions
 _kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,true];
+_storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
 
 //Define Submenu Actions
 _vehicleSubmenu = [
@@ -47,8 +48,8 @@ _radioSubmenu = [
 ];
 
 //Add Menu Options here
-_menuOptions pushback ["A Test",{hint "Hello World"; true},"","",[],-1,true,true];
-if (_isAdmin) then {_menuOptions pushback _kickPlayer;};
+//_menuOptions pushback ["A Test",{hint "Hello World"; true},"","",[],-1,true,true];
+if (_isAdmin) then {_menuOptions pushback _kickPlayer;_menuOptions pushback _storeStats;};
 
 //Sort non-submenu options alphabetically
 _menuOptions sort false;

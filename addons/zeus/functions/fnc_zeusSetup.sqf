@@ -48,8 +48,6 @@ if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) 
 		[ _logic, "curatorUnitAssigned", [ _logic, _unit ] ] call BIS_fnc_callScriptedEventHandler;
         [ "zeusAssigned", [ _logic, _unit ], owner _unit ] call CBA_fnc_ownerEvent;
 		
-		// Initialize local event handlers
-		[_logic, _unit] remoteExecCall [QFUNC(zeusInitEh), _unit];
 	},
 	[_unit, _uid]] call CBA_fnc_waitUntilAndExecute;
 };

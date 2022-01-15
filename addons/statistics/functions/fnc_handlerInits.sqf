@@ -7,4 +7,4 @@
 [] call FUNC(storeStatsEH);
 if (!hasInterface) exitWith {};
 [] call FUNC(setTreatmentEH);
-systemchat "statistics handlerInits called";
+diag_log "statistics handlerInits called";

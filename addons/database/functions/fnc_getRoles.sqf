@@ -5,21 +5,16 @@
 	Author: BSuz
 ======================================*/
 if ! (hasInterface) exitWith {};
-if (isServer && hasInterface && !isDedicated) then {
-	GVARMAIN(isAdmin) = true;
-	GVARMAIN(isOfficer) = true;
-	GVARMAIN(isJuniorOfficer) = true;
-	GVARMAIN(isDegenerate) = true;
-	_player setVariable [QGVARMAIN(isAdmin), true];
-	_player setVariable [QGVARMAIN(isOfficer), true];
-	_player setVariable [QGVARMAIN(isJuniorOfficer), true];
-	_player setVariable [QGVARMAIN(isDegenerate), true];
-} else {
-	GVARMAIN(isAdmin) = false;
-	GVARMAIN(isOfficer) = false;
-	GVARMAIN(isJuniorOfficer) = false;
-	GVARMAIN(isDegenerate) = false;
-};
+
+GVARMAIN(isAdmin) = isServer;
+GVARMAIN(isOfficer) = isServer;
+GVARMAIN(isJuniorOfficer) = isServer;
+GVARMAIN(isDegenerate) = isServer;
+_player setVariable [QGVARMAIN(isAdmin), true];
+_player setVariable [QGVARMAIN(isOfficer), true];
+_player setVariable [QGVARMAIN(isJuniorOfficer), true];
+_player setVariable [QGVARMAIN(isDegenerate), true];
+
 private _query = format ["SELECT isAdmin,isOfficer,isJuniorOfficer,isDegenerate FROM users WHERE steamID64=%1", getPlayerUID player];
 
 [_query, QFUNC(getRolesCallback),[player]] call FUNCMAIN(spawnDB);
