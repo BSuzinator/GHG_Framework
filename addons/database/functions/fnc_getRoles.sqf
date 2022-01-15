@@ -6,15 +6,12 @@
 ======================================*/
 if ! (hasInterface) exitWith {};
 
+// Debug for dedicated hosts (i.e. 3DEN localhost)
 GVARMAIN(isAdmin) = isServer;
 GVARMAIN(isOfficer) = isServer;
 GVARMAIN(isJuniorOfficer) = isServer;
 GVARMAIN(isDegenerate) = isServer;
-_player setVariable [QGVARMAIN(isAdmin), true];
-_player setVariable [QGVARMAIN(isOfficer), true];
-_player setVariable [QGVARMAIN(isJuniorOfficer), true];
-_player setVariable [QGVARMAIN(isDegenerate), true];
 
 private _query = format ["SELECT isAdmin,isOfficer,isJuniorOfficer,isDegenerate FROM users WHERE steamID64=%1", getPlayerUID player];
 
-[_query, QFUNC(getRolesCallback),[player]] call FUNCMAIN(spawnDB);
+[_query, QFUNC(getRolesCallback)] call FUNCMAIN(spawnDB);

@@ -4,9 +4,17 @@
 	Repairs current vehicle
 	Author: BSuz
 ======================================*/
-_vehicle = vehicle ACE_Player;
-if ( !(_vehicle isKindOf "LandVehicle") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Sea") ) then {_vehicle = cursorObject;};
+private _vehicle = vehicle player;
+if ! ( (_vehicle isKindOf "LandVehicle")
+    && (_vehicle isKindOf "Air")
+    && (_vehicle isKindOf "Sea") ) then {_vehicle = cursorObject;};
+
+if (isNull _vehicle) exitWith {};
 if (!alive _vehicle) exitWith {systemChat "Vehicle is destroyed."};
-_vehicle setDamage 0;
-_str = format ["%1 repaired a vehicle from the Admin Menu", name player]; 
-_str remoteExec["systemChat",2, false];
+
+[_vehicle, 0] remoteExecCall ["setDamage", _vehicle];
+
+private _str = format ["%1 repaired a %2 from the Admin Menu", name player, getText ((configOf _vehicle) >> "displayname")]; 
+_str remoteExecCall ["systemChat", 0];
+
+true

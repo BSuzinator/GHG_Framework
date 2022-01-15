@@ -4,6 +4,7 @@
 	Adds option to spectator mode to stay in spectator or respawn with the next wave
 	Author: Quantx
 ======================================*/
+disableserialization;
 
 if ! (hasInterface) exitWith {};
 
@@ -47,3 +48,10 @@ _optImg ctrlAddEventHandler [ "MouseButtonClick", FUNC(respawnUpdateUI) ];
 _optImg ctrlSetText "\a3\3den\data\cfgwaypoints\cycle_ca.paa";
 _optImg ctrlSetTooltip "Click to remain as a spectator";
 _optImg ctrlCommit 0;
+
+// Force respawn timer to appear (This shouldn't be my problem but it is)
+if ( isNull (uiNamespace getVariable ["RscRespawnCounter", displayNull]) ) then { titleRsc ["RscRespawnCounter", "PLAIN"] };
+
+GVAR(optout_timer_eh) = [{
+    RscRespawnCounter_Custom = floor ((GVAR(optout_time) - time) max 0);
+}, 0.1] call CBA_fnc_addPerFrameHandler;

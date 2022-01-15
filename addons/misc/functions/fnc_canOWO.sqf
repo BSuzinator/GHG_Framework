@@ -6,4 +6,4 @@
 
 params ["_target", "_player", "_params"];
 
-GVAR(canOWO) && {[_player, _target] call ace_interaction_fnc_canTapShoulder};
+GVARMAIN(isDegenerate) && {[_player, _target] call ace_interaction_fnc_canTapShoulder};

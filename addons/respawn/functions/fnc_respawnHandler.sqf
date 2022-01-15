@@ -6,6 +6,15 @@
 ======================================*/
 params ["_unit", "_corpse"];
 
+if ( GVAR(optout_timer_eh) >= 0 ) then
+{
+    [GVAR(optout_timer_eh)] call CBA_fnc_removePerFrameHandler;
+    GVAR(optout_timer_eh) = -1;
+};
+
+// Force respawn timer to disappear (This shouldn't be my problem but it is)
+if ! ( isNull (uiNamespace getVariable ["RscRespawnCounter", displayNull]) ) then { titleRsc ["Default", "PLAIN"] };
+
 private _setPosAGLS = {
 	params ["_obj", "_pos", "_offset"];
 	_offset = _pos select 2;

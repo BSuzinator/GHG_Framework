@@ -3,7 +3,7 @@
 	Called on server when a unit is killed
 	Author: Quantx
 ======================================*/
-if ! (isServer || GVARMAIN(is_training)) exitWith {};
+if ! (isServer) exitWith {};
 
 params ["_unit", "_optout"];
 
@@ -21,16 +21,10 @@ _unit setVariable [QGVAR(optout), _optout];
 private _unitSide = side _unit;
 private _sideId = _unitSide call BIS_fnc_sideID; 
 
-private _deadpool = allPlayers select {
-    (! alive _x) && {
-        ((side _x) isEqualTo _unitSide) && {
-            _x getVariable [QGVAR(has_opted_out), false]
-        }
-    }
-};
+private _deadpool = allPlayers select {(! alive _x) && {(side _x) isEqualTo _unitSide}};
 
 // Safer to count dead each time
-private _deadcount = count _deadpool;
+private _deadcount = count (_deadpool select {!(_x getVariable [QGVAR(has_opted_out), false])});
 
 private _resptime = (MAX_WAIT_TIME - (TIME_PER_PLAYER * _deadcount)) * 60;
 
