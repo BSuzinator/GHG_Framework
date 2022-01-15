@@ -38,3 +38,4 @@ enableDebugConsole[] = {"76561198080019809", "76561198044516211"};
 #include "CfgGHG.hpp"
 #include "CfgDebriefing.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
