@@ -5,4 +5,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 	Author: CBA_3
 ======================================*/
 [] call FUNC(getStats);
-[] call FUNC(handerInits);
+[] call FUNC(handlerInits);
