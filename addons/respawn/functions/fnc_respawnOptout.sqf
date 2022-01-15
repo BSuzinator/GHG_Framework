@@ -5,7 +5,7 @@
 	Author: Quantx
 ======================================*/
 
-if ( !hasInterface ) exitWith {};
+if ! (hasInterface) exitWith {};
 
 params ["_disp"];
 

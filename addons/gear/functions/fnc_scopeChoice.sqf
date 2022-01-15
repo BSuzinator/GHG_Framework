@@ -18,7 +18,7 @@ private _actionCondition = (if (GVARMAIN(is_training)) then {
 } else {
 	{
         params ["_unit"];
-        private _checkTime = (_unit getVariable["ghg_last_respawn_time", 0]) + 60;
+        private _checkTime = (_unit getVariable[QEGVAR(respawn,last_respawn_time), 0]) + 60;
         ((EGVAR(safemode,safe)) || (time <= _checkTime))
 	};
 });

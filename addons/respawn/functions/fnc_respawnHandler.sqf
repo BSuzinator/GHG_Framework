@@ -26,16 +26,15 @@ private _respawnPos = markerPos (switch (side _unit) do {
 //Handle if Training Server or not
 if (GVARMAIN(is_training)) then
 {
-	setPlayerRespawnTime 10;
-	[_unit] call FUNC_INNER(gear,gearUp);
+	["setPlayerRespawnTime", [10]] call CBA_fnc_localEvent;
+	["gearUp", [_unit]] call CBA_fnc_localEvent;
 } 
 else
 {
-	setPlayerRespawnTime 100000;
-	[_unit, "soldier_f"] call FUNC_INNER(gear,gearUp); //Respawn all units as rifleman
+    ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
 };
 
 //Set Player Scope Select time
-_unit setVariable["ghg_last_respawn_time", time, true];
+_unit setVariable[QGVAR(last_respawn_time), time, true];
 
 [_unit, _respawnPos] call _setPosAGLS;

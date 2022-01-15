@@ -14,12 +14,14 @@ if ( GVAR(optout) ) then {
 	// Player currently DOES NOT want to respawn
 	_control ctrlSetText "\a3\Missions_F_Beta\data\img\portraitMPTypeDefense_ca.paa";
 	_control ctrlSetTooltip "Click to respawn in next wave";
+    setPlayerRespawnTime DUMMY_WAIT_TIME;
 } else {
 	// Player currently DOES want to respawn
 	_control ctrlSetText "\a3\3den\data\cfgwaypoints\cycle_ca.paa";
 	_control ctrlSetTooltip "Click to remain as a spectator";
+    setPlayerRespawnTime (GVAR(optout_time) - time);
 };
 
-[QGVAR(respawnOptout), [player, GVAR(optout)]] call CBA_fnc_serverEvent;
+[player, GVAR(optout)] remoteExecCall [QGVAR(respawnTimer), 2];
 
 _control ctrlCommit 0;
