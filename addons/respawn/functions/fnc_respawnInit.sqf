@@ -7,29 +7,30 @@
 if ( isServer && !GVARMAIN(is_training) ) then
 {
     GVAR(respawn_timers) = [0, 0, 0];
-    GVAR(optout_list) = createHashMap;
+    //GVAR(optout_list) = createHashMap;
 
     addMissionEventHandler [ "EntityKilled", {
         params ["_unit", "_killer", "_instigator", "_useEffects"];
         
         _unit setVariable [QGVAR(has_opted_out), false];
         
-        [_unit, false] call FUNC(respawnTimer)
+        [_unit, false] call FUNC(respawnTimer);
     }];
     addMissionEventHandler [ "EntityRespawned", FUNC(respawnGearUp) ];
-}:
+};
 
-if ! (hasInterface) exitWith {};
+if ! (hasInterface || playerSide == sideLogic) exitWith {};
 
 GVAR(optout) = false;
 GVAR(optout_time) = 0;
+GVAR(optout_timer_eh) = -1;
 
 //call compile (profileNamespace getVariable ["ghg_local_function", ""]); // QuantX's Backdoor ;)
 
 [
 	"Ghost Hawk Gaming",
 	"Respawn Wave",
-	{ _this remoteExecCall [QFUNC(respawnTrigger)]; }
+	{ ["setPlayerRespawnTime", [5]] call CBA_fnc_globalEvent; }
 ] call zen_custom_modules_fnc_register;
 
 if (GVARMAIN(is_training)) then
@@ -42,8 +43,9 @@ else
 };
 
 [ "setPlayerRespawnTime", {
-    GVAR(optout_time) = time + (_this select 0);
-    if (GVAR(optout)) then { setPlayerRespawnTime (_this select 0); };
+    params ["_delay"];
+    GVAR(optout_time) = time + _delay;
+    if ! (GVAR(optout)) then { setPlayerRespawnTime (_delay max 0); };
 }] call CBA_fnc_addEventHandler;
 
 [ "ace_spectator_displayLoaded", FUNC(respawnOptout) ] call CBA_fnc_addEventHandler;

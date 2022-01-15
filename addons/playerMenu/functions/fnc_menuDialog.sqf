@@ -4,20 +4,15 @@
 	Actual List for the admin menu
 	Author: BSuz
 ======================================*/
-private _player = player;
-private _isAdmin = _player getVariable [QGVARMAIN(isAdmin), false];
-private _isOfficer = _player getVariable [QGVARMAIN(isOfficer), false];
-private _isJuniorOfficer = _player getVariable [QGVARMAIN(isJuniorOfficer), false];
-
-_mainTitles = ["playerMenu", "GHG Player Menu", "popup"];
-_menuOptions = [];
+private _mainTitles = ["playerMenu", "GHG Player Menu", "popup"];
+private _menuOptions = [];
 
 //Define Actions
-_kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,true];
-_storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
+private _kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,true];
+private _storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
 
 //Define Submenu Actions
-_vehicleSubmenu = [
+private _vehicleSubmenu = [
 	"Vehicle Submenu", //Title
 	{}, //Action
 	"a3\ui_f\data\gui\RscCommon\RscTree\hiddentexture_ca.paa", //Icon
@@ -32,7 +27,7 @@ _vehicleSubmenu = [
 	true //Visible
 ];
 
-_radioSubmenu = [
+private _radioSubmenu = [
 	"Radio Submenu",
 	{},
 	"a3\ui_f\data\gui\RscCommon\RscTree\hiddentexture_ca.paa",
@@ -49,16 +44,16 @@ _radioSubmenu = [
 
 //Add Menu Options here
 //_menuOptions pushback ["A Test",{hint "Hello World"; true},"","",[],-1,true,true];
-if (_isAdmin) then {_menuOptions pushback _kickPlayer;_menuOptions pushback _storeStats;};
+if (GVARMAIN(isAdmin)) then {_menuOptions pushback _kickPlayer; _menuOptions pushback _storeStats;};
 
 //Sort non-submenu options alphabetically
 _menuOptions sort false;
 
 //Add Submenus
-if (_isAdmin || _isOfficer || _isJuniorOfficer) then {_menuOptions pushback _vehicleSubmenu;};
+if (GVARMAIN(isAdmin) || GVARMAIN(isOfficer) || GVARMAIN(isJuniorOfficer)) then {_menuOptions pushback _vehicleSubmenu;};
 _menuOptions pushback _radioSubmenu;
 
 //Reverse and return menu
 reverse _menuOptions;
-_fullMenu = [_mainTitles, _menuOptions];
-_fullMenu
+
+[_mainTitles, _menuOptions]

@@ -13,7 +13,7 @@ if ! ( hasInterface ) exitWith {};
 		"player",  
 		[],  
 		-100,  
-		"_this call ghg_playerMenu_fnc_menuDialog"
+		"_this call " + QFUNC(menuDialog)
 	],  
 	[59 ,false,true,false],
 	false,

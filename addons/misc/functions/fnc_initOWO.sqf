@@ -5,12 +5,6 @@
 ======================================*/
 if ! (hasInterface) exitWith {};
 
-GVAR(canOWO) = false;
-
-private _query = format ["SELECT owoCount FROM users WHERE steamID64=%1", getPlayerUID player];
-
-[_query, QFUNC(callbackOWO)] call FUNCMAIN(spawnDB);
-
 [QGVAR(doOwO), {
     params ["_unit", "_instigator"];
 

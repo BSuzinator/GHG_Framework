@@ -4,9 +4,12 @@
 	Opens dialog for playerlist to kick
 	Author: BSuz
 ======================================*/
-_realAllPlayers = call BIS_fnc_listPlayers;
-_allPlayerNames = []; 
-{_allPlayerNames pushBack name _x;} forEach _realAllPlayers; 
+private _realAllPlayers = call BIS_fnc_listPlayers;
+private _allPlayerNames = []; 
+{
+    _allPlayerNames pushBack name _x;
+} forEach _realAllPlayers; 
+
 [ 
 	"Kick Players", 
 	[ 
@@ -21,7 +24,15 @@ _allPlayerNames = [];
 			] 
 		] 
 	], 
-	{serverCommand format ["#kick %1",name (_values select 0)];_str = format ["%1 kicked %2 from Admin Menu", name player,name (_values select 0)]; _str remoteExec["systemChat",2, false];}, 
-	{systemChat "Cancelled";}, 
+	{
+        private _kickName = name (_values select 0);
+        serverCommand format ["#kick %1", _kickName];
+        
+        private _str = format ["%1 kicked %2 from Admin Menu", name player, _kickName];
+        _str remoteExecCall ["systemChat", 0];
+    }, 
+	{
+        systemChat "Canceled"
+    }, 
 	[] 
 ] call zen_dialog_fnc_create;
