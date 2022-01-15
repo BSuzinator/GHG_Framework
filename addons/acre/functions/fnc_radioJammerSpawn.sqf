@@ -17,4 +17,4 @@ clearMagazineCargoGlobal _vehicle;
 clearWeaponCargoGlobal _vehicle;
 clearBackpackCargoGlobal _vehicle;	
 
-[_vehicle,_radius] remoteExec["ghg_fnc_radioJammer",0];
+[_vehicle, _radius] remoteExecCall [QFUNCMAIN(radioJammer), 0];
