@@ -6,7 +6,7 @@
 	Author: BSuz
 ======================================*/
 if !(hasInterface) exitWith {};
-
+if (isServer && hasInterface && !isDedicated) exitWith {diag_log "GHG: Local hosted servers do not have access to DB";};
 if (GVARMAIN(is_training)) exitWith {diag_log "GHG: statistics not stored from training servers"};
 
 diag_log "GHG: starting doStoreStats";
