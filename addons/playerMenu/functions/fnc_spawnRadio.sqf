@@ -35,3 +35,4 @@ switch (_menuSTR) do {
 
 private _str = format ["%1 has spawned a(n) %2 from player menu",name player,_spawnedRadioSTR];
 _str remoteExecCall ["systemChat", 0];
+diag_log "GHG: " + _str;

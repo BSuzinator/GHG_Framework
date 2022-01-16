@@ -30,6 +30,7 @@ private _allPlayerNames = [];
         
         private _str = format ["%1 kicked %2 from Admin Menu", name player, _kickName];
         _str remoteExecCall ["systemChat", 0];
+		diag_log "GHG: " + _str;
     }, 
 	{
         systemChat "Canceled"

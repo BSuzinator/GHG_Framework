@@ -54,3 +54,4 @@ private _action = ["CheckFuel", "Check Fuel", "\z\ace\addons\refuel\ui\icon_refu
         };
     };
 }, 0, []] call CBA_fnc_addPerFrameHandler;
+diag_log "GHG: Vehicle Actions loaded";

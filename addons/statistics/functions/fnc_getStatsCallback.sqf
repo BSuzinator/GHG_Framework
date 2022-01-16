@@ -35,5 +35,5 @@ GVAR(treatmentArray) = [
 	//Kits / Others
 	[_selfBodyBag,_othersBodyBag,_selfPersonalAidKit,_othersPersonalAidKit,_selfSplint,_othersSplint,_selfStitch,_othersStitch,_selfTourniquet,_othersTourniquet]
 ];
-
+diag_log "GHG: Got statistics";
 player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];

@@ -16,5 +16,5 @@ if (!alive _vehicle) exitWith {systemChat "Vehicle is destroyed."};
 
 private _str = format ["%1 rearmed a %2 from the Admin Menu", name player, getText ((configOf _vehicle) >> "displayname")]; 
 _str remoteExecCall ["systemChat", 0];
-
+diag_log "GHG: " + _str;
 true
