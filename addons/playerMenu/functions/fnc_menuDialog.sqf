@@ -43,8 +43,9 @@ private _radioSubmenu = [
 ];
 
 //Add Menu Options here
+_menuOptions pushback _storeStats;
 //_menuOptions pushback ["A Test",{hint "Hello World"; true},"","",[],-1,true,true];
-if (GVARMAIN(isAdmin)) then {_menuOptions pushback _kickPlayer; _menuOptions pushback _storeStats;};
+if (GVARMAIN(isAdmin)) then {_menuOptions pushback _kickPlayer;};
 
 //Sort non-submenu options alphabetically
 _menuOptions sort false;

@@ -7,7 +7,6 @@ PREP(failDeadly);
 PREP(getAllTaskInfo);
 PREP(systemChatAllTasks);
 PREP(initOWO);
-PREP(callbackOWO);
 PREP(canOWO);
 PREP(doOWO);
 PREP(cameraScreenshot);
