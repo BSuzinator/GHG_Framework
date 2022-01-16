@@ -41,6 +41,7 @@ if (GVARMAIN(is_training)) then
 else
 {
     ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
+    ["gearUp", [_unit]] call CBA_fnc_localEvent;
 };
 
 //Set Player Scope Select time
