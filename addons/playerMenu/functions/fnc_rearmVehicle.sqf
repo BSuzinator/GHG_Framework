@@ -5,12 +5,15 @@
 	Author: BSuz
 ======================================*/
 private _vehicle = vehicle player;
-if ! ( (_vehicle isKindOf "LandVehicle")
-    && (_vehicle isKindOf "Air")
-    && (_vehicle isKindOf "Sea") ) then {_vehicle = cursorObject;};
+if ( _vehicle == player ) then { _vehicle = cursorObject };
 
 if (isNull _vehicle) exitWith {};
-if (!alive _vehicle) exitWith {systemChat "Vehicle is destroyed."};
+
+if ! ( (_vehicle isKindOf "Car")
+    && (_vehicle isKindOf "Air")
+    && (_vehicle isKindOf "Sea") ) then { systemChat "Not a vehicle" };
+
+if (!alive _vehicle) exitWith { systemChat "Vehicle is destroyed" };
 
 [_vehicle, 1] remoteExecCall ["setVehicleAmmo", _vehicle];
 
