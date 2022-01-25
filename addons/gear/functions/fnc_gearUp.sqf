@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_fnc_gearUp
+	ghg_gear_fnc_gearUp
     Applies loadouts to players
 	Called at mission start, JIP, and respawn
 ======================================*/
