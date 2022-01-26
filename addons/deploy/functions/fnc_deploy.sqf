@@ -100,8 +100,17 @@ switch (_deployType) do {
 };
 
 //Display notification for vehicle deployment to side and zeus
-private _vehName = getText (configFile >> "cfgVehicles" >> typeOf vehicle player >> "displayName");
 private _gridPos = mapGridPosition getPos player;
+
+private _vehName = if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then
+{
+    groupID (group _player);
+}
+else
+{
+    getText ((configOf (vehicle player)) >> "displayName");
+};
+
 private _msg = format [
 	"%1 has deployed %2 to GRIDREF: %3 using type %4 for side %5",
 	name _player,
@@ -111,21 +120,7 @@ private _msg = format [
 	side _player
 ];
 
-if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then {
-	
-	_msg = format [
-	"%1 has deployed %2 to GRIDREF: %3 using type %4 for side %5",
-	name _player,
-	groupID (group _player),
-	_gridPos,
-	_deployType,
-	side _player
-	];
-
-};
-
-[_msg] remoteExec ["systemChat", side _player]; // Notify team members
-[_msg] remoteExec ["systemChat", sideLogic ]; // Notify zeus
+[_msg] remoteExecCall ["systemChat", [side _player, sideLogic] ]; // Notify team members and zeus
 
 if ! (GVARMAIN(is_training)) then
 {
@@ -134,8 +129,6 @@ if ! (GVARMAIN(is_training)) then
 	removeMissionEventHandler ["Map", _deployMapID];
 	removeMissionEventHandler ["MapSingleClick", _deployEventID];
 };
-
-
 
 openMap false;
 GVAR(deployParams) = nil;

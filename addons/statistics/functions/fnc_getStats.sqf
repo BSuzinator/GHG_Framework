@@ -6,20 +6,20 @@
 ======================================*/
 if ! (hasInterface) exitWith {};
 
-if (isServer && hasInterface && !isDedicated) exitWith {
+if (isServer) exitWith {
 	GVAR(treatmentArray) = [
-	//Bandages
-	[0,0,0,0,0,0,0,0],
-	//Blood
-	[0,0,0,0,0,0],
-	//Plasma
-	[0,0,0,0,0,0],
-	//Saline
-	[0,0,0,0,0,0],
-	//Medicines
-	[0,0,0,0,0,0],
-	//Kits / Others
-	[0,0,0,0,0,0,0,0,0,0]
+        //Bandages
+        [0,0,0,0,0,0,0,0],
+        //Blood
+        [0,0,0,0,0,0],
+        //Plasma
+        [0,0,0,0,0,0],
+        //Saline
+        [0,0,0,0,0,0],
+        //Medicines
+        [0,0,0,0,0,0],
+        //Kits / Others
+        [0,0,0,0,0,0,0,0,0,0]
 	];
 	diag_log "GHG: Local hosted servers do not have access to DB";
 	player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];

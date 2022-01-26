@@ -6,17 +6,21 @@
 	Author: Quantx
 ======================================*/
 
-// Hide template markers
-[{ time > 0 }, {
-    {
-        private _mrk = [_x, 0, 7] call BIS_fnc_trimString;
-    
-        if ( _mrk isEqualTo "ghg_grp_" ) then
+if (isServer) then
+{
+    // Hide template markers
+    [{ time > 10 }, {
         {
-            _x setMarkerAlphaLocal 0;
-        };
-    } forEach allMapMarkers;
-}] call CBA_fnc_waitUntilAndExecute;
+            diag_log _x;
+            if ( (_x select [0, 8]) isEqualTo "ghg_grp_" ) then
+            {
+                _x setMarkerAlpha 0;
+                diag_log "Deleted";
+            };
+            
+        } forEach allMapMarkers;
+    }] call CBA_fnc_waitUntilAndExecute;
+};
 
 // Only run on real players
 if ( !hasInterface ) exitWith {};
