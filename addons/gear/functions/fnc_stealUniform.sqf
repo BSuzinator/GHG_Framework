@@ -18,7 +18,7 @@ _fnc_switchUniform = {
 	[ _target, _actionId ] call BIS_fnc_holdActionRemove;
 	
 	_uniformPile = createVehicle["GroundWeaponHolder", position _caller,[],0,"CAN_COLLIDE"];
-	_uniformPile addItemCargoGlobal _unitUniform;
+	_uniformPile addItemCargoGlobal [_unitUniform,1];
 };
 
 _actionIcon = "\a3\ui_f_orange\Data\CfgOrange\Missions\action_escape_ca.paa";
