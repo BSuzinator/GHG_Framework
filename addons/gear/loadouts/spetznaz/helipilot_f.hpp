@@ -3,7 +3,7 @@
 ======================================*/
 class helipilot_f : helicrew_f
 {
-    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
 	
 	class Vest : Vest
     {

@@ -3,7 +3,7 @@
 ======================================*/
 class spotter_f : soldier_f
 {
-    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
 	
     class Weapon_2 : Weapon_2 {
         classname = "vn_welrod";

@@ -3,7 +3,7 @@
 ======================================*/
 class soldier_uav_f : soldier_tl_f
 {
-    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
     
     class Backpack : Backpack
     {
