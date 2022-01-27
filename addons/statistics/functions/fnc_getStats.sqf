@@ -5,7 +5,7 @@
 	Author: BSuz
 ======================================*/
 if ! (hasInterface) exitWith {};
-
+waitUntil{!isNull player};
 if (isServer) exitWith {
 	GVAR(treatmentArray) = [
         //Bandages

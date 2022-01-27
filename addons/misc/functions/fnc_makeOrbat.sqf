@@ -4,6 +4,7 @@
 	Author: BSuz
 ======================================*/
 params ["_bUnit"];
+diag_log str groupID group player;
 private _ghgGroupIDs = [
 	"PLT","Alpha","Bravo","Charlie","Delta","Echo","Foxtrot",
 	"EWS 1","EWS 2","MAT","MMG","MTR","RCN",
@@ -13,9 +14,8 @@ private _ghgGroupIDs = [
 	"RPTR 1","RPTR 2","RPTR 3","RPTR 4"
 ];
 
-private _orbatSTR = "<font size='24' face='TahomaB'>Mission ORBAT</font><br/>Only accurate at mission start<br/><br/>";
+private _orbatSTR = "<font size='24' face='TahomaB'>Mission ORBAT</font><br/>Only accurate at mission start<br/>";
 private _sideFlag = civilian;
-
 {
 	_groupID = groupID _x;
 	if (_groupID in _ghgGroupIDs) then {
@@ -24,6 +24,7 @@ private _sideFlag = civilian;
 		_groupSide = side _x;
 		_groupSideSTR = str _groupSide;
 		_groupSTR = "";
+		_newSide = false;
 		if (_sideFlag isNotEqualTo _groupSide) then {_sideFlag = _groupSide; _newSide = true;} else {_newSide = false;};
 		if ((_groupSide isEqualTo side _bUnit || side _bUnit isEqualTo sideLogic) && _groupMembers isNotEqualTo []) then {
 			_groupSTR = format ["<br/><font size='18' face='TahomaB'>%1</font><br/>",_groupID];

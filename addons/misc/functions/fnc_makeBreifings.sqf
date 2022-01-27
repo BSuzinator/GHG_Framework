@@ -55,9 +55,11 @@ private _briefSide = _ghg >> "Briefing" >> (switch ( playerSide ) do
 	case civilian: { "Civilian" };
 });
 
-_orbatSTR = [player] call FUNC(makeOrbat);
-
-player createDiaryRecord ["Diary", [ "Mission ORBAT", _orbatSTR]];
+if (!GVARMAIN(is_training)) then {
+	waitUntil{!isNull player};
+	_orbatSTR = [player] call FUNC(makeOrbat);
+	player createDiaryRecord ["Diary", [ "Mission ORBAT", _orbatSTR]];
+}; 
 
 private _addBreif = {
     params ["_tab", "_briefSide"];
@@ -105,4 +107,4 @@ if (GVARMAIN(is_training)) then {
     private _subject = "locations";
 	player createDiarySubject [_subject, "Locations"];
     [_subject, "locations"] call _addBreif;
-}; 
+};

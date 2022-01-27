@@ -5,7 +5,7 @@
 	Author: BSuz
 ======================================*/
 if ! (hasInterface) exitWith {};
-
+waitUntil{!isNull player};
 // Debug for dedicated hosts (i.e. 3DEN localhost)
 GVARMAIN(isAdmin) = isServer;
 GVARMAIN(isOfficer) = isServer;

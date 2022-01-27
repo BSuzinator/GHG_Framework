@@ -10,7 +10,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(vehicleActions);
 [] call FUNC(treatmentNotify);
 [] spawn FUNC(failDeadly);
-[] call FUNC(makeBreifings);
+[] spawn FUNC(makeBreifings);
 
 [] call FUNC(initOWO);
 
