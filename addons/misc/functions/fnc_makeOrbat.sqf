@@ -13,8 +13,8 @@ private _ghgGroupIDs = [
 	"PHTM 1","PHTM 2","PHTM 3","PHTM 4",
 	"RPTR 1","RPTR 2","RPTR 3","RPTR 4"
 ];
-
-private _customGroups = getArray missionConfigFile >> "CfgGHG" >> "customGroups";
+private _customGroups = [];
+_customGroups = getArray missionConfigFile >> "CfgGHG" >> "customGroups";
 {_ghgGroupIDs pushBackUnique _x} forEach _customGroups;
 
 private _orbatSTR = "<font size='24' face='TahomaB'>Mission ORBAT</font><br/>Only accurate at mission start<br/>";
