@@ -41,7 +41,7 @@ if ( isServer ) then
     if ( _timeout > 0 ) then
     {
         [
-            {time > _this},
+            {time > _this && GVAR(safe)},
             {
                 GVAR(ready_blu) = true;
                 GVAR(ready_opf) = true;
