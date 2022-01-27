@@ -3,9 +3,9 @@
 	Main configuration for missions
 ======================================*/
 //Custom Group Names for ORBAT
-//Must be the string of callsign: ["PLT","Alpha",etc.]
+//Must be the string of callsign: {"PLT","Alpha",etc.}
 //Is case sensitive
-customGroups = [];
+customGroups[] = {};
 
 //Set deploy configuration
 //List of acceptable types: LALO, HALO, SURFACE, none
