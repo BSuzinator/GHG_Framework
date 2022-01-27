@@ -3,7 +3,7 @@
 ======================================*/
 class medic_f : soldier_f
 {
-    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
 
     class Vest : Vest
     {

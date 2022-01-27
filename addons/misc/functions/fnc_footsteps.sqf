@@ -16,11 +16,13 @@ if ( isNumber (_ghg >> "footstep_timeout") ) then
 
 GVARMAIN(footstep_max_distance) = 50;
 GVARMAIN(footstep_max_count) = 100;
+GVARMAIN(footstep_max_absolute) = 5000;
 
 GVAR(footsteps) = [];
 if ( isNil QGVAR(tracked_players) ) then { GVAR(tracked_players) = [] };
 GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at any given time
 
+// Tracking
 [{
     {
         _x params ["_unit", "_lpos", "_rf"];
@@ -49,12 +51,20 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
         };
     } forEach GVAR(tracked_players);
     
+    if ( (count GVAR(footsteps)) > GVARMAIN(footstep_max_absolute) ) then
+    {
+        GVAR(footsteps) resize GVARMAIN(footstep_max_absolute);
+    };
+}, 0.1, []] call CBA_fnc_addPerFrameHandler;
+
+// Rendering
+[{
     private _ips = player infoPanelComponents "left";
     private _hasTrapKit = false;
     {
         _x params [ "_class", "_type", "_has" ];
         
-        if ( _class == "MineDetectorDisplay" ) exitWith {  _hasTrapKit = _has; };
+        if ( _class == "MineDetectorDisplay" ) exitWith { _hasTrapKit = _has; };
     } forEach _ips;
 
     GVAR(footsteps_rendered) = 0;
@@ -71,7 +81,7 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
         {
             if ( (GVAR(footsteps_rendered) < GVARMAIN(footstep_max_count)) && (diag_tickTime - _age < GVARMAIN(footstep_timeout)) && { (_plp distance _fsp) <= GVARMAIN(footstep_max_distance) } ) then
             {
-                private _fso = createSimpleObject [_fsm, ATLToASL _fsp, true];
+                _fso = createSimpleObject [_fsm, ATLToASL _fsp, true];
                 
                 _fso setDir _fsd;
                 
@@ -98,5 +108,4 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
             };
         };
     } forEach GVAR(footsteps);
-    
-}, 0.1, []] call CBA_fnc_addPerFrameHandler;
+}, 0.5, []] call CBA_fnc_addPerFrameHandler;

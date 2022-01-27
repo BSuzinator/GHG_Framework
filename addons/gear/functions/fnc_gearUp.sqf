@@ -52,7 +52,8 @@ if ( _camo != "" ) then
     _camoId = -1;
 
     {
-        if ( _camo isEqualTo _x ) exitWith { _camoId = _forEachIndex; };
+        // Case insensitive check
+        if ( _camo == _x ) exitWith { _camoId = _forEachIndex; };
     } forEach getArray( _factionLoadout >> "camo" );
 
     if ( _camoId < 0 ) then

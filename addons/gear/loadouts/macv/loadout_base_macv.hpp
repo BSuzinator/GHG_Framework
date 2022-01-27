@@ -3,7 +3,7 @@
 ======================================*/
 class loadout_base_macv : loadout_base
 {
-    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
 
     class Weapon_2 : Weapon_2 // Everyone gets a flashlight instead of NVGS
 	{ 

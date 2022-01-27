@@ -3,7 +3,7 @@
 ======================================*/
 class soldier_f : loadout_base
 {
-    #include "..\loadout_inherit.hpp" // This must the first line inside of the class!!!!
+    
     
     class Weapon_1 : Weapon_1 // Rifle
     {

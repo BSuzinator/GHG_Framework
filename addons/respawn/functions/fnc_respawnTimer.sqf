@@ -9,6 +9,8 @@ params ["_unit", "_optout"];
 
 // Ignore non-players
 if ! ( isPlayer _unit ) exitWith {};
+// Ignore zeus
+if ( playerSide == sideLogic ) exitWith {};
 
 // Track if this player has opted out at any point
 if ( _optout ) then

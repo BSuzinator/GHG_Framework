@@ -27,7 +27,7 @@
 		
 		if ! ( _mkr isEqualTo "" || isNull leader _cgrp ) then
 		{
-			private _mkrPos = getPos leader _cgrp;
+			private _mkrPos = getPosASL leader _cgrp;
 		
 			// Don't cover leader's marker
 			if ( _cgrp isEqualTo group player ) then {
