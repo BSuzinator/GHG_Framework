@@ -2,6 +2,11 @@
 	ghg_config.txt
 	Main configuration for missions
 ======================================*/
+//Custom Group Names for ORBAT
+//Must be the string of callsign: ["PLT","Alpha",etc.]
+//Is case sensitive
+customGroups = [];
+
 //Set deploy configuration
 //List of acceptable types: LALO, HALO, SURFACE, none
 //deployRange is how far in meters you can do deploy from main base respawn marker
