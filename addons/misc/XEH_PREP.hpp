@@ -3,6 +3,7 @@ PREP(blackout);
 PREP(ejectOnDeath);
 PREP(vehicleActions);
 PREP(makeBreifings);
+PREP(makeOrbat);
 PREP(failDeadly);
 PREP(getAllTaskInfo);
 PREP(systemChatAllTasks);
