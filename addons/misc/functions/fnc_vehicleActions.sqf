@@ -9,12 +9,14 @@
 		-Plane thrust reversers
 	Author: BSuz
 ======================================*/
+/*
 {
 [_x, "killed", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
 	if ((_unit isKindOf "AllVehicles") && !(_unit isKindOf "Man")) then {[_unit] call FUNC(ejectOnDeath);};
 }] call CBA_fnc_addBISEventHandler;
 } forEach vehicles;
+*/
 
 if (!hasInterface) exitwith {};
 

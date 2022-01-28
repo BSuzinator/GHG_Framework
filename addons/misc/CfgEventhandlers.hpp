@@ -18,3 +18,12 @@ class Extended_PreStart_EventHandlers {
         init = QUOTE( call COMPILE_FILE(XEH_preStart) );
     };
 };
+
+class Extended_killed_EventHandlers {
+    class AllVehicles {
+        class GHG_auto_eject_eh {
+            killed = "params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];[_unit] call ghg_misc_fnc_ejectOnDeath;";
+			exclude = "Mam";
+        };
+    };
+};
