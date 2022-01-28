@@ -19,11 +19,11 @@ class Extended_PreStart_EventHandlers {
     };
 };
 
-class Extended_killed_EventHandlers {
+class Extended_Killed_EventHandlers {
     class AllVehicles {
         class GHG_auto_eject_eh {
-            killed = "params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];[_unit] call ghg_misc_fnc_ejectOnDeath;";
-			exclude = "Mam";
+            Killed = "[_this select 0] call ghg_misc_fnc_ejectOnDeath;";
+			exclude = "Man";
         };
     };
 };
