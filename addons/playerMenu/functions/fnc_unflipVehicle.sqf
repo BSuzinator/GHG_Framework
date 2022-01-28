@@ -11,7 +11,7 @@ if (isNull _vehicle) exitWith {};
 
 if ! ( (_vehicle isKindOf "Car")
     && (_vehicle isKindOf "Air")
-    && (_vehicle isKindOf "Sea") ) then { systemChat "Not a vehicle" };
+    && (_vehicle isKindOf "Sea") ) exitWith { systemChat "Not a vehicle" };
 
 if (!alive _vehicle) exitWith { systemChat "Vehicle is destroyed" };
 
