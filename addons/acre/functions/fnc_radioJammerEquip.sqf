@@ -46,8 +46,9 @@ if (typeOf _jammer in _greenHumvees) then {
 	_omniAnt setVariable ["BIS_enableRandomization", true]; 
 	_tswitch attachTo[_jammer,[-0.440748,-2.27531,-1.259]]; 
 	//_tswitch setVectorDirAndUp [[1,0,0], [0,0,1]];
-	_satAnt attachTo[_jammer,[0.00425148,1.44269,-0.775328]]; 
-	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.928999]]; 
+	_satAnt attachTo[_jammer,[0.00425148,1.44269,-0.775328]];
+	_satAnt setVectorDirAndUp [[0,0,0.3], [0,1,0]];
+	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.57]]; 
 	_omniAnt attachTo[_jammer,[0.142252,-1.62931,-0.914999]];
 	_tswitch animateSource ["switchposition",1];
 };
@@ -65,9 +66,9 @@ if (typeOf _jammer in _sandHumvees) then {
 	_tswitch attachTo[_jammer,[-0.440748,-2.27531,-1.259]]; 
 	
 	_satAnt attachTo[_jammer,[0,1.45,0]]; 
-	_satAnt setVectorDirAndUp [[0.5,0,0], [0,0,0]];
+	_satAnt setVectorDirAndUp [[0,0,0.3], [0,1,0]];
 	
-	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.47]]; 
+	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.57]]; 
 	_gen setVectorDirAndUp [[1,0,0], [0,0,1]];
 	
 	_omniAnt attachTo[_jammer,[0.142252,-1.62931,1.15]];
@@ -86,8 +87,9 @@ if (typeOf _jammer in _blackHumvees) then {
 	_omniAnt setVariable ["BIS_enableRandomization", true]; 
 	_tswitch attachTo[_jammer,[-0.440748,-2.27531,-1.259]]; 
 	//_tswitch setVectorDirAndUp [[1,0,0], [0,0,1]];
-	_satAnt attachTo[_jammer,[0.00425148,1.44269,-0.775328]]; 
-	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.928999]]; 
+	_satAnt attachTo[_jammer,[0.00425148,1.44269,-0.775328]];
+	_satAnt setVectorDirAndUp [[0,0,0.3], [0,1,0]];
+	_gen attachTo[_jammer,[-0.320747,-1.37231,-0.57]]; 
 	_omniAnt attachTo[_jammer,[0.142252,-1.62931,-0.914999]];
 	_tswitch animateSource ["switchposition",1];
 };
