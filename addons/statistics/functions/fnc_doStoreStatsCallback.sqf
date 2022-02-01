@@ -5,7 +5,7 @@
 	Author: BSuz
 ======================================*/
 params ["_args", "_sqlResult", "_errorMessage" ];
-_player = _args select 0;
+
 /*
 if ( _errorMessage != "" ) exitWith {
     systemChat ("GHG interact misc 3 error: " + _errorMessage);
@@ -14,6 +14,7 @@ if ( _errorMessage != "" ) exitWith {
 diag_log _sqlResult;
 diag_log _errorMessage;
 diag_log "[GHG]: Statistics stored to database";
+
 /*
 _sqlResult params [
 "_selfFieldDressings","_othersFieldDressings","_selfElasticBandages","_othersElasticBandages","_selfPackingBandages","_othersPackingBandages","_selfQuikclot","_othersQuikclot",

@@ -6,7 +6,11 @@
 	Author: BSuz
 ======================================*/
 if !(hasInterface) exitWith {};
+
+#ifndef DISABLE_COMPILE_CACHE
 if (isServer && hasInterface && !isDedicated) exitWith {diag_log "GHG: Local hosted servers do not have access to DB";};
+#endif
+
 if (GVARMAIN(is_training)) exitWith {diag_log "GHG: statistics not stored from training servers"};
 
 diag_log "[GHG]: starting doStoreStats";
@@ -40,4 +44,5 @@ private _query = format ["UPDATE statistics SET selfFieldDressings = %1, othersF
 
 //private _query = format ["SELECT selfFieldDressings,othersFieldDressings,selfElasticBandages,othersElasticBandages,selfPackingBandages,othersPackingBandages,selfQuikclot,othersQuikclot,self250Blood,others250Blood,self500Blood,others500Blood,self1000Blood,others1000Blood,self250Plasma,others250Plasma,self500Plasma,others500Plasma,self1000Plasma,others1000Plasma,self250Saline,others250Saline,self500Saline,others500Saline,self1000Saline,others1000Saline,selfAdenosine,othersAdenosine,selfEpinephrine,othersEpinephrine,selfMorphine,othersMorphine,selfBodyBag,othersBodyBag,selfPersonalAidKit,othersPersonalAidKit,selfSplint,othersSplint,selfStitch,othersStitch,selfTourniquet,othersTourniquet FROM statistics WHERE steamID64=%1", getPlayerUID player];
 
-[_query, QFUNC(doStoreStatsCallback),[player]] call FUNCMAIN(spawnDB);
+[_query, QFUNC(doStoreStatsCallback),[]] call FUNCMAIN(spawnDB);
+diag_log "[GHG]: Statistics stored to database";
