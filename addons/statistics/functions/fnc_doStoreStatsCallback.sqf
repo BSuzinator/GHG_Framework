@@ -13,7 +13,7 @@ if ( _errorMessage != "" ) exitWith {
 */
 diag_log _sqlResult;
 diag_log _errorMessage;
-diag_log "GHG: Statistics stored to database";
+diag_log "[GHG]: Statistics stored to database";
 /*
 _sqlResult params [
 "_selfFieldDressings","_othersFieldDressings","_selfElasticBandages","_othersElasticBandages","_selfPackingBandages","_othersPackingBandages","_selfQuikclot","_othersQuikclot",

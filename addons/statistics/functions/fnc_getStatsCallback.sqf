@@ -5,8 +5,6 @@
 ======================================*/
 
 params ["_args", "_sqlResult", "_errorMessage" ];
-_player = _args select 0;
-systemChat str _player;
 /*
 if ( _errorMessage != "" ) exitWith {
     systemChat ("GHG interact misc 3 error: " + _errorMessage);
@@ -35,5 +33,6 @@ GVAR(treatmentArray) = [
 	//Kits / Others
 	[_selfBodyBag,_othersBodyBag,_selfPersonalAidKit,_othersPersonalAidKit,_selfSplint,_othersSplint,_selfStitch,_othersStitch,_selfTourniquet,_othersTourniquet]
 ];
-diag_log "GHG: Got statistics";
-player setVariable ["ghg_treatmentArray",GVAR(treatmentArray),true];
+diag_log "[GHG]: Statistics diag ------------------------";
+diag_log format ["[GHG]: Errors: %1",_errorMessage];
+diag_log format ["[GHG]: %1",GVAR(treatmentArray)];

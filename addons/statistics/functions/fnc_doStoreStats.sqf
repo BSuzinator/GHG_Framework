@@ -9,8 +9,9 @@ if !(hasInterface) exitWith {};
 if (isServer && hasInterface && !isDedicated) exitWith {diag_log "GHG: Local hosted servers do not have access to DB";};
 if (GVARMAIN(is_training)) exitWith {diag_log "GHG: statistics not stored from training servers"};
 
-diag_log "GHG: starting doStoreStats";
-
+diag_log "[GHG]: starting doStoreStats";
+diag_log "[GHG]: To Store:";
+diag_log format ["[GHG]: Treatment Array: %1",GVAR(treatmentArray)];
 //%1,%2,%3,%4,%5,%6,%7,%8,%9,%10,%11,%12,%13,%14,%15,%16,%17,%18,%19,%20,%21,%22,%23,%24,%25,%26,%27,%28,%29,%30,%31,%32,%33,%34,%35,%36,%37,%38,%39,%40,%41,%42
 
 GVAR(treatmentArray) params ["_bandageArray","_bloodArray","_plasmaArray","_salineArray","_medicineArray","_kitsArray"];
