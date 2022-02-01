@@ -11,8 +11,33 @@
 (_this select 1) params ["_modulePos","_attachedObject"];
 
 {
-	_x addScoreSide -scoreSide _x;
+	_x addScoreSide -(scoreSide _x);
 } forEach [west,east,independent,civilian];
+
+_defaultText = switch (_endType) do {
+	case "allLost": {"Mission Failed"};
+	case "allVictory": {"Mission Complete"};
+	case "westVictory": {"BLUFOR Won"};
+	case "eastVictory": {"OPFOR Won"};
+	case "indVictory": {"INDFOR Won"};
+	case "civVictory": {"CIVFOR Won"};
+	case "multipleVictory":	{
+			_tempText = "";
+			{
+				_sideText switch (_x) do {
+					case west : {"BLUFOR"};
+					case east : {"OPFOR"};
+					case independent : {"INDFOR"};
+					case civilian : {"CIVFOR"};
+				};
+				if (_forEachIndex > 0) then {_tempText = _tempText + ", "};
+				_tempText = _tempText + _sideText;
+			} forEach _sides;
+			_tempText
+		};
+};
+
+if (_endingText isEqualTo "") then {_endingText = _defaultText;};
 
 RscDisplayDebriefing_params = _endingText;
 publicvariable "RscDisplayDebriefing_params";
@@ -50,8 +75,8 @@ switch (_endType) do {
 		};
 	case "multipleVictory":
 		{
-			if (count _sides <= 1) exitWith {systemChat "Only one side selected. Try again."};
-			{_x addScoreSide 99999} forEach _sides;
+			if (count _sides <= 1) exitWith {systemChat "Only one side selected. Try again.";};
+			{_x addScoreSide 99999;} forEach _sides;
 			//["SideScore", true, 3] remoteExec ["BIS_fnc_endMission", 0, true];
 			"SideScore" remoteExec ["BIS_fnc_endMissionServer",2];
 		};
