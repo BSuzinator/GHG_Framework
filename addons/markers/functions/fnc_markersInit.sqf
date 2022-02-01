@@ -9,7 +9,7 @@
 if (isServer) then
 {
     // Hide template markers
-    [{ time > 10 }, {
+    [{ GHG_SERVER_GROUPS_READY }, {
         {
             diag_log _x;
             if ( (_x select [0, 8]) isEqualTo "ghg_grp_" ) then

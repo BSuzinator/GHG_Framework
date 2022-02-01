@@ -4,6 +4,7 @@
 	Author: BSuz
 ======================================*/
 params ["_bUnit"];
+if (isNil "GHG_SERVER_GROUPS_READY") then { GHG_SERVER_GROUPS_READY = true; publicVariable "GHG_SERVER_GROUPS_READY";};
 diag_log str groupID group player;
 private _ghgGroupIDs = [
 	"PLT","Alpha","Bravo","Charlie","Delta","Echo","Foxtrot",
