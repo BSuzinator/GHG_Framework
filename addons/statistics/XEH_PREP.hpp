@@ -5,3 +5,4 @@ PREP(getStatsCallback);
 PREP(handlerInits);
 PREP(setTreatmentEH);
 PREP(storeStatsEH);
+PREP(setStatisticsDebrief);

@@ -60,6 +60,16 @@ class CfgGHG
     
 };
 
+class CfgDebriefingSections
+{
+	class GHG_Statistics_Debrief
+	{
+		title = "GHG Statistics";
+		variable = "ghg_statistics_fullDebriefText";
+	};
+};
+
+
 //Shoulder Patch
 class CfgUnitInsignia
 {
