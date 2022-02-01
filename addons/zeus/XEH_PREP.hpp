@@ -1,3 +1,5 @@
+PREP(endMission);
+PREP(endMissionModule);
 PREP(zeusInit);
 PREP(zeusSetup);
 PREP(zeusCleanup);
