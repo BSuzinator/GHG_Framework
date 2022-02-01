@@ -10,6 +10,8 @@
 (_this select 0) params ["_endType", "_sides","_endingText"];
 (_this select 1) params ["_modulePos","_attachedObject"];
 
+[] call EFUNC(statistics,setStatisticsDebrief);
+
 {
 	_x addScoreSide -(scoreSide _x);
 } forEach [west,east,independent,civilian];
@@ -24,7 +26,7 @@ _defaultText = switch (_endType) do {
 	case "multipleVictory":	{
 			_tempText = "";
 			{
-				_sideText switch (_x) do {
+				_sideText = switch (_x) do {
 					case west : {"BLUFOR"};
 					case east : {"OPFOR"};
 					case independent : {"INDFOR"};
