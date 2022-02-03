@@ -14,27 +14,20 @@ _salineArray params ["_self250Saline","_others250Saline","_self500Saline","_othe
 _medicineArray params ["_selfAdenosine","_othersAdenosine","_selfEpinephrine","_othersEpinephrine","_selfMorphine","_othersMorphine"];
 _kitsArray params ["_selfBodyBag","_othersBodyBag","_selfPersonalAidKit","_othersPersonalAidKit","_selfSplint","_othersSplint","_selfStitch","_othersStitch","_selfTourniquet","_othersTourniquet"];
 
+GVAR(fullDebriefText) = "";
+
 GVAR(bandageTotal) = 0;
 {GVAR(bandageTotal) = GVAR(bandageTotal) + _x;} forEach _bandageArray;
-GVAR(bandageTotal) = str GVAR(bandageTotal);
+GVAR(fullDebriefText) = GVAR(fullDebriefText) + format ["Bandage Total: %1<br/>",GVAR(bandageTotal)];
 
 GVAR(bloodTotal) = 0;
 {GVAR(bloodTotal) = GVAR(bloodTotal) + _x;} forEach _bloodArray;
-GVAR(bloodTotal) = str GVAR(bloodTotal);
+GVAR(fullDebriefText) = GVAR(fullDebriefText) + format ["Blood Total: %1<br/>",GVAR(bloodTotal)];
 
 GVAR(medicineTotal) = 0;
 {GVAR(medicineTotal) = GVAR(medicineTotal) + _x;} forEach _medicineArray;
-GVAR(medicineTotal) = str GVAR(medicineTotal);
+GVAR(fullDebriefText) = GVAR(fullDebriefText) + format ["Medicine Total: %1<br/>",GVAR(medicineTotal)];
 
 GVAR(kitsTotal) = 0;
 {GVAR(kitsTotal) = GVAR(kitsTotal) + _x;} forEach _kitsArray;
-GVAR(kitsTotal) = str GVAR(kitsTotal);
-
-GVAR(fullDebriefText) = "";
-
-GVAR(fullDebriefText) = format ["Bandage Total: %1<br/>Blood Total: %2<br/>Medicine Total: %3<br/>Kits Total: %4",
-	GVAR(bandageTotal),
-	GVAR(bloodTotal),
-	GVAR(medicineTotal),
-	GVAR(kitsTotal)
-];
+GVAR(fullDebriefText) = GVAR(fullDebriefText) + format ["Kits Total: %1<br/>",GVAR(kitsTotal)];
