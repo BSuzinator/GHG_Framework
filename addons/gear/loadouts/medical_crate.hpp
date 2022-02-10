@@ -1,6 +1,7 @@
 class medical_crate
 {
     classname = "Box_Syndicate_Ammo_F";
+    displayname = "GHG Medical";
     
     ACE_elasticBandage = 32; 
     ACE_packingBandage = 32; 
