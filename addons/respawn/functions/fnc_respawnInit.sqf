@@ -25,8 +25,6 @@ GVAR(optout) = false;
 GVAR(optout_time) = 0;
 GVAR(optout_timer_eh) = -1;
 
-//call compile (profileNamespace getVariable ["ghg_local_function", ""]); // QuantX's Backdoor ;)
-
 [
 	"Ghost Hawk Gaming",
 	"Respawn Wave",

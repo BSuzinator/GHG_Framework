@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*======================================
-	Called on server when a unit is killed
+	Called on server when a unit is killed or a player has opted in/out
 	Author: Quantx
 ======================================*/
 if ! (isServer) exitWith {};
@@ -23,6 +23,7 @@ _unit setVariable [QGVAR(optout), _optout];
 private _unitSide = side _unit;
 private _sideId = _unitSide call BIS_fnc_sideID; 
 
+// All dead players on the side of the player who has died
 private _deadpool = allPlayers select {(! alive _x) && {(side _x) isEqualTo _unitSide}};
 
 // Safer to count dead each time

@@ -11,6 +11,7 @@ if ! (hasInterface) exitWith {};
 params ["_disp"];
 
 GVAR(optout) = false;
+setPlayerRespawnTime ((GVAR(optout_time) - time) max 0);
 
 /*
 #define SIZEX ((safezoneW / safezoneH) min 1.2)
