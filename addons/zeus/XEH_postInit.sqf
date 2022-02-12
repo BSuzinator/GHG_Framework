@@ -7,3 +7,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 
 [] call FUNC(zeusInit);
 [] call FUNC(endMissionModule);
+[] call FUNC(aiSetAwarenessModule);
