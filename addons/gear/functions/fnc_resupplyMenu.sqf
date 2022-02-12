@@ -4,27 +4,33 @@
 	Creates list of crates availible to players based on faction
 	Author: Quantx
 ======================================*/
-params ["_target", "_player"];
-(_this select 2) params ["_building"];
+params ["_target", "_player", "_args"];
+_args params ["_building"];
 
-private _faction = switch ( side player ) do {
-	case west: { getText (missionConfigFile >> "CfgGHG" >> "bluFaction") };
-	case east: { getText (missionConfigFile >> "CfgGHG" >> "opfFaction") };
-	case resistance: { getText (missionConfigFile >> "CfgGHG" >> "indFaction") };
-};
+// This is why 'private' is important!
+private ["_factionLoadout", "_loadout", "_camoId"];
+[] call FUNC(getLoadout);
 
-private _cratesList = parseSimpleArray (preprocessFile format ["\x\ghg\addons\gear\loadouts_old\%1\crates\crateList.sqf", _faction]);
+if ( isNull _factionLoadout ) exitWith {};
 
-private _crateName = ["Medical"];
-private _crateFile = ["ghg_medical_placeholder"];
+private _crateList = configProperties [ _factionLoadout >> "Crates", "isClass _x", true ];
+private _crateCfg  = [];
+private _crateName = [];
+
+diag_log _crateList;
 
 {
-	_crateName pushBack (_x select 0);
-	_crateFile pushBack (_x select 1);
-} forEach _cratesList;
+    // Skip crates with no classname
+    private _cfgn = configName _x;
+    if ( (_cfgn != "crate_base") && { (getText (_x >> "classname")) != "" } ) then
+    {
+        private _dn = _x >> "displayname";
+        _crateName pushBack (if ( isText _dn ) then { getText _dn } else { _cfgn });
+        _crateCfg  pushBack _x;
+    };
+} forEach _crateList;
 
-_crateName append ["Chemlights", "Demolitions", "Spare Wheel", "Spare Track", "Vehicle Fuel", "Vehicle Ammo"];
-_crateFile append ["ghg_chemlights_placeholder", "ghg_demolition_placeholder", "ghg_spare_wheel_placeholder", "ghg_spare_track_placeholder", "ghg_vehicle_fuel_placeholder", "ghg_vehicle_ammo_placeholder"];
+if ( (count _crateCfg) == 0 ) exitWith { systemChat "No crates in list" };
 
 [
 	"Request Resupply",
@@ -33,10 +39,10 @@ _crateFile append ["ghg_chemlights_placeholder", "ghg_demolition_placeholder", "
 			"LIST",
 			"Choose a resupply package",
 			[
-				_crateFile,
+				_crateCfg,
 				_crateName,
 				0,
-				(10 min ((count _crateName) + 0.5))
+				(10 min ((count _crateCfg) + 0.5))
 			]
 		]
 	],
@@ -46,6 +52,6 @@ _crateFile append ["ghg_chemlights_placeholder", "ghg_demolition_placeholder", "
 		_target,
 		_player,
 		_building,
-		_faction
+		_camoId
 	]
 ] call zen_dialog_fnc_create;

@@ -1,0 +1,8 @@
+#include "base.hpp"
+#include "medical.hpp"
+#include "chemlights.hpp"
+#include "demolition.hpp"
+#include "spare_wheel.hpp"
+#include "spare_track.hpp"
+#include "vehicle_ammo.hpp"
+#include "vehicle_fuel.hpp"

@@ -1,0 +1,15 @@
+class demolition_crate : crate_base
+{
+    displayname = "Demolitions";
+    cargosize = 2;
+    
+    ACE_wirecutter = 2;
+    ACE_DefusalKit = 2;
+    ACE_Clacker = 2;
+    ACE_M26_Clacker = 2;
+    SatchelCharge_Remote_Mag = 2;
+    DemoCharge_Remote_Mag = 4;
+    rhsusf_m112x4_mag = 4;
+    rhsusf_m112_mag = 8;
+    B_Kitbag_cbr = 2;
+};

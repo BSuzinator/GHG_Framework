@@ -11,57 +11,13 @@ params [
     ["_unitType", "", [""]]
 ];
 
-if ( _unitType isEqualTo "" ) then {
-    _unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
-};
+if ( isNull _unit ) exitWith { systemChat "No unit specified for gearUp" };
 
-private _ghg = missionConfigFile >> "CfgGHG";
+// This is why 'private' is important!
+private ["_factionLoadout", "_loadout", "_camoId"];
+_this call FUNC(getLoadout);
 
-private _faction = "";
-private _camo = "";
-
-switch (side _unit) do {
-    case west: {
-        _faction = getText (_ghg >> "bluFaction");
-        _camo = getText (_ghg >> "bluCamo");
-    };
-    case east: {
-        _faction = getText (_ghg >> "opfFaction");
-        _camo = getText (_ghg >> "opfCamo");
-    };
-    case resistance: {
-        _faction = getText (_ghg >> "indFaction");
-        _camo = getText (_ghg >> "indCamo");
-    };
-};
-
-if ( _faction == "" ) exitWith { systemChat "No faction specified for gear up"; };
-
-// Check both config files for the loadout
-private _factionLoadout = _ghg >> "Loadouts" >> _faction;
-if ( isNull _factionLoadout ) then { _factionLoadout = (configFile >> "CfgGHG" >> "Loadouts" >> _faction); };
-if ( isNull _factionLoadout ) exitWith { systemChat format ["No loadouts for faction: %1", _faction]; };
-
-private _loadout = _factionLoadout >> _unitType;
-if ( isNull _loadout ) exitWith { systemChat format ["No loadout for unit type %1 in faction %2", _unitType, _faction]; };
-
-private _camoId = 0;
-
-if ( _camo != "" ) then
-{
-    _camoId = -1;
-
-    {
-        // Case insensitive check
-        if ( _camo == _x ) exitWith { _camoId = _forEachIndex; };
-    } forEach getArray( _factionLoadout >> "camo" );
-
-    if ( _camoId < 0 ) then
-    {
-        systemChat format ["Unknown camo '%1' for faction '%2', using default camo instead!", _camo, _faction ];
-        _camoId = 0;
-    };
-};
+if ( isNull _loadout ) exitWith {};
 
 private _camoField = {
     params ["_cfg"];
@@ -87,7 +43,7 @@ private _weaponArray = {
     {
         private _scp = [_x] call _camoField;
         if ( _scp isNotEqualTo "" ) exitWith { _scope = _scp; };
-    } forEach configProperties [_cfg >> "Scopes"];
+    } forEach configProperties [_cfg >> "Scopes", "true", true];
 
     private _ammo = [];
     private _ammoTxt = getText (_cfg >> "ammo");
@@ -133,7 +89,7 @@ private _clothingArray = {
                 _items pushBack ([ _itemName, _itemAmount ] call _magazineArray);
             };
         };
-    } forEach configProperties [_cfg];
+    } forEach configProperties [_cfg, "true", true];
     
     [ _name, _items ];
 };

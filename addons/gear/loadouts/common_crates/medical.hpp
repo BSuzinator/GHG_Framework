@@ -1,7 +1,7 @@
-class medical_crate
+class medical_crate : crate_base
 {
-    classname = "Box_Syndicate_Ammo_F";
-    displayname = "GHG Medical";
+    classname = "ACE_medicalSupplyCrate";
+    displayname = "Medical";
     
     ACE_elasticBandage = 32; 
     ACE_packingBandage = 32; 

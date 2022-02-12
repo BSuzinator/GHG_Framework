@@ -33,6 +33,6 @@ class usMC
     #include "support_mort_f.hpp"
     
     class Crates {
-        
+        #include "..\common_crates\crates.hpp"
     };
 };
