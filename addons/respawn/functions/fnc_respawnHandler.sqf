@@ -38,7 +38,10 @@ if (GVARMAIN(is_training)) then
 	["setPlayerRespawnTime", [10]] call CBA_fnc_localEvent;
 	["gearUp", [_unit]] call CBA_fnc_localEvent;
 } else {
-    ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
+    if ( time > GVAR(optout_time) ) then // Prevent a race condition
+    {
+        ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
+    };
     ["gearUp", [_unit]] call CBA_fnc_localEvent;
 };
 

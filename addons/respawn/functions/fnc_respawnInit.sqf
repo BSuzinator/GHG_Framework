@@ -25,6 +25,13 @@ GVAR(optout) = false;
 GVAR(optout_time) = 0;
 GVAR(optout_timer_eh) = -1;
 
+[ "setPlayerRespawnTime", {
+    params ["_delay"];
+    _delay = _delay max 0;
+    GVAR(optout_time) = time + _delay;
+    if ! (GVAR(optout)) then { setPlayerRespawnTime _delay };
+}] call CBA_fnc_addEventHandler;
+
 [
 	"Ghost Hawk Gaming",
 	"Respawn Wave",
@@ -39,12 +46,6 @@ else
 {
     ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
 };
-
-[ "setPlayerRespawnTime", {
-    params ["_delay"];
-    GVAR(optout_time) = time + _delay;
-    if ! (GVAR(optout)) then { setPlayerRespawnTime (_delay max 0); };
-}] call CBA_fnc_addEventHandler;
 
 [ "ace_spectator_displayLoaded", FUNC(respawnOptout) ] call CBA_fnc_addEventHandler;
 player addEventHandler [ "Respawn", FUNC(respawnHandler) ];
