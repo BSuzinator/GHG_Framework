@@ -7,9 +7,9 @@
 
 private _function = {
 	params ["_modulePos","_attachedObject"];
-
-	private _jammerFriendlyNames = ["CDF ZiL-131"];
-	private _jammerClassNames = ["rhsgref_cdf_b_zil131_flatbed"];
+	if (_attachedObject isEqualTo objNull) exitWith {systemChat "No unit selected"};
+	private _jammerFriendlyNames = ["CDF ZiL-131","Sand Humvee"/*,"Woodland Humvee","Black Humvee"*/];
+	private _jammerClassNames = ["rhsgref_cdf_b_zil131_flatbed","rhsusf_m998_d_4dr"/*,"rhsusf_m998_w_4dr","LOP_ISTS_OPF_M998_D_4DR"*/];
 
 	[
 		"Spawn Jammer",
