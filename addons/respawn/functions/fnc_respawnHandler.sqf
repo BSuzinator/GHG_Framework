@@ -38,14 +38,12 @@ if (GVARMAIN(is_training)) then
 	["setPlayerRespawnTime", [10]] call CBA_fnc_localEvent;
 	["gearUp", [_unit]] call CBA_fnc_localEvent;
 } else {
-    if ( time > GVAR(optout_time) ) then // Prevent a race condition
-    {
-        ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
-    };
+    ["setPlayerRespawnTime", [DUMMY_WAIT_TIME]] call CBA_fnc_localEvent;
     ["gearUp", [_unit]] call CBA_fnc_localEvent;
 };
 
 //Set Player Scope Select time
-_unit setVariable[QGVAR(last_respawn_time), time, true];
+_unit setVariable [QGVAR(last_respawn_time), time, true];
+_unit setVariable [QGVARMAIN(unitSide), playerSide, true];
 
 [_unit, _respawnPos] call _setPosAGLS;
