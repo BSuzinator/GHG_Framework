@@ -59,4 +59,5 @@ class CfgMainMenuSpotlight
 #include "CfgEventhandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
+#include "CfgWeapons.hpp"
 #include "ui\ui.hpp"
