@@ -5,7 +5,6 @@
 	Author: BSuz
 ======================================*/
 if ! (hasInterface) exitWith {};
-waitUntil{!isNull player};
 
 if (isServer) then {
 	GVAR(treatmentArray) = [
@@ -25,7 +24,10 @@ if (isServer) then {
 	diag_log "GHG: Local hosted servers do not have access to DB";
 };
 
-
-private _query = format ["SELECT selfFieldDressings,othersFieldDressings,selfElasticBandages,othersElasticBandages,selfPackingBandages,othersPackingBandages,selfQuikclot,othersQuikclot,self250Blood,others250Blood,self500Blood,others500Blood,self1000Blood,others1000Blood,self250Plasma,others250Plasma,self500Plasma,others500Plasma,self1000Plasma,others1000Plasma,self250Saline,others250Saline,self500Saline,others500Saline,self1000Saline,others1000Saline,selfAdenosine,othersAdenosine,selfEpinephrine,othersEpinephrine,selfMorphine,othersMorphine,selfBodyBag,othersBodyBag,selfPersonalAidKit,othersPersonalAidKit,selfSplint,othersSplint,selfStitch,othersStitch,selfTourniquet,othersTourniquet FROM statistics WHERE steamID64=%1", getPlayerUID player];
-diag_log format ["[GHG]: Getting statistics for %1 with PID: %2", player, getPlayerUID player];
-[_query, QFUNC(getStatsCallback),[]] call FUNCMAIN(spawnDB);
+[{(getPlayerUID player) isNotEqualTo ""},
+{
+    private _uid = getPlayerUID player;
+    private _query = format ["SELECT selfFieldDressings,othersFieldDressings,selfElasticBandages,othersElasticBandages,selfPackingBandages,othersPackingBandages,selfQuikclot,othersQuikclot,self250Blood,others250Blood,self500Blood,others500Blood,self1000Blood,others1000Blood,self250Plasma,others250Plasma,self500Plasma,others500Plasma,self1000Plasma,others1000Plasma,self250Saline,others250Saline,self500Saline,others500Saline,self1000Saline,others1000Saline,selfAdenosine,othersAdenosine,selfEpinephrine,othersEpinephrine,selfMorphine,othersMorphine,selfBodyBag,othersBodyBag,selfPersonalAidKit,othersPersonalAidKit,selfSplint,othersSplint,selfStitch,othersStitch,selfTourniquet,othersTourniquet FROM statistics WHERE steamID64=%1", _uid];
+    diag_log format ["[GHG]: Getting statistics for %1 with PID: %2", name player, _uid];
+    [_query, QFUNC(getStatsCallback),[]] call FUNCMAIN(spawnDB);
+}] call CBA_fnc_waitUntilAndExecute;

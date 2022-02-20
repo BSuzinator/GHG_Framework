@@ -10,8 +10,7 @@ if ( _errorMessage != "" ) exitWith {
     systemChat ("GHG interact misc 3 error: " + _errorMessage);
 };
 */
-_sqlResult params ["_sqlResult2"];
-_sqlResult2 params [
+(_sqlResult select 0) params [
 "_selfFieldDressings","_othersFieldDressings","_selfElasticBandages","_othersElasticBandages","_selfPackingBandages","_othersPackingBandages","_selfQuikclot","_othersQuikclot",
 "_self250Blood","_others250Blood","_self500Blood","_others500Blood","_self1000Blood","_others1000Blood",
 "_self250Plasma","_others250Plasma","_self500Plasma","_others500Plasma","_self1000Plasma","_others1000Plasma",

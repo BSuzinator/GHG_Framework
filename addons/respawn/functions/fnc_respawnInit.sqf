@@ -6,7 +6,7 @@
 ======================================*/
 if ( isServer && !GVARMAIN(is_training) ) then
 {
-    GVAR(respawn_timers) = [0, 0, 0];
+    GVAR(respawn_timers) = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     //GVAR(optout_list) = createHashMap;
 
     addMissionEventHandler [ "EntityKilled", {
@@ -19,7 +19,11 @@ if ( isServer && !GVARMAIN(is_training) ) then
     addMissionEventHandler [ "EntityRespawned", FUNC(respawnGearUp) ];
 };
 
-if ! (hasInterface || playerSide == sideLogic) exitWith {};
+if ! (hasInterface) exitWith {};
+
+player setVariable [QGVARMAIN(unitSide), playerSide, true];
+
+if (playerSide == sideLogic) exitWith {};
 
 GVAR(optout) = false;
 GVAR(optout_time) = 0;
