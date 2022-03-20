@@ -7,6 +7,11 @@
 //Is case sensitive
 customGroups[] = {};
 
+//Use Dynamic Groups
+// 1 (enable) or 0 (disable)
+//Enables use of Arma 3 Dynamic Group Menu
+useDynamicGroups = 0;
+
 //Set deploy configuration
 //List of acceptable types: LALO, HALO, SURFACE, none
 //deployRange is how far in meters you can do deploy from main base respawn marker

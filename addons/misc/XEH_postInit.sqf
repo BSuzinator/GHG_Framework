@@ -15,5 +15,5 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(initOWO);
 
 [] call FUNC(cameraInit);
-
+[] spawn FUNC(dynamicGroups);
 [] call FUNC(footsteps);
