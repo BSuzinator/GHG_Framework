@@ -5,6 +5,7 @@
 	Called at mission start, JIP, and respawn
 ======================================*/
 if ( !hasInterface ) exitWith {};
+if ( playerSide == sideLogic ) exitWith {};
 
 params [
     ["_unit", player, [objNull]],
