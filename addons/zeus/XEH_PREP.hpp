@@ -1,3 +1,5 @@
+PREP(aiSetAwareness);
+PREP(aiSetAwarenessModule);
 PREP(endMission);
 PREP(endMissionModule);
 PREP(zeusInit);

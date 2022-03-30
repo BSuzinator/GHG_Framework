@@ -10,7 +10,8 @@ params ["_unit", "_optout"];
 // Ignore non-players
 if ! ( isPlayer _unit ) exitWith {};
 // Ignore zeus
-if ( playerSide == sideLogic ) exitWith {};
+private _unitSide = _unit getVariable [QGVARMAIN(unitSide), sideLogic];
+if ( _unitSide == sideLogic ) exitWith {};
 
 // Track if this player has opted out at any point
 if ( _optout ) then
@@ -20,11 +21,10 @@ if ( _optout ) then
 
 _unit setVariable [QGVAR(optout), _optout];
 
-private _unitSide = side _unit;
 private _sideId = _unitSide call BIS_fnc_sideID; 
 
 // All dead players on the side of the player who has died
-private _deadpool = allPlayers select {(! alive _x) && {(side _x) isEqualTo _unitSide}};
+private _deadpool = allPlayers select {(! alive _x) && {(_x getVariable [QGVARMAIN(unitSide), sideLogic]) isEqualTo _unitSide}};
 
 // Safer to count dead each time
 private _deadcount = count (_deadpool select {!(_x getVariable [QGVAR(has_opted_out), false])});

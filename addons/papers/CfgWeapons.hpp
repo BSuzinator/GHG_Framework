@@ -1,6 +1,7 @@
 class CfgWeapons {
-    class CBA_MiscItem;
-    class CBA_MiscItem_ItemInfo;
+    class CBA_MiscItem {
+		class CBA_MiscItem_ItemInfo;
+	};
     class GHG_Papers_Base: CBA_MiscItem {
         author = "GHG Team";
         ghg_isUnique = 0;
