@@ -23,6 +23,12 @@ if ! (hasInterface) exitWith {};
 
 player setVariable [QGVARMAIN(unitSide), playerSide, true];
 
+[
+	"Ghost Hawk Gaming",
+	"Respawn Wave",
+	{ ["setPlayerRespawnTime", [5]] call CBA_fnc_globalEvent; }
+] call zen_custom_modules_fnc_register;
+
 if (playerSide == sideLogic) exitWith {};
 
 GVAR(optout) = false;
@@ -35,12 +41,6 @@ GVAR(optout_timer_eh) = -1;
     GVAR(optout_time) = time + _delay;
     if ! (GVAR(optout)) then { setPlayerRespawnTime _delay };
 }] call CBA_fnc_addEventHandler;
-
-[
-	"Ghost Hawk Gaming",
-	"Respawn Wave",
-	{ ["setPlayerRespawnTime", [5]] call CBA_fnc_globalEvent; }
-] call zen_custom_modules_fnc_register;
 
 if (GVARMAIN(is_training)) then
 {
