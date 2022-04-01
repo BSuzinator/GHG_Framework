@@ -9,7 +9,7 @@
 params ["_target"];
 _wreckInfo = _target getVariable "ghg_wreck_info";
 _scrapPos = getPosATL _target;
-_scrapPos set [2,0];
+_scrapPos set [2,1];
 _scrapDir = getDir _target;
 deleteVehicle _target;
 _newVehicle = createVehicle [_wreckInfo select 0, _scrapPos, [], 0, ""];
