@@ -10,8 +10,9 @@ _recoverFunction = {
 	[_attachedObject] call FUNC(wreckRecover);
 	_rebuildCondition = {
 			_nearestBunker = nearestObject [_target,"Land_Ammostore2"];
-			_nearestCrate = nearestObject [_target,"Land_Cargo20_military_green_F"];
-			((_target distance _nearestBunker <= 30 || _target distance _nearestCrate <= 30) && [_player] call ace_repair_fnc_isEngineer)
+			_nearestCrateGreen = nearestObject [_target,"Land_Cargo20_military_green_F"];
+			_nearestCrateSand = nearestObject [_target,"Land_Cargo20_sand_F"];
+			(((_target distance _nearestBunker <= 30) || (_target distance _nearestCrateGreen <= 30) || (_target distance _nearestCrateSand <= 30)) && ([_player] call ace_repair_fnc_isEngineer))
 		};
 		_rebuildStatement = {
 			params ["_target","_player","_actionParams"];
