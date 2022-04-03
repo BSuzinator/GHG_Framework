@@ -30,6 +30,12 @@ class pilot_f : soldier_f
         ammo = "vn_m1911_mag";
 		class Scopes {}; 
 	};
+    
+    class Weapon_3 : Weapon_3 // Launcher
+    {
+        classname = "vn_m127";
+        ammo = "vn_m128_mag";
+    };
 	
     class Uniform : Uniform
     {
