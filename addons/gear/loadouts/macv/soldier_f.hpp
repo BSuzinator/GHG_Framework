@@ -3,8 +3,6 @@
 ======================================*/
 class soldier_f : loadout_base_macv
 {
-    
-    
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "vn_m16";

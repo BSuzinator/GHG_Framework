@@ -3,8 +3,12 @@
 ======================================*/
 class helicrew_f : crew_f
 {
+    class Weapon_3 : Weapon_3 // Launcher
+    {
+        classname = "vn_m127";
+        ammo = "vn_m128_mag";
+    };
     
-	
 	class Uniform : Uniform
     {
         classname[] = { "vn_b_uniform_k2b_02_01", "vn_b_uniform_k2b_02_03" };
@@ -12,7 +16,7 @@ class helicrew_f : crew_f
 	
 	class Vest : Vest
     {
-        // List of items
+        // List of item overrides
 		vn_m61_grenade_mag = 0;
     };
 
