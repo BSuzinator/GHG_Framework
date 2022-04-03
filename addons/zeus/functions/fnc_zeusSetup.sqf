@@ -19,8 +19,11 @@ if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) 
 	{
 		params ["_unit", "_owner"];
 	
-		private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "CAN_COLLIDE"];
-
+		private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,21], [], 0, "CAN_COLLIDE"];
+		private _platform = "Land_GH_Platform" createVehicleLocal [0,0,20];
+		_platform allowDamage false;
+		_platform enableSimulation false;	
+		
         _logic allowDamage false;
 
 		_logic setCuratorCoef ["Place", 0];
