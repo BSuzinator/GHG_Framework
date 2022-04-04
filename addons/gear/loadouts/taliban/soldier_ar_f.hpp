@@ -10,6 +10,13 @@ class soldier_ar_f : soldier_f
         classname = "UK3CB_RPK";
         ammo = "rhs_75Rnd_762x39mm";
         bipod = "";
+		class Scopes : Scopes
+        {
+            red_dot = "";
+			varient_red_dot = "";
+            reflex = "";
+            magnified = "";
+        };
     };
     
     class Vest : Vest
