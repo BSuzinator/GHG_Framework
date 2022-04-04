@@ -5,6 +5,17 @@ class CfgWeapons
     {
         magazineWell[] = { CBA_545x39_AK };
     };
+    class rhs_weap_an94_base: Rifle_Base_F
+    {
+        magazineWell[] = { CBA_545x39_AK };
+    };
+    
+    class rhs_weap_ak74m;
+    class rhs_weap_akm : rhs_weap_ak74m
+    {
+        // Remove RPK mags
+        magazineWell[] = { CBA_762x39_AK };
+    };
     
     class Rifle_Long_Base_F;
     class rhs_weap_rpk_base: Rifle_Long_Base_F
