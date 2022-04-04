@@ -1,15 +1,14 @@
 /*======================================
-		Fireteam Crate Contents (bokoHaram)
+		Fireteam Crate Contents (Taliban)
 ======================================*/
 [
 ["ACE_elasticBandage", 8], 
 ["ACE_packingBandage", 8], 
-["rhs_30Rnd_545x39_7N6_AK", 40], 
+["rhs_30Rnd_762x39mm", 40], 
 ["rhs_mag_rgo", 12], 
 ["SmokeShell", 8], 
-["rhs_100Rnd_545X39_7N6_RPK", 5], 
-["rhs_weap_M80", 2], 
-["rhs_m80_mag", 2], 
+["rhs_75Rnd_762x39mm", 5], 
+["rhs_rpg7_PG7VL_mag", 4], 
 ["rhs_VOG25", 8], 
 ["rhs_VG400P_white", 4], 
 ["rhs_VG400P_green", 2], 
