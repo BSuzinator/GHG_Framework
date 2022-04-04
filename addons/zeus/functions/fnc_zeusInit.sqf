@@ -88,7 +88,7 @@ if ( player isKindOf "VirtualCurator_F" ) then
             
             if ( (!isNull _lpp) && (_key == 57) /* Spacebar */ && _ctrl ) exitWith
             {
-                [getPos _lpp, _lpp] call FUNC(zeusManifest);
+                [_lpp] call FUNC(zeusManifest);
                 
                 true;
             };

@@ -3,19 +3,43 @@
 	Make zeus appear at the designated position
 	Author: Quantx
 ======================================*/
-params ["_pos", "_unit"];
+params ["_unit"];
 
 if ( ! isNull (missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", objNull]) ) exitWith {};
 
-_pos set [2, 0];
-
 private _zeusClass = "C_Soldier_VR_F";
+
+private "_pos";
+
+if ( _unit isEqualType objNull ) then
+{
+    _pos = getPos _unit;
+}
+else
+{
+    _pos = _unit;
+    
+    _unit = objNull;
+    private _dist = 50;
+    {
+        private _nd = _x distance _pos;
+        if ( _nd < _dist ) then
+        {
+            _dist = _nd;
+            _unit = _x;
+        };
+    } forEach allPlayers;
+};
+
+_pos set [2, 0];
 
 if ! ( isNull _unit ) then {
     // Notify the player that zeus has arrived
     "Zeus has answered your pleas" remoteExecCall ["systemChat", _unit];
     
-    _zeusClass = (switch (side _unit) do {
+    private _ps = _unit getVariable [QGVARMAIN(unitSide), side _unit];
+    
+    _zeusClass = (switch (_ps) do {
         case blufor: {"B_Soldier_VR_F"};
         case opfor: {"O_Soldier_VR_F"};
         case independent: {"I_Soldier_VR_F"};
