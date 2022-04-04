@@ -16,17 +16,17 @@ GVAR(teletype_cas) = 0; // Current position of the abort switch (between 0 and 1
 GVAR(teletype_cac) = 0; // Current position of the abort cover (between 0 and 1)
 
 
-GVAR(teletype_illum) = 0.5;
+GVAR(teletype_illum) = 1;
 GVAR(teletype_audio) = 0.5;
 
 GVAR(teletype_mode) = 0; // 0 = Idle, 1 = Receive, 2 = Transmit, 3 = Transmit (high priority)
 
+// Tele-comms
 GVAR(teletype_rcv) = []; // Receive buffer array of: [ priority (bool), message (str) ]
 GVAR(teletype_xmt) = ""; // Transmit buffer
-GVAR(teletype_prt) = ""; // Print buffer
 
-GVAR(teletype_pnc) = 0; // Print next character timer
-
+// Printer
+GVAR(teletype_prt) = ""; // Print buffer (stuff that needs to be printed
 GVAR(teletype_ppr) = [""]; // Text log already printed out (array of 80 char lines
 
 GVAR(teletype_dhx) = 0; // Desired printhead x position (between 0 and 0.175)
