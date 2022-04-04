@@ -23,7 +23,7 @@ if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) 
 		private _platform = "Land_GH_Platform" createVehicle [0,0,20];
 		_platform allowDamage false;
 		_platform enableSimulation false;	
-		_unit setPos [0,0,21];
+		if (_virtual) then {_unit setPos [0,0,21];};
         _logic allowDamage false;
 
 		_logic setCuratorCoef ["Place", 0];
