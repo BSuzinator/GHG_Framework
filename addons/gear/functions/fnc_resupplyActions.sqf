@@ -15,6 +15,7 @@ if (!hasInterface) exitwith {};
 //Add root action
 private _resupplyCondition = {
 	_resupplyDistance = 30;
+	if (_target isKindOf "Air" || _target isKindOf "Ship") then {_resupplyDistance = 50;};
 	_nearestBunker = nearestObject [_target,"Land_Ammostore2"];
 	_nearestCrateGreen = nearestObject [_target,"Land_Cargo20_military_green_F"];
 	_nearestCrateSand = nearestObject [_target,"Land_Cargo20_sand_F"];
