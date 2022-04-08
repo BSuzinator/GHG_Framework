@@ -8,7 +8,6 @@ class support_mg_f : soldier_f
 	class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "rhs_weap_m240b_elcan";
-		muzzle = "muzzle_snds_h_mg_blk_f";
         ammo = "rhsusf_100Rnd_762x51";
         bipod = "rhsusf_acc_saw_bipod";
 		class Scopes : Scopes
