@@ -50,7 +50,7 @@ class CfgMainMenuSpotlight
 	{
 		text = "Ghost Hawk Gaming";
 		picture = "\x\ghg\addons\main\ui\logo.paa";
-		action = "connectToServer ['107.10.251.195', 2302, 'alpha']";
+		action = QUOTE(connectToServer MAIN_SERVER_ARRAY);
 		actionText = "Connect to the Ghost Hawk Gaming server";
 		condition = "true";
 	};

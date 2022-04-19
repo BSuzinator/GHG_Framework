@@ -26,7 +26,7 @@ private _allPlayerNames = [];
 	], 
 	{
         private _kickName = name (_values select 0);
-        serverCommand format ["#kick %1", _kickName];
+        QUOTE(SERVER_COMMAND_PASS) serverCommand format ["#kick %1", _kickName];
         
         private _str = format ["%1 kicked %2 from Admin Menu", name player, _kickName];
         _str remoteExecCall ["systemChat", 0];
