@@ -11,3 +11,4 @@ keys/*
 hemtt.exe
 addons/main/script_cache.hpp
 x/
+addons/main/server_information.hpp
