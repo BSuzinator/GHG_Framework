@@ -10,4 +10,4 @@ params ["_unit"];
 	[objNull, (_x select 0)] call ace_medical_treatment_fnc_unloadUnit;
 } forEach fullCrew [_unit,"",true];
 private _loadedCargo = _vehicle getVariable [ace_cargo_loaded, []];
-{[_x, _unit] call ace_cargo_fnc_unloadItem;} forEach _loadedCargo;
+{[_x, objNull] call ace_cargo_fnc_unloadItem;} forEach _loadedCargo;
