@@ -43,15 +43,15 @@ class CfgVehicles
 	class vn_b_prop_vrc12 : vn_object_b_base_02 {
 		class AcreRacks {
             class Rack_0 {
-                displayName = "Radio";      // Name displayed in the interaction menu
-                shortName = "Radio";                  // Short name displayed on the HUD. Maximum of 5 characters
-                componentName = "ACRE_VRC64";        // Rack type
-                allowedPositions[] = {"external"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                displayName = "Radio";              // Name displayed in the interaction menu
+                shortName = "Radio";                // Short name displayed on the HUD. Maximum of 5 characters
+                componentName = "ACRE_VRC64";       // Rack type
+                allowedPositions[] = {"external"};  // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
                 disabledPositions[] = {};
                 defaultComponents[] = {};
                 mountedRadio = "ACRE_PRC77";        // Predefined mounted radio
-                isRadioRemovable = 0;                 // Radio cannot be removed
-                intercom[] = {};                      // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+                isRadioRemovable = 0;               // Radio cannot be removed
+                intercom[] = {"none"};              // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
             };
 		};
 	};
@@ -84,6 +84,18 @@ class CfgVehicles
                 connectedByDefault = 0;
             };
         };
+        class UserActions {
+            class music_player {
+                condition = "alive this && { local this && { missionnamespace getvariable ['vn_jukebox_enable', true] && { driver this isEqualTo player } } }";
+                displayName = "Radio Jukebox";
+                onlyForPlayer = 0;
+                position = "zamerny";
+                priority = -99;
+                radius = 3;
+                showWindow = 0;
+                statement = "['open'] call vn_fnc_music";
+            };
+        };
     };
     class vn_boat_03_base : vn_boat_armed_base {
         class AcreRacks {
@@ -92,11 +104,24 @@ class CfgVehicles
                 intercom[] = {"intercom_1"};
             };
         };
+        class UserActions : UserActions {};
     };
     class vn_boat_05_base : vn_boat_armed_base {
         class AcreRacks {
             class Rack_1 {
                 allowedPositions[] = {"driver","commander"};
+                intercom[] = {"intercom_1"};
+            };
+        };
+        class UserActions : UserActions {};
+    };
+
+    // Intercom system for SOG Cobra
+    class vn_helicopter_base;
+    class vn_air_ah1g_01_base : vn_helicopter_base {
+        class AcreRacks {
+            class Rack_1 {
+                allowedPositions[] = {"crew"};
                 intercom[] = {"intercom_1"};
             };
         };
