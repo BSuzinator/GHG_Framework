@@ -11,15 +11,19 @@ GHG_UNIT_CLASS(SIDE, ghg_squad_lead, "Squad Lead") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_medic, "Squad Medic") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_ar, "Squad Automatic Rfleman") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_aar, "Squad Assitant Automatic Rfleman") \
-GHG_UNIT_CLASS(SIDE, ghg_squad_at, "Squad Anti-Tank") \
+GHG_UNIT_CLASS(SIDE, ghg_squad_at, "Squad Rifleman Anti-Tank") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_rifle, "Squad Rifleman") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_gl, "Squad Grenadier") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_mksm, "Squad Marksman") \
-GHG_UNIT_CLASS(SIDE, ghg_squad_aa, "Squad Anti-Air") \
+GHG_UNIT_CLASS(SIDE, ghg_squad_aa, "Squad Rifleman Anti-Air") \
 \
 GHG_UNIT_CLASS(SIDE, ghg_ews_lead, "Electronic Warfare Team Lead") \
 GHG_UNIT_CLASS(SIDE, ghg_ews_comms, "Electronic Warfare Communications Specialist") \
 GHG_UNIT_CLASS(SIDE, ghg_ews_comp, "Electronic Warfare Computer Specialist") \
+\
+GHG_UNIT_CLASS(SIDE, ghg_maa_lead, "Medium Anti-Air Team Lead") \
+GHG_UNIT_CLASS(SIDE, ghg_maa_gunner, "Medium Anti-Air Gunner") \
+GHG_UNIT_CLASS(SIDE, ghg_maa_ammo, "Medium Anti-Air Ammo Bearer") \
 \
 GHG_UNIT_CLASS(SIDE, ghg_mat_lead, "Medium Anti-Tank Team Lead") \
 GHG_UNIT_CLASS(SIDE, ghg_mat_gunner, "Medium Anti-Tank Gunner") \
