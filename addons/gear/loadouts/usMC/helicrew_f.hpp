@@ -3,8 +3,6 @@
 ======================================*/
 class helicrew_f : crew_f
 {
-    
-	
 	class Vest : Vest
     {
         // List of items

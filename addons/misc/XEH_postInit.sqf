@@ -17,3 +17,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(cameraInit);
 [] spawn FUNC(dynamicGroups);
 [] call FUNC(footsteps);
+
+if (hasInterface) then {
+    [missionNamespace, "OnDisplayRegistered", FUNC(registerJukeboxTracks)] call BIS_fnc_addScriptedEventHandler;
+};

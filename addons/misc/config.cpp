@@ -56,6 +56,12 @@ class CfgMainMenuSpotlight
 	};
 };
 
+// Have the SOG Vehicle Jukebox call the BIS display initializer so we can hook into it
+class vn_displayvehiclemusic {
+    onLoad =   "uinamespace setVariable ['vn_displayvehiclemusic', (_this#0)];   ['onload'] call VN_fnc_music;   ['onLoad',   _this, 'DisplayVehicleMusic', 'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');";
+    onUnload = "uinamespace setVariable ['vn_displayvehiclemusic', displayNull]; ['onunload'] call VN_fnc_music; ['onUnload', _this, 'DisplayVehicleMusic', 'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');";
+};
+
 #include "CfgEventhandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"

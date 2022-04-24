@@ -12,7 +12,7 @@ class CfgPatches {
             requiredVersion = REQUIRED_VERSION; 
             // Required addons, used for setting load order.
             // When any of the addons is missing, pop-up warning will appear when launching the game.
-            requiredAddons[] = { "ghg_main" };
+            requiredAddons[] = { "ghg_main", "acre_sys_rack", "acre_sys_prc77", "objects_f_vietnam_c", "wheeled_f_vietnam", "boat_f_vietnam", "ui_f_vietnam", "ui_f_vietnam_c", };
             // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
             units[] = {};
             // List of weapons (CfgWeapons classes) contained in the addon.
@@ -20,4 +20,5 @@ class CfgPatches {
     };
 };
 
+#include "CfgVehicles.hpp"
 #include "CfgEventhandlers.hpp"
