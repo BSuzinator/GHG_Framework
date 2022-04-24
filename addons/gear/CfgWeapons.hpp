@@ -52,4 +52,18 @@ class CfgWeapons
             CBA_556x45_STANAG_2D_XL
         };
     };
+    
+    // Disable full auto on the M14
+    class srifle_EBR_F;
+    class rhs_weap_m14_base : srifle_EBR_F
+    {
+        modes[] =
+        {
+            "Single",
+            //"FullAuto",
+            "single_close_optics1",
+            "single_medium_optics1",
+            "single_far_optics1"
+        };
+    };
 };
