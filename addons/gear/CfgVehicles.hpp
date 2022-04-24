@@ -1,9 +1,22 @@
-#define GHG_UNIT_CLASS(SIDE, CLASSNAME, UNITNAME) class SIDE##_##CLASSNAME : SIDE##_Survivor_F { \
-    displayName = UNITNAME ; \
+#define GHG_UNIT_CLASS_APPENDABLE(SIDE, CLASSNAME, UNITNAME) class SIDE##_##CLASSNAME : SIDE##_ghg_base { \
+    scope = 0; \
+    displayName = UNITNAME ;
+#define GHG_UNIT_CLASS(SIDE, CLASSNAME, UNITNAME) GHG_UNIT_CLASS_APPENDABLE(SIDE, CLASSNAME, UNITNAME)};
+
+#define GHG_BASE_CLASS(SIDE) class SIDE##_survivor_f; \
+class SIDE##_ghg_base : SIDE##_survivor_f { \
+    scope = 0; \
     faction = QUOTE(SIDE##_ghg); \
+    class ghg_skills { \
+        medic = 0; \
+        explosives = 0; \
+        hacker = 0; \
+        engineer = 0; \
+    }; \
 };
 
-#define GHG_SIDE_CLASS(SIDE) GHG_UNIT_CLASS(SIDE, ghg_plt_lead, "Platoon Lead") \
+#define GHG_SIDE_CLASS(SIDE) GHG_BASE_CLASS(SIDE) \
+GHG_UNIT_CLASS(SIDE, ghg_plt_lead, "Platoon Lead") \
 GHG_UNIT_CLASS(SIDE, ghg_plt_fac, "Platoon Forward Air Control") \
 GHG_UNIT_CLASS(SIDE, ghg_plt_doctor, "Platoon Doctor") \
 \
@@ -44,7 +57,11 @@ GHG_UNIT_CLASS(SIDE, ghg_rcn_ammo, "Recon Spotter") \
 GHG_UNIT_CLASS(SIDE, ghg_logi_lead, "Logistics Team Lead") \
 GHG_UNIT_CLASS(SIDE, ghg_logi_doctor, "Logistics Doctor") \
 GHG_UNIT_CLASS(SIDE, ghg_logi_explosive, "Logistics Demolitions Specialist") \
-GHG_UNIT_CLASS(SIDE, ghg_logi_repair, "Logistics Repair Specialist") \
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_repair, "Logistics Repair Specialist") \
+    class ghg_skills : ghg_skills { \
+        repair = 1; \
+    }; \
+}; \
 GHG_UNIT_CLASS(SIDE, ghg_logi_defusal, "Logistics EOD Tech") \
 GHG_UNIT_CLASS(SIDE, ghg_logi_saboteur, "Logistics Saboteur") \
 \
@@ -57,14 +74,12 @@ GHG_UNIT_CLASS(SIDE, ghg_knfs_crew, "Kingfish Crew") \
 GHG_UNIT_CLASS(SIDE, ghg_phtm_pilot, "Phantom Pilot") \
 GHG_UNIT_CLASS(SIDE, ghg_phtm_crew, "Phantom Crew") \
 \
-GHG_UNIT_CLASS(SIDE, ghg_rptr_pilot, "Raptor Pilot")
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_rptr_pilot, "Raptor Pilot") \
+    ACE_GForceCoef = 0.55;\
+};
 
 class CfgVehicles
 {
-    class B_Survivor_F;
-    class O_Survivor_F;
-    class I_Survivor_F;
-    
     GHG_SIDE_CLASS(b)
     GHG_SIDE_CLASS(o)
     GHG_SIDE_CLASS(i)
