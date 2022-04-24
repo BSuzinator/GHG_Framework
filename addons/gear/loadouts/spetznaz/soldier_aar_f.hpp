@@ -3,7 +3,10 @@
 ======================================*/
 class soldier_aar_f : soldier_f
 {
-    
+    class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
     
     class Backpack : Backpack
     {

@@ -8,6 +8,11 @@ class soldier_aar_f : soldier_f
         classname = "lop_u_pmc_tac_blue_plaid";
     };
     
+    class Vest : Vest
+    {
+        ACE_MapTools = 1;
+    };
+    
     class Backpack : Backpack
     {
         classname = "rhsusf_assault_eagleaiii_coy";
