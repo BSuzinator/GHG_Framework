@@ -32,8 +32,26 @@ class CfgMods {
         description = "Ghost Hawk Gaming Mission Framework";
     };
 };
+
+class CfgFactionClasses {
+    class b_ghg {
+        displayName = "Ghost Hawk Gaming";
+        flag = "\x\ghg\addons\main\ui\logo.paa";
+        icon = "\x\ghg\addons\main\ui\logo.paa";
+        priority = 1;
+        side = 1;
+    };
+    class o_ghg : b_ghg {
+        side = 0;
+    };
+    class i_ghg : b_ghg {
+        side = 2;
+    };
+};
+
 delete enableDebugConsole;
 enableDebugConsole[] = {"76561198080019809", "76561198044516211"};
+
 #include "CfgEventhandlers.hpp"
 #include "CfgGHG.hpp"
 #include "CfgDebriefing.hpp"
