@@ -34,7 +34,7 @@ _crate spawn {
 {
     private _itemName = configName _x;
     private _itemCount = getNumber _x;
-            
+    
     if ( _itemCount > 0 ) then
     {
         if ( _itemName isKindOf "Bag_Base" ) then

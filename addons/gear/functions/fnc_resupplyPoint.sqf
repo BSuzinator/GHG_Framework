@@ -30,6 +30,7 @@ if ( isServer ) then
 			_laptop setObjectTextureGlobal [1, "\x\ghg\addons\main\ui\header.paa"];
 			_laptop setDir getDir _obj;
 			_laptop allowDamage false;
+            _laptop enableSimulation false;
 			_obj setVariable ["laptop_obj", _laptop, true];
 			[_laptop, _obj] call BIS_fnc_attachToRelative;
 		};

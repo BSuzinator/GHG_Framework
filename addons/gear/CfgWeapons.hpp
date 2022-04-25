@@ -57,8 +57,7 @@ class CfgWeapons
     class srifle_EBR_F;
     class rhs_weap_m14_base : srifle_EBR_F
     {
-        modes[] =
-        {
+        modes[] = {
             "Single",
             //"FullAuto",
             "single_close_optics1",

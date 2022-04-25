@@ -17,7 +17,7 @@ private _crateList = configProperties [ _factionLoadout >> "Crates", "true", tru
 private _crateCfg  = [];
 private _crateName = [];
 
-diag_log _crateList;
+//diag_log _crateList;
 
 {
     // Skip crates with no classname
