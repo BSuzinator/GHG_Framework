@@ -1,4 +1,4 @@
-class demolition_crate : crate_base
+class ghg_crate_demo : ghg_crate_base
 {
     displayname = "Demolitions";
     cargosize = 2;

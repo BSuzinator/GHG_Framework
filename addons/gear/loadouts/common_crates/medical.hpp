@@ -1,4 +1,4 @@
-class medical_crate : crate_base
+class ghg_crate_medical : ghg_crate_base
 {
     classname = "ACE_medicalSupplyCrate";
     displayname = "Medical";

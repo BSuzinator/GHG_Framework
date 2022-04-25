@@ -1,4 +1,4 @@
-class crate_base
+class ghg_crate_base
 {
     classname = "Box_Syndicate_Ammo_F";
     displayname = "";

@@ -1,4 +1,4 @@
-class chemlights_crate : crate_base
+class ghg_crate_chemlights : ghg_crate_base
 {
     displayname = "Chemlights";
     
