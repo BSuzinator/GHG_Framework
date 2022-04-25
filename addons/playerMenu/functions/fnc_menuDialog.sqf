@@ -8,6 +8,8 @@ private _mainTitles = ["playerMenu", "GHG Player Menu", "popup"];
 private _menuOptions = [];
 
 //Define Actions
+private _forceLogoutAdmin = ["Logout Current Admin",{"#logout" remoteExec ["serverCommand",-2];},"","",[],-1,true,true];
+private _loginAdmin = ["Login as Admin",{serverCommand "#login";},"","",[],-1,true,true];
 private _kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,true];
 private _storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
 
@@ -45,13 +47,13 @@ private _radioSubmenu = [
 //Add Menu Options here
 _menuOptions pushback _storeStats;
 //_menuOptions pushback ["A Test",{hint "Hello World"; true},"","",[],-1,true,true];
-if (GVARMAIN(isAdmin)) then {_menuOptions pushback _kickPlayer;};
+if (GVARMAIN(isAdmin)) then {_menuOptions pushback _kickPlayer;_menuOptions pushback _forceLogoutAdmin;};
 
 //Sort non-submenu options alphabetically
 _menuOptions sort false;
 
 //Add Submenus
-if (GVARMAIN(isAdmin) || GVARMAIN(isOfficer) || GVARMAIN(isJuniorOfficer)) then {_menuOptions pushback _vehicleSubmenu;};
+if (GVARMAIN(isAdmin) || GVARMAIN(isOfficer) || GVARMAIN(isJuniorOfficer)) then {_menuOptions pushback _loginAdmin;_menuOptions pushback _vehicleSubmenu;};
 _menuOptions pushback _radioSubmenu;
 
 //Reverse and return menu

@@ -18,7 +18,7 @@ if ( isServer ) then
         
         // Transfer zeus module to new unit
         private _logic = getAssignedCuratorLogic _corpse;
-        if ( ! isNull _logic ) then
+        if ! ( isNull _logic ) then
         {
             unassignCurator _logic;
             _unit assignCurator _logic;
@@ -48,15 +48,19 @@ if ( !hasInterface ) exitWith {};
 // Ensure virtual Zeus players are invincible and force interface
 if ( player isKindOf "VirtualCurator_F" ) then
 {
+    // Starting pos for the camera
+    private _zeusPos = (getPos player) vectorAdd [0, 0, 20];
     // Prevent zeus slot from being fucked with
 	player allowDamage false;
-    player setPosASL [0,0,0]; // Allows zeus modules to talk with each other, while staying out of the combat zone
+    player enableSimulation false; // Number 8 on the list of Top 10 SQF Commands You Should Never Run
+    player setPosASL [0,0, 1000]; // Allows zeus modules to talk with each other, while staying out of the combat zone
 	bis_fnc_forceCuratorInterface_force = true;
 	
 	[{
 		if ( time > 0 ) then
 		{
 			params ["_args", "_handle"];
+            _args params ["_zeusPos"];
 		
 			if ( isNull curatorCamera ) then
 			{
@@ -64,11 +68,11 @@ if ( player isKindOf "VirtualCurator_F" ) then
 			}
 			else
 			{
-                player setPosASL [0, 0, 0];
+                curatorCamera setPosASL _zeusPos; // Move the camera back to the start pos
 				_handle call CBA_fnc_removePerFrameHandler;
 			};
 		};
-	}, 0.25, []] call CBA_fnc_addPerFrameHandler;
+	}, 0.25, [_zeusPos]] call CBA_fnc_addPerFrameHandler;
     
     // Cleanup manifested zeus characters
     ["zen_remoteControlStopped", {
@@ -88,7 +92,7 @@ if ( player isKindOf "VirtualCurator_F" ) then
             
             if ( (!isNull _lpp) && (_key == 57) /* Spacebar */ && _ctrl ) exitWith
             {
-                [getPos _lpp, _lpp] call FUNC(zeusManifest);
+                [_lpp] call FUNC(zeusManifest);
                 
                 true;
             };

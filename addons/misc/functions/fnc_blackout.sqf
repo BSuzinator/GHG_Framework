@@ -55,4 +55,4 @@ private _statement = {
 
 private _action = ["blackout","Switch Off","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statement,{true},{},[_radius], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 
-[_hostObject, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+[_hostObject, 0, ["ACE_MainActions"], _action] remoteExec["ace_interact_menu_fnc_addActionToObject",2];

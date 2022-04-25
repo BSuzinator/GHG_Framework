@@ -3,8 +3,6 @@
 ======================================*/
 class crew_f : soldier_f
 {
-    
-	
 	class Weapon_1 : Weapon_1 // Rifle
     {
         class Scopes : Scopes

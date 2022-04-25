@@ -7,7 +7,7 @@
 ["rhs_30Rnd_545x39_7N6_AK", 40], 
 ["rhs_mag_rgo", 12], 
 ["SmokeShell", 8], 
-["rhsusf_200Rnd_556x45_box", 5], 
+["rhs_100Rnd_545X39_7N6_RPK", 5], 
 ["rhs_weap_M80", 2], 
 ["rhs_m80_mag", 2], 
 ["rhs_VOG25", 8], 

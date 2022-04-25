@@ -5,6 +5,17 @@ class CfgWeapons
     {
         magazineWell[] = { CBA_545x39_AK };
     };
+    class rhs_weap_an94_base: Rifle_Base_F
+    {
+        magazineWell[] = { CBA_545x39_AK };
+    };
+    
+    class rhs_weap_ak74m;
+    class rhs_weap_akm : rhs_weap_ak74m
+    {
+        // Remove RPK mags
+        magazineWell[] = { CBA_762x39_AK };
+    };
     
     class Rifle_Long_Base_F;
     class rhs_weap_rpk_base: Rifle_Long_Base_F
@@ -39,6 +50,20 @@ class CfgWeapons
             CBA_556x45_STANAG_XL,
             CBA_556x45_STANAG_2D,
             CBA_556x45_STANAG_2D_XL
+        };
+    };
+    
+    // Disable full auto on the M14
+    class srifle_EBR_F;
+    class rhs_weap_m14_base : srifle_EBR_F
+    {
+        modes[] =
+        {
+            "Single",
+            //"FullAuto",
+            "single_close_optics1",
+            "single_medium_optics1",
+            "single_far_optics1"
         };
     };
 };

@@ -12,7 +12,7 @@ class CfgPatches {
             requiredVersion = REQUIRED_VERSION; 
             // Required addons, used for setting load order.
             // When any of the addons is missing, pop-up warning will appear when launching the game.
-            requiredAddons[] = { "cba_main","acre_sys_rack","acre_sys_prc77","objects_f_vietnam_c","wheeled_f_vietnam","uk3cb_baf_vehicles_MAN","UK3CB_Factions_Vehicles_m939","uk3cb_factions_Vehicles_mtvr","uk3cb_factions_Vehicles_ural" };
+            requiredAddons[] = { "cba_main","objects_f_vietnam_c","wheeled_f_vietnam","uk3cb_baf_vehicles_MAN","UK3CB_Factions_Vehicles_m939","uk3cb_factions_Vehicles_mtvr","uk3cb_factions_Vehicles_ural" };
             // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
             units[] = {};
             // List of weapons (CfgWeapons classes) contained in the addon.
@@ -32,8 +32,26 @@ class CfgMods {
         description = "Ghost Hawk Gaming Mission Framework";
     };
 };
+
+class CfgFactionClasses {
+    class b_ghg {
+        displayName = "Ghost Hawk Gaming";
+        flag = "\x\ghg\addons\main\ui\logo.paa";
+        icon = "\x\ghg\addons\main\ui\logo.paa";
+        priority = 1;
+        side = 1;
+    };
+    class o_ghg : b_ghg {
+        side = 0;
+    };
+    class i_ghg : b_ghg {
+        side = 2;
+    };
+};
+
 delete enableDebugConsole;
 enableDebugConsole[] = {"76561198080019809", "76561198044516211"};
+
 #include "CfgEventhandlers.hpp"
 #include "CfgGHG.hpp"
 #include "CfgDebriefing.hpp"

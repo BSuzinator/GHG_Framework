@@ -57,7 +57,7 @@ class RscTeletype
                             fixedWidth = 0;
                             x = 0.045;
                             y = 0;
-                            w = 0.92;
+                            w = 0.95;
                             h = 1;
                             style = 16 + 512; // ST_MULTI + ST_NO_RECT
                             shadow = 0;
@@ -91,7 +91,7 @@ class RscTeletype
                             fixedWidth = 0;
                             x = 0.045;
                             y = 0.05;
-                            w = 0.92;
+                            w = 0.95;
                             h = 1.5;
                             style = 16 + 512; // ST_MULTI + ST_NO_RECT
                             shadow = 0;

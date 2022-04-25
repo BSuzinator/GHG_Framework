@@ -20,7 +20,7 @@ _disp displayAddEventHandler [ "char", { // Printable ascii
     
     if ( GVAR(teletype_cps) == 1 && GVAR(teletype_mode) == TELETYPE_MODE_IDLE ) then
     {
-        GVAR(teletype_xmt) = GVAR(teletype_xmt) + _char; // Add to transmit buffer
+        //GVAR(teletype_xmt) = GVAR(teletype_xmt) + _char; // Add to transmit buffer
         GVAR(teletype_prt) = GVAR(teletype_prt) + _char; // Add to print buffer
     };
 }];
@@ -34,14 +34,20 @@ _disp displayAddEventHandler [ "keyDown", {
         case DIK_RETURN: {
             if ( GVAR(teletype_cps) == 1 && GVAR(teletype_mode) == TELETYPE_MODE_IDLE ) then
             {
-                GVAR(teletype_xmt) = GVAR(teletype_xmt) + (toString [10]); // Add to transmit buffer
+                //GVAR(teletype_xmt) = GVAR(teletype_xmt) + (toString [10]); // Add to transmit buffer
                 GVAR(teletype_prt) = GVAR(teletype_prt) + (toString [10]); // Add to print buffer
             };
         };
-        case DIK_F1: {
+        case DIK_BACK: { // Backspace
             
         };
-        case DIK_F2: {
+        case DIK_F1: { // Re-print last line of transmit buffer
+            
+        };
+        case DIK_F2: { // Delete last line of transmit buffer
+            
+        };
+        case DIK_F3: {
             
         };
         case DIK_ESCAPE: {
@@ -77,6 +83,9 @@ private _tty = _disp displayCtrl 5;
 _tty ctrlAnimateModel ["printhead_x", GVAR(teletype_chx)];
 _tty ctrlAnimateModel ["printhead_y", 0]; GVAR(teletype_chy) = 0;
 _tty ctrlAnimateModel ["lamp_bat", 1];
+_tty ctrlAnimateModel ["knob_illum", 1 - GVAR(teletype_illum)];
+_tty ctrlAnimateModel ["knob_alarm", 1 - GVAR(teletype_audio)];
+
 GVAR(teletype_isPower) = false;
 
 [{
@@ -111,12 +120,12 @@ GVAR(teletype_isPower) = false;
     private _dhy = [0, 0.01] select ((count GVAR(teletype_prt) > 0) && GVAR(teletype_cps) == 1);
     if ( GVAR(teletype_cps) == 1 && GVAR(teletype_dhx) == GVAR(teletype_chx) && GVAR(teletype_chy) == 0.01 ) then
     {
-        private _pprln = GVAR(teletype_ppr) deleteAt (count GVAR(teletype_ppr) - 1);
+        private _pprln = GVAR(teletype_ppr) deleteAt (count GVAR(teletype_ppr) - 1); // Pop most recent line
         
-        if ( count _pprln >= 80 ) then
+        while { count _pprln >= 80 } do
         {
-            GVAR(teletype_ppr) pushBack _pprln;
-            _pprln = "";
+            GVAR(teletype_ppr) pushBack (_pprln select [0, 80]);
+            _pprln = _pprln select [80];
         };
         
         private _c = (GVAR(teletype_prt) select [0, 1]);
@@ -147,8 +156,9 @@ GVAR(teletype_isPower) = false;
             if ( _i >= _last ) then
             {
                 private _ln = (GVAR(teletype_ppr) select (_i - _last));
+                private _lnc = count _ln;
                 
-                for "_i" from 0 to (count _ln) - 1 do
+                for "_i" from 0 to _lnc - 1 do
                 {
                     private _c = _ln select [_i, 1];
                     

@@ -2,6 +2,7 @@ PREP(aiGear);
 PREP(aiGearModule);
 PREP(gearUp);
 PREP(scopeChoice);
+PREP(resupplyActions);
 PREPMAIN(resupplyPoint);
 PREP(resupplyMenu);
 PREP(resupplyModule);

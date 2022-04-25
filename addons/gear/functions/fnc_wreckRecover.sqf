@@ -9,16 +9,18 @@
 params ["_target"];
 _wreck = _target;
 _wreckDir = getDir _wreck;
-_wreckPos = [getPosATL _wreck select 0, getPosATL _wreck select 1, 0];
+_wreckPos = [getPosATL _wreck select 0, getPosATL _wreck select 1, 0.75];
 _wreckClassName = typeOf _wreck;
 _wreckDisplayName = getText (configFile >>  "CfgVehicles" >> _wreckClassName >> "displayName");
 _wreckInfo = [_wreckClassName,_wreckDisplayName];
 deleteVehicle _wreck;
-_scrapObject = createVehicle ["Land_ScrapHeap_1_F", _wreckPos, [], 0, "CAN_COLLIDE"];
+_scrapObject = createVehicle ["Land_Cargo10_orange_F", _wreckPos, [], 0, "CAN_COLLIDE"];
+
 _scrapObject setVariable ["ghg_wreck_info", _wreckInfo, true];
-_scrapObject setVariable["ace_cargo_customname", _wreckDisplayName, true];
+_scrapObject setVariable["ace_cargo_customname", format ["Wreck: %1",_wreckDisplayName], true];
 _scrapObject setDir _wreckDir;
 [_scrapObject, 8] call ace_cargo_fnc_setSize;
+[_scrapObject, 0] call ace_cargo_fnc_setSpace;
 _checkInfoStatement = {
 	_targetInfo = _target getVariable "ghg_wreck_info";
 	_string = format ["Wreck of %1",_targetInfo select 1];

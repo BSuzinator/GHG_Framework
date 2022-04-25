@@ -50,10 +50,16 @@ class CfgMainMenuSpotlight
 	{
 		text = "Ghost Hawk Gaming";
 		picture = "\x\ghg\addons\main\ui\logo.paa";
-		action = "connectToServer ['107.10.251.195', 2302, 'alpha']";
+		action = QUOTE(connectToServer MAIN_SERVER_ARRAY);
 		actionText = "Connect to the Ghost Hawk Gaming server";
 		condition = "true";
 	};
+};
+
+// Have the SOG Vehicle Jukebox call the BIS display initializer so we can hook into it
+class vn_displayvehiclemusic {
+    onLoad =   "uinamespace setVariable ['vn_displayvehiclemusic', (_this#0)];   ['onload'] call VN_fnc_music;   ['onLoad',   _this, 'DisplayVehicleMusic', 'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');";
+    onUnload = "uinamespace setVariable ['vn_displayvehiclemusic', displayNull]; ['onunload'] call VN_fnc_music; ['onUnload', _this, 'DisplayVehicleMusic', 'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');";
 };
 
 #include "CfgEventhandlers.hpp"
