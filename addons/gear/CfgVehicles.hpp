@@ -6,6 +6,7 @@
 #define GHG_BASE_CLASS(SIDE) class SIDE##_survivor_f; \
 class SIDE##_ghg_base : SIDE##_survivor_f { \
     scope = 0; \
+    scopeCurator = 0; \
     faction = QUOTE(SIDE##_ghg); \
 };
 
