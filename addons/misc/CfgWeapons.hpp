@@ -1,10 +1,8 @@
 class CfgWeapons {
-    class CBA_MiscItem {
-		class CBA_MiscItem_ItemInfo;
-	};
+    class CBA_MiscItem;
+    class CBA_MiscItem_ItemInfo;
     class GHG_spikeStripItem: CBA_MiscItem {
         author = "BSuz";
-        ghg_isUnique = 0;
         scopeCurator = 2;
         scope = 2;
 		displayName = "Spike Strip (Packed)";
