@@ -9,4 +9,6 @@ class ghg_crate_base
     // 0 = False, Anything_Else = True
     draggable = 1;
     carryable = 1;
+    
+    class items {};
 };
