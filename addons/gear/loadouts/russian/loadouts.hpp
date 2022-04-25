@@ -34,5 +34,9 @@ class russian
 	#include "soldier_lite_f.hpp"
 	#include "soldier_unarmed_f.hpp"
 	#include "sniper_f.hpp"
+    
+    class Crates {
+        #include "..\common_crates\crates.hpp"
+    };
 
 };

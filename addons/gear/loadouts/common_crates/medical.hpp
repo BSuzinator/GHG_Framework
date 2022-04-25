@@ -12,7 +12,7 @@ class ghg_crate_medical : ghg_crate_base
         ACE_bloodIV_500 = 16; 
         ACE_bloodIV = 16; 
         ACE_surgicalKit = 1; 
-        ACE_personalAidKit = 8; 
+        ACE_personalAidKit = 8;
         ACE_splint = 12; 
         ACE_morphine = 20; 
         ACE_epinephrine = 16; 

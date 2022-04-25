@@ -13,7 +13,7 @@ private ["_factionLoadout", "_loadout", "_camoId"];
 
 if ( isNull _factionLoadout ) exitWith {};
 
-private _crateList = configProperties [ _factionLoadout >> "Crates", "isClass _x", true ];
+private _crateList = configProperties [ _factionLoadout >> "Crates", "true", true ];
 private _crateCfg  = [];
 private _crateName = [];
 
@@ -22,7 +22,7 @@ diag_log _crateList;
 {
     // Skip crates with no classname
     private _cfgn = configName _x;
-    if ( (_cfgn != "crate_base") && { (getText (_x >> "classname")) != "" } ) then
+    if ( (_cfgn != "ghg_crate_base") && { (getText (_x >> "classname")) != "" } ) then
     {
         private _dn = _x >> "displayname";
         _crateName pushBack (if ( isText _dn ) then { getText _dn } else { _cfgn });

@@ -32,44 +32,36 @@ _crate spawn {
 };
 
 {
-    private _cfgn = configName _x;
-    switch (_cfgn) do {
-        case "classname" : {};
-        case "displayname" : {
-            private _crateName = getText (_cfg >> "displayname");
-            if ( _crateName != "" ) then { _crate setVariable["ace_cargo_customname", _crateName, true] };
-        };
-        case "cargosize" : {
-            private _crateSize = getNumber (_cfg >> "cargosize");
-            if ( _crateSize > -2 ) then { [_crate, _crateSize] call ace_cargo_fnc_setSize };
-        };
-        case "fuelsize" : {
-            private _fuelSize = getNumber (_cfg >> "fuelsize");
-            if ( _fuelSize >= 0 ) then { [_crate, _fuelSize] remoteExecCall ["ace_refuel_fnc_makeSource", 2] };
-        };
-        case "draggable" : {
-            [_crate, (getNumber (_cfg >> "draggable")) != 0, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;
-        };
-        case "carryable": {
-            [_crate, (getNumber (_cfg >> "carryable")) != 0, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
-        };
-        default {
-            private _itemArray = [_cfgn, getNumber _x ];
+    private _itemName = configName _x;
+    private _itemCount = getNumber _x;
             
-            if ( (_itemArray select 1) > 0 ) then
-            {
-                if ( _cfgn isKindOf "Bag_Base" ) then
-                {
-                    _crate addBackPackCargoGlobal _itemArray;
-                }
-                else
-                {
-                    _crate addItemCargoGlobal _itemArray;
-                };
-            };
+    if ( _itemCount > 0 ) then
+    {
+        if ( _itemName isKindOf "Bag_Base" ) then
+        {
+            _crate addBackPackCargoGlobal [_itemName, _itemCount];
+        }
+        else
+        {
+            diag_log format ["%1 = %2", _itemName, _itemCount];
+            _crate addItemCargoGlobal [_itemName, _itemCount];
         };
     };
-} forEach configProperties [_cfg, "true", true];
+} forEach configProperties [_cfg >> "items", "true", true];
+
+private _crateName = getText (_cfg >> "displayname");
+if ( _crateName != "" ) then { _crate setVariable["ace_cargo_customname", _crateName, true] };
+
+private _crateSize = getNumber (_cfg >> "cargosize");
+if ( _crateSize > -2 ) then { [_crate, _crateSize] call ace_cargo_fnc_setSize };
+
+private _fuelSize = getNumber (_cfg >> "fuelsize");
+if ( _fuelSize >= 0 ) then { [_crate, _fuelSize] remoteExecCall ["ace_refuel_fnc_makeSource", 2] };
+
+[_crate, (getNumber (_cfg >> "draggable")) != 0, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;
+
+[_crate, (getNumber (_cfg >> "carryable")) != 0, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
+
 /*
 switch (_crateScript) do {
 	case "ghg_medical_placeholder":

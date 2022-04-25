@@ -31,4 +31,8 @@ class spetznaz
     #include "support_amort_f.hpp"
     #include "support_mg_f.hpp"
     #include "support_mort_f.hpp"
+    
+    class Crates {
+        #include "..\common_crates\crates.hpp"
+    };
 };
