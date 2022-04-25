@@ -17,7 +17,7 @@ private _getRandomPosition = {
 	[_teleportPos,_randDir]
 };
 {
-	private _crewMember = _x;
+	private _crewMember = _x select 0;
 	private _tpInfo = [_unit] call _getRandomPosition;
 	_crewMember setPos _tpInfo select 0;
 	_crewMember setDir _tpInfo select 1;
