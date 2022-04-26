@@ -16,3 +16,4 @@ PREP(zeusSpawnResupplyCrate);
 PREP(getLoadout);
 PREPMAIN(dumpLoadout);
 PREPMAIN(stealUniform);
+PREP(deleteScopes);
