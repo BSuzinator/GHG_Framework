@@ -15,9 +15,11 @@ if ( isServer ) then
     
     addMissionEventHandler ["EntityRespawned", {
         params ["_unit", "_corpse"];
-        
         // Transfer zeus module to new unit
         private _logic = getAssignedCuratorLogic _corpse;
+        
+        diag_log ["Player died", getPlayerUID _unit, _unit, _corpsem, _logic];
+        
         if ! ( isNull _logic ) then
         {
             unassignCurator _logic;
