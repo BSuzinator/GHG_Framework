@@ -56,9 +56,9 @@ class CfgVehicles
 		};
 	};
     
-    // Intercom system for SOG PAVN Patrol Boats
-    class vn_boat_armed_base;
-    class vn_boat_03_base : vn_boat_armed_base {
+    // Intercom system for SOG Patrol Boats
+    class Boat_Armed_01_base_F;
+    class vn_boat_armed_base : Boat_Armed_01_base_F {
         class AcreIntercoms {
             class Intercom_1 {
                 displayName = "Crew Intercom";
@@ -82,12 +82,6 @@ class CfgVehicles
                 numLimitedPositions = 0;
                 
                 connectedByDefault = 0;
-            };
-        };
-        class AcreRacks {
-            class Rack_1 {
-                allowedPositions[] = {"driver","commander"};
-                intercom[] = {"intercom_1"};
             };
         };
         class UserActions {
@@ -103,49 +97,24 @@ class CfgVehicles
             };
         };
     };
-    // Intercom system for SOG MACV Patrol Boats
-    class vn_boat_05_base : vn_boat_armed_base {
-        class AcreIntercoms {
-            class Intercom_1 {
-                displayName = "Crew Intercom";
-                shortName = "Crew";
-                
-                allowedPositions[] = {"crew"};
-                masterPositions[] = {"commander"};
-                
-                limitedPositions[] = {{"cargo", "all"}};
-                numLimitedPositions = 1;
-                
-                connectedByDefault = 1;
-            };
-            class Intercom_2: Intercom_1 {
-                displayName = "Pax Intercom";
-                shortName = "Pax";
-                
-                allowedPositions[] = {"crew", {"cargo", "all"}};
-                
-                limitedPositions[] = {};
-                numLimitedPositions = 0;
-                
-                connectedByDefault = 0;
-            };
-        };
+   
+    class vn_boat_03_base : vn_boat_armed_base {
+        class AcreIntercoms : AcreIntercoms {};
+        class UserActions : UserActions {};
         class AcreRacks {
             class Rack_1 {
                 allowedPositions[] = {"driver","commander"};
                 intercom[] = {"intercom_1"};
             };
         };
-        class UserActions {
-            class music_player {
-                condition = "alive this && { local this && { missionnamespace getvariable ['vn_jukebox_enable', true] && { driver this isEqualTo player } } }";
-                displayName = "Radio Jukebox";
-                onlyForPlayer = 0;
-                position = "zamerny";
-                priority = -99;
-                radius = 3;
-                showWindow = 0;
-                statement = "['open'] call vn_fnc_music";
+    };
+    class vn_boat_05_base : vn_boat_armed_base {
+        class AcreIntercoms : AcreIntercoms {};
+        class UserActions : UserActions {};
+        class AcreRacks {
+            class Rack_1 {
+                allowedPositions[] = {"driver","commander"};
+                intercom[] = {"intercom_1"};
             };
         };
     };
