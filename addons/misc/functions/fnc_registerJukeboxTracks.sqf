@@ -9,22 +9,19 @@ if ( _class isNotEqualTo "DisplayVehicleMusic" ) exitWith {};
 
 if (isNil QGVARMAIN(jukebox)) then {
     GVARMAIN(jukebox) = [];
-    private _ghgMusic = configFile >> "CfgGHG" >> "Jukebox";
+    private _musicList = configFile >> "CfgGHG" >> "Jukebox" >> "tracks";
     private _cfgSounds = configFile >> "CfgSounds";
-    if (isClass _ghgMusic) then {
+    if (isArray _musicList) then {
         {
-            private _trackClass = _ghgMusic >> _x;
-            if (isText _trackClass) then {
-                private _song = _cfgSounds >> _trackClass;
-                if (isClass _song) then {
-                    private _name = getText (_song >> "name");
-                    private _duration = getNumber (_song >> "duration");
-                    GVARMAIN(jukebox) pushBack [_trackClass, _name, _duration];
-                } else {
-                    diag_log format ["Unknown track %1", _x];
-                };
+            private _song = _cfgSounds >> _x;
+            if (isClass _song) then {
+                private _name = getText (_song >> "name");
+                private _duration = getNumber (_song >> "duration");
+                GVARMAIN(jukebox) pushBack [_x, _name, _duration];
+            } else {
+                diag_log format ["Unknown track %1", _x];
             };
-        } foreach configProperties [_ghgMusic, "true", true];
+        } foreach getArray _musicList;
     };
 };
 
