@@ -39,7 +39,7 @@ switch (_unitSide) do {
 // Return values (NOTE: These are intentionally NOT private)
 _factionLoadout = configNull;
 _loadout = configNull;
-_camoId = -1;
+_camoId = 0;
 
 if ( _faction == "" ) exitWith { systemChat format [ "No faction specified for side %1", _unitSide ] };
 
