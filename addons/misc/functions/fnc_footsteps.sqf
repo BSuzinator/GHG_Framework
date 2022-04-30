@@ -72,7 +72,7 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
     {
         _x params ["_unit", "_fso", "_fsm", "_fsp", "_fsd", "_age"];
         
-        private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (_hasTrapKit && { (player distance _fsp) < 5 });
+        private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (playerSide == sideLogic || {_hasTrapKit && { (player distance _fsp) < 5 }});
         
         private _plp = curatorCamera;
         if ( isNull _plp ) then { _plp = player };
