@@ -8,6 +8,17 @@
     isRadioRemovable = 0;\
     intercom[] = {};
 
+#define SOG_JUKEBOX class music_player { \
+    condition = "alive this && { local this && { missionnamespace getvariable ['vn_jukebox_enable', true] && { driver this isEqualTo player } } }"; \
+    displayName = "Radio Jukebox"; \
+    onlyForPlayer = 0; \
+    position = "zamerny"; \
+    priority = -99; \
+    radius = 3; \
+    showWindow = 0; \
+    statement = "['open'] call vn_fnc_music"; \
+};
+
 class CfgVehicles
 {
     class LandVehicle;
@@ -85,16 +96,7 @@ class CfgVehicles
             };
         };
         class UserActions {
-            class music_player {
-                condition = "alive this && { local this && { missionnamespace getvariable ['vn_jukebox_enable', true] && { driver this isEqualTo player } } }";
-                displayName = "Radio Jukebox";
-                onlyForPlayer = 0;
-                position = "zamerny";
-                priority = -99;
-                radius = 3;
-                showWindow = 0;
-                statement = "['open'] call vn_fnc_music";
-            };
+            SOG_JUKEBOX
         };
     };
     // PAVN PT Boat
@@ -202,6 +204,18 @@ class CfgVehicles
             };
         };
     };
+    // Fix jukebox for Huey
+    class vn_air_uh1c_doorguns_base;
+    class vn_air_uh1c_01_base : vn_air_uh1c_doorguns_base {
+        class UserActions {
+            SOG_JUKEBOX
+        };
+    };
+    class vn_air_uh1c_07_base : vn_air_uh1c_doorguns_base {
+        class UserActions {
+            SOG_JUKEBOX
+        };
+    };
     // Intercom system for SOG Seahorse
     class vn_air_ch34_01_base : vn_helicopter_base {
         class AcreRacks {
@@ -297,16 +311,59 @@ class CfgVehicles
             };
         };
         class UserActions {
-            class music_player {
-                condition = "alive this && { local this && { missionnamespace getvariable ['vn_jukebox_enable', true] && { driver this isEqualTo player } } }";
-                displayName = "Radio Jukebox";
-                onlyForPlayer = 0;
-                position = "zamerny";
-                priority = -99;
-                radius = 3;
-                showWindow = 0;
-                statement = "['open'] call vn_fnc_music";
+            SOG_JUKEBOX
+        };
+    };
+    // Intercom for SOG Bulldog Tank
+    class vn_armor_m41_base;
+    class vn_b_armor_m41_01_01_base : vn_armor_m41_base {
+        class AcreRacks {
+            class Rack_1 {
+                allowedPositions[] = {"commander"};
+                intercom[] = {"intercom_1"};
             };
+        };
+        class AcreIntercoms {
+            class Intercom_1 {
+                displayName = "Crew Intercom";
+                shortName = "Crew";
+                
+                allowedPositions[] = {"crew", {"ffv", "all"}};
+                masterPositions[] = {"commander"};
+                
+                limitedPositions[] = {};
+                numLimitedPositions = 0;
+                
+                connectedByDefault = 1;
+            };
+        };
+        class UserActions {
+            SOG_JUKEBOX
+        };
+    };
+    class vn_b_armor_m41_01_02_base : vn_armor_m41_base {
+        class AcreRacks {
+            class Rack_1 {
+                allowedPositions[] = {"commander"};
+                intercom[] = {"intercom_1"};
+            };
+        };
+        class AcreIntercoms {
+            class Intercom_1 {
+                displayName = "Crew Intercom";
+                shortName = "Crew";
+                
+                allowedPositions[] = {"crew", {"ffv", "all"}};
+                masterPositions[] = {"commander"};
+                
+                limitedPositions[] = {};
+                numLimitedPositions = 0;
+                
+                connectedByDefault = 1;
+            };
+        };
+        class UserActions {
+            SOG_JUKEBOX
         };
     };
 };
