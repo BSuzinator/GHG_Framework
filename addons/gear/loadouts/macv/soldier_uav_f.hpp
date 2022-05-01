@@ -3,8 +3,6 @@
 ======================================*/
 class soldier_uav_f : soldier_tl_f
 {
-    
-    
     class Backpack : Backpack
     {
         classname = "vn_b_pack_prc77_01";
@@ -17,11 +15,5 @@ class soldier_uav_f : soldier_tl_f
         vn_40mm_m682_smoke_r_mag = 4;
         vn_40mm_m715_smoke_g_mag = 4;
         vn_40mm_m680_smoke_w_mag = 4;
-    };
-
-    class Binoculars : Binoculars
-    {
-        classname = "Laserdesignator";
-        ammo = "Laserbatteries";
     };
 };
