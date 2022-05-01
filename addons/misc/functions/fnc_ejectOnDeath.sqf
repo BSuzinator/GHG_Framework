@@ -19,8 +19,8 @@ private _getRandomPosition = {
 {
 	private _crewMember = _x select 0;
 	private _tpInfo = [_unit] call _getRandomPosition;
-	_crewMember setPos _tpInfo select 0;
-	_crewMember setDir _tpInfo select 1;
+	_crewMember setPos (_tpInfo select 0);
+	_crewMember setDir (_tpInfo select 1);
 	
 	//(_x select 0) action ["eject", _unit];
 	//[objNull, (_x select 0)] call ace_medical_treatment_fnc_unloadUnit;
@@ -31,6 +31,6 @@ private _loadedCargo = _vehicle getVariable [ace_cargo_loaded, []];
 	_crate = _x;
 	[_crate, objNull] call ace_cargo_fnc_unloadItem;
 	private _tpInfo = [_unit] call _getRandomPosition;
-	_crate setPos _tpInfo select 0;
-	_crate setDir _tpInfo select 1;
+	_crate setPos (_tpInfo select 0);
+	_crate setDir (_tpInfo select 1);
 } forEach _loadedCargo;
