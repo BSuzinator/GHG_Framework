@@ -20,7 +20,7 @@ else
     _pos = _unit;
     
     _unit = objNull;
-    private _dist = 50;
+    private _dist = 100;
     {
         private _nd = _x distance _pos;
         if ( _nd < _dist ) then
