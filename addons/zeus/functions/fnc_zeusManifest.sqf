@@ -3,40 +3,42 @@
 	Make zeus appear at the designated position
 	Author: Quantx
 ======================================*/
-params ["_unit"];
-
 if ( ! isNull (missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", objNull]) ) exitWith {};
 
-private _zeusClass = "C_Soldier_VR_F";
+// Position is always in ASL
+params ["_pos", "_unit", "_vehicle"];
 
-private "_pos";
+// Ensure _vehicle is valid
+if ! (_vehicle isEqualType objNull && {_vehicle isKindOf "AllVehicles"} && {!(_vehicle isKindOf "CAManBase")}) then {
+    _vehicle = objNull;
+};
 
-if ( _unit isEqualType objNull ) then
-{
-    _pos = getPos _unit;
-}
-else
-{
-    _pos = _unit;
-    
-    _unit = objNull;
-    private _dist = 100;
+if (isNull _unit) then { // We're teleporting to a random position or vehicle
+    if ! (isNull _vehicle) then { // A vehicle was provided, so use it's position instead
+        _pos = getPosASL _vehicle;
+    };
+
+    private _dist = 100; // Find the nearest unit to determine the team
     {
-        private _nd = _x distance _pos;
+        private _unitPos = ASLToAGL (getPosASL _x);
+        private _nd = _unitPos distance (ASLToAGL _pos);
         if ( _nd < _dist ) then
         {
             _dist = _nd;
             _unit = _x;
         };
     } forEach allPlayers;
+} else { // We're responding to a specific zeus ping
+    "Zeus has answered your pleas" remoteExecCall ["systemChat", _unit];
+    
+    _pos = getPosASL _unit;
 };
 
 _pos set [2, 0];
 
-if ! ( isNull _unit ) then {
-    // Notify the player that zeus has arrived
-    "Zeus has answered your pleas" remoteExecCall ["systemChat", _unit];
-    
+private _zeusClass = "C_Soldier_VR_F";
+
+if ! ( isNull _unit ) then { // _unit might still be objNull if no player was within _dist
     private _ps = _unit getVariable [QGVARMAIN(unitSide), side _unit];
     
     _zeusClass = (switch (_ps) do {
@@ -56,7 +58,13 @@ _zpo enableStamina false;
 _zpo enableFatigue false;
 _zpo setCaptive true; // All AI will ignore zeus
 
-["setName", [_zpo, "Zeus"], netId _zpo] call CBA_fnc_globalEventJIP;
+// Teleport the zeus player object into a vehicle if one was selected
+if (_vehicle isEqualType objNull && {_vehicle isKindOf "AllVehicles"} && {!(_vehicle isKindOf "CAManBase")}) then {
+    [[_zpo], _vehicle] call zen_common_fnc_teleportIntoVehicle;
+};
+
+private _jipID = ["setName", [_zpo, "Zeus"], "ghg_zeus_manifest_" + netId _zpo] call CBA_fnc_globalEventJIP;
+[_jipID, _zpo] call CBA_fnc_removeGlobalEventJIP; // Cleanup after ourselves
 
 _zpo setVariable [QGVAR(zeusManifest), true];
 

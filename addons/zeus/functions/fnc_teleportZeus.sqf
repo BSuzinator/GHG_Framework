@@ -5,4 +5,4 @@
 ======================================*/
 if ! ( player isKindOf "VirtualCurator_F" ) exitWith { call zen_context_actions_fnc_teleportZeus };
 
-[_position] call FUNC(zeusManifest);
+[_position, objNull, _hoveredEntity] call FUNC(zeusManifest);

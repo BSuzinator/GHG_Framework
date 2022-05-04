@@ -94,7 +94,7 @@ if ( player isKindOf "VirtualCurator_F" ) then
             
             if ( (!isNull _lpp) && (_key == 57) /* Spacebar */ && _ctrl ) exitWith
             {
-                [_lpp] call FUNC(zeusManifest);
+                [[0, 0, 0], _lpp, vehicle _lpp] call FUNC(zeusManifest);
                 
                 true;
             };
