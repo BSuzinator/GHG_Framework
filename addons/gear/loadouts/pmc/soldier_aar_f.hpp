@@ -22,4 +22,5 @@ class soldier_aar_f : soldier_f
 		ACE_Canteen = 2;
     };
 	headgear = "vn_b_boonie_05_03";
+	facewear = "G_Headset_lxWS";
 };

@@ -34,4 +34,5 @@ class soldier_ar_f : soldier_f
         rhsusf_200Rnd_556x45_soft_pouch = 1;
     };
 	headgear = "vn_b_bandana_03";
+	facewear = "G_Headset_lxWS";
 };
