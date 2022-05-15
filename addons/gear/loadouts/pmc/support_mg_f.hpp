@@ -36,4 +36,5 @@ class support_mg_f : soldier_f
         rhsusf_100Rnd_762x51 = 3;
     };
 	headgear = "vn_b_bandana_01";
+	facewear = "G_Headset_lxWS";
 };

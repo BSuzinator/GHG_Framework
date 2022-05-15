@@ -36,4 +36,5 @@ class soldier_exp_f : soldier_f
 		SatchelCharge_Remote_Mag = 1;
     };
 	headgear = "vn_b_headband_03";
+	facewear = "G_Headset_lxWS";
 };

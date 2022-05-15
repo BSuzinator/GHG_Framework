@@ -23,4 +23,5 @@ class soldier_repair_f : soldier_f
         ACE_Fortify = 1;
     };
 	headgear = "rhsusf_bowman_cap";
+	facewear = "UK3CB_G_Neck_Shemag_KLR_tan";
 };

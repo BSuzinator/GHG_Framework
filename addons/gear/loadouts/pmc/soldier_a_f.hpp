@@ -24,4 +24,5 @@ class soldier_a_f : soldier_f
     };
 	
 	headgear = "vn_b_boonie_05_03";
+	facewear = "G_Headset_lxWS";
 };

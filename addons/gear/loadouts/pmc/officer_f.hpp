@@ -33,4 +33,5 @@ class officer_f : soldier_f
     };
     
     headgear = "UK3CB_h_safari_hat_brown";
+	facewear = "G_Headset_lxWS";
 };

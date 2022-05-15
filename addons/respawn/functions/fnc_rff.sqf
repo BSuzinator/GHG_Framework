@@ -11,7 +11,7 @@ params [
 
 [_unit, "HandleDamage", { // Does not persist on death
     params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
-    if ((_unit isEqualTo _instigator) || (side _unit != side _instigator) || (side _instigator isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _instigator))) exitWith {_damage};
+    if ((_unit isEqualTo _instigator) || (side _unit != side _instigator) || (side _instigator isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _instigator))) exitWith {0};
 
     [QGVAR(rff), _this, _instigator] call CBA_fnc_targetEvent;
 

@@ -40,5 +40,5 @@ class soldier_f : loadout_base
     };
     
     headgear = "vn_b_bandana_01";
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "G_Headset_lxWS";
 };

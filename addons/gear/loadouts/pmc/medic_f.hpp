@@ -37,4 +37,5 @@ class medic_f : soldier_f
 		ACE_EarPlugs = 1;
     };
 	headgear = "vn_b_boonie_05_04";
+	facewear = "G_Headset_lxWS";
 };
