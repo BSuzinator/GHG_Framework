@@ -54,7 +54,6 @@ if ( player isKindOf "VirtualCurator_F" ) then
     private _zeusPos = (getPosASL player) vectorAdd [0, 0, 20];
     // Prevent zeus slot from being fucked with
 	player allowDamage false;
-    player enableSimulation false; // Number 8 on the list of Top 10 SQF Commands You Should Never Run
     player setPosASL [0, 0, 1000]; // Allows zeus modules to talk with each other, while staying out of the combat zone
 	bis_fnc_forceCuratorInterface_force = true;
 	
