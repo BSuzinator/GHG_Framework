@@ -93,7 +93,21 @@ if ( hasInterface ) then
 		"ghg_resupply_spawn",
 		"Request Resupply",
 		"",
-		FUNC(resupplyMenu),
+        {
+            params ["_target", "_player", "_args"];
+            _args params ["_building"];
+            
+            private _pos = (ASLtoATL (_building modelToWorldWorld (_building getVariable ["crate_pos", [0,0,1]])));
+            private _dir = (getDir _building) + (_building getVariable ["crate_dir", 0]);
+            
+            private _cb = {
+                (_this select 0) params ["_cfg"];
+                (_this select 1) params ["_pos", "_dir"];
+                [_cfg, _pos, _dir] call FUNC(resupplyCreate);
+            };
+            
+            [side _player, _cb, [_pos, _dir]] call FUNC(resupplyMenu);
+        },
 		{true},
 		{},
 		[

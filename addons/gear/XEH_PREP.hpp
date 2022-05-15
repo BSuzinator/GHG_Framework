@@ -14,6 +14,7 @@ PREP(wreckRecover);
 PREP(wreckRecoverModule);
 PREP(zeusSpawnResupplyCrate);
 PREP(getLoadout);
+PREP(getFactionLoadout);
 PREPMAIN(dumpLoadout);
 PREPMAIN(stealUniform);
 PREP(deleteScopes);

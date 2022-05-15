@@ -4,13 +4,13 @@
 	Creates list of crates availible to players based on faction
 	Author: Quantx
 ======================================*/
-params ["_target", "_player", "_args"];
-_args params ["_building"];
+params [
+    ["_factionSide", sideEmpty, [sideEmpty]],
+    ["_callback", {}, [{}]],
+    ["_callbackArgs", [], [[]]]
+];
 
-// This is why 'private' is important!
-private ["_factionLoadout", "_loadout", "_camoId"];
-[] call FUNC(getLoadout);
-
+private _factionLoadout = [_factionSide] call FUNC(getFactionLoadout);
 if ( isNull _factionLoadout ) exitWith {};
 
 private _crateList = configProperties [ _factionLoadout >> "Crates", "true", true ];
@@ -46,12 +46,7 @@ if ( (count _crateCfg) == 0 ) exitWith { systemChat "No crates in list" };
 			]
 		]
 	],
-	FUNC(resupplyCreate),
+    _callback,
 	{},
-	[
-		_target,
-		_player,
-		_building,
-		_camoId
-	]
+	_callbackArgs
 ] call zen_dialog_fnc_create;
