@@ -4,4 +4,6 @@ class ghg_crate_vehicle_ammo : ghg_crate_base
     displayname = "Vehicle Ammo";
     
     cargosize = 4;
+    
+    carryable = 0;
 };

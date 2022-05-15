@@ -5,4 +5,6 @@ class ghg_crate_vehicle_fuel : ghg_crate_base
     
     cargosize = 4;
     fuelsize = 100;
+    
+    carryable = 0;
 };
