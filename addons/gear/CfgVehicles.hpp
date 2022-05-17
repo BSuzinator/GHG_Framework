@@ -64,18 +64,26 @@ GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_lead, "Logistics Team Lead") \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_doctor, "Logistics Doctor") \
 	attendant = 2; \
 }; \
-GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_explosive, "Logistics Demolitions Specialist") \
-	canDeactivateMines = 1; \
-}; \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_repair, "Logistics Repair Specialist") \
     engineer = 2 \
 }; \
-GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_defusal, "Logistics EOD Tech") \
+GHG_UNIT_CLASS(SIDE, ghg_demo_lead, "Demolitions Team Lead") \
+}; \
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_demo_explosive, "Demolitions Explosive Specialist") \
 	canDeactivateMines = 1; \
 }; \
-GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_saboteur, "Logistics Saboteur") \
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_demo_defusal, "Demolitions EOD Tech") \
 	canDeactivateMines = 1; \
 }; \
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_demo_saboteur, "Demolitions Saboteur") \
+	canDeactivateMines = 1; \
+}; \
+\
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_lynx_driver, "Lynx Driver") \
+	engineer = 2; \
+}; \
+GHG_UNIT_CLASS(SIDE, ghg_lynx_cmdr, "Lynx Commander") \
+GHG_UNIT_CLASS(SIDE, ghg_lynx_crew, "Lynx Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_wolf_driver, "Wolf Driver") \
 	engineer = 2; \
@@ -89,10 +97,15 @@ GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_knfs_driver, "Kingfish Helmsman") \
 GHG_UNIT_CLASS(SIDE, ghg_knfs_captain, "Kingfish Captain") \
 GHG_UNIT_CLASS(SIDE, ghg_knfs_crew, "Kingfish Crew") \
 \
-GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_phtm_pilot, "Phantom Pilot") \
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_ravn_pilot, "Raven Pilot") \
 	engineer = 1; \
 }; \
-GHG_UNIT_CLASS(SIDE, ghg_phtm_crew, "Phantom Crew") \
+GHG_UNIT_CLASS(SIDE, ghg_ravn_crew, "Raven Crew") \
+\
+GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_flcn_pilot, "Falcon Pilot") \
+	engineer = 1; \
+}; \
+GHG_UNIT_CLASS(SIDE, ghg_flcn_crew, "Falcon Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_rptr_pilot, "Raptor Pilot") \
     ACE_GForceCoef = 0.55;\
