@@ -2,6 +2,7 @@
 #include "medical.hpp"
 #include "chemlights.hpp"
 #include "demolition.hpp"
+#include "detainment.hpp"
 #include "spare_wheel.hpp"
 #include "spare_track.hpp"
 #include "vehicle_ammo.hpp"
