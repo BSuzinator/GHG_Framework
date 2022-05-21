@@ -5,7 +5,6 @@
 	Called at mission start, JIP, and respawn
 ======================================*/
 if ( !hasInterface ) exitWith {};
-if ( playerSide == sideLogic ) exitWith {};
 
 params [
     ["_unit", player, [objNull]],
@@ -14,6 +13,7 @@ params [
 
 if ( isNull _unit ) exitWith { systemChat "No unit specified for gearUp" };
 
+if ( side _unit == sideLogic ) exitWith {};
 // This is why 'private' is important!
 private ["_factionLoadout", "_loadout", "_camoId"];
 _this call FUNC(getLoadout);
