@@ -34,7 +34,7 @@ if ( isServer ) then
     // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run
     [
         {!(isNil QGVAR(zeusObjects))}, {}, // Do nothing if zeusObjects is defined
-        [] // No args
+        [], // No args
         10, {GVAR(zeusObjects) = [];} // Timeout code
     ] call CBA_fnc_waitUntilAndExecute;
 };
