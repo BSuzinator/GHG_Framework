@@ -18,7 +18,7 @@ if ( isServer ) then
         // Transfer zeus module to new unit
         private _logic = getAssignedCuratorLogic _corpse;
         
-        diag_log ["Player died", getPlayerUID _unit, _unit, _corpsem, _logic];
+        diag_log ["Player died", getPlayerUID _unit, _unit, _corpse, _logic];
         
         if ! ( isNull _logic ) then
         {
@@ -32,12 +32,11 @@ if ( isServer ) then
     publicVariable QGVAR(zeusManifestGroup); // JIP compatible
 
     // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run
-    [{ time > 10 }, {
-        if ( isNil QGVAR(zeusObjects) ) then
-        {
-            GVAR(zeusObjects) = [];
-        };
-    }] call CBA_fnc_waitUntilAndExecute;
+    [
+        {!(isNil QGVAR(zeusObjects))}, {}, // Do nothing if zeusObjects is defined
+        [] // No args
+        10, {GVAR(zeusObjects) = [];} // Timeout code
+    ] call CBA_fnc_waitUntilAndExecute;
 };
 
 if ( !hasInterface ) exitWith {};

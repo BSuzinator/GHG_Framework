@@ -68,7 +68,6 @@ GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_repair, "Logistics Repair Specialist") 
     engineer = 2 \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_demo_lead, "Demolitions Team Lead") \
-}; \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_demo_explosive, "Demolitions Explosive Specialist") \
 	canDeactivateMines = 1; \
 }; \
