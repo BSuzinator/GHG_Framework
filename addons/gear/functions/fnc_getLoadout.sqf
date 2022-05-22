@@ -22,6 +22,7 @@ private _camo = getText( _ghg >> (switch (_unitSide) do {
     case west: {"bluCamo"};
     case east: {"opfCamo"};
     case resistance: {"indCamo"};
+    default {""};
 }));
 
 // Return values (NOTE: These are intentionally NOT private)

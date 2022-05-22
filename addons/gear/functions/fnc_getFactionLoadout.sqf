@@ -16,6 +16,7 @@ private _faction = getText( _ghg >> (switch (_side) do {
     case west: {"bluFaction"};
     case east: {"opfFaction"};
     case resistance: {"indFaction"};
+    default {""};
 }));
 
 if ( _faction == "" ) exitWith {

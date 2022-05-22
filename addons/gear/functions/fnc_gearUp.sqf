@@ -12,8 +12,11 @@ params [
 ];
 
 if ( isNull _unit ) exitWith { systemChat "No unit specified for gearUp" };
+// Handles a weird case where Zeus may not be side logic
+if ( (side _unit) isEqualTo sideLogic || { (_unit isEqualTo player) && (playerSide isEqualTo sideLogic) } ) exitWith {};
 
-if ( side _unit == sideLogic ) exitWith {};
+diag_log ["Gear UP, unit side is: ", _unit, side _unit];
+
 // This is why 'private' is important!
 private ["_factionLoadout", "_loadout", "_camoId"];
 _this call FUNC(getLoadout);
