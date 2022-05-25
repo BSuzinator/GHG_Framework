@@ -18,3 +18,6 @@ PREP(getFactionLoadout);
 PREPMAIN(dumpLoadout);
 PREPMAIN(stealUniform);
 PREP(deleteScopes);
+PREP(anestheticInit);
+PREP(anestheticHandler);
+PREP(anestheticWoundHandler);

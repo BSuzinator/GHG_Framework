@@ -117,4 +117,15 @@ class CfgVehicles
     GHG_SIDE_CLASS(b)
     GHG_SIDE_CLASS(o)
     GHG_SIDE_CLASS(i)
+    
+    class Thing;
+    class ghg_anesthetic_dart : Thing
+    {
+        scope=1;
+        model = "x\ghg\addons\gear\models\dart\dart.p3d";
+        
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        hiddenSelectionsMaterials[] = {};
+    };
 };

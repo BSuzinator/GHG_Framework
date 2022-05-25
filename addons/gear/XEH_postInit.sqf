@@ -10,5 +10,6 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(resupplyModule);
 [] call FUNC(wreckInit);
 [] call FUNC(deleteScopes);
+[] call FUNC(anestheticInit);
 
 ["gearUp", FUNC(gearUp)] call CBA_fnc_addEventHandler;

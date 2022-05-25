@@ -20,13 +20,13 @@ if ( isNil QGVAR(rff_damage) && hasInterface ) then
     GVAR(rff_penalty_next) = 0;
 
     [QGVAR(rff), {
-        params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
+        params ["_unit", "_damage", "_shooter", "_ammo"];
 
-        if ( (!alive _unit) || {_instigator isNotEqualTo player} ) exitWith {}; // Sanity check
+        if ( (!alive _unit) || {_shooter isNotEqualTo player} ) exitWith {}; // Sanity check
         
         // Update stats
         GVAR(rff_damage) = GVAR(rff_damage) + _damage;
-        "ghg_rff" cutText [ format [ "Friendly Damage Dealt %1", GVAR(rff_damage) toFixed 2 ], "PLAIN", 0.001 ];
+        "ghg_rff" cutText [ format [ "Friendly Damage Dealt %1", GVAR(rff_damage) toFixed 2 ], "PLAIN" ];
         
         // Check that player is not already being penalized
         if ( diag_tickTime > GVAR(rff_penalty_next) ) then
@@ -55,37 +55,24 @@ params [
 
 if ( isNull _unit || {(side _unit) isEqualTo sideLogic} ) exitWith {}; // Make sure a valid unit is provided
 
-[ // Strip the ACE3 event handler and return our own
-    {((_this # 0) getVariable ["ace_medical_HandleDamageEHID", -1]) >= 0}, // Wait until ACE3 adds it's own event handler
+["ace_medical_woundReceived", {
+    params ["_unit", "_allDamages", "_shooter", "_ammo"];
+    
+    // Exit if this was NOT friendly fire
+    if ((_unit isEqualTo _shooter) || (side _unit != side _shooter) || (side _shooter isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _shooter))) exitWith {};
+    
+    private _totalDamage = 0;
+    
     {
-        params ["_unit"];
+        _x params ["_realDamage", "_hitPoint", "_damage"];
         
-        _unit removeAllEventHandlers "HandleDamage";
-        private _id = [_unit, "HandleDamage", {
-            params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
-            
-            // Check if friendly fire has occured
-            if !((_unit isEqualTo _instigator) || (side _unit != side _instigator) || (side _instigator isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _instigator))) then
-            {
-                [QGVAR(rff), _this, _instigator] call CBA_fnc_targetEvent; // Initiate RFF on offending client
-            };
-            
-            _this call ace_medical_fnc_handleDamage; // Passthrough to ACE3 (must be last)
-        }] call CBA_fnc_addBISEventHandler;
-        
-        _unit setVariable ["ace_medical_HandleDamageEHID", _id];
-        
-        diag_log [
-            "Added rff to unit",
-            _unit,
-            _id
-        ];
-    },
-    [_unit],
-    10,
-    {diag_log [
-        "Failed to add rff event handler to unit",
-        _this # 0,
-        (_this # 0) getVariable ["ace_medical_HandleDamageEHID", -1]
-    ]} // Error reporting
-] call CBA_fnc_waitUntilAndExecute;
+        _totalDamage = _totalDamage + _realDamage;
+    } forEach _allDamages;
+    
+    [QGVAR(rff), [
+        _unit,
+        _totalDamage,
+        _shooter,
+        _ammo
+    ], _shooter] call CBA_fnc_targetEvent; // Initiate RFF on offending client
+}] call CBA_fnc_addEventHandler;
