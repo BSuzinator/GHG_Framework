@@ -23,7 +23,16 @@ if ( isServer ) then
         if ! ( isNull _logic ) then
         {
             unassignCurator _logic;
-            _unit assignCurator _logic;
+            [ // Wait until the Zeus connection has been destroyed before reasigning it
+                {isNull (getAssignedCuratorUnit (_this # 1))},
+                {
+                    diag_log ["Reassigned curator logic to new unit", _this];
+                    (_this # 0) assignCurator (_this # 1);
+                },
+                [_unit, _logic],
+                10,
+                {diag_log ["Failed to reasign curator logic to new unit", _this];}
+            ] call CBA_fnc_waitUntilAndExecute;
         };
     }];
 
@@ -50,7 +59,7 @@ if ( !hasInterface ) exitWith {};
 if ( player isKindOf "VirtualCurator_F" ) then
 {
     // Starting pos for the camera
-    private _zeusPos = (getPosASL player) vectorAdd [0, 0, 20];
+    private _zeusPos = getPosASL player;
     // Prevent zeus slot from being fucked with
 	player allowDamage false;
     player setPosASL [0, 0, 1000]; // Allows zeus modules to talk with each other, while staying out of the combat zone
@@ -68,7 +77,7 @@ if ( player isKindOf "VirtualCurator_F" ) then
 			}
 			else
 			{
-                curatorCamera setPosASL _zeusPos; // Move the camera back to the start pos
+                curatorCamera setPosASL (_zeusPos  vectorAdd [0, 0, 20]); // Move the camera back to the start pos
 				_handle call CBA_fnc_removePerFrameHandler;
 			};
 		};
