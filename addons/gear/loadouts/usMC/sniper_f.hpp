@@ -28,7 +28,7 @@ class sniper_f : loadout_base
 	
     class Uniform : Uniform
     {
-        classname[] = {"rhs_uniform_FROG01_d", "rhsusf_lwh_helmet_marpatwd"};
+        classname[] = {"rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd"};
 		ACRE_PRC343 = 1;
     };
     
