@@ -30,6 +30,9 @@ dsmFiles = 0;
 //  123 = Auto-ready up after 123 seconds
 readyUpTimeout = -1;
 
+// Set to 1 to disable respawn, keep as 0 
+disableRespawn=0;
+
 //Set Player Factions
 //List of acceptable factions: 
 // bokoHaram

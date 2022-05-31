@@ -4,6 +4,7 @@
 	Author: Quantx
 ======================================*/
 if ! (isServer) exitWith {};
+if ( getNumber( missionConfigFile >> "CfgGHG" >> "disableRespawn" ) != 0 ) exitWith {};
 
 params ["_unit", "_optout"];
 
