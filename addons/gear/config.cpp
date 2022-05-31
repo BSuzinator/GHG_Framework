@@ -12,7 +12,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION; 
         // Required addons, used for setting load order.
         // When any of the addons is missing, pop-up warning will appear when launching the game.
-        requiredAddons[] = { "ghg_main", "rhs_c_weapons", "rhsusf_c_weapons", "rhsgref_c_weapons", "ace_medical_damage" };
+        requiredAddons[] = { "ghg_main", "rhs_c_weapons", "rhsusf_c_weapons", "rhsgref_c_weapons" };
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
         units[] = {};
         // List of weapons (CfgWeapons classes) contained in the addon.

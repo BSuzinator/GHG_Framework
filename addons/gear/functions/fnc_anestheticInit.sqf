@@ -30,11 +30,3 @@ GVAR(anestheticPeriod) = 60; // 1 minute
         }] call CBA_fnc_addEventHandler;
     };
 }, nil, ["B_UAV_AI", "O_UAV_AI", "UAV_AI_base_F"], true] call CBA_fnc_addClassEventHandler;
-
-// Do this manually, because ACE STILL DOESN'T SUPPORT THIS!
-// https://github.com/acemod/ACE3/blob/master/addons/medical_damage/functions/fnc_parseConfigForInjuries.sqf#L71
-[{"anesthetic" in ace_medical_damage_damageTypeDetails}, {
-    private _anes = ace_medical_damage_damageTypeDetails get "anesthetic";
-    _anes set [2, [FUNC(anestheticWoundHandler)]];
-    ace_medical_damage_damageTypeDetails set ["anesthetic", _anes];
-}] call CBA_fnc_waitUntilAndExecute;
