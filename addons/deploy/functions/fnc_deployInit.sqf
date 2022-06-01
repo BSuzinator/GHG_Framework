@@ -6,7 +6,14 @@
 ======================================*/
 if ((!hasInterface) || (getMarkerColor "deployZone" isEqualTo "")) exitWith {};
 
-private _deployType = getText ( missionConfigFile >> "CfgGHG" >> "deployType" );
+private _ghg = missionConfigFile >> "CfgGHG";
+
+private _deployType = getText( _ghg >> (switch (side player) do {
+    case west: {"bluDeployType"};
+    case east: {"opfDeployType"};
+    case resistance: {"indDeployType"};
+    default {"deployType"};
+}));
 
 if (_deployType isEqualTo "none") exitWith {};
 
@@ -14,9 +21,17 @@ if !((_deployType isEqualTo "LALO")
   || (_deployType isEqualTo "HALO")
   || (_deployType isEqualTo "SURFACE")
   || (_deployType isEqualTo "iHALO")
-  || (_deployType isEqualTo "iLALO")) exitWith { systemChat "deployType not defined in ghg_config.txt" };
+  || (_deployType isEqualTo "iLALO")
+  || (_deployType isEqualTo "iSURFACE")) exitWith { systemChat "deployType not defined in ghg_config.txt" };
 
 private _deployRange = getNumber ( missionConfigFile >> "CfgGHG" >> "deployRange" );
+
+private _deployRange = getText( _ghg >> (switch (side player) do {
+    case west: {"bluDeployRange"};
+    case east: {"opfDeployRange"};
+    case resistance: {"indDeployRange"};
+    default {"deployRange"};
+}));
 
 private _deployEventID = addMissionEventHandler ["MapSingleClick", FUNC(deploy)];
 
@@ -30,7 +45,7 @@ private _deployMapID = addMissionEventHandler ["Map", {
 
 GVAR(hasDeployed) = false;
 
-if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO")) then {
+if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO") || || (_deployType isEqualTo "iSURFACE")) then {
 	private _action = [
 		"deploy",
 		"Deploy Group",

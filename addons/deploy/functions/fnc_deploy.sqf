@@ -97,6 +97,21 @@ switch (_deployType) do {
 			} forEach units _grp1;
 		};
 	};
+	case "iSURFACE": {
+		[_player, _pos] spawn {	
+			params ["_player","_pos"];
+			_grp1 = group _player;
+			_unitCount = count units _grp1;
+			_increment = 360 / _unitCount;
+			_incCount = 0;
+			{
+				_incCount = _incCount + _increment;
+				_tpPos = _pos getPos [7, _incCount];
+				_x setpos [_tpPos select 0, _tpPos select 1, 1];
+				_x setDir (_incCount + 180);
+			} forEach units _grp1;
+		};
+	};
 };
 
 //Display notification for vehicle deployment to side and zeus
