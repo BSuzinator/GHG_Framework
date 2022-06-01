@@ -16,6 +16,7 @@ GHG_UNIT_CLASS(SIDE, ghg_plt_fac, "Platoon Forward Asset Control") \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_plt_doctor, "Platoon Doctor") \
 	attendant = 2; \
 }; \
+GHG_UNIT_CLASS(SIDE, ghg_plt_interp, "Platoon Interpreter") \
 \
 GHG_UNIT_CLASS(SIDE, ghg_squad_lead, "Squad Lead") \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_squad_medic, "Squad Medic") \
@@ -117,24 +118,4 @@ class CfgVehicles
     GHG_SIDE_CLASS(b)
     GHG_SIDE_CLASS(o)
     GHG_SIDE_CLASS(i)
-	
-	class FlagCarrier;
-	class ghg_Flag_GHG : FlagCarrier
-    {
-        scope=2;
-        author = "GHG Team";
-		displayName = "Flag (GHG)";
-        class EventHandlers
-        {
-            init="(_this select 0) setFlagTexture '\x\ghg\addons\main\ui\ghgFlag.paa'";
-        };
-    };
-	class Banner_01_base_F;
-	class ghg_Banner_GHG : Banner_01_base_F
-	{
-		scope=2;
-        author = "GHG Team";
-		displayName = "Banner (GHG)";
-		hiddenSelectionsTextures[] = {"\x\ghg\addons\main\ui\ghgFlag.paa"};
-	};
 };

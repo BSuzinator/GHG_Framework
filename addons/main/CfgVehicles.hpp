@@ -38,4 +38,24 @@ class CfgVehicles
 	class UK3CB_BAF_MAN_HX60_Base;
 	class UK3CB_BAF_MAN_HX60_Repair_Base : UK3CB_BAF_MAN_HX60_Base { transportRepair = 0 };
 	class UK3CB_BAF_MAN_HX60_Fuel_Base : UK3CB_BAF_MAN_HX60_Base { transportFuel = 0 };
+	
+	class FlagCarrier;
+	class ghg_Flag_GHG : FlagCarrier
+    {
+        scope=2;
+        author = "GHG Team";
+		displayName = "Flag (GHG)";
+        class EventHandlers
+        {
+            init="(_this select 0) setFlagTexture '\x\ghg\addons\main\ui\ghgFlag.paa'";
+        };
+    };
+	class Banner_01_base_F;
+	class ghg_Banner_GHG : Banner_01_base_F
+	{
+		scope=2;
+        author = "GHG Team";
+		displayName = "Banner (GHG)";
+		hiddenSelectionsTextures[] = {"\x\ghg\addons\main\ui\ghgFlag.paa"};
+	};
 };
