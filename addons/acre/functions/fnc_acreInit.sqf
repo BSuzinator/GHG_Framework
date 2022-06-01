@@ -57,3 +57,5 @@ enableRadio false;
 5 enableChannel [false, false];	//Direct
 6 enableChannel [false, false];	//System
 setCurrentChannel 1;			//Set To Side Channel
+
+GVAR(acreInitComplete) = true;
