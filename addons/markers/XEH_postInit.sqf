@@ -6,3 +6,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 ======================================*/
 
 [] call FUNC(markersInit);
+[] call FUNC(markersTrackablesInit);
