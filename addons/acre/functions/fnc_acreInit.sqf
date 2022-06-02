@@ -4,12 +4,6 @@
 	Sets long range radio channel names
 	Author: Quantx
 ======================================*/
-GVAR(radios) = [
-    "ACRE_PRC152",
-    "ACRE_PRC148",
-    "ACRE_PRC117F"
-];
-
 GVAR(labels) = [
     "COMMAND",
     "ARMOR 1",
@@ -27,12 +21,13 @@ GVAR(labels) = [
 		private _radio = _x;
 		{
 			private _name = _x;
+            private _label = _x; // Used for radios without a screen
 			private _channel = _forEachIndex + 1;
 			
-			[_radio, _preset, _channel, "label", _name] call acre_api_fnc_setPresetChannelField;
+			[_radio, _preset, _channel, _label, _name] call acre_api_fnc_setPresetChannelField;
 		} forEach GVAR(labels);
-	} forEach GVAR(radios);
-} forEach [ "default", "default2", "default3", "default4" ];
+    } forEach ["ACRE_PRC152", "ACRE_PRC148", "ACRE_PRC117F"];
+} forEach ["default", "default2", "default3", "default4"];
 
 //Adds all players to God Mode Group 1
 [allPlayers, 0] call acre_api_fnc_godModeModifyGroup;
@@ -58,4 +53,24 @@ enableRadio false;
 6 enableChannel [false, false];	//System
 setCurrentChannel 1;			//Set To Side Channel
 
-GVAR(acreInitComplete) = true;
+private _freqPreset = getNumber( _ghgCfg >> (switch (playerSide) do {
+    case west: {"bluFreq"};
+    case east: {"opfFreq"};
+    case resistance: {"indFreq"};
+	case civilian: {"civFreq"};
+    default {"civFreq"};
+}));
+
+if ( _freqPreset < 1 || _freqPreset > 4 ) then {
+    diag_log ["Invalid frequency preset, using default", playerSide, _freqPreset];
+    _freqPreset = 1;
+};
+
+private _presetName = "default";
+if ( _freqPreset > 1 ) then {
+    _presetName = _presetName + str _freqPreset;
+};
+
+{
+    [_x, _presetName] call acre_api_fnc_setPreset;
+} forEach ["ACRE_PRC343", "ACRE_PRC77", "ACRE_PRC117F", "ACRE_PRC152", "ACRE_PRC148", "ACRE_PRC77"];

@@ -8,6 +8,7 @@ class SIDE##_ghg_base : SIDE##_survivor_f { \
     scope = 0; \
     scopeCurator = 0; \
     faction = QUOTE(SIDE##_ghg); \
+    linkedItems[] = {"", "", ItemMap, ItemCompass, ItemWatch, "", ""}; \
 };
 
 #define GHG_SIDE_CLASS(SIDE) GHG_BASE_CLASS(SIDE) \

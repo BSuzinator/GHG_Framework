@@ -5,11 +5,39 @@
 	Author: BSuz
 ======================================*/
 //Check if system enabled
-private _useBabel = getNumber ( missionConfigFile >> "CfgGHG" >> "useBabel" );
-if (_useBabel isNotEqualTo 1) exitWith {diag_log "[GHG]: Babel not enabled"};
+if (getNumber(missionConfigFile >> "CfgGHG" >> "useBabel") == 0) exitWith {diag_log "[GHG]: Babel not enabled"};
+
+private _ghgCfg = missionConfigFile >> "CfgGHG";
+
+if ( isNil QGVAR(babelLangs) ) then // Only initialize this once
+{
+    // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+
+    GVAR(babelLangs) = [
+        ["en", "English"],
+        ["fr", "French" ],
+        ["el", "Greek"  ],
+        ["fa", "Farsi"  ],
+        ["ru", "Russian"],
+        ["es", "Spanish"],
+        ["zh", "Chinese"],
+        ["ar", "Arabic" ]
+    ];
+    
+    { _x call acre_api_fnc_babelAddLanguageType; } forEach GVAR(babelLangs);
+    
+    // Load spoken languages from config
+    GVAR(babelLangsSide) = createHashMap;
+    
+    GVAR(babelLangsSide) set [west, getArray(_ghgCfg >> "bluLanguages")];
+    GVAR(babelLangsSide) set [east, getArray(_ghgCfg >> "opfLanguages")];
+    GVAR(babelLangsSide) set [resistance, getArray(_ghgCfg >> "indLanguages")];
+    GVAR(babelLangsSide) set [civilian, getArray(_ghgCfg >> "civLanguages")];
+    GVAR(babelLangsSide) set [sideLogic, ["all"]]; //Zeus speaks all languages
+};
 
 //Get Type of Unit for interpreters
-params [
+params [ 
     ["_unit", player, [objNull]],
     ["_unitType", "", [""]]
 ];
@@ -17,108 +45,38 @@ if ( _unitType isEqualTo "" ) then {
     _unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
 };
 
-//Make sure player is loaded
-waitUntil{!isNull player};
+if ( isNull _unit ) exitWith { systemChat "No unit specified for babelInit" };
 
-//Add languages to use
-["en", "English"] call acre_api_fnc_babelAddLanguageType;
-["fr", "French"] call acre_api_fnc_babelAddLanguageType;
-["gr", "Greek"] call acre_api_fnc_babelAddLanguageType;
-["ir", "Iranian"] call acre_api_fnc_babelAddLanguageType;
-["ru", "Russian"] call acre_api_fnc_babelAddLanguageType;
-["sp", "Spanish"] call acre_api_fnc_babelAddLanguageType;
+private _side = side _unit;
+if ( _unit isEqualTo player ) then { _side = playerSide }; // Handles a weird edge case where "side _unit" is not valid
 
 //Switch spoken languages from config
 private _ghgCfg = missionConfigFile >> "CfgGHG";
-private _languages = getArray ( _ghgCfg >> (switch (side _unit) do {
-    case west: {"bluLanguages"};
-    case east: {"opfLanguages"};
-    case resistance: {"indLanguages"};
-	case civilian: {"civLanguages"};
-    default {""};
-}));
+private _langs = GVAR(babelLangsSide) getOrDefault [_side, []];
 
-//Zeus speaks all languages
-if ((side _unit) isEqualTo sideLogic) then {_languages = ["English","French","Greek","Iranian","Russian","Spanish"];};
+if (_unitType isEqualTo "ghg_plt_interp") then {
+    // Append additional languages to the ones spoken by the side
+    _langs append getArray(_ghgCfg >> "interpLanguages");
+};
 
-//Interpreters have special languages
-if (_unitType isEqualTo "ghg_plt_interp") then {_languages = getArray (_ghgCfg >> "interpLanguages");};
+private _sl = [];
 
+// Ensure that all languages are added in the order in which they appear in babelLangs
+if ( "all" in _langs ) then {
+    _sl = GVAR(babelLangs) apply {_x select 0};
+} else {
+    {
+        _x params ["_tag", "_name"];
+        if (_tag in _langs) then {_sl pushBack _tag};
+    } forEach GVAR(babelLangs);
+};
 
-
-//Convert config to IDs
-private _spokenKeys = [];
-{
-	_languageDisplayName = _x;
-	_languageKey = switch (_languageDisplayName) do {
-		case "English": {"en"};
-		case "French": {"fr"};
-		case "Greek": {"gr"};
-		case "Iranian": {"ir"};
-		case "Russian": {"ru"};
-		case "Spanish": {"sp"};
-	};
-	_spokenKeys pushBackUnique _languageKey;
-} forEach _languages;
+if ( (count _sl) == 0 ) then {
+    diag_log ["Unit speaks no languages!", _unit, _side];
+};
 
 //Set the spoken languages
-_spokenKeys call acre_api_fnc_babelSetSpokenLanguages;
+_sl call acre_api_fnc_babelSetSpokenLanguages;
 
 //Set first spoken language as currently speaking
-[(_spokenKeys select 0)] call acre_api_fnc_babelSetSpeakingLanguage;
-
-
-//Handle seperate radio frequencies per side
-waitUntil {GVAR(acreInitComplete)};
-if (getNumber ( missionConfigFile >> "CfgGHG" >> "useSideFreqs" ) isNotEqualTo 1) exitWith {diag_log "[GHG]: Side Freqs not configured."};
-
-private _freq = getNumber ( _ghgCfg >> (switch (side _unit) do {
-    case west: {"bluFreq"};
-    case east: {"opfFreq"};
-    case resistance: {"indFreq"};
-	case civilian: {"civFreq"};
-    default {"civFreq"};
-}));
-
-switch (_freq) do {
-	case 1: {
-		["ACRE_PRC343", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC117F", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC152", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC148", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default" ] call acre_api_fnc_setPreset;
-	};
-	case 2: {
-		["ACRE_PRC343", "default2" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default2" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC117F", "default2" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC152", "default2" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC148", "default2" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default2" ] call acre_api_fnc_setPreset;
-	};
-	case 3: {
-		["ACRE_PRC343", "default3" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default3" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC117F", "default3" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC152", "default3" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC148", "default3" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default3" ] call acre_api_fnc_setPreset;
-	};
-	case 4: {
-		["ACRE_PRC343", "default4" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default4" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC117F", "default4" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC152", "default4" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC148", "default4" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default4" ] call acre_api_fnc_setPreset;
-	};
-	default {
-		["ACRE_PRC343", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC117F", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC152", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC148", "default" ] call acre_api_fnc_setPreset;
-		["ACRE_PRC77", "default" ] call acre_api_fnc_setPreset;
-	};
-};
+[_sl select 0] call acre_api_fnc_babelSetSpeakingLanguage;

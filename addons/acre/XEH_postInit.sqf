@@ -6,8 +6,9 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 ======================================*/
 
 [] call FUNC(acreInit);
-[] spawn FUNC(acreBabelInit);
+[{!(isNull player)}, FUNC(acreBabelInit), []] call CBA_fnc_waitUntilAndExecute;
 [] call FUNC(radioJammerInit);
 [] call FUNC(spectrumDeviceInit);
 [] spawn FUNC(initPropRadios);
 [] call FUNC(radioJammerSpawnModule);
+

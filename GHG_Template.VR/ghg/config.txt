@@ -5,18 +5,29 @@
 
 //Babel Setup
 useBabel = 1;
-//Languages: English, French, Iranian, Russian, Spanish
-bluLanguages[] = {"English"};
-opfLanguages[] = {"Russian"};
-indLanguages[] = {"Spanish"};
-civLanguages[] = {"French"};
-interpLanguages[] = {"English","French","Iranian","Russian","Spanish"};
-//Side Specific Radio Frequencies
-useSideFreqs = 1;
-bluFreq = 1
-opfFreq = 2
-indFreq = 3
-civFreq = 4
+/* Supported languages:
+    en: English
+    fr: French
+    el: Greek
+    fa: Farsi (Spoken in Iran)
+    ru: Russian
+    es: Spanish
+    zh: Chinese
+    ar: Arabic
+    
+    all: Side (or interpreter) speaks all languages
+*/
+bluLanguages[] = {"en"};
+opfLanguages[] = {"ru"};
+indLanguages[] = {"es"};
+civLanguages[] = {"fr"};
+interpLanguages[] = {"all"};
+// Side Specific Radio Frequencies (must be 1, 2, 3, or 4)
+// Two sides with the same number can talk to each other over the radio
+bluFreq = 1;
+opfFreq = 2;
+indFreq = 3;
+civFreq = 4;
 
 //Custom Group Names for ORBAT
 //Must be the string of callsign: {"PLT","Alpha",etc.}

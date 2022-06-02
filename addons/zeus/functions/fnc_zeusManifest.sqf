@@ -37,16 +37,23 @@ if (isNull _unit) then { // We're teleporting to a random position or vehicle
 _pos set [2, 0];
 
 private _zeusClass = "C_Soldier_VR_F";
+private _side = civilian;
 
 if ! ( isNull _unit ) then { // _unit might still be objNull if no player was within _dist
-    private _ps = _unit getVariable [QGVARMAIN(unitSide), side _unit];
+    _side = _unit getVariable [QGVARMAIN(unitSide), side _unit];
     
-    _zeusClass = (switch (_ps) do {
+    _zeusClass = (switch (_side) do {
         case blufor: {"B_Soldier_VR_F"};
         case opfor: {"O_Soldier_VR_F"};
         case independent: {"I_Soldier_VR_F"};
         default {"C_Soldier_VR_F"};
     });
+};
+
+// Set spoken language to that of the side
+if (getNumber(missionConfigFile >> "CfgGHG" >> "useBabel") != 0) then {
+    private _langs = GVAR(babelLangsSide) getOrDefault [_side, []];
+    [_langs select 0] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 private _zpo = GVAR(zeusManifestGroup) createUnit [_zeusClass, _pos, [], 0, "NONE"];
