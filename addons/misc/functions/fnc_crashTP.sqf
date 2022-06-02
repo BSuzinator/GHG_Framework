@@ -18,6 +18,13 @@ waitUntil {GHG_SERVER_GROUPS_READY};
 
 private _crashMissionObjects = getArray (missionConfigFile >> "CfgGHG" >> "crashMissionObjects");
 if (_crashMissionObjects isEqualTo []) exitWith {diag_Log "[GHG]: crashTP no objects found."};
+
+{
+	private _obj = _x;
+	private _objIndex = _forEachIndex;
+	_crashMissionObjects set [_objIndex, call compile _obj];
+} forEach _crashMissionObjects;
+
 private _crashHelicopter = _crashMissionObjects select 0;
 _crashMissionObjects deleteAt (_crashMissionObjects find _crashHelicopter);
 private _crashMissionGroups = _crashMissionObjects;
