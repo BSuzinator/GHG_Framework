@@ -1,5 +1,6 @@
 PREP(addMinesToZeus);
 PREP(blackout);
+PREP(crashTP);
 PREP(dynamicGroups);
 PREP(ejectOnDeath);
 PREP(vehicleActions);
