@@ -18,7 +18,8 @@ if ( isNil QGVAR(rff_damage) && hasInterface ) then
     GVAR(rff_npda) = DAMAGE_PENALTY;
     GVAR(rff_penalty) = 15;
     GVAR(rff_penalty_next) = 0;
-
+	GVARMAIN(rffDisabled) = false;
+	
     [QGVAR(rff), {
         params ["_unit", "_damage", "_shooter", "_ammo"];
 
@@ -59,8 +60,9 @@ if ( isNull _unit || {(side _unit) isEqualTo sideLogic} ) exitWith {}; // Make s
     params ["_unit", "_allDamages", "_shooter", "_ammo"];
     
     // Exit if this was NOT friendly fire
-    if ((_unit isEqualTo _shooter) || (side _unit != side _shooter) || (side _shooter isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _shooter))) exitWith {};
-    
+	if ((_unit isEqualTo _shooter) || (side _unit != side _shooter) || (side _shooter isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _shooter))) exitWith {};
+	if (GVARMAIN(is_training) && (GVARMAIN(rffDisabled))) exitWith {};
+	
     private _totalDamage = 0;
     
     {
