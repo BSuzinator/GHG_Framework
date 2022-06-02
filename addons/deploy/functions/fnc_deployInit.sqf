@@ -45,7 +45,7 @@ private _deployMapID = addMissionEventHandler ["Map", {
 
 GVAR(hasDeployed) = false;
 
-if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO") || || (_deployType isEqualTo "iSURFACE")) then {
+if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO") || (_deployType isEqualTo "iSURFACE")) then {
 	private _action = [
 		"deploy",
 		"Deploy Group",
