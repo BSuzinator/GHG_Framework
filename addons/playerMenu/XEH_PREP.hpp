@@ -6,5 +6,6 @@ PREP(rearmVehicle);
 PREP(refuelVehicle);
 PREP(repairVehicle);
 PREP(spawnRadio);
+PREP(toggleRFF);
 PREP(unflipVehicle);
 PREP(vehicleSubmenu);
