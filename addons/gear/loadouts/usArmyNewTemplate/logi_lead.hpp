@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Logi Lead (usArmy)
 ======================================*/
-class logi_lead : squad_sl
+class logi_lead : squad_lead
 {
 
 };

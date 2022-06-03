@@ -13,7 +13,7 @@ class squad_mksm : squad_rifle
 		bipod = "rhsusf_acc_harris_bipod";
         
         class Scopes : Scopes
-        {4
+        {
             magnified = "rhsusf_acc_acog";
         };
     };

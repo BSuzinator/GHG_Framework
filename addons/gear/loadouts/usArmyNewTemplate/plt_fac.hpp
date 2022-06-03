@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for FAC (usArmy)
 ======================================*/
-class plt_fac : squad_sl
+class plt_fac : squad_lead
 {
     
     

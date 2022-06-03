@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for RCN Lead (macv)
 ======================================*/
-class rcn_lead : squad_sl
+class rcn_lead : squad_lead
 {
 	
 };

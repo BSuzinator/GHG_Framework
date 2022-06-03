@@ -1,4 +1,4 @@
-class macv
+class macvNewTemplate
 {
     camo[] = { "olive", "leopard" };
     
@@ -9,21 +9,22 @@ class macv
     
     // Should be 25
     #include "..\loadout_base.hpp"
-	#include "plt_lead.hpp"
-	#include "plt_fac.hpp"
-	#include "plt_doctor.hpp"
-	#include "plt_interp.hpp"
+	#include "loadout_base_macv.hpp"
 
-	#include "squad_sl.hpp"
-	#include "squad_sl.hpp"
+	#include "squad_rifle.hpp"
+	#include "squad_lead.hpp"
 	#include "squad_ar.hpp"
 	#include "squad_aar.hpp"
 	#include "squad_at.hpp"
 	#include "squad_at.hpp"
 	#include "squad_mksm.hpp"
-	#include "squad_rifle.hpp"
 	#include "squad_aa.hpp"
 	#include "squad_grenadier.hpp"
+
+	#include "plt_lead.hpp"
+	#include "plt_fac.hpp"
+	#include "plt_doctor.hpp"
+	#include "plt_interp.hpp"
 
 	#include "ews_lead.hpp"
 	#include "ews_comms.hpp"
@@ -58,24 +59,24 @@ class macv
 	#include "demo_defusal.hpp"
 	#include "demo_saboteur.hpp"
 
+	#include "lynx_crew.hpp"
 	#include "lynx_cmdr.hpp"
 	#include "lynx_driver.hpp"
-	#include "lynx_crew.hpp"
-
+	
+	#include "wolf_crew.hpp"
 	#include "wolf_cmdr.hpp"
 	#include "wolf_driver.hpp"
-	#include "wolf_crew.hpp"
 
-	#include "ravn_pilot.hpp"
 	#include "ravn_crew.hpp"
+	#include "ravn_pilot.hpp"
 
-	#include "flcn_pilot.hpp"
 	#include "flcn_crew.hpp"
+	#include "flcn_pilot.hpp"
 
 	#include "rptr_pilot.hpp"
 
-	#include "knfs_captain.hpp"
 	#include "knfs_crew.hpp"
+	#include "knfs_captain.hpp"
 	#include "knfs_driver.hpp"
 
     class Crates {

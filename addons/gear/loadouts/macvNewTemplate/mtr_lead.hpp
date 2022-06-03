@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Lead (macv)
 ======================================*/
-class mtr_lead : squad_sl
+class mtr_lead : squad_lead
 {
 
 };

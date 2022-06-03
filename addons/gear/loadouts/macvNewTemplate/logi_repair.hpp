@@ -16,6 +16,7 @@ class logi_repair : squad_rifle
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;
+		ACRE_PRC77 = 1;
     };
     
     headgear[] = { "vn_b_helmet_m1_05_01", "vn_b_helmet_m1_05_02" };

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MAT Lead (usArmy)
 ======================================*/
-class mat_lead : squad_sl
+class mat_lead : squad_lead
 {
 
 };

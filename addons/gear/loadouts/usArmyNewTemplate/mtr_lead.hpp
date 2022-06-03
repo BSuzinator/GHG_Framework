@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Lead (usArmy)
 ======================================*/
-class mtr_lead : squad_sl
+class mtr_lead : squad_lead
 {
 
 };

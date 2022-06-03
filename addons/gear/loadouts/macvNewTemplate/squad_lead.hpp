@@ -1,10 +1,8 @@
 /*======================================
 	Loadout for Squad Leads (macv)
 ======================================*/
-class squad_sl : squad_rifle
+class squad_lead : squad_rifle
 {
-    
-    
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "vn_m16_xm148";

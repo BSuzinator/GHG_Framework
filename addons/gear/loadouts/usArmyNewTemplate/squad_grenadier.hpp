@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Grenedier (usArmy)
 ======================================*/
-class squad_grenedier : squad_sl
+class squad_grenedier : squad_lead
 {
 	class Vest : Vest
     {
