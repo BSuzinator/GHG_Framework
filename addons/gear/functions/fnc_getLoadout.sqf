@@ -10,13 +10,23 @@ params [
     ["_unitType", "", [""]]
 ];
 
+private _unitSide = side _unit;
+private _ghg = missionConfigFile >> "CfgGHG";
+
+//Patch to make new units function until we fully switch over
+private _faction = getText( _ghg >> (switch (_unitSide) do {
+    case west: {"bluFaction"};
+    case east: {"opfFaction"};
+    case resistance: {"indFaction"};
+    default {""};
+}));
+
 if ( _unitType isEqualTo "" ) then {
     _unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
+	if ("NewTemplate" in _faction) then {_unitType = [toLower typeOf _unit, 6] call BIS_fnc_trimString;};
 };
 
-private _unitSide = side _unit;
 
-private _ghg = missionConfigFile >> "CfgGHG";
 
 private _camo = getText( _ghg >> (switch (_unitSide) do {
     case west: {"bluCamo"};
