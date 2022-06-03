@@ -14,7 +14,7 @@ if (getNumber(missionConfigFile >> "CfgGHG" >> "isCrashMission") isNotEqualTo 1)
 //Only Run on Server
 if !(isServer) exitWith {diag_Log "[GHG]: crashTP only runs on server"};
 
-waitUntil {GHG_SERVER_GROUPS_READY};
+waitUntil {( ghg_safemode_ready_blu && ghg_safemode_ready_opf && ghg_safemode_ready_ind )};
 
 private _crashMissionObjects = getArray (missionConfigFile >> "CfgGHG" >> "crashMissionObjects");
 if (_crashMissionObjects isEqualTo []) exitWith {diag_Log "[GHG]: crashTP no objects found."};
@@ -91,9 +91,13 @@ private _sqdPos = getPos _crashHelicopter;
 	private _increment = 360 / _unitCount;
 	private _incCount = 0;
 	{
+		_x moveInAny _crashHelicopter;
+		doGetOut _x;
+		/*
 		_incCount = _incCount + _increment;
 		private _tpPos = _sqdPos getPos [(random [7,10,13]), _incCount];
 		_x setpos [_tpPos select 0, _tpPos select 1, 1];
 		_x setDir (random[0,180,360]);
+		*/
 	} forEach units _grp1;
 } forEach _crashMissionGroups;
