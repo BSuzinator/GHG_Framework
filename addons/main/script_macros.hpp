@@ -3,6 +3,7 @@
 
 #undef PREP
 #undef PREPMAIN
+#undef DISABLE_COMPILE_CACHE
 
 #include "\x\ghg\addons\main\script_cache.hpp"
 
