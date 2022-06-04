@@ -57,6 +57,11 @@ opfTrackables[] = {};
 indTrackables[] = {};
 civTrackables[] = {};
 
+//Crash Mission Setup
+isCrashMission = 0;
+//Mission Objects to TP, Helicopter must be first!
+crashMissionObjects[] = {phantom,grp_thunder,grp_phantom};
+
 // How long (in seconds) footsteps should persist for
 footstep_timeout = 0;
 
