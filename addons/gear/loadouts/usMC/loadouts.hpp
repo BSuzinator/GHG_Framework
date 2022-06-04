@@ -33,6 +33,13 @@ class usMC
     #include "support_mort_f.hpp"
     
     class Crates {
+		#include "crates\squad.hpp"
+		#include "crates\logi.hpp"
+		#include "crates\mat.hpp"
+		#include "crates\mmg.hpp"
+		#include "crates\mtr.hpp"
+		#include "crates\rcn.hpp"
         #include "..\common_crates\crates.hpp"
+		#include "..\common_crates\us_statics.hpp"
     };
 };
