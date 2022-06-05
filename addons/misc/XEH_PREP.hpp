@@ -19,3 +19,4 @@ PREP(footsteps);
 PREPMAIN(trackFootsteps);
 PREP(treatmentNotify);
 PREP(registerJukeboxTracks);
+PREPMAIN(setPosAGLS);

@@ -15,16 +15,6 @@ if ( GVAR(optout_timer_eh) >= 0 ) then
 // Force respawn timer to disappear (This shouldn't be my problem but it is)
 if ! ( isNull (uiNamespace getVariable ["RscRespawnCounter", displayNull]) ) then { titleRsc ["Default", "PLAIN"] };
 
-private _setPosAGLS = {
-	params ["_obj", "_pos", "_offset"];
-	_offset = _pos select 2;
-	if (isNil "_offset") then {_offset = 0};
-	_pos set [2, worldSize]; 
-	_obj setPosASL _pos;
-	_pos set [2, vectorMagnitude (_pos vectorDiff getPosVisual _obj) + _offset];
-	_obj setPosASL _pos;
-};
-
 private _respawnPos = markerPos (switch (side _unit) do {
     case west: {"respawn_west"};
     case east: {"respawn_east"};
@@ -46,4 +36,4 @@ if (GVARMAIN(is_training)) then
 _unit setVariable [QGVAR(last_respawn_time), time, true];
 _unit setVariable [QGVARMAIN(unitSide), playerSide, true];
 
-[_unit, _respawnPos] call _setPosAGLS;
+[_unit, _respawnPos] call FUNCMAIN(setPosAGLS);
