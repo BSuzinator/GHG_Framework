@@ -6,8 +6,6 @@
 ======================================*/
 params ["_strip"];
 
-if (isSimpleObject _strip) exitWith {}; // Do nothing if this is just the placement guide
-
 _strip setDamage 1;
 
 [{ // Wait until the spike strip despawns or a vehicle is in range
