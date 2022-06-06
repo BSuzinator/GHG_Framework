@@ -19,3 +19,6 @@ PREP(footsteps);
 PREPMAIN(trackFootsteps);
 PREP(treatmentNotify);
 PREP(registerJukeboxTracks);
+PREP(spikeStripEH);
+PREP(spikeStripDeploy);
+PREP(spikeStripInit);
