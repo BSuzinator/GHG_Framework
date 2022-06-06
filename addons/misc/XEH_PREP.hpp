@@ -22,3 +22,4 @@ PREP(registerJukeboxTracks);
 PREP(spikeStripEH);
 PREP(spikeStripDeploy);
 PREP(spikeStripInit);
+PREPMAIN(setPosAGLS);

@@ -34,8 +34,6 @@ if (isNull _unit) then { // We're teleporting to a random position or vehicle
     _pos = getPosASL _unit;
 };
 
-_pos set [2, 0];
-
 private _zeusClass = "C_Soldier_VR_F";
 private _side = civilian;
 
@@ -65,9 +63,14 @@ _zpo enableStamina false;
 _zpo enableFatigue false;
 _zpo setCaptive true; // All AI will ignore zeus
 
+_zpo linkItem "ItemMap";
+_zpo linkItem "ItemCompass";
+
 // Teleport the zeus player object into a vehicle if one was selected
 if (_vehicle isEqualType objNull && {_vehicle isKindOf "AllVehicles"} && {!(_vehicle isKindOf "CAManBase")}) then {
     [[_zpo], _vehicle] call zen_common_fnc_teleportIntoVehicle;
+} else {
+    _zpo setPosASL _pos;
 };
 
 private _jipID = ["setName", [_zpo, "Zeus"], "ghg_zeus_manifest_" + netId _zpo] call CBA_fnc_globalEventJIP;
