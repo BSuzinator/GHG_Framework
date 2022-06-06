@@ -5,7 +5,6 @@
 	Author: BSuz
 ======================================*/
 params ["_target", "_player", "_actionParams"];
-private _strip = _target;
 
 private _result = [_player, "GHG_spikeStripItem"] call CBA_fnc_addItem;
 

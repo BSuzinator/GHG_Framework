@@ -4,14 +4,12 @@
 	Event Handler for spike strips
 	Author: BSuz
 ======================================*/
-params ["_object1", "_object2", "_selection1", "_selection2", "_force"];
-private _spikeStrip = _object1;
-private _vehicle = _object2;
+params ["_spikeStrip", "_vehicle", "_spikeStripSelection1", "_vehicleSelection", "_force"];
 
-_hits =[]; 
-_points = getAllHitPointsDamage _vehicle; 
+private _hits = []; 
+private _points = getAllHitPointsDamage _vehicle; 
 {_hits pushBack [_points select 0 select _foreachindex,_vehicle selectionPosition (_points select 1 select _foreachindex)]} forEach (_points select 0); 
-_hitWheels = _hits select {['wheel',(_x select 0)] call bis_fnc_inString}; 
+private _hitWheels = _hits select {['wheel',(_x select 0)] call bis_fnc_inString}; 
 {
 	[_vehicle,[_hitWheels select _foreachindex select 0,1]] remoteExec ['setHitPointDamage',_vehicle];
 } forEach _hitWheels;
