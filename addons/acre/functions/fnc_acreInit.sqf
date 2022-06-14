@@ -21,10 +21,9 @@ GVAR(labels) = [
 		private _radio = _x;
 		{
 			private _name = _x;
-            private _label = _x; // Used for radios without a screen
 			private _channel = _forEachIndex + 1;
 			
-			[_radio, _preset, _channel, _label, _name] call acre_api_fnc_setPresetChannelField;
+			[_radio, _preset, _channel, "label", _name] call acre_api_fnc_setPresetChannelField;
 		} forEach GVAR(labels);
     } forEach ["ACRE_PRC152", "ACRE_PRC148", "ACRE_PRC117F"];
 } forEach ["default", "default2", "default3", "default4"];
