@@ -5,7 +5,7 @@ class demo_saboteur : squad_rifle
 {
 	class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
+        classname = "rhsusf_spc_rifleman";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -14,7 +14,7 @@ class demo_saboteur : squad_rifle
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
         APERSMine_Range_Mag = 2;
         rhs_mine_M3_tripwire_mag = 1;

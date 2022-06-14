@@ -7,7 +7,7 @@ class squad_lead : squad_rifle
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
+        classname = "rhs_weap_m16a4_carryhandle_M203";
         grenade = "rhs_mag_M441_HE";
 
         class Scopes : Scopes
@@ -18,7 +18,7 @@ class squad_lead : squad_rifle
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
+        classname = "rhsusf_spc_squadleader";
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
 		ACRE_PRC152 = 1;
@@ -26,7 +26,7 @@ class squad_lead : squad_rifle
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
+        classname = "rhsusf_falconii_coy";
         // List of items
         rhs_mag_M441_HE = 10;
         rhs_mag_M585_white = 5;
@@ -42,5 +42,5 @@ class squad_lead : squad_rifle
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_helmet_headset_ucp", "rhsusf_ach_helmet_headset_ucp" };
+    headgear[] = { "rhsusf_lwh_helmet_marpatd_headset", "rhsusf_lwh_helmet_marpatwd_headset" };
 };

@@ -16,7 +16,7 @@ class plt_lead : squad_rifle
     
     class Vest : Vest
     {
-		classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
+		classname = "rhsusf_spc_teamleader";
         // List of items
         ACRE_PRC152 = 1;
 		ACE_MapTools = 1;
@@ -28,5 +28,5 @@ class plt_lead : squad_rifle
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_helmet_headset_ucp", "rhsusf_ach_helmet_headset_ucp" };
+    headgear[] = { "rhsusf_lwh_helmet_marpatd_headset", "rhsusf_lwh_helmet_marpatwd_headset" };
 };

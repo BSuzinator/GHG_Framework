@@ -7,7 +7,7 @@ class mmg_ammo : squad_rifle
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;

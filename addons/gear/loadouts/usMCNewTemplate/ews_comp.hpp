@@ -13,6 +13,6 @@ class ews_comp : squad_rifle
     };
 	class Backpack : Backpack
     {
-        classname[] = { "GHG_RuggedNova_khk", "GHG_RuggedNova_khk", "GHG_RuggedNova_khk", "GHG_RuggedNova_cbr", "GHG_RuggedNova_cbr" };
+        classname = "GHG_RuggedNova_cbr";
     };
 };

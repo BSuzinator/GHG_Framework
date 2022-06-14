@@ -18,16 +18,16 @@ class mmg_gunner : squad_rifle
 	
 	class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ucp_SAW", "rhsusf_iotv_ucp_SAW" };
+        classname = "rhsusf_spc_mg";
         // List of items
-		rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+		rhs_mag_30Rnd_556x45_M855_Stanag = 0;
 		rhsusf_100Rnd_762x51 = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
         rhsusf_100Rnd_762x51 = 3;
     };

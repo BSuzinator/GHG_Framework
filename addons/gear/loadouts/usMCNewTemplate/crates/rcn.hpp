@@ -6,7 +6,7 @@ class ghg_crate_usMC_rcn : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 8;
+        rhs_mag_30Rnd_556x45_M855_Stanag = 8;
 		rhsusf_5Rnd_300winmag_xm2010 = 10;
 		rhsusf_mag_17Rnd_9x19_FMJ = 3;
         rhs_mag_m67 = 3;

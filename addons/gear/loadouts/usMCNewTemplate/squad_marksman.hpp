@@ -20,18 +20,18 @@ class squad_marksman : squad_rifle
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
+        classname[] = { "rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
+        classname = "rhsusf_spc_rifleman";
         // List of items
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+        rhs_mag_30Rnd_556x45_M855_Stanag = 0;
         rhsusf_20Rnd_762x51_m80_Mag = 5;
     };
     
-    headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
+    headgear[] = { "rhsusf_lwh_helmet_marpatd", "rhsusf_lwh_helmet_marpatwd" };
     facewear = "rhsusf_oakley_goggles_clr";
 };

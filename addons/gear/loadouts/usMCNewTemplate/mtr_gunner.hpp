@@ -13,7 +13,7 @@ class mtr_gunner : squad_rifle
 	class Vest : Vest
     {
         // List of items
-		rhs_mag_30Rnd_556x45_M855A1_Stanag = 6;
+		rhs_mag_30Rnd_556x45_M855_Stanag = 6;
 		ACE_EntrenchingTool = 0;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
@@ -22,7 +22,7 @@ class mtr_gunner : squad_rifle
 	
 	class Backpack : Backpack
     {
-        classname[] = { "B_Carryall_oli", "B_Carryall_mcamo", "B_Carryall_mcamo", "B_Carryall_cbr", "B_Carryall_cbr" };
+        classname = "B_Carryall_cbr";
         // List of items
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;

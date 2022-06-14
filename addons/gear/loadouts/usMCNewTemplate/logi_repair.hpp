@@ -7,7 +7,7 @@ class logi_repair : squad_rifle
 	
 	class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ucp_Repair", "rhsusf_iotv_ucp_Repair" };
+        classname = "rhsusf_spc_patchless_radio";
         // List of items
 		ACE_microDAGR = 1;
 		ACRE_PRC152 = 1;
@@ -15,7 +15,7 @@ class logi_repair : squad_rifle
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;

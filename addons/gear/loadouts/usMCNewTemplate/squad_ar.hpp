@@ -14,9 +14,9 @@ class squad_ar : squad_rifle
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ucp_SAW", "rhsusf_iotv_ucp_SAW" };
+        classname = "rhsusf_spc_mg";
         // Inherited item overrides
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+        rhs_mag_30Rnd_556x45_M855_Stanag = 0;
         SmokeShell = 1;
         rhs_mag_m67 = 1;
         // List of items
@@ -25,7 +25,7 @@ class squad_ar : squad_rifle
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ocp", "rhsusf_assault_eagleaiii_ucp", "rhsusf_assault_eagleaiii_ucp" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
         rhsusf_100Rnd_556x45_soft_pouch = 2;
     };

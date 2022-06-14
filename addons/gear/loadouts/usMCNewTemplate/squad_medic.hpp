@@ -7,7 +7,7 @@ class squad_medic : squad_rifle
 
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ucp_Medic", "rhsusf_iotv_ucp_Medic" };
+        classname = "rhsusf_spc_corpsman";
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
         rhs_mag_m67 = 1;
@@ -17,7 +17,7 @@ class squad_medic : squad_rifle
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ucp_medic", "rhsusf_assault_eagleaiii_ucp_medic" };
+        classname = "rhsusf_assault_eagleaiii_coy_medic";
         // List of items
         ACE_elasticBandage = 32;
 		ACE_packingBandage = 32;

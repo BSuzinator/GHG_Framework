@@ -5,7 +5,7 @@ class lynx_cmdr : lynx_crew
 {
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
+        classname = "rhsusf_falconii_coy";
         // List of items
         ToolKit = 1;
     };
