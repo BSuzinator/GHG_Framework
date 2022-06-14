@@ -1,6 +1,6 @@
 class usMCNewTemplate
 {
-    camo[] = { "erdl", "ocp", "oefcp", "ucp", "ucpd" };
+    camo[] = { "mpD", "mpWD" };
     
     class Magazines
     {
