@@ -1,6 +1,6 @@
-class usArmyNewTemplate
+class bafNewTemplate
 {
-    camo[] = { "erdl", "ocp", "oefcp", "ucp", "ucpd" };
+    camo[] = { "mtp", "arctic", "tropical", "woodland", "desert" };
     
     class Magazines
     {

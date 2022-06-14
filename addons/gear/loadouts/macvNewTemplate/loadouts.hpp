@@ -13,11 +13,12 @@ class macvNewTemplate
 
 	#include "squad_rifle.hpp"
 	#include "squad_lead.hpp"
+	#include "squad_medic.hpp"
 	#include "squad_ar.hpp"
 	#include "squad_aar.hpp"
 	#include "squad_at.hpp"
 	#include "squad_at.hpp"
-	#include "squad_mksm.hpp"
+	#include "squad_marksman.hpp"
 	#include "squad_aa.hpp"
 	#include "squad_grenadier.hpp"
 
