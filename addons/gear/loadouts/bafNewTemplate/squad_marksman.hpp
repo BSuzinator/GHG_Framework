@@ -20,7 +20,6 @@ class squad_mksm : squad_rifle
     
     class Vest : Vest
     {
-        classname[] = { "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM2" };
         // List of items
         UK3CB_BAF_556_30Rnd = 0;
         rhsusf_20Rnd_762x51_m80_Mag = 5;

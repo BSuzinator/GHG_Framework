@@ -18,15 +18,8 @@ class squad_marksman : squad_rifle
         };
     };
     
-    class Uniform : Uniform
-    {
-        classname[] = { "rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd" };
-		ACRE_PRC343 = 1;
-    };
-    
     class Vest : Vest
     {
-        classname = "rhsusf_spc_rifleman";
         // List of items
         rhs_mag_30Rnd_556x45_M855_Stanag = 0;
         rhsusf_20Rnd_762x51_m80_Mag = 5;
