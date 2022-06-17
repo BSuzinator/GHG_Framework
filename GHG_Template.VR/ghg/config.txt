@@ -89,9 +89,9 @@ disableRespawn=0;
 // usArmy
 // usArmySF
 // usMC
-bluFaction = "usArmy";
-opfFaction = "usMC";
-indFaction = "russian";
+bluFaction = "usArmyNewTemplate";
+opfFaction = "usMCNewTemplate";
+indFaction = "macvNewTemplate";
 
 //Set Player Camo Pattern
 //List of acceptable Camos:
