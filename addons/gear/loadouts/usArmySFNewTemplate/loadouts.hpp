@@ -30,13 +30,13 @@ class usArmySFNewTemplate
 	#include "ews_comms.hpp"
 	#include "ews_comp.hpp"
 
-	#include "maa_lead.hpp"
-	#include "maa_gunner.hpp"
-	#include "maa_ammo.hpp"
-
 	#include "mat_lead.hpp"
 	#include "mat_gunner.hpp"
 	#include "mat_ammo.hpp"
+	
+	#include "maa_lead.hpp"
+	#include "maa_gunner.hpp"
+	#include "maa_ammo.hpp"
 
 	#include "mmg_lead.hpp"
 	#include "mmg_gunner.hpp"
