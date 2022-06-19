@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for EWS Teletype (macv)
 ======================================*/
-class ews_comms : ews_comp
+class ews_comms : squad_rifle
 {
     
 	class Backpack : Backpack

@@ -92,7 +92,6 @@ private _sqdPos = getPos _crashHelicopter;
 	private _incCount = 0;
 	{
 		_x moveInAny _crashHelicopter;
-		doGetOut _x;
 		/*
 		_incCount = _incCount + _increment;
 		private _tpPos = _sqdPos getPos [(random [7,10,13]), _incCount];
@@ -100,6 +99,8 @@ private _sqdPos = getPos _crashHelicopter;
 		_x setDir (random[0,180,360]);
 		*/
 	} forEach units _grp1;
+	sleep 1;
+	{doGetOut _x;} forEach units _grp1;
 } forEach _crashMissionGroups;
 
 

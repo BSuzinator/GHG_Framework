@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Marksman (macv)
 ======================================*/
-class squad_mksm : squad_rifle
+class squad_marksman : squad_rifle
 {
     
     

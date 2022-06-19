@@ -16,7 +16,6 @@ class bafNewTemplate
 	#include "squad_ar.hpp"
 	#include "squad_aar.hpp"
 	#include "squad_at.hpp"
-	#include "squad_at.hpp"
 	#include "squad_marksman.hpp"
 	#include "squad_aa.hpp"
 	#include "squad_grenadier.hpp"
@@ -30,13 +29,13 @@ class bafNewTemplate
 	#include "ews_comms.hpp"
 	#include "ews_comp.hpp"
 
-	#include "maa_lead.hpp"
-	#include "maa_gunner.hpp"
-	#include "maa_ammo.hpp"
-
 	#include "mat_lead.hpp"
 	#include "mat_gunner.hpp"
 	#include "mat_ammo.hpp"
+
+	#include "maa_lead.hpp"
+	#include "maa_gunner.hpp"
+	#include "maa_ammo.hpp"
 
 	#include "mmg_lead.hpp"
 	#include "mmg_gunner.hpp"
@@ -80,6 +79,7 @@ class bafNewTemplate
 	#include "knfs_driver.hpp"
 
     class Crates {
+		#include "..\common_crates\crates.hpp"
 		#include "crates\squad.hpp"
 		#include "crates\logi.hpp"
 		#include "crates\maa.hpp"
@@ -87,7 +87,6 @@ class bafNewTemplate
 		#include "crates\mmg.hpp"
 		#include "crates\mtr.hpp"
 		#include "crates\rcn.hpp"
-        #include "..\common_crates\crates.hpp"
 		#include "..\common_crates\us_statics.hpp"
     };
 };
