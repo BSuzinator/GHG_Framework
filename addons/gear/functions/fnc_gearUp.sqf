@@ -8,10 +8,12 @@ if ( !hasInterface ) exitWith {};
 
 params [
     ["_unit", player, [objNull]],
-    ["_unitType", typeOf player, [""]]
+    ["_unitType", "", [""]]
 ];
 
 if ( isNull _unit ) exitWith { systemChat "No unit specified for gearUp" };
+if ( _unitType == "" ) then { _unitType = typeOf _unit };
+
 // Handles a weird case where Zeus may not be side logic
 if ( (side _unit) isEqualTo sideLogic || { (_unit isEqualTo player) && (playerSide isEqualTo sideLogic) } ) exitWith {};
 
