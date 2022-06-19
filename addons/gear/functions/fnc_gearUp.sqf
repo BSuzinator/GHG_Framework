@@ -8,7 +8,7 @@ if ( !hasInterface ) exitWith {};
 
 params [
     ["_unit", player, [objNull]],
-    ["_unitType", "", [""]]
+    ["_unitType", typeOf player, [""]]
 ];
 
 if ( isNull _unit ) exitWith { systemChat "No unit specified for gearUp" };
@@ -20,6 +20,7 @@ diag_log ["Gear UP, unit side is: ", _unit, side _unit];
 // This is why 'private' is important!
 private ["_factionLoadout", "_loadout", "_camoId"];
 _this call FUNC(getLoadout);
+
 
 if ( isNull _loadout ) exitWith {};
 
@@ -121,6 +122,6 @@ private _unitLoadout = [
 _unit setUnitLoadout [_unitLoadout, true];
 
 [_unit, _loadout, _camoId] call FUNC(scopeChoice);
-
+[_unit,_unitType] call FUNC(assignTraits);
 //Set GHG patch
 [_unit, "GHG"] call BIS_fnc_setUnitInsignia;

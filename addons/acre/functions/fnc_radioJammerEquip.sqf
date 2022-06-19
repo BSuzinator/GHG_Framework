@@ -129,5 +129,5 @@ private _conditionDisable = {params ["_tswitch", "_player", "_actionParams"];_ac
 private _actionDisable = ["jammerDisable","Disable","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statementDisable,_conditionDisable,{},[_jammer], "controlling_handle", 100] call ace_interact_menu_fnc_createAction;
 private _actionEnable = ["jammerEnable","Enable","\a3\ui_f\data\gui\rsc\rscdisplayarsenal\radio_ca.paa",_statementEnable,_conditionEnable,{},[_jammer], "controlling_handle", 100] call ace_interact_menu_fnc_createAction;
 
-[_tswitch, 0, ["ACE_MainActions"], _actionDisable] remoteExec["ace_interact_menu_fnc_addActionToObject",2];
-[_tswitch, 0, ["ACE_MainActions"], _actionEnable] remoteExec["ace_interact_menu_fnc_addActionToObject",2];
+[_tswitch, 0, ["ACE_MainActions"], _actionDisable] remoteExec["ace_interact_menu_fnc_addActionToObject",0];
+[_tswitch, 0, ["ACE_MainActions"], _actionEnable] remoteExec["ace_interact_menu_fnc_addActionToObject",0];

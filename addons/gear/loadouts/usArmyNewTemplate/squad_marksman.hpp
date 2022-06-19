@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Marksman (usArmy)
 ======================================*/
-class squad_mksm : squad_rifle
+class squad_marksman : squad_rifle
 {
     
     
@@ -18,15 +18,8 @@ class squad_mksm : squad_rifle
         };
     };
     
-    class Uniform : Uniform
-    {
-        classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
-		ACRE_PRC343 = 1;
-    };
-    
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
         // List of items
         rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
         rhsusf_20Rnd_762x51_m80_Mag = 5;

@@ -1,5 +1,6 @@
 PREP(aiGear);
 PREP(aiGearModule);
+PREP(assignTraits);
 PREP(gearUp);
 PREP(scopeChoice);
 PREP(resupplyActions);

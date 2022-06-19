@@ -101,3 +101,6 @@ private _sqdPos = getPos _crashHelicopter;
 		*/
 	} forEach units _grp1;
 } forEach _crashMissionGroups;
+
+
+[_crashMissionGroups, "crashTaskSurvive", ["Survive","Survive.",""], objNull, "ASSIGNED", 999, true, "run", false] call BIS_fnc_taskCreate;

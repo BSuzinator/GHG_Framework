@@ -34,7 +34,9 @@ private _sideFlag = civilian;
 			_groupSTR = format ["<br/><font size='18' face='TahomaB'>%1</font><br/>",_groupID];
 			{
 				_unit = _x;
-				_unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
+				_titleSTR = getText (configFile >> "CfgVehicles" >> (typeOf _unit) >> "displayName");
+				
+/* 				_unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
 				_titleSTR = switch _unitType do {
 					case "soldier_f" : {"Rifleman"};
 					case "officer_f" : {"Platoon Lead"};
@@ -62,7 +64,7 @@ private _sideFlag = civilian;
 					case "helicrew_f";
 					case "crew_f" : {_return = "";if (_unit isEqualTo leader group _unit ) then {_return = "Commander"} else {_return = "Crew"};_return};
 					default {"Extra Body"};
-				};
+				}; */
 				_unitSTR = format ["    %1: %2<br/>",_titleSTR,name _unit];
 				_groupSTR = _groupSTR + _unitSTR;
 			} forEach _groupMembers;
