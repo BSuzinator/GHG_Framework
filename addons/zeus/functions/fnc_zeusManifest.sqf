@@ -49,8 +49,8 @@ if ! ( isNull _unit ) then { // _unit might still be objNull if no player was wi
 };
 
 // Set spoken language to that of the side
-if (getNumber(missionConfigFile >> "CfgGHG" >> "useBabel") != 0) then {
-    private _langs = GVAR(babelLangsSide) getOrDefault [_side, []];
+if !(isNil QEGVAR(acre,babelLangsSide)) then {
+    private _langs = EGVAR(acre,babelLangsSide) getOrDefault [_side, []];
     [_langs select 0] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 

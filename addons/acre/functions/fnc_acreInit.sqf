@@ -52,6 +52,8 @@ enableRadio false;
 6 enableChannel [false, false];	//System
 setCurrentChannel 1;			//Set To Side Channel
 
+private _ghgCfg = missionConfigFile >> "CfgGHG";
+
 private _freqPreset = getNumber( _ghgCfg >> (switch (playerSide) do {
     case west: {"bluFreq"};
     case east: {"opfFreq"};
