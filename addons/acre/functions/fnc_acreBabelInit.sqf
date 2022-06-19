@@ -5,9 +5,8 @@
 	Author: BSuz
 ======================================*/
 //Check if system enabled
-if (getNumber(missionConfigFile >> "CfgGHG" >> "useBabel") == 0) exitWith {diag_log "[GHG]: Babel not enabled"};
-
 private _ghgCfg = missionConfigFile >> "CfgGHG";
+if (getNumber(_ghgCfg >> "useBabel") == 0) exitWith {diag_log "[GHG]: Babel not enabled"};
 
 if ( isNil QGVAR(babelLangs) ) then // Only initialize this once
 {
