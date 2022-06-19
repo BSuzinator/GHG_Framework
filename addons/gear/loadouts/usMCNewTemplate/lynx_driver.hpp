@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Lynx Driver (usMC)
 ======================================*/
-class lynx_cmdr : lynx_crew
+class lynx_driver : lynx_crew
 {
 	class Backpack : Backpack
     {

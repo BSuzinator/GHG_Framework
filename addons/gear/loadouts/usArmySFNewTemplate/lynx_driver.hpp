@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Lynx Driver (usArmySF)
 ======================================*/
-class lynx_cmdr : lynx_crew
+class lynx_driver : lynx_crew
 {
 	class Backpack : Backpack
     {
