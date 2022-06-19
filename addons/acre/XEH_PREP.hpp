@@ -11,3 +11,4 @@ PREP(spectrumDeviceInit);
 PREP(spectrumDeviceOverride);
 PREP(spectrumDevice);
 PREP(initPropRadios);
+PREP(canUseJukebox);

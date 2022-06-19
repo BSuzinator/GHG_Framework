@@ -65,4 +65,18 @@ class CfgWeapons
             "single_far_optics1"
         };
     };
+    
+    class vn_rifle762;
+    class vn_m14 : vn_rifle762 {
+        modes[] = {
+            "Single",
+//            "FullAuto",
+            "AICQB",
+            "AIClose",
+            "AIMedium",
+            "AIFar",
+            "AIOpticmode1",
+            "AIOpticmode2"
+        };
+    };
 };

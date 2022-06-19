@@ -49,6 +49,19 @@ class CfgVehicles
 			delete Rack_2;
         };
 	};
+    
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ACRE_Interact {
+                class Jukebox {
+                    displayName = "Jukebox";
+                    condition = QUOTE(_this call FUNC(canUseJukebox));
+                    statement = "closeDialog 2; createDialog 'vn_displayvehiclemusic';";
+                };
+            };
+        };
+    };
 	
 	class vn_object_b_base_02;
 	class vn_b_prop_vrc12 : vn_object_b_base_02 {
