@@ -19,7 +19,7 @@ GVARMAIN(footstep_max_count) = 100;
 GVARMAIN(footstep_max_absolute) = 5000;
 
 GVAR(footsteps) = [];
-if ( isNil QGVAR(tracked_players) ) then { GVAR(tracked_players) = [] };
+if ( isNil QGVAR(tracked_units) ) then { GVAR(tracked_units) = [] };
 GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at any given time
 
 // Tracking
@@ -49,7 +49,7 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
             _x set [1, _pos];
             _x set [2, !_rf];
         };
-    } forEach GVAR(tracked_players);
+    } forEach GVAR(tracked_units);
     
     if ( (count GVAR(footsteps)) > GVARMAIN(footstep_max_absolute) ) then
     {
@@ -57,9 +57,11 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
     };
 }, 0.1, []] call CBA_fnc_addPerFrameHandler;
 
+["my message here"] remoteExecCall ["systemChat", west, true];
+
 // Rendering
 [{
-    private _ips = player infoPanelComponents "left";
+    privateaw _ips = player infoPanelComponents "left";
     private _hasTrapKit = false;
     {
         _x params [ "_class", "_type", "_has" ];
@@ -72,7 +74,7 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
     {
         _x params ["_unit", "_fso", "_fsm", "_fsp", "_fsd", "_age"];
         
-        private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select (playerSide == sideLogic || {_hasTrapKit && { (player distance _fsp) < 5 }});
+        private _mat = ["x\ghg\addons\misc\models\footprint\footprint.rvmat", "x\ghg\addons\misc\models\footprint\footprint_highlight.rvmat"] select ((!isNull findDisplay 312) || {_hasTrapKit && { (player distance _fsp) < 5 }});
         
         private _plp = curatorCamera;
         if ( isNull _plp ) then { _plp = player };
