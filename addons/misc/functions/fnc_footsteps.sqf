@@ -57,8 +57,6 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
     };
 }, 0.1, []] call CBA_fnc_addPerFrameHandler;
 
-["my message here"] remoteExecCall ["systemChat", west, true];
-
 // Rendering
 [{
     privateaw _ips = player infoPanelComponents "left";
