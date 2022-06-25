@@ -59,7 +59,7 @@ GVAR(footsteps_rendered) = 0; // Track how many footsteps are being rendered at 
 
 // Rendering
 [{
-    privateaw _ips = player infoPanelComponents "left";
+    private _ips = player infoPanelComponents "left";
     private _hasTrapKit = false;
     {
         _x params [ "_class", "_type", "_has" ];
