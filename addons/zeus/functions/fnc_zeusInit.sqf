@@ -36,9 +36,7 @@ if ( isServer ) then
         };
     }];
 
-    GVAR(zeusGroup) = createGroup sideLogic;
-    GVAR(zeusManifestGroup) = createGroup civilian;
-    publicVariable QGVAR(zeusManifestGroup); // JIP compatible
+    GVAR(zeusGroup) = createGroup [sideLogic, false];
 
     // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run
     [
