@@ -28,6 +28,7 @@ if ( isServer ) then
                 {
                     diag_log ["Reassigned curator logic to new unit", _this];
                     (_this # 0) assignCurator (_this # 1);
+                    
                 },
                 [_unit, _logic],
                 10,
@@ -35,8 +36,6 @@ if ( isServer ) then
             ] call CBA_fnc_waitUntilAndExecute;
         };
     }];
-
-    GVAR(zeusGroup) = createGroup [sideLogic, false];
 
     // Failsafe if ghg_zeus_fnc_zeusInitObjects is not run
     [

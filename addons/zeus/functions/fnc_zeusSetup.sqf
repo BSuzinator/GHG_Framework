@@ -19,12 +19,11 @@ if (_virtual) then {
 
 if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) then
 {
-	[{ ! (isNil QGVAR(zeusObjects) || isNil QGVAR(zeusGroup)) },
+	[{ !isNil QGVAR(zeusObjects) },
 	{
 		params ["_unit", "_owner"];
         
-        // Handle edge case
-        if ( isNull GVAR(zeusGroup) ) then {
+        if ( isNil QGVAR(zeusGroup) || {isNull GVAR(zeusGroup)} ) then {
             GVAR(zeusGroup) = createGroup [sideLogic, false];
         };
 	
