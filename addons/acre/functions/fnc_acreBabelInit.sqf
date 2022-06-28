@@ -70,7 +70,7 @@ if ( "all" in _langs ) then {
     } forEach GVAR(babelLangs);
 };
 
-if ( (count _sl) == 0 ) then {
+if ( (count _sl) == 0 ) exitWith {
     diag_log ["Unit speaks no languages!", _unit, _side];
 };
 

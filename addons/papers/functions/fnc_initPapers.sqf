@@ -15,7 +15,7 @@ GVAR(vehicle) = []; GVAR(vehicle) set [PAPERS_ID_LIST_LEN - 1, nil];
 
 if ( hasInterface ) then
 {
-    private _viewPlate = ["viewPlate", "Check License Plate", "", {hint getPlateNumber _target}, {!((getPlateNumber _target) == "" || "spz" in (selectionNames _target))}] call ace_interact_menu_fnc_createAction;
+    private _viewPlate = ["viewPlate", "Check License Plate", "", {hint getPlateNumber _target}, {alive _target && {!((getPlateNumber _target) == "" || "spz" in (selectionNames _target))}}] call ace_interact_menu_fnc_createAction;
     ["Car", 0, ["ACE_MainActions"], _viewPlate, true] call ace_interact_menu_fnc_addActionToClass;
     
     private _regVeh = ["regVeh", "Register Vehicle", "", FUNC(registerVehicle), {"GHG_Papers_Vehicle" in ([_player] call FUNC(getPapers))}] call ace_interact_menu_fnc_createAction;

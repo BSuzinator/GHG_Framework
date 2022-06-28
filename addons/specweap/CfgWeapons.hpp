@@ -21,4 +21,12 @@ class CfgWeapons
             "ghg_10rnd_560x15_anest"
         };
     };
+    
+    class vn_howitzer_105mm_base;
+    class vn_howitzer_105mm : vn_howitzer_105mm_base
+    {
+        magazines[] += {
+            "ghg_cannon_m101_mag_beehive_x8"
+        };
+    };
 };

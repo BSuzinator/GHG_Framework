@@ -19,11 +19,15 @@ if (_virtual) then {
 
 if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) then
 {
-	[{ ! (isNil QGVAR(zeusObjects) || isNil QGVAR(zeusGroup)) },
+	[{ !isNil QGVAR(zeusObjects) },
 	{
 		params ["_unit", "_owner"];
+        
+        if ( isNil QGVAR(zeusGroup) || {isNull GVAR(zeusGroup)} ) then {
+            GVAR(zeusGroup) = createGroup [sideLogic, false];
+        };
 	
-		private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,1000], [], 0, "CAN_COLLIDE"];
+        private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,1000], [], 0, "CAN_COLLIDE"];
         _logic allowDamage false;
 
 		_logic setCuratorCoef ["Place", 0];

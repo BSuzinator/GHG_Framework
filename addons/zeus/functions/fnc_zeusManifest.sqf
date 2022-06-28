@@ -51,10 +51,22 @@ if ! ( isNull _unit ) then { // _unit might still be objNull if no player was wi
 // Set spoken language to that of the side
 if !(isNil QEGVAR(acre,babelLangsSide)) then {
     private _langs = EGVAR(acre,babelLangsSide) getOrDefault [_side, []];
-    [_langs select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+    
+    if ( (count _langs) > 0 ) then {
+        private _ln = _langs select 0;
+        
+        if ( _ln == "all" ) then {
+            _ln = (GVAR(babelLangs) select 0) select 0;
+        };
+        
+        [_ln] call acre_api_fnc_babelSetSpeakingLanguage;
+    };
 };
 
-private _zpo = GVAR(zeusManifestGroup) createUnit [_zeusClass, _pos, [], 0, "NONE"];
+// Group will be auto-deleted when manifest terminates
+private _grp = createGroup [_side, true];
+_grp setGroupIdGlobal ["Zeus"];
+private _zpo = _grp createUnit [_zeusClass, _pos, [], 0, "NONE"];
 
 if ( isNull _zpo ) exitWith { systemChat "Failed to create Zeus character" };
 
