@@ -64,7 +64,7 @@ class CfgAmmo
     class ghg_shell_105mm_m546_beehive_ammo : vn_sh_105mm_base_he_ammo
     {
         submunitionAmmo = "B_12Gauge_Pellets_Submunition_Deploy";
-        submunitionConeType[] = {"poissondisc", 800};
+        submunitionConeType[] = {"poissondisccenter", 800};
         submunitionConeAngle = 18;
         submunitionDirectionType = "SubmunitionModelDirection";
         triggerTime = 0.1; // Init Speed is 810m/s so this is about 81m out
