@@ -8,10 +8,13 @@ if (isNil "GHG_SERVER_GROUPS_READY") then { GHG_SERVER_GROUPS_READY = true; publ
 diag_log str groupID group player;
 private _ghgGroupIDs = [
 	"PLT","Alpha","Bravo","Charlie","Delta","Echo","Foxtrot",
-	"EWS 1","EWS 2","MAT","MMG","MTR","RCN",
-	"LOGI","LOGI 1","LOGI 2","LOGI 3",
+	"EWS","MAA","MAT","MMG","MTR","RCN", "DEMO",
+	"EWS 2","MAA 2","MAT 2","MMG 2","MTR 2","RCN 2", "DEMO 2",
+	"LOGI","LOGI 1","LOGI 2","LOGI 3","LOGI 4",
+	"LYNX 1","LYNX 2","LYNX 3","LYNX 4",
 	"WOLF 1","WOLF 2","WOLF 3","WOLF 4",
-	"PHTM 1","PHTM 2","PHTM 3","PHTM 4",
+	"RAVN 1","RAVN 2","RAVN 3","RAVN 4",
+	"FLCN 1","FLCN 2","FLCN 3","FLCN 4",
 	"RPTR 1","RPTR 2","RPTR 3","RPTR 4"
 ];
 private _customGroups = [];
