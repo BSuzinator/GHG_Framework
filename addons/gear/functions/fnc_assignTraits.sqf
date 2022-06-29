@@ -16,4 +16,9 @@ private _isEOD = getNumber (configfile >> "CfgVehicles" >> _unitType >> "canDeac
 _unit setVariable ["ACE_medical_medicClass", _medicLevel, true];
 _unit setVariable ["ACE_isEOD", _isEOD, true];
 _unit setVariable ["ACE_isEngineer", _engineerLevel, true];
+
+_unit setUnitTrait ["medic", _medicLevel call EFUNC(database,toBool)];
+_unit setUnitTrait ["engineer ", _engineerLevel call EFUNC(database,toBool)];
+_unit setUnitTrait ["explosiveSpecialist", _isEOD];
+
 true
