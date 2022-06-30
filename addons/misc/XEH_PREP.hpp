@@ -23,3 +23,4 @@ PREP(spikeStripEH);
 PREP(spikeStripDeploy);
 PREP(spikeStripInit);
 PREPMAIN(setPosAGLS);
+PREP(fixHueyHud);
