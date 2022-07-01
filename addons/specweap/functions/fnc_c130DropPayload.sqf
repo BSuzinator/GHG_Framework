@@ -77,7 +77,7 @@ private _cargoChute = createVehicle ["B_Parachute_02_F", [0,0,0], [], 0, "CAN_CO
 _com = getCenterOfMass _payload;
 _com set [2, ((0 boundingBoxReal _payload) select 1) select 2];
 
-_cargoChute setPosASL AGLtoASL (_payload modelToWorld _com);
+_cargoChute setPos (_payload modelToWorld _com);
 _payload attachTo [_cargoChute]; // Keep offset
 
 waitUntil { ((getPos _payload) # 2) < 3 };

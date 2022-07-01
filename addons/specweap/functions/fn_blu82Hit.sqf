@@ -4,7 +4,7 @@
     vn_bomb_15000_blu82_dc_ammo
 ======================================*/
 
-systemChat "BOOM!";
+//systemChat "BOOM!";
 diag_log "BLU-82 HAS DETONATED";
 
 private _dist = 40;
