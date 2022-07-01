@@ -5,3 +5,4 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 	Author: CBA_3
 ======================================*/
 [] call FUNC(anestheticInit);
+[] call FUNC(blu82Init);

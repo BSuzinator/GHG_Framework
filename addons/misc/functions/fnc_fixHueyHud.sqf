@@ -10,7 +10,7 @@ if ! (hasInterface) exitWith {};
     
     // Make sure helicopter has a HUD and doesn't already have actions for it
     private _cfg = configOf _unit;
-    if ( ((_unit animationsourcePhase 'm60_sight_rot') > 0) && {!isClass(_cfg >> "UserActions" >> "enableM60")}) then 
+    if (((_unit animationsourcePhase 'm60_sight_rot') > 0) && {!isClass(_cfg >> "UserActions" >> "enableM60")}) then
     {
         // Enable HUD
         _unit addAction [
