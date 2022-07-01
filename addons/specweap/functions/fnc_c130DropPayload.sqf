@@ -29,6 +29,7 @@ sleep 3; // Wait for parachute to deploy
 
 detach _payload; // Actually release the cargo
 _payload enableSimulation false; // Prevent payload from being knocked around
+private _dir = (getDir _plane) + 180;
 
 systemChat "[PAYLOAD] Payload detached!";
 
@@ -41,7 +42,6 @@ _payload enableCollisionWith _plane;
 _payload enableSimulation true;
 
 _payload setVelocity velocity _plane; // Match velocity
-private _dir = (getDir _plane) + 180;
 
 // Wait until the payload has decelerated
 waitUntil {
@@ -68,10 +68,18 @@ deleteVehicle _chute;
 // Custom deploy function
 private _deployFunc = _payload getVariable [QGVAR(airdrop_deploy), ""];
 if (_deployFunc != "") exitWith {
-    [_payload] call compile _deployFunc;
+    [_plane, _payload] call compile _deployFunc;
 };
-/*
-private _cargoChute = createVehicle ["B_Parachute_02_F", get, [], 0, "CAN_COLLIDE"];
 
-private _paraPos = createV
-*/
+private _cargoChute = createVehicle ["B_Parachute_02_F", [0,0,0], [], 0, "CAN_COLLIDE"];
+
+// Recompute attachment point
+_com = getCenterOfMass _payload;
+_com set [2, ((0 boundingBoxReal _payload) select 1) select 2];
+
+_cargoChute setPosASL AGLtoASL (_payload modelToWorld _com);
+_payload attachTo [_cargoChute]; // Keep offset
+
+waitUntil { ((getPos _payload) # 2) < 3 };
+
+detach _payload;

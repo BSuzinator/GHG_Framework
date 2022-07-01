@@ -43,7 +43,7 @@ private _statement = {
 
         _bomb attachTo [_plane, BLU82_Load_Pos];
         
-        _bomb setDir ((getDir _plane) + 180);
+        _bomb setDir 180;
         _bomb setPosATL getPosATL _bomb;
     };
 };
