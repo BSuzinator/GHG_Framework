@@ -7,18 +7,20 @@
 ======================================*/
 params ["_target", "_caller", "_actionId", "_arguments"];
 
-_i = 1;
-_out = [];
-private _dsmFiles = getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles");
-if ((isNil "_dsmFiles") || (_dsmFiles isEqualTo "")) exitWith{"DSM Files not defined in ghg_config.txt" remoteExec ["systemChat", -2];};
+private _dsmFilesConfig = missionConfigFile >> "CfgGHG" >> "dsmFiles";
+if !(isNumber _dsmFilesConfig) exitWith { "DSM Files not defined in ghg_config.txt" remoteExecCall ["systemChat", -2]; };
+private _dsmFiles = getNumber _dsmFilesConfig;
+private _i = 1;
+private _out = [];
 while {_i <= _dsmFiles} do
 {
-    _rnd = round random[1, 10, 20];
+    private _rnd = round random[1, 10, 20];
 	_out pushBack _rnd;
 	_i = _i + _rnd;
 };
 
 // Remove the action
 _target remoteExecCall ["removeAllActions", 0];
+[_target, false] remoteExecCall ["hideObjectGlobal", 2];
 // Start the UI script
-[_out,_caller] remoteExec [QFUNC(dsmRun), side _caller, false];
+[_out, _target, _caller] remoteExec [QFUNC(dsmRun), side _caller, false];

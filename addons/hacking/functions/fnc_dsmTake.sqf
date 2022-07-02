@@ -6,15 +6,12 @@
 ======================================*/
 params ["_target", "_caller", "_actionId", "_arguments"];
 
-if ( DSM_DONE ) then
+if ( _target getVariable [QGVAR(dsm_done), false] ) then
 {
-	[_target, "removeAllActions", true, true] call BIS_fnc_MP;
-	[_target, "hideObject", true, true] call BIS_fnc_MP;
-	_str = format ["Player: %1 has taken the DSM for side: %2", name _caller, side _caller];
-	_str remoteExec ["systemChat", sideLogic];
-	_str2 = format ["Player: %1 has taken the DSM!", name _caller];
-	_str2 remoteExec ["systemChat", side _caller]; 
-	
+	_target remoteExecCall ["removeAllActions", 0];
+    [_target, true] remoteExecCall ["hideObjectGlobal", 2];
+	(format ["Player: %1 has taken the DSM for side: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
+	(format ["Player: %1 has taken the DSM!", name _caller]) remoteExecCall ["systemChat", side _caller];
 }
 else
 {
@@ -22,6 +19,7 @@ else
 	sleep 3;
 	hint "";
 };
+
 if (GVARMAIN(is_training)) then {
     DSM_Host addAction ["Setup DSM", FUNC(dsmPlant)];
 };

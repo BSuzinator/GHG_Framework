@@ -41,7 +41,7 @@ private _statement = {
         }
         else
         {
-            ["lockCargoList", [_veh, false, []], owner _veh] call CBA_fnc_localEvent;
+            ["lockCargoList", [_veh, false, []], _veh] call CBA_fnc_targetEvent;
             
             {
                 private _name = BLU82_M54_Hide_List select _forEachIndex;
@@ -81,7 +81,7 @@ private _statement = {
             _bomb attachTo [_veh, BLU82_M54_Load_Pos];
             
             // Lock all cargo seats since the bomb is now occupying them (slot 10 is the front passenger seat)
-            ["lockCargoList", [_veh, true, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]], owner _veh] call CBA_fnc_localEvent;
+            ["lockCargoList", [_veh, true, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]], _veh] call CBA_fnc_targetEvent;
             
             private _oldHide = [];
             {

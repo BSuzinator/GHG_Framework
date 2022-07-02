@@ -4,45 +4,36 @@
 	Called by ghg_fnc_dsmPlant
 	Author: Quantx
 ======================================*/
-params ["_out","_caller"];
+params ["_out", "_target", "_caller"];
 
-// Reveal the DSM
-DSM hideObject false;
 // Add the action
-DSM_DONE = false;
-DSM addAction ["Take DSM", FUNC(dsmTake)];
+_target setVariable [QGVAR(dsm_done), false, true];
+_target addAction ["Take DSM", FUNC(dsmTake)];
 
-_str = format ["Player: %1 has started the hack!: %2", name _caller, side _caller];
-_str remoteExec ["systemChat", sideLogic];
-_str2 = format ["Player: %1 has started the hack!", name _caller];
-_str2 remoteExec ["systemChat", side _caller]; 
+(format ["Player: %1 has started the hack!: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
+(format ["Player: %1 has started the hack!", name _caller]) remoteExecCall ["systemChat", side _caller]; 
 
 //Get file count to upload / download
 private _dsmFiles = getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles");
 // Grab the main display
-_dsp = findDisplay 46;
+private _dsp = findDisplay 46;
 
-_box = _dsp ctrlCreate ["RscStructuredText", 3891];
+private _box = _dsp ctrlCreate ["RscStructuredText", 3891];
 _box ctrlSetPosition [safeZoneX + safeZoneW - 0.5, 0, 0.5, 0.5];
 _box ctrlCommit 0;
 
-_zbox = controlNull;
+private _zbox = controlNull;
 
-_sum = 0;
+private _sum = 0;
 {
 	//ERROR HERE
-	_sum = _sum + _x;
-	if ( _sum > _dsmFiles ) then
-	{
-		_sum = _dsmFiles;
-	};
+	_sum = (_sum + _x) min _dsmFiles;
 	
-	_speed = [random [0, 20, 40], 2] call BIS_fnc_cutDecimals;
-	_time = round ( ( 40 - _speed ) / 5 );
-	_box ctrlSetStructuredText parseText format ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
+	private _speed = [random [0, 20, 40], 2] call BIS_fnc_cutDecimals;
+	private _time = round ( ( 40 - _speed ) / 5 );
+	_box ctrlSetStructuredText formatText ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
 	
-	
-	_zdsp = findDisplay 312;
+	private _zdsp = findDisplay 312;
 	
 	if ( ! isNull _zdsp && isNull _zbox ) then
 	{
@@ -53,7 +44,7 @@ _sum = 0;
 	
 	if ( ! isNull _zbox ) then
 	{
-		_zbox ctrlSetStructuredText parseText format ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
+		_zbox ctrlSetStructuredText formatText ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
 	};
 	uiSleep 1;
 } forEach _out;
@@ -65,10 +56,7 @@ if ( ! isNull _zbox ) then
 	ctrlDelete _zbox;
 };
 
-DSM_DONE = true;
-publicVariable "DSM_DONE";
+_target setVariable [QGVAR(dsm_done), true, true];
 
-_str3 = format ["Player: %1 has completed the hack!: %2", name _caller, side _caller];
-_str3 remoteExec ["systemChat", sideLogic];
-_str4 = format ["Player: %1 has completed the hack!", name _caller];
-_str4 remoteExec ["systemChat", side _caller];
+(format ["Player: %1 has completed the hack!: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
+(format ["Player: %1 has completed the hack!", name _caller]) remoteExecCall ["systemChat", side _caller];
