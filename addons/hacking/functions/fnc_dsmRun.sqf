@@ -7,8 +7,6 @@
 params ["_out", "_target", "_caller"];
 
 // Add the action
-_target setVariable [QGVAR(dsm_done), false, true];
-_target addAction ["Take DSM", FUNC(dsmTake)];
 
 (format ["Player: %1 has started the hack!: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
 (format ["Player: %1 has started the hack!", name _caller]) remoteExecCall ["systemChat", side _caller]; 
@@ -31,7 +29,7 @@ private _sum = 0;
 	
 	private _speed = [random [0, 20, 40], 2] call BIS_fnc_cutDecimals;
 	private _time = round ( ( 40 - _speed ) / 5 );
-	_box ctrlSetStructuredText formatText ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
+	_box ctrlSetStructuredText parseText format ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
 	
 	private _zdsp = findDisplay 312;
 	
@@ -44,7 +42,7 @@ private _sum = 0;
 	
 	if ( ! isNull _zbox ) then
 	{
-		_zbox ctrlSetStructuredText formatText ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
+		_zbox ctrlSetStructuredText parseText format ["<t color='#00ff00' size='2'>Files copied: %1/%2</t><br /><t color='#00cc00' size='1'>Time Left: %3 mins at %4 Mbps</t>", _sum, _dsmFiles, _time, _speed];
 	};
 	uiSleep 1;
 } forEach _out;
@@ -56,7 +54,7 @@ if ( ! isNull _zbox ) then
 	ctrlDelete _zbox;
 };
 
-_target setVariable [QGVAR(dsm_done), true, true];
+DSM addAction ["Take DSM", FUNC(dsmTake)];
 
 (format ["Player: %1 has completed the hack!: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
 (format ["Player: %1 has completed the hack!", name _caller]) remoteExecCall ["systemChat", side _caller];

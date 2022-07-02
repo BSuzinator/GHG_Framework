@@ -21,6 +21,6 @@ while {_i <= _dsmFiles} do
 
 // Remove the action
 _target remoteExecCall ["removeAllActions", 0];
-[_target, false] remoteExecCall ["hideObjectGlobal", 2];
+[DSM, false] remoteExecCall ["hideObjectGlobal", 2];
 // Start the UI script
 [_out, _target, _caller] remoteExec [QFUNC(dsmRun), side _caller, false];
