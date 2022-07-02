@@ -82,13 +82,13 @@ GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_demo_saboteur, "Demolitions Saboteur") \
 }; \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_lynx_driver, "Lynx Driver") \
-	engineer = 2; \
+	engineer = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_lynx_cmdr, "Lynx Commander") \
 GHG_UNIT_CLASS(SIDE, ghg_lynx_crew, "Lynx Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_wolf_driver, "Wolf Driver") \
-	engineer = 2; \
+	engineer = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_wolf_cmdr, "Wolf Commander") \
 GHG_UNIT_CLASS(SIDE, ghg_wolf_crew, "Wolf Crew") \

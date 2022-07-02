@@ -124,6 +124,6 @@ private _unitLoadout = [
 _unit setUnitLoadout [_unitLoadout, true];
 
 [_unit, _loadout, _camoId] call FUNC(scopeChoice);
-[_unit,_unitType] call FUNC(assignTraits);
+[_unit, _unitType] call FUNC(assignTraits);
 //Set GHG patch
 [_unit, "GHG"] call BIS_fnc_setUnitInsignia;
