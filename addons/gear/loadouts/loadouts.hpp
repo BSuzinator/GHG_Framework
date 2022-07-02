@@ -7,6 +7,7 @@ class Loadouts
 	#include "pmc\loadouts.hpp"
 	#include "russian\loadouts.hpp"
 	#include "serbian\loadouts.hpp"
+	#include "serbianNewTemplate\loadouts.hpp"
 	#include "spetznaz\loadouts.hpp"
 	#include "taliban\loadouts.hpp"
 	#include "usArmy\loadouts.hpp"
