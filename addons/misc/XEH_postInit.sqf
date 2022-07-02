@@ -19,6 +19,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(footsteps);
 
 [] spawn FUNC(crashTP);
+[] call FUNC(fixHueyHud);
 
 if (hasInterface) then {
     [missionNamespace, "OnDisplayRegistered", FUNC(registerJukeboxTracks)] call BIS_fnc_addScriptedEventHandler;

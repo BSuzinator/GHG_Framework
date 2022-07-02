@@ -12,11 +12,28 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION; 
         // Required addons, used for setting load order.
         // When any of the addons is missing, pop-up warning will appear when launching the game.
-        requiredAddons[] = { "ghg_gear", "static_f_vietnam_c", "static_f_vietnam_02_c" };
+        requiredAddons[] = { "ghg_gear", "static_f_vietnam_c", "static_f_vietnam_02_c", "RHS_US_A2_AirImport", "functions_f_vietnam" };
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
         units[] = {};
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {};
+    };
+};
+
+class CfgFunctions {
+    class RHS {
+        class functions {
+            class cargoAttach {
+                file="\x\ghg\addons\specweap\functions\fn_cargoAttach.sqf";
+            };
+        };
+    };
+    class functions_f_vietnam {
+        class vn_bomb_hit_functions {
+            class bomb_hit_blu82 {
+                file="\x\ghg\addons\specweap\functions\fn_blu82Hit.sqf";
+            }
+        };
     };
 };
 

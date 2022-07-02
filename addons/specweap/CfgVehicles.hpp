@@ -34,4 +34,21 @@ class CfgVehicles
             };
         };
     };
+    
+    // Use our drop script
+    class Plane_Base_F;
+    class RHS_C130J_Base: Plane_Base_F
+	{
+        rhs_paraPhase = 0.65;
+        
+        class UserActions
+		{
+            class OpenRamp;
+            class VehicleParadrop: OpenRamp
+			{
+				statement=QUOTE([this] spawn FUNC(c130DropPlane));
+                condition=QUOTE([this] call  FUNC(c130CanDrop  ));
+			};
+        };
+    };
 };
