@@ -11,7 +11,7 @@ if !(hasInterface) exitWith {};
 #define BLU82_M54_Base_Class "vn_wheeled_m54_01_base"
 #define BLU82_M54_Load_Pos [0, -1.8, -0.5]
 #define BLU82_M54_Hide_List ["user_sparewheel_hide", "user_ammoboxes_hide", "user_canopy_rear_hide", "user_canopy_rear_frame_hide", "user_canopy_rear_frame_02_hide", "user_bench_hide"]
-#define BLU82_Load_Distance 25
+#define BLU82_Load_Distance 15
 #define BLU82_Act_Pos [0, 0, 1]
 #define BLU82_Act_Dist 5
 
