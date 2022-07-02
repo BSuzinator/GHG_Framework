@@ -54,6 +54,9 @@ if ( _crateSize > -2 ) then { [_crate, _crateSize] call ace_cargo_fnc_setSize };
 private _fuelSize = getNumber (_cfg >> "fuelsize");
 if ( _fuelSize >= 0 ) then { [_crate, _fuelSize] remoteExecCall ["ace_refuel_fnc_makeSource", 2] };
 
+private _crateBuildSupplies = getText (_cfg >> "buildSupplies");
+if ( _crateBuildSupplies != 0 ) then { _crate setVariable["ghg_cargo_buildSupplies", _crateBuildSupplies, true] };
+
 [_crate, (getNumber (_cfg >> "draggable")) != 0, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;
 
 [_crate, (getNumber (_cfg >> "carryable")) != 0, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
