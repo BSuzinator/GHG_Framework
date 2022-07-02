@@ -7,3 +7,6 @@
 #include "spare_track.hpp"
 #include "vehicle_ammo.hpp"
 #include "vehicle_fuel.hpp"
+#include "buildSupplies_250.hpp"
+#include "buildSupplies_500.hpp"
+#include "buildSupplies_1000.hpp"

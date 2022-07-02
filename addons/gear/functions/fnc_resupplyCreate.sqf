@@ -39,7 +39,6 @@ _crate spawn {
         }
         else
         {
-            diag_log format ["%1 = %2", _itemName, _itemCount];
             _crate addItemCargoGlobal [_itemName, _itemCount];
         };
     };
@@ -54,12 +53,19 @@ if ( _crateSize > -2 ) then { [_crate, _crateSize] call ace_cargo_fnc_setSize };
 private _fuelSize = getNumber (_cfg >> "fuelsize");
 if ( _fuelSize >= 0 ) then { [_crate, _fuelSize] remoteExecCall ["ace_refuel_fnc_makeSource", 2] };
 
-private _crateBuildSupplies = getText (_cfg >> "buildSupplies");
-if ( _crateBuildSupplies != 0 ) then { _crate setVariable["ghg_cargo_buildSupplies", _crateBuildSupplies, true] };
+private _crateBuildSupplies = getNumber (_cfg >> "buildSupplies");
+if ( _crateBuildSupplies isNotEqualTo 0 ) then { 
+	_crate setVariable["ghg_cargo_buildSupplies", _crateBuildSupplies, true];
+	private _action = ["ghg_deliverSupplies","Deliver Supplies","",FUNC(addSupplyBudget),{true}] call ace_interact_menu_fnc_createAction;
+	[_crate, 0, ["ACE_MainActions"], _action] remoteExec ["ace_interact_menu_fnc_addActionToObject",0,_crate];
+};
 
 [_crate, (getNumber (_cfg >> "draggable")) != 0, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;
 
 [_crate, (getNumber (_cfg >> "carryable")) != 0, [0, 2, 1], 0] call ace_dragging_fnc_setCarryable;
+
+_crate setVariable ["ACE_Name", _crateName, true];
+_crate setVariable ["ACE_NameRaw", _crateClass, true];
 
 ["addCrateList", _crate] call CBA_fnc_serverEvent;
 
