@@ -6,6 +6,8 @@ class ghg_crate_base
     cargosize = 1;
     fuelsize = -1;
     
+	buildSupplies = 0;
+	
     // 0 = False, Anything_Else = True
     draggable = 1;
     carryable = 1;
