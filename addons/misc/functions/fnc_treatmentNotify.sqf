@@ -19,8 +19,10 @@ if (isNil QGVAR(ghg_misc_fnc_treatmentNotifyEHID) && hasInterface) then {
 	GVAR(ghg_treatmentNotifyEHID) = ["ace_treatmentStarted", {
 		params ["_caller", "_target", "_selectionName", "_className", "_itemUser", "_usedItem"];
 		
-		[QGVAR(ghg_treatmentNotifyEvent), [_caller,_className,_selectionName], _target] call CBA_fnc_targetEvent;
-		
+        // Only notify players who are alive
+        if (alive _target) then {
+            [QGVAR(ghg_treatmentNotifyEvent), [_caller,_className,_selectionName], _target] call CBA_fnc_targetEvent;
+        };
 	}] call CBA_fnc_addEventHandler;
 	//GVAR(ghg_treatmentNotifyEHID) = _ehid;
 };

@@ -5,7 +5,6 @@
 	Author: BSuz
 ======================================*/
 params ["_unit"];
-private _vehPos = ASLtoAGL getPosASL _unit;
 private _getRandomPosition = {
 	params ["_unit"];
 	private _randDir = random 360;
@@ -14,7 +13,7 @@ private _getRandomPosition = {
 	
 	private _teleportPos = _unit getRelPos [_totalDist,_randDir];
 	_teleportPos = _teleportPos vectorAdd [0, 0, 0.1];
-	[_teleportPos,_randDir]
+	[_teleportPos, _randDir]
 };
 {
 	private _crewMember = _x select 0;
