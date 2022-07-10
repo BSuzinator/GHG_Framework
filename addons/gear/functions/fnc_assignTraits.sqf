@@ -22,7 +22,7 @@ private _engineerLevel = getNumber (configfile >> "CfgVehicles" >> _unitType >> 
 private _isEOD = getNumber (configfile >> "CfgVehicles" >> _unitType >> "canDeactivateMines") call FUNCMAIN(toBool);
 //private _isUAVHacker = [ getNumber (configfile >> "CfgVehicles" >> _unitType >> "uavHacker"), 0 ];
 
-{systemchat str _x;} forEach [_unitType,_medicLevel,_engineerLevel,_isEOD];
+//{systemchat str _x;} forEach [_unitType,_medicLevel,_engineerLevel,_isEOD];
 
 _unit setVariable ["ACE_medical_medicClass", _medicLevel, true];
 _unit setVariable ["ACE_isEOD", _isEOD, true];
