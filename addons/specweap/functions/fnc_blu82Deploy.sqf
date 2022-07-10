@@ -8,7 +8,12 @@ params [
     ["_bomb", objNull, [objNull]] // _bomb is local
 ];
 private _pos = getPosATL _bomb;
+private _alt = (_pos # 2) - 50;
 
 deleteVehicle _bomb;
 
-[_pos, (_pos select 2) - 50, objNull, currentPilot _plane] call vn_fnc_bomb_blu82;
+// Only spawn the bomb if the payload was high enough
+if ( _alt >= 150 ) then
+{
+    [_pos, _alt, objNull, currentPilot _plane] call vn_fnc_bomb_blu82;
+};
