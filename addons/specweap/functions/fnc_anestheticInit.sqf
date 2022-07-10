@@ -17,7 +17,7 @@ GVAR(anestheticPeriod) = 60; // 1 minute
         // Spawn darts
         _unit addEventHandler ["HitPart", {_this call FUNC(anestheticHandler)}];
         
-        // Despawn darts
+        // Despawn darts on wake up
         ["ace_unconscious", {
             params ["_unit", "_unconscious"];
             
@@ -28,5 +28,14 @@ GVAR(anestheticPeriod) = 60; // 1 minute
             } forEach attachedObjects _unit;
             
         }] call CBA_fnc_addEventHandler;
+        
+        // Despawn darts on deletion
+        _unit addEventHandler ["Deleted", {
+            params ["_unit"];
+            
+            {
+                if ( _x isKindOf "ghg_anesthetic_dart" ) then { deleteVehicle _x };
+            } forEach attachedObjects _unit;
+        }];
     };
 }, nil, ["B_UAV_AI", "O_UAV_AI", "UAV_AI_base_F"], true] call CBA_fnc_addClassEventHandler;
