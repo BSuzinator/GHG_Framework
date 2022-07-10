@@ -72,7 +72,7 @@ _payload allowDamage true;
     [_unit, true] remoteExec ["allowDamage", _unit];
 } forEach _crew;
 
-systemChat format ["[PAYLOAD] Deploying main chute, payload speed %1km/h", abs(speed _payload)];
+systemChat format ["[PAYLOAD] Deploying main chute, payload speed %1km/h, altitude %2m", abs(speed _payload), (getPosATL _payload) # 2];
 
 deleteVehicle _cable;
 deleteVehicle _chute;
