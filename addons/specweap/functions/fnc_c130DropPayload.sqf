@@ -13,6 +13,13 @@ if (isNull _payload || {!local _payload}) exitWith {diag_log ["Warning payload i
 _payload allowDamage false;
 _payload disableCollisionWith _plane;
 
+private _crew = fullCrew _payload;
+
+{ // Make sure crew doesn't take damage
+    _x params ["_unit", "_role", "_cargoIndex", "_turretPath", "_personTurret"];
+    [_unit, false] remoteExec ["allowDamage", _unit];
+} forEach _crew;
+
 systemChat "[PAYLOAD] Deploying chute!";
 
 private _cable = createSimpleObject ["PowerCable_01_StraightLong_F", [0, 0, 0], true];
@@ -59,6 +66,11 @@ waitUntil {
 };
 
 _payload allowDamage true;
+
+{ // Crew can now take damage again
+    _x params ["_unit", "_role", "_cargoIndex", "_turretPath", "_personTurret"];
+    [_unit, true] remoteExec ["allowDamage", _unit];
+} forEach _crew;
 
 systemChat format ["[PAYLOAD] Deploying main chute, payload speed %1km/h", abs(speed _payload)];
 
