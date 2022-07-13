@@ -24,9 +24,7 @@ if !((_deployType isEqualTo "LALO")
   || (_deployType isEqualTo "iLALO")
   || (_deployType isEqualTo "iSURFACE")) exitWith { systemChat "deployType not defined in ghg_config.txt" };
 
-private _deployRange = getNumber ( missionConfigFile >> "CfgGHG" >> "deployRange" );
-
-private _deployRange = getText( _ghg >> (switch (side player) do {
+private _deployRange = getNumber( _ghg >> (switch (side player) do {
     case west: {"bluDeployRange"};
     case east: {"opfDeployRange"};
     case resistance: {"indDeployRange"};
