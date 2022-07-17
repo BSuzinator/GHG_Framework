@@ -16,7 +16,7 @@ GVAR(ally_id) = -1;
 	private _ctrl = (findDisplay 46) ctrlCreate [ "RscStructuredText", -1 ];
 
 	private _w = 0.5;
-	private _h = 0.15;
+	private _h = 0.16;
 		
 	_ctrl ctrlSetPosition [0.5 - _w / 2, 0.9 - _h / 2, _w, _h];
 	_ctrl ctrlCommit 0;
@@ -83,6 +83,10 @@ GVAR(ally_id) = -1;
                 
                 _str = _str + format ["<br/>Next chance to wakeup in %1 seconds<br/>%2 chance to wake up every %3 seconds", (((_wt + _wakeUpCheckInterval) - CBA_missionTime) max 0) toFixed 2, ((ace_medical_spontaneousWakeUpChance * 100) toFixed 2) + "%", _wakeUpCheckInterval toFixed 2];
             };
+        }
+        else
+        {
+            _str = _str + "<br/>You are dying";
         };
 		
 		_ctrl ctrlSetStructuredText parseText ("<t align='center'>" + _str + "</t>");
