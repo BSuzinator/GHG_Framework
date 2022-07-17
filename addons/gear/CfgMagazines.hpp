@@ -69,6 +69,11 @@ class CfgMagazines
         
         RPK_100RND_MAG_COMMON
     };
+    
+    class vn_vmagazine_mg;
+    class vn_m1919_v_250_mag : vn_vmagazine_mg {
+        tracersEvery = 3; // MUST BE AN ODD NUMBER as this fixes an issue with the twin 30 cal MGs
+    };
 };
 
 class CfgMagazineWells
