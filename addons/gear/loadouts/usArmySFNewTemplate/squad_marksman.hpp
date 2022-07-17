@@ -11,6 +11,7 @@ class squad_marksman : squad_rifle
         laser = "rhsusf_acc_anpeq15_bk";
         ammo = "rhsusf_20Rnd_762x51_m80_Mag";
 		bipod = "rhsusf_acc_harris_bipod";
+		muzzle[] = {"rhsusf_acc_aac_m14dcqd_silencer","rhsusf_acc_aac_m14dcqd_silencer_wd","rhsusf_acc_aac_m14dcqd_silencer_d"};
         
         class Scopes : Scopes
         {
