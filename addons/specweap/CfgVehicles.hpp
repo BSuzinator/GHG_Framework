@@ -51,4 +51,15 @@ class CfgVehicles
 			};
         };
     };
+    
+    
+    
+    // Fix an issue with picking up the non-tripod M1919A6
+    class vn_static_m2_low_base;
+    class vn_static_m1919a6_base: vn_static_m2_low_base {
+        class ACE_CSW;
+        class ACE_CSW: ACE_CSW {
+            disassembleWeapon = "ace_compat_sog_m1919a6_carry";
+        };
+    };
 };
