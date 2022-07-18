@@ -30,6 +30,7 @@ class vn_boat_armed_base : Boat_Armed_01_base_F {
         SOG_JUKEBOX
     };
 };
+
 // PAVN PT Boat
 class vn_boat_03_base : vn_boat_armed_base {
     class AcreIntercoms : AcreIntercoms {};
