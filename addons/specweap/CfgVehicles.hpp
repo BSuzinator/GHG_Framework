@@ -52,7 +52,30 @@ class CfgVehicles
         };
     };
     
-    
+    // M113 Dual M1919 should have 500rnd belts, not 250
+    class vn_armor_m113_01_base;
+    class vn_armor_m113_acav_m2_base : vn_armor_m113_01_base
+    {
+        class Turrets
+        {
+            class mg1_turret;
+        };
+    };
+    class vn_armor_m113_acav_m1919_base : vn_armor_m113_acav_m2_base
+    {
+        class Turrets : Turrets
+        {
+            class mg1_turret : mg1_turret
+            {
+                magazines[] = {
+                    "vn_m1919_v_500_mag",
+                    "vn_m1919_v_500_mag",
+                    "vn_m1919_v_500_mag",
+                    "vn_m1919_v_500_mag"
+                };
+            };
+        };
+    };
     
     // Fix an issue with picking up the non-tripod M1919A6
     class vn_static_m2_low_base;
