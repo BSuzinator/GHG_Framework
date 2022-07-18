@@ -8,7 +8,7 @@ class squad_rifle : loadout_base
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname[] = { "rhs_weap_m4a1_blockII_wd", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_d" };
-		muzzle = "rhsusf_acc_nt4_black";
+		muzzle[] = {"rhsusf_acc_nt4_black","rhsusf_acc_nt4_black","rhsusf_acc_nt4_tan"};
         laser = "rhsusf_acc_anpeq15_bk";
         ammo = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
 		bipod = "rhsusf_acc_kac_grip";
