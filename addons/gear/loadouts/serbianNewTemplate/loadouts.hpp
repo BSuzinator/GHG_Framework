@@ -1,5 +1,7 @@
 class serbianNewTemplate
 {
+    version = 1;
+    
     camo[] = { "m81" };
     
     class Magazines

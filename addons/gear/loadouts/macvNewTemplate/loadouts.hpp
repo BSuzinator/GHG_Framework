@@ -1,5 +1,7 @@
 class macvNewTemplate
 {
+    version = 1;
+    
     camo[] = { "olive", "leopard" };
     
     class Magazines

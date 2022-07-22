@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MTR Ammo Bearer (macv)
+	Loadout for MTR Ammo Bearer (usKorea)
 ======================================*/
 class mtr_ammo : squad_rifle
 {
@@ -11,7 +11,7 @@ class mtr_ammo : squad_rifle
 	class Vest : Vest
     {
         // List of items
-        vn_m16_20_mag = 7;
+        vn_carbine_15_mag = 7;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;

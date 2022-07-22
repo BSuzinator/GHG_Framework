@@ -1,5 +1,6 @@
 class bafNewTemplate
 {
+    version = 1;
     camo[] = { "mtp", "arctic", "tropical", "woodland", "desert" };
     
     class Magazines

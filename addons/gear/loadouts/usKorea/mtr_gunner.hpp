@@ -1,17 +1,18 @@
 /*======================================
-	Loadout for MTR Ammo Bearer (macv)
+	Loadout for MTR Gunner (usKorea)
 ======================================*/
-class mtr_ammo : squad_rifle
+class mtr_gunner : squad_rifle
 {
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "ace_csw_carryMortarBaseplate";
+        classname = "ace_compat_rhs_usf3_m252_carry";
     };
 	
 	class Vest : Vest
     {
         // List of items
-        vn_m16_20_mag = 7;
+		vn_carbine_15_mag = 7;
+		ACE_EntrenchingTool = 0;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;
@@ -24,10 +25,5 @@ class mtr_ammo : squad_rifle
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;
 		ACE_1Rnd_82mm_Mo_Illum = 1;
-    };
-	
-	class Binoculars : Binoculars
-    {
-        classname = "vn_m19_binocs_grn";
     };
 };

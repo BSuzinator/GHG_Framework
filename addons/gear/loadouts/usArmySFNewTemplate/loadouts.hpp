@@ -1,5 +1,7 @@
 class usArmySFNewTemplate
 {
+    version = 1;
+    
     camo[] = { "woodland", "black", "desert" };
     
     class Magazines

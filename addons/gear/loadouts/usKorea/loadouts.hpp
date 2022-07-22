@@ -1,8 +1,8 @@
-class usMCNewTemplate
+class usKorea
 {
     version = 1;
     
-    camo[] = { "mpD", "mpWD" };
+    camo[] = { "olive", "leopard" };
     
     class Magazines
     {
@@ -11,14 +11,15 @@ class usMCNewTemplate
     
     // Should be 25
     #include "..\loadout_base.hpp"
+	#include "loadout_base_usKorea.hpp"
 
 	#include "squad_rifle.hpp"
+    #include "squad_marksman.hpp"
 	#include "squad_lead.hpp"
 	#include "squad_medic.hpp"
 	#include "squad_ar.hpp"
 	#include "squad_aar.hpp"
 	#include "squad_at.hpp"
-	#include "squad_marksman.hpp"
 	#include "squad_aa.hpp"
 	#include "squad_grenadier.hpp"
 
@@ -81,7 +82,7 @@ class usMCNewTemplate
 	#include "knfs_driver.hpp"
 
     class Crates {
-        #include "..\common_crates\crates.hpp"
+		#include "..\common_crates\crates.hpp"
 		#include "crates\squad.hpp"
 		#include "crates\logi.hpp"
 		#include "crates\maa.hpp"

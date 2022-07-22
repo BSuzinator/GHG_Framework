@@ -21,13 +21,6 @@ private _faction = getText( _ghg >> (switch (_unitSide) do {
     default {""};
 }));
 
-if ( _unitType isEqualTo "" ) then {
-    _unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
-	if ("NewTemplate" in _faction) then {_unitType = [toLower typeOf _unit, 6] call BIS_fnc_trimString;};
-};
-
-
-
 private _camo = getText( _ghg >> (switch (_unitSide) do {
     case west: {"bluCamo"};
     case east: {"opfCamo"};
@@ -37,8 +30,14 @@ private _camo = getText( _ghg >> (switch (_unitSide) do {
 
 // Return values (NOTE: These are intentionally NOT private)
 _factionLoadout = [_unitSide] call FUNC(getFactionLoadout);
+_factionVersion = getNumber(_factionLoadout >> "version");
 _loadout = configNull;
 _camoId = 0;
+
+if ( _unitType isEqualTo "" ) then {
+    _unitType = [toLower typeOf _unit, 2] call BIS_fnc_trimString;
+    if (_factionVersion == 1) then {_unitType = [toLower typeOf _unit, 6] call BIS_fnc_trimString;};
+};
 
 if (isNull _factionLoadout) exitWith {};
 

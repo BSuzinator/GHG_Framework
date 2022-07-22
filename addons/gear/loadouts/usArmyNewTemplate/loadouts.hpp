@@ -1,5 +1,7 @@
 class usArmyNewTemplate
 {
+    version = 1;
+    
     camo[] = { "erdl", "ocp", "oefcp", "ucp", "ucpd" };
     
     class Magazines
