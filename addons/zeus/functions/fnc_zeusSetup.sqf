@@ -17,7 +17,7 @@ if (_virtual) then {
     _unit enableSimulationGlobal false; // Number 8 on the list of Top 10 SQF Commands You Should Never Run
 };
 
-if ( (_uid in _authZeus || _virtual) && (isNull getAssignedCuratorUnit _unit) ) then
+if ( (is3DENMultiplayer || (_uid in _authZeus) || _virtual) && (isNull getAssignedCuratorUnit _unit) ) then
 {
 	[{ !isNil QGVAR(zeusObjects) },
 	{
