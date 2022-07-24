@@ -6,7 +6,7 @@
 ======================================*/
 if ! (hasInterface) exitWith {};
 
-if (isServer) then {
+if (isDedicated) then {
 	GVAR(treatmentArray) = [
         //Bandages
         [0,0,0,0,0,0,0,0],

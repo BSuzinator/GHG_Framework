@@ -52,6 +52,13 @@ class CfgVehicles
         };
     };
     
+    // M113 has a gas tank of aprox 360 liters
+    class APC_Tracked_01_base_F;
+    class vn_armor_m113_base : APC_Tracked_01_base_F {
+        ace_cargo_space = 6;
+        ace_refuel_fuelCapacity = 360;
+    };
+    
     // M113 Dual M1919 should have 500rnd belts, not 250
     class vn_armor_m113_01_base;
     class vn_armor_m113_acav_m2_base : vn_armor_m113_01_base
