@@ -43,7 +43,7 @@ private _resupplyCondition = {
 };
 //Alt logo: "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa"
 private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {}, _resupplyCondition] call ace_interact_menu_fnc_createAction;
-["Car", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
+["LandVehicle", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
 ["Air", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
 ["Ship", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
 
@@ -70,7 +70,7 @@ private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\
         };
 	};
 	private _action = [format ["ghg_resupplyLoad_%1", _cfg], format ["Load %1", _name], "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa", _statement, {true},{},[_cfg,_name]] call ace_interact_menu_fnc_createAction;
-	["Car", 0, ["ACE_MainActions","ghg_resupplyLoad"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+	["LandVehicle", 0, ["ACE_MainActions","ghg_resupplyLoad"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 	["Air", 0, ["ACE_MainActions","ghg_resupplyLoad"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 	["Ship", 0, ["ACE_MainActions","ghg_resupplyLoad"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 	
