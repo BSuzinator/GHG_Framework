@@ -116,7 +116,7 @@ GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_rptr_pilot, "Raptor Pilot") \
 
 class CfgVehicles
 {
-    GHG_SIDE_CLASS(b)
+	GHG_SIDE_CLASS(b)
     GHG_SIDE_CLASS(o)
     GHG_SIDE_CLASS(i)
 	

@@ -14,7 +14,7 @@ class CfgPatches {
         // When any of the addons is missing, pop-up warning will appear when launching the game.
         requiredAddons[] = { "ghg_main", "rhs_c_weapons", "rhsusf_c_weapons", "rhsgref_c_weapons", "weapons_f_vietnam", "weapons_f_vietnam_02", "weapons_f_vietnam_03" };
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
-        units[] = {};
+        units[] = {"ghg_servicePoint_air","ghg_servicePoint_psp","ghg_servicePoint_air_invis","ghg_servicePoint_land","ghg_servicePoint_land_invis"};
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {};
     };
@@ -25,7 +25,7 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGHG.hpp"
-
+#include "servicePoints.hpp"
 
 class ACEX_Fortify_Presets {
 	

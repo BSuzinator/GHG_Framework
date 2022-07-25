@@ -28,8 +28,7 @@ private _crateName = [];
 
 //Add root action
 private _resupplyCondition = {
-	private _resupplyDistance = 30;
-	if (_target isKindOf "Air" || _target isKindOf "Ship") then {_resupplyDistance = 50;};
+	private _resupplyDistance = 10;
 
     private _okay = false;
     {
@@ -37,12 +36,13 @@ private _resupplyCondition = {
         if ( !isNull _rsupObj && { (_target distance _rsupObj) < _resupplyDistance } ) exitwith {
             _okay = true;
         };
-    } forEach ["Land_Ammostore2", "Land_Cargo20_military_green_F", "Land_Cargo20_sand_F"];
+    } forEach ["Land_Ammostore2", "Land_Cargo20_military_green_F", "Land_Cargo20_sand_F", "ghg_servicePoint"];
 
 	_okay // return
 };
+//Original Logo: "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa"
 //Alt logo: "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa"
-private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {}, _resupplyCondition] call ace_interact_menu_fnc_createAction;
+private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa", {}, _resupplyCondition] call ace_interact_menu_fnc_createAction;
 ["LandVehicle", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
 ["Air", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
 ["Ship", 0, ["ACE_MainActions"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
@@ -66,6 +66,7 @@ private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\
             else
             {
                 deleteVehicle _crate;
+				systemChat format ["Unable to Load %1", _name];
             };
         };
 	};
@@ -75,6 +76,32 @@ private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\
 	["Ship", 0, ["ACE_MainActions","ghg_resupplyLoad"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 	
 } forEach _crateCfg;
+
+//Service Point actions
+private _mainServiceAction = ["ghg_serviceRoot", "Vehicle Service", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {}, _resupplyCondition] call ace_interact_menu_fnc_createAction;
+
+["LandVehicle", 0, ["ACE_MainActions"], _mainServiceAction, true] call ace_interact_menu_fnc_addActionToClass;
+["Air", 0, ["ACE_MainActions"], _mainServiceAction, true] call ace_interact_menu_fnc_addActionToClass;
+["Ship", 0, ["ACE_MainActions"], _mainServiceAction, true] call ace_interact_menu_fnc_addActionToClass;
+
+private _pylonAction = ["ghg_servicePylons", "Configure Pylons", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {[_target] call ace_pylons_fnc_showDialog;}, {[_player] call ace_repair_fnc_isEngineer}] call ace_interact_menu_fnc_createAction;
+
+private _rearmAction = ["ghg_serviceRearm", "Rearm", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {[_target,1] remoteExecCall ["setVehicleAmmo", _target];}, {true}] call ace_interact_menu_fnc_createAction;
+
+private _refuelAction = ["ghg_serviceRefuel", "Refuel", "\a3\ui_f\data\igui\cfg\simpletasks\types\refuel_ca.paa", {[_target,1] remoteExecCall ["setFuel", _target];}, {true}] call ace_interact_menu_fnc_createAction;
+
+private _repairAction = ["ghg_serviceRepair", "Repair", "\a3\ui_f\data\igui\cfg\simpletasks\types\repair_ca.paa", {[_target,0] remoteExecCall ["setDamage", _target];}, {true}] call ace_interact_menu_fnc_createAction;
+
+["Air", 0, ["ACE_MainActions","ghg_serviceRoot"], _pylonAction, true] call ace_interact_menu_fnc_addActionToClass;
+
+{
+	private _spa = _x;
+	["LandVehicle", 0, ["ACE_MainActions","ghg_serviceRoot"], _spa, true] call ace_interact_menu_fnc_addActionToClass;
+	["Air", 0, ["ACE_MainActions","ghg_serviceRoot"], _spa, true] call ace_interact_menu_fnc_addActionToClass;
+	["Ship", 0, ["ACE_MainActions","ghg_serviceRoot"], _spa, true] call ace_interact_menu_fnc_addActionToClass;
+} forEach [_rearmAction,_refuelAction,_repairAction];
+
+
 diag_log "[GHG]: Vehicle Resupply Actions Loaded";
 
 

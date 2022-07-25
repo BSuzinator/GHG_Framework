@@ -45,6 +45,8 @@ class CfgVehicles
         scope=2;
         author = "GHG Team";
 		displayName = "Flag (GHG)";
+		editorCategory="GHG_Cat_Main";
+		editorSubcategory="GHG_SubCat_Flags";
         class EventHandlers
         {
             init="(_this select 0) setFlagTexture '\x\ghg\addons\main\ui\ghgFlag.paa'";
@@ -56,6 +58,8 @@ class CfgVehicles
 		scope=2;
         author = "GHG Team";
 		displayName = "Banner (GHG)";
+		editorCategory="GHG_Cat_Main";
+		editorSubcategory="GHG_SubCat_Flags";
 		hiddenSelectionsTextures[] = {"\x\ghg\addons\main\ui\ghgFlag.paa"};
 	};
 };

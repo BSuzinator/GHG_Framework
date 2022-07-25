@@ -14,7 +14,7 @@ class CfgPatches {
             // When any of the addons is missing, pop-up warning will appear when launching the game.
             requiredAddons[] = { "cba_main","objects_f_vietnam_c","wheeled_f_vietnam","uk3cb_baf_vehicles_MAN","UK3CB_Factions_Vehicles_m939","uk3cb_factions_Vehicles_mtvr","uk3cb_factions_Vehicles_ural" };
             // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
-            units[] = {};
+            units[] = {"ghg_Flag_GHG","ghg_Banner_GHG"};
             // List of weapons (CfgWeapons classes) contained in the addon.
             weapons[] = {};
     };
@@ -52,6 +52,7 @@ class CfgFactionClasses {
 delete enableDebugConsole;
 enableDebugConsole[] = {"76561198080019809", "76561198044516211"};
 
+#include "CfgEden.hpp"
 #include "CfgEventhandlers.hpp"
 #include "CfgGHG.hpp"
 #include "CfgDebriefing.hpp"

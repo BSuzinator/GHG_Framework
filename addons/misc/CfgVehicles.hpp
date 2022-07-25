@@ -47,6 +47,8 @@ class CfgVehicles {
         scope = 2;
         author = "GHG Team";
 		displayName = "Spike Strip (Deployed)";
+		editorCategory="GHG_Cat_Main";
+		editorSubcategory="GHG_SubCat_Other";
         class EventHandlers {
             init=QUOTE(_this call FUNC(spikeStripInit));
 			EpeContactStart=QUOTE(_this call FUNC(spikeStripEH));
