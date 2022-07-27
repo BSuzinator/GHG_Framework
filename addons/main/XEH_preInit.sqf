@@ -8,5 +8,6 @@ ADDON = false;
 
 GVARMAIN(is_mission_ghg) = isMultiplayer && (isClass (missionConfigFile >> "CfgGHG"));
 GVARMAIN(is_training) = 0 < getNumber ( missionConfigFile >> "CfgGHG" >> "isTraining" );
+GVARMAIN(is_game) = 0 < getNumber ( missionConfigFile >> "CfgGHG" >> "isGame" );
 
 ADDON = true;
