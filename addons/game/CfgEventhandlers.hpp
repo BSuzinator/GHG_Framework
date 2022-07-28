@@ -18,3 +18,11 @@ class Extended_PreStart_EventHandlers {
         init = QUOTE( call COMPILE_FILE(XEH_preStart) );
     };
 };
+
+class Extended_Killed_EventHandlers {
+    class CAManBase {
+        class GHG_game_killed_eh {
+            killed = QFUNC(killedEH);
+        };
+    };
+};

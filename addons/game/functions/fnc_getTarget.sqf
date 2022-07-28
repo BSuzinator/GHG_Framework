@@ -4,19 +4,19 @@
 	Gets target from availible players
 	Author: BSuz
 ======================================*/
-private _allPlayers = call BIS_fnc_listPlayers;
-private _alivePlayers = [];
-private _civPlayers = [];
-private _copPlayers = [];
-
-{
-	private _player = _x;
-	if (alive _player) then {
-		if (side _player isEqualTo civilian) then {	_civPlayers append _player;	};
-		if (side _player isEqualTo west) then {	_copPlayers append _player;	};
-	};
-} forEach _allPlayers;
+params [["_targetKilled",false]]
+private _civPlayers = FUNC(getSidesPlayers) select 4;
 
 private _target = selectRandom _civPlayers;
 GVAR(target) = _target;
+
+if (GVAR(markersInit)) then {call FUNC(targetMarker)};
+
+private _newTargetSTR = format ["You have been assigned a new target: %1\nThey are %2 meters away, check your map.",name _target,player distance _target];
+if (_targetKilled) then {
+	_newTargetSTR = format ["Your target has been killed and the antidote has been given.\nYou have been assigned a new target: %1\nThey are %2 meters away, check your map.",name _target,player distance _target];
+};
+hint _newTargetSTR;
+systemChat _newTargetSTR;
+
 _target

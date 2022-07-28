@@ -8,4 +8,5 @@ if !(GVARMAIN(is_game)) exitWith {};
 if !(isServer) exitWith {};
 
 remoteExec [QFUNC(getTarget), civilian];
+remoteExec [QFUNC(poisonInit), civilian];
 remoteExec [QFUNC(targetMarkerInit), civilian];
