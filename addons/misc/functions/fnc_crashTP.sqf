@@ -44,6 +44,9 @@ private _maxX = _mkrPosX + _mkrSizeX;
 private _minY = _mkrPosY - _mkrSizeY;
 private _maxY = _mkrPosY + _mkrSizeY;
 
+private _xLength = abs (_maxX - _minX);
+private _yLength = abs (_maxY - _minY);
+
 private _randX = 0;
 private _randY = 0;
 private _randPos = [_randX,_randY,1];
@@ -53,8 +56,10 @@ while {
 	(_randPos isFlatEmpty  [-1, -1, 0.6, 17, -1] isEqualTo [])  ||
 	!(_randPos inArea "crashZone")  
 } do {
-	_randX = random [_minX,_mkrPosX,_maxX];
-	_randY = random [_minY,_mkrPosY,_maxY];
+	//_randX = random [_minX,_mkrPosX,_maxX];
+	//_randY = random [_minY,_mkrPosY,_maxY];
+	_randX = _minX + (random _xLength);
+	_randY = _minY + (random _yLength);
 	_randPos = [_randX,_randY,1];
 	//systemChat str ["Pos:",_randPos,"Surface:",surfaceNormal _randPos];
 };
