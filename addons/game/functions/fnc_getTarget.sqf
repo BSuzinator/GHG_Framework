@@ -4,13 +4,15 @@
 	Gets target from availible players
 	Author: BSuz
 ======================================*/
-params [["_targetKilled",false]]
-private _civPlayers = FUNC(getSidesPlayers) select 4;
+params [["_targetKilled",false]];
+private _civPlayers = call FUNC(getSidesPlayers) select 4;
+
+_civPlayers = _civPlayers - [player];
 
 private _target = selectRandom _civPlayers;
 GVAR(target) = _target;
 
-if (GVAR(markersInit)) then {call FUNC(targetMarker)};
+//if (isNil QGVAR(markersInit)) then {call FUNC(targetMarker)};
 
 private _newTargetSTR = format ["You have been assigned a new target: %1\nThey are %2 meters away, check your map.",name _target,player distance _target];
 if (_targetKilled) then {

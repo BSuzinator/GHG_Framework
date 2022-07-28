@@ -4,9 +4,7 @@
 	Check to see if your target has been killed
 	Author: BSuz
 ======================================*/
-private _target = GVAR(target);
-
-private _targetAlive = alive _target;
+private _targetAlive = alive GVAR(target);
 
 if (_targetAlive) exitWith {};
 

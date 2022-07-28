@@ -4,7 +4,7 @@
 	Ends the Game and displays message.
 	Author: BSuz
 ======================================*/
-private _civPlayers = FUNC(getSidesPlayers) select 4;
+private _civPlayers = call FUNC(getSidesPlayers) select 4;
 
 if (count _civPlayers < 1) then {
 

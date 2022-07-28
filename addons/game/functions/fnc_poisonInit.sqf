@@ -12,11 +12,14 @@ private _poisonProgress = {
 	if (_playerDamage >= 1) then {_playerDamage = 1; GVARMAIN(killedByPoison) = true;};
 	
 	_player setDamage _playerDamage;
-
+	
+	private _poisonProgress = ( 10 - (_playerDamage * 10) );
+	
+	systemChat format ["The poison is progressing. I think I have about %1 minutes left.", _poisonProgress];
 };
 
 GVAR(poisonEHID) = [
 	_poisonProgress, 
-	POISON_TIME, 
+	POISON_TICK_TIME, 
 	[]
 ] call CBA_fnc_addPerFrameHandler;

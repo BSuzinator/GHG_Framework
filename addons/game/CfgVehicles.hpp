@@ -4,9 +4,9 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ghg_action_antidote {
                 displayName = "Use Antidote";
-                condition = QFUNC(canUseAntidote);
+                condition = QUOTE(_this call FUNC(canUseAntidote));
                 exceptions[] = {"notOnMap"};
-                statement = QFUNC(antidoteItemEffect);
+                statement = QUOTE(_this call FUNC(antidoteItemEffect));
 			};
 		};
 	};

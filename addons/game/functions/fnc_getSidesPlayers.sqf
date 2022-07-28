@@ -14,18 +14,18 @@ private _logicPlayers = [];
 
 {
 	private _player = _x;
-	if (alive _player) then {_alivePlayers append _player;};
+	if (alive _player) then {_alivePlayers pushBack _player;};
 } forEach _allPlayers;
 
 {
 	private _player = _x;
 	switch (side _player) do {
-		case west: {_bluPlayers append _player;};
-		case east: {_opfPlayers append _player;};
+		case west: {_bluPlayers pushBack _player;};
+		case east: {_opfPlayers pushBack _player;};
 		case independent;
-		case resistance: {_indPlayers append _player;};
-		case civilian: {_civPlayers append _player;};
-		case sideLogic: {_logicPlayers append _player;};	
+		case resistance: {_indPlayers pushBack _player;};
+		case civilian: {_civPlayers pushBack _player;};
+		case sideLogic: {_logicPlayers pushBack _player;};	
 	};
 } forEach _alivePlayers;
 [_alivePlayers,_bluPlayers,_opfPlayers,_indPlayers,_civPlayers,_logicPlayers]

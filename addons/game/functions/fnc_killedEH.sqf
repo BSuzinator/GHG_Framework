@@ -8,7 +8,7 @@ params ["_unit", "_killer", "_instigator", "_useEffects"];
 
 remoteExec [QFUNC(targetKilled), civilian];
 
-private _civCount = count FUNC(getSidesPlayers) select 4;
+private _civCount = count call FUNC(getSidesPlayers) select 4;
 
 [GVAR(poisonEHID)] call CBA_fnc_removePerFrameHandler;
 

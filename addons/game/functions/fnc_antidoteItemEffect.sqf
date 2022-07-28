@@ -17,4 +17,4 @@ _playerDamage = _playerDamage - ANTIDOTE_TIME;
 if (_playerDamage > 1) then {_playerDamage = 1; GVARMAIN(killedByPoison) = true;};
 if (_playerDamage < 0) then {_playerDamage = 0;};
 
-_player setDamage [_playerDamage];
+_player setDamage _playerDamage;
