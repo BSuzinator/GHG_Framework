@@ -14,7 +14,14 @@ private _civLoadout = [
 	[],	//Primary Weapon
 	[],	//Launcher
 	[], //Secondary Weapon
-	[_randomUniform,[]],	//Uniform
+	[_randomUniform,
+		[
+		["ACE_elasticBandage", 2],
+		["ACE_packingBandage", 2],
+		["ACE_Morphine", 1],
+		["ACE_EarPlugs", 1]
+		]
+	],	//Uniform
 	[],	//Vest
 	[_randomBackpack,[]],	//Backpack
 	"",	//Helmet/Hat

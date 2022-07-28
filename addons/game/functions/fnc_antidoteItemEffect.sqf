@@ -17,4 +17,7 @@ _playerDamage = _playerDamage - ANTIDOTE_TIME;
 if (_playerDamage > 1) then {_playerDamage = 1; GVARMAIN(killedByPoison) = true;};
 if (_playerDamage < 0) then {_playerDamage = 0;};
 
+private _poisonProgress = ( 10 - (_playerDamage * 10) );
+systemChat format ["The antidote is working. I think I have about %1 minutes left.", _poisonProgress];
+
 _player setDamage _playerDamage;

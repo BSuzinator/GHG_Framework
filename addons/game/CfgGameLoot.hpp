@@ -34,9 +34,6 @@ class CfgGameLoot {
 		{ "hgun_Pistol_01_F", "10Rnd_9x21_Mag", 3 },
 		{ "rhs_weap_pya", "rhs_mag_9x19_17", 3 },
 		{ "rhsusf_weap_MP7A2_folded", "rhsusf_mag_40Rnd_46x30_JHP", 2 },
-		{ "rhsusf_weap_MP7A2_folded_aor1", "rhsusf_mag_40Rnd_46x30_JHP", 2 },
-		{ "rhsusf_weap_MP7A2_folded_winter", "rhsusf_mag_40Rnd_46x30_JHP", 2 },
-		{ "rhsusf_weap_MP7A2_folded_desert", "rhsusf_mag_40Rnd_46x30_JHP", 2 },
 		{ "hgun_P07_F", "16Rnd_9x21_Mag", 3 },
 		{ "hgun_P07_blk_F", "16Rnd_9x21_Mag", 3 },
 		{ "hgun_P07_khk_F", "16Rnd_9x21_Mag", 3 },
@@ -46,7 +43,7 @@ class CfgGameLoot {
 		{ "rhs_weap_type94_new", "rhs_mag_6x8mm_mhp", 3 },
 		{ "vn_welrod", "vn_welrod_mag", 3 },
 		{ "Binocular", "", 3 },
-		{ "", "", 1 }
+		{ "", "", -1 }
 	};
 	
 	Loot_Explosives[] = {

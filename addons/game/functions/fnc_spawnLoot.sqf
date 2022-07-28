@@ -36,7 +36,6 @@ private _randPos = [_randX,_randY,5];
 
 private _vehicleCount = 60;
 //Start with dummy object
-private _oldVeh = "Land_WoodenLog_F" createVehicle [0,0,0];
 
 for "_i" from 1 to _vehicleCount do { 
 
@@ -47,7 +46,7 @@ for "_i" from 1 to _vehicleCount do {
 		(_randPos isFlatEmpty  [-1, -1, 0.6, 17, -1] isEqualTo [])  ||
 		!(_randPos inArea "gamePlayZone") ||
 		!(_randPos nearObjects [ "LandVehicle", 150] isEqualTo []) ||
-		!(_randPos nearObjects [ "House", 10] isEqualTo []) ||
+		!( (isOnRoad _randPos) || (_randPos nearObjects [ "House", 12] isEqualTo [])) ||
 		(_randPos nearRoads 40 isEqualTo []) 
 	} do {
 		_randX = _minX + (random _xLength);
@@ -56,7 +55,7 @@ for "_i" from 1 to _vehicleCount do {
 		//systemChat str ["Pos:",_randPos,"Surface:",surfaceNormal _randPos];
 	};
 	
-	private _newVeh = _randVehClass createVehicle _randPos;
+	private _newVeh = createVehicle [_randVehClass, _randPos];
 	_newVeh allowDamage false;
 	_newVeh enableSimulation false;
 	
@@ -77,20 +76,18 @@ for "_i" from 1 to _vehicleCount do {
 	
 	_newVeh addWeaponCargoGlobal [(_randWeap select 0),1];
 	_newVeh addMagazineCargoGlobal [_randWeap select 1, ((random (_randWeap select 2) + 1))];
-	_newVeh addItemCargoGlobal [_randItem, random 2];
-	_newVeh addItemCargoGlobal [_randGrenade, random 2];
-	_newVeh addItemCargoGlobal [_randExp, random 2];
-	_newVeh addItemCargoGlobal ["FirstAidKit", 1];
-	_newVeh addItemCargoGlobal ["Medikit", 1];
-		
-	_newVeh setPos _randPos;
+	_newVeh addItemCargoGlobal [_randItem, random 1];
+	_newVeh addItemCargoGlobal [_randGrenade, random 1];
+	_newVeh addItemCargoGlobal [_randExp, random 1];
+	_newVeh addItemCargoGlobal ["FirstAidKit", random 2];
+	_newVeh addItemCargoGlobal ["Medikit", random 2];
+	
 	_newVeh setDir (random 360);
 	
 	_newVeh allowDamage true;
 	_newVeh enableSimulation true;
 	
-	_oldVeh = _newVeh;
-	_randPos = [0,0,5];
+	_randPos = [0,0,0];
 };
 
 

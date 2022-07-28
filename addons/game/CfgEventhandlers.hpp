@@ -22,7 +22,7 @@ class Extended_PreStart_EventHandlers {
 class Extended_Killed_EventHandlers {
     class CAManBase {
         class GHG_game_killed_eh {
-            killed = QFUNC(killedEH);
+            killed = QUOTE(_this call FUNC(killedEH));
         };
     };
 };

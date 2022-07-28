@@ -6,7 +6,7 @@
 ======================================*/
 private _civPlayers = call FUNC(getSidesPlayers) select 4;
 
-if (count _civPlayers < 1) then {
+if (count _civPlayers < 1) exitWith {
 
 	private _endingText = format ["All Civilians are Dead"];
 
