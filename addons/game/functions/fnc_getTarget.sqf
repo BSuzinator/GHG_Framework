@@ -10,6 +10,9 @@ private _civPlayers = call FUNC(getSidesPlayers) select 4;
 _civPlayers = _civPlayers - [player];
 
 private _target = selectRandom _civPlayers;
+
+if (_target isEqualTo objNull) exitwith {private _exitMsg = "Unable to assign new target"; systemChat _exitMsg; hint _exitMsg;};
+
 GVAR(target) = _target;
 
 //if (isNil QGVAR(markersInit)) then {call FUNC(targetMarker)};
