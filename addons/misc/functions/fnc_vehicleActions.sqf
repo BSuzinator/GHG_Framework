@@ -22,7 +22,7 @@ if (!hasInterface) exitwith {};
 
 //Engine Off action
 private _action = ["engineOff", "Turn Off Engine", "\a3\ui_f\data\igui\cfg\vehicletoggles\engineiconon_ca.paa", {[_target, false] remoteExecCall ["engineOn", _target]}, {isEngineOn _target}] call ace_interact_menu_fnc_createAction;
-
+["Air", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 ["Car", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 ["Ship", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
