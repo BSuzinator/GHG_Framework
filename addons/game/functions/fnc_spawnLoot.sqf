@@ -34,7 +34,7 @@ private _randX = 0;
 private _randY = 0;
 private _randPos = [_randX,_randY,5];
 
-private _vehicleCount = 60;
+private _vehicleCount = 100;
 //Start with dummy object
 
 for "_i" from 1 to _vehicleCount do { 
@@ -47,7 +47,7 @@ for "_i" from 1 to _vehicleCount do {
 		!(_randPos inArea "gamePlayZone") ||
 		!(_randPos nearObjects [ "LandVehicle", 150] isEqualTo []) ||
 		!( (isOnRoad _randPos) || (_randPos nearObjects [ "House", 12] isEqualTo [])) ||
-		(_randPos nearRoads 40 isEqualTo []) 
+		(_randPos nearRoads 60 isEqualTo []) 
 	} do {
 		_randX = _minX + (random _xLength);
 		_randY = _minY + (random _yLength);

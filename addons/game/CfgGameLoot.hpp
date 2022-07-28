@@ -79,7 +79,6 @@ class CfgGameLoot {
 		"ACE_EntrenchingTool",
 		"ACE_Clacker",
 		"ACE_wirecutter",
-		"ACE_DefusalKit",
 		"FirstAidKit",
 		"Medikit",
 		"GHG_game_antidote",

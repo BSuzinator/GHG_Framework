@@ -61,7 +61,7 @@ if ( isNull _unit || {(side _unit) isEqualTo sideLogic} ) exitWith {}; // Make s
     
     // Exit if this was NOT friendly fire
 	if ((_unit isEqualTo _shooter) || (side _unit != side _shooter) || (side _shooter isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _shooter))) exitWith {};
-	if (GVARMAIN(is_training) && (GVARMAIN(rffDisabled))) exitWith {};
+	if ((GVARMAIN(is_training) && (GVARMAIN(rffDisabled))) || GVARMAIN(isGame)) exitWith {};
 	
     private _totalDamage = 0;
     
