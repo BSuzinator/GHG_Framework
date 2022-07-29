@@ -6,8 +6,6 @@
 ======================================*/
 params ["_unit", "_killer", "_instigator", "_useEffects"];
 
-if !(_unit in call BIS_fnc_listPlayers;) exitWith {};
-
 remoteExec [QFUNC(targetKilled), civilian];
 
 private _civCount = count ((call FUNC(getSidesPlayers)) select 4);
