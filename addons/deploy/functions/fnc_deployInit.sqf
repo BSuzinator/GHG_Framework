@@ -15,6 +15,8 @@ private _deployType = getText( _ghg >> (switch (side player) do {
     default {"deployType"};
 }));
 
+if (side player isEqualTo sideLogic) exitWith {};
+
 if (_deployType isEqualTo "none") exitWith {};
 
 if !((_deployType isEqualTo "LALO")
