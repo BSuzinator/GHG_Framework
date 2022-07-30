@@ -28,7 +28,9 @@ private _crateName = [];
 
 //Add root action
 private _resupplyCondition = {
-	private _resupplyDistance = 10;
+	params ["_target", "_player", "_actionParams"];
+	private _resupplyDistance = 30;
+	if (_target isKindOf "Ship") then {_resupplyDistance = 50;};
 
     private _okay = false;
     {
@@ -36,7 +38,7 @@ private _resupplyCondition = {
         if ( !isNull _rsupObj && { (_target distance _rsupObj) < _resupplyDistance } ) exitwith {
             _okay = true;
         };
-    } forEach ["Land_Ammostore2", "Land_Cargo20_military_green_F", "Land_Cargo20_sand_F", "ghg_servicePoint"];
+    } forEach ["Land_Ammostore2", "Land_Cargo20_military_green_F", "Land_Cargo20_sand_F","ghg_servicePoint"];
 
 	_okay // return
 };
@@ -78,7 +80,22 @@ private _mainAction = ["ghg_resupplyLoad", "Load Resupply", "\a3\ui_f\data\igui\
 } forEach _crateCfg;
 
 //Service Point actions
-private _mainServiceAction = ["ghg_serviceRoot", "Vehicle Service", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {}, _resupplyCondition] call ace_interact_menu_fnc_createAction;
+
+private _serviceCondition = {
+	private _resupplyDistance = 10;
+
+    private _okay = false;
+    {
+        private _rsupObj = nearestObject [_target, _x];
+        if ( !isNull _rsupObj && { (_target distance _rsupObj) < _resupplyDistance } ) exitwith {
+            _okay = true;
+        };
+    } forEach ["ghg_servicePoint"];
+
+	_okay // return
+};
+
+private _mainServiceAction = ["ghg_serviceRoot", "Vehicle Service", "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa", {}, _serviceCondition] call ace_interact_menu_fnc_createAction;
 
 ["LandVehicle", 0, ["ACE_MainActions"], _mainServiceAction, true] call ace_interact_menu_fnc_addActionToClass;
 ["Air", 0, ["ACE_MainActions"], _mainServiceAction, true] call ace_interact_menu_fnc_addActionToClass;
