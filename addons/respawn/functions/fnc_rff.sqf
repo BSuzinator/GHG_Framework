@@ -6,6 +6,8 @@
 	Author: BSuz
 ======================================*/
 
+if (GVARMAIN(isGame)) exitWith {};
+
 // NOTE: ACE3 medical event handler is added here https://github.com/acemod/ACE3/blob/master/addons/medical_engine/XEH_postInit.sqf#L27
 
 // Only run this once per client
@@ -61,7 +63,7 @@ if ( isNull _unit || {(side _unit) isEqualTo sideLogic} ) exitWith {}; // Make s
     
     // Exit if this was NOT friendly fire
 	if ((_unit isEqualTo _shooter) || (side _unit != side _shooter) || (side _shooter isEqualTo sideLogic) || (!isNull (getAssignedCuratorLogic _shooter))) exitWith {};
-	if ((GVARMAIN(is_training) && (GVARMAIN(rffDisabled))) || GVARMAIN(isGame)) exitWith {};
+	if (((GVARMAIN(is_training)) && (GVARMAIN(rffDisabled)))) exitWith {};
 	
     private _totalDamage = 0;
     
