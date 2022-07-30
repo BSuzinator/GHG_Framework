@@ -45,9 +45,9 @@ for "_i" from 1 to _vehicleCount do {
 		(surfaceIsWater _randPos) ||   
 		(_randPos isFlatEmpty  [-1, -1, 0.6, 17, -1] isEqualTo [])  ||
 		!(_randPos inArea "gamePlayZone") ||
-		!(_randPos nearObjects [ "LandVehicle", 150] isEqualTo []) ||
+		!((_randPos nearObjects [ "LandVehicle", 150 ]) isEqualTo []) ||
 		!( (isOnRoad _randPos) || (_randPos nearObjects [ "House", 12] isEqualTo [])) ||
-		(_randPos nearRoads 60 isEqualTo []) 
+		(_randPos nearRoads 100 isEqualTo []) 
 	} do {
 		_randX = _minX + (random _xLength);
 		_randY = _minY + (random _yLength);

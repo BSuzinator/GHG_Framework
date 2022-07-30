@@ -11,7 +11,7 @@ _civPlayers = _civPlayers - [player];
 
 private _target = selectRandom _civPlayers;
 
-if ( isNull _target ) exitwith {private _exitMsg = "Unable to assign new target"; systemChat _exitMsg; hint _exitMsg;};
+if ( _civPlayers isEqualTo [] ) exitwith {private _exitMsg = "Unable to assign new target"; systemChat _exitMsg; hint _exitMsg;};
 
 GVAR(target) = _target;
 

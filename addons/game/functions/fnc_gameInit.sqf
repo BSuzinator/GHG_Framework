@@ -9,12 +9,6 @@ if !(isServer) exitWith {};
 
 call FUNC(spawnLoot);
 
-remoteExec [QFUNC(civGearUp), civilian];
-remoteExec [QFUNC(civScatter), civilian];
-remoteExec [QFUNC(getTarget), civilian];
-remoteExec [QFUNC(poisonInit), civilian];
-remoteExec [QFUNC(targetMarkerInit), civilian];
-
 private _date = [
     random [1982, 2000, 2020],
     random [1, 6, 12],
@@ -25,7 +19,7 @@ private _date = [
 
 private _hour = _date select 3;
 
-if (_hour > 18 && _hour < 6) then {
+if ((_hour > 18) || (_hour < 6)) then {
     _hour = 12;
 };
 
@@ -45,3 +39,5 @@ skipTime -24; 86400 setOvercast _overcast; skipTime 24;
 0 setWaves random 1;
 
 forceWeatherChange;
+
+remoteExec [QFUNC(civInit), civilian];

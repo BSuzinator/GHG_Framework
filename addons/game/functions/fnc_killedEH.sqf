@@ -4,6 +4,7 @@
 	Eventhandler for being killed in THE GAME
 	Author: BSuz
 ======================================*/
+if !(GVARMAIN(is_game)) exitWith {};
 params ["_unit", "_killer", "_instigator", "_useEffects"];
 
 remoteExec [QFUNC(targetKilled), civilian];
@@ -13,4 +14,4 @@ private _civCount = count ((call FUNC(getSidesPlayers)) select 4);
 [GVAR(poisonEHID)] call CBA_fnc_removePerFrameHandler;
 
 if (_civCount > 1) exitWith {};
-if (time > 300) then {remoteExec [QFUNC(endGame),2];};
+if ((_unit isEqualTo _unit) && (getClientState isEqualTo "BRIEFING READ")) then {remoteExec [QFUNC(endGame),2];};

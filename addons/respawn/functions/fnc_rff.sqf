@@ -6,7 +6,7 @@
 	Author: BSuz
 ======================================*/
 
-if (GVARMAIN(isGame)) exitWith {};
+if (GVARMAIN(is_game)) exitWith {};
 
 // NOTE: ACE3 medical event handler is added here https://github.com/acemod/ACE3/blob/master/addons/medical_engine/XEH_postInit.sqf#L27
 

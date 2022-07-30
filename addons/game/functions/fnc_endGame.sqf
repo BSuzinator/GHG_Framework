@@ -30,5 +30,7 @@ publicvariable "RscDisplayDebriefing_params";
 
 [] spawn {
 	sleep 5;
-	["PlayerScore",_endingText] remoteExec ["BIS_fnc_endMissionServer",2];
+	["PlayerScore",_endingText] remoteExec ["BIS_fnc_endMission",0];
 };
+
+remoteExec [QFUNC(deInit),0];
