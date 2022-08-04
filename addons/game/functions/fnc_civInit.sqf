@@ -9,7 +9,6 @@ if !(hasInterface) exitWith {};
 [{ (player isEqualTo player) && (getClientState isEqualTo "BRIEFING READ") }, {
 	//systemChat str getClientState;
 	call FUNC(civGearUp);
-	call FUNC(civScatter);
 	call FUNC(getTarget);
 	call FUNC(poisonInit);
 	call FUNC(targetMarkerInit);

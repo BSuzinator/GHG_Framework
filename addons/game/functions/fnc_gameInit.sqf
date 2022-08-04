@@ -7,6 +7,7 @@
 if !(GVARMAIN(is_game)) exitWith {};
 if !(isServer) exitWith {};
 
+call FUNC(civScatter);
 call FUNC(spawnLoot);
 
 private _date = [
