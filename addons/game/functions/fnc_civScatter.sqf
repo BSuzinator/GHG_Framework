@@ -35,7 +35,7 @@ private _civPlayers = call FUNC(getSidesPlayers) select 4;
 		(surfaceIsWater _randPos) ||   
 		(_randPos isFlatEmpty  [-1, -1, 0.6, 17, -1] isEqualTo [])  ||
 		!(_randPos inArea "gamePlayZone") ||
-		(_randPos nearRoads 100 isEqualTo [])
+		(_randPos nearRoads 100 isEqualTo []) ||
 		!((_randPos nearObjects [ "Man", 200 ]) isEqualTo [])
 	} do {
 		_randX = _minX + (random _xLength);
