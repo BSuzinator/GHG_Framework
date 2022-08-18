@@ -7,11 +7,11 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_XM2010_wd", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
-		muzzle = "rhsusf_acc_M2010S";
-		bipod = "rhsusf_acc_harris_bipod";
+        classname[] = { "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3_BL", "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3_DE" };
+		muzzle = "uk3cb_baf_silencer_l115a3";
+		bipod = "uk3cb_underbarrel_acc_bipod";
         laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhsusf_5Rnd_300winmag_xm2010";
+        ammo = "UK3CB_BAF_338_5Rnd";
         
         class Scopes : Scopes
         {
@@ -36,7 +36,7 @@ class rcn_gunner : loadout_base
     {
         classname[] = { "UK3CB_BAF_V_Osprey_Rifleman_A", "UK3CB_BAF_V_Osprey_Winter", "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMT2", "UK3CB_BAF_V_Osprey_DDPM2" };
         // List of items
-        rhsusf_5Rnd_300winmag_xm2010 = 4;
+        UK3CB_BAF_338_5Rnd = 4;
 		rhsusf_mag_15Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
     };

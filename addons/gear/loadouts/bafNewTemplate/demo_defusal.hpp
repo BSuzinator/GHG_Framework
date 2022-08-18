@@ -13,14 +13,14 @@ class demo_defusal : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "V_EOD_olive_F", "V_EOD_olive_F", "V_EOD_olive_F", "V_EOD_coyote_F", "V_EOD_coyote_F" };
+        classname[] = { "V_EOD_olive_F", "V_EOD_blue_F", "V_EOD_olive_F", "V_EOD_olive_F", "V_EOD_coyote_F" };
         // List of items
 		ACE_DefusalKit = 1;
     };
     
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
+        classname[] = { "UK3CB_BAF_B_Kitbag_MTP", "UK3CB_BAF_B_Kitbag_Arctic", "UK3CB_BAF_B_Kitbag_DPMW", "UK3CB_BAF_B_Kitbag_DPMT", "UK3CB_BAF_B_Kitbag_DDPM" };
         // List of items
     };
 	

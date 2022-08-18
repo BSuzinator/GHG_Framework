@@ -7,7 +7,7 @@ class logi_repair : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ucp_Repair", "rhsusf_iotv_ucp_Repair" };
+        classname[] = { "UK3CB_BAF_V_Osprey_Rifleman_F", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_Osprey_DPMW4", "UK3CB_BAF_V_Osprey_DPMT4", "UK3CB_BAF_V_Osprey_DDPM4" };
         // List of items
 		ACE_microDAGR = 1;
 		ACRE_PRC152 = 1;

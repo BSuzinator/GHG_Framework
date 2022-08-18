@@ -19,7 +19,7 @@ class lynx_crew : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ucp_Repair", "rhsusf_iotv_ucp_Repair" };
+        classname[] = { "UK3CB_BAF_V_Osprey_Rifleman_F", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_Osprey_DPMW4", "UK3CB_BAF_V_Osprey_DPMT4", "UK3CB_BAF_V_Osprey_DDPM4" };
         // List of items
         UK3CB_BAF_556_30Rnd = 4;
         SmokeShell = 1;
@@ -28,6 +28,6 @@ class lynx_crew : squad_rifleman
         rhs_mag_m67 = 1;
         ACE_EntrenchingTool = 0;
     };
-	headgear[] = { "rhsusf_cvc_green_helmet", "rhsusf_cvc_green_helmet", "rhsusf_cvc_green_helmet", "rhsusf_cvc_helmet", "rhsusf_cvc_helmet" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_od", "rhsusf_shemagh2_gogg_od", "rhsusf_shemagh2_gogg_tan", "rhsusf_shemagh2_gogg_tan" };
+	headgear[] = { "UK3CB_BAF_H_CrewHelmet_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_CrewHelmet_DPMW_A", "UK3CB_BAF_H_CrewHelmet_DPMT_A", "UK3CB_BAF_H_CrewHelmet_DDPM_A" };
+    facewear[] = { "rhsusf_shemagh2_gogg_od", "rhsusf_shemagh2_gogg_white", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
 };

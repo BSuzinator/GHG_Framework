@@ -7,7 +7,7 @@ class ghg_crate_baf_mmg : ghg_crate_base
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
         UK3CB_BAF_556_30Rnd = 16;
-		rhsusf_50Rnd_762x51 = 8;
+		UK3CB_BAF_762_100Rnd = 8;
         rhs_mag_m67 = 3;
         rhs_mag_an_m8hc = 6;
         rhs_mag_M441_HE = 8;

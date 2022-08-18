@@ -16,7 +16,6 @@ class plt_lead : squad_rifleman
     
     class Vest : Vest
     {
-		classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
         // List of items
         ACRE_PRC152 = 1;
 		ACE_MapTools = 1;

@@ -14,7 +14,7 @@ class squad_ar : squad_rifleman
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ucp_SAW", "rhsusf_iotv_ucp_SAW" };
+        //classname[] = { "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ucp_SAW", "rhsusf_iotv_ucp_SAW" };
         // Inherited item overrides
         UK3CB_BAF_556_30Rnd = 0;
         SmokeShell = 1;

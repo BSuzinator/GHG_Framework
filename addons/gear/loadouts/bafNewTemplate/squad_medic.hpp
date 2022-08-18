@@ -7,7 +7,7 @@ class squad_medic : squad_rifleman
 
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ucp_Medic", "rhsusf_iotv_ucp_Medic" };
+        classname[] = { "UK3CB_BAF_V_Osprey_Medic_D", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_Osprey_DPMW5", "UK3CB_BAF_V_Osprey_DPMT5", "UK3CB_BAF_V_Osprey_DDPM5" };
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
         rhs_mag_m67 = 1;
