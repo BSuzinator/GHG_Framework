@@ -108,4 +108,7 @@ class CfgWeapons
             "AIOpticmode2"
         };
     };
+	class vn_l1a1_01 : vn_rifle762 {
+		magazineWell[] = {"CBA_762x51_FAL"};
+	}
 };
