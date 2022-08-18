@@ -1,6 +1,7 @@
 class Loadouts
 {
 	#include "bafNewTemplate\loadouts.hpp"
+	#include "bafCWNewTemplate\loadouts.hpp"
 	#include "bokoHaram\loadouts.hpp"
 	#include "macv\loadouts.hpp"
 	#include "macvNewTemplate\loadouts.hpp"
