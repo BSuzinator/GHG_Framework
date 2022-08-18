@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Marksman (usArmy)
 ======================================*/
-class squad_marksman : squad_rifle
+class squad_marksman : squad_rifleman
 {
     
     

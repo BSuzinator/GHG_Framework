@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Rifleman (usArmySF)
 ======================================*/
-class squad_rifle : loadout_base
+class squad_rifleman : loadout_base
 {
     
     

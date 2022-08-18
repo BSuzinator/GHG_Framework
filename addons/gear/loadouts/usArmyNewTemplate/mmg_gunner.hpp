@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MMG Gunner (usArmy)
 ======================================*/
-class mmg_gunner : squad_rifle
+class mmg_gunner : squad_rifleman
 {
     
 	

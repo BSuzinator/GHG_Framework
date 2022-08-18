@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Crew (serbian)
 ======================================*/
-class lynx_crew : squad_rifle
+class lynx_crew : squad_rifleman
 {
     
 	

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for EWS ROLM (serbian)
 ======================================*/
-class ews_comp : squad_rifle
+class ews_comp : squad_rifleman
 {
     
     

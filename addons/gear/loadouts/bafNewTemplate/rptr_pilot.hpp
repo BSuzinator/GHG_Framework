@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Fixed Wing Pilots (baf)
 ======================================*/
-class rptr_pilot : squad_rifle
+class rptr_pilot : squad_rifleman
 {
     
     

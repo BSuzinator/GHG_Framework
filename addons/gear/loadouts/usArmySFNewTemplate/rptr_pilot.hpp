@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Fixed Wing Pilots (usArmySF)
 ======================================*/
-class rptr_pilot : squad_rifle
+class rptr_pilot : squad_rifleman
 {
     
     

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Repair Specialist (usArmySF)
 ======================================*/
-class logi_repair : squad_rifle
+class logi_repair : squad_rifleman
 {
     
 	

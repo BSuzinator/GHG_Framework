@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Medics (serbian)
 ======================================*/
-class squad_medic : squad_rifle
+class squad_medic : squad_rifleman
 {
     
 

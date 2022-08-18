@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Marksman (serbian)
 ======================================*/
-class squad_marksman : squad_rifle
+class squad_marksman : squad_rifleman
 {
     
     

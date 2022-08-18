@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Autorifleman (usKorea)
 ======================================*/
-class squad_ar : squad_rifle
+class squad_ar : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

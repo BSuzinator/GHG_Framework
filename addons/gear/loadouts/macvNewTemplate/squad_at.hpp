@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Rifleman(AT) (macv)
 ======================================*/
-class squad_at : squad_rifle
+class squad_at : squad_rifleman
 {
     class Weapon_3 : Weapon_3 // Launcher
     {

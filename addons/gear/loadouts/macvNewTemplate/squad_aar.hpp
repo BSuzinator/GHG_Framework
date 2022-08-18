@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Assistant Autorifleman (macv)
 ======================================*/
-class squad_aar : squad_rifle
+class squad_aar : squad_rifleman
 {
     class Vest : Vest
     {

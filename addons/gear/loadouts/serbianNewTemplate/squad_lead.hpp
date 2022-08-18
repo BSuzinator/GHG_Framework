@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Leads (serbian)
 ======================================*/
-class squad_lead : squad_rifle
+class squad_lead : squad_rifleman
 {
     
     

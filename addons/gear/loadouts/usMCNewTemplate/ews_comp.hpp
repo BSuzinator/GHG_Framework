@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for EWS ROLM (usMC)
 ======================================*/
-class ews_comp : squad_rifle
+class ews_comp : squad_rifleman
 {
     
     

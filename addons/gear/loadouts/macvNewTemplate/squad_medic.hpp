@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Medics (macv)
 ======================================*/
-class squad_medic : squad_rifle
+class squad_medic : squad_rifleman
 {
     
 

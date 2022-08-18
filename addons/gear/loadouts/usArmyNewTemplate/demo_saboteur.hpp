@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Demo Saboteur (usArmy)
 ======================================*/
-class demo_saboteur : squad_rifle
+class demo_saboteur : squad_rifleman
 {
 	class Vest : Vest
     {

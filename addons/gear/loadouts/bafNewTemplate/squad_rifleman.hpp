@@ -1,16 +1,16 @@
 /*======================================
-	Loadout for Rifleman (usArmy)
+	Loadout for Rifleman (baf)
 ======================================*/
-class squad_rifle : loadout_base
+class squad_rifleman : loadout_base
 {
     
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_wd", "rhs_weap_m4a1", "rhs_weap_m4a1", "rhs_weap_m4a1", "rhs_weap_m4a1_d" };
+        classname[] = { "UK3CB_BAF_L85A2_RIS", "UK3CB_BAF_L85A2_RIS_W", "UK3CB_BAF_L85A2_RIS_G", "UK3CB_BAF_L85A2_RIS_G", "UK3CB_BAF_L85A2_RIS_D" };
         laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-		bipod = "rhsusf_acc_kac_grip";
+        ammo = "UK3CB_BAF_556_30Rnd";
+		bipod = "";
         
         class Scopes : Scopes
         {
@@ -25,20 +25,20 @@ class squad_rifle : loadout_base
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
+        classname[] = { "UK3CB_BAF_U_CombatUniform_MTP", "UK3CB_BAF_U_Smock_Arctic", "UK3CB_BAF_U_CombatUniform_DPMW", "UK3CB_BAF_U_CombatUniform_DPMT", "UK3CB_BAF_U_CombatUniform_DDPM" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ucp_Rifleman", "rhsusf_iotv_ucp_Rifleman" };
+        classname[] = { "UK3CB_BAF_V_Osprey_Rifleman_A", "UK3CB_BAF_V_Osprey_Winter", "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMT2", "UK3CB_BAF_V_Osprey_DDPM2" };
         // List of items
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 8;
+        UK3CB_BAF_556_30Rnd = 8;
         SmokeShell = 2;
         rhs_mag_m67 = 2;
         ACE_EntrenchingTool = 1;
     };
     
-    headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
+    headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_A", "UK3CB_BAF_H_Mk6_DPMT_A", "UK3CB_BAF_H_Mk6_DDPM_A" };
     facewear = "rhsusf_oakley_goggles_clr";
 };

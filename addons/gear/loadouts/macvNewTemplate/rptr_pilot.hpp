@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Fixed Wing Pilots (macv)
 ======================================*/
-class rptr_pilot : squad_rifle
+class rptr_pilot : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

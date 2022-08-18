@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Repair Specialist (usKorea)
 ======================================*/
-class logi_repair : squad_rifle
+class logi_repair : squad_rifleman
 {
     class Vest : Vest
     {

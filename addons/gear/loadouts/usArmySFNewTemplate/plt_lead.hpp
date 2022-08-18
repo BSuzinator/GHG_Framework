@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for PLT Lead (usArmySF)
 ======================================*/
-class plt_lead : squad_rifle
+class plt_lead : squad_rifleman
 {
     
 

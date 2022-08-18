@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MMG Ammo Bearer (serbian)
 ======================================*/
-class mmg_ammo : squad_rifle
+class mmg_ammo : squad_rifleman
 {
     
     

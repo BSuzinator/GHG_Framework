@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Crew (usArmy)
 ======================================*/
-class lynx_crew : squad_rifle
+class lynx_crew : squad_rifleman
 {
     
 	

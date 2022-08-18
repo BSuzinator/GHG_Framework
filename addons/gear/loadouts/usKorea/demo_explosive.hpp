@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Explosive Specialist (usKorea)
 ======================================*/
-class demo_explosive : squad_rifle
+class demo_explosive : squad_rifleman
 {
     class Weapon_2 : Weapon_2 
 	{ 

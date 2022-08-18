@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MMG Ammo Bearer (usArmy)
 ======================================*/
-class mmg_ammo : squad_rifle
+class mmg_ammo : squad_rifleman
 {
     
     

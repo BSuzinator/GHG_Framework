@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Marksman (usKorea)
 ======================================*/
-class squad_marksman : squad_rifle
+class squad_marksman : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Demo Defusal (macv)
 ======================================*/
-class demo_defusal : squad_rifle
+class demo_defusal : squad_rifleman
 {
 	class Vest : Vest
     {

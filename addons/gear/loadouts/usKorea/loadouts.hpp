@@ -13,7 +13,7 @@ class usKorea
     #include "..\loadout_base.hpp"
 	#include "loadout_base_usKorea.hpp"
 
-	#include "squad_rifle.hpp"
+	#include "squad_rifleman.hpp"
     #include "squad_marksman.hpp"
 	#include "squad_lead.hpp"
 	#include "squad_medic.hpp"

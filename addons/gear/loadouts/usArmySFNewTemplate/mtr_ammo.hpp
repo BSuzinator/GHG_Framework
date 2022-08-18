@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Ammo Bearer (usArmySF)
 ======================================*/
-class mtr_ammo : squad_rifle
+class mtr_ammo : squad_rifleman
 {
     
 	

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Rifleman (usKorea)
 ======================================*/
-class squad_rifle : loadout_base_usKorea
+class squad_rifleman : loadout_base_usKorea
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

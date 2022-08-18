@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Recon Ammo Bearer (usKorea)
 ======================================*/
-class rcn_ammo : squad_rifle
+class rcn_ammo : squad_rifleman
 {
     class Weapon_2 : Weapon_2 {
         classname = "vn_welrod";

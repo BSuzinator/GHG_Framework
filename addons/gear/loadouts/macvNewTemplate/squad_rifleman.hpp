@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Rifleman (macv)
 ======================================*/
-class squad_rifle : loadout_base_macv
+class squad_rifleman : loadout_base_macv
 {
     
     

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Assistant Autorifleman (baf)
 ======================================*/
-class squad_aar : squad_rifle
+class squad_aar : squad_rifleman
 {
     
     

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Crew (macv)
 ======================================*/
-class lynx_crew : squad_rifle
+class lynx_crew : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Repair Specialist (macv)
 ======================================*/
-class logi_repair : squad_rifle
+class logi_repair : squad_rifleman
 {
     class Vest : Vest
     {

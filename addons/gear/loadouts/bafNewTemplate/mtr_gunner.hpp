@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Gunner (baf)
 ======================================*/
-class mtr_gunner : squad_rifle
+class mtr_gunner : squad_rifleman
 {
     
 	

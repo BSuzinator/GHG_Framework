@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for EWS Teletype (baf)
 ======================================*/
-class ews_comms : squad_rifle
+class ews_comms : squad_rifleman
 {
     
 	class Backpack : Backpack

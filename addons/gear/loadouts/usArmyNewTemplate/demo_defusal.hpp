@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Demo Defusal (usArmy)
 ======================================*/
-class demo_defusal : squad_rifle
+class demo_defusal : squad_rifleman
 {
 	
 	class Weapon_2 : Weapon_2 

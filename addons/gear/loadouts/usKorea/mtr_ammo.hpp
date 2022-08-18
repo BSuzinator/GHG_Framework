@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Ammo Bearer (usKorea)
 ======================================*/
-class mtr_ammo : squad_rifle
+class mtr_ammo : squad_rifleman
 {
     class Weapon_3 : Weapon_3 // Launcher
     {

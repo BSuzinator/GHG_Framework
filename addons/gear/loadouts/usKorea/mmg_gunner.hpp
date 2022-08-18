@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MMG Gunner (usKorea)
 ======================================*/
-class mmg_gunner : squad_rifle
+class mmg_gunner : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

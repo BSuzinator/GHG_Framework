@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for PLT Lead (macv)
 ======================================*/
-class plt_lead : squad_rifle
+class plt_lead : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

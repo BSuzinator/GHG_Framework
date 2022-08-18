@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Explosive Specialist (serbian)
 ======================================*/
-class demo_explosive : squad_rifle
+class demo_explosive : squad_rifleman
 {
     
 

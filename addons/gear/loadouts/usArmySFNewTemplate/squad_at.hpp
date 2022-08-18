@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Rifleman(AT) (usArmySF)
 ======================================*/
-class squad_at : squad_rifle
+class squad_at : squad_rifleman
 {
     
 

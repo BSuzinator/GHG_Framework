@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MAT Ammo Bearer (usArmySF)
 ======================================*/
-class mat_ammo : squad_rifle
+class mat_ammo : squad_rifleman
 {
     
 	

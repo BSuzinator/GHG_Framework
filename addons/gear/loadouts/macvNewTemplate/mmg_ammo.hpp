@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MMG Ammo Bearer (macv)
 ======================================*/
-class mmg_ammo : squad_rifle
+class mmg_ammo : squad_rifleman
 {
     class Vest : Vest
     {

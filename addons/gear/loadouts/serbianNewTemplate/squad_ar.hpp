@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Autorifleman (serbian)
 ======================================*/
-class squad_ar : squad_rifle
+class squad_ar : squad_rifleman
 {
     
     

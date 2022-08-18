@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MAT Ammo Bearer (usKorea)
 ======================================*/
-class mat_ammo : squad_rifle
+class mat_ammo : squad_rifleman
 {
     class Backpack : Backpack
     {

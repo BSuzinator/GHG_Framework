@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Leads (macv)
 ======================================*/
-class squad_lead : squad_rifle
+class squad_lead : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

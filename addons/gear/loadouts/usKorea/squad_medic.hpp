@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Medics (usKorea)
 ======================================*/
-class squad_medic : squad_rifle
+class squad_medic : squad_rifleman
 {
     class Weapon_1 : Weapon_1 // Rifle
     {

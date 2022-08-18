@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Recon Ammo Bearer (usMC)
 ======================================*/
-class rcn_ammo : squad_rifle
+class rcn_ammo : squad_rifleman
 {
     
 	

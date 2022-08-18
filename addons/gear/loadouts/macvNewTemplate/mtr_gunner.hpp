@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Gunner (macv)
 ======================================*/
-class mtr_gunner : squad_rifle
+class mtr_gunner : squad_rifleman
 {
     class Weapon_3 : Weapon_3 // Launcher
     {

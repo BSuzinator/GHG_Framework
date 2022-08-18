@@ -12,7 +12,7 @@ class usArmySFNewTemplate
     // Should be 25
     #include "..\loadout_base.hpp"
 
-	#include "squad_rifle.hpp"
+	#include "squad_rifleman.hpp"
 	#include "squad_lead.hpp"
 	#include "squad_medic.hpp"
 	#include "squad_ar.hpp"

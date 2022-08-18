@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MTR Ammo Bearer (macv)
 ======================================*/
-class mtr_ammo : squad_rifle
+class mtr_ammo : squad_rifleman
 {
     class Weapon_3 : Weapon_3 // Launcher
     {

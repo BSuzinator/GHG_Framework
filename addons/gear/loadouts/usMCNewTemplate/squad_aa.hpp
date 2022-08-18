@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad AA (usMC)
 ======================================*/
-class squad_aa : squad_rifle
+class squad_aa : squad_rifleman
 {
 	
 };

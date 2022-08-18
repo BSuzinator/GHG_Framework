@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for MAT Gunner (macv)
 ======================================*/
-class mat_gunner : squad_rifle
+class mat_gunner : squad_rifleman
 {
     class Weapon_3 : Weapon_3 // Launcher
     {

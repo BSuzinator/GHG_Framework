@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Explosive Specialist (baf)
 ======================================*/
-class demo_explosive : squad_rifle
+class demo_explosive : squad_rifleman
 {
     
 
