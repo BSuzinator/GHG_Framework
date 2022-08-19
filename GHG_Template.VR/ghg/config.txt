@@ -40,17 +40,17 @@ customGroups[] = {};
 useDynamicGroups = 0;
 
 //Set deploy configuration
-//List of acceptable types: LALO, HALO, SURFACE, none
+//List of acceptable types: LALO, HALO, SURFACE, iLALO, iHALO, iSURFACE, none
 //deployRange is how far in meters you can do deploy from main base respawn marker
-bluDeployType = "LALO";
+bluDeployType = "none";
 bluDeployRange = "100";
-opfDeployType = "LALO";
+opfDeployType = "none";
 opfDeployRange = "100";
-indDeployType = "LALO";
+indDeployType = "none";
 indDeployRange = "100";
 
 //Trackables Setup
-useTrackables = 1;
+useTrackables = 0;
 //Insert Variable Names of desired objects to track
 bluTrackables[] = {};
 opfTrackables[] = {};
