@@ -1,28 +1,25 @@
 class CfgAmmo {
 	
 	//Stop AA guns from targeting Infantry
-	class B_35mm_AA;
-	class B_35mm_AA : B_35mm_AA {
+	class BulletBase;
+	class B_35mm_AA : BulletBase {
 		aiAmmoUsageFlags = "128 + 256";
 	};
 	
-	class RHS_ammo_23mm_AA;
-	class RHS_ammo_23mm_AA : RHS_ammo_23mm_AA {
+	class RHS_ammo_23mm_AA : B_35mm_AA {
 		aiAmmoUsageFlags = "128 + 256";
 	};
 	
-	class vn_127x99;
-	class vn_127x99 : vn_127x99 {
+	class vn_riflebullet_base;
+	class vn_127x99 : vn_riflebullet_base {
 		aiAmmoUsageFlags = "128 + 256 + 512";
 	};
 	
-	class vn_20x110;
-	class vn_20x110 : vn_20x110 {
+	class vn_20x110 : BulletBase {
 		aiAmmoUsageFlags = "128 + 256 + 512";
 	};
 	
-	class lxws_b_23x152_he;
-	class lxws_b_23x152_he : lxws_b_23x152_he {
+	class lxws_b_23x152_he : BulletBase {
 		aiAmmoUsageFlags = "128 + 256";
 	};
 	
