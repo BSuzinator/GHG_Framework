@@ -30,6 +30,7 @@ class rcn_gunner : loadout_base_usKorea
         UK3CB_M1903A1_3006_5rnd_Magazine = 4;
         vn_m18_white_mag = 2;
         vn_m1911_mag = 4;
+		ACE_RangeCard = 1;
     };
     
     headgear[] = { "vn_b_helmet_m1_06_01", "vn_b_helmet_m1_06_02" };

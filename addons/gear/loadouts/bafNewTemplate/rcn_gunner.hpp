@@ -39,6 +39,7 @@ class rcn_gunner : loadout_base
         UK3CB_BAF_338_5Rnd = 4;
 		rhsusf_mag_15Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
+		ACE_RangeCard = 1;
     };
     
     headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_A", "UK3CB_BAF_H_Mk6_DPMT_A", "UK3CB_BAF_H_Mk6_DDPM_A" };

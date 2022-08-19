@@ -39,6 +39,7 @@ class rcn_gunner : loadout_base
         rhsusf_5Rnd_300winmag_xm2010 = 4;
 		rhsusf_mag_15Rnd_9x19_FMJ = 2;
         SmokeShell = 2;
+		ACE_RangeCard = 1;
     };
     
     headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
