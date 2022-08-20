@@ -12,7 +12,7 @@ private _forceLogoutAdmin = ["Logout Current Admin",{"#logout" remoteExec ["serv
 private _loginAdmin = ["Login as Admin",{serverCommand "#login";},"","",[],-1,true,true];
 private _kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,true];
 private _storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
-private _toggleRFF = ["Toggle RFF",ghg_statistics_fnc_toggleRFF,"","",[],-1,true,true];
+private _toggleRFF = ["Toggle RFF",FUNC(toggleRFF),"","",[],-1,true,true];
 
 //Define Submenu Actions
 private _vehicleSubmenu = [
