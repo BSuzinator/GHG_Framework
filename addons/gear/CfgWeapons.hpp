@@ -108,7 +108,15 @@ class CfgWeapons
             "AIOpticmode2"
         };
     };
+	//Add mags to L1A1
 	class vn_l1a1_01 : vn_rifle762 {
 		magazineWell[] = {"CBA_762x51_FAL"};
 	}
+	
+	//Strip FFARs of extra firemodes
+	class RocketPods;
+	class rhs_weap_FFARLauncher : RocketPods {
+		modes[] = {"Far_AI","Single","Burst"};
+	};
+	
 };
