@@ -8,6 +8,7 @@ class mat_gunner : squad_rifleman
     {
         classname = "rhs_weap_smaw_green";
         ammo = "rhs_mag_smaw_HEAA";
+        grenade = "rhs_mag_smaw_SR";
 		class Scopes { rhs_weap_optic_smaw = "rhs_weap_optic_smaw"; };
     };
 	
@@ -21,10 +22,6 @@ class mat_gunner : squad_rifleman
         classname = "B_Carryall_cbr";
         // List of items
         rhs_mag_smaw_HEAA = 2;
-    };
-	
-	class Binoculars : Binoculars
-    {
-        classname = "Binocular";
+        rhs_mag_smaw_SR = 4;
     };
 };

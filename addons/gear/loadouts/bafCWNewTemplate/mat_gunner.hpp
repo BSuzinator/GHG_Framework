@@ -8,6 +8,7 @@ class mat_gunner : squad_rifleman
     {
         classname = "rhs_weap_maaws";
         ammo = "rhs_mag_maaws_HEAT";
+        grenade = "rhs_mag_smaw_SR";
 		class Scopes { rhs_weap_optic_smaw = "rhs_optic_maaws"; };
     };
 	
@@ -21,10 +22,6 @@ class mat_gunner : squad_rifleman
         classname[] = { "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A" };
         // List of items
         rhs_mag_maaws_HEAT = 2;
-    };
-	
-	class Binoculars : Binoculars
-    {
-        classname = "Binocular";
+        rhs_mag_smaw_SR = 4;
     };
 };
