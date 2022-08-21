@@ -8,6 +8,7 @@ class ghg_crate_baf_mat : ghg_crate_base
         ACE_packingBandage = 8;
         UK3CB_BAF_556_30Rnd = 16;
 		rhs_mag_smaw_HEAA = 5;
+        rhs_mag_smaw_SR = 5;
         rhs_mag_m67 = 3;
         rhs_mag_an_m8hc = 6;
         rhs_mag_M441_HE = 8;
