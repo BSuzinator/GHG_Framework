@@ -27,7 +27,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGHG.hpp"
-#include "servicePoints.hpp"
 
 class ACEX_Fortify_Presets {
 	
