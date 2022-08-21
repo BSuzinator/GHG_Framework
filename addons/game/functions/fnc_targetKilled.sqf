@@ -10,3 +10,4 @@ if (_targetAlive) exitWith {};
 
 [true] call FUNC(getTarget);
 player setDamage 0;
+GVAR(poisonDamage) = 0.02;
