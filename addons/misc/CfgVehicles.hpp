@@ -57,7 +57,7 @@ class CfgVehicles {
 		class ACE_Actions {
             class GHG_PackSpikeStrip {
                 displayName = "Pack Spike Strip";
-                distance = 7.0;
+                distance = 7;
                 position = "[0,0,1]";
                 condition = "true";
                 statement = QUOTE(_this call FUNC(spikeStripPack));
