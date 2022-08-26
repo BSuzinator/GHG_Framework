@@ -29,20 +29,19 @@ private _randPos = [_randX,_randY,1];
 
 private _civPlayers = call FUNC(getSidesPlayers) select 4;
 
-{
-	private _player = _x;
-	while {  
-		(surfaceIsWater _randPos) ||   
-		(_randPos isFlatEmpty  [-1, -1, 0.6, 17, -1] isEqualTo [])  ||
-		!(_randPos inArea "gamePlayZone") ||
-		(_randPos nearRoads 100 isEqualTo []) ||
-		!((_randPos nearObjects [ "Man", 200 ]) isEqualTo [])
-	} do {
-		_randX = _minX + (random _xLength);
-		_randY = _minY + (random _yLength);
-		_randPos = [_randX,_randY,1];
-		//systemChat str ["Pos:",_randPos,"Surface:",surfaceNormal _randPos];
-	};
-	_player setPos _randPos;
-	_player setDir (floor random 360);
-} forEach _civPlayers;
+
+private _player = player;
+while {  
+	(surfaceIsWater _randPos) ||   
+	(_randPos isFlatEmpty  [-1, -1, 0.6, 17, -1] isEqualTo [])  ||
+	!(_randPos inArea "gamePlayZone") ||
+	(_randPos nearRoads 100 isEqualTo []) ||
+	!((_randPos nearObjects [ "Man", 200 ]) isEqualTo [])
+} do {
+	_randX = _minX + (random _xLength);
+	_randY = _minY + (random _yLength);
+	_randPos = [_randX,_randY,1];
+	//systemChat str ["Pos:",_randPos,"Surface:",surfaceNormal _randPos];
+};
+_player setPos _randPos;
+_player setDir (floor random 360);

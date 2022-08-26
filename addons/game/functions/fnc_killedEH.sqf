@@ -14,4 +14,4 @@ private _civCount = count ((call FUNC(getSidesPlayers)) select 4);
 [GVAR(poisonEHID)] call CBA_fnc_removePerFrameHandler;
 
 if (_civCount > 1) exitWith {};
-if ((_unit isEqualTo _unit) && (getClientState isEqualTo "BRIEFING READ")) then {remoteExec [QFUNC(endGame),2];};
+if ((_unit isEqualTo _unit) && (getClientState isEqualTo "BRIEFING READ") && (_civCount <= 1)) then {remoteExec [QFUNC(endGame),2];};

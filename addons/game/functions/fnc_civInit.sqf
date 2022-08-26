@@ -12,5 +12,5 @@ if !(hasInterface) exitWith {};
 	call FUNC(getTarget);
 	call FUNC(poisonInit);
 	call FUNC(targetMarkerInit);
-	
+	call FUNC(civScatter);
 }, []] call CBA_fnc_waitUntilAndExecute;

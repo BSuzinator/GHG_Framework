@@ -7,7 +7,6 @@
 if !(GVARMAIN(is_game)) exitWith {};
 if !(isServer) exitWith {};
 
-call FUNC(civScatter);
 call FUNC(spawnLoot);
 
 private _date = [
@@ -21,7 +20,7 @@ private _date = [
 private _hour = _date select 3;
 
 if ((_hour > 18) || (_hour < 6)) then {
-    _hour = 12;
+    _date set [3, 12];
 };
 
 setDate _date;
