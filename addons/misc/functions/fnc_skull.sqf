@@ -50,7 +50,7 @@ GVAR(skull_frame) = true;
         
         _skull ctrlSetText format ["x\ghg\addons\misc\ui\skull\skull_%1.paa", [0, 1] select GVAR(skull_frame)];
         
-        if ( GVAR(skull_frame) ) then { playSound "SkullLaugh" };
+        if ( GVAR(skull_frame) ) then { playSoundUI [ "SkullLaugh" ] };
         
         GVAR(skull_frame) = !GVAR(skull_frame);
     };
