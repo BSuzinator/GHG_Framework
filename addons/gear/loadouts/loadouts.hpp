@@ -11,6 +11,7 @@ class Loadouts
 	#include "serbianNewTemplate\loadouts.hpp"
 	#include "spetznaz\loadouts.hpp"
 	#include "taliban\loadouts.hpp"
+	#include "talibanNewTemplate\loadouts.hpp"
 	#include "usArmy\loadouts.hpp"
 	#include "usArmyNewTemplate\loadouts.hpp"
 	#include "usArmySF\loadouts.hpp"
