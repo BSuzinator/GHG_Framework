@@ -5,7 +5,7 @@
 	Author: BSuz
 ======================================*/
 params [["_targetKilled",false]];
-private _civPlayers = call FUNC(getSidesPlayers) select 4;
+private _civPlayers = (call FUNC(getSidesPlayers)) select 4;
 
 _civPlayers = _civPlayers - [player];
 
