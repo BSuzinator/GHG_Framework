@@ -1,7 +1,7 @@
 #define CAR_F_RACK displayName = "Console";\
     shortName = "Con";      \
     componentName = "ACRE_VRC111";\
-    allowedPositions[] = {"inside"};\
+    allowedPositions[] = {"inside","external"};\
     disabledPositions[] = {};\
     defaultComponents[] = {};\
     mountedRadio = "ACRE_PRC148";\
