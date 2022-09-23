@@ -20,5 +20,3 @@ _float setPosASL _staticPosASL;
 
 //Set Floaty section to player's locality
 _float setOwner (owner _player);
-
-_float allowDamage true;
