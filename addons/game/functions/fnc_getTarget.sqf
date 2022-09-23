@@ -9,9 +9,9 @@ private _civPlayers = (call FUNC(getSidesPlayers)) select 4;
 
 _civPlayers = _civPlayers - [player];
 
-private _target = selectRandom _civPlayers;
-
 if ( _civPlayers isEqualTo [] ) exitwith {private _exitMsg = "Unable to assign new target"; systemChat _exitMsg; hint _exitMsg;};
+
+private _target = selectRandom _civPlayers;
 
 GVAR(target) = _target;
 
