@@ -17,6 +17,8 @@ private _float = createVehicle ["rhs_pontoon_float", [0,0,1], [], 0, "CAN_COLLID
 _float allowDamage false;
 _float setDir _staticDir;
 _float setPosASL _staticPosASL;
-_float allowDamage true;
+
 //Set Floaty section to player's locality
 _float setOwner (owner _player);
+
+_float allowDamage true;

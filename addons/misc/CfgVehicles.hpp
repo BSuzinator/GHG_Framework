@@ -71,17 +71,18 @@ class CfgVehicles {
 	class rhs_pontoon_float : ThingX {
 		//Floaty One
 		ace_interaction_canPush = 1;
-		
-		class ACE_Actions {
+		class ACE_Actions;
+		class ACE_Actions : ACE_Actions {
             class GHG_PontoonLock {
                 displayName = "Lock Pontoon";
                 distance = 7;
                 position = "[0,0,0.5]";
-                condition = "true";
+                condition = "_this # 0 animationSourcePhase 'fold_source' isEqualTo 0";
                 statement = QUOTE(_this call FUNC(pontoonLock));
                 exceptions[] = {"isNotSwimming"};
             };
-			class ACE_MainActions {
+			class ACE_MainActions;
+			class ACE_MainActions : ACE_MainActions {
 				class GHG_PontoonPush {
 					displayName = "Push";
 					distance = 7;
@@ -102,7 +103,8 @@ class CfgVehicles {
 	
 	class rhs_pontoon_static : rhs_pontoon_static_base {
 		//Static Main Bridge Segment
-		class ACE_Actions {
+		class ACE_Actions;
+		class ACE_Actions : ACE_Actions {
             class GHG_PontoonUnlock {
                 displayName = "Unlock Pontoon";
                 distance = 7;
@@ -123,8 +125,8 @@ class CfgVehicles {
 		ace_dragging_canCarry = 1;
 		ace_dragging_carryPosition[] = {0,7,0};
 		ace_dragging_carryDirection = 180;
-		
-		class ACE_Actions {
+		class ACE_Actions;
+		class ACE_Actions : ACE_Actions {
             class GHG_PrepPontoonEndPoint {
                 displayName = "Prep Endpoint";
                 distance = 7;
@@ -141,12 +143,20 @@ class CfgVehicles {
 		ace_interaction_canPush = 1;
 	};
 	
-	class rhs_kraz255b1_base;
-	class rhs_kraz255b1_flatbed_base : rhs_kraz255b1_base{
+	//["rhs_kraz255b1_flatbed_base","rhs_kraz255b1_base","rhs_kraz255_base","O_Truck_02_covered_F","Truck_02_base_F","Truck_F","Car_F","Car","LandVehicle","Land","AllVehicles","All"]
+	class LandVehicle;
+	class Car : LandVehicle {
 		class ACE_Actions {
-			class ACE_MainActions;
+			class ACE_MainActions {};
 		};
 	};
+	class Car_F : Car {};
+	class Truck_F : Car_F {};
+	class Truck_02_base_F : Truck_F {};
+	class O_Truck_02_covered_F : Truck_02_base_F {};
+	class rhs_kraz255_base : O_Truck_02_covered_F {};
+	class rhs_kraz255b1_base : rhs_kraz255_base {};
+	class rhs_kraz255b1_flatbed_base : rhs_kraz255b1_base {};
 	class rhs_kraz255b1_pmp_base : rhs_kraz255b1_flatbed_base {
 		class ACE_Actions : ACE_Actions {
 			class ACE_MainActions : ACE_MainActions {
