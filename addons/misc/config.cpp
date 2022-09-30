@@ -45,7 +45,8 @@ class CfgMainMenuSpotlight
     delete Tanks_Campaign_01;
 	delete Extraction_lxWS;
     delete Showcase_VR_lxWS;
-    
+    delete Showcase_Alchemist_lxWS;
+	
     class GHG_Connect
 	{
 		text = "Ghost Hawk Gaming";
