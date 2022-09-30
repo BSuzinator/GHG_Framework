@@ -7,20 +7,24 @@ class squad_marksman : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "vn_sks";
+        classname = "arifle_SLR_V_lxWS";
         laser = "";
-        ammo = "vn_sks_t_mag";
+        ammo = "20Rnd_762x51_slr_lxWS";
 		bipod = "";
-        
+		
+        class Scopes : Scopes
+        {
+            magnified = "rhsusf_acc_acog";
+        };
     };
     
     class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_762x39mm = 0;
-        vn_sks_t_mag = 5;
+        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
+        20Rnd_762x51_slr_lxWS = 5;
     };
     
-    headgear[] = { "LOP_H_Shemag_BLK" };
-    facewear = "G_Combat_lxWS";
+	headgear = "vn_b_boonie_05_03";
+	facewear = "G_Headset_lxWS";
 };

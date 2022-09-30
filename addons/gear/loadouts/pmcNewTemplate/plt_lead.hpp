@@ -10,22 +10,32 @@ class plt_lead : squad_rifleman
         
         class Scopes : Scopes
         {
-            acog = "rhs_acc_perst1ik";
+            acog = "rhsusf_acc_ACOG_RMR";
         };
     };
-    
+    class Uniform : Uniform
+	{
+		classname = "LOP_U_PMC_Fatigue_01";
+	};
     class Vest : Vest
     {
+		classname = "rhsusf_plateframe_teamleader";
         // List of items
         ACRE_PRC152 = 1;
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
     };
 	
+	class Backpack : Backpack
+	{
+		classname = "B_AssaultPack_cbr";
+	};
+	
 	class Binoculars : Binoculars
     {
         classname = "Binocular";
     };
 	
-    headgear[] = { "LOP_H_Turban_mask" };
+    headgear = "UK3CB_H_Safari_Hat_Brown";
+	facewear = "G_Headset_lxWS";
 };

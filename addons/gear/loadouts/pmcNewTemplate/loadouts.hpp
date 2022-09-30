@@ -2,7 +2,7 @@ class pmcNewTemplate
 {
     version = 1;
     
-    camo[] = { "desert" };
+    camo[] = {  };
     
     class Magazines
     {

@@ -6,10 +6,14 @@ class mat_gunner : squad_rifleman
     
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_rpg7";
-        ammo = "rhs_rpg7_PG7VR_mag";
-		class Scopes { rhs_acc_pgo7v3 = "rhs_acc_pgo7v3"; };
+        classname = "rhs_weap_smaw_green";
+        ammo = "rhs_mag_smaw_HEAA";
     };
+	
+	class Uniform : Uniform
+	{
+		classname = "UK3CB_LNM_B_U_Shirt_Pants_14";
+	};
 	
 	class Vest : Vest
     {
@@ -18,15 +22,15 @@ class mat_gunner : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname[] = { "B_Carryall_cbr" };
+        classname = "B_Carryall_desert_lxWS";
         // List of items
-        rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+        rhs_mag_smaw_HEAA = 2;
     };
 	
 	class Binoculars : Binoculars
     {
         classname = "Binocular";
     };
+	headgear = "H_Watchcap_cbr";
+	facewear = "G_Aviator";
 };

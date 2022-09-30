@@ -3,9 +3,14 @@
 ======================================*/
 class demo_saboteur : squad_rifleman
 {
+	class Uniform : Uniform 
+	{
+		classname = "U_C_E_LooterJacket_01_F";
+	};
+	
 	class Vest : Vest
     {
-        classname[] = { "LOP_V_CarrierLite_TAN" };
+        classname = "UK3CB_AAF_I_V_Falcon_1_DIGI_BLK";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -14,7 +19,7 @@ class demo_saboteur : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
         // List of items
         APERSMine_Range_Mag = 2;
         rhs_mine_M3_tripwire_mag = 1;
@@ -23,4 +28,6 @@ class demo_saboteur : squad_rifleman
 		IEDUrbanSmall_Remote_Mag = 1;
 		ACE_FlareTripMine_Mag = 1;
     };
+	headgear = "UK3CB_H_Beanie_02_BLK";
+	facewear = "vn_b_bandana_a";
 };

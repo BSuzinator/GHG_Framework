@@ -7,25 +7,33 @@ class squad_ar : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_RPK";
-        ammo = "rhs_75Rnd_762x39mm";
-        bipod = "";
+        classname = "rhs_weap_m249_pip_s_para";
+        ammo = "rhsusf_200Rnd_556x45_soft_pouch";
+        bipod = "rhsusf_acc_harris_bipod";
     };
     
+	class Uniform : Uniform
+    {
+        classname = "lop_u_pmc_fatigue_04";
+    };
+	
     class Vest : Vest
     {
+		classname = "rhsusf_plateframe_machinegunner";
         // Inherited item overrides
-        rhs_30Rnd_762x39mm = 0;
+        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
         SmokeShell = 1;
         rhs_mag_m67 = 1;
         // List of items
-        rhs_75Rnd_762x39mm = 3;
+        rhsusf_200Rnd_556x45_soft_pouch = 2;
     };
     
     class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname = "B_Assaultpack_cbr";
         // List of items
-        rhs_75Rnd_762x39mm = 3;
+        rhsusf_200Rnd_556x45_soft_pouch = 1;
     };
+	headgear = "vn_b_bandana_03";
+	facewear = "G_Headset_lxWS";
 };

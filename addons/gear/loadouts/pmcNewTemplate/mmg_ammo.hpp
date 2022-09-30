@@ -3,19 +3,25 @@
 ======================================*/
 class mmg_ammo : squad_rifleman
 {
-    
+    class Uniform : Uniform
+    {
+        classname = "lop_u_pmc_tac_grn_plaid";
+    };
     
     class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname = "rhsusf_assault_eagleaiii_coy";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhs_100Rnd_762x54mmR = 5;
+        rhsusf_100Rnd_762x51 = 5;
     };
 	
 	class Binoculars : Binoculars
     {
         classname = "Binocular";
     };
+	
+	headgear = "vn_b_boonie_05_03";
+	facewear = "G_Headset_lxWS";
 };

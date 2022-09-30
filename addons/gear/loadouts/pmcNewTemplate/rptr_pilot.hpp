@@ -25,6 +25,7 @@ class rptr_pilot : squad_rifleman
 	class Weapon_2 : Weapon_2 
 	{ 
 		classname = "rhsusf_weap_m1911a1";
+		muzzle = "";
         laser = "";
         ammo = "rhsusf_mag_7x45acp_MHP";
 		class Scopes {}; 
@@ -32,17 +33,18 @@ class rptr_pilot : squad_rifleman
 	
     class Uniform : Uniform
     {
-        classname[] = { "LOP_U_ISTS_Fatigue_14" };
+        classname = "U_B_PilotCoveralls";
     };
     
     class Vest : Vest
     {
         classname = "V_Rangemaster_belt";
-        // List of items
-        rhs_30Rnd_762x39mm = 0;
+        // List of item overrides
+        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
         rhs_mag_m67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
+        // List of items
 		rhsusf_mag_7x45acp_MHP = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
@@ -50,6 +52,6 @@ class rptr_pilot : squad_rifleman
 		ACE_Chemlight_HiRed = 1;
     };
     
-    headgear = "H_PilotHelmetFighter_O";
-    facewear = "G_Combat_lxWS";
+    headgear = "RHS_jetpilot_usaf";
+    facewear = "rhsusf_oakley_goggles_clr";
 };

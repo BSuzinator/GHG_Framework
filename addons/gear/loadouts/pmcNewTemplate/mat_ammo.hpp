@@ -3,19 +3,22 @@
 ======================================*/
 class mat_ammo : squad_rifleman
 {
-    
+    class Uniform : Uniform
+	{
+		classname = "UK3CB_MEI_B_U_Pants_02";
+	};
 	
     class Backpack : Backpack
     {
-        classname[] = { "B_Carryall_cbr" };
+        classname = "B_Carryall_desert_lxWS";
         // List of items
-        rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+        rhs_mag_smaw_HEAA = 2;
     };
 	
 	class Binoculars : Binoculars
     {
         classname = "Binocular";
     };
+	headgear = "rhssaf_bandana_smb";
+	facewear = "G_Aviator";
 };
