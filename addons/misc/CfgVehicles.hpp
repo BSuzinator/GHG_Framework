@@ -137,10 +137,26 @@ class CfgVehicles {
             };
         };
 	};
-	
-	class Ship_F;
+	class Ship;
+	class Ship_F : Ship {
+		class ACE_Actions {
+			class ACE_MainActions {};
+		};
+		class ACE_SelfActions;
+	};
 	class rhs_bmk_t_base : Ship_F {
 		ace_interaction_canPush = 1;
+		class ACE_SelfActions : ACE_SelfActions {
+			class GHG_PontoonTether {
+				displayName = "Tether Nearest Pontoon";
+				//distance = 7;
+				//position = "[0,0,0]";
+				icon = "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa";
+				condition = QUOTE(_this call FUNC(pontoonTetherCondition));
+				statement = QUOTE(_this call FUNC(pontoonTether));
+				exceptions[] = {"isNotSwimming"};
+			};
+		};
 	};
 	
 	//["rhs_kraz255b1_flatbed_base","rhs_kraz255b1_base","rhs_kraz255_base","O_Truck_02_covered_F","Truck_02_base_F","Truck_F","Car_F","Car","LandVehicle","Land","AllVehicles","All"]
