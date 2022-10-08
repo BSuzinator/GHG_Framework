@@ -12,6 +12,8 @@ PREP(pontoonPrep);
 PREP(pontoonSnap);
 PREP(pontoonSpawn);
 PREP(pontoonSpawnCondition);
+PREP(pontoonTether);
+PREP(pontoonTetherCondition);
 PREP(failDeadly);
 PREP(getAllTaskInfo);
 PREP(systemChatAllTasks);
