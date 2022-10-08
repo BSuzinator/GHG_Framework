@@ -47,12 +47,6 @@ class rcn_gunner : loadout_base
         classname = "B_LegStrapBag_coyote_F";
     };
 	
-	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
-    {
-        classname = "ACE_Yardage450";
-
-        class Scopes {};
-    };
 	headgear = "lxWS_H_CapB_rvs_blk_ION";
     facewear = "vn_b_bandana_a";
 };

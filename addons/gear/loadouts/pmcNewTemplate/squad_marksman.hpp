@@ -18,6 +18,11 @@ class squad_marksman : squad_rifleman
         };
     };
     
+	class Uniform : Uniform
+	{
+		classname = "U_lxWS_ION_Casual1";
+	};
+	
     class Vest : Vest
     {
         // List of items
@@ -25,6 +30,6 @@ class squad_marksman : squad_rifleman
         20Rnd_762x51_slr_lxWS = 5;
     };
     
-	headgear = "vn_b_boonie_05_03";
-	facewear = "G_Headset_lxWS";
+	facewear = "rhsusf_shemagh2_gogg_od";
+	headgear = "H_Watchcap_blk";
 };

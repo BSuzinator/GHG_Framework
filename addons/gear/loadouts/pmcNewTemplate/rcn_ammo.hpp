@@ -25,6 +25,11 @@ class rcn_ammo : squad_rifleman
         uk3cb_baf_338_5rnd = 10;
     };
 	
+	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
+    {
+        classname = "ACE_Yardage450";
+    };
+	
 	headgear = "h_cap_oli_hs";
 	facewear = "vn_b_bandana_a";
 	
