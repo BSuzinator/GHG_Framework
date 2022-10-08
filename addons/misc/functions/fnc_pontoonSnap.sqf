@@ -82,3 +82,4 @@ if (typeOf _object isEqualTo "rhs_pontoon_end_static") then {
 		};
 	} foreach ["centerLeft","centerRight","left","right"];
 };
+_object setOwner 2;																																								
