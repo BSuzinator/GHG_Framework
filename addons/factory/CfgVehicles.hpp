@@ -23,15 +23,43 @@ class CfgVehicles {
 				icon = "\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_debug_ca.paa";
                 //statement = "";
                 exceptions[] = {"isNotSwimming"};
+				showDisabled = 1;
 				
 				class GHG_Factory_Infantry {
 					displayName = "Infantry";
 					condition = "true";
 					statement = "";
-					insertChildren = QUOTE([_this,'infantry'] call FUNC(spawnVehicle));
+					insertChildren = "";
 					icon = "\a3\ui_f\data\map\vehicleicons\iconcar_ca.paa";
 					exceptions[] = {"isNotSwimming"};
+					
+					class GHG_Factory_Infantry_cars {
+						displayName = "Cars";
+						condition = "true";
+						statement = "";
+						insertChildren = "{(_this # 0) getVariable ""ghg_factory_carActionList""}";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_troopTruck {
+						displayName = "Troop Trucks";
+						condition = "true";
+						statement = "";
+						insertChildren = "{(_this # 0) getVariable ""ghg_factory_troopTruckActionList""}";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_mrap {
+						displayName = "MRAPs";
+						condition = "true";
+						statement = "";
+						insertChildren = "{(_this # 0) getVariable ""ghg_factory_mrapActionList""}";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+				
 				};
+				/*
 				class GHG_Factory_LOGI {
 					displayName = "LOGI";
 					condition = "true";
@@ -72,7 +100,7 @@ class CfgVehicles {
 					icon = "\a3\ui_f\data\map\vehicleicons\iconship_ca.paa";
 					exceptions[] = {"isNotSwimming"};
 				};
-				
+				*/
             };
         };
 		

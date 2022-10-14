@@ -5,4 +5,4 @@
 	Author: CBA_3
 ======================================*/
 //[] spawn FUNC(getStats);
-[] call FUNC(initACEActions);
+[] call FUNC(initFactories);

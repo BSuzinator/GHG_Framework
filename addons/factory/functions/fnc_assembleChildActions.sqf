@@ -70,7 +70,7 @@ private _actions = [];
 		private _actionName = format ["%1",getText (configFile >> "CfgVehicles" >> _vehClass >> "displayName")];
 
 		private _action = [_actionString, _actionName, "", FUNC(spawnVehicle), {true}, {}, _vehClass] call ace_interact_menu_fnc_createAction;
-		_actions pushBack [_action]; // New action, it's children, and the action's target
+		_actions pushBack [_action,[],_target]; // New action, it's children, and the action's target
 
 	} forEach (_vehList);
 
