@@ -9,6 +9,48 @@ class usArmyNewTemplate
         
     };
     
+	class Vehicles {
+		//Will follow camos?
+		
+		//Infantry
+		car[] = {
+			//Unarmed Humvee (Up-Armored)
+			{ "rhsusf_m1151_usarmy_wd", "rhsusf_m1151_usarmy_wd", "rhsusf_m1151_usarmy_wd", "rhsusf_m1151_usarmy_d", "rhsusf_m1151_usarmy_d" },
+			{ "rhsusf_m1151_m2_v1_usarmy_wd", "rhsusf_m1151_m2_v1_usarmy_wd", "rhsusf_m1151_m2_v1_usarmy_wd", "rhsusf_m1151_m2_v1_usarmy_d", "rhsusf_m1151_m2_v1_usarmy_d" }
+		};
+		troopTruck[] = {
+			//Unarmed 4 wheel covered truck
+			{ "rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_D_fmtv_usarmy" }
+		};
+		mrap[] = {
+			//Unarmed mrap
+			{ "rhsusf_M1220_usarmy_wd", "rhsusf_M1220_usarmy_wd", "rhsusf_M1220_usarmy_wd", "rhsusf_M1220_usarmy_d", "rhsusf_M1220_usarmy_d" }
+		};
+		
+		//LOGI
+		bridgeTrucks[] = {};
+		cargoTrucks[] = {};
+		rearm[] = {};
+		refuel[] = {};
+		repair[] = {};
+		
+		//LYNX / WOLF
+		apc[] = {};
+		ifv[] = {};
+		tank[] = {};
+		
+		//RAVN / FLCN
+		heli_unarmed[] = {};
+		heli_armed[] = {};
+		
+		//RPTR
+		plane[] = {};
+		
+		//KNFS
+		boat_unarmed[] = {};
+		boat_armed[] = {};
+	};
+	
     // Should be 25
     #include "..\loadout_base.hpp"
 
@@ -91,4 +133,5 @@ class usArmyNewTemplate
 		#include "crates\rcn.hpp"
         #include "..\common_crates\us_statics.hpp"
     };
+	
 };

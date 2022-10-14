@@ -30,4 +30,8 @@ class CfgEditorSubcategories
 	{
 		displayName = "Flags";
 	};
+	class GHG_SubCat_Factory
+	{
+		displayName = "Factory";
+	};
 };

@@ -55,6 +55,7 @@ class ghg_servicePoint_air_psp : ghg_servicePoint
     mapSize=1;
     _generalMacro="Land_HelipadEmpty_F";
     model = "\vn\structures_f_vietnam_02\usarmy\fort\vn_b_helipad_01.p3d";
+	editorPreview = "\vn\editorpreviews_f_vietnam\structures\preview_Land_vn_b_helipad_01.jpg";
     icon="iconObject_1x1";
     accuracy=1000;
     vehicleClass = "Structures";
