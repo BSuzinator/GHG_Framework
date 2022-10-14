@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Squad Marksman (baf)
 ======================================*/
-class squad_mksm : squad_rifleman
+class squad_marksman : squad_rifleman
 {
     
     
