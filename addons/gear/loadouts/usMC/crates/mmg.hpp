@@ -1,4 +1,4 @@
-class ghg_crate_usArmy_mmg : ghg_crate_base
+class ghg_crate_usMC_mmg : ghg_crate_base
 {
     displayname = "Medium Machine Gun";
     cargosize = 2;

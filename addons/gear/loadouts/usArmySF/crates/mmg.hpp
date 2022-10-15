@@ -1,4 +1,4 @@
-class ghg_crate_usArmy_mmg : ghg_crate_base
+class ghg_crate_usArmySF_mmg : ghg_crate_base
 {
     displayname = "Medium Machine Gun";
     cargosize = 2;
@@ -19,6 +19,5 @@ class ghg_crate_usArmy_mmg : ghg_crate_base
 		rhs_mag_m714_White = 4;
 		ACE_EarPlugs = 3;
 		diw_armor_plates_main_plate = 5;
-		ACE_Canteen = 3;
     };
 };

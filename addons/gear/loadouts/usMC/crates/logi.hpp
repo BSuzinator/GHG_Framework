@@ -1,4 +1,4 @@
-class ghg_crate_usArmy_logi : ghg_crate_base
+class ghg_crate_usMC_logi : ghg_crate_base
 {
     displayname = "Logistics";
     cargosize = 2;

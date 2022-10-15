@@ -1,4 +1,4 @@
-class ghg_crate_usArmy_mtr : ghg_crate_base
+class ghg_crate_usMC_mtr : ghg_crate_base
 {
     displayname = "Mortar";
     cargosize = 2;

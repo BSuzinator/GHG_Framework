@@ -6,7 +6,8 @@ class ghg_crate_macv_squad : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        vn_m16_20_mag = 40;
+        vn_m16_20_mag = 30;
+		vn_m14_mag = 4;
         vn_m61_grenade_mag = 8;
         vn_m18_white_mag = 8;
         vn_m63a_100_mag = 5;

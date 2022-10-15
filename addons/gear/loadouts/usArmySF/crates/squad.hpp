@@ -1,4 +1,4 @@
-class ghg_crate_usArmy_squad : ghg_crate_base
+class ghg_crate_usArmySF_squad : ghg_crate_base
 {
     displayname = "Squad";
     cargosize = 2;
@@ -6,7 +6,8 @@ class ghg_crate_usArmy_squad : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 40;
+        rhs_mag_30Rnd_556x45_Mk318_Stanag = 30;
+		rhsusf_20Rnd_762x51_m80_Mag = 4;
         rhs_mag_m67 = 8;
         rhs_mag_an_m8hc = 8;
         rhsusf_200Rnd_556x45_soft_pouch = 5;
@@ -21,6 +22,5 @@ class ghg_crate_usArmy_squad : ghg_crate_base
 		rhs_mag_m714_White = 4;
 		ACE_EarPlugs = 8;
 		diw_armor_plates_main_plate = 8;
-		ACE_Canteen = 4;
     };
 };

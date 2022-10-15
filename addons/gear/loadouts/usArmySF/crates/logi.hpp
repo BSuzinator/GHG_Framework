@@ -1,4 +1,4 @@
-class ghg_crate_usArmy_logi : ghg_crate_base
+class ghg_crate_usArmySF_logi : ghg_crate_base
 {
     displayname = "Logistics";
     cargosize = 2;
@@ -24,6 +24,5 @@ class ghg_crate_usArmy_logi : ghg_crate_base
 		ACE_EarPlugs = 8;
 		diw_armor_plates_main_plate = 8;
 		B_Kitbag_cbr = 2;
-		ACE_Canteen = 4;
     };
 };
