@@ -19,11 +19,11 @@ class CfgVehicles {
                 distance = 30;
                 position = "[0,-1.155,0.8]";
 				selection = "";
-                condition = "true";
+                condition = QUOTE(_this call FUNC(canUseFactory));
 				icon = "\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_debug_ca.paa";
                 //statement = "";
                 exceptions[] = {"isNotSwimming"};
-				showDisabled = 1;
+				//showDisabled = 1;
 				
 				class GHG_Factory_Infantry {
 					displayName = "Infantry";
@@ -37,7 +37,7 @@ class CfgVehicles {
 						displayName = "Cars";
 						condition = "true";
 						statement = "";
-						insertChildren = "{(_this # 0) getVariable ""ghg_factory_carActionList""}";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_carActionList""";
 						icon = "";
 						exceptions[] = {"isNotSwimming"};
 					};
@@ -45,7 +45,7 @@ class CfgVehicles {
 						displayName = "Troop Trucks";
 						condition = "true";
 						statement = "";
-						insertChildren = "{(_this # 0) getVariable ""ghg_factory_troopTruckActionList""}";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_troopTruckActionList""";
 						icon = "";
 						exceptions[] = {"isNotSwimming"};
 					};
@@ -53,42 +53,127 @@ class CfgVehicles {
 						displayName = "MRAPs";
 						condition = "true";
 						statement = "";
-						insertChildren = "{(_this # 0) getVariable ""ghg_factory_mrapActionList""}";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_mrapActionList""";
 						icon = "";
 						exceptions[] = {"isNotSwimming"};
 					};
 				
 				};
-				/*
+				
 				class GHG_Factory_LOGI {
 					displayName = "LOGI";
 					condition = "true";
 					statement = "";
-					insertChildren = QUOTE([_this,'logi'] call FUNC(spawnVehicle));
+					insertChildren = "";
 					icon = "\a3\soft_f_beta\truck_02\data\ui\map_truck_02_ca.paa";
 					exceptions[] = {"isNotSwimming"};
+					
+					class GHG_Factory_Infantry_bridgeTrucks {
+						displayName = "Bridge Equiptment";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_bridgeTrucksActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_troopTruck {
+						displayName = "Cargo Trucks";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_cargoTrucksActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_rearm {
+						displayName = "Rearm";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_rearmActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_refuel {
+						displayName = "Refuel";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_refuelActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_repair {
+						displayName = "Repair";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_repairActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
 				};
+				
 				class GHG_Factory_LYNX_WOLF {
 					displayName = "LYNX / WOLF";
 					condition = "true";
 					statement = "";
-					insertChildren = QUOTE([_this,'armor'] call FUNC(spawnVehicle));
+					insertChildren = "";
 					icon = "\a3\ui_f\data\map\vehicleicons\icontank_ca.paa";
 					exceptions[] = {"isNotSwimming"};
+					
+					class GHG_Factory_Infantry_apc {
+						displayName = "APC";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_apcActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_ifv {
+						displayName = "IFV";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_ifvActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_tank {
+						displayName = "TANK";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_tankActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
 				};
+				
 				class GHG_Factory_RAVN_FLCN {
 					displayName = "RAVN / FLCN";
 					condition = "true";
 					statement = "";
-					insertChildren = QUOTE([_this,'heli'] call FUNC(spawnVehicle));
+					insertChildren = "";
 					icon = "\a3\ui_f\data\map\vehicleicons\iconhelicopter_ca.paa";
 					exceptions[] = {"isNotSwimming"};
+					
+					class GHG_Factory_Infantry_heli_unarmed {
+						displayName = "Unarmed";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_heli_unarmedActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_heli_armed {
+						displayName = "Armed";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_heli_armedActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
 				};
 				class GHG_Factory_RPTR {
 					displayName = "RPTR";
 					condition = "true";
 					statement = "";
-					insertChildren = QUOTE([_this,'plane'] call FUNC(spawnVehicle));
+					insertChildren = "(_this # 0) getVariable ""ghg_factory_planeActionList""";
 					icon = "\a3\ui_f\data\map\vehicleicons\iconplane_ca.paa";
 					exceptions[] = {"isNotSwimming"};
 				};
@@ -96,11 +181,28 @@ class CfgVehicles {
 					displayName = "KNFS";
 					condition = "true";
 					statement = "";
-					insertChildren = QUOTE([_this,'boat'] call FUNC(spawnVehicle));
+					insertChildren = "";
 					icon = "\a3\ui_f\data\map\vehicleicons\iconship_ca.paa";
 					exceptions[] = {"isNotSwimming"};
+					
+					class GHG_Factory_Infantry_boat_unarmed {
+						displayName = "Unarmed";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_boat_unarmedActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
+					class GHG_Factory_Infantry_boat_armed {
+						displayName = "Armed";
+						condition = "true";
+						statement = "";
+						insertChildren = "(_this # 0) getVariable ""ghg_factory_boat_armedActionList""";
+						icon = "";
+						exceptions[] = {"isNotSwimming"};
+					};
 				};
-				*/
+				
             };
         };
 		
