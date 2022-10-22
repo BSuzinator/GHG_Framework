@@ -27,3 +27,11 @@ class Extended_Killed_EventHandlers {
         };
     };
 };
+
+class Extended_InitPost_EventHandlers {
+	
+	class Tank {
+		class tankIsNowBunker { init = "(_this select 0) allowCrewInImmobile true;"; };
+	};
+
+};
