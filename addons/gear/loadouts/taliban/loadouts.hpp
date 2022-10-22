@@ -1,4 +1,4 @@
-class taliban
+class taliban {
     version = 1;
     
     camo[] = { "desert" };
@@ -8,6 +8,8 @@ class taliban
         
     };
     
+	class Vehicles {};
+	
     // Should be 25
     #include "..\loadout_base.hpp"
 
