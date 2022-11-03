@@ -34,12 +34,20 @@ private _camoField = {
 private _magazineArray = {
     params ["_mag"];
     
-    if ( _mag isKindOf ["CA_Magazine", configFile >> "CfgMagazines"] ) then
+    private _itemCamo = _factionLoadout >> "Magazines" >> _mag;
+    if (isArray _itemCamo) then
     {
-        _this pushBack 0;
+        _mag = [_itemCamo] call _camoField;
     };
     
-    _this;
+    private _ret = [_mag];
+    
+    if ( _mag isKindOf ["CA_Magazine", configFile >> "CfgMagazines"] ) then
+    {
+        _ret pushBack 0;
+    };
+    
+    _ret; // MUST BE LAST
 };
 
 private _weaponArray = {
@@ -90,9 +98,6 @@ private _clothingArray = {
             
             if ( _itemAmount > 0 ) then
             {
-                private _itemCamo = _factionLoadout >> "Magazines" >> _itemName;
-                if ( isArray(_itemCamo) ) then { _itemName = [_itemCamo] call _camoField; };
-            
                 _items pushBack ([ _itemName, _itemAmount ] call _magazineArray);
             };
         };
