@@ -2,6 +2,7 @@ class Loadouts
 {
 	#include "baf\loadouts.hpp"
 	#include "bafCW\loadouts.hpp"
+	#include "cbrn\loadouts.hpp"
 	#include "macv\loadouts.hpp"
 	#include "pmc\loadouts.hpp"
 	#include "russian\loadouts.hpp"

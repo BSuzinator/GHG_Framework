@@ -1,8 +1,10 @@
 /*======================================
-	Loadout for EWS Teletype (bafCW)
+	Loadout for EWS ROLM (cbrn)
 ======================================*/
-class ews_comms : squad_rifleman
+class ews_comp : squad_rifleman
 {
+    
+    
     class Weapon_2 : Weapon_2 // Pistol
     {
         classname = "hgun_esd_01_F";
@@ -11,6 +13,6 @@ class ews_comms : squad_rifleman
     };
 	class Backpack : Backpack
     {
-        classname[] = { "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A" };
+        classname = "GHG_RuggedNova_cbr";
     };
 };

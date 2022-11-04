@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for EWS Teletype (bafCW)
+	Loadout for EWS Teletype (cbrn)
 ======================================*/
 class ews_comms : squad_rifleman
 {
@@ -11,6 +11,6 @@ class ews_comms : squad_rifleman
     };
 	class Backpack : Backpack
     {
-        classname[] = { "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A" };
+        classname[] = { "B_FieldPack_blk" , "B_FieldPack_oli", "Gendar_Fieldpack"};
     };
 };
