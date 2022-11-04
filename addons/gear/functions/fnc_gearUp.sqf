@@ -32,7 +32,7 @@ private _camoField = {
 };
 
 private _magazineArray = {
-    params ["_mag"];
+    params ["_mag", "_count"];
     
     private _itemCamo = _factionLoadout >> "Magazines" >> _mag;
     if (isArray _itemCamo) then
@@ -40,7 +40,7 @@ private _magazineArray = {
         _mag = [_itemCamo] call _camoField;
     };
     
-    private _ret = [_mag];
+    private _ret = [_mag, _count];
     
     if ( _mag isKindOf ["CA_Magazine", configFile >> "CfgMagazines"] ) then
     {
