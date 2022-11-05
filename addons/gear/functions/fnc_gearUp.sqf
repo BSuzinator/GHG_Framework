@@ -60,6 +60,7 @@ private _weaponArray = {
         if ( _scp isNotEqualTo "" ) exitWith { _scope = _scp; };
     } forEach configProperties [_cfg >> "Scopes", "true", true];
 
+/*
     private _ammo = [];
     private _ammoTxt = getText (_cfg >> "ammo");
     if ( _ammoTxt isNotEqualTo "" ) then { _ammo = [_ammoTxt] call _magazineArray; };
@@ -69,14 +70,14 @@ private _weaponArray = {
     if ( _grenadeTxt isNotEqualTo "" ) then { _grenade = [_grenadeTxt] call _magazineArray; };
     
     //[getText (_cfg >> "grenade")],
-
+*/
     [
         [_cfg >> "classname"  ] call _camoField,
         [_cfg >> "muzzle"] call _camoField,
         [_cfg >> "laser" ] call _camoField,
         _scope,
-        _ammo,
-        _grenade,
+        [_cfg >> "ammo" ] call _camoField,
+        [_cfg >> "grenade" ] call _camoField,
         [_cfg >> "bipod"] call _camoField
     ];
 };
