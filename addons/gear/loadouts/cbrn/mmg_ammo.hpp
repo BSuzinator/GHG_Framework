@@ -11,7 +11,7 @@ class mmg_ammo : squad_rifleman
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        MMG_02_black_F = 5;
+        130Rnd_338_Mag = 5;
     };
 	
 	class Binoculars : Binoculars
