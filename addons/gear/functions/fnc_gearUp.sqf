@@ -76,8 +76,8 @@ private _weaponArray = {
         [_cfg >> "muzzle"] call _camoField,
         [_cfg >> "laser" ] call _camoField,
         _scope,
-        [_cfg >> "ammo" ] call _camoField,
-        [_cfg >> "grenade" ] call _camoField,
+        [[_cfg >> "ammo" ] call _camoField, 0],
+        [[_cfg >> "grenade" ] call _camoField, 0],
         [_cfg >> "bipod"] call _camoField
     ];
 };
