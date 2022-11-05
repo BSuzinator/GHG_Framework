@@ -35,8 +35,15 @@ if ( isServer ) then
 			[_laptop, _obj] call BIS_fnc_attachToRelative;
 		};
 		//Cargo Containers
+		case "Land_Cargo20_cyan_F";
+		case "Land_Cargo20_grey_F";
+		case "Land_Cargo20_IDAP_F";
+		case "Land_Cargo20_light_blue_F";
+		case "Land_Cargo20_orange_F";
+		case "Land_Cargo20_red_F";
 		case "Land_Cargo20_yellow_F";
 		case "Land_Cargo20_sand_F";
+		case "Land_Cargo20_white_F";
 		case "Land_Cargo20_military_green_F": {
 			// Make container indestructible
 			_obj allowDamage false;
