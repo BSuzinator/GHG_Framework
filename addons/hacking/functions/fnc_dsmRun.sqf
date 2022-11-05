@@ -4,12 +4,12 @@
 	Called by ghg_hacking_fnc_dsmRun
 	Author: Quantx
 ======================================*/
-params ["_out", "_target", "_caller", "_dsm", "_dsmFiles", "_hostObject"];
+params ["_out", "_target", "_player", "_dsm", "_dsmFiles", "_hostObject"];
 
 diag_Log "[GHG]: Hacking: DSM Run Called";
 
-(format ["Player: %1 has started the hack!: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
-(format ["Player: %1 has started the hack!", name _caller]) remoteExecCall ["systemChat", side _caller]; 
+(format ["Player: %1 has started the hack!: %2", name _player, side _player]) remoteExecCall ["systemChat", sideLogic];
+(format ["Player: %1 has started the hack!", name _player]) remoteExecCall ["systemChat", side _player]; 
 
 //Get file count to upload / download
 //private _dsmFiles = getNumber (missionConfigFile >> "CfgGHG" >> "dsmFiles");
@@ -58,21 +58,6 @@ if ( ! isNull _zbox ) then
 
 _hostObject setVariable ["ghg_hacking_hackStage", 2, true];
 
-private _condition = {
-
-	private _hackStage = _target getVariable "ghg_hacking_hackStage";
-	(_hackStage isEqualTo 2)
-};
-
-private _objPos = getPosASL _hostObject;
-
-private _actionString = (str (_objPos # 0)) + (str (_objPos # 1)) + (str (_objPos # 2)) + "_takeDSM";
-
-private _action = [_actionString,"Take DSM","",FUNC(dsmTake),_condition,{},[_hostObject], [0,0,0], 10] call ace_interact_menu_fnc_createAction;
-
-[_dsm, 0, ["ACE_MainActions"], _action] remoteExec["ace_interact_menu_fnc_addActionToObject",0];
-
-
-(format ["Player: %1 has completed the hack!: %2", name _caller, side _caller]) remoteExecCall ["systemChat", sideLogic];
-(format ["Player: %1 has completed the hack!", name _caller]) remoteExecCall ["systemChat", side _caller];
+(format ["Player: %1 has completed the hack!: %2", name _player, side _player]) remoteExecCall ["systemChat", sideLogic];
+(format ["Player: %1 has completed the hack!", name _player]) remoteExecCall ["systemChat", side _player];
 diag_Log "[GHG]: Hacking: End Of DSM Run";
