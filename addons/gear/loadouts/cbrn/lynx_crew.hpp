@@ -9,7 +9,6 @@ class lynx_crew : squad_rifleman
     {
         classname[] = { "arifle_MXC_Black_F", "arifle_MXC_khk_F", "arifle_MXC_Black_F" };
         laser = "ace_acc_pointer_green";
-        ammo = "30Rnd_65x39_caseless_black_mag_Tracer";
         
         class Scopes : Scopes
         {

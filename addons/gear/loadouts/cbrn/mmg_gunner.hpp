@@ -8,7 +8,7 @@ class mmg_gunner : squad_rifleman
 	class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "MMG_02_black_F";
-        ammo = "MMG_02_black_F";
+        ammo = "130Rnd_338_Mag";
         bipod = "bipod_01_f_blk";
 		class Scopes : Scopes
         {
@@ -20,7 +20,7 @@ class mmg_gunner : squad_rifleman
     {
         // List of items
 		30Rnd_65x39_caseless_black_mag_Tracer = 0;
-		MMG_02_black_F = 3;
+		130Rnd_338_Mag = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
@@ -28,6 +28,6 @@ class mmg_gunner : squad_rifleman
     {
         classname[] = { "B_FieldPack_blk" , "B_FieldPack_oli", "Gendar_Fieldpack"};
         // List of items
-        MMG_02_black_F = 3;
+        130Rnd_338_Mag = 3;
     };
 };

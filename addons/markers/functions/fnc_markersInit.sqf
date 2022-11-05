@@ -6,6 +6,18 @@
 	Author: Quantx
 ======================================*/
 
+//private _ghgCfg = (missionConfigFile >> "CfgGHG");
+
+private _sideDisabled = false;
+
+ _sideDisabled = (getNumber ( missionConfigFile >> "CfgGHG" >> (switch (side player) do {
+	case west: {"bluMarkersDisabled"};
+	case east: {"opfMarkersDisabled"};
+	case resistance: {"indMarkersDisabled"};
+	case civilian: {"civMarkersDisabled"};
+	default {""};
+})) call EFUNC(database,toBool));
+
 if (isServer) then
 {
     // Hide template markers
@@ -23,7 +35,7 @@ if (isServer) then
 };
 
 // Only run on real players
-if ( !hasInterface ) exitWith {};
+if ( !hasInterface || _sideDisabled ) exitWith {};
 
 [FUNC(markersGroup), 1, []] call CBA_fnc_addPerFrameHandler;
 
