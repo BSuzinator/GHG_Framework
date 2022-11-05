@@ -9,7 +9,7 @@ class squad_marksman : squad_rifleman
     {
         classname[] = { "arifle_MXM_Black_F", "arifle_MXM_khk_F", "arifle_MXM_Black_F" };
         laser = "ace_acc_pointer_green";
-        ammo = "30Rnd_65x39_caseless_black_mag_Tracer";
+        ammo[] = {"30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_khaki_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"};
 		bipod = "bipod_01_f_blk";
         
         class Scopes : Scopes

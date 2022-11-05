@@ -9,7 +9,7 @@ class squad_rifleman : loadout_base
     {
         classname[] = { "arifle_MX_Black_F", "arifle_MX_khk_F", "arifle_MX_Black_F" };
         laser = "ace_acc_pointer_green";
-        ammo = "30Rnd_65x39_caseless_black_mag_Tracer";
+        ammo[] = {"30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_khaki_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"};
         
         class Scopes : Scopes
         {

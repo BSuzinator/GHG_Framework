@@ -8,7 +8,7 @@ class squad_ar : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
 	classname[] = { "arifle_MX_SW_Black_F", "arifle_MX_SW_khk_F", "arifle_MX_SW_Black_F"};
-        ammo = "100Rnd_65x39_caseless_black_mag_tracer";
+        ammo[] = {"100Rnd_65x39_caseless_black_mag_tracer", "100Rnd_65x39_caseless_khaki_mag_tracer", "100Rnd_65x39_caseless_black_mag_tracer"};
         bipod = "bipod_01_f_blk";
     };
     
