@@ -2,7 +2,7 @@
 /*======================================
 	ghg_fnc_radioJammer
 	Called from jammer init box
-	[this, 500] call ghg_fnc_radioJammer;
+	[this, 500] call ghg_acre_fnc_radioJammer;
 	Author: Quantx
 ======================================*/
 params ["_jammer", "_range"];
