@@ -95,5 +95,5 @@ private _actionDisable = ["blackoutDisable","Switch Off","\a3\modules_f_curator\
 
 private _actionEnable = ["blackoutEnable","Switch On","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statementEnable,{damage _target > 0},{},[_radius, _lampList], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 
-[_hostObject, 0, ["ACE_MainActions"], _actionDisable] remoteExec["ace_interact_menu_fnc_addActionToObject",2];
-[_hostObject, 0, ["ACE_MainActions"], _actionEnable] remoteExec["ace_interact_menu_fnc_addActionToObject",2];
+[_hostObject, 0, ["ACE_MainActions"], _actionDisable] call ace_interact_menu_fnc_addActionToObject;
+[_hostObject, 0, ["ACE_MainActions"], _actionEnable] call ace_interact_menu_fnc_addActionToObject;

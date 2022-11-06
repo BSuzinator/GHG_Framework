@@ -30,7 +30,7 @@ private _conditionPlant = {
 
 private _actionPlant = [_actionStringPlant,"Plant DSM","",FUNC(dsmPlant),_conditionPlant,{},[_fileCount, _hostObject, _dsm], [0,0,0], 10] call ace_interact_menu_fnc_createAction;
 
-[_hostObject, 0, ["ACE_MainActions"], _actionPlant] remoteExec["ace_interact_menu_fnc_addActionToObject",0];
+[_hostObject, 0, ["ACE_MainActions"], _actionPlant] call ace_interact_menu_fnc_addActionToObject;
 
 private _conditionTake = {
 	params ["_target", "_player", "_actionParams"];
@@ -45,4 +45,4 @@ private _actionStringTake = (str (_objPos # 0)) + (str (_objPos # 1)) + (str (_o
 
 private _actionTake = [_actionStringTake,"Take DSM","", FUNC(dsmTake),_conditionTake,{},[_hostObject], [0,0,0], 10] call ace_interact_menu_fnc_createAction;
 
-[_dsm, 0, ["ACE_MainActions"], _actionTake] remoteExec["ace_interact_menu_fnc_addActionToObject",0];
+[_dsm, 0, ["ACE_MainActions"], _actionTake] call ace_interact_menu_fnc_addActionToObject;
