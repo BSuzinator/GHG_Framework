@@ -49,7 +49,7 @@ class vn_air_oh6a_base : vn_helicopter_base {
 class vn_air_uh1_01_base : vn_helicopter_base {
     class AcreRacks {
         class Rack_1 {
-            allowedPositions[] = {"driver", {"turret", [0]}};
+            allowedPositions[] = {"driver", {"turret", {0}}};
             intercom[] = {"intercom_1"};
         };
     };
@@ -59,7 +59,7 @@ class vn_air_uh1_01_base : vn_helicopter_base {
             shortName = "Crew";
             
             allowedPositions[] = {"crew"};
-            masterPositions[] = {"driver", {"turret", [0]}};
+            masterPositions[] = {"driver", {"turret", {0}}};
             
             limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
             numLimitedPositions = 1;
@@ -96,7 +96,7 @@ class vn_air_uh1c_07_base : vn_air_uh1c_doorguns_base {
 class vn_air_ch34_01_base : vn_helicopter_base {
     class AcreRacks {
         class Rack_1 {
-            allowedPositions[] = {"driver", {"turret", [0]}};
+            allowedPositions[] = {"driver", {"turret", {0}}};
             intercom[] = {"intercom_1"};
         };
     };
@@ -106,7 +106,7 @@ class vn_air_ch34_01_base : vn_helicopter_base {
             shortName = "Crew";
             
             allowedPositions[] = {"crew"};
-            masterPositions[] = {"driver", {"turret", [0]}};
+            masterPositions[] = {"driver", {"turret", {0}}};
             
             limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
             numLimitedPositions = 1;
@@ -131,7 +131,7 @@ class vn_air_ch34_01_base : vn_helicopter_base {
 class vn_air_mi2_base : vn_helicopter_base {
     class AcreRacks {
         class Rack_1 {
-            allowedPositions[] = {"driver", {"turret", [0]}};
+            allowedPositions[] = {"driver", {"turret", {0}}};
             intercom[] = {"intercom_1"};
         };
     };
@@ -141,7 +141,7 @@ class vn_air_mi2_base : vn_helicopter_base {
             shortName = "Crew";
             
             allowedPositions[] = {"crew"};
-            masterPositions[] = {"driver", {"turret", [0]}};
+            masterPositions[] = {"driver", {"turret", {0}}};
             
             limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
             numLimitedPositions = 1;
