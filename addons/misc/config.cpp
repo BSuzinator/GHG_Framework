@@ -73,6 +73,12 @@ class CfgFunctions {
     };
 };
 
+class CfgCommands {
+    allowedHTMLLoadURIs[] += {
+        "https://ghg.suznetworks.com/*"
+    };
+};
+
 #include "CfgEventhandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
