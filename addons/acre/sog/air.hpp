@@ -45,11 +45,14 @@ class vn_air_oh6a_base : vn_helicopter_base {
         };
     };
 };
+
 // Intercom system for SOG Huey
+// Copilot is either "gunner" or {"turret", {0}} on some helis
+// Crew Chief is either "gunner" or {"turret", {1}} on some helis
 class vn_air_uh1_01_base : vn_helicopter_base {
     class AcreRacks {
         class Rack_1 {
-            allowedPositions[] = {"driver", {"turret", {0}}};
+            allowedPositions[] = {"driver", "gunner", {"turret", {0}}};
             intercom[] = {"intercom_1"};
         };
     };
@@ -59,7 +62,7 @@ class vn_air_uh1_01_base : vn_helicopter_base {
             shortName = "Crew";
             
             allowedPositions[] = {"crew"};
-            masterPositions[] = {"driver", {"turret", {0}}};
+            masterPositions[] = {"driver", "gunner", {"turret", {0}}};
             
             limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
             numLimitedPositions = 1;
@@ -71,7 +74,7 @@ class vn_air_uh1_01_base : vn_helicopter_base {
             shortName = "Pax";
             
             allowedPositions[] = {"crew", {"cargo", "all"}, {"ffv", "all"}};
-            masterPositions[] = {"gunner"};
+            masterPositions[] = {"gunner", {"turret", {1}}};
             
             limitedPositions[] = {};
             numLimitedPositions = 0;
