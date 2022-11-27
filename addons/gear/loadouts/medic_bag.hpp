@@ -1,12 +1,12 @@
 /*
 	Medic Bag Contents
 */
-ACE_elasticBandage = 32;
-ACE_packingBandage = 32;
+ACE_elasticBandage = 24;
+ACE_packingBandage = 24;
 ACE_tourniquet = 6;
 ACE_bloodIV_250 = 8;
 ACE_bloodIV_500 = 4;
-ACE_bloodIV = 4;
+ACE_bloodIV = 2;
 ACE_surgicalKit = 1;
 ACE_personalAidKit = 2;
 ACE_splint = 4;
