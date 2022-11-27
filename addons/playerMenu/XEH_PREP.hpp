@@ -2,6 +2,7 @@ PREP(debugRadioMenu);
 PREP(kickPlayerDialog);
 PREP(menuDialog);
 PREP(menuInit);
+PREP(initRacks);
 PREP(rearmVehicle);
 PREP(refuelVehicle);
 PREP(repairVehicle);
