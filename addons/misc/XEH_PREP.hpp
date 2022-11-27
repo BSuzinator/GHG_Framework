@@ -7,8 +7,6 @@ PREP(vehicleActions);
 PREP(makeBreifings);
 PREP(makeOrbat);
 PREP(failDeadly);
-PREP(getAllTaskInfo);
-PREP(systemChatAllTasks);
 PREP(initOWO);
 PREP(canOWO);
 PREP(doOWO);

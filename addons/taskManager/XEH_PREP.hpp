@@ -1,1 +1,2 @@
-//PREP(debugRadioMenu);
+PREP(getAllTaskInfo);
+PREP(systemChatAllTasks);
