@@ -18,7 +18,7 @@ if ! ( isNull (uiNamespace getVariable ["RscRespawnCounter", displayNull]) ) the
 private _respawnPos = markerPos (switch (side _unit) do {
     case west: {"respawn_west"};
     case east: {"respawn_east"};
-    case resistance: {"respawn_guerilla"};
+    case resistance: {"respawn_guerrila"};
     case civilian: {"respawn_civilian"};
 });
 
