@@ -13,6 +13,7 @@ ACE_splint = 2;
 ACE_morphine = 4;
 ACE_epinephrine = 4;
 ACE_EarPlugs = 1;
+kat_AED = 0;
 kat_X_AED = 1;
 kat_aatKit = 1;
 kat_accuvac = 1;
