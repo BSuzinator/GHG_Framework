@@ -3,7 +3,7 @@
 */
 ACE_elasticBandage = 32;
 ACE_packingBandage = 32;
-ACE_tourniquet = 8;
+ACE_tourniquet = 6;
 ACE_bloodIV_250 = 8;
 ACE_bloodIV_500 = 4;
 ACE_bloodIV = 4;

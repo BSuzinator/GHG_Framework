@@ -1,7 +1,7 @@
 /*
 	Doctor Bag Contents
 */
-ACE_elasticBandage = 16;
+ACE_elasticBandage = 20;
 ACE_packingBandage = 16;
 ACE_tourniquet = 4;
 ACE_bloodIV_250 = 4;
@@ -16,6 +16,6 @@ ACE_EarPlugs = 1;
 kat_X_AED = 1;
 kat_aatKit = 1;
 kat_accuvac = 1;
-kat_larynx = 2;
+kat_larynx = 10;
 kat_chestSeal = 2;
 kat_Pulseoximeter = 1;

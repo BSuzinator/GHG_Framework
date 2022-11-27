@@ -19,6 +19,10 @@ class squad_medic : squad_rifleman
     {
         classname[] = { "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ocp_medic", "rhsusf_assault_eagleaiii_ucp_medic", "rhsusf_assault_eagleaiii_ucp_medic" };
         // List of items
+		
+		#include "..\medic_bag.hpp"
+		
+		/*
         ACE_elasticBandage = 32;
 		ACE_packingBandage = 32;
 		ACE_tourniquet = 8;
@@ -31,5 +35,6 @@ class squad_medic : squad_rifleman
 		ACE_morphine = 12;
 		ACE_epinephrine = 12;
 		ACE_EarPlugs = 1;
+		*/
     };
 };
