@@ -3,7 +3,7 @@ PREP(blackout);
 PREP(crashTP);
 PREP(dynamicGroups);
 PREP(ejectOnDeath);
-PREP(vehicleActions);
+PREP(vehicleActionsInit);
 PREP(makeBreifings);
 PREP(makeOrbat);
 PREP(failDeadly);

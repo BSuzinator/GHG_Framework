@@ -7,7 +7,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 
 [] call FUNC(addMinesToZeus);
 [] call FUNC(ejectOnDeath);
-[] call FUNC(vehicleActions);
+[] call FUNC(vehicleActionsInit);
 [] call FUNC(treatmentNotify);
 [] spawn FUNC(failDeadly);
 [] spawn FUNC(makeBreifings);
