@@ -44,6 +44,25 @@ class CfgMagazines
         displayNameShort = "105mm Beehive";
         scope = 2;
     };
+	
+	class rhs_mag_M229_7;
+    class rhs_mag_M229_stun_7 : rhs_mag_M229_7 {
+		ammo = "ghg_ammo_Hydra_STUN";
+        author = "GHG Team";
+        displayName = "M229 Hydra (Stun x7)";
+        displayNameShort = "STUN";
+		descriptionShort = "x7 17lb STUN Hydra";
+        scope = 2;
+    };
+	class rhs_mag_M229_19;
+    class rhs_mag_M229_stun_19 : rhs_mag_M229_19 {
+		ammo = "ghg_ammo_Hydra_STUN";
+        author = "GHG Team";
+        displayName = "M229 Hydra (Stun x19)";
+        displayNameShort = "STUN";
+		descriptionShort = "x19 17lb STUN Hydra";
+        scope = 2;
+    };
 };
 
 class CfgMagazineWells
