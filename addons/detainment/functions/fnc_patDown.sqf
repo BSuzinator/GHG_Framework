@@ -15,7 +15,9 @@ params ["_target", "_player", "_params"];
 
 private _progressBarTitle = format ["Patting Down: %1", name _target];
 
-private _armorLevel = switch (configfile >> "CfgWeapons" >> _vest >> "descriptionShort") {
+private _vest = vest _player;
+
+private _vestLevel = switch (getText (configfile >> "CfgWeapons" >> _vest >> "descriptionShort")) do {
 	case "Armor Level 0";
 	case "No Armor": 0;
 	case "Armor Level 1";
@@ -30,30 +32,7 @@ private _armorLevel = switch (configfile >> "CfgWeapons" >> _vest >> "descriptio
 	case "Explosive Resistant": 7;
 	default -1;
 };
-[_progressBarTitle, 10, {true}, {hint "done"}, {systemChat "Aborted Pat Down"}] call CBA_fnc_progressBar;
-
-/*
-[player, bob] call ace_disarming_fnc_openDisarmDialog
+private _vestName = _vest call EFUNC(misc,getDisplayName);
 
 
-_vest = vest _player;
- 
-_protectedSelections = "isClass _x" configClasses (configfile >> "CfgWeapons" >> _vest >> "ItemInfo" >> "HitpointsProtectionInfo") apply {configName _x}; 
-_totalArmor = 0; 
-_totalPassThrough = 0; 
-_selectionArmors = []; 
- 
-_protectedSelections apply { 
- 
- _selectionArmor = getNumber (configfile >> "CfgWeapons" >> _vest >> "ItemInfo" >> "HitpointsProtectionInfo" >> _x >> "armor"); 
- _selectionPassThrough = getNumber (configfile >> "CfgWeapons" >> _vest >> "ItemInfo" >> "HitpointsProtectionInfo" >> _x >> "passThrough");//passThrouugh value, in case you need it 
- _totalArmor = _totalArmor + _selectionArmor; 
- _selectionArmors pushBack [_x,_selectionArmor]; 
-}; 
- 
- 
-systemchat format ["Vest: %1",_vest]; 
-systemchat format ["Protects: %1",_selectionArmors]; 
-systemchat format ["Total Armor: %1",_totalArmor]; 
 
-*/
