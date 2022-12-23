@@ -23,3 +23,5 @@ PREP(spikeStripInit);
 PREP(spikeStripPack);
 PREPMAIN(setPosAGLS);
 PREP(fixHueyHud);
+PREP(getDisplayName);
+PREP(infoText);

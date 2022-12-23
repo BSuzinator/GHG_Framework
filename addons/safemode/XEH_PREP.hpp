@@ -1,3 +1,4 @@
+PREP(introText);
 PREP(readyUpInit);
 PREP(readyUp);
 PREP(readyUpCheck);
