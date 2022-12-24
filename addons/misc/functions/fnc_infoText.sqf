@@ -88,7 +88,7 @@ sleep 1;
 	sleep 0.01;
 } foreach _nArray;
 
-sleep 5;
+sleep 8;
 
 
 //--- Fade away
