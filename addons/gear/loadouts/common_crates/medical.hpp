@@ -19,5 +19,7 @@ class ghg_crate_medical : ghg_crate_base
         ACE_bodyBag = 16;
         ACE_tourniquet = 16;  
         ACE_EarPlugs = 8;
+		kat_larynx = 8;
+		kat_chestSeal = 2;
     };
 };
