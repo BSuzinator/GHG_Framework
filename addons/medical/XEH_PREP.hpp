@@ -1,0 +1,2 @@
+PREP(canGiveFullTreatment);
+PREP(fullTreatment);
