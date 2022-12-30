@@ -21,4 +21,3 @@ class CfgPatches {
 };
 
 #include "CfgEventhandlers.hpp"
-#include "CfgGHG.hpp"
