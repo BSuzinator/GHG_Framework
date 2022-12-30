@@ -14,10 +14,14 @@ class CfgPatches {
             // When any of the addons is missing, pop-up warning will appear when launching the game.
             requiredAddons[] = { "ghg_main", "ghg_gear", "ghg_factory" };
             // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
-            units[] = {};
+            units[] = { "GHG_Medical_Tent_Sand", "GHG_Medical_Tent_Olive" };
             // List of weapons (CfgWeapons classes) contained in the addon.
             weapons[] = {};
     };
 };
 #include "CfgEventhandlers.hpp"
 #include "CfgVehicles.hpp"
+
+class ace_medical_facilities {
+	GHG[] = { "GHG_Medical_Tent_Sand", "GHG_Medical_Tent_Olive" }
+};

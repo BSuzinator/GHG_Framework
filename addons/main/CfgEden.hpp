@@ -26,6 +26,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Service Points";
 	};
+	class GHG_SubCat_Medical
+	{
+		displayName = "Medical";
+	};
 	class GHG_SubCat_Flags
 	{
 		displayName = "Flags";

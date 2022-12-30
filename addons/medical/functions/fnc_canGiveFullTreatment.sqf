@@ -6,7 +6,7 @@
 	Author: BSuz
 ======================================*/
 params ["_target","_player","_actionParams"];
-private _resupplyDistance = 6;
+private _resupplyDistance = 10;
 
 // [[xmin, ymin, zmin], [xmax, ymax, zmax], boundingSphereDiameter] = boundingBox _object
 // clippingType boundingBoxReal object
@@ -18,11 +18,11 @@ if (!_isMedic) exitWith {false};
 
 private _okay = false;
 {
-	private _rsupObj = nearestObject [_target, _x];
+	private _rsupObj = ((nearestObjects [_target, [_x], _resupplyDistance]) select 0);
 	private _bbReal = 0 boundingBoxReal _rsupObj;
 	private _bbRealMin = _rsupObj modelToWorld (_bbReal # 0);
 	private _bbRealMax = _rsupObj modelToWorld (_bbReal # 1);
-	private _targetPos = ASLToAGL getPosASL _target;
+	private _targetPos = ASLToAGL (getPosASL _target);
 	
 	private _targetInside = (
 		(((_targetPos # 0) > (_bbRealMin # 0)) && ((_targetPos # 0) < (_bbRealMax # 0)))
@@ -30,13 +30,13 @@ private _okay = false;
 		(((_targetPos # 1) > (_bbRealMin # 1)) && ((_targetPos # 1) < (_bbRealMax # 1)))
 		&&
 		(((_targetPos # 2) > (_bbRealMin # 2)) && ((_targetPos # 2) < (_bbRealMax # 2)))
-	)
+	);
 	
 	
-	if ( _isMedic && !isNull _rsupObj && _targetInside ) exitwith {
+	if ( _isMedic && (!isNull _rsupObj) ) then {
 		_okay = true;
 	};
 	
-} forEach ["ghg_medicalStation"];
+} forEach ["GHG_Medical_Tent"];
 
 _okay
