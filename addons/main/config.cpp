@@ -50,7 +50,7 @@ class CfgFactionClasses {
 };
 
 delete enableDebugConsole;
-enableDebugConsole[] = {"76561198080019809", "76561198044516211"};
+enableDebugConsole[] = { "76561198080019809" };
 
 #include "CfgEden.hpp"
 #include "CfgEventhandlers.hpp"

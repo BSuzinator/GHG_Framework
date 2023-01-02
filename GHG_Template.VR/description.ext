@@ -18,7 +18,7 @@ respawnDelay = 5000;
 respawnTemplates[] = {"ace_spectator"};
 
 //Admin Settings
-enableZeusInterface[] = { "76561198080019809", "76561198044516211" };
+enableZeusInterface[] = { "76561198080019809" };
 saving = 0;
 skiplobby = 0;
 
