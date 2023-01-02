@@ -33,6 +33,22 @@ class CfgMods {
     };
 };
 
+class CfgAddons {
+	class PreloadAddons {
+		class ADDON {
+			list[] = {
+				"ghg_main",
+				"ghg_gear",
+				"ghg_factory",
+				"ghg_medical",
+				"ghg_specweap",
+				"ghg_markers",
+				"ghg_misc"
+			};
+		};
+	};
+};
+
 class CfgFactionClasses {
     class b_ghg {
         displayName = "Ghost Hawk Gaming";
