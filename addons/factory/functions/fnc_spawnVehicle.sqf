@@ -57,5 +57,5 @@ diag_log "[GHG]: " + _diagStr;
 //systemChat format ["Spawned %1",getText (configFile >> "CfgVehicles" >> _vehClass >> "displayName")];
 _diagStr remoteExec ["systemChat", side _player, false];
 _diagStr remoteExec ["systemChat", sideLogic, false];
-_vehicle call FUNC(clearPylons);
+if (_vehicle isKindOf "Air") then {_vehicle call FUNC(clearPylons);};
 _vehicle animateSource ["BFT_Hide", 1];
