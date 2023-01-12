@@ -109,6 +109,8 @@ private _refuelAction = ["ghg_serviceRefuel", "Refuel", "\a3\ui_f\data\igui\cfg\
 
 private _repairAction = ["ghg_serviceRepair", "Repair", "\a3\ui_f\data\igui\cfg\simpletasks\types\repair_ca.paa", {[_target,0] remoteExecCall ["setDamage", _target];}, {true}] call ace_interact_menu_fnc_createAction;
 
+private _dismantleAction = ["ghg_serviceDismantle", "Dismantle", "\a3\ui_f\data\igui\cfg\simpletasks\types\container_ca.paa", {_target remoteExecCall ["deleteVehicle", _target];}, {!isNull nearestObject [_target, "GHG_Vehicle_Factory"]}] call ace_interact_menu_fnc_createAction;
+
 ["Air", 0, ["ACE_MainActions","ghg_serviceRoot"], _pylonAction, true] call ace_interact_menu_fnc_addActionToClass;
 
 {
@@ -116,7 +118,7 @@ private _repairAction = ["ghg_serviceRepair", "Repair", "\a3\ui_f\data\igui\cfg\
 	["LandVehicle", 0, ["ACE_MainActions","ghg_serviceRoot"], _spa, true] call ace_interact_menu_fnc_addActionToClass;
 	["Air", 0, ["ACE_MainActions","ghg_serviceRoot"], _spa, true] call ace_interact_menu_fnc_addActionToClass;
 	["Ship", 0, ["ACE_MainActions","ghg_serviceRoot"], _spa, true] call ace_interact_menu_fnc_addActionToClass;
-} forEach [_rearmAction,_refuelAction,_repairAction];
+} forEach [_rearmAction,_refuelAction,_repairAction,_dismantleAction];
 
 
 diag_log "[GHG]: Vehicle Resupply Actions Loaded";
