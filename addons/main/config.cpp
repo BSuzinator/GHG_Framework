@@ -35,7 +35,7 @@ class CfgMods {
 
 class CfgAddons {
 	class PreloadAddons {
-		class ADDON {
+		class PREFIX {
 			list[] = {
 				"ghg_main",
 				"ghg_gear",

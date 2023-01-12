@@ -9,6 +9,7 @@ class CfgVehicles {
 	class GHG_Vehicle_Factory : Land_Bunker_F {
 		author = "GHG Team";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Vehicle Factory";
 		editorCategory="GHG_Cat_Main";
 		editorSubcategory="GHG_SubCat_Factory";
