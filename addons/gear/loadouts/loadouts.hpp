@@ -12,6 +12,6 @@ class Loadouts
 	#include "taliban\loadouts.hpp"
 	#include "usArmy\loadouts.hpp"
 	#include "usArmySF\loadouts.hpp"
-    #include "usMC\loadouts.hpp"
     #include "usKorea\loadouts.hpp"
+	#include "usMC\loadouts.hpp"
 };
