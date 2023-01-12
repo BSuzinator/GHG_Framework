@@ -14,37 +14,14 @@ class CfgVehicles {
 	};
 	
 	class Camping_base_F;
-	class Land_MedicalTent_01_base_F : Camping_base_F {
-		class Attributes : Attributes {
-			class Door_Hide;
-			class SolarPanel1_Hide;
-			class SolarPanel2_Hide;
-		};
-	};
+	class Land_MedicalTent_01_base_F : Camping_base_F {};
 	class GHG_Medical_Tent : Land_MedicalTent_01_base_F {
 		author = "GHG Team";
 		displayName = "Medical Tent [Sand]";
 		editorCategory="GHG_Cat_Main";
 		editorSubcategory="GHG_SubCat_Medical";
 		scope = 0;
-		scopeCurator = 0;
-		
-		class ACE_Actions {
-			class ACE_MainActions;
-		};
-		
-		class Attributes : Attributes {
-			class Door_Hide : Door_Hide {
-				defaultValue = 1;
-			};
-			class SolarPanel1_Hide : SolarPanel1_Hide {
-				defaultValue = 1;
-			};
-			class SolarPanel2_Hide : SolarPanel2_Hide{
-				defaultValue = 1;
-			};
-		};
-		
+		scopeCurator = 0;				
 	};
 	
 	class GHG_Medical_Tent_Sand : GHG_Medical_Tent {
