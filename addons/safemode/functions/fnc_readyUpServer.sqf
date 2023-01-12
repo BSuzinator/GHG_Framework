@@ -17,5 +17,5 @@ if ( GVAR(ready_blu) && GVAR(ready_opf) && GVAR(ready_ind) ) then
 		5,
 		"All sides ready, weapons hot in five seconds!"
 	] remoteExec [QFUNC(safeModeTrigger), 0, "ghg_safemode_update"]; // Make sure JIP's are notified
-	[] remoteExec [QFUNC(introText), 0, "ghg_safemode_update"];
+	[] remoteExec [QFUNC(introText), 0, "ghg_safemode_updateIntroText"];
 };
