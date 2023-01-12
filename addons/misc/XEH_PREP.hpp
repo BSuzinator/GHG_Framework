@@ -25,3 +25,4 @@ PREPMAIN(setPosAGLS);
 PREP(fixHueyHud);
 PREP(getDisplayName);
 PREP(infoText);
+PREP(rappelSequencer);
