@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Wolf Crew (pmc)
+	Loadout for Wolf Crew (swat)
 ======================================*/
 class wolf_crew : lynx_crew
 {

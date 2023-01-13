@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Repair Specialist (pmc)
+	Loadout for Repair Specialist (swat)
 ======================================*/
 class logi_repair : squad_rifleman
 {

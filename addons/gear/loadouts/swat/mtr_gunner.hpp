@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MTR Gunner (pmc)
+	Loadout for MTR Gunner (swat)
 ======================================*/
 class mtr_gunner : squad_rifleman
 {

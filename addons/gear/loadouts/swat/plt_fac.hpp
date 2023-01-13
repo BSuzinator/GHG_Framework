@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for FAC (pmc)
+	Loadout for FAC (swat)
 ======================================*/
 class plt_fac : squad_lead
 {

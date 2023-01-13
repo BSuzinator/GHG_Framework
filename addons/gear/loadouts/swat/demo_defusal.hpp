@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Demo Defusal (pmc)
+	Loadout for Demo Defusal (swat)
 ======================================*/
 class demo_defusal : squad_rifleman
 {

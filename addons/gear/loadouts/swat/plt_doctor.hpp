@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for PLT Doctor (pmc)
+	Loadout for PLT Doctor (swat)
 ======================================*/
 class plt_doctor : squad_medic
 {

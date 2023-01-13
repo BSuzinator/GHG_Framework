@@ -16,6 +16,6 @@ class ravn_pilot : ravn_crew
         rhs_mag_m67 = 2;
 		ACE_microDAGR = 1;
     };
-	headgear = "rhsusf_hgu56p_visor_black";
-    facewear = "G_Combat_lxWS";
+	headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };

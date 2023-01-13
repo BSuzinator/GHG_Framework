@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MTR Ammo Bearer (pmc)
+	Loadout for MTR Ammo Bearer (swat)
 ======================================*/
 class mtr_ammo : squad_rifleman
 {

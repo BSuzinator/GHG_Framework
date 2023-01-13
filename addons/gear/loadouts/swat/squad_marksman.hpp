@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Squad Marksman (pmc)
+	Loadout for Squad Marksman (swat)
 ======================================*/
 class squad_marksman : squad_rifleman
 {

@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Demo Lead (pmc)
+	Loadout for Demo Lead (swat)
 ======================================*/
 class demo_lead : squad_lead
 {

@@ -18,6 +18,7 @@ class rcn_gunner : loadout_base
         class Scopes : Scopes
         {
             sniper_optic = "rhsusf_acc_leupoldmk4";
+			
         };
     };
     

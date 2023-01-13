@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Flcn Pilot (pmc)
+	Loadout for Flcn Pilot (swat)
 ======================================*/
 class flcn_pilot : ravn_pilot
 {

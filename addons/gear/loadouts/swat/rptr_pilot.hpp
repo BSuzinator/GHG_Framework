@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Fixed Wing Pilots (pmc)
+	Loadout for Fixed Wing Pilots (swat)
 ======================================*/
 class rptr_pilot : squad_rifleman
 {
@@ -52,6 +52,6 @@ class rptr_pilot : squad_rifleman
 		ACE_Chemlight_HiRed = 1;
     };
     
-    headgear = "RHS_jetpilot_usaf";
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };

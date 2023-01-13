@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Demo Saboteur (pmc)
+	Loadout for Demo Saboteur (swat)
 ======================================*/
 class demo_saboteur : squad_rifleman
 {

@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Squad Assistant Autorifleman (pmc)
+	Loadout for Squad Assistant Autorifleman (swat)
 ======================================*/
 class squad_aar : squad_rifleman
 {
@@ -28,6 +28,6 @@ class squad_aar : squad_rifleman
         classname = "Binocular";
     };
 	
-	headgear = "vn_b_boonie_05_03";
-	facewear = "G_Headset_lxWS";
+	headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };

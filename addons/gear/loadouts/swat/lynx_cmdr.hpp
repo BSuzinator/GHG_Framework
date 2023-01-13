@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Lynx Commander (pmc)
+	Loadout for Lynx Commander (swat)
 ======================================*/
 class lynx_cmdr : lynx_crew
 {

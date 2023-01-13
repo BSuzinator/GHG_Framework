@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MTR Lead (pmc)
+	Loadout for MTR Lead (swat)
 ======================================*/
 class mtr_lead : squad_lead
 {

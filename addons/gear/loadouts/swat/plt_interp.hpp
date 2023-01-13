@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for PLT Interpreter (pmc)
+	Loadout for PLT Interpreter (swat)
 ======================================*/
 class plt_interp : squad_rifleman
 {
@@ -15,6 +15,6 @@ class plt_interp : squad_rifleman
 	{
 		classname = "rhsusf_assault_eagleaiii_coy";
 	};
-	headgear = "UK3CB_TKP_O_H_Patrolcap_Blk";
-    facewear = "G_Headset_lxWS";
+	headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };

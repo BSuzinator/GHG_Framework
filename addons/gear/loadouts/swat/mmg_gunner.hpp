@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MMG Gunner (pmc)
+	Loadout for MMG Gunner (swat)
 ======================================*/
 class mmg_gunner : squad_rifleman
 {

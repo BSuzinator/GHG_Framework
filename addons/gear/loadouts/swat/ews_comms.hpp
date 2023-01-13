@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for EWS Teletype (pmc)
+	Loadout for EWS Teletype (swat)
 ======================================*/
 class ews_comms : squad_rifleman
 {

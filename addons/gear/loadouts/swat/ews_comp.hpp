@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for EWS ROLM (pmc)
+	Loadout for EWS ROLM (swat)
 ======================================*/
 class ews_comp : squad_rifleman
 {

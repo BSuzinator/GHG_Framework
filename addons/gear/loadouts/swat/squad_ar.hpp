@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Squad Autorifleman (pmc)
+	Loadout for Squad Autorifleman (swat)
 ======================================*/
 class squad_ar : squad_rifleman
 {
@@ -34,6 +34,6 @@ class squad_ar : squad_rifleman
         // List of items
         rhsusf_200Rnd_556x45_soft_pouch = 1;
     };
-	headgear = "vn_b_bandana_03";
-	facewear = "G_Headset_lxWS";
+	headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };

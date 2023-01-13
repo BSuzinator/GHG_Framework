@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for MAA Lead (pmc)
+	Loadout for MAA Lead (swat)
 ======================================*/
 class maa_lead : squad_lead
 {

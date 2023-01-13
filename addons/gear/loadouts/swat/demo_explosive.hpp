@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Explosive Specialist (pmc)
+	Loadout for Explosive Specialist (swat)
 ======================================*/
 class demo_explosive : squad_rifleman
 {

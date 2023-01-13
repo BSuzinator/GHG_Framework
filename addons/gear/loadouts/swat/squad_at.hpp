@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Squad Rifleman(AT) (pmc)
+	Loadout for Squad Rifleman(AT) (swat)
 ======================================*/
 class squad_at : squad_rifleman
 {
@@ -20,6 +20,6 @@ class squad_at : squad_rifleman
     {
         ACE_MapTools = 1;
     };
-	headgear = "rhsusf_bowman";
-	facewear = "vn_b_bandana_a";
+	headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };

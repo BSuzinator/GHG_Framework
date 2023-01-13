@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Squad Grenedier (pmc)
+	Loadout for Squad Grenedier (swat)
 ======================================*/
 class squad_grenedier : squad_lead
 {

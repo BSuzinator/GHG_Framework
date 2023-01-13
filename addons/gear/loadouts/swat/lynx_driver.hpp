@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Lynx Driver (pmc)
+	Loadout for Lynx Driver (swat)
 ======================================*/
 class lynx_driver : lynx_crew
 {

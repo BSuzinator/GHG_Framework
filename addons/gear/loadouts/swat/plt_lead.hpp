@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for PLT Lead (pmc)
+	Loadout for PLT Lead (swat)
 ======================================*/
 class plt_lead : squad_rifleman
 {
@@ -36,6 +36,6 @@ class plt_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear = "UK3CB_H_Safari_Hat_Brown";
-	facewear = "G_Headset_lxWS";
+    headgear = "rhsusf_opscore_bk_pelt";
+    facewear = "G_Balaclava_TI_G_blk_F";
 };
