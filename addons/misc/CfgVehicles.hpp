@@ -25,6 +25,48 @@ class CfgVehicles {
 		};
     };
     
+	class Air;
+	class Helicopter : Air {
+		class ACE_SelfActions;
+		class ACE_SelfActions : ACE_SelfActions {
+			class GHG_rappelCutRopesAction {
+				condition = QUOTE(_this call FUNC(rappelCommandCondition));
+				statement = QUOTE(_this call FUNC(rappelCutRopes));
+				displayName = "Cut Rappel Ropes";
+			};
+			class GHG_rappelSequencerBeginRoot {
+				condition = QUOTE(_this call FUNC(rappelCommandCondition));
+				statement = "";
+				displayName = "Begin Rappel Sequence";
+				
+				class GHG_rappelSequencerBegin_1 {
+					condition = "true";
+					statement = "[_target, _player, [1]] spawn ghg_misc_fnc_rappelSequencer";
+					displayName = "1";
+				};
+				
+				class GHG_rappelSequencerBegin_2 {
+					condition = "true";
+					statement = "[_target, _player, [2]] spawn ghg_misc_fnc_rappelSequencer";
+					displayName = "2";
+				};
+				
+				class GHG_rappelSequencerBegin_3 {
+					condition = "true";
+					statement = "[_target, _player, [3]] spawn ghg_misc_fnc_rappelSequencer";
+					displayName = "3";
+				};
+				
+				class GHG_rappelSequencerBegin_4 {
+					condition = "true";
+					statement = "[_target, _player, [4]] spawn ghg_misc_fnc_rappelSequencer";
+					displayName = "4";
+				};
+			};
+		};
+	};
+	
+	
     class Thing;
     class Footprint_L : Thing
     {
