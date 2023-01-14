@@ -41,25 +41,25 @@ class CfgVehicles {
 				
 				class GHG_rappelSequencerBegin_1 {
 					condition = "true";
-					statement = QUOTE([_target, _player, [1]] call FUNC(rappelSequencer));
+					statement = "[_target, _player, [1]] spawn ghg_misc_fnc_rappelSequencer";
 					displayName = "1";
 				};
 				
 				class GHG_rappelSequencerBegin_2 {
 					condition = "true";
-					statement = QUOTE([_target, _player, [2]] call FUNC(rappelSequencer));
+					statement = "[_target, _player, [2]] spawn ghg_misc_fnc_rappelSequencer";
 					displayName = "2";
 				};
 				
 				class GHG_rappelSequencerBegin_3 {
 					condition = "true";
-					statement = QUOTE([_target, _player, [3]] call FUNC(rappelSequencer));
+					statement = "[_target, _player, [3]] spawn ghg_misc_fnc_rappelSequencer";
 					displayName = "3";
 				};
 				
 				class GHG_rappelSequencerBegin_4 {
 					condition = "true";
-					statement = QUOTE([_target, _player, [4]] call FUNC(rappelSequencer));
+					statement = "[_target, _player, [4]] spawn ghg_misc_fnc_rappelSequencer";
 					displayName = "4";
 				};
 			};

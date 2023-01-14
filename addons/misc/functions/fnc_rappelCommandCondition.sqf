@@ -7,9 +7,18 @@
 params ["_target", "_player", "_actionParams"];
 private _vehicle = _target;
 
-private _driver = fullCrew [_vehicle, "driver"];
-private _commander = fullCrew [_vehicle, "commander"];
-private _gunner = fullCrew [_vehicle, "gunner"];
-private _turret = fullCrew [_vehicle, "turret"];
+private _driverArray = fullCrew [_vehicle, "driver"];
+private _commanderArray = fullCrew [_vehicle, "commander"];
+private _gunnerArray = fullCrew [_vehicle, "gunner"];
+private _turretArray = fullCrew [_vehicle, "turret"];
+private _crewList = [];
 
-(_player in [_driver,_commander,_gunner,_turret])
+{
+	private _superArray = _x;
+	{
+		private _unitArray = _x;
+		_crewList pushBackUnique (_unitArray select 0);
+	} forEach _superArray;
+} forEach [_driverArray,_commanderArray,_gunnerArray,_turretArray];
+
+(_player in _crewlist)
