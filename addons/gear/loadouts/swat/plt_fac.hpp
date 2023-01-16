@@ -3,12 +3,6 @@
 ======================================*/
 class plt_fac : squad_lead
 {
-    
-    
-	class Weapon_2 : Weapon_2 // Rifle
-    {
-        ammo = "rhs_mag_m713_Red";
-    };
 	
     class Backpack : Backpack
     {

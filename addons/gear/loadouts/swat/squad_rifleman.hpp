@@ -47,10 +47,15 @@ class squad_rifleman : loadout_base
         SmokeShell = 2;
         rhs_mag_m67 = 2;
         ACE_EntrenchingTool = 1;
-		ACE_CableTie = 2;
+		ACE_CableTie = 4;
 		ACE_M84 = 3;
     };
     
+	class Binoculars : Binoculars
+    {
+        classname = "Camera_lxWS";
+    };
+	
     headgear = "rhsusf_opscore_bk_pelt";
     facewear = "G_Balaclava_TI_G_blk_F";
 };

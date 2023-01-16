@@ -1,31 +1,32 @@
 /*======================================
-	Loadout for Squad Assistant Autorifleman (swat)
+	Loadout for Squad Containment Autorifleman (swat)
 ======================================*/
 class squad_aar : squad_rifleman
 {
     
     class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_blue_plaid";
+        classname = "UK3CB_CW_US_B_LATE_U_SF_CombatUniform_01_BLK";
     };
 	
 	class Vest : Vest
     {
-        ACE_MapTools = 1;
+        ACE_MapTools = 0;
     };
 	
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "UK3CB_TKP_O_B_ASS_BLK";
         // List of items
-        ACE_SpareBarrel = 1;
-        rhsusf_200Rnd_556x45_soft_pouch = 3;
-		ACE_Canteen = 2;
+        ACE_SpareBarrel = 0;
+        rhsusf_200Rnd_556x45_soft_pouch = 0;
+		ACE_Canteen = 0;
+		ACE_CableTie = 30;
     };
 	
 	class Binoculars : Binoculars
     {
-        classname = "Binocular";
+        classname = "Camera_lxWS";
     };
 	
 	headgear = "rhsusf_opscore_bk_pelt";

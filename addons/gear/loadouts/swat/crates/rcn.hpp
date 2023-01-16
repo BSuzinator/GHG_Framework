@@ -6,6 +6,7 @@ class ghg_crate_swat_rcn : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 24;
         ACE_packingBandage = 24;
+		UK3CB_AUG_30Rnd_556x45_Magazine = 15;
         rhsusf_5Rnd_762x51_m118_special_Mag = 15;
 		rhsusf_mag_17Rnd_9x19_JHP = 20;
         ACE_M84 = 3;

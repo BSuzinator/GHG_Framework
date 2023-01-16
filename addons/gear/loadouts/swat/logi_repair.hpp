@@ -3,10 +3,6 @@
 ======================================*/
 class logi_repair : squad_rifleman
 {
-    class Uniform : Uniform
-	{
-		classname = "U_C_Mechanic_01_F";
-	};
 	
 	class Vest : Vest
     {
@@ -17,11 +13,10 @@ class logi_repair : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "B_AssaultPack_cbr";
+        classname = "B_AssaultPack_blk";
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;
     };
-	facewear = "UK3CB_G_Neck_Shemag_KLR_tan";
-	headgear = "rhsusf_bowman_cap";
+	
 };

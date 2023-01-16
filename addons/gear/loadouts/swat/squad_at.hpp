@@ -13,7 +13,7 @@ class squad_at : squad_rifleman
 	
 	class Uniform : Uniform
     {
-        classname = "lop_u_pmc_grn_plaid";
+        classname = "UK3CB_CW_US_B_LATE_U_SF_CombatUniform_01_BLK";
     };
 	
 	class Vest : Vest

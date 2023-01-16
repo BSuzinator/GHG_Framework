@@ -6,7 +6,7 @@ class ghg_crate_pmc_logi : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 32;
+        UK3CB_AUG_30Rnd_556x45_Magazine = 32;
         rhs_mag_m67 = 4;
         rhs_mag_an_m8hc = 6;
         rhs_weap_M136 = 1;

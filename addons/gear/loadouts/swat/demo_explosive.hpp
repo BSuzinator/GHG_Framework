@@ -12,14 +12,9 @@ class demo_explosive : squad_rifleman
 		class Scopes {}; 
 	};
 	
-	class Uniform : Uniform
-    {
-        classname = "LOP_U_PMC_tac_grn_palm";
-    };
-	
 	class Vest : Vest
     {
-        classname = "rhsusf_plateframe_rifleman";
+        classname = "UK3CB_TKP_B_V_TacVest_Blk";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -28,12 +23,11 @@ class demo_explosive : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "B_AssaultPack_cbr";
+        classname = "B_AssaultPack_blk";
         // List of items
         rhsusf_m112x4_mag = 1;
         rhsusf_m112_mag = 3;
 		SatchelCharge_Remote_Mag = 1;
     };
-	facewear = "G_Headset_lxWS";
-	headgear = "vn_b_headband_03";
+
 };

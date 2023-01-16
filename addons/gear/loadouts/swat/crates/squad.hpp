@@ -7,7 +7,8 @@ class ghg_crate_swat_squad : ghg_crate_base
         ACE_elasticBandage = 24;
         ACE_packingBandage = 24;
         UK3CB_AUG_30Rnd_556x45_Magazine = 30;
-		rhsusf_mag_17Rnd_9x19_JHP = 20;
+		20Rnd_762x51_Mag = 10;
+		rhsusf_mag_17Rnd_9x19_FMJ = 20;
 		ACE_M84 = 12;
         rhsusf_mag_m4009 =4;
         rhs_mag_M441_HE = 3;
@@ -18,5 +19,6 @@ class ghg_crate_swat_squad : ghg_crate_base
         rhs_mag_m714_white = 3;
 		ACE_EarPlugs = 8;
 		diw_armor_plates_main_plate = 8;
+		Camera_lxWS = 4;
     };
 };

@@ -2,7 +2,7 @@ class swat
 {
     version = 1;
     
-    camo[] = { "woodland", "black", "desert" };
+    camo[] = { " " };
     
     class Magazines
     {

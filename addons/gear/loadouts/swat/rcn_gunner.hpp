@@ -46,10 +46,6 @@ class rcn_gunner : loadout_base
 		ACE_M84 = 3;
     };
 	
-	class Backpack : Backpack
-    {
-        classname = "";
-    };
 	
 	headgear = "rhsusf_opscore_bk_pelt";
     facewear = "G_Balaclava_TI_G_blk_F";

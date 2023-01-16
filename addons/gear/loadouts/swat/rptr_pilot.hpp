@@ -7,9 +7,11 @@ class rptr_pilot : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "";
-        laser = "";
-        ammo = "";
+        classname = "rhs_weap_m4a1_blockII_bk";
+        laser = "rhsusf_acc_anpeq15side_bk";
+        ammo = "UK3CB_AUG_30Rnd_556x45_Magazine";
+		muzzle = "rhsusf_acc_nt4_black";
+		bipod = "rhsusf_acc_grip2";
         
         class Scopes : Scopes
         {
@@ -24,10 +26,10 @@ class rptr_pilot : squad_rifleman
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m1911a1";
-		muzzle = "";
-        laser = "";
-        ammo = "rhsusf_mag_7x45acp_MHP";
+		classname = "rhsusf_weap_glock17g4";
+		muzzle = "rhsusf_acc_omega9k";
+        laser = "acc_flashlight_pistol";
+        ammo = "rhsusf_mag_17Rnd_9x19_FMJ";
 		class Scopes {}; 
 	};
 	
@@ -45,7 +47,7 @@ class rptr_pilot : squad_rifleman
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
         // List of items
-		rhsusf_mag_7x45acp_MHP = 3;
+		rhsusf_mag_17Rnd_9x19_FMJ = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

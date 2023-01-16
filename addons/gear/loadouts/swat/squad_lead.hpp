@@ -10,14 +10,17 @@ class squad_lead : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "rhs_weap_m4a1_blockII_M203_bk";
+		acog = "optic_holosight_smg_blk_f";
+		laser = "rhsusf_acc_anpeq15side_bk";
+		ammo = "UK3CB_AUG_30Rnd_556x45_Magazine";
+		bipod = "rhsusf_acc_rvg_blk";
+		muzzle = "rhsusf_acc_nt4_black";
 
         class Scopes : Scopes
         {
-            acog = "optic_holosight_smg_blk_f";
-			laser = "rhsusf_acc_anpeq15side_bk";
-			ammo = "UK3CB_AUG_30Rnd_556x45_Magazine";
-			bipod = "rhsusf_acc_rvg_blk";
-			muzzle = "rhsusf_acc_nt4_black";
+            acog = "rhsusf_acc_acog";
+			holo = "optic_holosight_smg_blk_f";
+			red_dot = "optic_yorris";
         };
     };
     
@@ -46,7 +49,7 @@ class squad_lead : squad_rifleman
     {
         classname = "B_AssaultPack_blk";
         // List of items
-		rhsusf_mag_m4009 =3;
+		rhsusf_mag_m4009 = 3;
         rhs_mag_M441_HE = 0;
         rhs_mag_m661_green = 2;
         rhs_mag_m662_red = 2;
