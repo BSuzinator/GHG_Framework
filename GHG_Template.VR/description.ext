@@ -17,8 +17,8 @@ respawn = 3;
 respawnDelay = 5000;
 respawnTemplates[] = {"ace_spectator"};
 
-//Admin Settings
-enableZeusInterface[] = { "76561198080019809" };
+//Admin Settings - BSuz, Quantx, Faie
+enableZeusInterface[] = { "76561198080019809", "76561198044516211", "76561198131220953" };
 saving = 0;
 skiplobby = 0;
 
@@ -31,7 +31,7 @@ class Header
 
 class CfgGHG
 {
-    version = "2.1.0";
+    version = "2.2.0";
 
 	#include "ghg\config.txt"
     
