@@ -1,19 +1,42 @@
 /*======================================
-	Loadout for MAA Gunner (vnSwat)
+	Loadout for SWAT Bravo Marksman (vnSwat)
 ======================================*/
-class maa_gunner : mat_gunner
+class maa_gunner : loadout_base_vnSwat
 {
-
-	class Weapon_3 : Weapon_3 // Launcher
+    
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_fim92";
-        ammo = "rhs_fim92_mag";
-		class Scopes { rhs_weap_optic_smaw = ""; };
+        classname = "vn_m14a1";
+        ammo = "vn_m14_mag";
+        
+        class Scopes : Scopes { };
     };
-    class Backpack : Backpack
+	
+	class Weapon_2 : Weapon_2 // Rifle
     {
+        classname = "vn_m1911";
+        ammo = "vn_m1911_mag";
+        
+        class Scopes : Scopes { };
+    };
+    
+    class Uniform : Uniform
+    {
+        classname = "vn_b_uniform_macv_01_03";
+    };
+    
+    class Vest : Vest
+    {
+        classname = "vn_o_vest_05";
         // List of items
-        rhs_mag_smaw_HEAA = 0;
-		rhs_fim92_mag = 2;
+        vn_m14_mag = 4;
+		vn_m1911_mag = 3;
+        vn_m18_white_mag = 2;
+        vn_m61_grenade_mag = 2;
+        ACE_EntrenchingTool = 0;
     };
+    
+    headgear = "rhssaf_helmet_m97_black_nocamo";
+    facewear = "G_Aviator";
 };

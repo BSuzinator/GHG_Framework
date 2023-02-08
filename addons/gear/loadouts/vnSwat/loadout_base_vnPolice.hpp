@@ -1,16 +1,16 @@
 /*======================================
 	Loadout for macv units
 ======================================*/
-class loadout_base_vnSwat : loadout_base
+class loadout_base_vnPolice : loadout_base
 {
     
 
     class Weapon_2 : Weapon_2 // Everyone gets a flashlight instead of NVGS
 	{ 
-		classname = "vn_m1911";
+		classname = "vn_p38s";
 		muzzle = "";
         laser = "";
-        ammo = "vn_m1911_mag";
+        ammo = "vn_m10_mag";
 		class Scopes {}; 
 	};
 

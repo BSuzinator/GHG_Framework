@@ -1,6 +1,6 @@
-class ghg_crate_macv_squad : ghg_crate_base
+class ghg_crate_vnswat_swat : ghg_crate_base
 {
-    displayname = "Squad";
+    displayname = "Swat";
     cargosize = 2;
     
     class items : items {

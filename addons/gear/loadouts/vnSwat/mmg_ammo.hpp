@@ -1,25 +1,55 @@
 /*======================================
-	Loadout for MMG Ammo Bearer (vnSwat)
+	Loadout for SWAT Delta Spotter (vnSwat)
 ======================================*/
-class mmg_ammo : squad_rifleman
+class mmg_ammo : loadout_base_vnSwat
 {
-    class Vest : Vest
-    {
-        classname = "vn_b_vest_usarmy_06";
-    };
     
-    class Backpack : Backpack
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "vn_b_pack_lw_05";
-        // List of items
-		ACE_Canteen = 2;
-        ACE_SpareBarrel = 1;
-        vn_m60_100_mag = 5;
+        classname = "vn_m1carbine";
+        ammo = "vn_carbine_30_mag";
+        
+        class Scopes : Scopes { };
     };
 	
+	class Weapon_2 : Weapon_2 // Rifle
+    {
+        classname = "vn_m1911";
+        ammo = "vn_m1911_mag";
+        
+        class Scopes : Scopes { };
+    };
+    
+    class Uniform : Uniform
+    {
+        classname = "vn_b_uniform_macv_01_03";
+    };
+    
+    class Vest : Vest
+    {
+        classname = "vn_o_vest_05";
+        // List of items
+        vn_carbine_30_mag = 6;
+		vn_m1911_mag = 2;
+        vn_m18_white_mag = 2;
+        vn_m61_grenade_mag = 2;
+        ACE_EntrenchingTool = 0;
+    };
+	
+	class Backpack : Backpack
+	{
+		classname = "UK3CB_TKP_O_B_ASS_BLK";
+		
+	};
+    
 	class Binoculars : Binoculars
     {
-        classname = "vn_m19_binocs_grn";
+        classname = "rhsusf_bino_leopold_mk4";
+		vn_m40a1_mag = 10;
+		vn_1911_mag = 4;
     };
-    headgear[] = { "vn_b_helmet_m1_05_01", "vn_b_helmet_m1_05_02" };
+	
+    headgear = "rhssaf_helmet_m97_black_nocamo";
+    facewear = "G_Aviator";
 };

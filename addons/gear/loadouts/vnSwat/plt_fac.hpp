@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for FAC (vnSwat)
+	Loadout for FAC Officer (vnSwat)
 ======================================*/
 class plt_fac : squad_lead
 {

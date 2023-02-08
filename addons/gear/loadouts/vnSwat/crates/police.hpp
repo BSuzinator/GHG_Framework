@@ -1,19 +1,18 @@
-class ghg_crate_macv_logi : ghg_crate_base
+class ghg_crate_vnswat_police : ghg_crate_base
 {
-    displayname = "Logistics";
+    displayname = "Police";
     cargosize = 2;
     
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        vn_m16_20_mag = 32;
-        vn_m61_grenade_mag = 4;
-        vn_m18_white_mag = 6;
-        vn_m72 = 1;
-        vn_m72_mag = 1;
-		ACE_wirecutter = 2;
-		ACE_DefusalKit = 2;
-		ToolKit = 2;
+        vn_m16_20_mag = 30;
+		vn_m14_mag = 4;
+        vn_m61_grenade_mag = 8;
+        vn_m18_white_mag = 8;
+        vn_m63a_100_mag = 5;
+        vn_m72 = 2;
+        vn_m72_mag = 2;
         vn_40mm_m381_he_mag = 8;
 		vn_40mm_m583_flare_w_mag = 4;
 		vn_40mm_m661_flare_g_mag = 2;
@@ -23,6 +22,5 @@ class ghg_crate_macv_logi : ghg_crate_base
 		vn_40mm_m680_smoke_w_mag = 4;
 		ACE_EarPlugs = 8;
 		diw_armor_plates_main_plate = 8;
-		B_Kitbag_cbr = 2;
     };
 };

@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MMG Lead (swat)
+	Loadout for SWAT Delta Lead (Swat)
 ======================================*/
-class mmg_lead : squad_lead
+class mmg_lead : ews_lead
 {
 
 };

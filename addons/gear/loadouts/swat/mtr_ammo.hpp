@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MTR Ammo Bearer (swat)
+	Loadout for SWAT Echo Support (Swat)
 ======================================*/
-class mtr_ammo : squad_rifleman
+class mtr_ammo : ews_comms
 {
 
 };

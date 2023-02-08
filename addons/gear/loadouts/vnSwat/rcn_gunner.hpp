@@ -1,53 +1,58 @@
 /*======================================
-	Loadout for Recon Gunner (vnSwat)
+	Loadout for SWAT Foxtrot Engineer (vnSwat)
 ======================================*/
-class rcn_gunner : loadout_base_macv
+class rcn_gunner : loadout_base_vnSwat
 {
-    class Weapon_1 : Weapon_1
+    
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "vn_m40a1_sniper";
-        muzzle = "vn_s_m14";
-		bipod = "vn_b_camo_m40a1";
-        laser = "";
-        ammo = "vn_m40a1_t_mag";
+        classname = "vn_m1carbine";
+        ammo = "vn_carbine_30_mag";
         
-        class Scopes : Scopes
-        {
-            sniper_optic = "vn_o_9x_m40a1";
-        };
+        class Scopes : Scopes { };
+    };
+	
+	class Weapon_2 : Weapon_2 // Rifle
+    {
+        classname = "vn_m1911";
+        ammo = "vn_m1911_mag";
+        
+        class Scopes : Scopes { };
     };
     
-    class Weapon_2 : Weapon_2 // 1911 with flashlight
-	{ 
-		classname = "vn_mx991_m1911";
-		muzzle = "";
-        laser = "";
-        ammo = "vn_m1911_mag";
-		class Scopes {}; 
-	};
-	
     class Uniform : Uniform
     {
-        classname[] = {"vn_b_uniform_macv_04_01", "vn_b_uniform_macv_04_08"};
+        classname = "vn_b_uniform_macv_01_03";
     };
     
     class Vest : Vest
     {
-        classname = "vn_b_vest_usarmy_08";
+        classname = "vn_o_vest_05";
         // List of items
-        vn_m40a1_t_mag = 4;
+        vn_carbine_30_mag = 6;
+		vn_m1911_mag = 2;
         vn_m18_white_mag = 2;
-        vn_m1911_mag = 4;
-		ACE_RangeCard = 1;
+        vn_m61_grenade_mag = 2;
+        ACE_EntrenchingTool = 0;
+    };
+	
+	class Backpack : Backpack
+    {
+        classname = "UK3CB_TKP_O_B_ASS_BLK";
+        
+        ACRE_PRC77 = 1;
+		Toolkit = 1;
+		ACE_Fortify = 1;
+		vn_40mm_m381_he_mag = 0;
+        vn_40mm_m583_flare_w_mag = 0;
+        vn_40mm_m661_flare_g_mag = 0;
+        vn_40mm_m662_flare_r_mag = 0;
+        vn_40mm_m682_smoke_r_mag = 0;
+        vn_40mm_m715_smoke_g_mag = 0;
+        vn_40mm_m680_smoke_w_mag = 0;
     };
     
-    headgear[] = { "vn_b_helmet_m1_06_01", "vn_b_helmet_m1_06_02" };
-    facewear = "vn_b_aviator";
-	
-	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
-    {
-        classname = "vn_m19_binocs_grn";
-
-        class Scopes {};
-    };
+    headgear = "rhssaf_helmet_m97_black_nocamo";
+    facewear = "G_Aviator";
 };

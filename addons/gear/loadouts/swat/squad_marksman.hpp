@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Squad Marksman (swat)
+	Loadout for Squad P2 Marksman (swat)
 ======================================*/
 class squad_marksman : squad_rifleman
 {
@@ -12,27 +12,22 @@ class squad_marksman : squad_rifleman
 		muzzle = "muzzle_snds_b";
         ammo = "20Rnd_762x51_Mag";
 		bipod = "rhsusf_acc_harris_bipod";
+		acog = "optic_mrco"; 
 		
         class Scopes : Scopes
         {
-            acog = "roptic_mrco";
+            acog = "optic_mrco";
 			holo = "optic_holosight_blk_f";
         };
     };
-    
+	
 	class Uniform : Uniform
-	{
-		classname = "UK3CB_CW_US_B_LATE_U_SF_CombatUniform_01_BLK";
-	};
+    {
+        classname = "Police_uniform_Officer2";
+    };
 	
     class Vest : Vest
     {
-        // List of items
-        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
-        20Rnd_762x51_slr_lxWS = 0;
 		20Rnd_762x51_Mag = 5;
     };
-    
-	headgear = "rhsusf_opscore_bk_pelt";
-    facewear = "G_Balaclava_TI_G_blk_F";
 };

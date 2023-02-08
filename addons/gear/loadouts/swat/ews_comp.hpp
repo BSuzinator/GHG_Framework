@@ -1,14 +1,20 @@
 /*======================================
-	Loadout for EWS ROLM (swat)
+	Loadout for SWAT Alpha Breacher (Swat)
 ======================================*/
-class ews_comp : squad_rifleman
+class ews_comp : loadout_base_Swat
 {
 
-    class Weapon_2 : Weapon_2 // Pistol
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "hgun_esd_01_F";
-        muzzle = "muzzle_antenna_03_f";
-        //ammo = "ESD_01_DummyMagazine_1"; // Ammo count is supposed to be 4331 (433.1MHz)
+        classname = "prpl_benelli_rail";
+        ammo = "prpl_8Rnd_12Gauge_Pellets";
+        
+        class Scopes : Scopes { };
+    };
+	
+    class Vest : Vest
+    {
+        prpl_8Rnd_12Gauge_Pellets = 6;
     };
 
 };

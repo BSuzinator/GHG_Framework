@@ -1,25 +1,18 @@
 /*======================================
-	Loadout for Demo Saboteur (vnSwat)
+	Loadout for SWAT GOLF Containment (vnSwat)
 ======================================*/
-class demo_saboteur : squad_rifleman
+class demo_saboteur : ews_comms
 {
+
 	class Vest : Vest
-    {
-        // List of items
-		ACE_DefusalKit = 1;
-		ACE_Clacker = 1;
-		ACE_M26_Clacker = 1;
-    };
-	
-	class Backpack : Backpack
-    {
-        classname = "vn_b_pack_trp_03_02";
-        // List of items
-        vn_mine_m16_mag = 2;
-        vn_mine_tripwire_m16_04_mag = 1;
-		vn_mine_m14_mag = 1;
-		vn_mine_tripwire_arty_mag = 1;
-		vn_mine_tm57_mag = 1;
-		ACE_FlareTripMine_Mag = 1;
-    };
+	{
+		classname = "vn_o_vest_05";
+		// List of items
+		vn_m16_30_mag = 4;
+		ACE_CableTie = 20;
+		vn_m1911_mag = 3;
+		vn_m18_white_mag = 2;
+		vn_m61_grenade_mag = 2;
+		ACE_EntrenchingTool = 0;
+	};	
 };

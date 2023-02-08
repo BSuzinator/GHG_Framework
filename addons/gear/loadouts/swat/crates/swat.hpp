@@ -1,14 +1,15 @@
-class ghg_crate_swat_squad : ghg_crate_base
+class ghg_crate_swat_swat : ghg_crate_base
 {
-    displayname = "Squad";
-    cargosize = 2;
+    displayname = "SWAT";
+    cargosize = 1;
     
     class items : items {
+		ACE_CableTie = 30;
         ACE_elasticBandage = 24;
         ACE_packingBandage = 24;
-        UK3CB_AUG_30Rnd_556x45_Magazine = 30;
-		20Rnd_762x51_Mag = 10;
-		rhsusf_mag_17Rnd_9x19_FMJ = 20;
+		UK3CB_ACR_30rnd_556x45 = 30;
+        rhsusf_5Rnd_762x51_m118_special_Mag = 15;
+		rhsusf_mag_17Rnd_9x19_JHP = 20;
 		ACE_M84 = 12;
         rhsusf_mag_m4009 =4;
         rhs_mag_M441_HE = 3;

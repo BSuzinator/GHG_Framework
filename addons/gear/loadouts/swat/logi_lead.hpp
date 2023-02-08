@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for Logi Lead (swat)
+	Loadout for SWAT Hotel Lead (Swat)
 ======================================*/
-class logi_lead : squad_lead
+class logi_lead : ews_lead
 {
 
 };

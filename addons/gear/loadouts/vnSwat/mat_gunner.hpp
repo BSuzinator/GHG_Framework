@@ -1,26 +1,47 @@
 /*======================================
-	Loadout for MAT Gunner (vnSwat)
+	Loadout for SWAT Charlie Rook (vnSwat)
 ======================================*/
-class mat_gunner : squad_rifleman
+class mat_gunner : loadout_base_vnSwat
 {
-    class Weapon_3 : Weapon_3 // Launcher
+    
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_smaw_green";
-        ammo = "rhs_mag_smaw_HEAA";
-        grenade = "rhs_mag_smaw_SR";
-		class Scopes { rhs_weap_optic_smaw = "rhs_weap_optic_smaw"; };
+        classname = "vn_m1carbine";
+        ammo = "vn_carbine_30_mag";
+        
+        class Scopes : Scopes { };
     };
 	
-	class Vest : Vest
+	class Weapon_2 : Weapon_2 // Rifle
     {
+        classname = "vn_m1911";
+        ammo = "vn_m1911_mag";
+        
+        class Scopes : Scopes { };
+    };
+    
+    class Uniform : Uniform
+    {
+        classname = "vn_b_uniform_macv_01_03";
+    };
+    
+    class Vest : Vest
+    {
+        classname = "vn_o_vest_05";
+        // List of items
+        vn_carbine_30_mag = 6;
+		vn_m1911_mag = 2;
+        vn_m18_white_mag = 2;
+        vn_m61_grenade_mag = 2;
         ACE_EntrenchingTool = 0;
     };
 	
-    class Backpack : Backpack
+	class Backpack : Backpack
     {
-        classname = "vn_b_pack_lw_01";
-        // List of items
-        rhs_mag_smaw_HEAA = 2;
-        rhs_mag_smaw_SR = 4;
+        classname = "B_shield_backpack_lxWS";
     };
+    
+    headgear = "rhssaf_helmet_m97_black_nocamo";
+    facewear = "G_Aviator";
 };

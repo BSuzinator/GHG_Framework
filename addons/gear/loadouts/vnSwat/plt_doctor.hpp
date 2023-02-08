@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for PLT Doctor (vnSwat)
+	Loadout for Doctor (vnSwat)
 ======================================*/
 class plt_doctor : squad_medic
 {

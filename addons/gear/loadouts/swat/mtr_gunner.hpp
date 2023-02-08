@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MTR Gunner (swat)
+	Loadout for SWAT Echo Breacher (Swat)
 ======================================*/
-class mtr_gunner : squad_rifleman
+class mtr_gunner : ews_comp
 {
 
 };

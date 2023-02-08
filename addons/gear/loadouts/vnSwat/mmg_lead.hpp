@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MMG Lead (vnSwat)
+	Loadout for SWAT Delta Lead (vnSwat)
 ======================================*/
-class mmg_lead : squad_lead
+class mmg_lead : ews_lead
 {
 
 };

@@ -1,7 +1,7 @@
 /*======================================
 	Loadout for Rifleman (vnSwat)
 ======================================*/
-class squad_rifleman : loadout_base_macv
+class squad_rifleman : loadout_base_vnPolice
 {
     
     

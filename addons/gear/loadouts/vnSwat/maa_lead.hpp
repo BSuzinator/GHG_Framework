@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MAA Lead (vnSwat)
+	Loadout for SWAT Alpha Lead (vnSwat)
 ======================================*/
-class maa_lead : squad_lead
+class maa_lead : ews_lead
 {
 
 };

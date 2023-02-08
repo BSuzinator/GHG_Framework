@@ -12,6 +12,7 @@ class vnSwat
     // Should be 25
     #include "..\loadout_base.hpp"
 	#include "loadout_base_vnSwat.hpp"
+	#include "loadout_base_vnPolice.hpp"
 
 	#include "squad_rifleman.hpp"
 	#include "squad_lead.hpp"
@@ -82,14 +83,7 @@ class vnSwat
 	#include "knfs_driver.hpp"
 
     class Crates {
-		#include "..\common_crates\crates.hpp"
-		#include "crates\squad.hpp"
-		#include "crates\logi.hpp"
-		#include "crates\maa.hpp"
-		#include "crates\mat.hpp"
-		#include "crates\mmg.hpp"
-		#include "crates\mtr.hpp"
-		#include "crates\rcn.hpp"
-		#include "..\common_crates\us_statics.hpp"
+		#include "crates\police.hpp"
+		#include "crates\swat.hpp"
     };
 };

@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MAT Lead (vnSwat)
+	Loadout for SWAT Charlie Lead (vnSwat)
 ======================================*/
-class mat_lead : squad_lead
+class mat_lead : ews_lead
 {
 
 };
