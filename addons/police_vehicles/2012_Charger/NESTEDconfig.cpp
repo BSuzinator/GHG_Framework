@@ -1,8 +1,3 @@
-class BIS_AddonInfo
-{
-	author="76561197966618733";
-	timepacked="1481546655";
-};
 class DefaultEventhandlers;
 class CfgVehicleClasses
 {
@@ -55,7 +50,7 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\wail.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\wail.wav",
 			"db+5",
 			1
 		};
@@ -66,7 +61,7 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\siren2.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\siren2.wav",
 			"db+5",
 			1
 		};
@@ -83,7 +78,7 @@ class cfgWeapons
 		reloadTime=4;
 		drySound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\hornciv.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\hornciv.wav",
 			1,
 			1
 		};
@@ -95,7 +90,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\Takedown.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\Takedown.wav",
 			1,
 			1
 		};
@@ -107,7 +102,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\laser.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\laser.wav",
 			1,
 			1
 		};
@@ -119,7 +114,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\pulse.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\pulse.wav",
 			1,
 			1
 		};
@@ -131,7 +126,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\policehorn.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\policehorn.wav",
 			1,
 			1
 		};
@@ -143,7 +138,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\Airhorn.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\Airhorn.wav",
 			1,
 			1
 		};
@@ -155,7 +150,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\hornPD.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\hornPD.wav",
 			1,
 			1
 		};
@@ -209,10 +204,9 @@ class CfgVehicles
 		driverLeftHandAnimName="drivewheel";
 		driverRightHandAnimName="drivewheel";
 		mapSize=3.5599999;
-		model="MeansCars\2012_Charger\M_Charger12.p3d";
+		model="police_vehicles\2012_Charger\M_Charger12.p3d";
 		author="The cat lady Nick Means";
 		displayName="BASE";
-		vehicleclass="Police_Vehicles";
 		class Library
 		{
 			libTextDesc="";
@@ -290,8 +284,8 @@ class CfgVehicles
 			"",
 			""
 		};
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		turnCoef=2.5;
 		precision=10;
 		brakeDistance=3;
@@ -374,26 +368,26 @@ class CfgVehicles
 		};
 		soundEngineOnInt[]=
 		{
-			"MeansCars\2012_Charger\Sound\dodge\Snds\V8start.wav",
+			"police_vehicles\2012_Charger\Sound\dodge\Snds\V8start.wav",
 			0.79432797,
 			1
 		};
 		soundEngineOnExt[]=
 		{
-			"MeansCars\2012_Charger\Sound\dodge\Snds\V8start.wav",
+			"police_vehicles\2012_Charger\Sound\dodge\Snds\V8start.wav",
 			1.41254,
 			1,
 			200
 		};
 		soundEngineOffInt[]=
 		{
-			"MeansCars\2012_Charger\Sound\dodge\Snds\V8stop.wav",
+			"police_vehicles\2012_Charger\Sound\dodge\Snds\V8stop.wav",
 			0.79432797,
 			1
 		};
 		soundEngineOffExt[]=
 		{
-			"MeansCars\2012_Charger\Sound\dodge\Snds\V8stop.wav",
+			"police_vehicles\2012_Charger\Sound\dodge\Snds\V8stop.wav",
 			0.56234097,
 			1,
 			200
@@ -539,7 +533,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_00775.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_00775.wav",
 					"db-13",
 					1,
 					150
@@ -551,7 +545,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_01000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_01000.wav",
 					0.281838,
 					1,
 					200
@@ -563,7 +557,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_02000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_02000.wav",
 					"db-9",
 					1,
 					240
@@ -575,7 +569,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_03000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_03000.wav",
 					0.39810699,
 					1,
 					280
@@ -587,7 +581,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_04000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_04000.wav",
 					"db-7",
 					1,
 					320
@@ -599,7 +593,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_05000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_05000.wav",
 					"db-6",
 					1,
 					360
@@ -611,7 +605,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngB_05900.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngB_05900.wav",
 					0.56234097,
 					1,
 					420
@@ -623,7 +617,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_00529.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_00529.wav",
 					"db-6",
 					1,
 					200
@@ -635,7 +629,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
 					0.56234097,
 					1,
 					250
@@ -647,7 +641,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
 					0.63095701,
 					1,
 					280
@@ -659,7 +653,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_03265.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_03265.wav",
 					"db-3",
 					1,
 					320
@@ -671,7 +665,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_04348.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_04348.wav",
 					"db-2",
 					1,
 					360
@@ -683,7 +677,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_05441.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_05441.wav",
 					1,
 					1,
 					400
@@ -695,7 +689,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_05989.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_05989.wav",
 					"db2",
 					1,
 					450
@@ -707,7 +701,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_00775.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_00775.wav",
 					"db-15",
 					1
 				};
@@ -718,7 +712,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_01000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_01000.wav",
 					0.199526,
 					1
 				};
@@ -729,7 +723,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_02000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_02000.wav",
 					"db-12",
 					1
 				};
@@ -740,7 +734,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_03000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_03000.wav",
 					0.281838,
 					1
 				};
@@ -751,7 +745,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_04000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_04000.wav",
 					"db-10",
 					1
 				};
@@ -762,7 +756,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_05000.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_05000.wav",
 					"db-9",
 					1
 				};
@@ -773,7 +767,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\EngA_05900.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\EngA_05900.wav",
 					"db-6",
 					1
 				};
@@ -784,7 +778,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_00529.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_00529.wav",
 					"db-10",
 					1
 				};
@@ -795,7 +789,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
 					"db-9",
 					1
 				};
@@ -806,7 +800,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_02175.wav",
 					0.39810699,
 					1
 				};
@@ -817,7 +811,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_03265.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_03265.wav",
 					"db-7",
 					1
 				};
@@ -828,7 +822,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_04348.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_04348.wav",
 					"db-6",
 					1
 				};
@@ -839,7 +833,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_05441.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_05441.wav",
 					0.56234097,
 					1
 				};
@@ -850,7 +844,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2012_Charger\sound\dodge\Snds\ExhL_05989.wav",
+					"police_vehicles\2012_Charger\sound\dodge\Snds\ExhL_05989.wav",
 					0.63095701,
 					1
 				};
@@ -1463,9 +1457,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger LB";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -1544,7 +1538,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\2012_Charger\data\ChargerSkin.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\ChargerSkin.paa",
 			"",
 			"",
 			"",
@@ -1580,19 +1574,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -1602,7 +1596,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -1754,9 +1748,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger NEW";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -1835,7 +1829,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\2012_Charger\data\ChargerSkin.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\ChargerSkin.paa",
 			"",
 			"",
 			"",
@@ -1871,19 +1865,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -1893,7 +1887,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -2045,9 +2039,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger Slick";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12_Slick.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12_Slick.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -2126,7 +2120,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\2012_Charger\data\ChargerSkin.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\ChargerSkin.paa",
 			"",
 			"",
 			"",
@@ -2162,19 +2156,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -2184,7 +2178,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -2336,9 +2330,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger UC Black";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12_UC.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -2453,19 +2447,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -2475,7 +2469,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -2627,9 +2621,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger UC White";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12_UC.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -2744,19 +2738,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -2766,7 +2760,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -2918,9 +2912,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger UC Blue";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12_UC.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -3035,19 +3029,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -3057,7 +3051,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -3209,9 +3203,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger UC Grey";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12_UC.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -3326,19 +3320,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -3348,7 +3342,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -3500,9 +3494,9 @@ class CfgVehicles
 	{
 		displayname="Means Sheriff Charger UC Red";
 		author="Nick Means";
-		model="\MeansCars\2012_Charger\M_Charger12_UC.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\2012_Charger\M_Charger12_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -3617,19 +3611,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -3639,7 +3633,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne

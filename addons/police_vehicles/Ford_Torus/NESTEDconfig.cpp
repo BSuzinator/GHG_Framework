@@ -1,8 +1,3 @@
-class BIS_AddonInfo
-{
-	author="76561197966618733";
-	timepacked="1481546655";
-};
 class DefaultEventhandlers;
 class CfgVehicleClasses
 {
@@ -17,16 +12,13 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"M_CVPI",
-			"M_CVPI_Supervisor",
-			"M_CVPI_Slick",
-			"M_CVPI_NEW",
-			"M_CVPI_EMS",
-			"M_CVPI_UC_Black",
-			"M_CVPI_UC_White",
-			"M_CVPI_UC_Blue",
-			"M_CVPI_UC_Grey",
-			"M_CVPI_UC_Red"
+			"M_FPIS",
+			"M_FPIS_NEW",
+			"M_FPIS_slick",
+			"M_FPIS_UC_White",
+			"M_FPIS_UC_Blue",
+			"M_FPIS_UC_Grey",
+			"M_FPIS_UC_Red"
 		};
 		weapons[]=
 		{
@@ -57,7 +49,7 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\wail.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\wail.wav",
 			"db+5",
 			1
 		};
@@ -68,7 +60,7 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\siren2.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\siren2.wav",
 			"db+5",
 			1
 		};
@@ -85,7 +77,7 @@ class cfgWeapons
 		reloadTime=4;
 		drySound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\hornciv.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\hornciv.wav",
 			1,
 			1
 		};
@@ -97,7 +89,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\Takedown.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\Takedown.wav",
 			1,
 			1
 		};
@@ -109,7 +101,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\laser.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\laser.wav",
 			1,
 			1
 		};
@@ -121,7 +113,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\pulse.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\pulse.wav",
 			1,
 			1
 		};
@@ -133,7 +125,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\policehorn.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\policehorn.wav",
 			1,
 			1
 		};
@@ -145,7 +137,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\Airhorn.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\Airhorn.wav",
 			1,
 			1
 		};
@@ -157,7 +149,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2011_CVPI\Sound\hornPD.wav",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\Sound\hornPD.wav",
 			1,
 			1
 		};
@@ -205,16 +197,15 @@ class CfgVehicles
 	class CRFT_Car_Base: C_Offroad_01_F
 	{
 	};
-	class M_CVPIbase: CRFT_Car_Base
+	class M_FPISbase: CRFT_Car_Base
 	{
 		extCameraPosition[]={0,0.80000001,-6};
 		driverLeftHandAnimName="drivewheel";
 		driverRightHandAnimName="drivewheel";
 		mapSize=3.5599999;
-		model="MeansCars\2011_CVPI\M_CVPI.p3d";
+		model="police_vehicles\Ford_Torus\M_FPIS.p3d";
 		author="The cat lady Nick Means";
 		displayName="BASE";
-		vehicleclass="Police_Vehicles";
 		class Library
 		{
 			libTextDesc="";
@@ -292,8 +283,8 @@ class CfgVehicles
 			"",
 			""
 		};
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		turnCoef=2.5;
 		precision=10;
 		brakeDistance=3;
@@ -324,7 +315,7 @@ class CfgVehicles
 		};
 		hideWeaponsDriver=1;
 		hideWeaponsCargo=1;
-		driverAction="driver_high01";
+		driverAction="driver_offroad01";
 		getInAction="GetInOffroad";
 		getOutAction="GetOutLow";
 		cargoAction[]=
@@ -376,13 +367,13 @@ class CfgVehicles
 		};
 		soundEngineOnInt[]=
 		{
-			"MeansCars\2011_CVPI\sound\start.ogg",
+			"police_vehicles\Ford_Torus\sound\start.ogg",
 			0.39810699,
 			1
 		};
 		soundEngineOnExt[]=
 		{
-			"MeansCars\2011_CVPI\sound\start.ogg",
+			"police_vehicles\Ford_Torus\sound\start.ogg",
 			0.39810699,
 			1,
 			200
@@ -541,7 +532,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\1 EngA_00836.wav",
+					"police_vehicles\Ford_Torus\sound\1 EngA_00836.wav",
 					"db-10",
 					1,
 					150
@@ -553,7 +544,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\2 EngA_01222.wav",
+					"police_vehicles\Ford_Torus\sound\2 EngA_01222.wav",
 					0.281838,
 					1,
 					200
@@ -565,7 +556,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\3 EngA_01717.wav",
+					"police_vehicles\Ford_Torus\sound\3 EngA_01717.wav",
 					"db-9",
 					1,
 					240
@@ -577,7 +568,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\4 EngA_02205.wav",
+					"police_vehicles\Ford_Torus\sound\4 EngA_02205.wav",
 					0.39810699,
 					1,
 					280
@@ -589,7 +580,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\5 EngA_02840.wav",
+					"police_vehicles\Ford_Torus\sound\5 EngA_02840.wav",
 					"db-7",
 					1,
 					320
@@ -601,7 +592,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\6 EngA_03355.wav",
+					"police_vehicles\Ford_Torus\sound\6 EngA_03355.wav",
 					"db-6",
 					1,
 					360
@@ -613,7 +604,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\7 EngA_03868.wav",
+					"police_vehicles\Ford_Torus\sound\7 EngA_03868.wav",
 					0.56234097,
 					1,
 					420
@@ -625,7 +616,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\1 ExhL_00844.wav",
+					"police_vehicles\Ford_Torus\sound\1 ExhL_00844.wav",
 					"db-6",
 					1,
 					200
@@ -637,7 +628,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\2 ExhL_01673.wav",
+					"police_vehicles\Ford_Torus\sound\2 ExhL_01673.wav",
 					0.56234097,
 					1,
 					250
@@ -649,7 +640,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\3 ExhL_01918.wav",
+					"police_vehicles\Ford_Torus\sound\3 ExhL_01918.wav",
 					0.63095701,
 					1,
 					280
@@ -661,7 +652,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\4 ExhL_02287.wav",
+					"police_vehicles\Ford_Torus\sound\4 ExhL_02287.wav",
 					"db-3",
 					1,
 					320
@@ -673,7 +664,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\5 ExhL_02910.wav",
+					"police_vehicles\Ford_Torus\sound\5 ExhL_02910.wav",
 					"db-2",
 					1,
 					360
@@ -685,7 +676,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\6 ExhL_03298.wav",
+					"police_vehicles\Ford_Torus\sound\6 ExhL_03298.wav",
 					1,
 					1,
 					400
@@ -697,7 +688,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\7 ExhL_03933.wav",
+					"police_vehicles\Ford_Torus\sound\7 ExhL_03933.wav",
 					"db2",
 					1,
 					450
@@ -709,7 +700,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\1 EngA_00836.wav",
+					"police_vehicles\Ford_Torus\sound\1 EngA_00836.wav",
 					"db-15",
 					1
 				};
@@ -720,7 +711,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\2 EngA_01222.wav",
+					"police_vehicles\Ford_Torus\sound\2 EngA_01222.wav",
 					0.199526,
 					1
 				};
@@ -731,7 +722,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\3 EngA_01717.wav",
+					"police_vehicles\Ford_Torus\sound\3 EngA_01717.wav",
 					"db-12",
 					1
 				};
@@ -742,7 +733,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\4 EngA_02205.wav",
+					"police_vehicles\Ford_Torus\sound\4 EngA_02205.wav",
 					0.281838,
 					1
 				};
@@ -753,7 +744,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\5 EngA_02840.wav",
+					"police_vehicles\Ford_Torus\sound\5 EngA_02840.wav",
 					"db-10",
 					1
 				};
@@ -764,7 +755,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\6 EngA_03355.wav",
+					"police_vehicles\Ford_Torus\sound\6 EngA_03355.wav",
 					"db-9",
 					1
 				};
@@ -775,7 +766,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\7 EngA_03868.wav",
+					"police_vehicles\Ford_Torus\sound\7 EngA_03868.wav",
 					"db-6",
 					1
 				};
@@ -786,7 +777,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\1 ExhL_00844.wav",
+					"police_vehicles\Ford_Torus\sound\1 ExhL_00844.wav",
 					"db-10",
 					1
 				};
@@ -797,7 +788,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\2 ExhL_01673.wav",
+					"police_vehicles\Ford_Torus\sound\2 ExhL_01673.wav",
 					"db-9",
 					1
 				};
@@ -808,7 +799,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\3 ExhL_01918.wav",
+					"police_vehicles\Ford_Torus\sound\3 ExhL_01918.wav",
 					0.39810699,
 					1
 				};
@@ -819,7 +810,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\4 ExhL_02287.wav",
+					"police_vehicles\Ford_Torus\sound\4 ExhL_02287.wav",
 					"db-7",
 					1
 				};
@@ -830,7 +821,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\5 ExhL_02910.wav",
+					"police_vehicles\Ford_Torus\sound\5 ExhL_02910.wav",
 					"db-6",
 					1
 				};
@@ -841,7 +832,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\6 ExhL_03298.wav",
+					"police_vehicles\Ford_Torus\sound\6 ExhL_03298.wav",
 					0.56234097,
 					1
 				};
@@ -852,7 +843,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2011_CVPI\sound\7 ExhL_03933.wav",
+					"police_vehicles\Ford_Torus\sound\7 ExhL_03933.wav",
 					0.63095701,
 					1
 				};
@@ -1213,15 +1204,15 @@ class CfgVehicles
 		};
 		thrustDelay=0.1;
 		brakeIdleSpeed=1.78;
-		maxSpeed=300;
-		fuelCapacity=100;
-		wheelCircumference=2.277;
-		antiRollbarForceCoef=0.5;
-		antiRollbarForceLimit=0.5;
-		antiRollbarSpeedMin=10;
-		antiRollbarSpeedMax=120;
+		maxSpeed=206;
+		fuelCapacity=35;
+		wheelCircumference=2.8050001;
+		antiRollbarForceCoef=12;
+		antiRollbarForceLimit=10;
+		antiRollbarSpeedMin=20;
+		antiRollbarSpeedMax=50;
 		idleRpm=1000;
-		redRpm=7000;
+		redRpm=8000;
 		class complexGearbox
 		{
 			GearboxRatios[]=
@@ -1231,15 +1222,19 @@ class CfgVehicles
 				"N",
 				0,
 				"D1",
-				2.4619999,
+				4.4619999,
 				"D2",
-				1.87,
+				3.5699999,
 				"D3",
-				1.2410001,
+				2.5710001,
 				"D4",
-				0.97000003,
+				1.97,
 				"D5",
-				0.71100003
+				1.601,
+				"D6",
+				0.89999998,
+				"D7",
+				0.64999998
 			};
 			TransmissionRatios[]=
 			{
@@ -1261,9 +1256,9 @@ class CfgVehicles
 		rearBias=1.5;
 		centreBias=2.5;
 		clutchStrength=55;
-		enginePower=450;
-		maxOmega=850;
-		peakTorque=950;
+		enginePower=350;
+		maxOmega=700;
+		peakTorque=800;
 		dampingRateFullThrottle=0.029999999;
 		dampingRateZeroThrottleClutchEngaged=0.34999999;
 		dampingRateZeroThrottleClutchDisengaged=0.050000001;
@@ -1288,22 +1283,22 @@ class CfgVehicles
 				boneName="wheel_1_1_damper";
 				steering=1;
 				side="left";
+				suspTravelDirection[]={-0.125,-1,0};
 				center="wheel_1_1_axis";
 				boundary="wheel_1_1_bound";
-				width=0.2;
+				width="0.2";
 				mass=20;
 				MOI=5.3000002;
 				dampingRate=0.5;
 				maxBrakeTorque=5000;
 				maxHandBrakeTorque=0;
-				suspTravelDirection[]={0,-1,0};
 				suspForceAppPointOffset="wheel_1_1_axis";
 				tireForceAppPointOffset="wheel_1_1_axis";
 				maxCompression=0.1;
-				mMaxDroop=0.15000001;
-				sprungMass=400;
-				springStrength=40000;
-				springDamperRate=5240;
+				mMaxDroop=0.050000001;
+				sprungMass=272.5;
+				springStrength=27250;
+				springDamperRate=6725;
 				longitudinalStiffnessPerUnitGravity=100000;
 				latStiffX=25;
 				latStiffY=18000;
@@ -1322,12 +1317,7 @@ class CfgVehicles
 				boundary="wheel_1_2_bound";
 				suspForceAppPointOffset="wheel_1_2_axis";
 				tireForceAppPointOffset="wheel_1_2_axis";
-				maxHandBrakeTorque=8000;
-				latStiffX=25;
-				latStiffY=18000;
-				sprungMass=400;
-				springStrength=40000;
-				springDamperRate=5240;
+				maxHandBrakeTorque=4000;
 			};
 			class RF: LF
 			{
@@ -1338,6 +1328,7 @@ class CfgVehicles
 				tireForceAppPointOffset="wheel_2_1_axis";
 				steering=1;
 				side="right";
+				suspTravelDirection[]={0.125,-1,0};
 			};
 			class RR: RF
 			{
@@ -1347,7 +1338,7 @@ class CfgVehicles
 				boundary="wheel_2_2_bound";
 				suspForceAppPointOffset="wheel_2_2_axis";
 				tireForceAppPointOffset="wheel_2_2_axis";
-				maxHandBrakeTorque=8000;
+				maxHandBrakeTorque=4000;
 			};
 		};
 		class RenderTargets
@@ -1359,8 +1350,8 @@ class CfgVehicles
 				{
 					pointPosition="PIP0_pos";
 					pointDirection="PIP0_dir";
-					renderQuality=5;
-					renderVisionMode=3;
+					renderQuality=2;
+					renderVisionMode=0;
 					fov=0.69999999;
 				};
 			};
@@ -1371,8 +1362,8 @@ class CfgVehicles
 				{
 					pointPosition="PIP1_pos";
 					pointDirection="PIP1_dir";
-					renderQuality=5;
-					renderVisionMode=3;
+					renderQuality=2;
+					renderVisionMode=0;
 					fov=0.69999999;
 				};
 			};
@@ -1383,8 +1374,8 @@ class CfgVehicles
 				{
 					pointPosition="PIP2_pos";
 					pointDirection="PIP2_dir";
-					renderQuality=5;
-					renderVisionMode=3;
+					renderQuality=2;
+					renderVisionMode=0;
 					fov=0.69999999;
 				};
 			};
@@ -1461,13 +1452,13 @@ class CfgVehicles
 			}
 		};
 	};
-	class M_CVPI: M_CVPIbase
+	class M_FPIS: M_FPISbase
 	{
-		displayname="Means CVPI LB";
+		displayname="Means FPIS LB";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -1546,7 +1537,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\2011_CVPI\data\skin.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\police sjim.paa",
 			"",
 			"",
 			"",
@@ -1582,19 +1573,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -1604,7 +1595,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -1643,70 +1634,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -1808,22 +1736,6 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
 		};
 		fuelCapacity=125;
 		maxSpeed=280;
@@ -1831,13 +1743,13 @@ class CfgVehicles
 		maxOmega=700;
 		peakTorque=669;
 	};
-	class M_CVPI_Supervisor: M_CVPIbase
+	class M_FPIS_NEW: M_FPISbase
 	{
-		displayname="Means CVPI Supervisor";
+		displayname="Means FPIS LB NEW";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_Slick.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -1916,7 +1828,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\2011_CVPI\data\skin_sup.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\police sjim.paa",
 			"",
 			"",
 			"",
@@ -1952,19 +1864,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -1974,7 +1886,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -2013,70 +1925,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -2178,22 +2027,6 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
 		};
 		fuelCapacity=125;
 		maxSpeed=280;
@@ -2201,13 +2034,13 @@ class CfgVehicles
 		maxOmega=700;
 		peakTorque=669;
 	};
-	class M_CVPI_Slick: M_CVPIbase
+	class M_FPIS_slick: M_FPISbase
 	{
-		displayname="Means CVPI Slicktop";
+		displayname="Means FPIS LB supervisor";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_Slick.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS_Slick.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -2286,7 +2119,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\2011_CVPI\data\skin.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\police sjim.paa",
 			"",
 			"",
 			"",
@@ -2322,19 +2155,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -2344,7 +2177,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -2383,70 +2216,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -2548,22 +2318,6 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
 		};
 		fuelCapacity=125;
 		maxSpeed=280;
@@ -2571,1123 +2325,13 @@ class CfgVehicles
 		maxOmega=700;
 		peakTorque=669;
 	};
-	class M_CVPI_NEW: M_CVPIbase
+	class M_FPIS_UC_White: M_FPISbase
 	{
-		displayname="Means CVPI NEW";
+		displayname="Means FPIS UC White";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		scope=2;
-		weapons[]=
-		{
-			"Takedown",
-			"Airhorn",
-			"Civhorn",
-			"Laser",
-			"Policehorn",
-			"Pulse",
-			"hornPD"
-		};
-		typicalCargo[]=
-		{
-			"C_man_1"
-		};
-		cargoAction[]=
-		{
-			"passenger_low01",
-			"passenger_generic01_leanleft",
-			"passenger_generic01_foldhands"
-		};
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"light0",
-			"light2",
-			"light3",
-			"lb-ion-red",
-			"lb-ion-blue",
-			"light6",
-			"light7",
-			"light8",
-			"light9",
-			"light10",
-			"light11",
-			"light12",
-			"light13",
-			"light14",
-			"light15",
-			"light16",
-			"light17",
-			"light18",
-			"light19",
-			"light20",
-			"light21",
-			"light22",
-			"light23",
-			"light24",
-			"light25",
-			"light26",
-			"radar_patrol_c",
-			"radar_patrol_d",
-			"radar_patrol_u",
-			"radar_fast_c",
-			"radar_fast_d",
-			"radar_fast_u",
-			"radar_target_c",
-			"radar_target_d",
-			"radar_target_u",
-			"target1",
-			"target2",
-			"target3",
-			"lock1",
-			"lock2",
-			"lock3",
-			"patrol1",
-			"patrol2",
-			"patrol3",
-			"Plate1",
-			"Plate2",
-			"Plate3",
-			"Plate4",
-			"Plate5",
-			"Plate6",
-			"jump"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\MeansCars\2011_CVPI\data\skin.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
-		};
-		class eventhandlers
-		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
-		};
-		class UserActions
-		{
-			class Reset
-			{
-				displayName="<t color='#ff0000'>Reset Lock/Fast</t>";
-				position="drivewheel";
-				radius=10;
-				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
-				onlyForplayer=1;
-			};
-			class codeOne
-			{
-				displayName="<t color='#0000ff'>Code One</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_lightbar' != 0)";
-				statement="this animate ['ani_lightbar', 0], this animate ['ani_sirens', 0], this animate ['ani_directional', 0], this animate ['ani_Flashers', 0]";
-				onlyForplayer=1;
-			};
-			class LightMode1
-			{
-				displayName="<t color='#0000ff'>Code Two</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_lightbar' != 0.1)";
-				statement="this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class LightMode2
-			{
-				displayName="<t color='#0000ff'>Code Two</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_sirens' > 0)";
-				statement="this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_sirens', 0], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class sirenon
-			{
-				displayName="<t color='#ff0000'>Code Three</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_sirens' == 0)";
-				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
-		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
-		class AnimationSources: AnimationSources
-		{
-			class Zeroanimation
-			{
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-			};
-			class LightAnim
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=1;
-			};
-			class ani_lightbar
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class ani_flash
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Ani_laptops
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class Ani_Sirens
-			{
-				source="user";
-				animPeriod=0.2;
-				initPhase=0;
-			};
-			class CloseCover1
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=0.69999999;
-			};
-			class CloseCover2: CloseCover1
-			{
-			};
-			class OneSecondAnim
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class FiveSecondAnim
-			{
-				source="user";
-				animPeriod=5;
-				initPhase=0;
-			};
-			class Decal1
-			{
-				scope=0;
-			};
-			class License1
-			{
-				scope=0;
-			};
-			class License2
-			{
-				scope=0;
-			};
-			class Ani_Ramp
-			{
-				source="user";
-				animPeriod=2;
-				initPhase=0;
-			};
-			class slow_func2
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class slow_func
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class ani_directional
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class ani_Flashers
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
-		};
-		fuelCapacity=125;
-		maxSpeed=280;
-		enginePower=250;
-		maxOmega=700;
-		peakTorque=669;
-	};
-	class M_CVPI_EMS: M_CVPIbase
-	{
-		displayname="Means CV EMS";
-		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_EMS.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		scope=2;
-		weapons[]=
-		{
-			"Takedown",
-			"Airhorn",
-			"Civhorn",
-			"Laser",
-			"Policehorn",
-			"Pulse",
-			"hornPD"
-		};
-		typicalCargo[]=
-		{
-			"C_man_1"
-		};
-		cargoAction[]=
-		{
-			"passenger_low01",
-			"passenger_generic01_leanleft",
-			"passenger_generic01_foldhands"
-		};
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"light0",
-			"light2",
-			"light3",
-			"lb-ion-red",
-			"lb-ion-blue",
-			"light6",
-			"light7",
-			"light8",
-			"light9",
-			"light10",
-			"light11",
-			"light12",
-			"light13",
-			"light14",
-			"light15",
-			"light16",
-			"light17",
-			"light18",
-			"light19",
-			"light20",
-			"light21",
-			"light22",
-			"light23",
-			"light24",
-			"light25",
-			"light26",
-			"radar_patrol_c",
-			"radar_patrol_d",
-			"radar_patrol_u",
-			"radar_fast_c",
-			"radar_fast_d",
-			"radar_fast_u",
-			"radar_target_c",
-			"radar_target_d",
-			"radar_target_u",
-			"target1",
-			"target2",
-			"target3",
-			"lock1",
-			"lock2",
-			"lock3",
-			"patrol1",
-			"patrol2",
-			"patrol3",
-			"Plate1",
-			"Plate2",
-			"Plate3",
-			"Plate4",
-			"Plate5",
-			"Plate6",
-			"jump"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\MeansCars\2011_CVPI\data\skin_EMS.paa",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
-		};
-		class eventhandlers
-		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
-		};
-		class UserActions
-		{
-			class Reset
-			{
-				displayName="<t color='#ff0000'>Reset Lock/Fast</t>";
-				position="drivewheel";
-				radius=10;
-				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
-				onlyForplayer=1;
-			};
-			class codeOne
-			{
-				displayName="<t color='#0000ff'>Code One</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_lightbar' != 0)";
-				statement="this animate ['ani_lightbar', 0], this animate ['ani_sirens', 0], this animate ['ani_directional', 0], this animate ['ani_Flashers', 0]";
-				onlyForplayer=1;
-			};
-			class LightMode1
-			{
-				displayName="<t color='#0000ff'>Code Two</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_lightbar' != 0.1)";
-				statement="this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class LightMode2
-			{
-				displayName="<t color='#0000ff'>Code Two</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_sirens' > 0)";
-				statement="this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_sirens', 0], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class sirenon
-			{
-				displayName="<t color='#ff0000'>Code Three</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_sirens' == 0)";
-				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
-		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
-		class AnimationSources: AnimationSources
-		{
-			class Zeroanimation
-			{
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-			};
-			class LightAnim
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=1;
-			};
-			class ani_lightbar
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class ani_flash
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Ani_laptops
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class Ani_Sirens
-			{
-				source="user";
-				animPeriod=0.2;
-				initPhase=0;
-			};
-			class CloseCover1
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=0.69999999;
-			};
-			class CloseCover2: CloseCover1
-			{
-			};
-			class OneSecondAnim
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class FiveSecondAnim
-			{
-				source="user";
-				animPeriod=5;
-				initPhase=0;
-			};
-			class Decal1
-			{
-				scope=0;
-			};
-			class License1
-			{
-				scope=0;
-			};
-			class License2
-			{
-				scope=0;
-			};
-			class Ani_Ramp
-			{
-				source="user";
-				animPeriod=2;
-				initPhase=0;
-			};
-			class slow_func2
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class slow_func
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class ani_directional
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class ani_Flashers
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
-		};
-		fuelCapacity=125;
-		maxSpeed=280;
-		enginePower=250;
-		maxOmega=700;
-		peakTorque=669;
-	};
-	class M_CVPI_UC_Black: M_CVPIbase
-	{
-		displayname="Means CVPI UC Black";
-		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_UC.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		scope=2;
-		weapons[]=
-		{
-			"Takedown",
-			"Airhorn",
-			"Civhorn",
-			"Laser",
-			"Policehorn",
-			"Pulse",
-			"hornPD"
-		};
-		typicalCargo[]=
-		{
-			"C_man_1"
-		};
-		cargoAction[]=
-		{
-			"passenger_low01",
-			"passenger_generic01_leanleft",
-			"passenger_generic01_foldhands"
-		};
-		hiddenSelections[]=
-		{
-			"Camo2",
-			"light0",
-			"light2",
-			"light3",
-			"lb-ion-red",
-			"lb-ion-blue",
-			"light6",
-			"light7",
-			"light8",
-			"light9",
-			"light10",
-			"light11",
-			"light12",
-			"light13",
-			"light14",
-			"light15",
-			"light16",
-			"light17",
-			"light18",
-			"light19",
-			"light20",
-			"light21",
-			"light22",
-			"light23",
-			"light24",
-			"light25",
-			"light26",
-			"radar_patrol_c",
-			"radar_patrol_d",
-			"radar_patrol_u",
-			"radar_fast_c",
-			"radar_fast_d",
-			"radar_fast_u",
-			"radar_target_c",
-			"radar_target_d",
-			"radar_target_u",
-			"target1",
-			"target2",
-			"target3",
-			"lock1",
-			"lock2",
-			"lock3",
-			"patrol1",
-			"patrol2",
-			"patrol3",
-			"Plate1",
-			"Plate2",
-			"Plate3",
-			"Plate4",
-			"Plate5",
-			"Plate6",
-			"Plate7"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"#(argb,8,8,3)color(0,0,0,1.0,co)",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
-		};
-		class eventhandlers
-		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
-		};
-		class UserActions
-		{
-			class Reset
-			{
-				displayName="<t color='#ff0000'>Reset Lock/Fast</t>";
-				position="drivewheel";
-				radius=10;
-				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
-				onlyForplayer=1;
-			};
-			class codeOne
-			{
-				displayName="<t color='#0000ff'>Code One</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_lightbar' != 0)";
-				statement="this animate ['ani_lightbar', 0], this animate ['ani_sirens', 0], this animate ['ani_directional', 0], this animate ['ani_Flashers', 0]";
-				onlyForplayer=1;
-			};
-			class LightMode1
-			{
-				displayName="<t color='#0000ff'>Code Two</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_lightbar' != 0.1)";
-				statement="this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class LightMode2
-			{
-				displayName="<t color='#0000ff'>Code Two</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_sirens' > 0)";
-				statement="this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_sirens', 0], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class sirenon
-			{
-				displayName="<t color='#ff0000'>Code Three</t>";
-				position="drivewheel";
-				radius=10;
-				condition="driver this == player && (this animationPhase 'ani_sirens' == 0)";
-				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
-				onlyForplayer=1;
-			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
-		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
-		class AnimationSources: AnimationSources
-		{
-			class Zeroanimation
-			{
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-			};
-			class LightAnim
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=1;
-			};
-			class ani_lightbar
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class ani_flash
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Ani_laptops
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class Ani_Sirens
-			{
-				source="user";
-				animPeriod=0.2;
-				initPhase=0;
-			};
-			class CloseCover1
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=0.69999999;
-			};
-			class CloseCover2: CloseCover1
-			{
-			};
-			class OneSecondAnim
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class FiveSecondAnim
-			{
-				source="user";
-				animPeriod=5;
-				initPhase=0;
-			};
-			class Decal1
-			{
-				scope=0;
-			};
-			class License1
-			{
-				scope=0;
-			};
-			class License2
-			{
-				scope=0;
-			};
-			class Ani_Ramp
-			{
-				source="user";
-				animPeriod=2;
-				initPhase=0;
-			};
-			class slow_func2
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class slow_func
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=0;
-			};
-			class ani_directional
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class ani_Flashers
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
-		};
-		fuelCapacity=125;
-		maxSpeed=280;
-		enginePower=250;
-		maxOmega=700;
-		peakTorque=669;
-	};
-	class M_CVPI_UC_White: M_CVPIbase
-	{
-		displayname="Means CVPI UC White";
-		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_UC.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -3802,19 +2446,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -3824,7 +2468,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -3863,70 +2507,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -4028,22 +2609,6 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
 		};
 		fuelCapacity=125;
 		maxSpeed=280;
@@ -4051,13 +2616,13 @@ class CfgVehicles
 		maxOmega=700;
 		peakTorque=669;
 	};
-	class M_CVPI_UC_Blue: M_CVPIbase
+	class M_FPIS_UC_Blue: M_FPISbase
 	{
-		displayname="Means CVPI UC Blue";
+		displayname="Means FPIS UC Blue";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_UC.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -4172,19 +2737,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -4194,7 +2759,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -4233,70 +2798,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -4398,22 +2900,6 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
 		};
 		fuelCapacity=125;
 		maxSpeed=280;
@@ -4421,13 +2907,13 @@ class CfgVehicles
 		maxOmega=700;
 		peakTorque=669;
 	};
-	class M_CVPI_UC_Grey: M_CVPIbase
+	class M_FPIS_UC_Grey: M_FPISbase
 	{
-		displayname="Means CVPI UC Grey";
+		displayname="Means FPIS UC Grey";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_UC.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -4542,19 +3028,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -4564,7 +3050,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -4603,70 +3089,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -4768,22 +3191,6 @@ class CfgVehicles
 				animPeriod=1;
 				initPhase=0;
 			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
-			};
 		};
 		fuelCapacity=125;
 		maxSpeed=280;
@@ -4791,13 +3198,13 @@ class CfgVehicles
 		maxOmega=700;
 		peakTorque=669;
 	};
-	class M_CVPI_UC_Red: M_CVPIbase
+	class M_FPIS_UC_Red: M_FPISbase
 	{
-		displayname="Means CVPI UC Red";
+		displayname="Means FPIS UC Red";
 		author="Nick Means";
-		model="\MeansCars\2011_CVPI\M_CVPI_UC.p3d";
-		picture="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2011_CVPI\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Ford_Torus\M_FPIS_UC.p3d";
+		picture="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\Ford_Torus\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -4912,19 +3319,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\yellow\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\pic0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa",
-			"\MeansCars\2011_CVPI\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\Ford_Torus\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2011_CVPI\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\Ford_Torus\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -4934,7 +3341,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2011_CVPI\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\Ford_Torus\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -4973,70 +3380,7 @@ class CfgVehicles
 				statement="this animate ['ani_sirens', 0.2], this animate ['ani_lightbar', 0.1], this animate ['ani_directional', 0.2], this animate ['ani_Flashers', 0.1]";
 				onlyForplayer=1;
 			};
-			class OpenDoor_1
-			{
-				displayNameDefault="Open Car Door";
-				displayName="Open Door";
-				position="Door_1_trigger";
-				priority=0.40000001;
-				radius=1.5;
-				onlyForPlayer=0;
-				condition="((this animationPhase 'Door_1_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleOpen)";
-			};
-			class CloseDoor_1: OpenDoor_1
-			{
-				displayName="Close Door";
-				priority=0.2;
-				condition="((this animationPhase 'Door_1_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999)";
-				statement="([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose)";
-			};
-			class OpenDoor_2: OpenDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_2: CloseDoor_1
-			{
-				position="Door_2_trigger";
-				condition="((this animationPhase 'Door_2_rot') >= 0.5) && ((this animationPhase 'Hitzone_2_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_2_rot', 'Door_Handle_2_rot_1', 'Door_Handle_2_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_3: OpenDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') < 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_3: CloseDoor_1
-			{
-				position="Door_3_trigger";
-				condition="((this animationPhase 'Door_3_rot') >= 0.5)";
-				statement="([this, 'Door_3_rot', 'Door_Handle_3_rot_1', 'Door_Handle_3_rot_2'] call BIS_fnc_DoorClose)";
-			};
-			class OpenDoor_4: OpenDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') < 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorOpen)";
-			};
-			class CloseDoor_4: CloseDoor_1
-			{
-				position="Door_4_trigger";
-				condition="((this animationPhase 'Door_4_rot') >= 0.5) && ((this animationPhase 'Hitzone_1_hide') < 0.99999) && ((player getVariable ['copLevel',0]) > 0)";
-				statement="([this, 'Door_4_rot', 'Door_Handle_4_rot_1', 'Door_Handle_4_rot_2'] call BIS_fnc_DoorClose)";
-			};
 		};
-		actionBegin1="OpenDoor_1";
-		actionEnd1="OpenDoor_1";
-		actionBegin2="OpenDoor_2";
-		actionEnd2="OpenDoor_2";
-		actionBegin3="OpenDoor_3";
-		actionEnd3="OpenDoor_3";
-		actionBegin4="OpenDoor_4";
-		actionEnd4="OpenDoor_4";
-		numberOfDoors=4;
 		class AnimationSources: AnimationSources
 		{
 			class Zeroanimation
@@ -5137,22 +3481,6 @@ class CfgVehicles
 				source="user";
 				animPeriod=1;
 				initPhase=0;
-			};
-			class Door_1_source
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-				sound="GenericDoorsSound";
-			};
-			class Door_2_source: Door_1_source
-			{
-			};
-			class Door_3_source: Door_1_source
-			{
-			};
-			class Door_4_source: Door_1_source
-			{
 			};
 		};
 		fuelCapacity=125;

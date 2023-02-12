@@ -1,8 +1,3 @@
-class BIS_AddonInfo
-{
-	author="76561197966618733";
-	timepacked="1481546655";
-};
 class DefaultEventhandlers;
 class CfgVehicleClasses
 {
@@ -49,7 +44,7 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\wail.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\wail.wav",
 			"db+5",
 			1
 		};
@@ -60,7 +55,7 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\siren2.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\siren2.wav",
 			"db+5",
 			1
 		};
@@ -77,7 +72,7 @@ class cfgWeapons
 		reloadTime=4;
 		drySound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\hornciv.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\hornciv.wav",
 			1,
 			1
 		};
@@ -89,7 +84,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\Takedown.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\Takedown.wav",
 			1,
 			1
 		};
@@ -101,7 +96,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\laser.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\laser.wav",
 			1,
 			1
 		};
@@ -113,7 +108,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\pulse.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\pulse.wav",
 			1,
 			1
 		};
@@ -125,7 +120,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\policehorn.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\policehorn.wav",
 			1,
 			1
 		};
@@ -137,7 +132,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\Airhorn.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\Airhorn.wav",
 			1,
 			1
 		};
@@ -149,7 +144,7 @@ class cfgWeapons
 		reloadtime=4;
 		drysound[]=
 		{
-			"\MeansCars\2012_Charger\Sound\hornPD.wav",
+			"\x\ghg\addons\police_vehicles\2012_Charger\Sound\hornPD.wav",
 			1,
 			1
 		};
@@ -203,10 +198,9 @@ class CfgVehicles
 		driverLeftHandAnimName="drivewheel";
 		driverRightHandAnimName="drivewheel";
 		mapSize=3.5599999;
-		model="MeansCars\Silverado\M_Silverado.p3d";
+		model="police_vehicles\Silverado\M_Silverado.p3d";
 		author="The cat lady Nick Means";
 		displayName="BASE";
-		vehicleclass="Police_Vehicles";
 		class Library
 		{
 			libTextDesc="";
@@ -284,8 +278,8 @@ class CfgVehicles
 			"",
 			""
 		};
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		turnCoef=2.5;
 		precision=10;
 		brakeDistance=3;
@@ -368,13 +362,13 @@ class CfgVehicles
 		};
 		soundEngineOnInt[]=
 		{
-			"MeansCars\2015_Tahoe\sound\start.ogg",
+			"police_vehicles\2015_Tahoe\sound\start.ogg",
 			0.39810699,
 			1
 		};
 		soundEngineOnExt[]=
 		{
-			"MeansCars\2015_Tahoe\sound\start.ogg",
+			"police_vehicles\2015_Tahoe\sound\start.ogg",
 			0.39810699,
 			1,
 			200
@@ -533,7 +527,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\1 EngA_00836.wav",
+					"police_vehicles\2015_Tahoe\sound\1 EngA_00836.wav",
 					"db-10",
 					1,
 					150
@@ -545,7 +539,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\2 EngA_01222.wav",
+					"police_vehicles\2015_Tahoe\sound\2 EngA_01222.wav",
 					0.281838,
 					1,
 					200
@@ -557,7 +551,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\3 EngA_01717.wav",
+					"police_vehicles\2015_Tahoe\sound\3 EngA_01717.wav",
 					"db-9",
 					1,
 					240
@@ -569,7 +563,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\4 EngA_02205.wav",
+					"police_vehicles\2015_Tahoe\sound\4 EngA_02205.wav",
 					0.39810699,
 					1,
 					280
@@ -581,7 +575,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\5 EngA_02840.wav",
+					"police_vehicles\2015_Tahoe\sound\5 EngA_02840.wav",
 					"db-7",
 					1,
 					320
@@ -593,7 +587,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\6 EngA_03355.wav",
+					"police_vehicles\2015_Tahoe\sound\6 EngA_03355.wav",
 					"db-6",
 					1,
 					360
@@ -605,7 +599,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\7 EngA_03868.wav",
+					"police_vehicles\2015_Tahoe\sound\7 EngA_03868.wav",
 					0.56234097,
 					1,
 					420
@@ -617,7 +611,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\1 ExhL_00844.wav",
+					"police_vehicles\2015_Tahoe\sound\1 ExhL_00844.wav",
 					"db-6",
 					1,
 					200
@@ -629,7 +623,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\2 ExhL_01673.wav",
+					"police_vehicles\2015_Tahoe\sound\2 ExhL_01673.wav",
 					0.56234097,
 					1,
 					250
@@ -641,7 +635,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\3 ExhL_01918.wav",
+					"police_vehicles\2015_Tahoe\sound\3 ExhL_01918.wav",
 					0.63095701,
 					1,
 					280
@@ -653,7 +647,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\4 ExhL_02287.wav",
+					"police_vehicles\2015_Tahoe\sound\4 ExhL_02287.wav",
 					"db-3",
 					1,
 					320
@@ -665,7 +659,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\5 ExhL_02910.wav",
+					"police_vehicles\2015_Tahoe\sound\5 ExhL_02910.wav",
 					"db-2",
 					1,
 					360
@@ -677,7 +671,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\6 ExhL_03298.wav",
+					"police_vehicles\2015_Tahoe\sound\6 ExhL_03298.wav",
 					1,
 					1,
 					400
@@ -689,7 +683,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\7 ExhL_03933.wav",
+					"police_vehicles\2015_Tahoe\sound\7 ExhL_03933.wav",
 					"db2",
 					1,
 					450
@@ -701,7 +695,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\1 EngA_00836.wav",
+					"police_vehicles\2015_Tahoe\sound\1 EngA_00836.wav",
 					"db-15",
 					1
 				};
@@ -712,7 +706,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\2 EngA_01222.wav",
+					"police_vehicles\2015_Tahoe\sound\2 EngA_01222.wav",
 					0.199526,
 					1
 				};
@@ -723,7 +717,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\3 EngA_01717.wav",
+					"police_vehicles\2015_Tahoe\sound\3 EngA_01717.wav",
 					"db-12",
 					1
 				};
@@ -734,7 +728,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\4 EngA_02205.wav",
+					"police_vehicles\2015_Tahoe\sound\4 EngA_02205.wav",
 					0.281838,
 					1
 				};
@@ -745,7 +739,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\5 EngA_02840.wav",
+					"police_vehicles\2015_Tahoe\sound\5 EngA_02840.wav",
 					"db-10",
 					1
 				};
@@ -756,7 +750,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\6 EngA_03355.wav",
+					"police_vehicles\2015_Tahoe\sound\6 EngA_03355.wav",
 					"db-9",
 					1
 				};
@@ -767,7 +761,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\7 EngA_03868.wav",
+					"police_vehicles\2015_Tahoe\sound\7 EngA_03868.wav",
 					"db-6",
 					1
 				};
@@ -778,7 +772,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\1 ExhL_00844.wav",
+					"police_vehicles\2015_Tahoe\sound\1 ExhL_00844.wav",
 					"db-10",
 					1
 				};
@@ -789,7 +783,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\2 ExhL_01673.wav",
+					"police_vehicles\2015_Tahoe\sound\2 ExhL_01673.wav",
 					"db-9",
 					1
 				};
@@ -800,7 +794,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\3 ExhL_01918.wav",
+					"police_vehicles\2015_Tahoe\sound\3 ExhL_01918.wav",
 					0.39810699,
 					1
 				};
@@ -811,7 +805,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\4 ExhL_02287.wav",
+					"police_vehicles\2015_Tahoe\sound\4 ExhL_02287.wav",
 					"db-7",
 					1
 				};
@@ -822,7 +816,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\5 ExhL_02910.wav",
+					"police_vehicles\2015_Tahoe\sound\5 ExhL_02910.wav",
 					"db-6",
 					1
 				};
@@ -833,7 +827,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\6 ExhL_03298.wav",
+					"police_vehicles\2015_Tahoe\sound\6 ExhL_03298.wav",
 					0.56234097,
 					1
 				};
@@ -844,7 +838,7 @@ class CfgVehicles
 			{
 				sound[]=
 				{
-					"MeansCars\2015_Tahoe\sound\7 ExhL_03933.wav",
+					"police_vehicles\2015_Tahoe\sound\7 ExhL_03933.wav",
 					0.63095701,
 					1
 				};
@@ -1457,9 +1451,9 @@ class CfgVehicles
 	{
 		displayname="Means Silverado LB";
 		author="Nick Means";
-		model="\MeansCars\Silverado\M_Silverado.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Silverado\M_Silverado.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -1538,7 +1532,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\Silverado\data\silveradoskin.paa",
+			"\x\ghg\addons\police_vehicles\Silverado\data\silveradoskin.paa",
 			"",
 			"",
 			"",
@@ -1574,19 +1568,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -1596,7 +1590,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
@@ -1748,9 +1742,9 @@ class CfgVehicles
 	{
 		displayname="Means Silverado cab";
 		author="Nick Means";
-		model="\MeansCars\Silverado\M_Silverado_cab.p3d";
-		picture="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
-		Icon="\MeansCars\2012_Charger\UI\iconPD_ca.paa";
+		model="\x\ghg\addons\police_vehicles\Silverado\M_Silverado_cab.p3d";
+		picture="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
+		Icon="\x\ghg\addons\police_vehicles\2012_Charger\UI\iconPD_ca.paa";
 		scope=2;
 		weapons[]=
 		{
@@ -1829,7 +1823,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MeansCars\Silverado\data\silveradoskin.paa",
+			"\x\ghg\addons\police_vehicles\Silverado\data\silveradoskin.paa",
 			"",
 			"",
 			"",
@@ -1865,19 +1859,19 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\yellow\0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\pic0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa",
-			"\MeansCars\2012_Charger\data\radar\green\0.paa"
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\yellow\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\pic0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa",
+			"\x\ghg\addons\police_vehicles\2012_Charger\data\radar\green\0.paa"
 		};
 		class eventhandlers
 		{
-			init="_this execVM '\MeansCars\2012_Charger\data\Scripts\init.sqf';";
+			init="_this execVM '\police_vehicles\2012_Charger\data\Scripts\init.sqf';";
 		};
 		class UserActions
 		{
@@ -1887,7 +1881,7 @@ class CfgVehicles
 				position="drivewheel";
 				radius=10;
 				condition="player IN this";
-				statement="this setobjecttexture [31,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\MeansCars\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\MeansCars\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
+				statement="this setobjecttexture [31,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [32,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; this setobjecttexture [33,'\police_vehicles\2012_Charger\data\radar\pic0.paa']; Prevspeed = 0;";
 				onlyForplayer=1;
 			};
 			class codeOne
