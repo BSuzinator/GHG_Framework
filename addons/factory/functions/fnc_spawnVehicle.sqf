@@ -15,7 +15,7 @@ private _vehClass = _actionParams;
 private _spawnPoint = nearestObject [_target, "ghg_servicePoint"];
 if (isNull _spawnPoint) exitWith {systemChat "No valid spawn point found";};
 private _spawnPos = ASLToAGL (getPosASL _spawnPoint);
-_spawnPos set [2,1];
+if !(surfaceIsWater _spawnPos) then {_spawnPos set [2,1];};
 private _spawnDir = getDir _spawnPoint;
 
 private _closestLand = nearestObject [_spawnPoint, "LandVehicle"];

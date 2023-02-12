@@ -27,7 +27,8 @@ if ( (is3DENMultiplayer || (_uid in _authZeus) || _virtual) && (isNull getAssign
             GVAR(zeusGroup) = createGroup [sideLogic, false];
         };
 	
-        private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,1000], [], 0, "CAN_COLLIDE"];
+        private _logic = GVAR(zeusGroup) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "CAN_COLLIDE"];
+		_logic setPosASL (AGLToASL [0,0,100]);
         _logic allowDamage false;
 
 		_logic setCuratorCoef ["Place", 0];
