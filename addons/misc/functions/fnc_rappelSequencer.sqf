@@ -71,4 +71,3 @@ _rappelGroups = _rappelGroups - [[],[],[],[]];
 } forEach _rappelGroups; 
  
 (format ["%1",_completeMessage]) remoteExec ["hint", (_vehicle call _fnc_getActualCrew)];
-};
