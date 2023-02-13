@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MTR Lead (pmc)
+	Loadout for SWAT Delta Lead (Swat)
 ======================================*/
-class mtr_lead : squad_lead
+class mtr_lead : ews_lead
 {
 
 };

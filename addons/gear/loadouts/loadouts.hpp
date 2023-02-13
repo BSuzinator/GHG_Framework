@@ -14,4 +14,5 @@ class Loadouts
 	#include "usArmySF\loadouts.hpp"
     #include "usKorea\loadouts.hpp"
 	#include "usMC\loadouts.hpp"
+	#include "vnSwat\loadouts.hpp"
 };

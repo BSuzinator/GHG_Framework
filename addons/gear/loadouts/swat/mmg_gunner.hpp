@@ -1,41 +1,29 @@
 /*======================================
-	Loadout for MMG Gunner (pmc)
+	Loadout for SWAT Delta Sniper (Swat)
 ======================================*/
-class mmg_gunner : squad_rifleman
+class mmg_gunner : loadout_base_Swat
 {
     
-	
-	class Weapon_1 : Weapon_1 // Rifle
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m240B";
-        ammo = "rhsusf_100Rnd_762x51";
-        bipod = "";
-		class Scopes : Scopes
-        {
-            mg_optic = "rhsusf_acc_ELCAN";
-        };
-    };
-	
-	class Uniform : Uniform
-    {
-        classname = "LOP_U_PMC_Fatigue_02";
+        classname = "rhs_weap_m24sws";
+		acog = "rhsusf_acc_leupoldmk4";
+		muzzle = "rhsusf_acc_m24_silencer_black";
+		bipod = "rhsusf_acc_harris_swivel";
+        ammo = "rhsusf_5Rnd_762x51_m118_special_Mag";
+        
+        class Scopes : Scopes 
+		{
+			sniper = "rhsusf_acc_leupoldmk4";
+			sniper_nvs = "optic_nvs";
+		};
     };
 	
 	class Vest : Vest
-    {
-		classname = "rhsusf_plateframe_machinegunner";
-        // List of items
-		rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
-		rhsusf_100Rnd_762x51 = 3;
-		ACE_EntrenchingTool = 0;
-    };
-	
-	class Backpack : Backpack
-    {
-        classname = "rhsusf_assault_eagleaiii_coy";
-        // List of items
-        rhsusf_100Rnd_762x51 = 3;
-    };
-	headgear = "vn_b_bandana_01";
-	facewear = "G_Headset_lxWS";
+	{
+		rhsusf_5Rnd_762x51_m118_special_Mag = 5;
+		rhsusf_mag_17Rnd_9x19_JHP = 5;
+	};
+
 };

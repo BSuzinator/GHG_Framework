@@ -1,27 +1,39 @@
 /*======================================
-	Loadout for MMG Ammo Bearer (pmc)
+	Loadout for SWAT Delta Spotter (Swat)
 ======================================*/
-class mmg_ammo : squad_rifleman
+class mmg_ammo : loadout_base_Swat
 {
-    class Uniform : Uniform
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "lop_u_pmc_tac_grn_plaid";
+        classname = "UK3CB_ACR_Carbine";
+        ammo = "UK3CB_ACR_30rnd_556x45";
+		acog = "rhsusf_acc_compm4";
+		muzzle = "rhsusf_acc_nt4_black";
+		bipod = "rhsusf_acc_harris_bipod";
+		laser = "rhsusf_acc_anpeq15side_bk";
+        
+        class Scopes : Scopes 
+		{
+			dot = "rhsusf_acc_compm4";
+			dot_mag = "rhsusf_acc_g33_t1";
+			holo = "rhsusf_acc_eotech_xps3";
+			holo_mag = "rhsusf_acc_g33_xps3";
+		};
     };
-    
-    class Backpack : Backpack
+
+    class Vest : Vest
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "SWAT_Modular_Combat";
         // List of items
-		ACE_Canteen = 2;
-        ACE_SpareBarrel = 1;
-        rhsusf_100Rnd_762x51 = 5;
+        UK3CB_ACR_30rnd_556x45 = 6;
+		rhsusf_mag_17Rnd_9x19_JHP = 4;
     };
 	
-	class Binoculars : Binoculars
-    {
-        classname = "Binocular";
-    };
-	
-	headgear = "vn_b_boonie_05_03";
-	facewear = "G_Headset_lxWS";
+	class Backpack : Backpack
+	{
+		classname = "Police_Messenger_Bag";
+		rhsusf_5Rnd_762x51_m118_special_Mag = 10;
+		rhsusf_mag_17Rnd_9x19_JHP = 5;
+		
+	};
 };

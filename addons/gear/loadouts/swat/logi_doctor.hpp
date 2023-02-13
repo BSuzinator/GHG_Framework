@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for LOGI Doctor (pmc)
+	Loadout for LOGI Doctor (Swat)
 ======================================*/
-class logi_doctor : plt_doctor
+class logi_doctor : mat_ammo
 {
-
+	
 };

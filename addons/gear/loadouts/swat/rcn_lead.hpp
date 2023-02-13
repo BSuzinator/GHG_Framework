@@ -1,9 +1,7 @@
 /*======================================
-	Loadout for RCN Lead (swat)
-	
-	By Fawks
+	Loadout for RCN Lead (Swat)
 ======================================*/
-class rcn_lead : squad_lead
+class rcn_lead : ews_lead
 {
 	
 };

@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MAT Lead (pmc)
+	Loadout for SWAT Charlie Lead (Swat)
 ======================================*/
-class mat_lead : squad_lead
+class mat_lead : ews_lead
 {
 
 };

@@ -1,41 +1,40 @@
 /*======================================
-	Loadout for PLT Lead (pmc)
+	Loadout for Watch Commander (Swat)
 ======================================*/
 class plt_lead : squad_rifleman
 {
-    
-
+	class Uniform : Uniform
+    {
+		classname = "Police_Captain_Unit";
+    };
+	
+	class Vest : Vest
+	{
+		classname = "Police_OfficerVest";
+		UK3CB_ACR_30rnd_556x45 = 5;
+		vn_m1895_mag = 5;
+		ACRE_PRC152 = 1;
+	};	
+	
     class Weapon_1 : Weapon_1 // Rifle
     {
-        
-        class Scopes : Scopes
-        {
-            acog = "rhsusf_acc_ACOG_RMR";
-        };
+		classname = "rhs_weap_m27iar";
+		ammo = "UK3CB_ACR_30rnd_556x45";
+		scope = "rhsusf_acc_mrds";
+		
+			class Scopes : Scopes
+			{
+				red_dot = "optic_yorris";
+				holo = "rhsusf_acc_eotech_xps3";
+				alt_holo = "rhsusf_acc_rm05";
+			};
     };
-    class Uniform : Uniform
+	
+	class Weapon_2 : Weapon_2
 	{
-		classname = "LOP_U_PMC_Fatigue_01";
+		classname = "rhsusf_weap_m1911a1";
+		ammo = "rhsusf_mag_7x45acp_MHP";
+		
 	};
-    class Vest : Vest
-    {
-		classname = "rhsusf_plateframe_teamleader";
-        // List of items
-        ACRE_PRC152 = 1;
-		ACE_MapTools = 1;
-		ACE_EntrenchingTool = 0;
-    };
-	
-	class Backpack : Backpack
-	{
-		classname = "B_AssaultPack_cbr";
-	};
-	
-	class Binoculars : Binoculars
-    {
-        classname = "Binocular";
-    };
-	
-    headgear = "UK3CB_H_Safari_Hat_Brown";
-	facewear = "G_Headset_lxWS";
+
 };

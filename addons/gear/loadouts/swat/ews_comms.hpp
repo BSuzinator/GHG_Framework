@@ -1,24 +1,33 @@
 /*======================================
-	Loadout for EWS Teletype (pmc)
+	Loadout for SWAT Alpha Support (Swat)
 ======================================*/
-class ews_comms : squad_rifleman
+class ews_comms : loadout_base_Swat
 {
-    class Weapon_2 : Weapon_2 // Pistol
+    
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "hgun_esd_01_F";
-        muzzle = "muzzle_antenna_03_f";
-        //ammo = "ESD_01_DummyMagazine_1"; // Ammo count is supposed to be 4331 (433.1MHz)
+        classname = "UK3CB_ACR_Carbine";
+        ammo = "UK3CB_ACR_30rnd_556x45";
+        acog = "rhsusf_acc_compm4";
+		laser = "rhsusf_acc_anpeq15side_bk";
+		muzzle = "rhsusf_acc_nt4_black";
+        class Scopes : Scopes
+		{
+			holo = "rhsusf_acc_eotech_xps3";
+			holo_mag = "rhsusf_acc_g33_xps3"; 
+			dot = "rhsusf_acc_compm4";
+			dot_mag = "rhsusf_acc_g33_t1";
+		};
     };
-	class Uniform : Uniform
-	{
-		classname = "U_C_Uniform_Scientist_01_formal_F";
-	};
+	
+    class Vest : Vest
+    {
+		UK3CB_ACR_30rnd_556x45 = 8;
+    };
 	
 	class Backpack : Backpack
-    {
-        classname= "rhs_r148";
-    };
-	
-	headgear = "rhs_fieldcap_m88";
-	facewear = "G_Aviator";
+	{
+		classname = "ACE_TacticalLadder_Pack";
+	}
 };

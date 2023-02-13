@@ -1,11 +1,11 @@
 /*======================================
-	Loadout for Lynx Driver (pmc)
+	Loadout for Lynx Driver (Swat)
 ======================================*/
 class lynx_driver : lynx_crew
 {
 	class Backpack : Backpack
     {
-        classname = "B_AssaultPack_desert_lxWS";
+        classname = "vn_b_pack_lw_01";
         // List of items
         ToolKit = 1;
     };

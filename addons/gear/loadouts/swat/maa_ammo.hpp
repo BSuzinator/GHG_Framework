@@ -1,20 +1,39 @@
 /*======================================
-	Loadout for MAA Ammo Bearer (pmc)
+	Loadout for SWAT Bravo Grenadier (Swat)
 ======================================*/
-class maa_ammo : mat_ammo
+class maa_ammo : loadout_base_Swat
 {
-	class Uniform : Uniform
-	{
-		classname = "U_I_C_Soldier_Para_3_F";
-	};
-	class Backpack : Backpack
+    
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        // List of items
-		rhs_m136_mag = 0; //AT
-		rhs_rpg7_OG7V_mag = 0; //HE
-		rhs_rpg7_TBG7V_mag = 0; //Thermo
-		rhs_fim92_mag = 2;
+        classname = "rhs_weap_m4a1_blockII_M203_bk";
+        ammo = "UK3CB_ACR_30rnd_556x45";
+		grenade = "rhs_mag_m4009";
+		scope = "rhsusf_acc_compm4";
+        
+        class Scopes : Scopes
+		{
+			holo = "rhsusf_acc_eotech_xps3";
+			holo_mag = "rhsusf_acc_g33_xps3"; 
+			dot = "rhsusf_acc_compm4";
+			dot_mag = "rhsusf_acc_g33_t1";
+			acog = "rhsusf_acc_acog";
+			
+		};
     };
-	facewear = "UK3CB_G_Balaclava_Neck_Shemag";
-	headgear = "rhs_6m2";
+	
+    class Vest : Vest
+    {
+
+    };
+	
+	class Backpack : Backpack
+	{
+		classname = "Police_Messenger_Bag";
+		UK3CB_ACR_30rnd_556x45 = 10;
+		rhs_mag_m4009 = 10;
+		rhs_mag_m714_White = 10;
+	};
+
 };

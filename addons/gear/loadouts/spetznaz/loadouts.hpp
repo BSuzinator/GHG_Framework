@@ -2,7 +2,7 @@ class spetznaz
 {
     version = 1;
     
-    camo[] = { "desert", "woodland", "snow" "diving"};
+    camo[] = { "desert", "woodland", "snow", "diving"};
     
     class Magazines
     {

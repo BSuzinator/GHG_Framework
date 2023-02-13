@@ -1,36 +1,29 @@
 /*======================================
-	Loadout for MAT Gunner (pmc)
+	Loadout for SWAT Charlie Rook (Swat)
 ======================================*/
-class mat_gunner : squad_rifleman
+class mat_gunner : loadout_base_Swat
 {
     
-    class Weapon_3 : Weapon_3 // Launcher
+    
+    class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_smaw_green";
-        ammo = "rhs_mag_smaw_HEAA";
+        classname = "UK3CB_BAF_L128A1";
+        ammo = "UK3CB_BAF_12G_Slugs";
+        
+        class Scopes : Scopes { };
     };
-	
-	class Uniform : Uniform
-	{
-		classname = "UK3CB_LNM_B_U_Shirt_Pants_14";
-	};
-	
-	class Vest : Vest
+    
+    class Vest : Vest
     {
-        ACE_EntrenchingTool = 0;
-    };
-	
-    class Backpack : Backpack
-    {
-        classname = "B_Carryall_desert_lxWS";
+        classname = "SWAT_Modular_Heavy";
         // List of items
-        rhs_mag_smaw_HEAA = 2;
+		UK3CB_BAF_12G_Slugs = 10;
+
     };
 	
-	class Binoculars : Binoculars
+	class Backpack : Backpack
     {
-        classname = "Binocular";
+        classname = "B_shield_backpack_lxWS";
     };
-	headgear = "H_Watchcap_cbr";
-	facewear = "G_Aviator";
+
 };

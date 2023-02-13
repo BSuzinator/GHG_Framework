@@ -1,7 +1,7 @@
 /*======================================
-	Loadout for MAA Lead (pmc)
+	Loadout for SWAT Alpha Lead (Swat)
 ======================================*/
-class maa_lead : squad_lead
+class maa_lead : ews_lead
 {
 
 };

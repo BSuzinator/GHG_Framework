@@ -1,33 +1,34 @@
 /*======================================
-	Loadout for Squad Assistant Autorifleman (pmc)
+	Loadout for Squad Containment Autorifleman (swat)
 ======================================*/
 class squad_aar : squad_rifleman
 {
-    
     class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_blue_plaid";
+        classname = "Police_uniform_Officer";
     };
 	
 	class Vest : Vest
     {
-        ACE_MapTools = 1;
+		classname = "Police_Rangemaster";
+        ACE_MapTools = 0;
     };
 	
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "Police_LegStrap";
         // List of items
-        ACE_SpareBarrel = 1;
-        rhsusf_200Rnd_556x45_soft_pouch = 3;
-		ACE_Canteen = 2;
+        ACE_SpareBarrel = 0;
+        rhsusf_200Rnd_556x45_soft_pouch = 0;
+		ACE_Canteen = 0;
+		ACE_CableTie = 10;
     };
 	
 	class Binoculars : Binoculars
     {
-        classname = "Binocular";
+        classname = "Camera_lxWS";
     };
 	
-	headgear = "vn_b_boonie_05_03";
-	facewear = "G_Headset_lxWS";
+	headgear = "Patrol_Cap_Badge";
+    facewear = "G_Aviator";
 };
