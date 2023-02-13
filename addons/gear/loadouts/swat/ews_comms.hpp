@@ -25,4 +25,9 @@ class ews_comms : loadout_base_Swat
     {
 		UK3CB_ACR_30rnd_556x45 = 8;
     };
+	
+	class Backpack : Backpack
+	{
+		classname = "ACE_TacticalLadder_Pack";
+	}
 };
