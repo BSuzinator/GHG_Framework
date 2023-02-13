@@ -7,29 +7,45 @@
 
 params [
     ["_unit", player, [objNull]],
-    ["_unitType", "", [""]]
+    ["_unitType", "", [""]],
+	["_unitFaction", "", [""]],
+	["_unitFactionCamo", "", [""]]
 ];
 
 private _unitSide = side _unit;
 private _ghg = missionConfigFile >> "CfgGHG";
 
 //Patch to make new units function until we fully switch over
-private _faction = getText( _ghg >> (switch (_unitSide) do {
-    case west: {"bluFaction"};
-    case east: {"opfFaction"};
-    case resistance: {"indFaction"};
-    default {""};
-}));
 
-private _camo = getText( _ghg >> (switch (_unitSide) do {
-    case west: {"bluCamo"};
-    case east: {"opfCamo"};
-    case resistance: {"indCamo"};
-    default {""};
-}));
+private _faction = _unitFaction;
+
+if (_unitFaction isEqualTo "") then {
+
+	_faction = getText( _ghg >> (switch (_unitSide) do {
+		case west: {"bluFaction"};
+		case east: {"opfFaction"};
+		case resistance: {"indFaction"};
+		default {""};
+	}));
+
+};
+
+private _camo = _unitFactionCamo;
+
+if (_unitFactionCamo isEqualTo "") then {
+
+	_camo = getText( _ghg >> (switch (_unitSide) do {
+		case west: {"bluCamo"};
+		case east: {"opfCamo"};
+		case resistance: {"indCamo"};
+		default {""};
+	}));
+
+};
 
 // Return values (NOTE: These are intentionally NOT private)
-_factionLoadout = [_unitSide] call FUNC(getFactionLoadout);
+_factionLoadout = configNull;
+_factionLoadout = [_unitSide, _unitFaction] call FUNC(getFactionLoadout);
 _factionVersion = getNumber(_factionLoadout >> "version");
 _loadout = configNull;
 _camoId = 0;

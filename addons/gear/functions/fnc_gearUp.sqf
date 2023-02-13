@@ -8,7 +8,9 @@ if ( !hasInterface ) exitWith {};
 
 params [
     ["_unit", player, [objNull]],
-    ["_unitType", "", [""]]
+    ["_unitType", "", [""]],
+	["_unitFaction", "", [""]],
+	["_unitFactionCamo", "", [""]]
 ];
 
 if ( isNull _unit ) exitWith { systemChat "No unit specified for gearUp" };

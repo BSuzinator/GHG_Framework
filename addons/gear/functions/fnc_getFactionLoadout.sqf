@@ -6,18 +6,23 @@
 ======================================*/
 
 params [
-    ["_side", sideEmpty, [sideEmpty]]
+    ["_side", sideEmpty, [sideEmpty]],
+	["_unitFaction", "", [""]]
 ];
 
 if ( _side isEqualTo sideEmpty ) exitWith {configNull};
 
 private _ghg = missionConfigFile >> "CfgGHG";
-private _faction = getText( _ghg >> (switch (_side) do {
-    case west: {"bluFaction"};
-    case east: {"opfFaction"};
-    case resistance: {"indFaction"};
-    default {""};
-}));
+private _faction = _unitFaction;
+
+if (_faction isEqualTo "") then {
+	_faction = getText( _ghg >> (switch (_side) do {
+		case west: {"bluFaction"};
+		case east: {"opfFaction"};
+		case resistance: {"indFaction"};
+		default {""};
+	}));
+};
 
 if ( _faction == "" ) exitWith {
     systemChat format [ "No faction specified for side %1", _side ];
