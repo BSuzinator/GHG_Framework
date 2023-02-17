@@ -8,7 +8,7 @@ class Loadouts
 	#include "russian\loadouts.hpp"
 	#include "serbian\loadouts.hpp"
 	#include "spetznaz\loadouts.hpp"
-	#include "swat\loadouts.hpp"
+	#include "customSwat\loadouts.hpp"
 	#include "taliban\loadouts.hpp"
 	#include "usArmy\loadouts.hpp"
 	#include "usArmySF\loadouts.hpp"
