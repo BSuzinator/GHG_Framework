@@ -16,13 +16,15 @@ class SIDE##_ghg_base : SIDE##_survivor_f { \
 GHG_UNIT_CLASS(SIDE, ghg_plt_lead, "Platoon Lead") \
 GHG_UNIT_CLASS(SIDE, ghg_plt_fac, "Platoon Forward Asset Control") \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_plt_doctor, "Platoon Doctor") \
-	attendant = 2; \
+	attendant = 1; \
+	ghg_medic_level = 2; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_plt_interp, "Platoon Interpreter") \
 \
 GHG_UNIT_CLASS(SIDE, ghg_squad_lead, "Squad Lead") \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_squad_medic, "Squad Medic") \
 	attendant = 1; \
+	ghg_medic_level = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_squad_ar, "Squad Automatic Rifleman") \
 GHG_UNIT_CLASS(SIDE, ghg_squad_aar, "Squad Assistant Automatic Rifleman") \
@@ -62,13 +64,17 @@ GHG_UNIT_CLASS(SIDE, ghg_rcn_ammo, "Recon Spotter") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_lead, "Logistics Team Lead") \
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 	attendant = 1; \
+	ghg_medic_level = 1; \
 }; \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_doctor, "Logistics Doctor") \
-	attendant = 2; \
+	attendant = 1; \
+	ghg_medic_level = 2; \
 }; \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_logi_repair, "Logistics Repair Specialist") \
-    engineer = 2 \
+    engineer = 1; \
+	ghg_engineer_level = 2; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_demo_lead, "Demolitions Team Lead") \
 \
@@ -84,35 +90,41 @@ GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_demo_saboteur, "Demolitions Saboteur") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_lynx_driver, "Lynx Driver") \
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_lynx_cmdr, "Lynx Commander") \
 GHG_UNIT_CLASS(SIDE, ghg_lynx_crew, "Lynx Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_wolf_driver, "Wolf Driver") \
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_wolf_cmdr, "Wolf Commander") \
 GHG_UNIT_CLASS(SIDE, ghg_wolf_crew, "Wolf Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_knfs_driver, "Kingfish Helmsman") \
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_knfs_captain, "Kingfish Captain") \
 GHG_UNIT_CLASS(SIDE, ghg_knfs_crew, "Kingfish Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_ravn_pilot, "Raven Pilot") \
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_ravn_crew, "Raven Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_flcn_pilot, "Falcon Pilot") \
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 }; \
 GHG_UNIT_CLASS(SIDE, ghg_flcn_crew, "Falcon Crew") \
 \
 GHG_UNIT_CLASS_APPENDABLE(SIDE, ghg_rptr_pilot, "Raptor Pilot") \
     ACE_GForceCoef = 0.55;\
 	engineer = 1; \
+	ghg_engineer_level = 1; \
 };
 
 class CfgVehicles
