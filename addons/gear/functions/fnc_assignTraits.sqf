@@ -17,8 +17,8 @@ private _classHead = switch (side _unit) do {
 
 if (([_unitType, 2, 4] call BIS_fnc_trimString) isNotEqualTo "ghg") then {_unitType = format ["%1%2",_classHead,_unitType];};
 
-private _medicLevel = getNumber (configfile >> "CfgVehicles" >> _unitType >> "attendant");
-private _engineerLevel = getNumber (configfile >> "CfgVehicles" >> _unitType >> "engineer");
+private _medicLevel = getNumber (configfile >> "CfgVehicles" >> _unitType >> "ghg_medic_level");
+private _engineerLevel = getNumber (configfile >> "CfgVehicles" >> _unitType >> "ghg_engineer_level");
 private _isEOD = getNumber (configfile >> "CfgVehicles" >> _unitType >> "canDeactivateMines") call FUNCMAIN(toBool);
 //private _isUAVHacker = [ getNumber (configfile >> "CfgVehicles" >> _unitType >> "uavHacker"), 0 ];
 
