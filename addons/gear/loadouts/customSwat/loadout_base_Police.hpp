@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for macv units
+	Loadout for swat units
 ======================================*/
 class loadout_base_Police : loadout_base
 {
