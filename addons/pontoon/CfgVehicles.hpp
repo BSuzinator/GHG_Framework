@@ -83,9 +83,27 @@ class CfgVehicles {
 				displayName = "Tether Nearest Pontoon";
 				//distance = 7;
 				//position = "[0,0,0]";
-				icon = "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa";
+				icon = "\a3\ui_f\data\igui\cfg\vehicletoggles\slingloadropeiconon_ca.paa";
 				condition = QUOTE(_this call FUNC(pontoonTetherCondition));
 				statement = QUOTE(_this call FUNC(pontoonTether));
+				exceptions[] = {"isNotSwimming"};
+			};
+			class GHG_PontoonChain {
+				displayName = "Chain Nearest Pontoon";
+				//distance = 7;
+				//position = "[0,0,0]";
+				icon = "\a3\ui_f\data\igui\cfg\actions\loadvehicle_ca.paa";
+				condition = QUOTE(_this call FUNC(pontoonChainCondition));
+				statement = QUOTE(_this call FUNC(pontoonChain));
+				exceptions[] = {"isNotSwimming"};
+			};
+			class GHG_PontoonUnchain {
+				displayName = "Unchain Nearest Pontoon";
+				//distance = 7;
+				//position = "[0,0,0]";
+				icon = "\a3\ui_f\data\igui\cfg\actions\unloadvehicle_ca.paa";
+				condition = QUOTE(_this call FUNC(pontoonUnchainCondition));
+				statement = QUOTE(_this call FUNC(pontoonUnchain));
 				exceptions[] = {"isNotSwimming"};
 			};
 		};
