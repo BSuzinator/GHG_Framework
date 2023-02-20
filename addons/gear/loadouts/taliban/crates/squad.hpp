@@ -10,7 +10,7 @@ class ghg_crate_taliban_squad : ghg_crate_base
 		vn_sks_t_mag = 4;
         rhs_mag_m67 = 8;
         rhs_mag_an_m8hc = 8;
-        rhsusf_200Rnd_556x45_soft_pouch = 5;
+        rhs_75Rnd_762x39mm = 5;
         rhs_weap_M80 = 2;
         rhs_m80_mag = 2;
         rhs_VOG25 = 8;
