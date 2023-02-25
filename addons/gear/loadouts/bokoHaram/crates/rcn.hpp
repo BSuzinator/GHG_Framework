@@ -1,4 +1,4 @@
-/class ghg_crate_bokoHaram_rcn : ghg_crate_base
+class ghg_crate_bokoHaram_rcn : ghg_crate_base
 {
     displayname = "Recon";
     cargosize = 2;
