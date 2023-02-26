@@ -17,8 +17,8 @@ respawn = 3;
 respawnDelay = 5000;
 respawnTemplates[] = {"ace_spectator"};
 
-//Admin Settings - BSuz, Quantx, Faie
-enableZeusInterface[] = { "76561198080019809", "76561198044516211", "76561198131220953" };
+//Admin Settings - BSuz, Faie
+enableZeusInterface[] = { "76561198080019809", "76561198131220953" };
 saving = 0;
 skiplobby = 0;
 
