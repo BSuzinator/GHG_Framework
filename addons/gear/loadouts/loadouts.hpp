@@ -12,6 +12,7 @@ class Loadouts
 	#include "spetznaz\loadouts.hpp"
 	#include "customSwat\loadouts.hpp"
 	#include "taliban\loadouts.hpp"
+	#include "unsc\loadouts.hpp"
 	#include "usArmy\loadouts.hpp"
 	#include "usArmySF\loadouts.hpp"
     #include "usKorea\loadouts.hpp"
