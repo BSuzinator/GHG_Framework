@@ -11,6 +11,8 @@ class squad_ar : squad_rifleman
         ammo = "OPTRE_200Rnd_95x40_Box_Tracer";
     };
     
+	class Uniform : Uniform {};
+	
     class Vest : Vest
     {
         classname[] = {"OPTRE_UNSC_M52A_Armor_MG_WDL", "OPTRE_UNSC_M52A_Armor_MG_SNO"};
