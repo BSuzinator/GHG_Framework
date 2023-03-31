@@ -15,11 +15,15 @@ class mmg_gunner : squad_rifleman
         };
     };
     
-	class Uniform : Uniform {};
-	
+    class Uniform : Uniform
+    {
+        classname[] = { "OPTRE_UNSC_Army_Uniform_OLI", "OPTRE_UNSC_Army_Uniform_SNO" };
+        ACRE_PRC343 = 1;
+    };
+    
     class Vest : Vest
     {
-        classname[] = {"OPTRE_UNSC_M52A_Armor_MG_WDL", "OPTRE_UNSC_M52A_Armor_MG_SNO"};
+        classname [] = {"OPTRE_UNSC_M52A_Armor_MG_WDL", "OPTRE_UNSC_M52A_Armor_MG_SNO"};
         // List of items
         OPTRE_32Rnd_762x51_Mag_Tracer = 0;
         OPTRE_100Rnd_762x51_Box_Tracer = 2
