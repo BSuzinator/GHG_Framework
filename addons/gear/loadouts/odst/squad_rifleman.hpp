@@ -14,7 +14,7 @@ class squad_rifleman : loadout_base
     
         class Scopes : Scopes
         {
-             red_dot : "optre_m7_sight";
+             red_dot = "optre_m7_sight";
         };
     };
     
