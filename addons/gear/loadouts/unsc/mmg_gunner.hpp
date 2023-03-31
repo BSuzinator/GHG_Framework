@@ -17,7 +17,7 @@ class mmg_gunner : squad_rifleman
     
     class Uniform : Uniform
     {
-        classname[] = { "OPTRE_UNSC_Army_Uniform_OLI", "OPTRE_UNSC_Army_Uniform_SNO" };
+        classname[] = { "OPTRE_UNSC_Army_Uniform_OLI_SlimLeg", "OPTRE_UNSC_Army_Uniform_SNO_SlimLeg" };
         ACRE_PRC343 = 1;
     };
     

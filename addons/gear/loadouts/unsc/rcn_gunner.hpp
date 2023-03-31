@@ -5,7 +5,7 @@ class rcn_gunner : loadout_base
 {
     
     
-    class Weapon_1 : Weapon_1 // Rifle
+    class Weapon_1 : Weapon_1
     {
         classname =  "OPTRE_SRS99C" ;
 		muzzle = "";
@@ -47,8 +47,10 @@ class rcn_gunner : loadout_base
 		ACE_RangeCard = 1;
     };
     
+	headgear = "OPTRE_UNSC_CH252_Helmet3_WDL";
+	facewear = "OPTRE_HUD_Glasses";
 	
-	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
+	class Binoculars : Binoculars
     {
         classname = "OPTRE_Smartfinder";
 

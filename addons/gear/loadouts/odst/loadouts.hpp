@@ -1,8 +1,8 @@
-class unsc
+class odst
 {
     version = 1;
     
-    camo = ;
+    camo[] = {"black"};
     
     class Magazines
     {
