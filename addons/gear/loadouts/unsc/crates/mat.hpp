@@ -4,21 +4,19 @@ class ghg_crate_unsc_mat : ghg_crate_base
     cargosize = 2;
     
     class items : items {
-        ACE_elasticBandage = 8;
-        ACE_packingBandage = 8;
-        rhs_mag_30Rnd_556x45_M855_Stanag = 16;
-		rhs_mag_smaw_HEAA = 5;
-        rhs_mag_smaw_SR = 5;
-        rhs_mag_m67 = 3;
-        rhs_mag_an_m8hc = 6;
-        rhs_mag_M441_HE = 8;
-		rhs_mag_M585_white = 4;
-		rhs_mag_m661_green = 2;
-		rhs_mag_m662_red = 2;
-		rhs_mag_m713_Red = 2;
-		rhs_mag_m715_Green = 2;
-		rhs_mag_m714_White = 4;
+        OPTRE_Biofoam = 16;
+        OPTRE_32Rnd_762x51_Mag_Tracer = 16;
+		OPTRE_M41_Twin_HEAT = 6;
+        OPTRE_M41_Twin_HE = 6;
+        OPTRE_M9_Frag = 3;
+        OPTRE_M2_Smoke = 6;
+        1Rnd_HE_Grenade_shell = 8;
+		OPTRE_1Rnd_Smoke_Grenade_shell = 4;
+		OPTRE_1Rnd_SmokeGreen_Grenade_shell = 2;
+		OPTRE_1Rnd_SmokeRed_Grenade_shell = 2;
+		ACE_40mm_Flare_red = 2;
+		ACE_40mm_Flare_green = 2;
+		ACE_40mm_Flare_white = 4;
 		ACE_EarPlugs = 3;
-		diw_armor_plates_main_plate = 5;
     };
 };
