@@ -148,7 +148,8 @@ if ((_deployType isEqualTo "iHALO") || (_deployType isEqualTo "iLALO") || (_depl
 		"rhs_vehclass_car",
 		"rhs_vehclass_truck",
 		"rhs_vehclass_tank",
-		"rhs_vehclass_artillery"
+		"rhs_vehclass_artillery",
+		"OPTRE_HEV"
 	];
 };
 nil;
