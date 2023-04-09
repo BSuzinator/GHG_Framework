@@ -1,14 +1,14 @@
-class unsc
+class odst
 {
     version = 1;
     
-    camo[] = { "WDL", "SNO" };
+    camo[] = {"black"};
     
     class Magazines
     {
         
     };
-	class Vehicles {
+   class Vehicles {
 		
 		//Infantry
         car[] = {
