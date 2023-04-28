@@ -2,6 +2,7 @@ PREP(aiGear);
 PREP(aiGearModule);
 PREP(assignTraits);
 PREP(addSupplyBudget);
+PREP(emptyUnit);
 PREP(gearUp);
 PREP(scopeChoice);
 PREP(resupplyActions);
