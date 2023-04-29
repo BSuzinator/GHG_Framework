@@ -10,3 +10,6 @@ removeAllItemsWithMagazines _unit;
 removeAllAssignedItems _unit;
 removeAllPrimaryWeaponItems _unit;
 _unit removeWeapon primaryWeapon _unit;
+removeAllContainers _unit;
+removeHeadgear _unit;
+removeGoggles _unit;
