@@ -17,7 +17,7 @@ class loadout_base_Police : loadout_base
     {
 		classname = "Police_uniform_Officer1";
 		rhsusf_mag_17Rnd_9x19_JHP = 5;
-		ACRE_BF888S = 1;
+		ACRE_PRC343 = 1;
         diw_armor_plates_main_plate = 1;
     };
 	
@@ -34,4 +34,5 @@ class loadout_base_Police : loadout_base
 	
 	headgear = "Patrol_Cap_Badge";
 	facewear = "G_Aviator";
+	gps = "ItemGPS";
 };

@@ -34,4 +34,5 @@ class loadout_base_Swat : loadout_base
 	
 	facewear = "G_Balaclava_TI_G_blk_F";
 	headgear = "SWAT_Modular_Helmet_Peltor";
+	gps = "ItemGPS";
 };

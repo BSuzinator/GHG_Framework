@@ -8,7 +8,50 @@ class swat
     {
         
     };
-    
+    class Vehicles {
+		car[] = {
+			{ "EM_Police_Charger" },
+			{ "EM_Police_CrownVic" },
+			{ "EM_Police_Explorer" },
+			{ "EM_Police_Raptor" },
+			{ "EM_Police_Savana" },
+			{ "EM_Police_Taurus" },
+			{ "EM_Police_Civic" },
+			{ "EM_Police_BMWM5" },
+			{ "EM_Police_BMWX6" },
+			{ "EM_Malibu" }
+		};
+		troopTruck[] = {
+			{ "EM_Police_Explorer_UM" },
+			{ "EM_Police_Raptor_UM" },
+			{ "EM_Police_Taurus_UM" },
+			{ "EM_Police_BMWX6_UM" },
+			{ "EM_Malibu_UM" }
+		};
+		mrap[] = {
+			{ "EM_Police_Insurgent" },
+			{ "EM_Police_F550_SWAT" }
+		};
+		
+		bridgeTrucks[] = {};
+		cargoTrucks[] = {};
+		rearm[] = {};
+		refuel[] = {};
+		repair[] = {};
+			
+		apc[] = {};
+		ifv[] = {};
+		tank[] = {};
+			
+		heli_unarmed[] = {};
+		heli_armed[] = {};
+			
+		plane[] = {};
+			
+		boat_unarmed[] = {};
+		boat_armed[] = {};
+	};
+	
     // Should be 25
     #include "..\loadout_base.hpp"
 	#include "loadout_base_Swat.hpp"
@@ -62,6 +105,7 @@ class swat
 		#include "..\common_crates\crates.hpp"
 		#include "crates\police.hpp"
 		#include "crates\swat.hpp"
+		#include "crates\weapons.hpp"
 		#include "crates\paramedic.hpp"
 		#include "..\common_crates\us_statics.hpp"
     };
