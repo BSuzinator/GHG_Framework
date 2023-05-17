@@ -20,4 +20,5 @@ class CfgPatches {
     };
 };
 
+#include "CfgEden.hpp"
 #include "CfgEventhandlers.hpp"
