@@ -1,13 +1,13 @@
-class ghg_crate_unsc_mat : ghg_crate_base
+class ghg_crate_odst_mmg : ghg_crate_base
 {
-    displayname = "Medium Anti-Tank";
+    displayname = "Medium Machine Gun";
     cargosize = 2;
     
     class items : items {
         OPTRE_Biofoam = 16;
-        OPTRE_32Rnd_762x51_Mag_Tracer = 16;
-		OPTRE_M41_Twin_HEAT = 6;
-        OPTRE_M41_Twin_HE = 6;
+        OPTRE_32Rnd_762x51_Mag_Tracer = 8;
+		OPTRE_60Rnd_5x23mm_Mag_tracer = 8;
+		OPTRE_100Rnd_762x51_Box_Tracer = 8;
         OPTRE_M9_Frag = 3;
         OPTRE_M2_Smoke = 6;
         1Rnd_HE_Grenade_shell = 8;

@@ -143,6 +143,7 @@ class odst
 			
 		};
 	};
+
     // Should be 25
     #include "..\loadout_base.hpp"
 

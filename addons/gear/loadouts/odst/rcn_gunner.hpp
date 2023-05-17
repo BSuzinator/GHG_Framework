@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Recon Gunner (unsc)
+	Loadout for Recon Gunner (odst)
 ======================================*/
 class rcn_gunner : loadout_base
 {
@@ -33,13 +33,13 @@ class rcn_gunner : loadout_base
 	
     class Uniform : Uniform
     {
-        classname[] = { "OPTRE_UNSC_Army_Uniform_OLI", "OPTRE_UNSC_Army_Uniform_SNO" };
+        classname =  "OPTRE_UNSC_ODST_Uniform";
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname [] = {"OPTRE_UNSC_M52A_Armor_Sniper_WDL", "OPTRE_UNSC_M52A_Armor_Sniper_SNO"} ;
+        classname = "OPTRE_UNSC_M52D_Armor_Scout";
         // List of items
         OPTRE_4Rnd_145x114_APFSDS_Mag = 4;
 		OPTRE_8Rnd_127x40_Mag = 2;
@@ -47,8 +47,6 @@ class rcn_gunner : loadout_base
 		ACE_RangeCard = 1;
     };
     
-	headgear = "OPTRE_UNSC_CH252_Helmet3_WDL";
-	facewear = "OPTRE_HUD_Glasses";
 	
 	class Binoculars : Binoculars
     {
@@ -56,4 +54,6 @@ class rcn_gunner : loadout_base
 
         class Scopes {};
     };
+	
+	headgear = "OPTRE_UNSC_Recon_Helmet";
 };

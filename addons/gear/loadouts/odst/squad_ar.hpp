@@ -1,5 +1,5 @@
 /*======================================
-    Loadout for Squad Autorifleman (unsc)
+	Loadout for Squad Autorifleman (odst)
 ======================================*/
 class squad_ar : squad_rifleman
 {
@@ -11,17 +11,11 @@ class squad_ar : squad_rifleman
         ammo = "OPTRE_200Rnd_95x40_Box_Tracer";
     };
     
-    class Uniform : Uniform
-    {
-        classname[] = { "OPTRE_UNSC_Army_Uniform_OLI_SlimLeg", "OPTRE_UNSC_Army_Uniform_SNO_SlimLeg" };
-        ACRE_PRC343 = 1;
-    };
-    
     class Vest : Vest
     {
-        classname[] = {"OPTRE_UNSC_M52A_Armor_MG_WDL", "OPTRE_UNSC_M52A_Armor_MG_SNO"};
+        classname = "OPTRE_UNSC_M52D_Armor_Scout";
         // Inherited item overrides
-        OPTRE_32Rnd_762x51_Mag_Tracer = 0;
+        OPTRE_60Rnd_5x23mm_Mag_tracer = 0;
         OPTRE_M2_Smoke = 0;
         OPTRE_M9_Frag = 1;
         // List of items
@@ -30,9 +24,9 @@ class squad_ar : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "OPTRE_UNSC_Rucksack_Heavy";
+        classname = "OPTRE_ILCS_Rucksack_Black";
         // List of items
         OPTRE_200Rnd_95x40_Box_Tracer = 3;
-        OPTRE_M2_Smoke = 1;
+		OPTRE_M2_Smoke = 1;
     };
 };

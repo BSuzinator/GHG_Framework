@@ -6,6 +6,7 @@ class Loadouts
 	#include "cbrn\loadouts.hpp"
 	#include "gendarmerieSwat\loadouts.hpp"
 	#include "macv\loadouts.hpp"
+	#include "odst\loadouts.hpp"
 	#include "pmc\loadouts.hpp"
 	#include "russian\loadouts.hpp"
 	#include "serbian\loadouts.hpp"
