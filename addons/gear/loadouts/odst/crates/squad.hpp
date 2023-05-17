@@ -1,12 +1,13 @@
-class ghg_crate_unsc_squad : ghg_crate_base
+class ghg_crate_odst_squad : ghg_crate_base
 {
     displayname = "Squad";
     cargosize = 2;
     
     class items : items {
         OPTRE_Biofoam = 25;
-        OPTRE_32Rnd_762x51_Mag_Tracer = 30;
-		OPTRE_15Rnd_762x51_Mag_Tracer = 4;
+        OPTRE_32Rnd_762x51_Mag_Tracer = 8;
+		OPTRE_60Rnd_5x23mm_Mag_tracer = 30;
+		OPTRE_36Rnd_95x40_Mag_Tracer = 8;
         OPTRE_M9_Frag = 8;
         OPTRE_M2_Smoke = 8;
         OPTRE_200Rnd_95x40_Box_Tracer = 5;
