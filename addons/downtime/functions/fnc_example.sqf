@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_cannonball_fnc_example
+	ghg_downtime_fnc_example
 	
 	Author: BSuz
 ======================================*/

@@ -1,1 +1,2 @@
-//PREP(canPatDown);
+PREP(rps);
+PREP(rpsPlayer);
