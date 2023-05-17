@@ -8,39 +8,40 @@ class unsc
     {
         
     };
-    class Vehicles {
+	class Vehicles {
 		
 		//Infantry
-		car[] = {
-			//MG Hog 
-			{ "OPTRE_M12_LRV" },
-			//Rocket Hog
-			{ "OPTRE_M12A1_LRV" },
-			//AA Hog
-			{ "OPTRE_M12R_AA" },
-			//GAUSS Hog
-			{ "OPTRE_M12G1_LRV" },
-			//Mongoose
-			{ "OPTRE_M274_ATV" },
-			//APC Hog
-			{ "OPTRE_M12_FAV_APC" },
-			//Transport Hog
-			{ "OPTRE_M813_TT" },
-			//Medic Hog
-			{ "OPTRE_M12_FAV_APC_MED" },
-			//Logi Hog
-			{ "OPTRE_M914_RV" },
-			//Loading Cart
-			{ "OPTRE_cart" }
-			
-		};
+        car[] = {
+            //MG Hog 
+            { "OPTRE_M12_LRV", "OPTRE_M12_LRV" },
+            //Rocket Hog
+            { "OPTRE_M12A1_LRV", "OPTRE_M12A1_LRV" },
+            //AA Hog
+            { "OPTRE_M12R_AA", "OPTRE_M12R_AA" },
+            //GAUSS Hog
+            { "OPTRE_M12G1_LRV", "OPTRE_M12G1_LRV" },
+            //Mongoose
+            { "OPTRE_M274_ATV", "OPTRE_M274_ATV" },
+            //APC Hog
+            { "OPTRE_M12_FAV_APC", "OPTRE_M12_FAV_APC" },
+            //Transport Hog
+            { "OPTRE_M813_TT", "OPTRE_M813_TT" },
+            //Medic Hog
+            { "OPTRE_M12_FAV_APC_MED", "OPTRE_M12_FAV_APC_MED" },
+            //Logi Hog
+            { "OPTRE_M914_RV", "OPTRE_M914_RV" },
+            //Loading Cart
+            { "OPTRE_cart", "OPTRE_cart" }
+            
+        };
+		
 		troopTruck[] = {
 			//Covered truck
-			{ "OPTRE_m1087_stallion_cover_unsc" },
+			{ "OPTRE_m1087_stallion_cover_unsc", "OPTRE_m1087_stallion_cover_unsc" },
 			//Uncovered truck
-			{ "OPTRE_m1087_stallion_unsc" },
+			{ "OPTRE_m1087_stallion_unsc", "OPTRE_m1087_stallion_unsc" },
 			//Covered Medical
-			{ "OPTRE_m1087_stallion_unsc_medical" }
+			{ "OPTRE_m1087_stallion_unsc_medical", "OPTRE_m1087_stallion_unsc_medical" }
 		};
 		mrap[] = {
 			
@@ -49,39 +50,39 @@ class unsc
 		//LOGI
 		bridgeTrucks[] = {
 			//Pontoon Truck
-			{ "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf" },
+			{ "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf" },
 			//Boat Truck
-			{ "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf" },
+			{ "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf" },
 			//Pontoon Boat
-			{ "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t" }
+			{ "rhs_bmk_t", "rhs_bmk_t" }
 		};
 		cargoTrucks[] = {
 			//Elephant (RRR)
-			{"OPTRE_M313_UNSC"}
+			{"OPTRE_M313_UNSC", "OPTRE_M313_UNSC"}
 		};
 		rearm[] = {
 			//Stallion (ammo)
-			{ "OPTRE_m1087_stallion_unsc_resupply" }
+			{ "OPTRE_m1087_stallion_unsc_resupply", "OPTRE_m1087_stallion_unsc_resupply" }
 		};
 		refuel[] = {
 			//Stallion (fuel)
-			{ "OPTRE_m1087_stallion_unsc_refuel" }
+			{ "OPTRE_m1087_stallion_unsc_refuel", "OPTRE_m1087_stallion_unsc_refuel" }
 			
 		};
 		repair[] = {
 			//Stallion (repair)
-			{ "OPTRE_m1087_stallion_unsc_repair" }
+			{ "OPTRE_m1087_stallion_unsc_repair", "OPTRE_m1087_stallion_unsc_repair" }
 			
 		};
 		
 		//LYNX / WOLF
 		apc[] = {
 			//Bison (IFV)
-			{ "OPTRE_M412_IFV_UNSC" },
+			{ "OPTRE_M412_IFV_UNSC", "OPTRE_M412_IFV_UNSC" },
 			//Bison (MGS)
-			{ "OPTRE_M413_MGS_UNSC" },
+			{ "OPTRE_M413_MGS_UNSC", "OPTRE_M413_MGS_UNSC" },
 			//Oryx (IFV)
-			{ "OPTRE_M494" }
+			{ "OPTRE_M494", "OPTRE_M494" }
 			
 		};
 		ifv[] = {
@@ -89,56 +90,56 @@ class unsc
 		};
 		tank[] = {
 			//Scorpion
-			{ "OPTRE_M808B_UNSC" },
+			{ "OPTRE_M808B_UNSC", "OPTRE_M808B_UNSC" },
 			//Scorpion (turret)
-			{ "OPTRE_M808BM_UNSC" },
+			{ "OPTRE_M808BM_UNSC", "OPTRE_M808BM_UNSC" },
 			//Sun Devil (AA)
-			{ "OPTRE_M808B2" }
+			{ "OPTRE_M808B2", "OPTRE_M808B2" }
 			
 		};
 		
 		//RAVN / FLCN
 		heli_unarmed[] = {
 			//Falcon
-			{ "OPTRE_UNSC_falcon_unarmed" },
+			{ "OPTRE_UNSC_falcon_unarmed", "OPTRE_UNSC_falcon_unarmed" },
 			//Pelican
-			{ "OPTRE_Pelican_unarmed" }
+			{ "OPTRE_Pelican_unarmed", "OPTRE_Pelican_unarmed" }
 			
 		};
 		heli_armed[] = {
 			//Falcon
-			{ "OPTRE_UNSC_falcon" },
+			{ "OPTRE_UNSC_falcon", "OPTRE_UNSC_falcon" },
 			//Pelican
-			{ "OPTRE_Pelican_armed" },
+			{ "OPTRE_Pelican_armed", "OPTRE_Pelican_armed" },
 			//Hornet
-			{ "OPTRE_UNSC_hornet" },
+			{ "OPTRE_UNSC_hornet", "OPTRE_UNSC_hornet" },
 			//Sparrowhawk
-			{ "OTPRE_AV22_Sparrowhawk" },
+			{ "OTPRE_AV22_Sparrowhawk", "OTPRE_AV22_Sparrowhawk" },
 			//Sparrowhawk A
-			{ "OTPRE_AV22A_Sparrowhawk" },
+			{ "OTPRE_AV22A_Sparrowhawk", "OTPRE_AV22A_Sparrowhawk" },
 			//Sparrowhawk B
-			{ "OTPRE_AV22B_Sparrowhawk" },
+			{ "OTPRE_AV22B_Sparrowhawk", "OTPRE_AV22B_Sparrowhawk" },
 			//Sparrowhawk C
-			{ "OTPRE_AV22C_Sparrowhawk" }
+			{ "OTPRE_AV22C_Sparrowhawk", "OTPRE_AV22C_Sparrowhawk" }
 			
 		};
 		
 		//RPTR
 		plane[] = {
 			//YSS-1000-A
-			{ "OPTRE_YSS_1000_A" },
+			{ "OPTRE_YSS_1000_A", "OPTRE_YSS_1000_A" },
 			//YSS-1000-A (VTOL)
-			{ "OPTRE_YSS_1000_A_VTOL" }
+			{ "OPTRE_YSS_1000_A_VTOL", "OPTRE_YSS_1000_A_VTOL" }
 		};
 		
 		//KNFS
 		boat_unarmed[] = {
 			//Catfish (unarmed)
-			{ "optre_catfish_unarmed_f" }
+			{ "optre_catfish_unarmed_f", "optre_catfish_unarmed_f" }
 		};
 		boat_armed[] = {
 			//Catfish
-			{ "optre_catfish_mg_f" }
+			{ "optre_catfish_mg_f", "optre_catfish_mg_f" }
 			
 		};
 	};

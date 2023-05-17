@@ -17,7 +17,7 @@ class squad_medic : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname[] = { "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C_medic", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMT_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A_medic" };
+        classname[] = { "UK3CB_BAF_B_Bergen_MTP_Medic_L_A", "UK3CB_BAF_B_Bergen_Arctic_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMW_Rifleman_A", "UK3CB_BAF_B_Bergen_DPMT_Rifleman_A", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A_medic" };
         // List of items
 		
         #include "..\medic_bag.hpp"

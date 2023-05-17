@@ -19,6 +19,18 @@ class CfgAmmo {
 		aiAmmoUsageFlags = "128 + 256 + 512";
 	};
 	
+	class vn_145x114 : vn_20x110 {
+		aiAmmoUsageFlags = "128 + 256 + 512";
+	};
+	
+	class vn_145x114_x2 : vn_145x114 {
+		aiAmmoUsageFlags = "128 + 256 + 512";
+	};
+	
+	class vn_145x114_x4 : vn_145x114 {
+		aiAmmoUsageFlags = "128 + 256 + 512";
+	};
+	
 	class lxws_b_23x152_he : BulletBase {
 		aiAmmoUsageFlags = "128 + 256";
 	};
