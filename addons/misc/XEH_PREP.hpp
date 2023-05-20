@@ -1,5 +1,8 @@
 PREP(addMinesToZeus);
 PREP(blackout);
+PREP(blackoutCondition);
+PREP(blackoutDisable);
+PREP(blackoutEnable);
 PREP(crashTP);
 PREP(dynamicGroups);
 PREP(ejectOnDeath);

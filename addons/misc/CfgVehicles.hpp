@@ -109,4 +109,47 @@ class CfgVehicles {
 		
     };
 	
+	
+	class Land_TransferSwitch_01_F {
+		class ACE_Actions {
+            class GHG_Blackout_Enable {
+                displayName = "Switch On";
+				position = "[0,0,0]";
+                selection = "";
+                distance = 3.0;
+				icon = "\a3\modules_f_curator\data\portraitlightning_ca.paa";
+                condition = QUOTE(_this call FUNC(blackoutCondition));
+                statement = QUOTE(_this call FUNC(blackout));
+                exceptions[] = {"isNotSwimming"};
+            };
+			
+			class GHG_Blackout_Disable {
+                displayName = "Switch Off";
+				position = "[0,0,0]";
+                selection = "";
+                distance = 3.0;
+				icon = "\a3\modules_f_curator\data\portraitlightning_ca.paa";
+                condition = QUOTE(!(_this call FUNC(blackoutCondition)));
+                statement = QUOTE(_this call FUNC(blackout));
+                exceptions[] = {"isNotSwimming"};
+            };
+			
+        };
+		
+		class Attrubutes {
+			class GHG_Blackout_Radius {
+				displayName = "Blackout Radius";
+				tooltop = "Radius in meters to disable all lights";
+				property = "";
+				control = "EditShort";
+				expression = "_this setVariable ['%s',_value, true];";
+				defaultValue = "3000";
+				validate = "number";
+				typeName = "NUMBER";
+			};
+		};			
+	
+	
+	};
+	
 };
