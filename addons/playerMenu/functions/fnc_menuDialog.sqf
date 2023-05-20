@@ -13,6 +13,7 @@ private _loginAdmin = ["Login as Admin",{serverCommand "#login";},"","",[],-1,tr
 private _kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,true];
 private _storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
 private _toggleRFF = ["Toggle RFF",FUNC(toggleRFF),"","",[],-1,true,true];
+private _coinflip = ["Flip a Coin",EFUNC(downtime,coinflip),"","",[],-1,true,true];
 
 //Define Submenu Actions
 private _vehicleSubmenu = [
