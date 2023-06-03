@@ -18,3 +18,5 @@ kat_aatKit = 1;
 kat_accuvac = 1;
 kat_larynx = 8;
 kat_chestSeal = 2;
+kat_pocketBVM = 1;
+kat_crossPanel = 1;
