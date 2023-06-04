@@ -14,5 +14,5 @@ private _coinSide = switch (_coinBool) do
 	case false: { "Tails" };
 	default { "Error" };
 };
-private _resultSTR = format ["It's %1!, _coinSide];
+private _resultSTR = format ["It's %1!", _coinSide];
 _resultSTR call CBA_fnc_notify;
