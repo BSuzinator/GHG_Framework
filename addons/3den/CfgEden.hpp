@@ -21,23 +21,25 @@ class Display3DEN
 	{
 		class MenuStrip: ctrlMenuStrip
 		{
-			class Tools
-			{
-				items[] += {"GHG_ToolsFolder"};
+			class Items {
+				class Tools
+				{
+					items[] += {"GHG_ToolsFolder"};
+				};
+				class GHG_ToolsFolder
+				{
+					text = "GHG Tools";
+					items[] = {"GHG_GearUpUnits"};
+				};
+				class GHG_GearUpUnits
+				{
+					text = "Gear Up Units";
+					picture = "";
+					action = "[] call ghg_3den_fnc_gearUpUnits;";
+					opensNewWindow = 0;
+				};
+				
 			};
-			class GHG_ToolsFolder
-			{
-				text = "GHG Tools";
-				items[] = {"GHG_GearUpUnits"};
-			};
-			class GHG_GearUpUnits
-			{
-				text = "Gear Up Units";
-				picture = "";
-				action = "[] call ghg_3den_fnc_gearUpUnits;";
-				opensNewWindow = 0;
-			};
-			
 		};
 	};
 };
