@@ -20,3 +20,7 @@ kat_accuvac = 1;
 kat_larynx = 10;
 kat_chestSeal = 2;
 kat_Pulseoximeter = 1;
+kat_pocketBVM = 0;
+kat_BVM = 1;
+kat_oxygenTank_300_Item = 1;
+kat_stethoscope = 1;

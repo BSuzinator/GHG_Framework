@@ -11,12 +11,16 @@
 params ["_target", "_player", "_params"];
 private _hostSelection = _params select 0;
 private _startTime = serverTime;
-private _player = _target;
 
 
 
 //Prevent multiple games at once
-private _gameInProgress = ((_player getVariable ["ghg_downtime_rps_gameInProgress",false]) || (!isNil {_target getVariable "ghg_downtime_rps_host"}));
+private _gameInProgress = (
+	(_player getVariable ["ghg_downtime_rps_gameInProgress",false]) || 
+	(!isNil {_target getVariable "ghg_downtime_rps_host"}) || 
+	(_target getVariable ["ghg_downtime_rps_gameInProgress",false])
+);
+
 if (_gameInProgress) exitWith {
 	systemChat "RPS Game already in progress";
 	//systemChat str [_player getVariable ["ghg_downtime_rps_gameInProgress",false],!isNil {_target getVariable "ghg_downtime_rps_host"}];
@@ -34,7 +38,7 @@ private _gunBeats = ["rock","paper","scissors"];
 _target setVariable ["ghg_downtime_rps_host", _player, true];
 
 //Notify player
-[[format ["%1 has started a game of Rock, Paper, Scissors with you.",name _player]],["ACE Self Interact within 30 seconds to play."]] call CBA_fnc_notify;
+[[format ["%1 has started a game of Rock, Paper, Scissors with you.",name _player]],["ACE Self Interact within 30 seconds to play."]] remoteExec ["CBA_fnc_notify", _target];
 
 
 waitUntil {sleep 1;((!isNil {_target getVariable "ghg_downtime_rps_playerSelection"}) || (serverTime >= (_startTime + 30)))};
@@ -68,6 +72,7 @@ if (_playerSelection in _gameOutcome) then {
 } else {
 	_endMessage = format ["%1 wins! (%2 / %3)", name _target, _playerSelection, _hostSelection];
 };
+if (_hostSelection isEqualTo _playerSelection) then {_endMessage = "You tied. Try again."};
 _endMessage remoteExec ["CBA_fnc_notify", [_player, _target]];
 
 _target setVariable ["ghg_downtime_rps_playerSelection", nil, true];

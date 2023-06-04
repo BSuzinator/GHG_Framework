@@ -4,8 +4,10 @@
 	Copies classname of object to clipboard
 	Author: BSuz
 ======================================*/
-private _entity = get3DENSelected "Object";
 (uiNamespace getVariable "BIS_fnc_3DENEntityMenu_data") params ["_position3D", "_entity"];
-copyToClipboard str (typeOf _entity);
-systemChat str (typeOf _entity);
+private _entity3den = get3DENSelected "Object";
+if (_entity isEqualTo objNull) then {_entity = _entity3den};
+private _copyString = str (typeOf _entity);
+copyToClipboard _copyString;
+systemChat str _copyString;
 systemChat "test";

@@ -122,10 +122,14 @@ class CfgVehicles {
 					statement = "[_target, _player, [""gun""]] call ghg_downtime_fnc_rpsPlayer";
 					exceptions[] = {"isNotSwimming"};
 				};
+				class GHG_DT_coinflip {
+					displayName = "Coinflip";
+					condition = "true";
+					statement = QUOTE(_this call FUNC(coinflip));
+					exceptions[] = {"isNotSwimming"};
+				};
 			};
 		};
 	};
-	
-	
 //config close
 };

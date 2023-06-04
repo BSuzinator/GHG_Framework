@@ -21,5 +21,7 @@ class ghg_crate_medical : ghg_crate_base
         ACE_EarPlugs = 8;
 		kat_larynx = 8;
 		kat_chestSeal = 2;
+		kat_pocketBVM = 1;
+		kat_oxygenTank_300_Item = 3;
     };
 };
