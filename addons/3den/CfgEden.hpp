@@ -1,4 +1,5 @@
 class ctrlMenu; // First we need to load the base class of the menu
+class ctrlMenuStrip;
 class Display3DEN
 {
 	class ContextMenu: ctrlMenu
@@ -13,6 +14,30 @@ class Display3DEN
 				action = "call ghg_3den_fnc_exportClassname"; // The code which is executed when the entry was selected
 				conditionShow = "hoverObject"; // The Condition, see below
 			};
+		};
+	};
+	
+	class Controls
+	{
+		class MenuStrip: ctrlMenuStrip
+		{
+			class Tools
+			{
+				items[] += {"GHG_ToolsFolder"};
+			};
+			class GHG_ToolsFolder
+			{
+				text = "GHG Tools";
+				items[] = {"GHG_GearUpUnits"};
+			};
+			class GHG_GearUpUnits
+			{
+				text = "Gear Up Units";
+				picture = "";
+				action = "[] call ghg_3den_fnc_gearUpUnits;";
+				opensNewWindow = 0;
+			};
+			
 		};
 	};
 };
