@@ -21,3 +21,6 @@ class CfgPatches {
 };
 
 #include "CfgEventhandlers.hpp"
+#include "CfgMarkerColors.hpp"
+#include "CfgMarkerClasses.hpp"
+#include "CfgMarkers.hpp"
