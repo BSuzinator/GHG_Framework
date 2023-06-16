@@ -1,8 +1,8 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_fnc_blackout
+	ghg_misc_fnc_blackout
 	Handles disable / enable -ing of lamps within given radius of tswitch
-	Use on "Land_TransferSwitch_01_F"
+	Use on "GHG_TransferSwitch_F"
 	Author: BSuz
 ======================================*/
 params ["_target", "_player", "_params"];
@@ -10,7 +10,7 @@ private _radius = _target getVariable ["GHG_Blackout_Radius",3000];
 private _hostObject = _target;
 
 private _lampList = [
-	//"Lamps_base_F", 
+	"Lamps_base_F", 
 	"PowerLines_base_F", 
 	"PowerLines_Small_base_F",
 	"Land_fs_roof_F",

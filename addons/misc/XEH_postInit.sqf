@@ -6,6 +6,7 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 ======================================*/
 #include "cbaKeybinds.sqf";
 [] call FUNC(addMinesToZeus);
+[] call FUNC(blackoutInit);
 [] call FUNC(ejectOnDeath);
 [] call FUNC(vehicleActionsInit);
 [] call FUNC(treatmentNotify);
