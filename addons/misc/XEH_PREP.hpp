@@ -3,6 +3,7 @@ PREP(blackout);
 PREP(blackoutCondition);
 PREP(blackoutDisable);
 PREP(blackoutEnable);
+PREP(blackoutInit);
 PREP(crashTP);
 PREP(dynamicGroups);
 PREP(ejectOnDeath);
