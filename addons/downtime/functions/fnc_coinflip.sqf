@@ -7,7 +7,7 @@
 	Author: BSuz
 ======================================*/
 params ["_target", "_player", "_params"];
-private _coinBool = [[0, 1] call BIS_fnc_randomInt] call ghg_fnc_toBool;
+private _coinBool = [([0, 1] call BIS_fnc_randomInt)] call ghg_fnc_toBool;
 private _coinSide = switch (_coinBool) do
 {
 	case true: { "Heads" };
