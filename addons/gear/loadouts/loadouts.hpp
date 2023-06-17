@@ -11,6 +11,7 @@ class Loadouts
 	#include "pmc\loadouts.hpp"
 	#include "russian\loadouts.hpp"
 	#include "serbian\loadouts.hpp"
+	#include "snowTigers\loadouts.hpp"
 	#include "spetznaz\loadouts.hpp"
 	#include "taliban\loadouts.hpp"
 	#include "unsc\loadouts.hpp"

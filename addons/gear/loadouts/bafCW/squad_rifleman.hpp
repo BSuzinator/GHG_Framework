@@ -25,7 +25,7 @@ class squad_rifleman : loadout_base
     
     class Uniform : Uniform
     {
-        classname[] = { "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_DDMW", "UK3CB_BAF_U_Smock_DDMW", "UK3CB_BAF_U_Smock_Arctic",	"UK3CB_BAF_U_Smock_Arctic" };
+        classname[] = { "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_Arctic",	"UK3CB_BAF_U_Smock_Arctic" };
 		ACRE_PRC343 = 0;
     };
     
