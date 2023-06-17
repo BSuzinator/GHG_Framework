@@ -127,7 +127,7 @@ class CfgVehicles {
 				selection = "";
 				exceptions[] = {"isNotSwimming"};
 				class GHG_Blackout_Enable {
-					displayName = "Switch On";
+					displayName = "Switch Off";
 					position = "[0,0,0]";
 					distance = 4.0;
 					icon = "\a3\modules_f_curator\data\portraitlightning_ca.paa";
@@ -137,7 +137,7 @@ class CfgVehicles {
 				};
 				
 				class GHG_Blackout_Disable {
-					displayName = "Switch Off";
+					displayName = "Switch On";
 					position = "[0,0,0]";
 					distance = 4.0;
 					icon = "\a3\modules_f_curator\data\portraitlightning_ca.paa";
