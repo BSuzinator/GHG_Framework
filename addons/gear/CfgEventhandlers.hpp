@@ -18,11 +18,3 @@ class Extended_PreStart_EventHandlers {
         init = QUOTE( call COMPILE_FILE(XEH_preStart) );
     };
 };
-
-class Extended_HandleDamage_EventHandlers {
-    class Man {
-        class GHG_vn_ace_burn_compat {
-            HandleDamage = "_this call ghg_gear_fnc_vnAceBurnCompat;";
-        };
-    };
-};
