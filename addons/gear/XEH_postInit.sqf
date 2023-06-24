@@ -13,3 +13,5 @@ if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 [] call FUNC(anestheticInit);
 
 ["gearUp", FUNC(gearUp)] call CBA_fnc_addEventHandler;
+
+player addEventHandler ["HandleDamage", {_this call FUNC(vnAceBurnCompatEH);}];

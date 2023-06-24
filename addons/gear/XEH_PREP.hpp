@@ -21,4 +21,4 @@ PREP(getFactionLoadout);
 PREPMAIN(dumpLoadout);
 PREPMAIN(stealUniform);
 PREP(deleteScopes);
-PREP(vn_AceBurnCompatEH)
+PREP(vnAceBurnCompatEH);
