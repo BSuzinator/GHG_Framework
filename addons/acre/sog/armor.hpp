@@ -139,143 +139,147 @@ SOG_M113_US_ROK_ACRE(acav_04, acav_m134)
 SOG_M113_US_ROK_ACRE(acav_05, acav_mk18)
 SOG_M113_US_ROK_ACRE(acav_06, acav_m40)
 
+
+#define SOG_APC_COMBAT(COMMANDER_TURNED_IN_TURRET) class AcreRacks { \
+        class Rack_1 { \
+            allowedPositions[] = {"driver", {"turret", {COMMANDER_TURNED_IN_TURRET}}}; \
+            intercom[] = {"intercom_1"}; \
+        }; \
+    }; \
+    acre_infantryPhoneIntercom[] = {"intercom_1"}; \
+    acre_infantryPhoneControlActions[] = {"intercom_1"}; \
+    class AcreIntercoms { \
+        class Intercom_1 { \
+            displayName = "Crew Intercom"; \
+            shortName = "Crew"; \
+            \
+            allowedPositions[] = {"crew"}; \
+            masterPositions[] = {"commander", {"turret", {0}, {1}}}; \
+            \
+            limitedPositions[] = {}; \
+            numLimitedPositions = 0; \
+            \
+            connectedByDefault = 1; \
+        }; \
+    };
+
 // Intercom for SOG M132 Flame APC
-class vn_armor_m132_base;
+class vn_armor_m132_base : vn_armor_m113_01_base {};
 class vn_b_armor_m132_01 : vn_armor_m132_base {
-    class AcreRacks {
-        class Rack_1 {
-            allowedPositions[] = {"driver", {"turret", {0}}};
-            intercom[] = {"intercom_1"};
-        };
-    };
-    acre_infantryPhoneIntercom[] = {"intercom_1"};
-    acre_infantryPhoneControlActions[] = {"intercom_1"};
-    class AcreIntercoms {
-        class Intercom_1 {
-            displayName = "Crew Intercom";
-            shortName = "Crew";
-            
-            allowedPositions[] = {"crew"};
-            masterPositions[] = {"commander", {"turret", {0}, {1}}};
-            
-            limitedPositions[] = {{"cargo", "all"}, {"ffv", {2}, {3}}};
-            numLimitedPositions = 1;
-            
-            connectedByDefault = 1;
-        };
-    };
+    SOG_APC_COMBAT(0)
 };
 
 // Intercom for SOG M125 Mortar APC
-class vn_armor_m125_base;
+class vn_armor_m125_base : vn_armor_m113_01_base {};
 class vn_b_armor_m125_01 : vn_armor_m125_base {
-    class AcreRacks {
-        class Rack_1 {
-            allowedPositions[] = {"driver", {"turret", {1}}};
-            intercom[] = {"intercom_1"};
-        };
-    };
-    acre_infantryPhoneIntercom[] = {"intercom_1"};
-    acre_infantryPhoneControlActions[] = {"intercom_1"};
-    class AcreIntercoms {
-        class Intercom_1 {
-            displayName = "Crew Intercom";
-            shortName = "Crew";
-            
-            allowedPositions[] = {"crew"};
-            masterPositions[] = {"commander", {"turret", {0}, {1}}};
-            
-            limitedPositions[] = {{"cargo", "all"}, {"ffv", {2}, {3}}};
-            numLimitedPositions = 1;
-            
-            connectedByDefault = 1;
-        };
-    };
+    SOG_APC_COMBAT(1)
+};
+class vn_b_armor_m125_01_aus_army : vn_armor_m125_base {
+    SOG_APC_COMBAT(1)
+};
+class vn_b_armor_m125_01_rok_army : vn_armor_m125_base {
+    SOG_APC_COMBAT(1)
 };
 
 // NOTE SOG M577 Variants: Do not use "crew" here otherwise you'll include people in the tent which are listed as "turret" positions
-// Intercom for SOG M577 Ambulance APC
-class vn_armor_m577_02_base;
-class vn_b_armor_m577_02 : vn_armor_m577_02_base {
-    class AcreRacks {
-        class Rack_1 {
-            allowedPositions[] = {"driver", "commander"};
-            intercom[] = {"intercom_1"};
-        };
-    };
-    acre_infantryPhoneIntercom[] = {"intercom_1"};
-    acre_infantryPhoneControlActions[] = {"intercom_1"};
-    class AcreIntercoms {
-        class Intercom_1 {
-            displayName = "Crew Intercom";
-            shortName = "Crew";
-            
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}};
-            masterPositions[] = {"commander"};
-            
-            limitedPositions[] = {{"cargo", "all"}, {"turret", {1}, {2}}};
-            numLimitedPositions = 1;
-            
-            connectedByDefault = 1;
-        };
-        class Intercom_2 : Intercom_1 {
-            displayName = "Pax Intercom";
-            shortName = "Pax";
-            
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}, {"turret", {1}, {2}}};
-            
-            limitedPositions[] = {};
-            numLimitedPositions = 0;
-            
-            connectedByDefault = 0;
-        };
-    };
-};
-
 // Intercom for SOG M577 Command APC
 class vn_armor_m577_01_base;
+#define SOG_APC_COMMAND class AcreRacks { \
+        class Rack_1 { \
+            allowedPositions[] = {"driver", "commander", {"cargo", "all"}}; \
+            intercom[] = {"intercom_1"}; \
+        }; \
+        class Rack_2 : Rack_1 { \
+            displayName = "Command Main"; \
+            shortName  = "Cmd M."; \
+            allowedPositions[] = {"commander", {"cargo", "all"}}; \
+            intercom[] = {"intercom_2"}; \
+        }; \
+        class Rack_3 : Rack_2 { \
+            displayName = "Command Aux"; \
+            shortName  = "Cmd A."; \
+        }; \
+    }; \
+    acre_infantryPhoneIntercom[] = {"intercom_1"}; \
+    acre_infantryPhoneControlActions[] = {"intercom_1"}; \
+    class AcreIntercoms { \
+        class Intercom_1 { \
+            displayName = "Crew Intercom"; \
+            shortName = "Crew"; \
+            \
+            allowedPositions[] = {"driver", "commander", {"cargo", "all"}}; \
+            masterPositions[] = {"commander"}; \
+            \
+            limitedPositions[] = {{"cargo", "all"}}; \
+            numLimitedPositions = 1; \
+            \
+            connectedByDefault = 1; \
+        }; \
+        class Intercom_2 : Intercom_1 { \
+            displayName = "Command Intercom"; \
+            shortName = "Cmd"; \
+            \
+            allowedPositions[] = {"driver", "commander", {"cargo", "all"}}; \
+            \
+            limitedPositions[] = {}; \
+            numLimitedPositions = 0; \
+            \
+            connectedByDefault = 1; \
+        }; \
+    };
+
 class vn_b_armor_m577_01 : vn_armor_m577_01_base {
-    class AcreRacks {
-        class Rack_1 {
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}};
-            intercom[] = {"intercom_1"};
-        };
-        class Rack_2 : Rack_1 {
-            displayName = "Command Main";
-            shortName  = "Cmd M.";
-            allowedPositions[] = {"commander", {"cargo", "all"}};
-            intercom[] = {"intercom_2"};
-        };
-        class Rack_3 : Rack_2 {
-            displayName = "Command Aux";
-            shortName  = "Cmd A.";
-        };
+    SOG_APC_COMMAND
+};
+class vn_b_armor_m577_01_aus_army : vn_armor_m577_01_base {
+    SOG_APC_COMMAND
+};
+class vn_b_armor_m577_01_rok_army : vn_armor_m577_01_base {
+    SOG_APC_COMMAND
+};
+
+// Intercom for SOG M577 Ambulance APC
+class vn_armor_m577_02_base;
+#define SOG_APC_MEDICAL class AcreRacks { \
+        class Rack_1 { \
+            allowedPositions[] = {"driver", "commander"}; \
+            intercom[] = {"intercom_1"}; \
+        }; \
+    }; \
+    acre_infantryPhoneIntercom[] = {"intercom_1"}; \
+    acre_infantryPhoneControlActions[] = {"intercom_1"}; \
+    class AcreIntercoms { \
+        class Intercom_1 { \
+            displayName = "Crew Intercom"; \
+            shortName = "Crew"; \
+            \
+            allowedPositions[] = {"driver", "commander", {"cargo", "all"}, {"turret", {1}, {2}}}; \
+            masterPositions[] = {"commander"}; \
+            \
+            limitedPositions[] = {{"cargo", "all"}, {"turret", {1}, {2}}}; \
+            numLimitedPositions = 1; \
+            \
+            connectedByDefault = 1; \
+        }; \
+        class Intercom_2 : Intercom_1 { \
+            displayName = "Pax Intercom"; \
+            shortName = "Pax"; \
+            \
+            allowedPositions[] = {"driver", "commander", {"cargo", "all"}, {"turret", {1}, {2}}}; \
+            \
+            limitedPositions[] = {}; \
+            numLimitedPositions = 0; \
+            \
+            connectedByDefault = 0; \
+        }; \
     };
-    acre_infantryPhoneIntercom[] = {"intercom_1"};
-    acre_infantryPhoneControlActions[] = {"intercom_1"};
-    class AcreIntercoms {
-        class Intercom_1 {
-            displayName = "Crew Intercom";
-            shortName = "Crew";
-            
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}};
-            masterPositions[] = {"commander"};
-            
-            limitedPositions[] = {{"cargo", "all"}};
-            numLimitedPositions = 1;
-            
-            connectedByDefault = 1;
-        };
-        class Intercom_2 : Intercom_1 {
-            displayName = "Command Intercom";
-            shortName = "Cmd";
-            
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}};
-            
-            limitedPositions[] = {};
-            numLimitedPositions = 0;
-            
-            connectedByDefault = 1;
-        };
-    };
+
+class vn_b_armor_m577_02 : vn_armor_m577_02_base {
+    SOG_APC_MEDICAL
+};
+class vn_b_armor_m577_02_aus_army : vn_armor_m577_02_base {
+    SOG_APC_MEDICAL
+};
+class vn_b_armor_m577_02_rok_army : vn_armor_m577_02_base {
+    SOG_APC_MEDICAL
 };
