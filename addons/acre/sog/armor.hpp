@@ -207,7 +207,7 @@ class vn_armor_m577_01_base;
             displayName = "Crew Intercom"; \
             shortName = "Crew"; \
             \
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}}; \
+            allowedPositions[] = {"driver", "commander"}; \
             masterPositions[] = {"commander"}; \
             \
             limitedPositions[] = {{"cargo", "all"}}; \
@@ -253,7 +253,7 @@ class vn_armor_m577_02_base;
             displayName = "Crew Intercom"; \
             shortName = "Crew"; \
             \
-            allowedPositions[] = {"driver", "commander", {"cargo", "all"}, {"turret", {1}, {2}}}; \
+            allowedPositions[] = {"driver", "commander"}; \
             masterPositions[] = {"commander"}; \
             \
             limitedPositions[] = {{"cargo", "all"}, {"turret", {1}, {2}}}; \
