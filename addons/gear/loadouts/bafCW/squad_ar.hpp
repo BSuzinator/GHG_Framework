@@ -14,7 +14,6 @@ class squad_ar : squad_rifleman
     
     class Vest : Vest
     {
-        classname[] = { "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDMW", "UK3CB_BAF_V_PLCE_Webbing_DDMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_Arctic", "UK3CB_BAF_V_PLCE_Webbing_Arctic" };
         // Inherited item overrides
         rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
         SmokeShell = 1;
