@@ -7,7 +7,7 @@ class mat_ammo : squad_rifleman
     {
         classname = "vn_b_pack_lw_01";
         // List of items
-        rhs_mag_smaw_HEAA = 2;
+        vn_m20a1b1_heat_mag = 2;
     };
 	
 	class Binoculars : Binoculars
