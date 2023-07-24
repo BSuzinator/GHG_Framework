@@ -16,7 +16,6 @@ class plt_lead : squad_rifleman
     
     class Vest : Vest
     {
-		classname[] = { "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM", "UK3CB_BAF_V_PLCE_Webbing_DDPM", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_PLCE_Webbing_Winter" };
         // List of items
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;

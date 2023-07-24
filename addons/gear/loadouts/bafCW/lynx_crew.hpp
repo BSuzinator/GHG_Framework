@@ -19,7 +19,6 @@ class lynx_crew : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM", "UK3CB_BAF_V_PLCE_Webbing_DDPM", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_PLCE_Webbing_Winter" };
         // List of items
         UK3CB_BAF_762_20Rnd_T = 4;
         SmokeShell = 1;

@@ -1,27 +1,27 @@
 #include "script_component.hpp"
-if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
+#include "cbaKeybinds.sqf";
 /*======================================
     Everything in this file is run once on mission start
 	Author: CBA_3
 ======================================*/
-#include "cbaKeybinds.sqf";
-[] call FUNC(addMinesToZeus);
-[] call FUNC(blackoutInit);
-[] call FUNC(ejectOnDeath);
-[] call FUNC(vehicleActionsInit);
-[] call FUNC(treatmentNotify);
-[] spawn FUNC(failDeadly);
-[] spawn FUNC(makeBreifings);
-
+//Run on EVERY mission file
 [] call FUNC(initOWO);
-
+[] call FUNC(treatmentNotify);
 [] call FUNC(cameraInit);
-[] spawn FUNC(dynamicGroups);
-[] call FUNC(footsteps);
-
-[] spawn FUNC(crashTP);
+[] call FUNC(vehicleActionsInit);
 [] call FUNC(fixHueyHud);
 
 if (hasInterface) then {
     [missionNamespace, "OnDisplayRegistered", FUNC(registerJukeboxTracks)] call BIS_fnc_addScriptedEventHandler;
 };
+
+//Don't delete
+if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
+//Run ONLY ON GHG MISSIONS
+[] call FUNC(addMinesToZeus);
+[] call FUNC(blackoutInit);
+[] spawn FUNC(failDeadly);
+[] spawn FUNC(makeBreifings);
+[] spawn FUNC(dynamicGroups);
+[] call FUNC(footsteps);
+[] spawn FUNC(crashTP);
