@@ -110,4 +110,55 @@ class CfgVehicles
         };
     };
 	
+	//Add azimuth/elevation to BM-21s
+	class LandVehicle;
+	class Car: LandVehicle {
+		class NewTurret;
+	};
+	class Car_F : Car {
+		class Turrets {
+			class MainTurret: NewTurret {
+				class ViewOptics;
+			};
+		};
+	};
+	class Truck_F: Car_F {};
+	class RHS_Ural_BaseTurret: Truck_F {
+		class Turrets {
+			class MainTurret : NewTurret {};
+		};
+	};
+	class RHS_BM21_MSV_01 : RHS_Ural_BaseTurret {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				gunnerOpticsModel = "\rhsafrf\addons\rhs_heavyweapons\data\2Dscope_D30_panoramic";
+				gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
+				turretInfoType="rhs_gui_optic_d30_op4";
+				class OpticsIn
+				{
+					class OP4M_45
+					{
+						opticsDisplayName="OP4";
+						//hitpoint="ovladac";
+						//camPos="ovladac";
+						//camDir="konec hlavne";
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.12727299;
+						minFov=0.12727299;
+						maxFov=0.12727299;
+						visionMode[]=
+						{
+							"Normal"
+						};
+						gunnerOpticsModel="\rhsafrf\addons\rhs_optics\vehicles\rhs_empty.p3d";
+					};
+				};
+			};
+		};
+	};
 };
