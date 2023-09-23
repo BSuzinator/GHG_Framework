@@ -161,4 +161,125 @@ class CfgVehicles
 			};
 		};
 	};
+	class Truck_01_base_F : Truck_F {};
+	//RHS HIMARS
+	//["rhsusf_himars_base","Truck_01_base_F","Truck_F","Car_F","Car","LandVehicle","Land","AllVehicles","All"]
+	class rhsusf_himars_base : Truck_01_base_F {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				gunnerOpticsModel = "\rhsafrf\addons\rhs_heavyweapons\data\2Dscope_D30_panoramic";
+				gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
+				turretInfoType="rhs_gui_optic_d30_op4";
+				class OpticsIn
+				{
+					class OP4M_45
+					{
+						opticsDisplayName="OP4";
+						//hitpoint="ovladac";
+						//camPos="ovladac";
+						//camDir="konec hlavne";
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.12727299;
+						minFov=0.12727299;
+						maxFov=0.12727299;
+						visionMode[]=
+						{
+							"Normal"
+						};
+						gunnerOpticsModel="\rhsafrf\addons\rhs_optics\vehicles\rhs_empty.p3d";
+					};
+				};
+			};
+		};
+	};
+	/*	***NOT CURRENTLY FUNCTIONING***
+	//3CBF MTVR MLRS
+	//["UK3CB_B_MTVR_MLRS_AAF","UK3CB_MTVR_MLRS","UK3CB_MTVR_Base","Truck_02_base_F","Truck_F","Car_F","Car","LandVehicle","Land","AllVehicles","All"]
+	class Truck_02_base_F : Truck_F {};
+	class UK3CB_MTVR_Base : Truck_02_base_F {
+		class Turrets {
+			class MainTurret : NewTurret {};
+		};
+	};
+	class UK3CB_MTVR_MLRS : UK3CB_MTVR_Base {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				gunnerOpticsModel = "\rhsafrf\addons\rhs_heavyweapons\data\2Dscope_D30_panoramic";
+				gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
+				turretInfoType="rhs_gui_optic_d30_op4";
+				class OpticsIn
+				{
+					class OP4M_45
+					{
+						opticsDisplayName="OP4";
+						//hitpoint="ovladac";
+						//camPos="ovladac";
+						//camDir="konec hlavne";
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.12727299;
+						minFov=0.12727299;
+						maxFov=0.12727299;
+						visionMode[]=
+						{
+							"Normal"
+						};
+						gunnerOpticsModel="\rhsafrf\addons\rhs_optics\vehicles\rhs_empty.p3d";
+					};
+				};
+			};
+		};
+	};
+	
+	//3CBF T810 MLRS
+	//["UK3CB_B_T810_MLRS_LDF","UK3CB_T810_MLRS","UK3CB_T810","UK3CB_T810_Base","Truck_01_base_F","Truck_F","Car_F","Car","LandVehicle","Land","AllVehicles","All"]
+	class UK3CB_T810_Base : Truck_01_base_F {
+		class Turrets {
+			class MainTurret : NewTurret {};
+		};
+	};
+	class UK3CB_T810 : UK3CB_T810_Base {};
+	class UK3CB_T810_MLRS : UK3CB_T810 {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				gunnerOpticsModel = "\rhsafrf\addons\rhs_heavyweapons\data\2Dscope_D30_panoramic";
+				gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
+				turretInfoType="rhs_gui_optic_d30_op4";
+				class OpticsIn
+				{
+					class OP4M_45
+					{
+						opticsDisplayName="OP4";
+						//hitpoint="ovladac";
+						//camPos="ovladac";
+						//camDir="konec hlavne";
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.12727299;
+						minFov=0.12727299;
+						maxFov=0.12727299;
+						visionMode[]=
+						{
+							"Normal"
+						};
+						gunnerOpticsModel="\rhsafrf\addons\rhs_optics\vehicles\rhs_empty.p3d";
+					};
+				};
+			};
+		};
+	};
+	*/
 };
