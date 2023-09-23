@@ -11,62 +11,73 @@ params [
 // TODO check if the unit is a man
 
 private _loadout = getUnitLoadout _unit;
-
+private _unitType = [toLower typeOf _unit, 6] call BIS_fnc_trimString;
 _loadout params ["_weapon1", "_weapon3", "_weapon2", "_uniform", "_vest", "_backpack", "_helmet", "_facewear", "_binoculars", "_linked"];
 
-private _out = format [ 
-"class %1 : loadout_base {
-    #include ""..\loadout_inherit.hpp"" // This must the first line inside of the class!!!!
+private _out = format [ "
+#include ""script_component.hpp""
+/*======================================
+	Loadout for %1 (FRESH EXPORT)
+======================================*/
+class %1 : loadout_base
+{
+    
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        %2
-    
+        classname[] = { ""%2"" };
+		muzzle = ""%3"";
+        laser = ""%4"";
+        ammo = ""%5"";
+		bipod = ""%6"";
+        grenade = ""%7"";
+		
         class Scopes : Scopes
         {
-            my_scope_name = ""%3""
-        };
-    };
-    
-    class Weapon_2 : Weapon_2 // Pistol
-    {
-        %4
-    
-        class Scopes : Scopes
-        {
-            my_scope_name = ""%5""
-        };
-    };
-    
-    class Weapon_3 : Weapon_3 // Launcher
-    {
-        %6
-    
-        class Scopes : Scopes
-        {
-            my_scope_name = ""%7""
+            scope = ""%8"";
+            holo = ""rhsusf_acc_eotech_xps3"";
+			alt_holo = """";
+            red_dot_magnified = ""rhsusf_acc_g33_t1"";
+            holo_magnified = ""rhsusf_acc_g33_xps3"";
+            holo_alt_camo[] = { ""rhsusf_acc_eotech_552_wd"" };
         };
     };
     
     class Uniform : Uniform
     {
-        %8
+        classname[] = { ""rhs_uniform_bdu_erdl"" };
+		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        %9
+        classname[] = { ""rhsusf_iotv_ocp_Rifleman"" };
+        // List of items
+        rhs_mag_30Rnd_556x45_M855A1_Stanag = 8;
+        SmokeShell = 2;
+        rhs_mag_m67 = 2;
+        ACE_EntrenchingTool = 1;
     };
     
-    class Backpack : Backpack
-    {
-        %10
-    };
-    
-    class Binoculars : Binoculars
-    {
-        %11
-    };
+    headgear[] = { ""rhsusf_ach_bare_wood"" };
+    facewear = ""rhsusf_oakley_goggles_clr"";
 };"
-
+, 
+	//Class
+	_unitType, 
+	//Primary Weapon
+		//Weapon Class
+		((_loadout # 0) # 0), 
+		//Suppressor
+		((_loadout # 0) # 1), 
+		//Laser/Light
+		((_loadout # 0) # 2), 
+		//Primary Magazine
+		(((_loadout # 0) # 4) # 0), 
+		//Bipod
+		((_loadout # 0) # 6), 
+		//Secondary Magazine
+		(((_loadout # 0) # 5) # 0), 
+		//Scope
+		((_loadout # 0) # 3)
 ];
