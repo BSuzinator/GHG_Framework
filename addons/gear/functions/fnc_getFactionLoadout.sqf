@@ -24,7 +24,7 @@ if (_faction isEqualTo "") then {
 	}));
 };
 
-if ( _faction == "" ) exitWith {
+if ( _faction == "" || _faction == "none") exitWith {
     systemChat format [ "No faction specified for side %1", _side ];
     configNull;
 };

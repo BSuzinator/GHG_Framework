@@ -19,7 +19,7 @@ class squad_rifleman : loadout_base
 			alt_holo = "";
             red_dot_magnified = "";
             holo_magnified = "";
-            holo_alt_camo[] = { "", };
+            holo_alt_camo[] = { "" };
         };
     };
     
