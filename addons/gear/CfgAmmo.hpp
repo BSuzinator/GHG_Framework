@@ -6,9 +6,9 @@ class CfgAmmo {
 		aiAmmoUsageFlags = "128 + 256";
 	};
 	
-	class RHS_ammo_23mm_AA : B_35mm_AA {
+	/* class RHS_ammo_23mm_AA : B_35mm_AA {
 		aiAmmoUsageFlags = "128 + 256";
-	};
+	}; */
 	
 	class vn_riflebullet_base;
 	class vn_127x99 : vn_riflebullet_base {

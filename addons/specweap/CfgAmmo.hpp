@@ -45,7 +45,7 @@ class CfgAmmo
         ACE_barrelLengths[]={101.6, 127.0, 228.6};
 	};
     
-    class ghg_ammo_762x54_anest : ghg_ammo_9x19_anest
+    /* class ghg_ammo_762x54_anest : ghg_ammo_9x19_anest
     {
         airFriction = -0.0002;
         
@@ -58,7 +58,7 @@ class CfgAmmo
         ACE_dragModel=1;
         ACE_muzzleVelocities[]={450, 500, 550};
         ACE_barrelLengths[]={254.0, 414.02, 508.0};
-    };
+    }; */
     
     class vn_sh_105mm_base_he_ammo;
     class ghg_shell_105mm_m546_beehive_ammo : vn_sh_105mm_base_he_ammo

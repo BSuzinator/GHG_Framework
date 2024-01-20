@@ -67,10 +67,10 @@ class CfgMagazines
 
 class CfgMagazineWells
 {   
-    class CBA_762x54R_Mosin
+    /* class CBA_762x54R_Mosin
 	{
 		GHG_Magazines[] = {
 			"ghg_5rnd_762x54_m38_anest"
 		};
-	};
+	}; */
 };

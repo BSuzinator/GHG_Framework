@@ -14,7 +14,7 @@ _jammer setVariable ["ghg_jammer_maxRange",_range, true];
 
 private _greenHumvees = ["CUP_B_M1152_USMC", "CUP_B_M1152_WDL_USA"];
 
-private _sandHumvees = ["CUP_B_M1152_USA", ];
+private _sandHumvees = [ "CUP_B_M1152_USA" ];
 
 private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
 
