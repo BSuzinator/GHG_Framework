@@ -24,7 +24,7 @@ class CfgMagazines
         initSpeed = 320;
     };
     
-    class rhsgref_5Rnd_762x54_m38;
+    /* class rhsgref_5Rnd_762x54_m38;
     class ghg_5rnd_762x54_m38_anest : rhsgref_5Rnd_762x54_m38
     {
         author = "GHG Team";
@@ -34,7 +34,7 @@ class CfgMagazines
 		descriptionShort = "Caliber: 7.62x54mm Anest.<br />Rounds: 5<br />Used in: Mosin Nagant M38";
         
         initSpeed = 500;
-    };
+    }; */
     
     class vn_cannon_105mm_mag_he_base;
     class ghg_cannon_m101_mag_beehive_x8 : vn_cannon_105mm_mag_he_base {
@@ -45,7 +45,7 @@ class CfgMagazines
         scope = 2;
     };
 	
-	class rhs_mag_M229_7;
+	/* class rhs_mag_M229_7;
     class rhs_mag_M229_stun_7 : rhs_mag_M229_7 {
 		ammo = "ghg_ammo_Hydra_STUN";
         author = "GHG Team";
@@ -53,8 +53,8 @@ class CfgMagazines
         displayNameShort = "STUN";
 		descriptionShort = "x7 17lb STUN Hydra";
         scope = 2;
-    };
-	class rhs_mag_M229_19;
+    }; */
+	/* class rhs_mag_M229_19;
     class rhs_mag_M229_stun_19 : rhs_mag_M229_19 {
 		ammo = "ghg_ammo_Hydra_STUN";
         author = "GHG Team";
@@ -62,7 +62,7 @@ class CfgMagazines
         displayNameShort = "STUN";
 		descriptionShort = "x19 17lb STUN Hydra";
         scope = 2;
-    };
+    }; */
 };
 
 class CfgMagazineWells

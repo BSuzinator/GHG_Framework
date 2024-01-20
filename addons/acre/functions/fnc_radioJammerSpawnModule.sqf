@@ -47,4 +47,4 @@ private _function = {
 	] call zen_dialog_fnc_create;	
 
 };
-["Ghost Hawk Gaming", "Jammer - Spawn New", _function] call zen_custom_modules_fnc_register;
+//["Ghost Hawk Gaming", "Jammer - Spawn New", _function] call zen_custom_modules_fnc_register;

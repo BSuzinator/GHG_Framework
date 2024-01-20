@@ -30,8 +30,8 @@ class CfgWeapons
         };
     };
 	
-	class rhs_weap_FFARLauncher;
+/* 	class rhs_weap_FFARLauncher;
 	class rhs_weap_FFARLauncher_M229 : rhs_weap_FFARLauncher {
 		magazines[] += {"rhs_mag_M229_stun_7","rhs_mag_M229_stun_19"};
-	};
+	}; */
 };
