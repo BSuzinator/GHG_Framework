@@ -9,7 +9,7 @@ class mat_ammo : squad_rifleman
     {
         classname = "CUP_B_USPack_Black";
         // List of items
-        CUP_SMAW_HEAA_M = 2;
+        rhs_mag_smaw_HEAA = 2;
 		rhs_mag_smaw_SR = 2;
     };
 	

@@ -13,7 +13,7 @@ class mtr_ammo : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-		UK3CB_FAMAS_25rnd_556x45 = 6;
+		CUP_25Rnd_556x45_Famas = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;

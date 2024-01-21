@@ -7,7 +7,7 @@ class mat_gunner : squad_rifleman
     class Weapon_3 : Weapon_3 // Launcher
     {
         classname = "rhs_weap_smaw";
-        ammo = "CUP_SMAW_HEAA_M";
+        ammo = "rhs_mag_smaw_HEAA";
     };
 	
 	class Vest : Vest
@@ -19,7 +19,7 @@ class mat_gunner : squad_rifleman
     {
         classname = "CUP_B_USPack_Black";
         // List of items
-        CUP_SMAW_HEAA_M = 2;
+        rhs_mag_smaw_HEAA = 2;
 		rhs_mag_smaw_SR = 2;
     };
 	

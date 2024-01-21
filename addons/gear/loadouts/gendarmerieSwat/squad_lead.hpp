@@ -7,13 +7,17 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_FAMAS_F1_GLM203";
-        grenade = "CUP_1Rnd_HE_M203";
+        classname = "CUP_Famas_F1_Rail";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
+    };
+	class Weapon_2 : Weapon_2 // Rifle
+    {
+        classname = "vn_m79_p";
+        grenade = "CUP_1Rnd_HE_M203";
     };
     
     class Vest : Vest

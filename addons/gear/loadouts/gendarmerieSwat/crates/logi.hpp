@@ -6,11 +6,11 @@ class ghg_crate_gendamarieSwat_logi : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        UK3CB_FAMAS_25rnd_556x45 = 32;
+        CUP_25Rnd_556x45_Famas = 32;
         CUP_HandGrenade_M67 = 4;
         SmokeShell = 6;
-        rhs_weap_m72a7 = 1;
-        rhs_m72a7_mag = 1;
+        CUP_launch_M72A6 = 1;
+        CUP_M72A6_M = 1;
 		ACE_wirecutter = 2;
 		ACE_DefusalKit = 2;
 		ToolKit = 2;

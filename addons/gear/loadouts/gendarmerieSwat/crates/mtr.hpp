@@ -6,7 +6,7 @@ class ghg_crate_gendamarieSwat_mtr : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        UK3CB_FAMAS_25rnd_556x45 = 16;
+        CUP_25Rnd_556x45_Famas = 16;
 		ACE_1Rnd_82mm_Mo_HE = 10;
 		ACE_1Rnd_82mm_Mo_Smoke = 5;
 		ACE_1Rnd_82mm_Mo_Illum = 5;

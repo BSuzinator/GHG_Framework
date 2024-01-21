@@ -7,20 +7,20 @@ class squad_rifleman : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_FAMAS_F1";
-        laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "UK3CB_FAMAS_25rnd_556x45";
+        classname = "CUP_Famas_F1_Rail";
+        laser = "CUP_acc_ANPEQ_15_Black";
+        ammo = "CUP_25Rnd_556x45_Famas";
 		bipod = "";
-		muzzle = "rhsusf_acc_rotex5_grey";
+		muzzle = "CUP_muzzle_snds_FAMAS";
         
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
 			alt_holo = "";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt = "rhsusf_acc_eotech_552";
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt = "CUP_optic_Eotech553_Black";
         };
     };
     
@@ -35,7 +35,7 @@ class squad_rifleman : loadout_base
     {
         classname = "V_TacVest_gen_F";
         // List of items
-        UK3CB_FAMAS_25rnd_556x45 = 8;
+        CUP_25Rnd_556x45_Famas = 8;
         SmokeShell = 2;
         CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
@@ -48,6 +48,6 @@ class squad_rifleman : loadout_base
 		GHG_spikeStripItem = 1;
 	};
 	
-    headgear = "UK3CB_ANP_B_H_6b27m_BLK";
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear = "CUP_H_RUS_6B47_SF_headset_black";
+    facewear = "CUP_G_ESS_BLK";
 };

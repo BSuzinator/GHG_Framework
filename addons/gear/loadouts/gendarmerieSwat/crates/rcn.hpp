@@ -6,9 +6,9 @@ class ghg_crate_gendamarieSwat_rcn : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        UK3CB_FAMAS_25rnd_556x45 = 8;
-		UK3CB_BAF_338_5Rnd = 10;
-		rhsusf_mag_15Rnd_9x19_FMJ = 3;
+        CUP_25Rnd_556x45_Famas = 8;
+		CUP_5Rnd_86x70_L115A1 = 10;
+		CUP_15Rnd_9x19_M9 = 3;
         CUP_HandGrenade_M67 = 3;
         SmokeShell = 6;
         CUP_1Rnd_HE_M203 = 8;
