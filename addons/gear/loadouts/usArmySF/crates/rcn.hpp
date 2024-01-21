@@ -9,16 +9,16 @@ class ghg_crate_usArmySF_rcn : ghg_crate_base
         rhs_mag_30Rnd_556x45_Mk318_Stanag = 8;
 		rhsusf_5Rnd_300winmag_xm2010 = 10;
 		rhsusf_mag_17Rnd_9x19_FMJ = 3;
-        rhs_mag_m67 = 3;
-        rhs_mag_an_m8hc = 6;
-        rhs_mag_M441_HE = 8;
-		rhs_mag_M585_white = 4;
-		rhs_mag_m661_green = 2;
-		rhs_mag_m662_red = 2;
-		rhs_mag_m713_Red = 2;
-		rhs_mag_m715_Green = 2;
-		rhs_mag_m714_White = 4;
+        CUP_HandGrenade_M67 = 3;
+        SmokeShell = 6;
+        CUP_1Rnd_HE_M203 = 8;
+		CUP_1Rnd_StarCluster_White_M203 = 4;
+		CUP_FlareGreen_M203 = 2;
+		CUP_FlareRed_M203 = 2;
+		CUP_1Rnd_SmokeRed_M203 = 2;
+		CUP_1Rnd_SmokeGreen_M203 = 2;
+		CUP_1Rnd_Smoke_M203 = 4;
 		ACE_EarPlugs = 3;
-		diw_armor_plates_main_plate = 5;
+		
     };
 };

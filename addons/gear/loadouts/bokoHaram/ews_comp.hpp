@@ -13,6 +13,6 @@ class ews_comp : squad_rifleman
     };
 	class Backpack : Backpack
     {
-        classname = "B_Kitbag_desert_lxWS";
+        classname = "CUP_B_AssaultPack_Coyote";
     };
 };

@@ -9,9 +9,9 @@ class rcn_gunner : loadout_base
     {
         classname[] = { "UK3CB_BAF_L115A3", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
 		muzzle = "";
-		bipod = "uk3cb_underbarrel_acc_bipod";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
         laser = "";
-        ammo = "UK3CB_BAF_338_5Rnd";
+        ammo = "CUP_5Rnd_86x70_L115A1";
         
         class Scopes : Scopes
         {
@@ -36,7 +36,7 @@ class rcn_gunner : loadout_base
     {
         classname[] = { "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM", "UK3CB_BAF_V_PLCE_Webbing_DDPM", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_PLCE_Webbing_Winter" };
         // List of items
-        UK3CB_BAF_338_5Rnd = 8;
+        CUP_5Rnd_86x70_L115A1 = 8;
 		UK3CB_BAF_9_13Rnd = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;

@@ -9,7 +9,7 @@ class squad_ar : squad_rifleman
     {
         classname = "rhs_weap_rpk74m";
         ammo = "rhs_100Rnd_545X39_7N6_RPK";
-        bipod = "rhsusf_acc_saw_bipod";
+        bipod = "";
 		muzzle = "rhs_acc_tgpa";
     };
     

@@ -8,7 +8,7 @@ class ghg_crate_russian_logi : ghg_crate_base
         ACE_packingBandage = 12;
         rhs_30Rnd_545x39_7N10_AK = 32;
         rhs_mag_rgo = 4;
-        rhs_mag_an_m8hc = 6;
+        SmokeShell = 6;
         rhs_weap_rpg26 = 1;
         rhs_rpg26_mag = 1;
 		ACE_wirecutter = 2;
@@ -22,7 +22,7 @@ class ghg_crate_russian_logi : ghg_crate_base
 		rhs_GRD40_Green = 2;
 		rhs_GRD40 = 4;
 		ACE_EarPlugs = 8;
-		diw_armor_plates_main_plate = 8;
+		
 		B_Kitbag_cbr = 2;
     };
 };

@@ -14,7 +14,7 @@ class logi_repair : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;

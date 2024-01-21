@@ -25,7 +25,7 @@ class demo_defusal : squad_rifleman
     
 	class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
     };
 	facewear = "vn_b_bandana_a";

@@ -18,7 +18,7 @@ class loadout_base_usKorea : loadout_base
     {
         // Not used in vietnam
         ACE_Flashlight_XL50 = 0; // Weapon_2 is used instead of this (both the "MX991" and "M1911 with MX991" work on the map)
-        diw_armor_plates_main_plate = 0;
+        
     };
 
     nvgs = "";

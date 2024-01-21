@@ -14,7 +14,7 @@ class demo_explosive : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "UK3CB_TKA_B_V_Carrier_Tan" };
+        classname[] = { "CUP_V_B_MTV_Mine" };
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -23,10 +23,9 @@ class demo_explosive : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
-        rhsusf_m112x4_mag = 1;
-        rhsusf_m112_mag = 3;
+        DemoCharge_Remote_Mag = 3;
 		SatchelCharge_Remote_Mag = 1;
     };
 };

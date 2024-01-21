@@ -13,14 +13,14 @@ class demo_defusal : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "UK3CB_TKA_B_V_Carrier_Tan" };
+        classname[] = { "CUP_V_B_MTV_Mine" };
         // List of items
 		ACE_DefusalKit = 1;
     };
     
 	class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
     }
 	

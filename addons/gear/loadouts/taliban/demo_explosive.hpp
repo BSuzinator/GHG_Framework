@@ -25,8 +25,8 @@ class demo_explosive : squad_rifleman
     {
         classname[] = { "LOP_ISTS_Fieldpack_PKM" };
         // List of items
-        rhsusf_m112x4_mag = 1;
-        rhsusf_m112_mag = 3;
+        
+        DemoCharge_Remote_Mag = 3;
 		SatchelCharge_Remote_Mag = 1;
     };
 };

@@ -9,10 +9,10 @@ class mmg_gunner : squad_rifleman
     {
         classname = "UK3CB_BAF_L7A2";
         ammo = "UK3CB_BAF_762_100Rnd";
-        bipod = "rhsusf_acc_saw_bipod";
+        bipod = "";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_Elcan_SpecterDR_RMR_black";
         };
     };
 	

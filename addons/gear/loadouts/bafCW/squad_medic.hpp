@@ -10,9 +10,9 @@ class squad_medic : squad_rifleman
         classname[] = { "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDMW", "UK3CB_BAF_V_PLCE_Webbing_DDMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_PLCE_Webbing_Winter" };
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
-        rhs_mag_m18_red = 2;
+        SmokeShellRed = 2;
     };
     
     class Backpack : Backpack

@@ -7,36 +7,36 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "UK3CB_SVD_OLD" };
+        classname[] = { "CUP_srifle_SVD" };
 		muzzle = "";
 		bipod = "";
         laser = "";
-        ammo = "rhs_10Rnd_762x54mmR_7N1";
+        ammo = "CUP_10Rnd_762x54_SVD_M";
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhs_acc_pso1m21";
+            sniper_optic = "CUP_optic_PSO_1_1_open";
         };
     };
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhs_weap_pya";
-        ammo = "rhs_mag_9x19_17";
+		classname = "CUP_hgun_M17_Coyote";
+        ammo = "CUP_21Rnd_9x19_M17_Coyote";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname[] = { "LOP_U_ISTS_Fatigue_05" };
+        classname[] = { "CUP_U_B_BDUv2_roll2_gloves_desert_US" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
         // List of items
-        rhs_10Rnd_762x54mmR_7N1 = 4;
-		rhs_mag_9x19_17 = 2;
+        CUP_10Rnd_762x54_SVD_M = 4;
+		CUP_21Rnd_9x19_M17_Coyote = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;
     };

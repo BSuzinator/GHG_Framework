@@ -14,11 +14,11 @@ class squad_rifleman : loadout_base
 		
 		class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt = "rhsusf_acc_eotech_552";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt = "CUP_optic_Eotech553_Black";
             //holo_alt_camo[] = { "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd" };
         };
         
@@ -36,7 +36,7 @@ class squad_rifleman : loadout_base
         // List of items
         rhs_mag_20rnd_scar_762x51_m80_ball_bk = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     

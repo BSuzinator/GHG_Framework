@@ -6,9 +6,9 @@ class mat_gunner : squad_rifleman
     
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_rpg7";
-        ammo = "rhs_rpg7_PG7VL_mag";
-		class Scopes { rhs_weap_optic_smaw = "rhs_acc_pgo7v3"; };
+        classname = "CUP_launch_RPG7V";
+        ammo = "CUP_PG7VL_M";
+		class Scopes { rhs_weap_optic_smaw = "CUP_optic_PGO7V3"; };
     };
 	
 	class Vest : Vest
@@ -20,9 +20,9 @@ class mat_gunner : squad_rifleman
     {
         classname[] = {"B_Carryall_oli","B_Carryall_oli","B_Carryall_cbr"};
         // List of items
-        rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+        CUP_PG7VL_M = 2; //AT
+		CUP_OG7_M = 2; //HE
+		CUP_TBG7V_M = 1; //Thermo
     };
 	
 	class Binoculars : Binoculars

@@ -7,28 +7,28 @@ class mmg_gunner : squad_rifleman
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_pkp";
-        ammo = "rhs_100Rnd_762x54mmR";
+        classname = "CUP_lmg_Pecheneg";
+        ammo = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
         bipod = "";
 		class Scopes : Scopes
         {
-            mg_optic = "rhs_acc_perst1ik";
+            mg_optic = "CUP_optic_Elcan_SpecterDR_coyote";
         };
     };
 	
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_762x39mm = 0;
-		rhs_100Rnd_762x54mmR = 3;
+		CUP_30Rnd_762x39_AK47_bakelite_M = 0;
+		CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
 	class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
-        rhs_100Rnd_762x54mmR = 3;
+        CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M = 3;
     };
 	headgear[] = { "H_turban_02_mask_snake_lxws" };
 };

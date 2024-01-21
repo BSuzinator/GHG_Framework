@@ -8,18 +8,18 @@ class squad_rifleman : loadout_base
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname[] = { "UK3CB_BAF_L85A2_RIS", "UK3CB_BAF_L85A2_RIS_W", "UK3CB_BAF_L85A2_RIS_G", "UK3CB_BAF_L85A2_RIS_G", "UK3CB_BAF_L85A2_RIS_D" };
-        laser = "rhsusf_acc_anpeq15_bk";
+        laser = "CUP_acc_ANPEQ_15_Black";
         ammo = "UK3CB_BAF_556_30Rnd";
 		bipod = "";
         
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
 			alt_holo = "";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d" };
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "CUP_optic_Eotech553_Black", "CUP_optic_Eotech553_Black", "CUP_optic_Eotech553_Black", "rhsusf_acc_eotech_552_d" };
         };
     };
     
@@ -35,10 +35,10 @@ class squad_rifleman : loadout_base
         // List of items
         UK3CB_BAF_556_30Rnd = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     
     headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_B", "UK3CB_BAF_H_Mk6_DPMT_B", "UK3CB_BAF_H_Mk6_DDPM_B" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -5,7 +5,7 @@ class lynx_driver : lynx_crew
 {
 	class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
         ToolKit = 1;
     };

@@ -9,11 +9,11 @@ class lynx_crew : squad_rifleman
     {
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
             red_dot_magnified = "";
             holo_magnified = "";
-            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d" };
+            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "CUP_optic_Eotech553_Black", "CUP_optic_Eotech553_Black", "CUP_optic_Eotech553_Black", "rhsusf_acc_eotech_552_d" };
         };
     };
 	
@@ -25,7 +25,7 @@ class lynx_crew : squad_rifleman
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
 	headgear[] = { "UK3CB_BAF_H_CrewHelmet_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_CrewHelmet_DPMW_A", "UK3CB_BAF_H_CrewHelmet_DPMT_A", "UK3CB_BAF_H_CrewHelmet_DDPM_A" };

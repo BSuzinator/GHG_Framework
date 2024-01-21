@@ -19,11 +19,11 @@ class demo_saboteur : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
         APERSMine_Range_Mag = 2;
-        rhs_mine_M3_tripwire_mag = 1;
-		rhs_mine_m3_pressure_mag = 1;
+        APERSTripMine_Wire_Mag = 1;
+		CUP_Mine_M = 1;
 		IEDLandSmall_Remote_Mag = 1;
 		IEDUrbanSmall_Remote_Mag = 1;
 		ACE_FlareTripMine_Mag = 1;

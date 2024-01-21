@@ -7,13 +7,17 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_FAMAS_F1_GLM203";
-        grenade = "rhs_mag_M441_HE";
+        classname = "CUP_Famas_F1_Rail";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
+    };
+	class Weapon_2 : Weapon_2 // Rifle
+    {
+        classname = "vn_m79_p";
+        grenade = "CUP_1Rnd_HE_M203";
     };
     
     class Vest : Vest
@@ -26,15 +30,15 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
-        rhs_mag_M441_HE = 10;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 2;
-        rhs_mag_m662_red = 2;
-        rhs_mag_m713_Red = 2;
-        rhs_mag_m715_Green = 2;
-        rhs_mag_m714_White = 4;
+        CUP_1Rnd_HE_M203 = 10;
+        CUP_1Rnd_StarCluster_White_M203 = 5;
+        CUP_FlareGreen_M203 = 2;
+        CUP_FlareRed_M203 = 2;
+        CUP_1Rnd_SmokeRed_M203 = 2;
+        CUP_1Rnd_SmokeGreen_M203 = 2;
+        CUP_1Rnd_Smoke_M203 = 4;
 		GHG_spikeStripItem = 0;
     };
 	

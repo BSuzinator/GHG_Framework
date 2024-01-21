@@ -6,21 +6,21 @@ class ghg_crate_bokoHaram_squad : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_30Rnd_762x39mm = 30;
-		20Rnd_762x51_slr_desert_lxWS = 4;
-        rhs_mag_m67 = 8;
-        rhs_mag_an_m8hc = 8;
-        rhs_75Rnd_762x39mm = 5;
-        rhs_weap_M80 = 2;
-        rhs_m80_mag = 2;
-        rhs_VOG25 = 8;
-		rhs_VG400P_white = 4;
-		rhs_VG400P_green = 2;
-		rhs_VG400P_red = 2;
-		rhs_GRD40_Red = 2;
-		rhs_GRD40_Green = 2;
-		rhs_GRD40 = 4;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 30;
+		CUP_20Rnd_762x51_FNFAL_Desert_M = 4;
+        CUP_HandGrenade_M67 = 8;
+        SmokeShell = 8;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 5;
+        CUP_launch_M72A6 = 2;
+        CUP_M72A6_M = 2;
+        CUP_1Rnd_HE_GP25_M = 8;
+		CUP_1Rnd_SMOKE_GP25_M = 4;
+		CUP_1Rnd_SmokeGreen_GP25_M = 2;
+		CUP_1Rnd_SmokeRed_GP25_M = 2;
+		CUP_FlareRed_GP25_M = 2;
+		CUP_FlareGreen_GP25_M = 2;
+		CUP_FlareWhite_GP25_M = 4;
 		ACE_EarPlugs = 8;
-		diw_armor_plates_main_plate = 8;
+		
     };
 };

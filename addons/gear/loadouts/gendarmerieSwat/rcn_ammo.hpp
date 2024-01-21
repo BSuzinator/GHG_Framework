@@ -7,7 +7,7 @@ class rcn_ammo : squad_rifleman
 	
 	class Vest : Vest
     {
-		UK3CB_FAMAS_25rnd_556x45 = 6;
+		CUP_25Rnd_556x45_Famas = 6;
 		ACE_MapTools = 1;
 		ACE_Kestrel4500 = 1;
 		ACE_RangeCard = 1;
@@ -17,8 +17,8 @@ class rcn_ammo : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
-        UK3CB_BAF_338_5Rnd = 10;
+        classname = "CUP_B_USPack_Black";
+        CUP_5Rnd_86x70_L115A1 = 10;
 		GHG_spikeStripItem = 0;
     };
 	

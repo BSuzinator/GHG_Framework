@@ -24,26 +24,26 @@ class rptr_pilot : squad_rifleman
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhs_weap_pya";
+		classname = "CUP_hgun_M17_Coyote";
         laser = "";
-        ammo = "rhs_mag_9x19_17";
+        ammo = "CUP_21Rnd_9x19_M17_Coyote";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname[] = { "UK3CB_KDF_B_U_J_Pilot_Uniform_01_VSR" };
+        classname[] = { "CUP_U_B_CZ_Pilot_WDL" };
     };
     
     class Vest : Vest
     {
         classname = "V_BandollierB_cbr";
         // List of items
-        rhs_30Rnd_762x39mm = 0;
-        rhs_mag_m67 = 0;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 0;
+        CUP_HandGrenade_M67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
-		rhs_mag_9x19_17 = 3;
+		CUP_21Rnd_9x19_M17_Coyote = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

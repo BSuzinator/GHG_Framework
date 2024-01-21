@@ -11,8 +11,8 @@ class maa_ammo : mat_ammo
     {
         // List of items
 		rhs_m136_mag = 0; //AT
-		rhs_rpg7_OG7V_mag = 0; //HE
-		rhs_rpg7_TBG7V_mag = 0; //Thermo
+		CUP_OG7_M = 0; //HE
+		CUP_TBG7V_M = 0; //Thermo
 		rhs_fim92_mag = 2;
     };
 	facewear = "UK3CB_G_Balaclava_Neck_Shemag";

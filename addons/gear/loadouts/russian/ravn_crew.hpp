@@ -11,5 +11,5 @@ class ravn_crew : lynx_crew
 		rhs_mag_rgo = 0;
     };
 	headgear = "rhs_zsh7a_mike_green_alt";
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -7,8 +7,8 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_akm_gp25";
-        grenade = "rhs_VOG25";
+        classname = "CUP_arifle_AKM_GL_Early";
+        grenade = "CUP_1Rnd_HE_GP25_M";
 
     };
     
@@ -21,15 +21,15 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
-        rhs_VOG25 = 10;
-        rhs_VG400P_white = 5;
-        rhs_VG400P_green = 2;
-        rhs_VG400P_red = 2;
-        rhs_GRD40_Red = 2;
-        rhs_GRD40_Green = 2;
-        rhs_GRD40 = 4;
+        CUP_1Rnd_HE_GP25_M = 10;
+        CUP_1Rnd_SMOKE_GP25_M = 5;
+        CUP_1Rnd_SmokeGreen_GP25_M = 2;
+        CUP_1Rnd_SmokeRed_GP25_M = 2;
+        CUP_FlareRed_GP25_M = 2;
+        CUP_FlareGreen_GP25_M = 2;
+        CUP_FlareWhite_GP25_M = 4;
     };
 	
 	class Binoculars : Binoculars

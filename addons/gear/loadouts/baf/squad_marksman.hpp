@@ -8,13 +8,13 @@ class squad_marksman : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "UK3CB_BAF_L129A1";
-        laser = "rhsusf_acc_anpeq15_bk";
+        laser = "CUP_acc_ANPEQ_15_Black";
         ammo = "UK3CB_BAF_762_L42A1_20Rnd";
-		bipod = "rhsusf_acc_harris_bipod";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
         
         class Scopes : Scopes
         {
-            magnified = "rhsusf_acc_acog";
+            magnified = "CUP_optic_RCO";
         };
     };
     

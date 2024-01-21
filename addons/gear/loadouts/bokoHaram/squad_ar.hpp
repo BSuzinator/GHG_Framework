@@ -7,25 +7,25 @@ class squad_ar : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_RPK";
-        ammo = "rhs_75Rnd_762x39mm";
+        classname = "CUP_arifle_RPK74";
+        ammo = "CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M";
         bipod = "";
     };
     
     class Vest : Vest
     {
         // Inherited item overrides
-        rhs_30Rnd_762x39mm = 0;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 0;
         SmokeShell = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
-        rhs_75Rnd_762x39mm = 3;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 3;
     };
     
     class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
-        rhs_75Rnd_762x39mm = 3;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 3;
     };
 };

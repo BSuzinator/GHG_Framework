@@ -18,7 +18,7 @@ class squad_ar : squad_rifleman
         // Inherited item overrides
         rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
         SmokeShell = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
         UK3CB_BAF_762_100Rnd_T = 3;
     };

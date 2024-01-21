@@ -9,13 +9,13 @@ class rcn_gunner : loadout_base
     {
         classname[] = { "rhs_weap_XM2010_wd", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
 		muzzle = "rhsusf_acc_M2010S";
-		bipod = "rhsusf_acc_harris_bipod";
-        laser = "rhsusf_acc_anpeq15_bk";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
+        laser = "CUP_acc_ANPEQ_15_Black";
         ammo = "rhsusf_5Rnd_300winmag_xm2010";
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhsusf_acc_LEUPOLDMK4_2";
+            sniper_optic = "CUP_optic_Leupold_VX3";
         };
     };
     

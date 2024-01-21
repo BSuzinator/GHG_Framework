@@ -8,14 +8,14 @@ class squad_marksman : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "rhs_weap_m14ebrri";
-        laser = "rhsusf_acc_anpeq15_bk";
+        laser = "CUP_acc_ANPEQ_15_Black";
         ammo = "rhsusf_20Rnd_762x51_m80_Mag";
-		bipod = "rhsusf_acc_harris_bipod";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
 		muzzle[] = {"rhsusf_acc_aac_m14dcqd_silencer","rhsusf_acc_aac_m14dcqd_silencer_wd","rhsusf_acc_aac_m14dcqd_silencer_d"};
         
         class Scopes : Scopes
         {
-            magnified = "rhsusf_acc_acog";
+            magnified = "CUP_optic_RCO";
         };
     };
     

@@ -23,10 +23,10 @@ class demo_explosive : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
-        rhsusf_m112x4_mag = 1;
-        rhsusf_m112_mag = 3;
+        
+        DemoCharge_Remote_Mag = 3;
 		SatchelCharge_Remote_Mag = 1;
 		GHG_spikeStripItem = 0;
     };

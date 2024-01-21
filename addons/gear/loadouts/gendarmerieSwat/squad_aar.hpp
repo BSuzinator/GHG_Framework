@@ -12,11 +12,11 @@ class squad_aar : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhsusf_100Rnd_556x45_soft_pouch = 6;
+        CUP_100Rnd_TE4_Red_Tracer_556x45_M249 = 6;
 		GHG_spikeStripItem = 0;
     };
 	

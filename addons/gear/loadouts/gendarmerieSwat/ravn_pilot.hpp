@@ -10,6 +10,6 @@ class ravn_pilot : ravn_crew
         // List of items
         ACE_microDAGR = 1;
     };
-	headgear = "rhsusf_hgu56p_visor_black";
-    facewear = "rhsusf_oakley_goggles_clr";
+	headgear = "CUP_H_SPH4_grey_visor";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -7,10 +7,10 @@ class squad_marksman : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "arifle_SLR_D_lxWS";
+        classname = "CUP_arifle_FNFAL5060_railed_sand";
         laser = "";
-        ammo = "20Rnd_762x51_slr_desert_lxWS";
-		acog = "rhsusf_acc_acog_d";
+        ammo = "CUP_20Rnd_762x51_FNFAL_Desert_M";
+		acog = "CUP_optic_ACOG_Reflex_Desert";
 		bipod = "";
         
     };
@@ -18,10 +18,10 @@ class squad_marksman : squad_rifleman
     class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_762x39mm = 0;
-        20Rnd_762x51_slr_desert_lxWS = 5;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 0;
+        CUP_20Rnd_762x51_FNFAL_Desert_M = 5;
     };
     
     headgear[] = { "H_Bandanna_sand" };
-    facewear = "rhsusf_shemagh2_gogg_tan";
+    facewear = "CUP_G_ESS_KHK_Scarf_Tan";
 };

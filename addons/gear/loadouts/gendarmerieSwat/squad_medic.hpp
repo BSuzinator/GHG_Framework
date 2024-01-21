@@ -9,14 +9,14 @@ class squad_medic : squad_rifleman
     {
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
-        rhs_mag_m18_red = 2;
+        SmokeShellRed = 2;
     };
     
     class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
 		
         #include "..\medic_bag.hpp"

@@ -10,7 +10,7 @@ class plt_lead : squad_rifleman
         
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     class Uniform : Uniform

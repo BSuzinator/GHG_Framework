@@ -10,7 +10,7 @@ class plt_lead : squad_rifleman
         
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     
@@ -28,5 +28,5 @@ class plt_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear = "UK3CB_ANP_B_H_6b27m_BLK";
+    headgear = "CUP_H_RUS_6B47_SF_headset_black";
 };

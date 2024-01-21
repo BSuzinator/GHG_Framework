@@ -41,7 +41,7 @@ class rptr_pilot : squad_rifleman
         classname = "V_Rangemaster_belt";
         // List of item overrides
         rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
-        rhs_mag_m67 = 0;
+        CUP_HandGrenade_M67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
         // List of items
@@ -53,5 +53,5 @@ class rptr_pilot : squad_rifleman
     };
     
     headgear = "RHS_jetpilot_usaf";
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

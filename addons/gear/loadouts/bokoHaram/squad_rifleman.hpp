@@ -7,28 +7,28 @@ class squad_rifleman : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_akm";
+        classname = "CUP_arifle_AKM";
         laser = "";
-        ammo = "rhs_30Rnd_762x39mm";
+        ammo = "CUP_30Rnd_762x39_AK47_bakelite_M";
         
     };
     
     class Uniform : Uniform
     {
-        classname[] = { "LOP_U_ISTS_Fatigue_05" };
+        classname[] = { "CUP_U_B_BDUv2_roll2_gloves_desert_US" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { "UK3CB_TKA_I_V_vydra_3m_Tan" };
+        classname[] = { "CUP_V_B_Eagle_SPC_Rifleman" };
         // List of items
-        rhs_30Rnd_762x39mm = 8;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     
     headgear[] = { "H_Bandanna_sand" };
-    facewear = "rhsusf_shemagh2_gogg_tan";
+    facewear = "CUP_G_ESS_KHK_Scarf_Tan";
 };

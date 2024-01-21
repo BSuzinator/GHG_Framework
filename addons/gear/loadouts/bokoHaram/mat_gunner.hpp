@@ -6,9 +6,9 @@ class mat_gunner : squad_rifleman
     
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_rpg7";
-        ammo = "rhs_rpg7_PG7VR_mag";
-		class Scopes { rhs_acc_pgo7v3 = "rhs_acc_pgo7v3"; };
+        classname = "CUP_launch_RPG7V";
+        ammo = "CUP_PG7V_M";
+		class Scopes { CUP_optic_PGO7V3 = "CUP_optic_PGO7V3"; };
     };
 	
 	class Vest : Vest
@@ -18,11 +18,11 @@ class mat_gunner : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname[] = { "B_Kitbag_desert_lxWS" };
+        classname[] = { "CUP_B_AssaultPack_Coyote" };
         // List of items
-        rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+        CUP_PG7VL_M = 2; //AT
+		CUP_OG7_M = 2; //HE
+		CUP_TBG7V_M = 1; //Thermo
     };
 	
 	class Binoculars : Binoculars

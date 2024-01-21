@@ -41,7 +41,7 @@ class rptr_pilot : squad_rifleman
         classname = "V_Rangemaster_belt";
         // List of items
         rhs_mag_30Rnd_556x45_Mk318_Stanag = 0;
-        rhs_mag_m67 = 0;
+        CUP_HandGrenade_M67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
 		rhsusf_mag_17Rnd_9x19_FMJ = 3;

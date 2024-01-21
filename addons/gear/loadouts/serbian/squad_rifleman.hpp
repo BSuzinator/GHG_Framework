@@ -8,18 +8,18 @@ class squad_rifleman : loadout_base
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "rhs_weap_g36kv";
-        laser = "rhsusf_acc_anpeq15_bk";
+        laser = "CUP_acc_ANPEQ_15_Black";
         ammo = "rhssaf_30rnd_556x45_EPR_G36";
 		bipod = "rhsusf_acc_rvg_blk";
         
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
 			alt_holo = "";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt = "rhsusf_acc_eotech_552";
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt = "CUP_optic_Eotech553_Black";
         };
     };
     
@@ -35,10 +35,10 @@ class squad_rifleman : loadout_base
         // List of items
         rhssaf_30rnd_556x45_EPR_G36 = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     
     headgear[] = { "rhssaf_helmet_m97_oakleaf" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -10,7 +10,7 @@ class squad_marksman : squad_rifleman
         classname = "rhs_weap_svds";
         laser = "rhs_acc_2dpzenit";
         ammo = "rhs_10Rnd_762x54mmR_7N1";
-		bipod = "rhsusf_acc_harris_bipod";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
         
         class Scopes : Scopes
         {

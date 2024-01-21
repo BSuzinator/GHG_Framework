@@ -9,7 +9,7 @@ class squad_ar : squad_rifleman
     {
         classname = "rhs_weap_m249_pip_s_para";
         ammo = "rhsusf_200Rnd_556x45_soft_pouch";
-        bipod = "rhsusf_acc_harris_bipod";
+        bipod = "CUP_bipod_Harris_1A2_L_BLK";
     };
     
 	class Uniform : Uniform
@@ -23,7 +23,7 @@ class squad_ar : squad_rifleman
         // Inherited item overrides
         rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
         SmokeShell = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
         rhsusf_200Rnd_556x45_soft_pouch = 2;
     };

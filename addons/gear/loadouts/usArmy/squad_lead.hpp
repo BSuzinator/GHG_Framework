@@ -8,11 +8,11 @@ class squad_lead : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
-        grenade = "rhs_mag_M441_HE";
+        grenade = "CUP_1Rnd_HE_M203";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     
@@ -28,13 +28,13 @@ class squad_lead : squad_rifleman
     {
         classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
         // List of items
-        rhs_mag_M441_HE = 10;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 2;
-        rhs_mag_m662_red = 2;
-        rhs_mag_m713_Red = 2;
-        rhs_mag_m715_Green = 2;
-        rhs_mag_m714_White = 4;
+        CUP_1Rnd_HE_M203 = 10;
+        CUP_1Rnd_StarCluster_White_M203 = 5;
+        CUP_FlareGreen_M203 = 2;
+        CUP_FlareRed_M203 = 2;
+        CUP_1Rnd_SmokeRed_M203 = 2;
+        CUP_1Rnd_SmokeGreen_M203 = 2;
+        CUP_1Rnd_Smoke_M203 = 4;
     };
 	
 	class Binoculars : Binoculars

@@ -8,8 +8,8 @@ class ravn_crew : lynx_crew
 	class Vest : Vest
     {
         // List of items
-		rhs_mag_m67 = 0;
+		CUP_HandGrenade_M67 = 0;
     };
-	headgear = "rhsusf_hgu56p_visor_mask_black";
+	headgear = "H_CrewHelmetHeli_B";
     facewear = "G_Combat_lxWS";
 };
