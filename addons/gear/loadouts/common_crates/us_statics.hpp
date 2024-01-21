@@ -3,7 +3,7 @@ class ghg_crate_us_gmgAmmo : ghg_crate_base
     displayname = "GMG Ammo";
     
     class items : items {
-        ace_compat_rhs_usf3_48Rnd_40mm_MK19_M430A1 = 4;
+        ace_compat_sog_mk18_48 = 4;
     };
 };
 class ghg_crate_us_gmgTube : ghg_crate_base
@@ -12,7 +12,7 @@ class ghg_crate_us_gmgTube : ghg_crate_base
     
     class items : items {
         ace_csw_m3CarryTripodLow = 1;
-		ace_compat_rhs_usf3_mk19_carry = 1;
+		ace_compat_sog_mk18_carry = 1;
     };
 };
 class ghg_crate_us_hatAmmo : ghg_crate_base
@@ -20,7 +20,7 @@ class ghg_crate_us_hatAmmo : ghg_crate_base
     displayname = "HAT Ammo";
     
     class items : items {
-        ace_compat_rhs_usf3_mag_TOW2A = 8;
+        ace_compat_sog_tow_missile = 8;
     };
 };
 class ghg_crate_us_hatTube : ghg_crate_base
@@ -29,7 +29,7 @@ class ghg_crate_us_hatTube : ghg_crate_base
     
     class items : items {
         ace_csw_m220CarryTripod = 1;
-		ace_compat_rhs_usf3_tow_carry = 1;
+		ace_compat_sog_tow_carry = 1;
     };
 };
 class ghg_crate_us_hmgAmmo : ghg_crate_base
@@ -47,6 +47,6 @@ class ghg_crate_us_hmgTube : ghg_crate_base
     class items : items {
         ace_csw_m3CarryTripod = 1;
 		ace_csw_m3CarryTripodLow = 1;
-		ace_compat_rhs_usf3_m2_carry = 1;
+		ace_compat_sog_m2_carry = 1;
     };
 };
