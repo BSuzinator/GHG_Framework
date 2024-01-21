@@ -6,7 +6,7 @@ class squad_aar : squad_rifleman
     
     class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_blue_plaid";
+        classname = "CUP_I_B_PMC_Unit_31";
     };
 	
 	class Vest : Vest
@@ -16,10 +16,10 @@ class squad_aar : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "CUP_B_USPack_Coyote";
         // List of items
         ACE_SpareBarrel = 1;
-        rhsusf_200Rnd_556x45_soft_pouch = 3;
+        CUP_200Rnd_TE4_Red_Tracer_556x45_M249 = 3;
 		ACE_Canteen = 2;
     };
 	

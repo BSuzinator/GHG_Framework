@@ -35,7 +35,7 @@ class squad_rifleman : loadout_base
         // List of items
         UK3CB_BAF_556_30Rnd = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     

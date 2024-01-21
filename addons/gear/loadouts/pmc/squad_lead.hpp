@@ -7,7 +7,7 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_scarh_fde_cqc";
+        classname = "CUP_arifle_Mk17_CQC_FG";
 
         class Scopes : Scopes
         {
@@ -17,18 +17,23 @@ class squad_lead : squad_rifleman
     
 	class Weapon_2 : Weapon_2 
 	{ 
+
 		classname = "rhs_weap_m320";
-        ammo = "rhs_mag_M441_HE";
+        ammo = "CUP_1Rnd_HE_M203";
+
+		classname = "vn_m79_p";
+        ammo = "CUP_1Rnd_HE_M203";
+
 	};
 	
 	class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_orng_plaid";
+        classname = "CUP_I_B_PMC_Unit_43";
     };
 	
     class Vest : Vest
     {
-		classname = "rhsusf_plateframe_teamleader";
+		classname = "CUP_V_B_IOTV_OEFCP_SL_USArmy";
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
 		ACRE_PRC152 = 1;
@@ -36,15 +41,15 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "CUP_B_USPack_Coyote";
         // List of items
-        rhs_mag_M441_HE = 10;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 2;
-        rhs_mag_m662_red = 2;
-        rhs_mag_m713_Red = 2;
-        rhs_mag_m715_Green = 2;
-        rhs_mag_m714_White = 4;
+        CUP_1Rnd_HE_M203 = 10;
+        CUP_1Rnd_StarCluster_White_M203 = 5;
+        CUP_FlareGreen_M203 = 2;
+        CUP_FlareRed_M203 = 2;
+        CUP_1Rnd_SmokeRed_M203 = 2;
+        CUP_1Rnd_SmokeGreen_M203 = 2;
+        CUP_1Rnd_Smoke_M203 = 4;
     };
 	
 	class Binoculars : Binoculars
@@ -52,6 +57,6 @@ class squad_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-	headgear = "rhsusf_bowman_cap";
+	headgear = "CUP_H_PMC_Cap_Back_PRR_Tan";
 	facewear = "vn_b_bandana_a";
 };

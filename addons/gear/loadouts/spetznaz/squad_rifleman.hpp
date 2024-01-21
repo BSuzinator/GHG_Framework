@@ -37,6 +37,11 @@ class squad_rifleman : loadout_base
         ACE_EntrenchingTool = 1;
     };
     
+
     headgear[] = { "UK3CB_ABP_B_H_6b27m_ess_DES", "UK3CB_ADA_B_H_6b27m_ml_ESS_DPP_01", "UK3CB_AAF_O_H_6b27m_ESS_DIGI_BLK", "UK3CB_ANP_B_H_6b27m_ess_bala_BLK" };
     facewear = "rhsusf_oakley_goggles_clr", "rhsusf_oakley_goggles_clr", "rhsusf_oakley_goggles_clr", "G_B_Diving";
+
+    headgear[] = { "CUP_H_Ger_M92_Tan_GG", "UK3CB_ADA_B_H_6b27m_ml_ESS_DPP_01", "UK3CB_AAF_O_H_6b27m_ESS_DIGI_BLK", "UK3CB_ANP_B_H_6b27m_ess_bala_BLK" };
+    facewear = "CUP_G_ESS_BLK", "CUP_G_ESS_BLK", "CUP_G_ESS_BLK", "G_B_Diving";
+
 };

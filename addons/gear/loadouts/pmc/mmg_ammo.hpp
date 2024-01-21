@@ -5,16 +5,20 @@ class mmg_ammo : squad_rifleman
 {
     class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_grn_plaid";
+        classname = "CUP_I_B_PMC_Unit_2";
     };
     
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "CUP_B_USPack_Coyote";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
+
         rhsusf_100Rnd_762x51 = 5;
+
+        CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M = 5;
+
     };
 	
 	class Binoculars : Binoculars

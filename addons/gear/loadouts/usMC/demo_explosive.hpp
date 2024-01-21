@@ -14,7 +14,7 @@ class demo_explosive : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_spc_rifleman";
+        classname = "CUP_V_B_Eagle_SPC_Patrol";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -23,10 +23,10 @@ class demo_explosive : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "B_AssaultPack_cbr";
         // List of items
-        rhsusf_m112x4_mag = 1;
-        rhsusf_m112_mag = 3;
+        
+        DemoCharge_Remote_Mag = 3;
 		SatchelCharge_Remote_Mag = 1;
     };
 };

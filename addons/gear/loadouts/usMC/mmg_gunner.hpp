@@ -7,28 +7,28 @@ class mmg_gunner : squad_rifleman
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m240b_elcan";
-        ammo = "rhsusf_100Rnd_762x51";
-        bipod = "rhsusf_acc_saw_bipod";
+        classname = "CUP_lmg_M240";
+        ammo = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+        bipod = "";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_Elcan_SpecterDR_RMR_black";
         };
     };
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_spc_mg";
+        classname = "CUP_V_B_Eagle_SPC_MG";
         // List of items
-		rhs_mag_30Rnd_556x45_M855_Stanag = 0;
-		rhsusf_100Rnd_762x51 = 3;
+		CUP_30Rnd_556x45_Stanag = 0;
+		CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 2;
 		ACE_EntrenchingTool = 0;
     };
 	
 	class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "B_AssaultPack_cbr";
         // List of items
-        rhsusf_100Rnd_762x51 = 3;
+        CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
     };
 };

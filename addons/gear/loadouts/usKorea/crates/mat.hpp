@@ -7,7 +7,7 @@ class ghg_crate_macv_mat : ghg_crate_base
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
         vn_carbine_15_mag = 16;
-		rhs_mag_smaw_HEAA = 5;
+		CUP_SMAW_HEAA_M = 5;
         vn_m61_grenade_mag = 3;
         vn_m18_white_mag = 6;
         vn_22mm_m17_frag_mag = 10;

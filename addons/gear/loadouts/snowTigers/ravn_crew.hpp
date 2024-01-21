@@ -11,7 +11,7 @@ class ravn_crew : lynx_crew
 	class Vest : Vest
     {
         // List of items
-		rhs_mag_m67 = 0;
+		CUP_HandGrenade_M67 = 0;
     };
 	headgear = "IP_H_PilotHelmetHeli_O_Snow";
     facewear = "G_Balaclava_blk";

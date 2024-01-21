@@ -7,19 +7,19 @@ class plt_fac : squad_lead
     
 	class Weapon_2 : Weapon_2 // Rifle
     {
-        ammo = "rhs_mag_m713_Red";
+        ammo = "CUP_1Rnd_SmokeRed_M203";
     };
 	
     class Backpack : Backpack
     {
         ACRE_PRC117F = 1;
-		rhs_mag_M441_HE = 0;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 3;
-        rhs_mag_m662_red = 3;
-        rhs_mag_m713_Red = 4;
-        rhs_mag_m715_Green = 4;
-        rhs_mag_m714_White = 4;
+		CUP_1Rnd_HE_M203 = 0;
+        CUP_1Rnd_StarCluster_White_M203 = 5;
+        CUP_FlareGreen_M203 = 3;
+        CUP_FlareRed_M203 = 3;
+        CUP_1Rnd_SmokeRed_M203 = 4;
+        CUP_1Rnd_SmokeGreen_M203 = 4;
+        CUP_1Rnd_Smoke_M203 = 4;
     };
 
     class Binoculars : Binoculars

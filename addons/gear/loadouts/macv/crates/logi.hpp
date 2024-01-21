@@ -22,7 +22,7 @@ class ghg_crate_macv_logi : ghg_crate_base
 		vn_40mm_m715_smoke_g_mag = 2;
 		vn_40mm_m680_smoke_w_mag = 4;
 		ACE_EarPlugs = 8;
-		diw_armor_plates_main_plate = 8;
+		
 		B_Kitbag_cbr = 2;
     };
 };

@@ -5,20 +5,20 @@ class mat_ammo : squad_rifleman
 {
     class Uniform : Uniform
 	{
-		classname = "UK3CB_MEI_B_U_Pants_02";
+		classname = "CUP_U_C_Citizen_02";
 	};
 	
     class Backpack : Backpack
     {
         classname = "B_Carryall_desert_lxWS";
         // List of items
-        rhs_mag_smaw_HEAA = 2;
+        CUP_SMAW_HEAA_M = 2;
     };
 	
 	class Binoculars : Binoculars
     {
         classname = "Binocular";
     };
-	headgear = "rhssaf_bandana_smb";
+	headgear = "CUP_H_FR_BandanaGreen";
 	facewear = "G_Aviator";
 };

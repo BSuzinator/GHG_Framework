@@ -17,7 +17,7 @@ class lynx_crew : squad_rifleman
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
 

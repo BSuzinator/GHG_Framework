@@ -8,7 +8,7 @@ class squad_lead : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname[] = { "UK3CB_BAF_L85A2_UGL", "UK3CB_BAF_L85A2_UGL", "UK3CB_BAF_L85A2_UGL", "UK3CB_BAF_L85A2_UGL", "UK3CB_BAF_L85A2_UGL"};
-        grenade = "rhs_mag_M441_HE";
+        grenade = "CUP_1Rnd_HE_M203";
 
         class Scopes : Scopes
         {
@@ -28,13 +28,13 @@ class squad_lead : squad_rifleman
     {
         classname[] = { "UK3CB_BAF_B_Kitbag_MTP", "UK3CB_BAF_B_Kitbag_Arctic", "UK3CB_BAF_B_Kitbag_DPMW", "UK3CB_BAF_B_Kitbag_DPMT", "UK3CB_BAF_B_Kitbag_DDPM" };
         // List of items
-        rhs_mag_M441_HE = 10;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 2;
-        rhs_mag_m662_red = 2;
-        rhs_mag_m713_Red = 2;
-        rhs_mag_m715_Green = 2;
-        rhs_mag_m714_White = 4;
+        CUP_1Rnd_HE_M203 = 10;
+        CUP_1Rnd_StarCluster_White_M203 = 5;
+        CUP_FlareGreen_M203 = 2;
+        CUP_FlareRed_M203 = 2;
+        CUP_1Rnd_SmokeRed_M203 = 2;
+        CUP_1Rnd_SmokeGreen_M203 = 2;
+        CUP_1Rnd_Smoke_M203 = 4;
     };
 	
 	class Binoculars : Binoculars

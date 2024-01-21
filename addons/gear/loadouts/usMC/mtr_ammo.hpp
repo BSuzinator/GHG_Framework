@@ -13,7 +13,7 @@ class mtr_ammo : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-		rhs_mag_30Rnd_556x45_M855_Stanag = 6;
+		CUP_30Rnd_556x45_Stanag = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;

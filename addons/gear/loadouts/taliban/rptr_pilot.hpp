@@ -24,9 +24,9 @@ class rptr_pilot : squad_rifleman
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m1911a1";
+		classname = "CUP_hgun_Colt1911";
         laser = "";
-        ammo = "rhsusf_mag_7x45acp_MHP";
+        ammo = "CUP_7Rnd_45ACP_1911";
 		class Scopes {}; 
 	};
 	
@@ -40,10 +40,10 @@ class rptr_pilot : squad_rifleman
         classname = "V_Rangemaster_belt";
         // List of items
         rhs_30Rnd_762x39mm = 0;
-        rhs_mag_m67 = 0;
+        CUP_HandGrenade_M67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
-		rhsusf_mag_7x45acp_MHP = 3;
+		CUP_7Rnd_45ACP_1911 = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

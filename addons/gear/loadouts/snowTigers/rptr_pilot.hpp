@@ -41,7 +41,7 @@ class rptr_pilot : squad_rifleman
         classname = "V_Rangemaster_belt";
         // List of item overrides
         30Rnd_65x39_caseless_green = 0;
-        rhs_mag_m67 = 0;
+        CUP_HandGrenade_M67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
         // List of items

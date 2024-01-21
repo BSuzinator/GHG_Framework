@@ -7,8 +7,13 @@ class mmg_gunner : squad_rifleman
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
+
         classname = "rhs_weap_m240B";
         ammo = "rhsusf_100Rnd_762x51";
+
+        classname = "CUP_lmg_M240_B";
+        ammo = "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M";
+
         bipod = "";
 		class Scopes : Scopes
         {
@@ -18,23 +23,32 @@ class mmg_gunner : squad_rifleman
 	
 	class Uniform : Uniform
     {
-        classname = "LOP_U_PMC_Fatigue_02";
+        classname = "CUP_I_B_PMC_Unit_39";
     };
 	
 	class Vest : Vest
     {
-		classname = "rhsusf_plateframe_machinegunner";
+		classname = "CUP_V_B_IOTV_OEFCP_MG_USArmy";
         // List of items
-		rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
+
+		CUP_20Rnd_762x51_B_SCAR = 0;
 		rhsusf_100Rnd_762x51 = 3;
+
+		CUP_20Rnd_762x51_B_SCAR = 0;
+		CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M = 3;
+
 		ACE_EntrenchingTool = 0;
     };
 	
 	class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "CUP_B_USPack_Coyote";
         // List of items
+
         rhsusf_100Rnd_762x51 = 3;
+
+        CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M = 3;
+
     };
 	headgear = "vn_b_bandana_01";
 	facewear = "G_Headset_lxWS";

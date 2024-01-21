@@ -50,6 +50,11 @@ class rptr_pilot : squad_rifleman
 		ACE_Chemlight_HiRed = 1;
     };
     
+
     headgear = "RHS_jetpilot_usaf";
     facewear = "rhsusf_oakley_goggles_clr";
+
+    headgear = "H_PilotHelmetFighter_B";
+    facewear = "CUP_G_ESS_BLK";
+
 };

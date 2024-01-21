@@ -20,9 +20,8 @@ class demo_defusal : squad_rifleman
     
 	class Backpack : Backpack
     {
-        classname = "rhsusf_falconii_coy";
+        classname = "B_Carryall_cbr";
         // List of items
     };
 	
-    headgear = "lxWS_H_PASGT_goggles_white_F";
 };

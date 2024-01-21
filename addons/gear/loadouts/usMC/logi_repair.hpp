@@ -7,7 +7,7 @@ class logi_repair : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_spc_patchless_radio";
+        classname = "CUP_V_B_Eagle_SPC_Patrol";
         // List of items
 		ACE_microDAGR = 1;
 		ACRE_PRC152 = 1;
@@ -15,7 +15,7 @@ class logi_repair : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "B_AssaultPack_cbr";
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;

@@ -7,7 +7,7 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "UK3CB_BAF_L115A3", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
+        classname[] = { "CUP_srifle_AWM_wdl", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
 		muzzle = "";
 		bipod = "uk3cb_underbarrel_acc_bipod";
         laser = "";

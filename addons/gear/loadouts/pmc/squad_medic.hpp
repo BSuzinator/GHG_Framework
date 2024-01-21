@@ -5,22 +5,21 @@ class squad_medic : squad_rifleman
 {
     class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_red_plaid";
+        classname = "CUP_I_B_PMC_Unit_40";
     };
 
     class Vest : Vest
     {
-		classname = "rhsusf_plateframe_medic";
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
         rhs_mag_m18_red = 2;
     };
     
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "CUP_B_USPack_Coyote";
         // List of items
 		
         #include "..\medic_bag.hpp"

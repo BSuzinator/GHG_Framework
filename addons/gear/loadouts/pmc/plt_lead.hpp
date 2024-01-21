@@ -15,11 +15,11 @@ class plt_lead : squad_rifleman
     };
     class Uniform : Uniform
 	{
-		classname = "LOP_U_PMC_Fatigue_01";
+		classname = "CUP_I_B_PMC_Unit_32";
 	};
     class Vest : Vest
     {
-		classname = "rhsusf_plateframe_teamleader";
+		classname = "CUP_V_B_IOTV_OEFCP_SL_USArmy";
         // List of items
         ACRE_PRC152 = 1;
 		ACE_MapTools = 1;
@@ -36,6 +36,6 @@ class plt_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear = "UK3CB_H_Safari_Hat_Brown";
+    headgear = "CUP_H_USMC_BOONIE_PRR_DES";
 	facewear = "G_Headset_lxWS";
 };

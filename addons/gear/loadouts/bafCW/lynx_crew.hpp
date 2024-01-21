@@ -24,7 +24,7 @@ class lynx_crew : squad_rifleman
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
 	headgear[] = { "UK3CB_BAF_H_Mk6_DPMW_A", "UK3CB_BAF_H_Mk6_DPMW_B", "UK3CB_BAF_H_Mk6_DDPM_A", "UK3CB_BAF_H_Mk6_DDPM_B", "UK3CB_BAF_H_Mk7_Win_ESS_A", "UK3CB_BAF_H_Mk7_Win_ESS_A" };

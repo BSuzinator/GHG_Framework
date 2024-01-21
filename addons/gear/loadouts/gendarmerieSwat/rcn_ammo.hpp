@@ -17,7 +17,7 @@ class rcn_ammo : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         UK3CB_BAF_338_5Rnd = 10;
 		GHG_spikeStripItem = 0;
     };

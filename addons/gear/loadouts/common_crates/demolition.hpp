@@ -11,7 +11,7 @@ class ghg_crate_demo : ghg_crate_base
         SatchelCharge_Remote_Mag = 2;
         DemoCharge_Remote_Mag = 4;
         rhsusf_m112x4_mag = 4;
-        rhsusf_m112_mag = 8;
+        DemoCharge_Remote_Mag = 8;
         B_Kitbag_cbr = 2;
     };
 };

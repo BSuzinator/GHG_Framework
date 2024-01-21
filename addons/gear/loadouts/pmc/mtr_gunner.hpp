@@ -12,13 +12,13 @@ class mtr_gunner : squad_rifleman
 	
 	class Uniform : Uniform
 	{
-		classname = "UK3CB_TKP_I_U_CombatUniform_BLK";
+		classname = "CUP_U_O_TK_MixedCamo";
 	};
 	
 	class Vest : Vest
     {
         // List of items
-		rhs_mag_20rnd_scar_762x51_m80_ball_bk = 6;
+		CUP_20Rnd_762x51_B_SCAR = 6;
 		ACE_EntrenchingTool = 0;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
@@ -33,6 +33,6 @@ class mtr_gunner : squad_rifleman
 		ACE_1Rnd_82mm_Mo_Smoke = 1;
 		ACE_1Rnd_82mm_Mo_Illum = 1;
     };
-	headgear = "UK3CB_TKA_O_H_6b7_1m_bala1_TAN";
-	facewear = "rhsusf_oakley_goggles_blk";
+	headgear = "CUP_H_Ger_M92_Tan_GG_CB";
+	facewear = "CUP_G_ESS_KHK_Scarf_Face_Tan";
 };

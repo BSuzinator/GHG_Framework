@@ -7,26 +7,26 @@ class squad_ar : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m249_pip";
-        ammo = "rhsusf_100Rnd_556x45_soft_pouch";
-        bipod = "rhsusf_acc_saw_bipod";
+        classname = "CUP_lmg_M249";
+        ammo = "CUP_100Rnd_TE4_Red_Tracer_556x45_M249"
+        bipod = "";
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_spc_mg";
+        classname = "CUP_V_B_Eagle_SPC_AR";
         // Inherited item overrides
-        rhs_mag_30Rnd_556x45_M855_Stanag = 0;
+        CUP_30Rnd_556x45_Stanag = 0;
         SmokeShell = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         // List of items
-        rhsusf_100Rnd_556x45_soft_pouch = 3;
+        CUP_100Rnd_TE4_Red_Tracer_556x45_M249 = 2;
     };
     
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "B_AssaultPack_cbr";
         // List of items
-        rhsusf_100Rnd_556x45_soft_pouch = 2;
+        CUP_100Rnd_TE4_Red_Tracer_556x45_M249 = 3;
     };
 };

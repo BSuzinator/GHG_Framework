@@ -25,9 +25,9 @@ class lynx_crew : squad_rifleman
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
 	headgear[] = { "UK3CB_BAF_H_CrewHelmet_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_CrewHelmet_DPMW_A", "UK3CB_BAF_H_CrewHelmet_DPMT_A", "UK3CB_BAF_H_CrewHelmet_DDPM_A" };
-    facewear[] = { "rhsusf_shemagh2_gogg_od", "rhsusf_shemagh2_gogg_white", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+    facewear[] = { "CUP_G_ESS_KHK_Scarf_Face_Tan", "rhsusf_shemagh2_gogg_white", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
 };

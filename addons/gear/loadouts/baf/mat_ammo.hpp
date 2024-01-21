@@ -9,7 +9,7 @@ class mat_ammo : squad_rifleman
     {
         classname[] = { "UK3CB_BAF_B_Carryall_MTP", "UK3CB_BAF_B_Carryall_Arctic", "UK3CB_BAF_B_Carryall_DPMW", "UK3CB_BAF_B_Carryall_DPMT", "UK3CB_BAF_B_Carryall_DDPM" };
         // List of items
-        rhs_mag_smaw_HEAA = 2;
+        CUP_SMAW_HEAA_M = 2;
     };
 	
 	class Binoculars : Binoculars

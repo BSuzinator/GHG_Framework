@@ -13,7 +13,7 @@ class demo_defusal : squad_rifleman
 	
 	class Uniform : Uniform
     {
-        classname = "LOP_U_UVF_Fatigue_COY_OSW";
+        classname = "CUP_I_B_PMC_Unit_39";
     };
 	
 	class Vest : Vest
@@ -25,9 +25,9 @@ class demo_defusal : squad_rifleman
     
 	class Backpack : Backpack
     {
-        classname = "UK3CB_CW_US_B_LATE_B_RIF_04";
+        classname = "CUP_B_USPack_Black";
         // List of items
     };
 	facewear = "vn_b_bandana_a";
-    headgear = "rhs_altyn_visordown";
+    headgear = "CUP_H_RUS_Altyn_Shield_Down_khaki";
 };

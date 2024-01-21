@@ -40,7 +40,7 @@ class rptr_pilot : squad_rifle
         classname = "UK3CB_BAF_V_Pilot_DPMW";
         // List of items
         UK3CB_BAF_762_20Rnd = 2;
-        rhs_mag_m67 = 0;
+        CUP_HandGrenade_M67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
 		UK3CB_BAF_9_13Rnd = 3;
@@ -50,6 +50,11 @@ class rptr_pilot : squad_rifle
 		ACE_Chemlight_HiRed = 1;
     };
     
+
     headgear = "RHS_jetpilot_usaf";
     facewear = "rhsusf_oakley_goggles_clr";
+
+    headgear = "H_PilotHelmetFighter_B";
+    facewear = "CUP_G_ESS_BLK";
+
 };

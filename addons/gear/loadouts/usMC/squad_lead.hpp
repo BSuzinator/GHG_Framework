@@ -7,18 +7,18 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m16a4_carryhandle_M203";
-        grenade = "rhs_mag_M441_HE";
+        classname = "CUP_arifle_M16A4_GL";
+        grenade = "CUP_1Rnd_HE_M203";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_spc_squadleader";
+        classname = "CUP_V_B_Eagle_SPC_SL";
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
 		ACRE_PRC152 = 1;
@@ -26,15 +26,15 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "rhsusf_falconii_coy";
+        classname = "B_Carryall_cbr";
         // List of items
-        rhs_mag_M441_HE = 10;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 2;
-        rhs_mag_m662_red = 2;
-        rhs_mag_m713_Red = 2;
-        rhs_mag_m715_Green = 2;
-        rhs_mag_m714_White = 4;
+        CUP_1Rnd_HE_M203 = 10;
+        CUP_1Rnd_StarCluster_White_M203 = 5;
+        CUP_FlareGreen_M203 = 2;
+        CUP_FlareRed_M203 = 2;
+        CUP_1Rnd_SmokeRed_M203 = 2;
+        CUP_1Rnd_SmokeGreen_M203 = 2;
+        CUP_1Rnd_Smoke_M203 = 4;
     };
 	
 	class Binoculars : Binoculars
@@ -42,5 +42,4 @@ class squad_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_lwh_helmet_marpatd_headset", "rhsusf_lwh_helmet_marpatwd_headset" };
 };

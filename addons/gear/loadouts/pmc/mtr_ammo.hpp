@@ -19,7 +19,7 @@ class mtr_ammo : squad_rifleman
     {
 		classname = "V_EOD_coyote_F";
         // List of items
-		rhs_mag_20rnd_scar_762x51_m80_ball_bk = 6;
+		CUP_20Rnd_762x51_B_SCAR = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;
@@ -38,6 +38,6 @@ class mtr_ammo : squad_rifleman
     {
         classname = "Binocular";
     };
-	headgear = "UK3CB_ABP_B_H_6b27m_ess_DES";
-	facewear = "UK3CB_G_Balaclava";
+	headgear = "CUP_H_Ger_M92_Tan_GG";
+	facewear = "G_Balaclava_blk_lxWS";
 };

@@ -12,11 +12,11 @@ class squad_aar : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "B_Carryall_cbr";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhsusf_100Rnd_556x45_soft_pouch = 6;
+        CUP_100Rnd_TE4_Red_Tracer_556x45_M249 = 6;
     };
 	
 	class Binoculars : Binoculars

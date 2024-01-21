@@ -26,10 +26,10 @@ class squad_marksman : squad_rifleman
     class Vest : Vest
     {
         // List of items
-        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 0;
+        CUP_20Rnd_762x51_B_SCAR = 0;
         20Rnd_762x51_slr_lxWS = 5;
     };
     
-	facewear = "rhsusf_shemagh2_gogg_od";
+	facewear = "CUP_G_ESS_KHK_Scarf_Face_Tan";
 	headgear = "H_Watchcap_blk";
 };

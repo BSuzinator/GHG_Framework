@@ -21,8 +21,8 @@ class rcn_gunner : loadout_base
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m1911a1";
-        ammo = "rhsusf_mag_7x45acp_MHP";
+		classname = "CUP_hgun_Colt1911";
+        ammo = "CUP_7Rnd_45ACP_1911";
 		class Scopes {}; 
 	};
 	
@@ -36,7 +36,7 @@ class rcn_gunner : loadout_base
     {
         // List of items
         rhs_10Rnd_762x54mmR_7N1 = 4;
-		rhsusf_mag_7x45acp_MHP = 2;
+		CUP_7Rnd_45ACP_1911 = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;
     };

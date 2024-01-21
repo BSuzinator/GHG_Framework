@@ -7,36 +7,35 @@ class squad_rifleman : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_scarh_fde_cqc";
-        laser = "rhsusf_acc_anpeq15";
-        ammo = "rhs_mag_20rnd_scar_762x51_m80_ball_bk";
-		bipod = "rhsusf_acc_kac_grip";
+        classname = "CUP_arifle_Mk17_CQC_FG";
+        laser = "CUP_acc_ANPEQ_15_Black";
+        ammo = "CUP_20Rnd_762x51_B_SCAR";
+		bipod = "";
 		
 		class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt = "rhsusf_acc_eotech_552";
-            //holo_alt_camo[] = { "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd" };
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt = "CUP_optic_Eotech553_Black";
         };
         
     };
     
     class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tacky";
+        classname = "CUP_V_B_BAF_DDPM_Osprey_Mk3_Rifleman";
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_plateframe_rifleman";
+        classname = "CUP_V_B_IOTV_OEFCP_Rifleman_USArmy";
         // List of items
-        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 8;
+        CUP_20Rnd_762x51_B_SCAR = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     

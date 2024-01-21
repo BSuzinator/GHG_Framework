@@ -21,6 +21,6 @@ class ghg_crate_cbrn_squad : ghg_crate_base
 		UGL_FlareGreen_F = 2;
 		UGL_FlareWhite_F = 4;
 		ACE_EarPlugs = 8;
-		diw_armor_plates_main_plate = 8;
+		
     };
 };

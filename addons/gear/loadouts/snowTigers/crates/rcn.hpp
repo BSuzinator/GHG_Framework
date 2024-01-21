@@ -16,6 +16,6 @@ class ghg_crate_snowTigers_rcn : ghg_crate_base
 		1Rnd_SmokeGreen_Grenade_shell = 2;
 		1Rnd_SmokeRed_Grenade_shell = 2;
 		ACE_EarPlugs = 3;
-		diw_armor_plates_main_plate = 5;
+		
     };
 };

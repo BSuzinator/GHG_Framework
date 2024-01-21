@@ -8,8 +8,8 @@ class ghg_crate_taliban_squad : ghg_crate_base
         ACE_packingBandage = 12;
         rhs_30Rnd_762x39mm = 30;
 		vn_sks_t_mag = 4;
-        rhs_mag_m67 = 8;
-        rhs_mag_an_m8hc = 8;
+        CUP_HandGrenade_M67 = 8;
+        SmokeShell = 8;
         rhs_75Rnd_762x39mm = 5;
         rhs_weap_M80 = 2;
         rhs_m80_mag = 2;
@@ -21,6 +21,6 @@ class ghg_crate_taliban_squad : ghg_crate_base
 		rhs_GRD40_Green = 2;
 		rhs_GRD40 = 4;
 		ACE_EarPlugs = 8;
-		diw_armor_plates_main_plate = 8;
+		
     };
 };

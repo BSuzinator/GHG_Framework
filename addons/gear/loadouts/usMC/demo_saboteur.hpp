@@ -5,7 +5,7 @@ class demo_saboteur : squad_rifleman
 {
 	class Vest : Vest
     {
-        classname = "rhsusf_spc_rifleman";
+        classname = "CUP_V_B_Eagle_SPC_Patrol";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -14,11 +14,11 @@ class demo_saboteur : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhsusf_assault_eagleaiii_coy";
+        classname = "B_Carryall_cbr";
         // List of items
         APERSMine_Range_Mag = 2;
-        rhs_mine_M3_tripwire_mag = 1;
-		rhs_mine_m3_pressure_mag = 1;
+        APERSTripMine_Wire_Mag = 1;
+		CUP_Mine_M = 1;
 		IEDLandSmall_Remote_Mag = 1;
 		IEDUrbanSmall_Remote_Mag = 1;
 		ACE_FlareTripMine_Mag = 1;

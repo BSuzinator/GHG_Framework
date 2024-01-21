@@ -2,11 +2,16 @@
 	Loadout for MAA Ammo Bearer (usMC)
 ======================================*/
 class maa_ammo : mat_ammo
+
+	class Weapon_3 : Weapon_3 // Launcher
+    {
+        classname = "CUP_launch_FIM92Stinger";
+    };
 {
 	class Backpack : Backpack
     {
         // List of items
-		rhs_mag_smaw_HEAA = 0;
-		rhs_fim92_mag = 2;
+		CUP_SMAW_HEAA_M = 0;
+		CUP_Stinger_M = 2;
     };
 };

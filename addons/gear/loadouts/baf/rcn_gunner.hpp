@@ -7,11 +7,19 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
+
         classname[] = { "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3_BL", "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3_DE" };
 		muzzle = "uk3cb_baf_silencer_l115a3";
 		bipod = "uk3cb_underbarrel_acc_bipod";
         laser = "rhsusf_acc_anpeq15_bk";
         ammo = "UK3CB_BAF_338_5Rnd";
+
+        classname[] = { "CUP_srifle_AWM_wdl", "CUP_srifle_AWM_blk", "CUP_srifle_AWM_wdl", "CUP_srifle_AWM_wdl", "UK3CB_BAF_L115A3_DE" };
+		muzzle = "CUP_muzzle_snds_AWM";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
+        laser = "CUP_acc_ANPEQ_15_Black";
+        ammo = "CUP_5Rnd_86x70_L115A1";
+
         
         class Scopes : Scopes
         {

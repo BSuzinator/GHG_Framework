@@ -20,14 +20,19 @@ class lynx_crew : squad_rifleman
     };
 	class Vest : Vest
     {
-        classname = "rhsusf_plateframe_light";
-        rhs_mag_20rnd_scar_762x51_m80_ball_bk = 4;
+        classname = "CUP_V_PMC_CIRAS_Khaki_Veh";
+        CUP_20Rnd_762x51_B_SCAR = 4;
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
-        rhs_mag_m67 = 1;
+        CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
+
 	headgear = "rhsusf_cvc_helmet";
     facewear = "rhsusf_shemagh2_tan";
+
+	headgear = "CUP_H_CVC";
+    facewear = "CUP_FR_NeckScarf2";
+
 };

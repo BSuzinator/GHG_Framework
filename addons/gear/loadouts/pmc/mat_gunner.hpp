@@ -6,13 +6,13 @@ class mat_gunner : squad_rifleman
     
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_smaw_green";
-        ammo = "rhs_mag_smaw_HEAA";
+        classname = "CUP_launch_Mk153Mod0";
+        ammo = "CUP_SMAW_HEAA_M";
     };
 	
 	class Uniform : Uniform
 	{
-		classname = "UK3CB_LNM_B_U_Shirt_Pants_14";
+		classname = "CUP_I_B_PMC_Unit_39";
 	};
 	
 	class Vest : Vest
@@ -24,7 +24,7 @@ class mat_gunner : squad_rifleman
     {
         classname = "B_Carryall_desert_lxWS";
         // List of items
-        rhs_mag_smaw_HEAA = 2;
+        CUP_SMAW_HEAA_M = 2;
     };
 	
 	class Binoculars : Binoculars

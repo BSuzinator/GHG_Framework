@@ -13,7 +13,7 @@ class plt_interp : squad_rifleman
 	};
 	class Backpack : Backpack
 	{
-		classname = "rhsusf_assault_eagleaiii_coy";
+		classname = "CUP_B_USPack_Coyote";
 	};
 	headgear = "UK3CB_TKP_O_H_Patrolcap_Blk";
     facewear = "G_Headset_lxWS";

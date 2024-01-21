@@ -17,8 +17,8 @@ class demo_saboteur : squad_rifleman
         classname = "rhssaf_kitbag_md2camo";
         // List of items
         APERSMine_Range_Mag = 2;
-        rhs_mine_M3_tripwire_mag = 1;
-		rhs_mine_m3_pressure_mag = 1;
+        APERSTripMine_Wire_Mag = 1;
+		APERSBoundingMine_Range_Mag = 1;
 		IEDLandSmall_Remote_Mag = 1;
 		IEDUrbanSmall_Remote_Mag = 1;
 		ACE_FlareTripMine_Mag = 1;

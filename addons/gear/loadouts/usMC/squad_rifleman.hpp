@@ -7,37 +7,37 @@ class squad_rifleman : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m16a4_carryhandle";
-        laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhs_mag_30Rnd_556x45_M855_Stanag";
+        classname = "CUP_arifle_M16A4_Base";
+        laser = "CUP_acc_ANPEQ_15_Black";
+        ammo = "CUP_30Rnd_556x45_Stanag";
         
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
 			alt_holo = "";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt = "rhsusf_acc_eotech_552";
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt = "CUP_optic_Eotech553_Black";
         };
     };
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_FROG01_d", "rhs_uniform_FROG01_wd" };
+        classname[] = { "CUP_U_B_USMC_FROG1_DMARPAT", "CUP_U_B_USMC_FROG1_WMARPAT" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_spc_rifleman";
+        classname = "CUP_V_B_Eagle_SPC_Patrol";
         // List of items
-        rhs_mag_30Rnd_556x45_M855_Stanag = 8;
+        CUP_30Rnd_556x45_Stanag = 8;
         SmokeShell = 2;
-        rhs_mag_m67 = 2;
+        CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
     };
     
-    headgear[] = { "rhsusf_lwh_helmet_marpatd", "rhsusf_lwh_helmet_marpatwd" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear[] = { "CUP_H_LWHv2_MARPAT_des", "CUP_H_LWHv2_MARPAT" };
+	facewear[] = {"CUP_G_ESS_KHK_Scarf_Tan", "CUP_G_ESS_BLK_Scarf_Grn"};
 };

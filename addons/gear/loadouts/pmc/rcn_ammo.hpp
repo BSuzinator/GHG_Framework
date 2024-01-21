@@ -6,12 +6,12 @@ class rcn_ammo : squad_rifleman
     
 	class Uniform : Uniform
     {
-        classname = "lop_u_pmc_tac_prp_palm";
+        classname = "CUP_I_B_PMC_Unit_11";
     };
 	
 	class Vest : Vest
     {
-		rhs_mag_20rnd_scar_762x51_m80_ball_bk = 6;
+		CUP_20Rnd_762x51_B_SCAR = 6;
 		ACE_MapTools = 1;
 		ACE_Kestrel4500 = 1;
 		ACE_RangeCard = 1;
@@ -22,7 +22,7 @@ class rcn_ammo : squad_rifleman
 	class Backpack : Backpack
     {
         classname = "B_LegStrapBag_coyote_F";
-        uk3cb_baf_338_5rnd = 10;
+        CUP_5Rnd_86x70_L115A1 = 10;
     };
 	
 	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
