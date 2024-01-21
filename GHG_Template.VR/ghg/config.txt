@@ -79,30 +79,35 @@ disableRespawn=0;
 
 //Set Player Factions
 //List of acceptable factions: 
-// bokoHaram
-// macv
-// pmc
-// russian
-// serbian
-// spetznaz
-// taliban
-// usArmy
-// usArmySF
-// usMC
-// swat
+//baf
+//bokoHaram
+//gendarmerieSwat
+//macv
+//pmc
+//russian
+//serbian
+//spetznaz
+//taliban
+//usArmy
+//usArmySF
+//usKorea
+//usMC
 bluFaction = "usArmy";
 opfFaction = "usMC";
 indFaction = "macv";
 
 //Set Player Camo Pattern
 //List of acceptable Camos:
-//macv: olive, leopard
-//russian: emr, emrd, flora
-//serbian: m81
-//spetznaz: desert, woodland, snow, diving
-//usArmy: OEFCP, OCP, UCP, UCPD, ERDL
-//usArmySF: black, desert, woodland
-//usMC: mpD, mpWD
+//baf - mtp, arctic, tropical, woodland, desert
+//bokoHaram - desert
+//macv - olive, leopard
+//serbian - m81
+//spetznaz - desert, woodland, snow, diving
+//taliban - desert
+//usArmy - erdl, ocp, oefcp, ucp, ucpd
+//usArmySF - woodland, black, desert
+//usKorea - olive, leopard
+//usMC - mpD, mpWD
 bluCamo = "ERDL";
 opfCamo = "mpD";
 indCamo = "flora";
