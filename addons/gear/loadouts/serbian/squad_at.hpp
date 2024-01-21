@@ -7,8 +7,8 @@ class squad_at : squad_rifleman
 
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_M80";
-        ammo = "rhs_m80_mag";
+        classname = "CUP_launch_M72A6";
+        ammo = "CUP_M72A6_M";
     };
 	class Vest : Vest
     {

@@ -6,6 +6,6 @@ class soldier_unarmed_f : soldier_lite_f
     
 	class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Fieldpack_PKM";
+        classname = "B_FieldPack_cbr";
     };
 };

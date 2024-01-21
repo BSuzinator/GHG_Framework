@@ -13,7 +13,7 @@ class mtr_ammo : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-		rhssaf_30rnd_556x45_EPR_G36 = 6;
+		CUP_30Rnd_556x45_G36 = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;
@@ -21,7 +21,7 @@ class mtr_ammo : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhssaf_alice_md2camo" };
+        classname[] = { "CUP_B_USMC_MOLLE_WDL" };
         // List of items
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;

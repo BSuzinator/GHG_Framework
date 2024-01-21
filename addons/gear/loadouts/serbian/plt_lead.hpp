@@ -10,13 +10,13 @@ class plt_lead : squad_rifleman
         
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     
     class Vest : Vest
     {
-		classname = "rhssaf_vest_md99_woodland_rifleman_radio";
+		classname = "CUP_V_B_RRV_TL";
         // List of items
         ACRE_PRC152 = 1;
 		ACE_MapTools = 1;
@@ -28,5 +28,5 @@ class plt_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhssaf_helmet_m97_oakleaf" };
+    headgear[] = { "CUP_H_CZ_Helmet04" };
 };

@@ -10,6 +10,6 @@ class ravn_crew : lynx_crew
         // List of items
 		CUP_HandGrenade_M67 = 0;
     };
-	headgear = "rhsusf_hgu56p_visor_mask_black";
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+	headgear = "H_CrewHelmetHeli_B";
+    facewear[] = { "CUP_G_ESS_RGR", "CUP_G_ESS_RGR", "CUP_G_ESS_KHK_Scarf_Tan" };
 };

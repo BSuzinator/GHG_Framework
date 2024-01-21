@@ -7,25 +7,25 @@ class squad_marksman : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m14ebrri";
-        laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhsusf_20Rnd_762x51_m80_Mag";
-		bipod = "rhsusf_acc_harris_bipod";
+        classname = "CUP_srifle_M14_DMR";
+        laser = "CUP_acc_ANPEQ_15_Flashlight_Black_L";
+        ammo = "CUP_20Rnd_762x51_DMR";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
 		muzzle[] = {"rhsusf_acc_aac_m14dcqd_silencer","rhsusf_acc_aac_m14dcqd_silencer_wd","rhsusf_acc_aac_m14dcqd_silencer_d"};
         
         class Scopes : Scopes
         {
-            magnified = "rhsusf_acc_acog";
+            magnified = "CUP_optic_ACOG_TA01B_Black";
         };
     };
     
     class Vest : Vest
     {
         // List of items
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 0;
-        rhsusf_20Rnd_762x51_m80_Mag = 5;
+        CUP_30Rnd_556x45_Stanag = 0;
+        CUP_20Rnd_762x51_DMR = 5;
     };
     
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+    headgear[] = { "CUP_H_USArmy_MICH_GCOVERED_Headset_M81", "CUP_H_OpsCore_Black", "CUP_H_USArmy_MICH_GCOVERED_Headset_M81" };
+    facewear[] = { "CUP_G_ESS_RGR", "CUP_G_ESS_RGR", "CUP_G_ESS_KHK_Scarf_Tan" };
 };

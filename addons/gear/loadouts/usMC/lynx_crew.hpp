@@ -28,5 +28,5 @@ class lynx_crew : squad_rifleman
         CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
-	headgear[] = {"CUP_H_CVCH_des", "CUP_H_CVC"};
+	headgear[] = {"CUP_H_USArmy_HelmetACH_UCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP"};
 };

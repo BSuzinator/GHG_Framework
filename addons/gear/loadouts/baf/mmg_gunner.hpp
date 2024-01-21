@@ -12,15 +12,15 @@ class mmg_gunner : squad_rifleman
         bipod = "rhsusf_acc_saw_bipod";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_ElcanM145";
         };
     };
 	
 	class Vest : Vest
     {
-        //classname[] = { "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ocp_SAW", "rhsusf_iotv_ucp_SAW", "rhsusf_iotv_ucp_SAW" };
+        //classname[] = { "CUP_V_B_IOTV_OCP_MG_USArmy", "CUP_V_B_IOTV_OCP_MG_USArmy", "CUP_V_B_IOTV_OCP_MG_USArmy", "CUP_V_B_IOTV_UCP_MG_USArmy", "CUP_V_B_IOTV_UCP_MG_USArmy" };
         // List of items
-		UK3CB_BAF_556_30Rnd = 0;
+		CUP_30Rnd_556x45_Stanag_L85 = 0;
 		UK3CB_BAF_762_100Rnd = 3;
 		ACE_EntrenchingTool = 0;
     };

@@ -27,5 +27,5 @@ class plt_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear[] = { "LOP_H_Turban_mask" };
+    headgear[] = { "CUP_H_TKI_Lungee_01" };
 };

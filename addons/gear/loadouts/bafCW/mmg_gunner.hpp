@@ -20,7 +20,7 @@ class mmg_gunner : squad_rifleman
     {
         classname[] = { "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM", "UK3CB_BAF_V_PLCE_Webbing_DDPM", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter", "UK3CB_BAF_V_PLCE_Webbing_Winter" };
         // List of items
-		rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+		CUP_30Rnd_556x45_Stanag = 0;
 		UK3CB_BAF_762_200Rnd = 3;
 		ACE_EntrenchingTool = 0;
     };

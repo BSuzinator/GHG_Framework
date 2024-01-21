@@ -12,7 +12,7 @@ class squad_aar : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname = "rhs_tortila_khaki", "rhs_tortila_olive", "rhs_tortila_black", "rhs_tortila_black";
+        classname = "B_Carryall_khk", "B_Carryall_oli", "B_Carryall_blk", "B_Carryall_blk";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;

@@ -11,7 +11,7 @@ class ews_comms : loadout_base_Swat
         ammo = "UK3CB_ACR_30rnd_556x45";
         acog = "rhsusf_acc_compm4";
 		laser = "rhsusf_acc_anpeq15side_bk";
-		muzzle = "rhsusf_acc_nt4_black";
+		muzzle = "CUP_muzzle_snds_SCAR_L";
         class Scopes : Scopes
 		{
 			holo = "rhsusf_acc_eotech_xps3";

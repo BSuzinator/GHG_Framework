@@ -12,11 +12,11 @@ class squad_aar : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname[] = { "B_FieldPack_cbr" };
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhs_75Rnd_762x39mm = 6;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 6;
     };
 	
 	class Binoculars : Binoculars

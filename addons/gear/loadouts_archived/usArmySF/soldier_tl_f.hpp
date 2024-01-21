@@ -7,25 +7,25 @@ class soldier_tl_f : soldier_f
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_blockII_M203_wd", "rhs_weap_m4a1_blockII_M203", "rhs_weap_m4a1_blockII_M203_d" };
+        classname[] = { "CUP_arifle_M4A1_SOMMOD_Grip_black_M203_wd", "CUP_arifle_M4A1_SOMMOD_Grip_black_M203", "CUP_arifle_M4A1_SOMMOD_Grip_black_M203_d" };
         grenade = "rhs_mag_M441_HE";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_su230_mrds";
+            acog = "CUP_optic_Elcan_SpecterDR_RMR_black";
         };
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_mbav_grenadier";
+        classname = "CUP_V_B_Interceptor_Grenadier_M81";
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
     };
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii", "rhsusf_falconii_coy" };
+        classname[] = { "CUP_B_Kombat_Olive", "CUP_B_Kombat_Olive", "CUP_B_Kombat_Olive" };
         // List of items
         rhs_mag_M441_HE = 10;
         rhs_mag_M585_white = 5;
@@ -41,5 +41,5 @@ class soldier_tl_f : soldier_f
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt_headset", "rhsusf_mich_helmet_marpatwd_norotos_arc_headset", "rhsusf_mich_bare_norotos_arc_alt_tan_headset" };
+    headgear[] = { "CUP_H_USArmy_MICH_GCOVERED_Headset_M81_headset", "CUP_H_OpsCore_Black_headset", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des_headset" };
 };

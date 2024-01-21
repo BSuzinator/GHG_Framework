@@ -31,6 +31,6 @@ class crew_f : soldier_f
         rhs_mag_m67 = 1;
         ACE_EntrenchingTool = 0;
     };
-	headgear[] = { "rhsusf_cvc_green_helmet" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn" };
+	headgear[] = { "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP" };
+    facewear[] = { "CUP_G_ESS_RGR" };
 };

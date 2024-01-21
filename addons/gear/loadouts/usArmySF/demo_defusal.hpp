@@ -20,7 +20,7 @@ class demo_defusal : squad_rifleman
     
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii", "rhsusf_falconii_coy" };
+        classname[] = { "CUP_B_Kombat_Olive", "CUP_B_Kombat_Olive", "CUP_B_Kombat_Olive" };
         // List of items
     };
 	

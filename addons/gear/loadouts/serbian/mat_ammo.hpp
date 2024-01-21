@@ -7,7 +7,7 @@ class mat_ammo : squad_rifleman
 	
     class Backpack : Backpack
     {
-        classname[] = { "rhssaf_kitbag_md2camo" };
+        classname[] = { "B_Kitbag_rgr" };
         // List of items
         CUP_PG7VL_M = 2; //AT
 		CUP_OG7_M = 2; //HE

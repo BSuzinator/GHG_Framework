@@ -18,7 +18,7 @@ class rcn_ammo : squad_rifleman
 	class Backpack : Backpack
     {
         classname = "B_AssaultPack_cbr";
-        rhsusf_5Rnd_300winmag_xm2010 = 10;
+        CUP_5Rnd_762x67_M2010_M = 10;
     };
 	
 };

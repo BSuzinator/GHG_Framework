@@ -5,7 +5,7 @@ class demo_saboteur : squad_rifleman
 {
 	class Vest : Vest
     {
-        classname[] = { "LOP_V_CarrierLite_TAN" };
+        classname[] = { "CUP_V_B_JPC_Tan_Light" };
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -14,7 +14,7 @@ class demo_saboteur : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname[] = { "B_FieldPack_cbr" };
         // List of items
         APERSMine_Range_Mag = 2;
         APERSTripMine_Wire_Mag = 1;

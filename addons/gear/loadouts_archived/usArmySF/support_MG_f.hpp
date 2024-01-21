@@ -7,22 +7,22 @@ class support_MG_f : soldier_f
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m240b_elcan";
+        classname = "CUP_lmg_M240_B";
 		muzzle = "muzzle_snds_h_mg_blk_f";
-        ammo = "rhsusf_100Rnd_762x51";
+        ammo = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
         bipod = "rhsusf_acc_saw_bipod";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_ElcanM145";
         };
     };
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_mbav_mg";
+        classname = "CUP_V_B_Interceptor_Grenadier_M81";
         // List of items
-		rhs_mag_30Rnd_556x45_Mk318_Stanag = 0;
-		rhsusf_100Rnd_762x51 = 3;
+		CUP_30Rnd_556x45_Stanag = 0;
+		CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
@@ -30,6 +30,6 @@ class support_MG_f : soldier_f
     {
         classname[] = { "B_Kitbag_rgr", "B_Kitbag_rgr", "B_Kitbag_tan" };
         // List of items
-        rhsusf_100Rnd_762x51 = 3;
+        CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
     };
 };

@@ -7,7 +7,7 @@ class soldier_tl_f : soldier_f
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_ak103_gp25";
+        classname = "CUP_arifle_AK103_GL_top_rail";
         grenade = "rhs_VOG25";
 
         class Scopes : Scopes

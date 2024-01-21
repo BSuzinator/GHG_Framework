@@ -7,7 +7,7 @@ class mmg_ammo : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname[] = { "B_FieldPack_cbr" };
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;

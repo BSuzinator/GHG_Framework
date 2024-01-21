@@ -7,7 +7,7 @@ class rcn_ammo : squad_rifleman
 	
 	class Vest : Vest
     {
-		rhs_30Rnd_762x39mm = 6;
+		CUP_30Rnd_762x39_AK47_bakelite_M = 6;
 		ACE_MapTools = 1;
 		ACE_Kestrel4500 = 1;
 		ACE_RangeCard = 1;
@@ -17,7 +17,7 @@ class rcn_ammo : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname[] = { "B_FieldPack_cbr" };
         CUP_10Rnd_762x54_SVD_M = 10;
     };
 	

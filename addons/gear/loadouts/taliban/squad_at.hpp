@@ -16,7 +16,7 @@ class squad_at : squad_rifleman
     };
 	class Backpack : Backpack
     {
-        classname = "LOP_ISTS_RPG_Pack";
+        classname = "CUP_B_RPGPack_Khaki";
         // List of items
         CUP_PG7VL_M = 1;
     };

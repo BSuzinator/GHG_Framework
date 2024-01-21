@@ -7,7 +7,7 @@ class mat_gunner : squad_rifleman
     class Weapon_3 : Weapon_3 // Launcher
     {
         classname = "CUP_launch_RPG7V";
-        ammo = "rhs_rpg7_PG7VR_mag";
+        ammo = "CUP_PG7VR_M";
 		class Scopes { CUP_optic_PGO7V3 = "CUP_optic_PGO7V3"; };
     };
 	

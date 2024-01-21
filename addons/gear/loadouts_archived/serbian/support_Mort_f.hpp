@@ -7,7 +7,7 @@ class support_Mort_f : soldier_f
 	
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "ace_compat_rhs_usf3_m252_carry";
+        classname = "ace_csw_staticMortarCarry";
     };
 	
 	class Vest : Vest
@@ -22,7 +22,7 @@ class support_Mort_f : soldier_f
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhssaf_alice_md2camo" };
+        classname[] = { "CUP_B_USMC_MOLLE_WDL" };
         // List of items
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;

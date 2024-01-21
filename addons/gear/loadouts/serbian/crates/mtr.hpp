@@ -6,7 +6,7 @@ class ghg_crate_serbian_mtr : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhssaf_30rnd_556x45_EPR_G36 = 16;
+        CUP_30Rnd_556x45_G36 = 16;
 		ACE_1Rnd_82mm_Mo_HE = 10;
 		ACE_1Rnd_82mm_Mo_Smoke = 5;
 		ACE_1Rnd_82mm_Mo_Illum = 5;

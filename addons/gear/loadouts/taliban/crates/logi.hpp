@@ -6,11 +6,11 @@ class ghg_crate_taliban_logi : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_30Rnd_762x39mm = 32;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 32;
         CUP_HandGrenade_M67 = 4;
         SmokeShell = 6;
-        rhs_weap_M80 = 1;
-        rhs_m80_mag = 1;
+        CUP_launch_M72A6 = 1;
+        CUP_M72A6_M = 1;
 		ACE_wirecutter = 2;
 		ACE_DefusalKit = 2;
 		ToolKit = 2;
@@ -22,7 +22,6 @@ class ghg_crate_taliban_logi : ghg_crate_base
 		CUP_1Rnd_SMOKE_GP25_M_Green = 2;
 		CUP_1Rnd_SMOKE_GP25_M = 4;
 		ACE_EarPlugs = 8;
-		
 		B_Kitbag_cbr = 2;
     };
 };

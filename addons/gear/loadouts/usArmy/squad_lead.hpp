@@ -7,18 +7,18 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
+        classname[] = { "CUP_arifle_M4A1_BUIS_camo_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_desert_GL"};
         grenade = "CUP_1Rnd_HE_M203";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
+        classname[] = { "CUP_V_B_IOTV_OCP_TL_USArmy", "CUP_V_B_IOTV_OCP_TL_USArmy", "CUP_V_B_IOTV_OCP_TL_USArmy", "CUP_V_B_IOTV_UCP_TL_USArmy", "CUP_V_B_IOTV_UCP_TL_USArmy" };
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
 		ACRE_PRC152 = 1;
@@ -26,7 +26,7 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
+        classname[] = { "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_UCP", "CUP_B_US_Assault_UCP" };
         // List of items
         CUP_1Rnd_HE_M203 = 10;
         CUP_1Rnd_StarCluster_White_M203 = 5;
@@ -42,5 +42,5 @@ class squad_lead : squad_rifleman
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_helmet_headset_ucp", "rhsusf_ach_helmet_headset_ucp" };
+    headgear[] = { "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_UCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_UCP" };
 };

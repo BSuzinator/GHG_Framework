@@ -9,7 +9,7 @@ class mmg_gunner : squad_rifleman
     {
 
         classname = "rhs_weap_m240B";
-        ammo = "rhsusf_100Rnd_762x51";
+        ammo = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
 
         classname = "CUP_lmg_M240_B";
         ammo = "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M";
@@ -17,7 +17,7 @@ class mmg_gunner : squad_rifleman
         bipod = "";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_ElcanM145";
         };
     };
 	
@@ -32,7 +32,7 @@ class mmg_gunner : squad_rifleman
         // List of items
 
 		CUP_20Rnd_762x51_B_SCAR = 0;
-		rhsusf_100Rnd_762x51 = 3;
+		CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
 
 		CUP_20Rnd_762x51_B_SCAR = 0;
 		CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M = 3;
@@ -45,7 +45,7 @@ class mmg_gunner : squad_rifleman
         classname = "CUP_B_USPack_Coyote";
         // List of items
 
-        rhsusf_100Rnd_762x51 = 3;
+        CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
 
         CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M = 3;
 

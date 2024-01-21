@@ -7,7 +7,7 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "CUP_srifle_SVD_wdl" };
+        classname[] = { "CUP_srifle_SVD_des" };
 		muzzle = "";
 		bipod = "";
         laser = "";
@@ -28,7 +28,7 @@ class rcn_gunner : loadout_base
 	
     class Uniform : Uniform
     {
-        classname[] = { "LOP_U_ISTS_Fatigue_14" };
+        classname[] = { "CUP_U_B_CDF_DST_1" };
 		ACRE_PRC343 = 1;
     };
     
@@ -41,7 +41,7 @@ class rcn_gunner : loadout_base
 		ACE_RangeCard = 1;
     };
     
-    headgear[] = { "LOP_H_Turban_mask" };
+    headgear[] = { "CUP_H_TKI_Lungee_01" };
     facewear = "G_Combat_lxWS";
 	
 	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon

@@ -21,7 +21,7 @@ class support_AMort_f : soldier_f
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhssaf_alice_md2camo" };
+        classname[] = { "CUP_B_USMC_MOLLE_WDL" };
         // List of items
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;

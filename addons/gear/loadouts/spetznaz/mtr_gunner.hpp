@@ -7,7 +7,7 @@ class mtr_gunner : squad_rifleman
 	
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "ace_compat_rhs_afrf3_2b14_carry";
+        classname = "ace_csw_staticMortarCarry";
     };
 	
 	class Vest : Vest

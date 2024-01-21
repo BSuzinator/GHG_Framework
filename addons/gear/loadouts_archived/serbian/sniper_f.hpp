@@ -7,22 +7,22 @@ class sniper_f : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_XM2010_wd" };
-		muzzle = "rhsusf_acc_M2010S";
+        classname[] = { "CUP_srifle_M2010_wdl" };
+		muzzle = "muzzle_snds_B";
 		bipod = "rhsusf_acc_harris_bipod";
         laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhsusf_5Rnd_300winmag_xm2010";
+        ammo = "CUP_5Rnd_762x67_M2010_M";
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhsusf_acc_LEUPOLDMK4_2";
+            sniper_optic = "CUP_optic_LeupoldMk4_20x40_LRT";
         };
     };
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m9";
-        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
+		classname = "CUP_hgun_M9";
+        ammo = "CUP_15Rnd_9x19_M9";
 		class Scopes {}; 
 	};
 	
@@ -36,8 +36,8 @@ class sniper_f : loadout_base
     {
         classname[] = { "rhssaf_vest_md99_woodland_rifleman" };
         // List of items
-        rhsusf_5Rnd_300winmag_xm2010 = 4;
-		rhsusf_mag_15Rnd_9x19_FMJ = 2;
+        CUP_5Rnd_762x67_M2010_M = 4;
+		CUP_15Rnd_9x19_M9 = 2;
         SmokeShell = 2;
     };
     

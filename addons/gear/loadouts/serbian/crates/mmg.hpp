@@ -6,8 +6,8 @@ class ghg_crate_serbian_mmg : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhssaf_30rnd_556x45_EPR_G36 = 16;
-		rhsusf_50Rnd_762x51 = 8;
+        CUP_30Rnd_556x45_G36 = 16;
+		CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M = 8;
         CUP_HandGrenade_M67 = 3;
         SmokeShell = 6;
         CUP_1Rnd_HE_M203 = 8;

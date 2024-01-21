@@ -8,9 +8,9 @@ class squad_ar : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
 
-        classname = "rhs_weap_m249_pip_s_para";
+        classname = "CUP_lmg_m249_pip1_s_para";
         ammo = "rhsusf_200Rnd_556x45_soft_pouch";
-        bipod = "rhsusf_acc_harris_bipod";
+        bipod = "CUP_bipod_Harris_1A2_L_BLK";
 
         classname = "CUP_lmg_m249_para";
         ammo = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";

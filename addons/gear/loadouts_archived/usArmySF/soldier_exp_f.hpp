@@ -14,7 +14,7 @@ class soldier_exp_f : soldier_f
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_mbav_medic";
+        classname = "CUP_V_B_Interceptor_Base_M81";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;

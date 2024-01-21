@@ -7,13 +7,13 @@ class mtr_gunner : squad_rifleman
 	
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "ace_compat_rhs_usf3_m252_carry";
+        classname = "ace_csw_staticMortarCarry";
     };
 	
 	class Vest : Vest
     {
         // List of items
-		UK3CB_BAF_556_30Rnd = 6;
+		CUP_30Rnd_556x45_Stanag_L85 = 6;
 		ACE_EntrenchingTool = 0;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;

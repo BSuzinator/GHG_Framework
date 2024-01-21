@@ -11,7 +11,7 @@ class CfgWeapons
     }; */
     
 /*     class rhs_weap_ak74m;
-    class rhs_weap_akm : rhs_weap_ak74m
+    class CUP_arifle_AKM_Early : rhs_weap_ak74m
     {
         // Remove RPK mags
         magazineWell[] = { CBA_762x39_AK };
@@ -39,8 +39,8 @@ class CfgWeapons
     }; */
     
     // M27 IAR needs big mags
-/*     class rhs_weap_m4a1;
-    class rhs_weap_m27iar: rhs_weap_m4a1
+/*     class CUP_arifle_M4A1_black;
+    class rhs_weap_m27iar: CUP_arifle_M4A1_black
     {
         magazineWell[] = {
             STANAG_556x45,

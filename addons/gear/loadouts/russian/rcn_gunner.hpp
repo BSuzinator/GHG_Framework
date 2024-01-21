@@ -34,7 +34,7 @@ class rcn_gunner : loadout_base
     
     class Vest : Vest
     {
-        classname = "CUP_V_RUS_6B3_1";
+        classname = "CUP_V_CDF_6B3_1_DST";
         // List of items
         CUP_5Rnd_127x108_KSVK_M = 4;
 		CUP_8Rnd_9x18_Makarov_M = 2;

@@ -13,7 +13,7 @@ class mmg_gunner : squad_rifleman
 		muzzle = "muzzle_snds_93mmg";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_ElcanM145";
         };
     };
 	

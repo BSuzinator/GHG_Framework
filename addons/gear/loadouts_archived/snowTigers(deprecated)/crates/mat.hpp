@@ -7,7 +7,7 @@ class ghg_crate_snowTigers_mat : ghg_crate_base
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
         30Rnd_65x39_caseless_green = 16;
-		rhs_rpg7_PG7VL_mag = 5;
+		CUP_PG7VL_M = 5;
         rhs_mag_rgn = 8;
         rhssaf_mag_brd_m83_white = 8;
         1Rnd_HE_Grenade_shell = 8;

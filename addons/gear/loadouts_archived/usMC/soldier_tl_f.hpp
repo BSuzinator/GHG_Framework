@@ -25,7 +25,7 @@ class soldier_tl_f : soldier_f
     
     class Backpack : Backpack
     {
-        classname = "rhsusf_falconii_coy";
+        classname = "CUP_B_Kombat_Olive";
         // List of items
         rhs_mag_M441_HE = 10;
         rhs_mag_M585_white = 5;

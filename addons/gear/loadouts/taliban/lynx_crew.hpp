@@ -7,13 +7,13 @@ class lynx_crew : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_762x39mm = 4;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 4;
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
         CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
-	headgear[] = { "LOP_H_Villager_cap" };
+	headgear[] = { "CUP_H_TKI_Pakol_2_03" };
     facewear[] = { "G_Combat_lxWS" };
 };

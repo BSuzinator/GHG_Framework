@@ -11,7 +11,7 @@ class rcn_gunner : loadout_base
         classname = "UK3CB_BAF_L115A3";
         muzzle = "uk3cb_baf_silencer_l115a3";
 		bipod = "uk3cb_underbarrel_acc_bipod";
-        laser = "rhsusf_acc_anpeq15_bk";
+        laser = "CUP_acc_ANPEQ_15_Flashlight_Black_L";
         ammo = "uk3cb_baf_338_5rnd";
 
         classname = "CUP_srifle_AWM_wdl";
@@ -23,7 +23,7 @@ class rcn_gunner : loadout_base
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhsusf_acc_LEUPOLDMK4_2";
+            sniper_optic = "CUP_optic_LeupoldMk4_20x40_LRT";
         };
     };
     

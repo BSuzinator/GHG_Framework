@@ -6,11 +6,7 @@ class maa_gunner : mat_gunner
 
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_fim92";
-
-        ammo = "CUP_Stinger_M";
-		class Scopes { CUP_optic_PGO7V3 = ""; };
-
+        classname = "CUP_launch_FIM92Stinger";
         ammo = "CUP_Stinger_M";
 		class Scopes { CUP_optic_PGO7V3 = ""; };
 

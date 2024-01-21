@@ -15,7 +15,7 @@ class squad_medic : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "rhs_medic_bag";
+        classname = "CUP_B_SLA_Medicbag";
         // List of items
 		
         #include "..\medic_bag.hpp"

@@ -24,10 +24,10 @@ class pilot_f : soldier_f
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m9";
+		classname = "CUP_hgun_M9";
 		muzzle = "";
         laser = "";
-        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
+        ammo = "CUP_15Rnd_9x19_M9";
 		class Scopes {}; 
 	};
 	
@@ -45,7 +45,7 @@ class pilot_f : soldier_f
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
         // List of items
-		rhsusf_mag_15Rnd_9x19_FMJ = 3;
+		CUP_15Rnd_9x19_M9 = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

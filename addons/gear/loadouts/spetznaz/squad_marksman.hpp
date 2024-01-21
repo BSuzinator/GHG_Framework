@@ -8,9 +8,9 @@ class squad_marksman : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "CUP_srifle_SVD";
-        laser = "CUP_acc_Zenit_2DS";
+        laser = "";
         ammo = "CUP_10Rnd_762x54_SVD_M";
-		bipod = "rhsusf_acc_harris_bipod";
+		bipod = "";
         
         class Scopes : Scopes
         {

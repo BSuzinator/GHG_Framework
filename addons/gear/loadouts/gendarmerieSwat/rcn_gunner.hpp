@@ -15,7 +15,7 @@ class rcn_gunner : loadout_base
         
         class Scopes : Scopes
         {
-            sniper_optic = "CUP_optic_Leupold_VX3";
+            sniper_optic = "CUP_optic_LeupoldMk4_20x40_LRT";
         };
     };
     

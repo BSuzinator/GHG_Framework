@@ -19,7 +19,7 @@ class support_mg_f : soldier_f
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_762x39mm_polymer = 0;
+		CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 0;
 		rhs_100Rnd_762x54mmR = 3;
 		ACE_EntrenchingTool = 0;
     };

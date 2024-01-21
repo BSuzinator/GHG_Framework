@@ -7,7 +7,7 @@ class rcn_ammo : squad_rifleman
 	
 	class Vest : Vest
     {
-		UK3CB_BAF_556_30Rnd = 6;
+		CUP_30Rnd_556x45_Stanag_L85 = 6;
 		ACE_MapTools = 1;
 		ACE_Kestrel4500 = 1;
 		ACE_RangeCard = 1;

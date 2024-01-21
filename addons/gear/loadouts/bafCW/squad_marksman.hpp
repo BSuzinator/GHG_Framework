@@ -21,7 +21,7 @@ class squad_marksman : squad_rifleman
     class Vest : Vest
     {
         // List of items
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+        CUP_30Rnd_556x45_Stanag = 0;
         UK3CB_BAF_762_20Rnd_T = 8;
     };
     

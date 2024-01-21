@@ -14,7 +14,7 @@ class logi_repair : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhssaf_kitbag_md2camo";
+        classname = "B_Kitbag_rgr";
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;

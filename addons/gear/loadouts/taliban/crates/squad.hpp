@@ -6,13 +6,13 @@ class ghg_crate_taliban_squad : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_30Rnd_762x39mm = 30;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 30;
 		vn_sks_t_mag = 4;
         CUP_HandGrenade_M67 = 8;
         SmokeShell = 8;
-        rhs_75Rnd_762x39mm = 5;
-        rhs_weap_M80 = 2;
-        rhs_m80_mag = 2;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 5;
+        CUP_launch_M72A6 = 2;
+        CUP_M72A6_M = 2;
         CUP_1Rnd_HE_GP25_M = 8;
 		CUP_IlumFlareWhite_GP25_M = 4;
 		CUP_IlumFlareGreen_GP25_M= 2;

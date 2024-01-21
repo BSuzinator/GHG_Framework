@@ -5,7 +5,7 @@ class demo_saboteur : squad_rifleman
 {
 	class Vest : Vest
     {
-        classname = "rhssaf_vest_md99_woodland_rifleman";
+        classname = "CUP_V_B_RRV_Officer";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;
@@ -14,7 +14,7 @@ class demo_saboteur : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhssaf_kitbag_md2camo";
+        classname = "B_Kitbag_rgr";
         // List of items
         APERSMine_Range_Mag = 2;
         APERSTripMine_Wire_Mag = 1;

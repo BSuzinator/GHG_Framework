@@ -15,7 +15,7 @@ class squad_ar : squad_rifleman
     class Vest : Vest
     {
         // Inherited item overrides
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+        CUP_30Rnd_556x45_Stanag = 0;
         SmokeShell = 1;
         CUP_HandGrenade_M67 = 1;
         // List of items

@@ -16,7 +16,7 @@ class squad_medic : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname[] = { "rhssaf_kitbag_md2camo" };
+        classname[] = { "B_Kitbag_rgr" };
         // List of items
 		
         #include "..\medic_bag.hpp"

@@ -5,7 +5,7 @@ class lynx_driver : lynx_crew
 {
 	class Backpack : Backpack
     {
-        classname = "rhssaf_kitbag_md2camo";
+        classname = "B_Kitbag_rgr";
         // List of items
         ToolKit = 1;
     };

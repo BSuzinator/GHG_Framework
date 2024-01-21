@@ -7,7 +7,7 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_akm_gp25";
+        classname = "CUP_arifle_AKM_Early_gp25";
         grenade = "CUP_1Rnd_HE_GP25_M";
 
     };
@@ -21,7 +21,7 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname[] = { "B_FieldPack_cbr" };
         // List of items
         CUP_1Rnd_HE_GP25_M = 10;
         CUP_IlumFlareWhite_GP25_M = 5;

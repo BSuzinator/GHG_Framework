@@ -7,12 +7,12 @@ class squad_lead : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_ak103_gp25";
+        classname = "CUP_arifle_AK103_GL_top_rail";
         grenade = "CUP_1Rnd_HE_GP25_M";
 
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_ACOG_RMR";
+            acog = "CUP_optic_ACOG_TA01B_RMR_Black";
         };
     };
     

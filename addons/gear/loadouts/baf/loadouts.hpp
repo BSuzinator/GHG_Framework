@@ -88,35 +88,35 @@ class baf
 			//Merlin HC3 18
 			{ "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18" },
 			//UH-60M (Unarmed)
-			{ "RHS_UH60M2", "RHS_UH60M2", "RHS_UH60M2", "RHS_UH60M2_d", "RHS_UH60M2_d" }
+			{ "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "RHS_UH60M2_d", "RHS_UH60M2_d" }
 		};
 		heli_armed[] = {
 			//Littlebird
-			{ "RHS_MELB_AH6M", "RHS_MELB_AH6M", "RHS_MELB_AH6M", "RHS_MELB_AH6M", "RHS_MELB_AH6M" },
+			{ "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA" },
 			//UH-60M Pylons
-			{ "RHS_UH60M_ESSS", "RHS_UH60M_ESSS", "RHS_UH60M_ESSS", "RHS_UH60M_ESSS_d", "RHS_UH60M_ESSS_d" },
+			{ "CUP_B_MH60L_DAP_2x_USN", "CUP_B_MH60L_DAP_2x_USN", "CUP_B_MH60L_DAP_2x_USN", "CUP_B_MH60L_DAP_4x_US", "CUP_B_MH60L_DAP_4x_US" },
 			//UH-60M
-			{ "RHS_UH60M", "RHS_UH60M", "RHS_UH60M", "RHS_UH60M_d", "RHS_UH60M_d" },
+			{ "CUP_B_UH60M_US", "CUP_B_UH60M_US", "CUP_B_UH60M_US", "CUP_B_UH60M_US", "CUP_B_UH60M_US" },
 			//Chinook
-			{ "RHS_CH_47F", "RHS_CH_47F", "RHS_CH_47F", "RHS_CH_47F_10", "RHS_CH_47F_10" },
+			{ "CUP_B_MH47E_USA", "CUP_B_MH47E_USA", "CUP_B_MH47E_USA", "CUP_B_CH47F_USA", "CUP_B_CH47F_USA" },
 			//Chinook (Cargo)
-			{ "RHS_CH_47F_cargo", "RHS_CH_47F_cargo", "RHS_CH_47F_cargo", "RHS_CH_47F_10_cargo", "RHS_CH_47F_10_cargo" },
+			{ "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA" },
 			//AH-64D
-			{ "RHS_AH64D_wd", "RHS_AH64D_wd", "RHS_AH64D_wd", "RHS_AH64D", "RHS_AH64D" }
+			{ "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA" }
 		};
 		
 		//RPTR
 		plane[] = {
 			//RHS A10
-			{ "RHS_A10", "RHS_A10", "RHS_A10", "RHS_A10", "RHS_A10" },
+			{ "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA" },
 			//A3 A10
-			{ "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F" },
+			{ "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA" },
 			//Black Wasp
-			{ "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F" },
+			{ "CUP_B_F35B_USMC", "CUP_B_F35B_USMC", "CUP_B_F35B_USMC", "CUP_B_F35B_USMC", "CUP_B_F35B_USMC" },
 			//Black Wasp (Stealth)
-			{ "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F" },
+			{ "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC" },
 			//RHS F22
-			{ "rhsusf_f22", "rhsusf_f22", "rhsusf_f22", "rhsusf_f22", "rhsusf_f22" },
+			{ "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC" },
 			//RHS_C130J
 			{ "UK3CB_BAF_Hercules_C4_MTP", "UK3CB_BAF_Hercules_C4_Arctic", "UK3CB_BAF_Hercules_C4_Tropical", "UK3CB_BAF_Hercules_C3_DPMW", "UK3CB_BAF_Hercules_C3_DPMW" },
 			//RHS_C130J Cargo
@@ -128,11 +128,11 @@ class baf
 			//Assault Boat
 			{ "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F" },
 			//RHIB
-			{ "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib" }
+			{ "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC" }
 		};
 		boat_armed[] = {
 			//Old RHIB
-			{ "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB" },
+			{ "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC" },
 			//Old RHIB Gunboat
 			{ "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat" },
 			//Mk. V SOC

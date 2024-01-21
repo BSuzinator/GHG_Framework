@@ -32,14 +32,14 @@ class pilot_f : soldier_f
 	
     class Uniform : Uniform
     {
-        classname = "LOP_U_ISTS_Fatigue_14";
+        classname = "CUP_U_B_CDF_DST_1";
     };
     
     class Vest : Vest
     {
         classname = "V_Rangemaster_belt";
         // List of items
-        rhs_30Rnd_762x39mm = 0;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 0;
         rhs_mag_m67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;

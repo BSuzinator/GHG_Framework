@@ -10,6 +10,6 @@ class ravn_pilot : ravn_crew
         // List of items
         ACE_microDAGR = 1;
     };
-	headgear = "rhsusf_hgu56p_visor_black";
+	headgear = "H_CrewHelmetHeli_B";
     facewear = "G_Combat_lxWS";
 };

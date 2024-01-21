@@ -27,6 +27,6 @@ class lynx_crew : squad_rifleman
         CUP_HandGrenade_M67 = 1;
         ACE_EntrenchingTool = 0;
     };
-	headgear = "rhsusf_cvc_green_helmet";
-    facewear = "rhsusf_shemagh2_grn";
+	headgear = "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+    facewear = "CUP_G_Scarf_Face_Grn";
 };

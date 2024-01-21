@@ -22,6 +22,6 @@ class logi_repair : squad_rifleman
         ToolKit = 1;
         ACE_Fortify = 1;
     };
-	facewear = "CUP_FR_NeckScarf2";
+	facewear = "CUP_G_Scarf_Face_Grn2";
 	headgear = "CUP_H_NAPA_Fedora";
 };

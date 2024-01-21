@@ -8,7 +8,7 @@ class mat_gunner : squad_rifleman
     {
         classname = "CUP_launch_RPG7V";
         ammo = "CUP_PG7VL_M";
-		class Scopes { rhs_weap_optic_smaw = "CUP_optic_PGO7V3"; };
+		class Scopes { CUP_optic_SMAW_Scope = "CUP_optic_PGO7V3"; };
     };
 	
 	class Vest : Vest

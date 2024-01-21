@@ -7,7 +7,7 @@ class mmg_gunner : squad_rifleman
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "CUP_lmg_Pecheneg";
+        classname = "CUP_lmg_Pecheneg_desert";
         ammo = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M";
         bipod = "";
 		class Scopes : Scopes
@@ -19,14 +19,14 @@ class mmg_gunner : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_762x39mm = 0;
+		CUP_30Rnd_762x39_AK47_bakelite_M = 0;
 		CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
 	class Backpack : Backpack
     {
-        classname[] = { "LOP_ISTS_Fieldpack_PKM" };
+        classname[] = { "B_FieldPack_cbr" };
         // List of items
         CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M = 3;
     };

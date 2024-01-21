@@ -19,9 +19,9 @@ class crew_f : soldier_f
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_mbav_light";
+        classname = "CUP_V_B_Interceptor_Rifleman_M81";
         // List of items
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 4;
+        CUP_30Rnd_556x45_Stanag = 4;
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
@@ -29,6 +29,6 @@ class crew_f : soldier_f
         ACE_EntrenchingTool = 0;
 		ACE_Canteen = 0;
     };
-	headgear[] = { "rhsusf_cvc_green_helmet", "rhsusf_cvc_green_helmet", "rhsusf_cvc_helmet" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_od", "rhsusf_shemagh2_gogg_tan" };
+	headgear[] = { "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_UCP" };
+    facewear[] = { "CUP_G_ESS_RGR", "CUP_G_ESS_BLK_Scarf_Grn", "CUP_G_ESS_KHK_Scarf_Tan" };
 };

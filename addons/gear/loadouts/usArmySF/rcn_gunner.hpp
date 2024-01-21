@@ -7,45 +7,45 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_XM2010_wd", "rhs_weap_XM2010", "rhs_weap_XM2010_d" };
-		muzzle = "rhsusf_acc_M2010S";
-		bipod = "rhsusf_acc_harris_bipod";
-        laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhsusf_5Rnd_300winmag_xm2010";
+        classname[] = { "CUP_srifle_M2010_wdl", "CUP_srifle_M2010_blk", "CUP_srifle_M2010_dsrt" };
+		muzzle = "muzzle_snds_B";
+		bipod = "CUP_bipod_Harris_1A2_L_BLK";
+        laser = "CUP_acc_ANPEQ_15_Flashlight_Black_L";
+        ammo = "CUP_5Rnd_762x67_M2010_M";
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhsusf_acc_LEUPOLDMK4_2";
+            sniper_optic = "CUP_optic_LeupoldMk4_20x40_LRT";
         };
     };
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_glock17g4";
-		muzzle = "rhsusf_acc_omega9k";
-		laser = "acc_flashlight_pistol";
-        ammo = "rhsusf_mag_17Rnd_9x19_FMJ";
+		classname = "CUP_hgun_Glock17_blk";
+		muzzle = "muzzle_snds_L";
+		laser = "CUP_acc_Glock17_Flashlight";
+        ammo = "CUP_17Rnd_9x19_glock17";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_g3_m81", "rhs_uniform_g3_blk", "rhs_uniform_g3_tan" };
+        classname[] = { "CUP_U_CRYE_G3C_M81", "CUP_U_CRYE_G3C_BLK", "CUP_U_CRYE_G3C_MC_V3" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_mbav_Rifleman";
+        classname = "CUP_V_B_Interceptor_Rifleman_M81";
         // List of items
-        rhsusf_5Rnd_300winmag_xm2010 = 4;
-		rhsusf_mag_17Rnd_9x19_FMJ = 2;
+        CUP_5Rnd_762x67_M2010_M = 4;
+		CUP_17Rnd_9x19_glock17 = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;
     };
     
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+    headgear[] = { "CUP_H_USArmy_MICH_GCOVERED_Headset_M81", "CUP_H_OpsCore_Black", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des" };
+    facewear[] = { "CUP_G_ESS_RGR", "CUP_G_ESS_RGR", "CUP_G_ESS_KHK_Scarf_Tan" };
 	
 	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
     {

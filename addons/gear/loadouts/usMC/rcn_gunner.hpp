@@ -15,7 +15,7 @@ class rcn_gunner : loadout_base
         
         class Scopes : Scopes
         {
-            sniper_optic = "CUP_optic_Leupold_VX3";
+            sniper_optic = "CUP_optic_LeupoldMk4_20x40_LRT";
         };
     };
     
@@ -36,7 +36,7 @@ class rcn_gunner : loadout_base
     {
         classname = "CUP_V_B_Eagle_SPC_Patrol";
         // List of items
-        rhsusf_5Rnd_300winmag_xm2010 = 4;
+        CUP_5Rnd_762x67_M2010_M = 4;
 		CUP_15Rnd_9x19_M9 = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;

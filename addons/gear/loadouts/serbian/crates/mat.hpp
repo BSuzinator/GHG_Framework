@@ -6,7 +6,7 @@ class ghg_crate_serbian_mat : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhssaf_30rnd_556x45_EPR_G36 = 16;
+        CUP_30Rnd_556x45_G36 = 16;
 		CUP_PG7VL_M = 5; //AT
 		CUP_OG7_M = 5; //HE
 		CUP_TBG7V_M = 3; //Thermo

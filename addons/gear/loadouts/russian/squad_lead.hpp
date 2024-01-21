@@ -18,7 +18,7 @@ class squad_lead : squad_rifleman
     
     class Vest : Vest
     {
-        classname = "CUP_V_RUS_6B3_2";
+        classname = "CUP_V_CZ_NPP2006_des";
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
 		ACRE_PRC152 = 1;

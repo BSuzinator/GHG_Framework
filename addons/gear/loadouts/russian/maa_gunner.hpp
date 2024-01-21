@@ -6,9 +6,9 @@ class maa_gunner : mat_gunner
 
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_igla";
+        classname = "CUP_launch_Igla";
         ammo = "CUP_Igla_M";
-		class Scopes { rhs_weap_optic_smaw = ""; };
+		class Scopes { CUP_optic_SMAW_Scope = ""; };
     };
     class Backpack : Backpack
     {

@@ -11,7 +11,7 @@ class ghg_crate_macv_mat : ghg_crate_base
         vn_m20a1b1_heat_mag = 5;
 
 		CUP_SMAW_HEAA_M = 5;
-        rhs_mag_smaw_SR = 5;
+        
 
         vn_m61_grenade_mag = 3;
         vn_m18_white_mag = 6;

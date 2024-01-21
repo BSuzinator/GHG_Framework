@@ -17,10 +17,10 @@ class squad_marksman : squad_rifleman
     class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_762x39mm = 0;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 0;
         vn_sks_t_mag = 5;
     };
     
-    headgear[] = { "LOP_H_Shemag_BLK" };
+    headgear[] = { "CUP_H_TKI_Lungee_02" };
     facewear = "G_Combat_lxWS";
 };

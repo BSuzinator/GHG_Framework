@@ -7,41 +7,41 @@ class squad_rifleman : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_blockII_wd", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_d" };
-		muzzle[] = {"rhsusf_acc_nt4_black","rhsusf_acc_nt4_black","rhsusf_acc_nt4_tan"};
-        laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
-		bipod = "rhsusf_acc_kac_grip";
+        classname[] = { "CUP_arifle_M4A1_SOMMOD_Grip_green", "CUP_arifle_M4A1_SOMMOD_Grip_black", "CUP_arifle_M4A1_SOMMOD_Grip_tan" };
+		muzzle[] = {"CUP_muzzle_snds_SCAR_L","CUP_muzzle_snds_SCAR_L","CUP_muzzle_snds_M16_desert"};
+        laser = "CUP_acc_ANPEQ_15_Flashlight_Black_L";
+        ammo = "CUP_30Rnd_556x45_Stanag";
+		bipod = "";
         
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
 			alt_holo = "";
-            red_dot_magnified = "rhsusf_acc_g33_t1";
-            holo_magnified = "rhsusf_acc_g33_xps3";
-            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d" };
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt_camo[] = { "CUP_optic_Eotech553_OD", "CUP_optic_Eotech553_Black", "CUP_optic_Eotech533" };
         };
     };
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_g3_m81", "rhs_uniform_g3_blk", "rhs_uniform_g3_tan" };
+        classname[] = { "CUP_U_CRYE_G3C_M81", "CUP_U_CRYE_G3C_BLK", "CUP_U_CRYE_G3C_MC_V3" };
 		ACRE_PRC343 = 1;
 		ACE_CableTie = 2;
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_mbav_Rifleman";
+        classname = "CUP_V_B_Interceptor_Rifleman_M81";
         // List of items
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 8;
+        CUP_30Rnd_556x45_Stanag = 8;
         SmokeShell = 2;
         CUP_HandGrenade_M67 = 2;
         ACE_EntrenchingTool = 1;
 		ACE_Canteen = 1;
     };
     
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+    headgear[] = { "CUP_H_USArmy_MICH_GCOVERED_Headset_M81", "CUP_H_OpsCore_Black", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des" };
+    facewear[] = { "CUP_G_ESS_RGR", "CUP_G_ESS_RGR", "CUP_G_ESS_KHK_Scarf_Tan" };
 };

@@ -9,8 +9,8 @@ class squad_ar : squad_rifleman
     {
         classname = "CUP_arifle_RPK74";
         ammo = "CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M";
-        bipod = "rhsusf_acc_saw_bipod";
-		muzzle = "rhs_acc_tgpa";
+        bipod = "";
+		muzzle = "CUP_muzzle_TGPA";
     };
     
     class Vest : Vest
@@ -25,7 +25,7 @@ class squad_ar : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "rhs_tortila_khaki", "rhs_tortila_olive", "rhs_tortila_black", "rhs_tortila_black";
+        classname = "B_Carryall_khk", "B_Carryall_oli", "B_Carryall_blk", "B_Carryall_blk";
         // List of items
         CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 2;
     };

@@ -14,7 +14,7 @@ class demo_explosive : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname = "rhsusf_mbav_Rifleman";
+        classname = "CUP_V_B_Interceptor_Rifleman_M81";
         // List of items
 		ACE_DefusalKit = 1;
 		ACE_Clacker = 1;

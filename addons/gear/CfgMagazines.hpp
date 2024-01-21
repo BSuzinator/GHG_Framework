@@ -3,7 +3,7 @@
         author = "GHG Team"; \
         model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_ak762_steel75_mag"; \
         modelSpecial = "rhsafrf\addons\rhs_weapons\mag_proxies\rhs_mag_762x39_steel_75rnd"; \
-        picture = "\rhsafrf\addons\rhs_inventoryicons\data\magazines\rhs_75Rnd_762x39mm_ca.paa";
+        picture = "\rhsafrf\addons\rhs_inventoryicons\data\magazines\CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M_ca.paa";
 
 class CfgMagazines
 {

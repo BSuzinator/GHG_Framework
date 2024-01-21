@@ -7,8 +7,8 @@ class soldier_ar_f : soldier_f
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_RPK";
-        ammo = "rhs_75Rnd_762x39mm";
+        classname = "CUP_arifle_RPK74";
+        ammo = "CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M";
         bipod = "";
 		class Scopes : Scopes
         {
@@ -22,17 +22,17 @@ class soldier_ar_f : soldier_f
     class Vest : Vest
     {
         // Inherited item overrides
-        rhs_30Rnd_762x39mm = 0;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 0;
         SmokeShell = 1;
         rhs_mag_m67 = 1;
         // List of items
-        rhs_75Rnd_762x39mm = 2;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 2;
     };
     
     class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Fieldpack_PKM";
+        classname = "B_FieldPack_cbr";
         // List of items
-        rhs_75Rnd_762x39mm = 3;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 3;
     };
 };

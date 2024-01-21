@@ -8,7 +8,7 @@ class mmg_ammo : loadout_base_Swat
         classname = "UK3CB_ACR_Carbine";
         ammo = "UK3CB_ACR_30rnd_556x45";
 		acog = "rhsusf_acc_compm4";
-		muzzle = "rhsusf_acc_nt4_black";
+		muzzle = "CUP_muzzle_snds_SCAR_L";
 		bipod = "rhsusf_acc_harris_bipod";
 		laser = "rhsusf_acc_anpeq15side_bk";
         

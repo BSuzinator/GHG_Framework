@@ -6,17 +6,11 @@ class ghg_crate_taliban_rcn : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhs_30Rnd_762x39mm = 8;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 8;
 		CUP_10Rnd_762x54_SVD_M = 10;
-
-		rhsusf_mag_7x45acp_MHP = 3;
-        CUP_HandGrenade_M67 = 3;
-        SmokeShell = 6;
-
 		CUP_7Rnd_45ACP_1911 = 3;
         CUP_HandGrenade_M67 = 3;
         SmokeShell = 6;
-
         CUP_1Rnd_HE_GP25_M = 8;
 		CUP_IlumFlareWhite_GP25_M = 4;
 		CUP_IlumFlareGreen_GP25_M= 2;

@@ -6,7 +6,7 @@ class ghg_crate_russian_squad : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_30Rnd_762x39mm_polymer = 30;
+        CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 30;
 		CUP_10Rnd_762x54_SVD_M = 8;
         CUP_HandGrenade_RGO = 8;
         SmokeShell = 8;

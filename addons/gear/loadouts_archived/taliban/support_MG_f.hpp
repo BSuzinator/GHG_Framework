@@ -19,14 +19,14 @@ class support_MG_f : soldier_f
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_762x39mm = 0;
+		CUP_30Rnd_762x39_AK47_bakelite_M = 0;
 		rhs_100Rnd_762x54mmR = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
 	class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Fieldpack_PKM";
+        classname = "B_FieldPack_cbr";
         // List of items
         rhs_100Rnd_762x54mmR = 3;
     };

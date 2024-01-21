@@ -14,7 +14,7 @@ class squad_marksman : squad_rifleman
 		
         class Scopes : Scopes
         {
-            magnified = "rhsusf_acc_acog";
+            magnified = "CUP_optic_ACOG_TA01B_Black";
         };
     };
     

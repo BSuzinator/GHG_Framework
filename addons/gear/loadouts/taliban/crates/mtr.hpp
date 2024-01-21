@@ -6,7 +6,7 @@ class ghg_crate_taliban_mtr : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhs_30Rnd_762x39mm = 16;
+        CUP_30Rnd_762x39_AK47_bakelite_M = 16;
 		ACE_1Rnd_82mm_Mo_HE = 10;
 		ACE_1Rnd_82mm_Mo_Smoke = 5;
 		ACE_1Rnd_82mm_Mo_Illum = 5;

@@ -21,6 +21,6 @@ class maa_ammo : mat_ammo
 		CUP_Stinger_M = 2;
 
     };
-	facewear = "CUP_FR_NeckScarf3";
+	facewear = "CUP_G_Scarf_Face_Grn3";
 	headgear = "CUP_H_RUS_GSSh01_Headphones_green";
 };

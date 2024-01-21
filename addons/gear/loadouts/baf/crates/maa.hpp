@@ -6,7 +6,7 @@ class ghg_crate_baf_maa : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        UK3CB_BAF_556_30Rnd = 16;
+        CUP_30Rnd_556x45_Stanag_L85 = 16;
 
 		CUP_Stinger_M = 5;
         CUP_HandGrenade_M67 = 3;

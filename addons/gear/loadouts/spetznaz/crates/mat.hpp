@@ -10,7 +10,6 @@ class ghg_crate_russian_mat : ghg_crate_base
 		CUP_PG7VL_M = 2; //AT
 		CUP_OG7_M = 2; //HE
 		CUP_TBG7V_M = 1; //Thermo
-        rhs_mag_smaw_SR = 5;
         CUP_HandGrenade_RGO = 3;
         SmokeShell = 6;
         CUP_1Rnd_HE_GP25_M = 8;

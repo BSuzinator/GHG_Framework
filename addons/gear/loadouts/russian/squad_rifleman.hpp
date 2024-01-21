@@ -29,7 +29,7 @@ class squad_rifleman : loadout_base
     
     class Vest : Vest
     {
-        classname = "CUP_V_RUS_6B3_1";
+        classname = "CUP_V_CDF_6B3_1_DST";
         // List of items
         CUP_30Rnd_545x39_AK_M = 8;
         vn_rdg2_mag = 2;

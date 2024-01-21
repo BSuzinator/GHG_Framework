@@ -7,9 +7,9 @@ class lynx_crew : squad_rifleman
     {
         class Scopes : Scopes
         {
-            red_dot = "rhsusf_acc_compm4";
-            holo = "rhsusf_acc_eotech_xps3";
-			holo_alt = "rhsusf_acc_eotech_552";
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
+			holo_alt = "CUP_optic_Eotech553_Black";
             red_dot_magnified = "";
             holo_magnified = "";
         };
@@ -29,10 +29,10 @@ class lynx_crew : squad_rifleman
         ACE_EntrenchingTool = 0;
     };
 
-	headgear = "rhsusf_cvc_helmet";
+	headgear = "CUP_H_USArmy_HelmetACH_UCP";
     facewear = "rhsusf_shemagh2_tan";
 
-	headgear = "CUP_H_CVC";
-    facewear = "CUP_FR_NeckScarf2";
+	headgear = "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+    facewear = "CUP_G_Scarf_Face_Grn2";
 
 };

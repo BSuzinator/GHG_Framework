@@ -15,138 +15,113 @@ class usArmySF
 		//Infantry
 		car[] = {
 			//Unarmed Humvee (Up-Armored)
-			{ "rhsusf_m1151_usarmy_wd", "rhsusf_m1151_usarmy_wd", "rhsusf_m1151_usarmy_wd", "rhsusf_m1151_usarmy_d", "rhsusf_m1151_usarmy_d" },
+			{ "CUP_B_M1151_WDL_USA", "CUP_B_M1151_WDL_USA", "CUP_B_M1151_WDL_USA", "CUP_B_M1151_USA", "CUP_B_M1151_USA" },
 			//M2 Humvee (Up-Armored)
-			{ "rhsusf_m1151_m2_v1_usarmy_wd", "rhsusf_m1151_m2_v1_usarmy_wd", "rhsusf_m1151_m2_v1_usarmy_wd", "rhsusf_m1151_m2_v1_usarmy_d", "rhsusf_m1151_m2_v1_usarmy_d" },
+			{ "CUP_B_M1151_M2_WDL_USA", "CUP_B_M1151_M2_WDL_USA", "CUP_B_M1151_M2_WDL_USA", "CUP_B_M1151_M2_USA", "CUP_B_M1151_M2_USA" },
 			//M2 / LRAS3 Humvee (Up-Armored)
-			{ "rhsusf_m1151_m2_lras3_v1_usarmy_wd", "rhsusf_m1151_m2_lras3_v1_usarmy_wd", "rhsusf_m1151_m2_lras3_v1_usarmy_wd", "rhsusf_m1151_m2_lras3_v1_usarmy_d", "rhsusf_m1151_m2_lras3_v1_usarmy_d" },
+			{ "CUP_B_M1165_GMV_WDL_USA", "CUP_B_M1165_GMV_WDL_USA", "CUP_B_M1165_GMV_WDL_USA", "CUP_B_M1165_GMV_USA", "CUP_B_M1165_GMV_USA" },
 			//SICPS Humvee (Up-Armored)
-			{ "rhsusf_m1152_sicps_usarmy_wd", "rhsusf_m1152_sicps_usarmy_wd", "rhsusf_m1152_sicps_usarmy_wd", "rhsusf_m1152_sicps_usarmy_d", "rhsusf_m1152_sicps_usarmy_d" }
+			{ "CUP_B_nM1037sc_DF_USA_WDL", "CUP_B_nM1037sc_DF_USA_WDL", "CUP_B_nM1037sc_DF_USA_WDL", "CUP_B_nM1037sc_DF_USA_DES", "CUP_B_nM1037sc_DF_USA_DES" }
 		};
 		troopTruck[] = {
 			//Unarmed 4 wheel covered truck
-			{ "rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_D_fmtv_usarmy" },
+			{ "CUP_B_MTVR_USMC", "CUP_B_MTVR_USMC", "CUP_B_MTVR_USMC", "CUP_B_MTVR_USA", "CUP_B_MTVR_USA" },
 			//Armored 4 wheel covered truck
-			{ "rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_fmtv_usarmy" },
+			{ "CUP_B_RG31_M2_OD_GC_USA", "CUP_B_RG31_M2_OD_GC_USA", "CUP_B_RG31_M2_OD_GC_USA", "CUP_B_RG31_M2_GC_USA", "CUP_B_RG31_M2_GC_USA" },
 			//Armored M2 4 wheel covered truck
-			{ "rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy" }
+			{ "CUP_B_RG31_Mk19_OD_USA", "CUP_B_RG31_Mk19_OD_USA", "CUP_B_RG31_Mk19_OD_USA", "CUP_B_RG31_Mk19_USA", "CUP_B_RG31_Mk19_USA" }
 		};
 		mrap[] = {
 			//Unarmed mrap
-			{ "rhsusf_M1220_usarmy_wd", "rhsusf_M1220_usarmy_wd", "rhsusf_M1220_usarmy_wd", "rhsusf_M1220_usarmy_d", "rhsusf_M1220_usarmy_d" },
+			{ "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_USA", "CUP_B_RG31_M2_USA" },
 			//M2 mrap
-			{ "rhsusf_M1220_M2_usarmy_wd", "rhsusf_M1220_M2_usarmy_wd", "rhsusf_M1220_M2_usarmy_wd", "rhsusf_M1220_M2_usarmy_d", "rhsusf_M1220_M2_usarmy_d" },
+			{ "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_USA", "CUP_B_RG31_M2_USA" },
 			//medevac mrap
-			{ "rhsusf_M1230a1_usarmy_wd", "rhsusf_M1230a1_usarmy_wd", "rhsusf_M1230a1_usarmy_wd", "rhsusf_M1230a1_usarmy_d", "rhsusf_M1230a1_usarmy_d" }
+			{ "CUP_B_M113A1_Med_USA", "CUP_B_M113A1_Med_USA", "CUP_B_M113A1_Med_USA", "CUP_B_M113A1_Med_desert_USA", "CUP_B_M113A1_Med_desert_USA" }
 		};
 		
 		//LOGI
-		bridgeTrucks[] = {
-			//Pontoon Truck
-			{ "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf" },
-			//Boat Truck
-			{ "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf" },
-			//Pontoon Boat
-			{ "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t" }
-		};
+		bridgeTrucks[] = {};
 		cargoTrucks[] = {
 			//Unarmed 4 wheel flatbed truck
-			{ "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy" },
-			//Armored 4 wheel flatbed truck
-			{ "rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy" },
-			//Armored M2 4 wheel flatbed truck
-			{ "rhsusf_M1078A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy" },
-			//Unarmed hemmt
-			{ "rhsusf_M977A4_usarmy_wd", "rhsusf_M977A4_usarmy_wd", "rhsusf_M977A4_usarmy_wd", "rhsusf_M977A4_usarmy_d", "rhsusf_M977A4_usarmy_d" },
-			//Armored hemmt
-			{ "rhsusf_M977A4_BKIT_usarmy_wd", "rhsusf_M977A4_BKIT_usarmy_wd", "rhsusf_M977A4_BKIT_usarmy_wd", "rhsusf_M977A4_BKIT_usarmy_d", "rhsusf_M977A4_BKIT_usarmy_d" }
+			{ "CUP_B_MTVR_USMC", "CUP_B_MTVR_USMC", "CUP_B_MTVR_USMC", "CUP_B_MTVR_USA", "CUP_B_MTVR_USA" }
 		};
 		rearm[] = {
 			//Unarmed hemmt
-			{ "rhsusf_M977A4_AMMO_usarmy_wd", "rhsusf_M977A4_AMMO_usarmy_wd", "rhsusf_M977A4_AMMO_usarmy_wd", "rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M977A4_AMMO_usarmy_d" },
-			//Armored hemmt
-			{ "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_usarmy_d" }
+			{ "CUP_B_MTVR_Ammo_USMC", "CUP_B_MTVR_Ammo_USMC", "CUP_B_MTVR_Ammo_USMC", "CUP_B_MTVR_Ammo_USA", "CUP_B_MTVR_Ammo_USA" },
 		};
 		refuel[] = {
 			//Unarmed hemmt
-			{ "rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_usarmy_d", "rhsusf_M978A4_usarmy_d" },
-			//Armored hemmt
-			{ "rhsusf_M978A4_BKIT_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_d", "rhsusf_M978A4_BKIT_usarmy_d" }
+			{ "CUP_B_MTVR_Refuel_USMC", "CUP_B_MTVR_Refuel_USMC", "CUP_B_MTVR_Refuel_USMC", "CUP_B_MTVR_Ammo_USA", "CUP_B_MTVR_Ammo_USA" },
 		};
 		repair[] = {
 			//Unarmed hemmt
-			{ "rhsusf_M977A4_REPAIR_usarmy_wd", "rhsusf_M977A4_REPAIR_usarmy_wd", "rhsusf_M977A4_REPAIR_usarmy_wd", "rhsusf_M977A4_REPAIR_usarmy_d", "rhsusf_M977A4_REPAIR_usarmy_d" },
-			//Armored hemmt
-			{ "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd", "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd", "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd", "rhsusf_M977A4_REPAIR_BKIT_usarmy_d", "rhsusf_M977A4_REPAIR_BKIT_usarmy_d" }
+			{ "CUP_B_MTVR_Repair_USMC", "CUP_B_MTVR_Repair_USMC", "CUP_B_MTVR_Repair_USMC", "CUP_B_MTVR_Repair_USA", "CUP_B_MTVR_Repair_USA" },
 		};
 		
 		//LYNX / WOLF
 		apc[] = {
 			//Stryker M2 RCWS
-			{ "rhsusf_stryker_m1126_m2_wd", "rhsusf_stryker_m1126_m2_wd", "rhsusf_stryker_m1126_m2_wd", "rhsusf_stryker_m1126_m2_d", "rhsusf_stryker_m1126_m2_d" },
+			{ "CUP_B_M1130_CV_M2_Woodland", "CUP_B_M1130_CV_M2_Woodland", "CUP_B_M1130_CV_M2_Woodland", "CUP_B_M1130_CV_M2_Desert", "CUP_B_M1130_CV_M2_Desert" },
 			//Stryker M2 LRAS3
-			{ "rhsusf_stryker_m1127_m2_wd", "rhsusf_stryker_m1127_m2_wd", "rhsusf_stryker_m1127_m2_wd", "rhsusf_stryker_m1127_m2_d", "rhsusf_stryker_m1127_m2_d" },
-			//Stryker M2 RCWS / Mine Plow
-			{ "rhsusf_stryker_m1132_m2_wd", "rhsusf_stryker_m1132_m2_wd", "rhsusf_stryker_m1132_m2_wd", "rhsusf_stryker_m1132_m2_d", "rhsusf_stryker_m1132_m2_d" },
+			{ "CUP_B_M1126_ICV_M2_Woodland", "CUP_B_M1126_ICV_M2_Woodland", "CUP_B_M1126_ICV_M2_Woodland", "CUP_B_M1126_ICV_M2_Desert", "CUP_B_M1126_ICV_M2_Desert" },
 			//M113 Unarmed
-			{ "rhsusf_m113_usarmy_unarmed", "rhsusf_m113_usarmy_unarmed", "rhsusf_m113_usarmy_unarmed", "rhsusf_m113d_usarmy_unarmed", "rhsusf_m113d_usarmy_unarmed" },
+			{ "CUP_B_M113A3_HQ_USA", "CUP_B_M113A3_HQ_USA", "CUP_B_M113A3_HQ_USA", "CUP_B_M113A3_HQ_desert_USA", "CUP_B_M113A3_HQ_desert_USA" },
 			//M113 M2
-			{ "rhsusf_m113_usarmy", "rhsusf_m113_usarmy", "rhsusf_m113_usarmy", "rhsusf_m113d_usarmy", "rhsusf_m113d_usarmy" },
-			//M113 M240
-			{ "rhsusf_m113_usarmy_M240", "rhsusf_m113_usarmy_M240", "rhsusf_m113_usarmy_M240", "rhsusf_m113d_usarmy_M240", "rhsusf_m113d_usarmy_M240" }
+			{ "CUP_B_M113A3_USA", "CUP_B_M113A3_USA", "CUP_B_M113A3_USA", "CUP_B_M113A3_desert_USA" },
 		};
 		ifv[] = {};
 		tank[] = {
 			//M1A2SEPv1
-			{ "rhsusf_m1a2sep1wd_usarmy", "rhsusf_m1a2sep1wd_usarmy", "rhsusf_m1a2sep1wd_usarmy", "rhsusf_m1a2sep1d_usarmy", "rhsusf_m1a2sep1d_usarmy" },
+			{ "CUP_B_M1A2SEP_Woodland_US_Army", "CUP_B_M1A2SEP_Woodland_US_Army", "CUP_B_M1A2SEP_Woodland_US_Army", "CUP_B_M1A2SEP_Desert_US_Army", "CUP_B_M1A2SEP_Desert_US_Army" },
 			//M1A2SEPv1 TUSK 1
-			{ "rhsusf_m1a2sep1tuskiwd_usarmy", "rhsusf_m1a2sep1tuskiwd_usarmy", "rhsusf_m1a2sep1tuskiwd_usarmy", "rhsusf_m1a2sep1tuskid_usarmy", "rhsusf_m1a2sep1tuskid_usarmy" },
+			{ "CUP_B_M1A2SEP_TUSK_Woodland_US_Army", "CUP_B_M1A2SEP_TUSK_Woodland_US_Army", "CUP_B_M1A2SEP_TUSK_Woodland_US_Army", "CUP_B_M1A2SEP_TUSK_Desert_US_Army", "CUP_B_M1A2SEP_TUSK_Desert_US_Army" },
 			//M1A2SEPv1 TUSK 2
-			{ "rhsusf_m1a2sep1tuskiiwd_usarmy", "rhsusf_m1a2sep1tuskiiwd_usarmy", "rhsusf_m1a2sep1tuskiiwd_usarmy", "rhsusf_m1a2sep1tuskiid_usarmy", "rhsusf_m1a2sep1tuskiid_usarmy" },
+			{ "CUP_B_M1A2SEP_TUSK_II_Woodland_US_Army", "CUP_B_M1A2SEP_TUSK_II_Woodland_US_Army", "CUP_B_M1A2SEP_TUSK_II_Woodland_US_Army", "CUP_B_M1A2SEP_TUSK_II_Desert_US_Army", "CUP_B_M1A2SEP_TUSK_II_Desert_US_Army" },
 			//M1A2SEPv2
-			{ "rhsusf_m1a2sep2wd_usarmy", "rhsusf_m1a2sep2wd_usarmy", "rhsusf_m1a2sep2wd_usarmy", "rhsusf_m1a2sep2d_usarmy", "rhsusf_m1a2sep2d_usarmy" }
+			{ "CUP_B_M1A2C_Woodland_US_Army", "CUP_B_M1A2C_Woodland_US_Army", "CUP_B_M1A2C_Woodland_US_Army", "CUP_B_M1A2C_Desert_US_Army", "CUP_B_M1A2C_Desert_US_Army" }
 		};
 		
 		//RAVN / FLCN
 		heli_unarmed[] = {
 			//Littlebird
-			{ "RHS_MELB_MH6M", "RHS_MELB_MH6M", "RHS_MELB_MH6M", "RHS_MELB_MH6M", "RHS_MELB_MH6M" },
+			{ "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA" },
 			//OH-6M
-			{ "RHS_MELB_H6M", "RHS_MELB_H6M", "RHS_MELB_H6M", "RHS_MELB_H6M", "RHS_MELB_H6M" },
+			{ "CUP_B_AH6X_USA", "CUP_B_AH6X_USA", "CUP_B_AH6X_USA", "CUP_B_AH6X_USA", "CUP_B_AH6X_USA" },
 			//UH-60M (Unarmed)
-			{ "RHS_UH60M2", "RHS_UH60M2", "RHS_UH60M2", "RHS_UH60M2_d", "RHS_UH60M2_d" }
+			{ "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "RHS_UH60M2_d", "RHS_UH60M2_d" }
 		};
 		heli_armed[] = {
 			//Littlebird
-			{ "RHS_MELB_AH6M", "RHS_MELB_AH6M", "RHS_MELB_AH6M", "RHS_MELB_AH6M", "RHS_MELB_AH6M" },
+			{ "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA", "CUP_B_AH6M_USA" },
 			//UH-60M Pylons
-			{ "RHS_UH60M_ESSS", "RHS_UH60M_ESSS", "RHS_UH60M_ESSS", "RHS_UH60M_ESSS_d", "RHS_UH60M_ESSS_d" },
+			{ "CUP_B_MH60L_DAP_2x_USN", "CUP_B_MH60L_DAP_2x_USN", "CUP_B_MH60L_DAP_2x_USN", "CUP_B_MH60L_DAP_4x_US", "CUP_B_MH60L_DAP_4x_US" },
 			//UH-60M
-			{ "RHS_UH60M", "RHS_UH60M", "RHS_UH60M", "RHS_UH60M_d", "RHS_UH60M_d" },
+			{ "CUP_B_UH60M_US", "CUP_B_UH60M_US", "CUP_B_UH60M_US", "CUP_B_UH60M_US", "CUP_B_UH60M_US" },
 			//Chinook
-			{ "RHS_CH_47F", "RHS_CH_47F", "RHS_CH_47F", "RHS_CH_47F_10", "RHS_CH_47F_10" },
+			{ "CUP_B_MH47E_USA", "CUP_B_MH47E_USA", "CUP_B_MH47E_USA", "CUP_B_CH47F_USA", "CUP_B_CH47F_USA" },
 			//Chinook (Cargo)
-			{ "RHS_CH_47F_cargo", "RHS_CH_47F_cargo", "RHS_CH_47F_cargo", "RHS_CH_47F_10_cargo", "RHS_CH_47F_10_cargo" },
+			{ "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA", "CUP_B_CH47F_VIV_USA" },
 			//AH-64D
-			{ "RHS_AH64D_wd", "RHS_AH64D_wd", "RHS_AH64D_wd", "RHS_AH64D", "RHS_AH64D" }
+			{ "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA", "CUP_B_AH64D_DL_USA" }
 		};
 		
 		//RPTR
 		plane[] = {
 			//RHS A10
-			{ "RHS_A10", "RHS_A10", "RHS_A10", "RHS_A10", "RHS_A10" },
+			{ "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA" },
 			//A3 A10
-			{ "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F", "B_Plane_CAS_01_dynamicLoadout_F" },
+			{ "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA", "CUP_B_A10_DYN_USA" },
 			//Black Wasp
-			{ "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F", "B_Plane_Fighter_01_F" },
+			{ "CUP_B_F35B_USMC", "CUP_B_F35B_USMC", "CUP_B_F35B_USMC", "CUP_B_F35B_USMC", "CUP_B_F35B_USMC" },
 			//Black Wasp (Stealth)
-			{ "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F", "B_Plane_Fighter_01_Stealth_F" },
+			{ "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC", "CUP_B_F35B_Stealth_USMC" },
 			//RHS F22
-			{ "rhsusf_f22", "rhsusf_f22", "rhsusf_f22", "rhsusf_f22", "rhsusf_f22" },
+			{ "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC" },
 			//RHS_C130J
-			{ "RHS_C130J", "RHS_C130J", "RHS_C130J", "RHS_C130J", "RHS_C130J" },
+			{ "CUP_B_C130J_USMC", "CUP_B_C130J_USMC", "CUP_B_C130J_USMC", "CUP_B_C130J_USMC", "CUP_B_C130J_USMC" },
 			//RHS_C130J Cargo
-			{ "RHS_C130J_Cargo", "RHS_C130J_Cargo", "RHS_C130J_Cargo", "RHS_C130J_Cargo", "RHS_C130J_Cargo" }
+			{ "CUP_B_C130J_Cargo_USMC", "CUP_B_C130J_Cargo_USMC", "CUP_B_C130J_Cargo_USMC", "CUP_B_C130J_Cargo_USMC", "CUP_B_C130J_Cargo_USMC" }
 		};
 		
 		//KNFS
@@ -154,15 +129,11 @@ class usArmySF
 			//Assault Boat
 			{ "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F" },
 			//RHIB
-			{ "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib" }
+			{ "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC", "CUP_B_RHIB_USMC" }
 		};
 		boat_armed[] = {
 			//Old RHIB
-			{ "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB", "UK3CB_TKA_B_RHIB" },
-			//Old RHIB Gunboat
-			{ "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat" },
-			//Mk. V SOC
-			{ "rhsusf_mkvsoc", "rhsusf_mkvsoc", "rhsusf_mkvsoc", "rhsusf_mkvsoc", "rhsusf_mkvsoc" }
+			{ "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC" },
 		};
 	};
 	
