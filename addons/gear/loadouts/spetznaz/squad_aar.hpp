@@ -16,7 +16,7 @@ class squad_aar : squad_rifleman
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhs_100Rnd_545X39_7N6_RPK = 6;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 6;
     };
 	
 	class Binoculars : Binoculars

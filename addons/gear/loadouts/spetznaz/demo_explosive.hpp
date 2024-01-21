@@ -22,7 +22,7 @@ class demo_explosive : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhs_sidor";
+        classname = "CUP_B_Kombat_Olive";
         // List of items
         DemoCharge_Remote_Mag = 3;
         DemoCharge_Remote_Mag = 3;

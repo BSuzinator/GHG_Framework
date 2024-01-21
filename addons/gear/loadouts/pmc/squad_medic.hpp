@@ -14,7 +14,7 @@ class squad_medic : squad_rifleman
 		ACE_EntrenchingTool = 0;
         CUP_HandGrenade_M67 = 1;
         // List of items
-        rhs_mag_m18_red = 2;
+        SmokeShellRed = 2;
     };
     
     class Backpack : Backpack

@@ -24,35 +24,35 @@ class rptr_pilot : squad_rifleman
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhs_weap_makarov_pm";
+		classname = "CUP_hgun_Makarov";
         laser = "";
-        ammo = "rhs_mag_9x18_8_57N181S";
+        ammo = "CUP_8Rnd_9x18_Makarov_M";
 		class Scopes {}; 
 	};
 	
     class Uniform : Uniform
     {
-        classname[] = {"rhs_uniform_df15","rhs_uniform_df15","rhs_uniform_df15_tan"};
+        classname[] = {"CUP_U_B_USArmy_PilotOverall","CUP_U_B_USArmy_PilotOverall","CUP_U_B_USArmy_PilotOverall_tan"};
     };
     
     class Vest : Vest
     {
-        classname = "rhs_vest_commander";
+        classname = "CUP_V_C_Police_Holster";
         // List of items
-        rhs_30Rnd_545x39_7N10_AK = 0;
-        rhs_mag_rgo = 0;
+        CUP_30Rnd_545x39_AK_M = 0;
+        CUP_HandGrenade_RGO = 0;
         ACE_EntrenchingTool = 0;
-        rhs_mag_rdg2_white = 0;
-		rhs_mag_9x18_8_57N181S = 3;
-		rhssaf_mag_brd_m83_red = 1;
-		rhssaf_mag_brd_m83_green = 1;
+        vn_rdg2_mag = 0;
+		CUP_8Rnd_9x18_Makarov_M = 3;
+		SmokeShellRed = 1;
+		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;
 		ACE_Chemlight_HiRed = 1;
     };
     
 
-    headgear = "RHS_jetpilot_usaf";
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear = "H_PilotHelmetFighter_O";
+    facewear = "CUP_G_ESS_BLK";
 
     headgear = "H_PilotHelmetFighter_B";
     facewear = "CUP_G_ESS_BLK";

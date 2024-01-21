@@ -40,5 +40,5 @@ class squad_rifleman : loadout_base
     };
     
     headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_B", "UK3CB_BAF_H_Mk6_DPMT_B", "UK3CB_BAF_H_Mk6_DDPM_B" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

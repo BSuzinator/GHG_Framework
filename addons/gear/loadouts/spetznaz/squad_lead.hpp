@@ -8,7 +8,7 @@ class squad_lead : squad_rifleman
     class Weapon_1 : Weapon_1 // Rifle
     {
         classname = "rhs_weap_ak103_gp25";
-        grenade = "rhs_VOG25";
+        grenade = "CUP_1Rnd_HE_GP25_M";
 
         class Scopes : Scopes
         {
@@ -25,15 +25,15 @@ class squad_lead : squad_rifleman
     
     class Backpack : Backpack
     {
-        classname = "rhs_sidor";
+        classname = "CUP_B_Kombat_Olive";
         // List of items
-        rhs_VOG25 = 10;
-        rhs_VG400P_white = 5;
-        rhs_VG400P_green = 2;
-        rhs_VG400P_red = 2;
-        rhs_GRD40_Red = 2;
-        rhs_GRD40_Green = 2;
-        rhs_GRD40 = 4;
+        CUP_1Rnd_HE_GP25_M = 10;
+        CUP_IlumFlareWhite_GP25_M = 5;
+        CUP_IlumFlareGreen_GP25_M= 2;
+        CUP_IlumFlareRed_GP25_M = 2;
+        CUP_1Rnd_SMOKE_GP25_M_Red = 2;
+        CUP_1Rnd_SMOKE_GP25_M_Green = 2;
+        CUP_1Rnd_SMOKE_GP25_M = 4;
     };
 	
 	class Binoculars : Binoculars

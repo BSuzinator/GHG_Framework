@@ -58,8 +58,8 @@ class rptr_pilot : squad_rifleman
     };
     
 
-    headgear = "RHS_jetpilot_usaf";
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear = "H_PilotHelmetFighter_O";
+    facewear = "CUP_G_ESS_BLK";
 
     headgear = "H_PilotHelmetFighter_B";
     facewear = "CUP_G_ESS_BLK";

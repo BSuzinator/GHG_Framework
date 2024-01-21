@@ -10,7 +10,7 @@ class plt_lead : squad_rifleman
         
         class Scopes : Scopes
         {
-            acog = "rhs_acc_perst1ik";
+            acog = "CUP_optic_PechenegScope";
         };
     };
     

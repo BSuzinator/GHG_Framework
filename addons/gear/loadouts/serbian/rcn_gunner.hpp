@@ -43,7 +43,7 @@ class rcn_gunner : loadout_base
     };
     
     headgear[] = { "rhssaf_helmet_m97_oakleaf" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 	
 	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
     {

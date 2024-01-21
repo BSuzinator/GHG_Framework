@@ -18,7 +18,7 @@ class rcn_ammo : squad_rifleman
 	class Backpack : Backpack
     {
         classname[] = { "LOP_ISTS_Fieldpack_PKM" };
-        rhs_10Rnd_762x54mmR_7N1 = 10;
+        CUP_10Rnd_762x54_SVD_M = 10;
     };
 	
 };

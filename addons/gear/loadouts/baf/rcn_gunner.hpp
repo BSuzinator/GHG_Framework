@@ -51,7 +51,7 @@ class rcn_gunner : loadout_base
     };
     
     headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_A", "UK3CB_BAF_H_Mk6_DPMT_A", "UK3CB_BAF_H_Mk6_DDPM_A" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 	
 	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
     {

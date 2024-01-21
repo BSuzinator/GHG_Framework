@@ -7,15 +7,15 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_svdp_wd" };
+        classname[] = { "CUP_srifle_SVD_wdl" };
 		muzzle = "";
 		bipod = "";
         laser = "";
-        ammo = "rhs_10Rnd_762x54mmR_7N1";
+        ammo = "CUP_10Rnd_762x54_SVD_M";
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhs_acc_pso1m21";
+            sniper_optic = "CUP_optic_PSO_1_1";
         };
     };
     
@@ -35,7 +35,7 @@ class rcn_gunner : loadout_base
     class Vest : Vest
     {
         // List of items
-        rhs_10Rnd_762x54mmR_7N1 = 4;
+        CUP_10Rnd_762x54_SVD_M = 4;
 		CUP_7Rnd_45ACP_1911 = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;

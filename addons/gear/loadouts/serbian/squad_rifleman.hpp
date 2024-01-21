@@ -40,5 +40,5 @@ class squad_rifleman : loadout_base
     };
     
     headgear[] = { "rhssaf_helmet_m97_oakleaf" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -13,15 +13,15 @@ class demo_defusal : squad_rifleman
 	
 	class Vest : Vest
     {
-        classname[] = { "V_EOD_olive_F", "V_EOD_olive_F", "V_EOD_coyote_F" };
+        classname = "V_EOD_olive_F";
         // List of items
 		ACE_DefusalKit = 1;
     };
     
 	class Backpack : Backpack
     {
-        classname = "rhs_sidor";
+        classname = "CUP_B_Kombat_Olive";
     };
 	
-    headgear[] = { "lxWS_H_PASGT_goggles_white_F", "lxWS_H_PASGT_goggles_white_F", "lxWS_H_PASGT_goggles_white_F" };
+    headgear = "lxWS_H_PASGT_goggles_white_F";
 };

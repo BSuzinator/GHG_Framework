@@ -6,7 +6,7 @@ class maa_gunner : mat_gunner
 
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "CUP_launch_Igla";
+        classname = "CUP_TBG7V_M";
         ammo = "CUP_Igla_M";
 		class Scopes {  };
     };

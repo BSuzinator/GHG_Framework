@@ -7,36 +7,36 @@ class squad_rifleman : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_ak74m";
-        laser = "rhs_acc_2dpzenit";
-        ammo = "rhs_30Rnd_545x39_7N10_AK";
-		muzzle = "rhs_acc_perst1ik";
+        classname = "CUP_arifle_AK74M";
+        laser = "CUP_acc_Zenit_2DS";
+        ammo = "CUP_30Rnd_545x39_AK_M";
+		muzzle = "";
         
         class Scopes : Scopes
         {
-            red_dot = "rhs_acc_pkas";
-			varient_red_dot = "rhs_acc_1p63";
-			reflex = "rhs_acc_okp7_dovetail";
-			magnified = "rhs_acc_1p78";
+            red_dot = "CUP_optic_ekp_8_02";
+			varient_red_dot = "CUP_optic_1p63";
+			reflex = "CUP_optic_OKP_7";
+			magnified = "CUP_optic_PechenegScope";
         };
     };
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_flora_patchless", "rhs_uniform_emr_patchless", "rhs_uniform_emr_des_patchless" };
+        classname = "CUP_U_O_RUS_Flora_1";
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { "rhs_6b23_rifleman", "rhs_6b23_digi_rifleman", "rhs_6b23_ML_rifleman" };
+        classname = "CUP_V_RUS_6B3_1";
         // List of items
-        rhs_30Rnd_545x39_7N10_AK = 8;
-        rhs_mag_rdg2_white = 2;
-        rhs_mag_rgo = 2;
+        CUP_30Rnd_545x39_AK_M = 8;
+        vn_rdg2_mag = 2;
+        CUP_HandGrenade_RGO = 2;
         ACE_EntrenchingTool = 1;
     };
     
-    headgear[] = { "rhs_6b27m_ess", "rhs_6b28_ess", "rhs_6b27m_ml_ess" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear = "CUP_H_RUS_6B27_headset_goggles";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -7,18 +7,18 @@ class ghg_crate_taliban_mat : ghg_crate_base
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
         rhs_30Rnd_762x39mm = 16;
-		rhs_rpg7_PG7VL_mag = 5; //AT
-		rhs_rpg7_OG7V_mag = 5; //HE
-		rhs_rpg7_TBG7V_mag = 3; //Thermo
+		CUP_PG7VL_M = 5; //AT
+		CUP_OG7_M = 5; //HE
+		CUP_TBG7V_M = 3; //Thermo
         CUP_HandGrenade_M67 = 3;
         SmokeShell = 6;
-        rhs_VOG25 = 8;
-		rhs_VG400P_white = 4;
-		rhs_VG400P_green = 2;
-		rhs_VG400P_red = 2;
-		rhs_GRD40_Red = 2;
-		rhs_GRD40_Green = 2;
-		rhs_GRD40 = 4;
+        CUP_1Rnd_HE_GP25_M = 8;
+		CUP_IlumFlareWhite_GP25_M = 4;
+		CUP_IlumFlareGreen_GP25_M= 2;
+		CUP_IlumFlareRed_GP25_M = 2;
+		CUP_1Rnd_SMOKE_GP25_M_Red = 2;
+		CUP_1Rnd_SMOKE_GP25_M_Green = 2;
+		CUP_1Rnd_SMOKE_GP25_M = 4;
 		ACE_EarPlugs = 3;
 		
     };

@@ -7,17 +7,17 @@ class squad_medic : squad_rifleman
 
     class Vest : Vest
     {
-        classname[] = { "rhs_6b23_medic", "rhs_6b23_digi_medic", "rhs_6b23_ML_medic" };
+        classname = "CUP_V_RUS_6B3_2";
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
-        rhs_mag_rgo = 1;
+        CUP_HandGrenade_RGO = 1;
         // List of items
-        rhs_mag_m18_red = 2;
+        SmokeShellRed = 2;
     };
     
     class Backpack : Backpack
     {
-        classname = "rhs_assault_umbts_medic";
+        classname = "CUP_B_GER_Medic_Flecktarn";
         // List of items
 		
         #include "..\medic_bag.hpp"

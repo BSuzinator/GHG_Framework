@@ -6,20 +6,20 @@ class ghg_crate_russian_mat : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
-        rhs_30Rnd_545x39_7N10_AK = 16;
-		rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+        CUP_30Rnd_545x39_AK_M = 16;
+		CUP_PG7VL_M = 2; //AT
+		CUP_OG7_M = 2; //HE
+		CUP_TBG7V_M = 1; //Thermo
         rhs_mag_smaw_SR = 5;
-        rhs_mag_rgo = 3;
+        CUP_HandGrenade_RGO = 3;
         SmokeShell = 6;
-        rhs_VOG25 = 8;
-		rhs_VG400P_white = 4;
-		rhs_VG400P_green = 2;
-		rhs_VG400P_red = 2;
-		rhs_GRD40_Red = 2;
-		rhs_GRD40_Green = 2;
-		rhs_GRD40 = 4;
+        CUP_1Rnd_HE_GP25_M = 8;
+		CUP_IlumFlareWhite_GP25_M = 4;
+		CUP_IlumFlareGreen_GP25_M= 2;
+		CUP_IlumFlareRed_GP25_M = 2;
+		CUP_1Rnd_SMOKE_GP25_M_Red = 2;
+		CUP_1Rnd_SMOKE_GP25_M_Green = 2;
+		CUP_1Rnd_SMOKE_GP25_M = 4;
 		ACE_EarPlugs = 3;
 		
     };

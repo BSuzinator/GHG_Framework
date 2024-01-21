@@ -13,7 +13,7 @@ class mtr_gunner : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_545x39_7N10_AK = 6;
+		CUP_30Rnd_545x39_AK_M = 6;
 		ACE_EntrenchingTool = 0;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;

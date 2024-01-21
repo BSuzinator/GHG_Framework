@@ -2,7 +2,7 @@ class russian
 {
     version = 1;
     
-    camo[] = { "flora", "emr", "emrd" };
+    camo[] = {   };
     
     class Magazines
     {

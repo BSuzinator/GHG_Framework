@@ -19,7 +19,7 @@ class demo_defusal : squad_rifleman
     
 	class Backpack : Backpack
     {
-        classname = "rhs_sidor";
+        classname = "CUP_B_Kombat_Olive";
     };
 	
 };

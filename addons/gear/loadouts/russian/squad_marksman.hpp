@@ -7,24 +7,24 @@ class squad_marksman : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_svdp_wd";
-        laser = "rhs_acc_2dpzenit";
-        ammo = "rhs_10Rnd_762x54mmR_7N1";
-		bipod = "rhsusf_acc_harris_bipod";
+        classname = "CUP_srifle_SVD_wdl";
+        laser = "";
+        ammo = "CUP_10Rnd_762x54_SVD_M";
+		bipod = "";
         
         class Scopes : Scopes
         {
-            magnified = "rhs_acc_pso1m21_svd";
+            magnified = "CUP_optic_PSO_1_1";
         };
     };
     
     class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_545x39_7N10_AK = 0;
-        rhs_10Rnd_762x54mmR_7N1 = 10;
+        CUP_30Rnd_545x39_AK_M = 0;
+        CUP_10Rnd_762x54_SVD_M = 10;
     };
     
-    headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
-    facewear = "rhsusf_oakley_goggles_clr";
+    headgear = "CUP_H_RUS_6B47_SF_headset_goggles_black";
+    facewear = "CUP_G_ESS_BLK";
 };

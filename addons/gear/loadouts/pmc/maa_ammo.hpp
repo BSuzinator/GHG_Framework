@@ -12,8 +12,8 @@ class maa_ammo : mat_ammo
         // List of items
 		CUP_M136_M = 0; //AT
 
-		rhs_rpg7_OG7V_mag = 0; //HE
-		rhs_rpg7_TBG7V_mag = 0; //Thermo
+		CUP_OG7_M = 0; //HE
+		CUP_TBG7V_M = 0; //Thermo
 		CUP_Stinger_M = 2;
 
 		CUP_OG7_M = 0; //HE

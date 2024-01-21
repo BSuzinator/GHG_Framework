@@ -7,12 +7,12 @@ class mmg_gunner : squad_rifleman
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_pkp";
-        ammo = "rhs_100Rnd_762x54mmR";
+        classname = "CUP_lmg_Pecheneg";
+        ammo = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M";
         bipod = "";
 		class Scopes : Scopes
         {
-            mg_optic = "rhs_acc_perst1ik";
+            mg_optic = "CUP_optic_PechenegScope";
         };
     };
 	
@@ -20,7 +20,7 @@ class mmg_gunner : squad_rifleman
     {
         // List of items
 		rhs_30Rnd_762x39mm = 0;
-		rhs_100Rnd_762x54mmR = 3;
+		CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
@@ -28,6 +28,6 @@ class mmg_gunner : squad_rifleman
     {
         classname[] = { "LOP_ISTS_Fieldpack_PKM" };
         // List of items
-        rhs_100Rnd_762x54mmR = 3;
+        CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M = 3;
     };
 };

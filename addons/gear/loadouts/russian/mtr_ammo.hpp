@@ -13,7 +13,7 @@ class mtr_ammo : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_545x39_7N10_AK = 6;
+		CUP_30Rnd_545x39_AK_M = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;
@@ -21,7 +21,7 @@ class mtr_ammo : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname[] = {"B_Carryall_oli","B_Carryall_oli","B_Carryall_cbr"};
+        classname = "B_Carryall_oli";
         // List of items
 		ACE_1Rnd_82mm_Mo_HE = 3;
 		ACE_1Rnd_82mm_Mo_Smoke = 1;

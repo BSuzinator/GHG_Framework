@@ -11,7 +11,7 @@ class mmg_ammo : squad_rifleman
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhs_100Rnd_762x54mmR = 5;
+        CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M = 5;
     };
 	
 	class Binoculars : Binoculars

@@ -14,7 +14,7 @@ class logi_repair : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhs_assault_umbts";
+        classname = "CUP_B_HikingPack_Civ";
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;

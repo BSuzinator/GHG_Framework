@@ -13,7 +13,7 @@ class demo_saboteur : squad_rifleman
 	
 	class Backpack : Backpack
     {
-        classname = "rhs_sidor";
+        classname = "CUP_B_Kombat_Olive";
         // List of items
         APERSMine_Range_Mag = 2;
         APERSTripMine_Wire_Mag = 1;

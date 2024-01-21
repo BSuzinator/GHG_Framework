@@ -8,9 +8,9 @@ class squad_medic : squad_rifleman
     class Vest : Vest
     {
 		ACE_EntrenchingTool = 0;
-        rhs_mag_rgo = 1;
+        CUP_HandGrenade_RGO = 1;
         // List of items
-        rhs_mag_m18_red = 2;
+        SmokeShellRed = 2;
     };
     
     class Backpack : Backpack

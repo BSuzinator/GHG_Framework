@@ -9,9 +9,9 @@ class lynx_crew : squad_rifleman
     {
         class Scopes : Scopes
         {
-            red_dot = "rhs_acc_pkas";
-            varient_red_dot = "rhs_acc_1p63";
-            reflex = "rhs_acc_okp7_dovetail";
+            red_dot = "CUP_optic_1p63";
+            varient_red_dot = "CUP_optic_1p63";
+            reflex = "CUP_optic_OKP_7";
             magnified = "";
         };
     };
@@ -19,11 +19,11 @@ class lynx_crew : squad_rifleman
 	class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_545x39_7N10_AK = 4;
-        rhs_mag_rdg2_white = 1;
-		rhssaf_mag_brd_m83_green = 1;
-		rhssaf_mag_brd_m83_red = 1;
-        rhs_mag_rgo = 1;
+        CUP_30Rnd_545x39_AK_M = 4;
+        vn_rdg2_mag = 1;
+		SmokeShellGreen = 1;
+		SmokeShellRed = 1;
+        CUP_HandGrenade_RGO = 1;
         ACE_EntrenchingTool = 0;
     };
 	headgear = "rhs_tsh4_ess";

@@ -14,13 +14,13 @@ class ghg_crate_taliban_logi : ghg_crate_base
 		ACE_wirecutter = 2;
 		ACE_DefusalKit = 2;
 		ToolKit = 2;
-        rhs_VOG25 = 8;
-		rhs_VG400P_white = 4;
-		rhs_VG400P_green = 2;
-		rhs_VG400P_red = 2;
-		rhs_GRD40_Red = 2;
-		rhs_GRD40_Green = 2;
-		rhs_GRD40 = 4;
+        CUP_1Rnd_HE_GP25_M = 8;
+		CUP_IlumFlareWhite_GP25_M = 4;
+		CUP_IlumFlareGreen_GP25_M= 2;
+		CUP_IlumFlareRed_GP25_M = 2;
+		CUP_1Rnd_SMOKE_GP25_M_Red = 2;
+		CUP_1Rnd_SMOKE_GP25_M_Green = 2;
+		CUP_1Rnd_SMOKE_GP25_M = 4;
 		ACE_EarPlugs = 8;
 		
 		B_Kitbag_cbr = 2;
