@@ -12,11 +12,11 @@ _omniAnt = objNull;
 
 _jammer setVariable ["ghg_jammer_maxRange",_range, true];
 
-private _greenHumvees = ["CUP_B_M1152_USMC", "CUP_B_M1152_WDL_USA"];
+private _greenHumvees = ["CUP_B_nM1025_Unarmed_USMC_WDL", "CUP_B_nM1025_Unarmed_USA_WDL"];
 
-private _sandHumvees = [ "CUP_B_M1152_USA" ];
+private _sandHumvees = ["CUP_B_nM1025_Unarmed_USMC_DES", "CUP_B_nM1025_Unarmed_USA_DES"];
 
-private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
+// private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
 
 if (_jammer isKindOf "CUP_Boxer_Base_Empty") then {
 	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 

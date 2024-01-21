@@ -8,8 +8,8 @@
 private _function = {
 	params ["_modulePos","_attachedObject"];
 	if (_attachedObject isEqualTo objNull) exitWith {systemChat "No unit selected"};
-	private _jammerFriendlyNames = ["CDF ZiL-131","Sand Humvee"/*,"Woodland Humvee","Black Humvee"*/];
-	private _jammerClassNames = ["rhsgref_cdf_b_zil131_flatbed","rhsusf_m998_d_4dr"/*,"rhsusf_m998_w_4dr","LOP_ISTS_OPF_M998_D_4DR"*/];
+	private _jammerFriendlyNames = ["CDF ZiL-131","Sand Humvee"];
+	private _jammerClassNames = ["CUP_B_MTVR_USA","CUP_B_nM1025_Unarmed_USA_DES"];
 
 	[
 		"Spawn Jammer",
