@@ -30,7 +30,6 @@ class loadout_base
         ACE_tourniquet = 2;
         ACE_splint = 1;
         ACE_Flashlight_XL50 = 1;
-        diw_armor_plates_main_plate = 1;
     };
     
     class Vest
