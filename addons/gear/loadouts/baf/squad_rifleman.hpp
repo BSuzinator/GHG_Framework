@@ -25,13 +25,13 @@ class squad_rifleman : loadout_base
     
     class Uniform : Uniform
     {
-        classname[] = { "UK3CB_BAF_U_CombatUniform_MTP", "UK3CB_BAF_U_Smock_Arctic", "UK3CB_BAF_U_CombatUniform_DPMW", "UK3CB_BAF_U_CombatUniform_DPMT", "UK3CB_BAF_U_CombatUniform_DDPM" };
+        classname[] = { "CUP_U_B_BAF_MTP_UBACSLONG_Gloves", "CUP_I_B_PMC_Unit_28", "CUP_U_B_BAF_DPM_UBACSLONG_Gloves", "CUP_U_B_BAF_DPM_UBACSROLLED_Gloves", "CUP_U_B_BAF_DDPM_UBACSLONGKNEE_Gloves" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { "UK3CB_BAF_V_Osprey_Rifleman_A", "UK3CB_BAF_V_Osprey_Winter", "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMT2", "UK3CB_BAF_V_Osprey_DDPM2" };
+        classname[] = { "CUP_V_B_BAF_MTP_Osprey_Mk4_Scout", "CUP_V_PMC_CIRAS_Winter_Veh", "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman", "CUP_V_B_BAF_DPM_Osprey_Mk3_Scout", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Scout" };
         // List of items
         CUP_30Rnd_556x45_Stanag_L85 = 8;
         SmokeShell = 2;
@@ -39,6 +39,6 @@ class squad_rifleman : loadout_base
         ACE_EntrenchingTool = 1;
     };
     
-    headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_B", "UK3CB_BAF_H_Mk6_DPMT_B", "UK3CB_BAF_H_Mk6_DDPM_B" };
+    headgear = "CUP_B_Bergen_BAF";
     facewear = "CUP_G_ESS_BLK";
 };

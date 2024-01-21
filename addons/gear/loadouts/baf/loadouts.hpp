@@ -14,81 +14,58 @@ class baf
 		//Infantry
 		car[] = {
 			//LandRover SoftTop
-			{ "UK3CB_BAF_LandRover_Soft_Green_A", "UK3CB_BAF_LandRover_Soft_Arctic_A", "UK3CB_BAF_LandRover_Soft_Green_A", "UK3CB_BAF_LandRover_Soft_Green_B", "UK3CB_BAF_LandRover_Soft_Sand_A" },
+			{ "CUP_B_LR_Transport_GB_W", "CUP_B_LR_Transport_GB_W", "CUP_B_LR_Transport_GB_W", "CUP_B_LR_Transport_GB_W", "CUP_B_LR_Transport_GB_D" },
 			//LandRover HardTop
-			{ "UK3CB_BAF_LandRover_Hard_Green_A", "UK3CB_BAF_LandRover_Hard_Arctic_A", "UK3CB_BAF_LandRover_Hard_Green_A", "UK3CB_BAF_LandRover_Hard_Green_B", "UK3CB_BAF_LandRover_Hard_Sand_A" },
-			//LandRover HardTop FFR
-			{ "UK3CB_BAF_LandRover_Hard_FFR_Green_A", "UK3CB_BAF_LandRover_Hard_FFR_Arctic_A", "UK3CB_BAF_LandRover_Hard_FFR_Green_A", "UK3CB_BAF_LandRover_Hard_FFR_Green_B", "UK3CB_BAF_LandRover_Hard_FFR_Sand_A" },
+			{ "CUP_B_LR_MG_GB_W", "CUP_B_LR_MG_GB_W", "CUP_B_LR_MG_GB_W", "CUP_B_LR_MG_GB_W", "CUP_B_LR_MG_GB_D" },
 			//Land Rover Ambulance
-			{ "UK3CB_BAF_LandRover_Amb_Green_A", "UK3CB_BAF_LandRover_Amb_Green_A", "UK3CB_BAF_LandRover_Amb_Green_A", "UK3CB_BAF_LandRover_Amb_Green_A", "UK3CB_BAF_LandRover_Amb_Sand_A" },
-			//Panther CLV GPMG
-			{ "UK3CB_BAF_Panther_GPMG_Green_A", "UK3CB_BAF_Panther_GPMG_Green_A", "UK3CB_BAF_Panther_GPMG_Green_A", "UK3CB_BAF_Panther_GPMG_Green_A", "UK3CB_BAF_Panther_GPMG_Sand_A" }
+			{ "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_D" },
 		};
 		troopTruck[] = {
 			//Unarmed 4 wheel troop truck
-			{ "UK3CB_BAF_MAN_HX60_Transport_Green", "UK3CB_BAF_MAN_HX60_Transport_Green", "UK3CB_BAF_MAN_HX60_Transport_Green", "UK3CB_BAF_MAN_HX60_Transport_Green", "UK3CB_BAF_MAN_HX60_Transport_Sand" },
-			//Unarmed 6 wheel troop truck
-			{ "UK3CB_BAF_MAN_HX58_Transport_Green", "UK3CB_BAF_MAN_HX58_Transport_Green", "UK3CB_BAF_MAN_HX58_Transport_Green", "UK3CB_BAF_MAN_HX58_Transport_Green", "UK3CB_BAF_MAN_HX58_Transport_Sand" }
+			{ "CUP_B_MTVR_BAF_WOOD", "CUP_B_MTVR_BAF_WOOD", "CUP_B_MTVR_BAF_WOOD", "CUP_B_MTVR_BAF_WOOD", "CUP_B_MTVR_BAF_DES" },
 		};
 		mrap[] = {
 			//Husky
-			{ "UK3CB_BAF_Husky_Passenger_GPMG_Green", "UK3CB_BAF_Husky_Passenger_GPMG_Green", "UK3CB_BAF_Husky_Passenger_GPMG_Green", "UK3CB_BAF_Husky_Passenger_GPMG_Green", "UK3CB_BAF_Husky_Passenger_GPMG_Sand" }
-		};
-		
-		//LOGI
-		bridgeTrucks[] = {
-			//Pontoon Truck
-			{ "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf", "rhs_kraz255b1_pmp_vmf" },
-			//Boat Truck
-			{ "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf", "rhs_kraz255b1_bmkt_vmf" },
-			//Pontoon Boat
-			{ "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t", "rhs_bmk_t" }
+			{ "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_W", "CUP_B_LR_Ambulance_GB_W", "CUP_B_Ridgback_LMG_GB_D" }
 		};
 		cargoTrucks[] = {
 			//Logistics Husky
-			{ "UK3CB_BAF_Husky_Logistics_GPMG_Green", "UK3CB_BAF_Husky_Logistics_GPMG_Green", "UK3CB_BAF_Husky_Logistics_GPMG_Green", "UK3CB_BAF_Husky_Logistics_GPMG_Green", "UK3CB_BAF_Husky_Logistics_GPMG_Sand" },
+			{ "CUP_B_Mastiff_LMG_GB_W", "CUP_B_Mastiff_LMG_GB_W", "CUP_B_Mastiff_LMG_GB_W", "CUP_B_Mastiff_LMG_GB_W", "CUP_B_Mastiff_LMG_GB_D" },
 			//Unarmed 4 wheel flatbed truck
 			{ "UK3CB_BAF_MAN_HX60_Cargo_Green_A", "UK3CB_BAF_MAN_HX60_Cargo_Green_A", "UK3CB_BAF_MAN_HX60_Cargo_Green_A", "UK3CB_BAF_MAN_HX60_Cargo_Green_A", "UK3CB_BAF_MAN_HX60_Cargo_Sand_A" },
 			//Unarmed 6 wheel flatbed truck
 			{ "UK3CB_BAF_MAN_HX58_Cargo_Green_A", "UK3CB_BAF_MAN_HX58_Cargo_Green_A", "UK3CB_BAF_MAN_HX58_Cargo_Green_A", "UK3CB_BAF_MAN_HX58_Cargo_Green_A", "UK3CB_BAF_MAN_HX58_Cargo_Sand_A" }
 		};
 		rearm[] = {
-			//None in faction
+			{ "CUP_B_MTVR_Ammo_BAF_WOOD", "CUP_B_MTVR_Ammo_BAF_WOOD", "CUP_B_MTVR_Ammo_BAF_WOOD", "CUP_B_MTVR_Ammo_BAF_WOOD", "CUP_B_MTVR_Ammo_BAF_DES" }
 		};
 		refuel[] = {
-			//Unarmed 4 wheel flatbed truck
-			{ "UK3CB_BAF_MAN_HX60_Fuel_Green", "UK3CB_BAF_MAN_HX60_Fuel_Green", "UK3CB_BAF_MAN_HX60_Fuel_Green", "UK3CB_BAF_MAN_HX60_Fuel_Green", "UK3CB_BAF_MAN_HX60_Fuel_Sand" },
-			//Unarmed 6 wheel flatbed truck
-			{ "UK3CB_BAF_MAN_HX58_Fuel_Green", "UK3CB_BAF_MAN_HX58_Fuel_Green", "UK3CB_BAF_MAN_HX58_Fuel_Green", "UK3CB_BAF_MAN_HX58_Fuel_Green", "UK3CB_BAF_MAN_HX58_Fuel_Sand" }
+			{ "CUP_B_MTVR_Refuel_BAF_WOOD", "CUP_B_MTVR_Refuel_BAF_WOOD", "CUP_B_MTVR_Refuel_BAF_WOOD", "CUP_B_MTVR_Refuel_BAF_WOOD", "CUP_B_MTVR_Refuel_BAF_DES" }
 		};
 		repair[] = {
-			//Unarmed 4 wheel flatbed truck
-			{ "UK3CB_BAF_MAN_HX60_Repair_Green", "UK3CB_BAF_MAN_HX60_Repair_Green", "UK3CB_BAF_MAN_HX60_Repair_Green", "UK3CB_BAF_MAN_HX60_Repair_Green", "UK3CB_BAF_MAN_HX60_Repair_Sand" },
-			//Unarmed 6 wheel flatbed truck
-			{ "UK3CB_BAF_MAN_HX58_Repair_Green", "UK3CB_BAF_MAN_HX58_Repair_Green", "UK3CB_BAF_MAN_HX58_Repair_Green", "UK3CB_BAF_MAN_HX58_Repair_Green", "UK3CB_BAF_MAN_HX58_Repair_Sand" }
+			{ "CUP_B_MTVR_Repair_BAF_WOOD", "CUP_B_MTVR_Repair_BAF_WOOD", "CUP_B_MTVR_Repair_BAF_WOOD", "CUP_B_MTVR_Repair_BAF_WOOD", "CUP_B_MTVR_Repair_BAF_DES" }
 		};
 		
 		//LYNX / WOLF
 		apc[] = {
 			//Bulldog HMG/WRS
-			{ "UK3CB_BAF_FV432_Mk3_RWS_Green", "UK3CB_BAF_FV432_Mk3_RWS_Green", "UK3CB_BAF_FV432_Mk3_RWS_Green", "UK3CB_BAF_FV432_Mk3_RWS_Green", "UK3CB_BAF_FV432_Mk3_RWS_Sand" }
+			{ "CUP_B_FV432_Bulldog_GB_W_RWS", "CUP_B_FV432_Bulldog_GB_W_RWS", "CUP_B_FV432_Bulldog_GB_W_RWS", "CUP_B_FV432_Bulldog_GB_W_RWS", "CUP_B_FV432_Bulldog_GB_D_RWS" }
 		};
 		ifv[] = {
-			//Warrior w/ Slats
-			{ "UK3CB_BAF_Warrior_A3_W_Cage", "UK3CB_BAF_Warrior_A3_W_Cage", "UK3CB_BAF_Warrior_A3_W_Cage", "UK3CB_BAF_Warrior_A3_W_Cage", "UK3CB_BAF_Warrior_A3_D_Cage" }
+
 		};
 		tank[] = {
-			//None in Faction
+
 		};
 		
 		//RAVN / FLCN
 		heli_unarmed[] = {
 			//Unarmed Wildcat
-			{ "UK3CB_BAF_Wildcat_AH1_TRN_8A", "UK3CB_BAF_Wildcat_AH1_TRN_8A", "UK3CB_BAF_Wildcat_AH1_TRN_8A", "UK3CB_BAF_Wildcat_AH1_TRN_8A", "UK3CB_BAF_Wildcat_AH1_TRN_8A" },
+			{ "CUP_B_AH1_DL_BAF", "CUP_B_AH1_DL_BAF", "CUP_B_AH1_DL_BAF", "CUP_B_AH1_DL_BAF", "CUP_B_AH1_DL_BAF" },
 			//Merlin HC3 18
-			{ "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18", "UK3CB_BAF_Merlin_HC3_18" },
+			{ "CUP_B_Merlin_HC3_GB", "CUP_B_Merlin_HC3_GB", "CUP_B_Merlin_HC3_GB", "CUP_B_Merlin_HC3_GB", "CUP_B_Merlin_HC3_GB" },
 			//UH-60M (Unarmed)
-			{ "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "RHS_UH60M2_d", "RHS_UH60M2_d" }
+			{ "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US", "CUP_B_UH60M_Unarmed_US" }
 		};
 		heli_armed[] = {
 			//Littlebird
@@ -118,9 +95,9 @@ class baf
 			//RHS F22
 			{ "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC", "CUP_B_AV8B_DYN_USMC" },
 			//RHS_C130J
-			{ "UK3CB_BAF_Hercules_C4_MTP", "UK3CB_BAF_Hercules_C4_Arctic", "UK3CB_BAF_Hercules_C4_Tropical", "UK3CB_BAF_Hercules_C3_DPMW", "UK3CB_BAF_Hercules_C3_DPMW" },
+			{ "CUP_B_C130J_GB", "CUP_B_C130J_GB", "CUP_B_C130J_GB", "CUP_B_C130J_GB", "CUP_B_C130J_GB" },
 			//RHS_C130J Cargo
-			{ "UK3CB_BAF_Hercules_C4_cargo_MTP", "UK3CB_BAF_Hercules_C4_cargo_Arctic", "UK3CB_BAF_Hercules_C4_cargo_Tropical", "UK3CB_BAF_Hercules_C3_cargo_DPMW", "UK3CB_BAF_Hercules_C3_cargo_DPMW" }
+			{ "CUP_B_C130J_Cargo_GB", "CUP_B_C130J_Cargo_GB", "CUP_B_C130J_Cargo_GB", "CUP_B_C130J_Cargo_GB", "CUP_B_C130J_Cargo_GB" }
 		};
 		
 		//KNFS
@@ -133,10 +110,6 @@ class baf
 		boat_armed[] = {
 			//Old RHIB
 			{ "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC", "CUP_B_RHIB2Turret_USMC" },
-			//Old RHIB Gunboat
-			{ "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat", "UK3CB_TKA_B_RHIB_Gunboat" },
-			//Mk. V SOC
-			{ "rhsusf_mkvsoc", "rhsusf_mkvsoc", "rhsusf_mkvsoc", "rhsusf_mkvsoc", "rhsusf_mkvsoc" }
 		};
 	};
 	

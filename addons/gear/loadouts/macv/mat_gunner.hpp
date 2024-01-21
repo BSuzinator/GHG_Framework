@@ -11,7 +11,7 @@ class mat_gunner : squad_rifleman
 
         classname = "CUP_launch_Mk153Mod0";
         ammo = "CUP_SMAW_HEAA_M";
-        grenade = "rhs_mag_smaw_SR";
+        grenade = "CUP_SMAW_Spotting";
 		class Scopes { CUP_optic_SMAW_Scope = "CUP_optic_SMAW_Scope"; };
 
     };
@@ -29,7 +29,7 @@ class mat_gunner : squad_rifleman
         vn_m20a1b1_heat_mag = 2;
 
         CUP_SMAW_HEAA_M = 2;
-        rhs_mag_smaw_SR = 4;
+        CUP_SMAW_Spotting = 4;
 
     };
 };

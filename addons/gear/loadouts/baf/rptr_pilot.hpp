@@ -49,11 +49,6 @@ class rptr_pilot : squad_rifleman
 		ACE_Chemlight_HiGreen = 1;
 		ACE_Chemlight_HiRed = 1;
     };
-    
-
-    headgear = "H_PilotHelmetFighter_O";
-    facewear = "CUP_G_ESS_BLK";
-
     headgear = "H_PilotHelmetFighter_B";
     facewear = "CUP_G_ESS_BLK";
 

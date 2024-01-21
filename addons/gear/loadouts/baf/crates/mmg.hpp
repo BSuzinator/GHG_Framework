@@ -7,7 +7,7 @@ class ghg_crate_baf_mmg : ghg_crate_base
         ACE_elasticBandage = 8;
         ACE_packingBandage = 8;
         CUP_30Rnd_556x45_Stanag_L85 = 16;
-		UK3CB_BAF_762_100Rnd = 8;
+		CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M = 8;
         CUP_HandGrenade_M67 = 3;
         SmokeShell = 6;
         CUP_1Rnd_HE_M203 = 8;

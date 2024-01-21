@@ -7,14 +7,7 @@ class rcn_gunner : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-
-        classname[] = { "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3_BL", "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3", "UK3CB_BAF_L115A3_DE" };
-		muzzle = "uk3cb_baf_silencer_l115a3";
-		bipod = "uk3cb_underbarrel_acc_bipod";
-        laser = "CUP_acc_ANPEQ_15_Flashlight_Black_L";
-        ammo = "UK3CB_BAF_338_5Rnd";
-
-        classname[] = { "CUP_srifle_AWM_wdl", "CUP_srifle_AWM_blk", "CUP_srifle_AWM_wdl", "CUP_srifle_AWM_wdl", "UK3CB_BAF_L115A3_DE" };
+        classname[] = { "CUP_srifle_AWM_wdl", "CUP_srifle_AWM_blk", "CUP_srifle_AWM_blk", "CUP_srifle_AWM_blk", "CUP_srifle_AWM_des" };
 		muzzle = "CUP_muzzle_snds_AWM";
 		bipod = "CUP_bipod_Harris_1A2_L_BLK";
         laser = "CUP_acc_ANPEQ_15_Black";
@@ -36,23 +29,20 @@ class rcn_gunner : loadout_base
 	
     class Uniform : Uniform
     {
-        classname[] = { "UK3CB_BAF_U_CombatUniform_MTP", "UK3CB_BAF_U_Smock_Arctic", "UK3CB_BAF_U_CombatUniform_DPMW", "UK3CB_BAF_U_CombatUniform_DPMT", "UK3CB_BAF_U_CombatUniform_DDPM" };
+        classname[] = { "CUP_U_B_BAF_MTP_UBACSLONG_Gloves", "CUP_I_B_PMC_Unit_28", "CUP_U_B_BAF_DPM_UBACSLONG_Gloves", "CUP_U_B_BAF_DPM_UBACSROLLED_Gloves", "CUP_U_B_BAF_DDPM_UBACSLONGKNEE_Gloves" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { "UK3CB_BAF_V_Osprey_Rifleman_A", "UK3CB_BAF_V_Osprey_Winter", "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMT2", "UK3CB_BAF_V_Osprey_DDPM2" };
+        classname[] = { "CUP_V_B_BAF_MTP_Osprey_Mk4_Scout", "CUP_V_PMC_CIRAS_Winter_Veh", "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman", "CUP_V_B_BAF_DPM_Osprey_Mk3_Scout", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Scout" };
         // List of items
         UK3CB_BAF_338_5Rnd = 4;
 		CUP_15Rnd_9x19_M9 = 2;
         SmokeShell = 2;
 		ACE_RangeCard = 1;
     };
-    
-    headgear[] = { "UK3CB_BAF_H_Mk7_Camo_A", "UK3CB_BAF_H_Mk7_Win_A", "UK3CB_BAF_H_Mk6_DPMW_A", "UK3CB_BAF_H_Mk6_DPMT_A", "UK3CB_BAF_H_Mk6_DDPM_A" };
-    facewear = "CUP_G_ESS_BLK";
-	
+
 	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
     {
         classname = "ACE_Yardage450";

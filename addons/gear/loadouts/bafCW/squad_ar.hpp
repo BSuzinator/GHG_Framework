@@ -7,8 +7,8 @@ class squad_ar : squad_rifleman
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "UK3CB_BAF_L7A2";
-        ammo = "UK3CB_BAF_762_100Rnd_T";
+        classname = "CUP_lmg_L7A2";
+        ammo = "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M_T";
         bipod = "";
     };
     
@@ -19,13 +19,13 @@ class squad_ar : squad_rifleman
         SmokeShell = 1;
         CUP_HandGrenade_M67 = 1;
         // List of items
-        UK3CB_BAF_762_100Rnd_T = 3;
+        CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M_T = 3;
     };
     
     class Backpack : Backpack
     {
         classname[] = { "", "UK3CB_BAF_B_Beregn_OLI_Rifleman_A", "UK3CB_BAF_B_Beregn_OLI_Rifleman_A", "UK3CB_BAF_B_Beregn_DDPM_Rifleman_A", "UK3CB_BAF_B_Beregn_DDPM_Rifleman_A", "UK3CB_BAF_B_Beregn_Arctic_Rifleman_A", "UK3CB_BAF_B_Beregn_Arctic_Rifleman_A" };
         // List of items
-        UK3CB_BAF_762_100Rnd_T = 2;
+        CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M_T = 2;
     };
 };

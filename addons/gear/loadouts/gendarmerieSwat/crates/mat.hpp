@@ -8,7 +8,7 @@ class ghg_crate_gendamarieSwat_mat : ghg_crate_base
         ACE_packingBandage = 8;
         CUP_25Rnd_556x45_Famas = 16;
 		rhs_mag_smaw_HEAA = 8;
-		rhs_mag_smaw_SR = 4;
+		CUP_SMAW_Spotting = 4;
         CUP_HandGrenade_M67 = 3;
         SmokeShell = 6;
         CUP_1Rnd_HE_M203 = 8;
