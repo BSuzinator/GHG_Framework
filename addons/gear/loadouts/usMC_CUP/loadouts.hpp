@@ -1,4 +1,4 @@
-class usMC
+class usMC_CUP
 {
     version = 1;
     

@@ -1,4 +1,4 @@
-class russian
+class russian_CUP
 {
     version = 1;
     

@@ -1,4 +1,4 @@
-class usArmy
+class usArmy_RHS
 {
     version = 1;
     

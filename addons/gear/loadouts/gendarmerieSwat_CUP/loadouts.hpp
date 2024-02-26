@@ -1,4 +1,4 @@
-class gendarmerieSwat
+class gendarmerieSwat_CUP
 {
     version = 1;
     

@@ -1,4 +1,4 @@
-class bafCW
+class bafCW_RHS
 {
 	version = 1;
     camo[] = { "DPMWP", "DPMW", "DDPMP", "DDPM", "AP", "A" };

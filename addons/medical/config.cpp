@@ -21,7 +21,7 @@ class CfgPatches {
 };
 #include "CfgEventhandlers.hpp"
 #include "CfgVehicles.hpp"
-#include "ACE_Medical_Injuries.hpp"
+//#include "ACE_Medical_Injuries.hpp"
 class ace_medical_facilities {
 	GHG[] = { "GHG_Medical_Tent_Sand", "GHG_Medical_Tent_Olive" }
 };

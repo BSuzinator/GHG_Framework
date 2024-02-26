@@ -1,4 +1,4 @@
-class usKorea
+class usKorea_CUP
 {
     version = 1;
     

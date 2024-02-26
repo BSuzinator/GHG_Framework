@@ -1,4 +1,4 @@
-class spetznaz
+class spetznaz_CUP
 {
     version = 1;
     

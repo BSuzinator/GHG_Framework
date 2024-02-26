@@ -1,4 +1,4 @@
-class pmc
+class pmc_RHS
 {
     version = 1;
     

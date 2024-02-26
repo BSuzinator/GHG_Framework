@@ -1,4 +1,4 @@
-class usArmySF
+class usArmySF_RHS
 {
     version = 1;
     

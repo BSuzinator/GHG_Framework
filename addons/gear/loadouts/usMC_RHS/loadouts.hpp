@@ -1,4 +1,4 @@
-class usMC
+class usMC_RHS
 {
     version = 1;
     

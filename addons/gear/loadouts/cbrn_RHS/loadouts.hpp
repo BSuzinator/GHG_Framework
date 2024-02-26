@@ -1,4 +1,4 @@
-class cbrn
+class cbrn_RHS
 {
     version = 1;
     

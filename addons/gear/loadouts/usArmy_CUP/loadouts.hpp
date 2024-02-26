@@ -1,4 +1,4 @@
-class usArmy
+class usArmy_CUP
 {
     version = 1;
     

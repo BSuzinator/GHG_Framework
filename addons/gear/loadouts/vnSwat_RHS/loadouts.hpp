@@ -1,4 +1,4 @@
-class vnSwat
+class vnSwat_RHS
 {
     version = 1;
     

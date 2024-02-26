@@ -38,9 +38,6 @@ class CfgWeapons
     };
     
     // M27 IAR needs big mags
-
-	class CUP_arifle_M4A1_black;
-    class rhs_weap_m27iar: CUP_arifle_M4A1_black
     class rhs_weap_m4a1;
     class rhs_weap_m27iar: rhs_weap_m4a1
     {

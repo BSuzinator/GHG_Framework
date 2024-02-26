@@ -1,4 +1,4 @@
-class taliban {
+class taliban_CUP {
     version = 1;
     
     camo[] = { "desert" };

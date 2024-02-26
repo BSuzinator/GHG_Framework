@@ -1,4 +1,4 @@
-class serbian
+class serbian_CUP
 {
     version = 1;
     

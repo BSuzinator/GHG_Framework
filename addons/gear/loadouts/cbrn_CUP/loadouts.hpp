@@ -1,4 +1,4 @@
-class cbrn
+class cbrn_CUP
 {
     version = 1;
     

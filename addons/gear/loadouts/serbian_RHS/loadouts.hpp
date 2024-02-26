@@ -1,4 +1,4 @@
-class serbian
+class serbian_RHS
 {
     version = 1;
     

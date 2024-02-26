@@ -1,4 +1,4 @@
-class bokoHaram {
+class bokoHaram_CUP {
     version = 1;
     
     camo[] = { "desert" };

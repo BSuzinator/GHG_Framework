@@ -1,4 +1,4 @@
-class usKorea
+class usKorea_RHS
 {
     version = 1;
     
