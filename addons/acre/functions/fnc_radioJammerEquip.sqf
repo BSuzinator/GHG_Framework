@@ -12,30 +12,19 @@ _omniAnt = objNull;
 
 _jammer setVariable ["ghg_jammer_maxRange",_range, true];
 
+<<<<<<< HEAD
 private _greenHumvees = ["CUP_B_nM1025_Unarmed_USMC_WDL", "CUP_B_nM1025_Unarmed_USA_WDL"];
 
 private _sandHumvees = ["CUP_B_nM1025_Unarmed_USMC_DES", "CUP_B_nM1025_Unarmed_USA_DES"];
+=======
+private _greenHumvees = ["rhsusf_m998_w_s_4dr","rhsusf_m998_w_4dr","rhsgref_hidf_m998_4dr","UK3CB_ANA_B_M998_4DR","UK3CB_CW_US_B_LATE_M998_4DR","UK3CB_MDF_B_M998_4DR","UK3CB_MDF_O_M998_4DR","UK3CB_MDF_I_M998_4DR","LOP_GRE_M998_D_4DR"];
+
+private _sandHumvees = ["rhsusf_m998_d_s_4dr","rhsusf_m998_d_4dr","UK3CB_TKA_B_M998_4DR","LOP_AA_M998_D_4DR","LOP_IA_M998_D_4DR","LOP_PESH_M998_D_4DR","LOP_PESH_IND_M998_D_4DR"];
+>>>>>>> parent of 321d0c2 (Remove all RHS Dependencies)
 
 // private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
 
-if (_jammer isKindOf "CUP_Boxer_Base_Empty") then {
-	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
-	_tswitch setVariable ["BIS_enableRandomization", true]; 
-	_satAnt = "SatelliteAntenna_01_Mounted_Olive_F" createVehicle [0,0,0]; 
-	_satAnt setVariable ["BIS_enableRandomization", true]; 
-	_gen = "PowerGenerator" createVehicle [0,0,0]; 
-	_gen setVariable ["BIS_enableRandomization", true]; 
-	_omniAnt = "OmniDirectionalAntenna_01_olive_F" createVehicle [0,0,0]; 
-	_omniAnt setVariable ["BIS_enableRandomization", true]; 
-	_tswitch attachTo[_jammer,[-1.176,1.222,-0.9]]; 
-	_tswitch setVectorDirAndUp [[1,0,0], [0,0,1]];
-	_satAnt attachTo[_jammer,[0,1.411,0.77]]; 
-	_gen attachTo[_jammer,[0,-0.224,0.22]]; 
-	_omniAnt attachTo[_jammer,[0.034,-2.132,1.5]];
-	_tswitch animateSource ["switchposition",1];
-};
-
-if (_jammer isKindOf "CUP_Ural_Empty_Base") then {
+if (_jammer isKindOf "rhs_zil131_flatbed_base") then {
 	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
 	_tswitch setVariable ["BIS_enableRandomization", true]; 
 	_satAnt = "SatelliteAntenna_01_Mounted_Olive_F" createVehicle [0,0,0]; 

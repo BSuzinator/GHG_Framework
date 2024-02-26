@@ -37,7 +37,7 @@ class CfgVehicles
     
     // Use our drop script
     class Plane_Base_F;
-    class CUP_C130J_VIV_Base: Plane_Base_F
+    class RHS_C130J_Base: Plane_Base_F
 	{
         rhs_paraPhase = 0.65;
         
@@ -123,7 +123,7 @@ class CfgVehicles
 		};
 	};
 	class Truck_F: Car_F {};
-	/* class RHS_Ural_BaseTurret: Truck_F {
+	class RHS_Ural_BaseTurret: Truck_F {
 		class Turrets {
 			class MainTurret : NewTurret {};
 		};
@@ -196,7 +196,7 @@ class CfgVehicles
 				};
 			};
 		};
-	}; */
+	};
 	/*	***NOT CURRENTLY FUNCTIONING***
 	//3CBF MTVR MLRS
 	//["UK3CB_B_MTVR_MLRS_AAF","UK3CB_MTVR_MLRS","UK3CB_MTVR_Base","Truck_02_base_F","Truck_F","Car_F","Car","LandVehicle","Land","AllVehicles","All"]
