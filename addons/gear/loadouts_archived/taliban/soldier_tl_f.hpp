@@ -7,7 +7,7 @@ class soldier_tl_f : soldier_f
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_akm_gp25";
+        classname = "CUP_arifle_AKM_Early_gp25";
         grenade = "rhs_VOG25";
 
         class Scopes : Scopes
@@ -24,7 +24,7 @@ class soldier_tl_f : soldier_f
     
     class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Fieldpack_PKM";
+        classname = "B_FieldPack_cbr";
         // List of items
         rhs_VOG25 = 10;
         rhs_VG400P_white = 5;

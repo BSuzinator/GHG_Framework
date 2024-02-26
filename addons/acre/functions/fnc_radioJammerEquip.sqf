@@ -119,7 +119,7 @@ private _statementEnable = {
 	params ["_tswitch", "_player", "_actionParams"];
 	_actionParams params ["_jammer"];
 	_tswitch animateSource ["switchposition",1];
-	//_target animateSource ["light",1]; ﻿
+	//_target animateSource ["light",1];
 	_tswitch setObjectTextureGlobal [1,"#(argb,8,8,3)color(0,1,0,0.05,ca)"];
 	_jammer setVariable ["acre_jamming_range", _jammer getVariable ["ghg_jammer_maxRange", 500], true];
 };

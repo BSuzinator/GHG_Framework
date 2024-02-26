@@ -21,7 +21,7 @@ class crew_f : soldier_f
     class Vest : Vest
     {
         classname[] = { "LOP_V_6B23_CrewOfficer_TAN", "rhsgref_6b23_ttsko_mountain_officer", "UK3CB_AAF_I_V_Falcon_1_DIGI_BLK", "V_RebreatherB"};
-        rhs_30Rnd_762x39mm_polymer = 4;
+        CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 4;
         SmokeShell = 1;
 		SmokeShellGreen = 1;
 		SmokeShellRed = 1;
@@ -30,7 +30,7 @@ class crew_f : soldier_f
 		ACE_Canteen = 0;
     };
     
-    facewear[] = { "rhsusf_shemagh2_tan", "rhsusf_shemagh2_grn", "rhsusf_shemagh_white", "G_B_Diving"};
+    facewear[] = { "rhsusf_shemagh2_tan", "CUP_G_Scarf_Face_Grn", "rhsusf_shemagh_white", "G_B_Diving"};
     
     class Binoculars : Binoculars
     {

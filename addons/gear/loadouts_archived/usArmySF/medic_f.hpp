@@ -7,7 +7,7 @@ class medic_f : soldier_f
 
     class Vest : Vest
     {
-        classname = "rhsusf_mbav_medic";
+        classname = "CUP_V_B_Interceptor_Base_M81";
         // Inherited item overrides
 		ACE_EntrenchingTool = 0;
         rhs_mag_m67 = 1;

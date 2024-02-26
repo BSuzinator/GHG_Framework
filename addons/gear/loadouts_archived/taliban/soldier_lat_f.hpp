@@ -8,7 +8,7 @@ class soldier_lat_f : soldier_f
     class Weapon_3 : Weapon_3 // Launcher
     {
         classname = "rhs_weap_rpg7";
-        ammo = "rhs_rpg7_PG7VL_mag";
+        ammo = "CUP_PG7VL_M";
     };
 	class Vest : Vest
     {
@@ -16,8 +16,8 @@ class soldier_lat_f : soldier_f
     };
 	class Backpack : Backpack
     {
-        classname = "LOP_ISTS_RPG_Pack";
+        classname = "CUP_B_RPGPack_Khaki";
         // List of items
-        rhs_rpg7_PG7VL_mag = 1;
+        CUP_PG7VL_M = 1;
     };
 };

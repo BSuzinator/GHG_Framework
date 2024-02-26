@@ -12,7 +12,7 @@ class soldier_uav_f : soldier_tl_f
 	
 	class Vest : Vest
 	{
-		classname[] = {"rhs_6b23_6sh92_vog","rhs_6b23_digi_6sh92_vog","rhs_6b23_ML_6sh92_vog"};
+		classname[] = {"CUP_V_CZ_NPP2006_des","CUP_V_CZ_NPP2006_vz95","CUP_V_CZ_NPP2006_vz95_black"};
 	};
 	
     class Backpack : Backpack

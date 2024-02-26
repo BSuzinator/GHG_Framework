@@ -29,7 +29,7 @@ class soldier_f : loadout_base
     
     class Vest : Vest
     {
-        classname[] = { "rhs_6b23_rifleman", "rhs_6b23_digi_rifleman", "rhs_6b23_ML_rifleman" };
+        classname[] = { "rhs_6b23_rifleman", "CUP_V_CDF_6B3_1_FST", "CUP_V_PMC_CIRAS_Black_Veh" };
         // List of items
         rhs_30Rnd_545x39_7N10_AK = 8;
         rhs_mag_rdg2_white = 2;
@@ -37,6 +37,6 @@ class soldier_f : loadout_base
         ACE_EntrenchingTool = 1;
     };
     
-    headgear[] = { "rhs_6b27m_ess", "rhs_6b28_ess", "rhs_6b27m_ml_ess" };
+    headgear[] = { "rhs_6b27m_ess", "CUP_H_RUS_6B47_v2_GogglesClosed_Winter", "CUP_H_RUS_K6_3_Goggles_black" };
     facewear = "rhsusf_oakley_goggles_clr";
 };

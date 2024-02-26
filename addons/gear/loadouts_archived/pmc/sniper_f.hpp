@@ -15,7 +15,7 @@ class sniper_f : loadout_base
         
         class Scopes : Scopes
         {
-            sniper_optic = "rhsusf_acc_LEUPOLDMK4_2";
+            sniper_optic = "CUP_optic_LeupoldMk4_20x40_LRT";
         };
     };
     

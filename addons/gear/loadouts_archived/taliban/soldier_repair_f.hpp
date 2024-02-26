@@ -13,7 +13,7 @@ class soldier_repair_f : soldier_f
 	
 	class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Fieldpack_PKM";
+        classname = "B_FieldPack_cbr";
         // List of items
         ToolKit = 1;
         ACE_Fortify = 1;

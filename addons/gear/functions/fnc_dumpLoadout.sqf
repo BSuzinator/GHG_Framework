@@ -45,21 +45,21 @@ class %1 : loadout_base
     
     class Uniform : Uniform
     {
-        classname[] = { ""rhs_uniform_bdu_erdl"" };
+        classname[] = { ""CUP_U_B_BDUv2_gloves_ERDL_highland"" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname[] = { ""rhsusf_iotv_ocp_Rifleman"" };
+        classname[] = { ""CUP_V_B_IOTV_OCP_Rifleman_USArmy"" };
         // List of items
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 8;
+        CUP_30Rnd_556x45_Stanag = 8;
         SmokeShell = 2;
         rhs_mag_m67 = 2;
         ACE_EntrenchingTool = 1;
     };
     
-    headgear[] = { ""rhsusf_ach_bare_wood"" };
+    headgear[] = { ""CUP_H_HIL_HelmetACH_TTS"" };
     facewear = ""rhsusf_oakley_goggles_clr"";
 };"
 , 

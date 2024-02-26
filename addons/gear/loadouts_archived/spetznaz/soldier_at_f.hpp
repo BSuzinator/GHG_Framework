@@ -7,7 +7,7 @@ class soldier_at_f : soldier_f
     class Weapon_3 : Weapon_3 // Launcher
     {
         classname = "rhs_weap_rpg7";
-        ammo = "rhs_rpg7_PG7VR_mag";
+        ammo = "CUP_PG7VR_M";
 		class Scopes { rhs_acc_pgo7v3 = "rhs_acc_pgo7v3"; };
     };
 	
@@ -20,9 +20,9 @@ class soldier_at_f : soldier_f
     {
         classname[] = {"UK3CB_BAF_B_Carryall_TAN","UK3CB_BAF_B_Carryall_DPMT","UK3CB_BAF_B_Carryall_Arctic","B_Carryall_oucamo"};
         // List of items
-        rhs_rpg7_PG7VL_mag = 2; //AT
-		rhs_rpg7_OG7V_mag = 2; //HE
-		rhs_rpg7_TBG7V_mag = 1; //Thermo
+        CUP_PG7VL_M = 2; //AT
+		CUP_OG7_M = 2; //HE
+		CUP_TBG7V_M = 1; //Thermo
     };
 	
 	class Binoculars : Binoculars

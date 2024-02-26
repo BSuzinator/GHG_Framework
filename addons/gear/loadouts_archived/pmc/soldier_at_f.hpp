@@ -8,7 +8,7 @@ class soldier_at_f : soldier_f
     {
         classname = "rhs_weap_smaw_green";
         ammo = "rhs_mag_smaw_HEAA";
-		class Scopes { rhs_weap_optic_smaw = "rhs_weap_optic_smaw"; };
+		class Scopes { CUP_optic_SMAW_Scope = "CUP_optic_SMAW_Scope"; };
     };
 	
 	class Vest : Vest

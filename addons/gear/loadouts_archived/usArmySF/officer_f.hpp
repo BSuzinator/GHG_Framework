@@ -9,13 +9,13 @@ class officer_f : soldier_f
     {
         class Scopes : Scopes
         {
-            acog = "rhsusf_acc_su230_mrds";
+            acog = "CUP_optic_Elcan_SpecterDR_RMR_black";
         };
     };
     
     class Vest : Vest
     {
-		classname = "rhsusf_mbav_grenadier";
+		classname = "CUP_V_B_Interceptor_Grenadier_M81";
         // List of items
         ACRE_PRC152 = 1;
 		ACE_MapTools = 1;
@@ -27,5 +27,5 @@ class officer_f : soldier_f
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt_headset", "rhsusf_mich_helmet_marpatwd_norotos_arc_headset", "rhsusf_mich_bare_norotos_arc_alt_tan_headset" };
+    headgear[] = { "CUP_H_USArmy_MICH_GCOVERED_Headset_M81_headset", "CUP_H_OpsCore_Black_headset", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des_headset" };
 };

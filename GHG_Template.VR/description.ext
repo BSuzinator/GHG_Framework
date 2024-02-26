@@ -17,7 +17,7 @@ respawn = 3;
 respawnDelay = 5000;
 respawnTemplates[] = {"ace_spectator"};
 
-//Admin Settings - BSuz, Fawks
+//Admin Settings - BSuz, Revicarrus
 enableZeusInterface[] = { "76561198080019809", "76561198839038904" };
 saving = 0;
 skiplobby = 0;

@@ -11,5 +11,5 @@ class ravn_pilot : ravn_crew
         ACE_microDAGR = 1;
     };
 	headgear = "vn_b_helmet_svh4_01_06";
-    facewear = "rhsusf_oakley_goggles_clr";
+    facewear = "CUP_G_ESS_BLK";
 };

@@ -1,0 +1,15 @@
+/*======================================
+	Loadout for Ravn Crew (pmc)
+======================================*/
+class ravn_crew : lynx_crew
+{
+    
+	
+	class Vest : Vest
+    {
+        // List of items
+		CUP_HandGrenade_M67 = 0;
+    };
+	headgear = "H_CrewHelmetHeli_B";
+    facewear = "G_Combat_lxWS";
+};

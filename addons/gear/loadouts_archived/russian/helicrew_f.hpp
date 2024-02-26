@@ -13,6 +13,6 @@ class helicrew_f : crew_f
         // List of items
 		rhs_mag_rgo = 0;
     };
-	headgear = "rhsusf_hgu56p_visor_mask_black";
+	headgear = "H_CrewHelmetHeli_B";
     facewear = "rhsusf_oakley_goggles_clr";
 };
