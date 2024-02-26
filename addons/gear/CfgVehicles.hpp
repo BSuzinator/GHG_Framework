@@ -135,4 +135,5 @@ class CfgVehicles
 	
 	#include "gearUpPoint.hpp"
     #include "servicePoints.hpp"
+	#include "arsenals.hpp"
 };

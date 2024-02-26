@@ -14,6 +14,7 @@ private _kickPlayer = ["Kick Player",FUNC(kickPlayerDialog),"","",[],-1,true,tru
 private _storeStats = ["Store stats to DB",ghg_statistics_fnc_doStoreStats,"","",[],-1,true,true];
 private _toggleRFF = ["Toggle RFF",FUNC(toggleRFF),"","",[],-1,true,true];
 private _coinflip = ["Flip a Coin",EFUNC(downtime,coinflip),"","",[],-1,true,true];
+private _openArsenal = ["Open Arsenal",{[nearestObject [getPos player, "GHG_Arsenal"], player] call ace_arsenal_fnc_openBox;},"","",[],-1,(count (nearestObjects [ASLToAGL getPosASL player, ["GHG_Arsenal"], 10, false]) > 0),(count (nearestObjects [ASLToAGL getPosASL player, ["GHG_Arsenal"], 10, false]) > 0)];
 
 //Define Submenu Actions
 private _vehicleSubmenu = [
@@ -50,6 +51,7 @@ private _radioSubmenu = [
 _menuOptions pushback _storeStats;
 _menuOptions pushback _toggleRFF;
 _menuOptions pushback _coinflip;
+_menuOptions pushback _openArsenal;
 //_menuOptions pushback ["A Test",{hint "Hello World"; true},"","",[],-1,true,true];
 if (GVARMAIN(isAdmin)) then {_menuOptions pushback _kickPlayer;_menuOptions pushback _forceLogoutAdmin;};
 
