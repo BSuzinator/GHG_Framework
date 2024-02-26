@@ -12,17 +12,11 @@ _omniAnt = objNull;
 
 _jammer setVariable ["ghg_jammer_maxRange",_range, true];
 
-<<<<<<< HEAD
-private _greenHumvees = ["CUP_B_nM1025_Unarmed_USMC_WDL", "CUP_B_nM1025_Unarmed_USA_WDL"];
-
-private _sandHumvees = ["CUP_B_nM1025_Unarmed_USMC_DES", "CUP_B_nM1025_Unarmed_USA_DES"];
-=======
 private _greenHumvees = ["rhsusf_m998_w_s_4dr","rhsusf_m998_w_4dr","rhsgref_hidf_m998_4dr","UK3CB_ANA_B_M998_4DR","UK3CB_CW_US_B_LATE_M998_4DR","UK3CB_MDF_B_M998_4DR","UK3CB_MDF_O_M998_4DR","UK3CB_MDF_I_M998_4DR","LOP_GRE_M998_D_4DR"];
 
 private _sandHumvees = ["rhsusf_m998_d_s_4dr","rhsusf_m998_d_4dr","UK3CB_TKA_B_M998_4DR","LOP_AA_M998_D_4DR","LOP_IA_M998_D_4DR","LOP_PESH_M998_D_4DR","LOP_PESH_IND_M998_D_4DR"];
->>>>>>> parent of 321d0c2 (Remove all RHS Dependencies)
 
-// private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
+private _blackHumvees = ["LOP_ISTS_OPF_M998_D_4DR","LOP_ISTS_M998_D_4DR"];
 
 if (_jammer isKindOf "rhs_zil131_flatbed_base") then {
 	_tswitch = "Land_TransferSwitch_01_F" createVehicle [0,0,0]; 
@@ -125,7 +119,7 @@ private _statementEnable = {
 	params ["_tswitch", "_player", "_actionParams"];
 	_actionParams params ["_jammer"];
 	_tswitch animateSource ["switchposition",1];
-	//_target animateSource ["light",1]; ﻿
+	//_target animateSource ["light",1];
 	_tswitch setObjectTextureGlobal [1,"#(argb,8,8,3)color(0,1,0,0.05,ca)"];
 	_jammer setVariable ["acre_jamming_range", _jammer getVariable ["ghg_jammer_maxRange", 500], true];
 };
