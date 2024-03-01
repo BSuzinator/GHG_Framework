@@ -28,20 +28,20 @@ class sniper_f : loadout_base
 	
     class Uniform : Uniform
     {
-        classname = "LOP_U_ISTS_Fatigue_14";
+        classname = "CUP_U_B_CDF_DST_1";
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname = "LOP_V_CarrierLite_TAN";
+        classname = "CUP_V_B_JPC_Tan_Light";
         // List of items
         rhs_10Rnd_762x54mmR_7N1 = 4;
 		rhsusf_mag_7x45acp_MHP = 2;
         SmokeShell = 2;
     };
     
-    headgear = "LOP_H_Shemag_BLK";
+    headgear = "CUP_H_TKI_Lungee_02";
     facewear = "G_Combat_lxWS";
 	
 	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon

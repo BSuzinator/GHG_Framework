@@ -6,7 +6,7 @@ class soldier_ar_f : soldier_f
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m249_pip_s_para";
+        classname = "CUP_lmg_m249_pip1_s_para";
         ammo = "rhsusf_200Rnd_556x45_soft_pouch";
         bipod = "rhsusf_acc_harris_bipod";
     };

@@ -108,5 +108,60 @@ class CfgVehicles {
         };
 		
     };
+	class NonStrategic;
+	class Land_TransferSwitch_01_base_F : NonStrategic {
+		class Attributes;
+	};
+	class GHG_TransferSwitch_F : Land_TransferSwitch_01_base_F {
+		displayName = "GHG Blackout Switch";
+		author = "GHG Team";
+		editorCategory="GHG_Cat_Main";
+		editorSubcategory="GHG_SubCat_Other";
+		scope = 2;
+		class ACE_Actions {
+			class ACE_MainActions {
+				position = "[0,0,0]";
+				distance = 4.0;
+				condition = "true";
+				icon = "\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_debug_ca.paa";
+				selection = "";
+				exceptions[] = {"isNotSwimming"};
+				class GHG_Blackout_Enable {
+					displayName = "Switch Off";
+					position = "[0,0,0]";
+					distance = 4.0;
+					icon = "\a3\modules_f_curator\data\portraitlightning_ca.paa";
+					condition = QUOTE(_this call FUNC(blackoutCondition));
+					statement = QUOTE(_this call FUNC(blackout));
+					exceptions[] = {"isNotSwimming"};
+				};
+				
+				class GHG_Blackout_Disable {
+					displayName = "Switch On";
+					position = "[0,0,0]";
+					distance = 4.0;
+					icon = "\a3\modules_f_curator\data\portraitlightning_ca.paa";
+					condition = QUOTE(!(_this call FUNC(blackoutCondition)));
+					statement = QUOTE(_this call FUNC(blackout));
+					exceptions[] = {"isNotSwimming"};
+				};
+			};
+        };
+		class Attributes : Attributes {
+			class GHG_Blackout_Radius {
+				displayName = "Blackout Radius";
+				tooltop = "Radius in meters to disable all lights";
+				property = "GHG_Blackout_AttributeID";
+				control = "EditShort";
+				expression = "_this setVariable ['%s',_value, true];";
+				defaultValue = "3000";
+				validate = "number";
+				typeName = "NUMBER";
+				condition = "1";
+			};
+		};			
+	
+	
+	};
 	
 };

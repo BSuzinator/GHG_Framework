@@ -7,10 +7,10 @@ class soldier_f : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_ak103";
+        classname = "CUP_arifle_AK103";
         laser = "rhs_acc_perst1ik";
-        ammo = "rhs_30Rnd_762x39mm_polymer";
-		muzzle = "rhs_acc_pbs1";
+        ammo = "CUP_30Rnd_762x39_AK47_bakelite_M_polymer";
+		muzzle = "CUP_muzzle_snds_socom762rc";
         
         class Scopes : Scopes
         {
@@ -23,7 +23,7 @@ class soldier_f : loadout_base
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_gorka_r_y_gloves", "UK3CB_CHD_B_U_CombatSmock_07", "UK3CB_CHD_W_B_U_CombatSmock_07", "UK3CB_AAF_B_U_Diving_Uniform_DIGI_BLK" };
+        classname[] = { "rhs_uniform_gorka_r_y_gloves", "UK3CB_CHD_B_U_CombatSmock_07", "UK3CB_CHD_W_B_U_CombatSmock_07", "U_B_Wetsuit" };
 		ACRE_PRC343 = 1;
 		ACE_Canteen = 1;
 		ACE_CableTie = 2;
@@ -33,7 +33,7 @@ class soldier_f : loadout_base
     {
         classname[] = { "LOP_V_6B23_Rifleman_TAN", "rhsgref_6b23_ttsko_mountain_rifleman", "UK3CB_AAF_I_V_Falcon_1_DIGI_BLK", "V_RebreatherB" };
         // List of items
-        rhs_30Rnd_762x39mm_polymer = 8;
+        CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 8;
         SmokeShell = 2;
         rhs_mag_rgo = 2;
         ACE_EntrenchingTool = 1;

@@ -1,20 +1,16 @@
 #include "script_component.hpp"
 /*======================================
-	ghg_fnc_blackout
-	Adds action to object to turn off all lights within the given radius
-	Use on "Land_TransferSwitch_01_F"
+	ghg_misc_fnc_blackout
+	Handles disable / enable -ing of lamps within given radius of tswitch
+	Use on "GHG_TransferSwitch_F"
 	Author: BSuz
-	
-	[_hostObject,0,["ACE_MainActions","blackoutDisable"]] call ace_interact_menu_fnc_removeActionFromObject;
-	[_hostObject,0,["ACE_MainActions","blackoutEnable"]] call ace_interact_menu_fnc_removeActionFromObject;
-	
-	Example:
-	[_hostObject, _radius] call ghg_misc_fnc_blackout;
 ======================================*/
-params ["_hostObject", "_radius"];
+params ["_target", "_player", "_params"];
+private _radius = _target getVariable ["GHG_Blackout_Radius",3000];
+private _hostObject = _target;
 
 private _lampList = [
-	//"Lamps_base_F", 
+	"Lamps_base_F", 
 	"PowerLines_base_F", 
 	"PowerLines_Small_base_F",
 	"Land_fs_roof_F",
@@ -45,55 +41,19 @@ private _lampList = [
 	
 ];
 
+private _jipTag = format ["GHG_JIP_Blackout_%1",str _hostObject];
+private _lamps = nearestObjects [_hostObject, _lampList, _radius];
 
-private _statementDisable = {
-	params ["_hostObject", "_player", "_actionParams"];
-	_actionParams params ["_radius", "_lampList"];
-	
-	_hostObject animateSource ["switchposition",0];
-	_hostObject setDamage 0.97;
-	_hostObject animateSource ["light",1];  
-	_hostObject setObjectTextureGlobal [1,"#(argb,8,8,3)color(1,0,0,0.05,ca)"];
-	
-	
-	private _lamps = nearestObjects [_hostObject, _lampList, _radius];
-	
-	{
-		for "_i" from 0 to count getAllHitPointsDamage _x do
-		{
-			_x setHitIndex [_i, 0.97];
-			[_x, "OFF"] remoteExec ["switchLight",0,true];
-		};
-	} forEach _lamps;
-	
-	
+private _enabled = _target getVariable ["ghg_blackout_tswitch_state", true];
+switch (_enabled) do
+{
+	case true: {
+		_target setVariable ["ghg_blackout_tswitch_state", false, true];
+		[_hostObject, _lamps] remoteExec [QFUNC(blackoutDisable),0, _jipTag];
+	};
+	case false: {
+		_target setVariable ["ghg_blackout_tswitch_state", true, true];
+		//Do Enable
+		[_hostObject, _lamps] remoteExec [QFUNC(blackoutEnable),0, _jipTag];		
+	};
 };
-
-private _statementEnable = {
-	params ["_hostObject", "_player", "_actionParams"];
-	_actionParams params ["_radius", "_lampList"];
-	
-	_hostObject animateSource ["switchposition",1];
-	_hostObject setDamage 0;
-	_hostObject animateSource ["light",1];  
-	_hostObject setObjectTextureGlobal [1,"#(argb,0,0.8,0)color(1,0,0,0.05,ca)"];
-	
-	
-	private _lamps = nearestObjects [_hostObject, _lampList, _radius];
-	
-	{
-		for "_i" from 0 to count getAllHitPointsDamage _x do
-		{
-			_x setHitIndex [_i, 0];
-			[_x, "ON"] remoteExec ["switchLight",0,true];
-		};
-	} forEach _lamps;
-	
-};
-
-private _actionDisable = ["blackoutDisable","Switch Off","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statementDisable,{damage _target < 0.9},{},[_radius, _lampList], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-
-private _actionEnable = ["blackoutEnable","Switch On","\a3\modules_f_curator\data\portraitlightning_ca.paa",_statementEnable,{damage _target > 0},{},[_radius, _lampList], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-
-[_hostObject, 0, ["ACE_MainActions"], _actionDisable] call ace_interact_menu_fnc_addActionToObject;
-[_hostObject, 0, ["ACE_MainActions"], _actionEnable] call ace_interact_menu_fnc_addActionToObject;

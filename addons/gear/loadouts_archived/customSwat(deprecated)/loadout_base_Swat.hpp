@@ -7,9 +7,9 @@ class loadout_base_Swat : loadout_base
 
     class Weapon_2 : Weapon_2 // Everyone gets a flashlight instead of NVGS
 	{ 
-		classname = "rhsusf_weap_glock17g4";
-		muzzle = "rhsusf_acc_omega9k";
-        laser = "acc_flashlight_pistol";
+		classname = "CUP_hgun_Glock17_blk";
+		muzzle = "muzzle_snds_L";
+        laser = "CUP_acc_Glock17_Flashlight";
         ammo = "rhsusf_mag_17Rnd_9x19_JHP";
 		class Scopes {}; 
 	};

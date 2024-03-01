@@ -7,7 +7,7 @@ class maa_ammo : loadout_base_Swat
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m4a1_blockII_M203_bk";
+        classname = "CUP_arifle_M4A1_SOMMOD_Grip_black_M203_bk";
         ammo = "UK3CB_ACR_30rnd_556x45";
 		grenade = "rhs_mag_m4009";
 		scope = "rhsusf_acc_compm4";

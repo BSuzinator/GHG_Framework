@@ -79,32 +79,35 @@ disableRespawn=0;
 
 //Set Player Factions
 //List of acceptable factions: 
-//baf_RHS or baf_CUP
-//bokoHaram_RHS or bokoHaram_CUP
-//gendarmerieSwat_RHS or gendarmerieSwat_CUP
+//baf
+//bokoHaram
+//gendarmerieSwat
 //macv
-//pmc_RHS or pmc_CUP
-//russian_RHS or russian_CUP
-//serbian_RHS or serbian_CUP
-//spetznaz_RHS or spetznaz_CUP
-//taliban_RHS or taliban_CUP
-//usArmy_RHS or usArmy_CUP
-//usArmySF_RHS or usArmySF_CUP
-//usKorea_RHS or usKorea_CUP
-//usMC_RHS or usMC_CUP
-bluFaction = "usArmy_RHS";
-opfFaction = "usMC_CUP";
+//pmc
+//russian
+//serbian
+//spetznaz
+//taliban
+//usArmy
+//usArmySF
+//usKorea
+//usMC
+bluFaction = "usArmy";
+opfFaction = "usMC";
 indFaction = "macv";
 
 //Set Player Camo Pattern
 //List of acceptable Camos:
-//macv: olive, leopard
-//russian: emr, emrd, flora
-//serbian: m81
-//spetznaz: desert, woodland, snow, diving
-//usArmy: OEFCP, OCP, UCP, UCPD, ERDL
-//usArmySF: black, desert, woodland
-//usMC: mpD, mpWD
+//baf - mtp, arctic, tropical, woodland, desert
+//bokoHaram - desert
+//macv - olive, leopard
+//serbian - m81
+//spetznaz - desert, woodland, snow, diving
+//taliban - desert
+//usArmy - erdl, ocp, oefcp, ucp, ucpd
+//usArmySF - woodland, black, desert
+//usKorea - olive, leopard
+//usMC - mpD, mpWD
 bluCamo = "ERDL";
 opfCamo = "mpD";
 indCamo = "flora";

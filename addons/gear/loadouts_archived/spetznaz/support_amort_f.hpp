@@ -13,7 +13,7 @@ class support_amort_f : soldier_f
 	class Vest : Vest
     {
         // List of items
-        rhs_30Rnd_762x39mm_polymer = 6;
+        CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 6;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;
 		ACE_artilleryTable = 1;

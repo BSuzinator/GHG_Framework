@@ -9,7 +9,6 @@ class CfgWeapons
     {
         magazineWell[] = { CBA_545x39_AK };
     };
-    
     class rhs_weap_ak74m;
     class rhs_weap_akm : rhs_weap_ak74m
     {

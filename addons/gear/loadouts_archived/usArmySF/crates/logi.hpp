@@ -6,7 +6,7 @@ class ghg_crate_usArmy_logi : ghg_crate_base
     class items : items {
         ACE_elasticBandage = 12;
         ACE_packingBandage = 12;
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 32;
+        CUP_30Rnd_556x45_Stanag = 32;
         rhs_mag_m67 = 4;
         rhs_mag_an_m8hc = 6;
         rhs_weap_M136 = 1;

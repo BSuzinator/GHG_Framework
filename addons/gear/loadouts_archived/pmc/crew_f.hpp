@@ -33,7 +33,7 @@ class crew_f : soldier_f
         ACE_EntrenchingTool = 0;
     };
     
-    headgear = "rhsusf_cvc_helmet";
+    headgear = "CUP_H_USArmy_HelmetACH_UCP";
     facewear = "rhsusf_shemagh2_tan";
     
     class Binoculars : Binoculars

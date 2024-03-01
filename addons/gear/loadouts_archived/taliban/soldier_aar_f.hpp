@@ -12,11 +12,11 @@ class soldier_aar_f : soldier_f
 	
     class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Fieldpack_PKM";
+        classname = "B_FieldPack_cbr";
         // List of items
 		ACE_Canteen = 2;
         ACE_SpareBarrel = 1;
-        rhs_75Rnd_762x39mm = 3;
+        CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M = 3;
     };
 	
 	class Binoculars : Binoculars

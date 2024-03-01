@@ -100,6 +100,7 @@ if ( hasInterface ) then
                 if ( time > 30 ) then
                 {
                     systemChat format["It has been %1 minutes since mission start, weapons are cold.", round (time / 60)];
+					//call EFUNC(gear,gearHint);
                 };
             };
         }, 60, []] call CBA_fnc_addPerFrameHandler;

@@ -1,8 +1,11 @@
 #include "script_component.hpp"
-//if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
 /*======================================
     Everything in this file is run once on mission start
 	Author: CBA_3
 ======================================*/
-//[] spawn FUNC(getStats);
-//[] call FUNC(initFactories);
+//Run on EVERY mission file
+[] call FUNC(extinguishUnitModule);
+
+//Don't delete
+if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
+//Run ONLY ON GHG MISSIONS

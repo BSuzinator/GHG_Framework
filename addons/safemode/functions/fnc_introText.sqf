@@ -8,7 +8,7 @@ private _unit = player;
 if ((side _unit) isEqualTo sideLogic) exitWith {};
 private _author = getMissionConfigValue ["author", ""];
 private _missionName = getMissionConfigValue ["OnLoadName", ""];
-private _worldName = worldName;
+private _worldName = getText (configFile >> "CfgWorlds" >> worldName >> "description");
 private _missionTime = [dayTime, "HH:MM"] call BIS_fnc_timeToString;
 private _callsign = groupId (group _unit);
 private _role = getText (configFile >> "CfgVehicles" >> (typeOf _unit) >> "displayName");

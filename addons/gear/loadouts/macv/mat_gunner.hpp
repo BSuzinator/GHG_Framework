@@ -5,10 +5,15 @@ class mat_gunner : squad_rifleman
 {
     class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "rhs_weap_smaw_green";
-        ammo = "rhs_mag_smaw_HEAA";
-        grenade = "rhs_mag_smaw_SR";
-		class Scopes { rhs_weap_optic_smaw = "rhs_weap_optic_smaw"; };
+
+        classname = "vn_m20a1b1_01";
+        ammo = "vn_m20a1b1_heat_mag";
+
+        classname = "CUP_launch_Mk153Mod0";
+        ammo = "CUP_SMAW_HEAA_M";
+        grenade = "CUP_SMAW_Spotting";
+		class Scopes { CUP_optic_SMAW_Scope = "CUP_optic_SMAW_Scope"; };
+
     };
 	
 	class Vest : Vest
@@ -20,7 +25,11 @@ class mat_gunner : squad_rifleman
     {
         classname = "vn_b_pack_lw_01";
         // List of items
-        rhs_mag_smaw_HEAA = 2;
-        rhs_mag_smaw_SR = 4;
+
+        vn_m20a1b1_heat_mag = 2;
+
+        CUP_SMAW_HEAA_M = 2;
+        CUP_SMAW_Spotting = 4;
+
     };
 };

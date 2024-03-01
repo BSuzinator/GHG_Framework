@@ -7,7 +7,7 @@ class soldier_tl_f : soldier_f
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
+        classname[] = { "CUP_arifle_M4A1_BUIS_camo_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_desert_GL"};
         grenade = "rhs_mag_M441_HE";
 
         class Scopes : Scopes
@@ -18,14 +18,14 @@ class soldier_tl_f : soldier_f
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
+        classname[] = { "CUP_V_B_IOTV_OCP_TL_USArmy", "CUP_V_B_IOTV_OCP_TL_USArmy", "CUP_V_B_IOTV_OCP_TL_USArmy", "CUP_V_B_IOTV_UCP_TL_USArmy", "CUP_V_B_IOTV_UCP_TL_USArmy" };
 		ACE_MapTools = 1;
 		ACE_EntrenchingTool = 0;
     };
     
     class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
+        classname[] = { "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_UCP", "CUP_B_US_Assault_UCP" };
         // List of items
         rhs_mag_M441_HE = 10;
         rhs_mag_M585_white = 5;
@@ -41,5 +41,5 @@ class soldier_tl_f : soldier_f
         classname = "Binocular";
     };
 	
-    headgear[] = { "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_helmet_headset_ucp", "rhsusf_ach_helmet_headset_ucp" };
+    headgear[] = { "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_UCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_UCP" };
 };

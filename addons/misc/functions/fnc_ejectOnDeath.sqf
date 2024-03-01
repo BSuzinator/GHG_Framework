@@ -12,7 +12,7 @@ private _getRandomPosition = {
 	private _totalDist = 5 + _randDist;
 	
 	private _teleportPos = _unit getRelPos [_totalDist,_randDir];
-	_teleportPos = _teleportPos vectorAdd [0, 0, 0.1];
+	_teleportPos = _teleportPos set [2,((ASLtoAGL (getPosASL _unit)) # 2)];
 	[_teleportPos, _randDir]
 };
 {

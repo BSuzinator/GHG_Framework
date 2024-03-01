@@ -7,7 +7,7 @@ class spotter_f : soldier_f
 	
 	class Vest : Vest
     {
-		rhs_mag_30Rnd_556x45_Mk318_Stanag = 6;
+		CUP_30Rnd_556x45_Stanag = 6;
 		ACE_MapTools = 1;
 		ACE_Kestrel4500 = 1;
 		ACE_RangeCard = 1;
@@ -17,8 +17,8 @@ class spotter_f : soldier_f
 	
 	class Backpack : Backpack
     {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii", "rhsusf_falconii_coy" };
-        rhsusf_5Rnd_300winmag_xm2010 = 10;
+        classname[] = { "CUP_B_Kombat_Olive", "CUP_B_Kombat_Olive", "CUP_B_Kombat_Olive" };
+        CUP_5Rnd_762x67_M2010_M = 10;
     };
 	
 };

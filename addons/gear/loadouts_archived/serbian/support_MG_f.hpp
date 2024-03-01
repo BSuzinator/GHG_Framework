@@ -7,12 +7,12 @@ class support_MG_f : soldier_f
 	
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m240G";
-        ammo = "rhsusf_100Rnd_762x51";
+        classname = "CUP_lmg_M240";
+        ammo = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
         bipod = "rhsusf_acc_saw_bipod";
 		class Scopes : Scopes
         {
-            mg_optic = "rhsusf_acc_ELCAN";
+            mg_optic = "CUP_optic_ElcanM145";
         };
     };
 	
@@ -20,7 +20,7 @@ class support_MG_f : soldier_f
     {
         // List of items
 		rhssaf_30rnd_556x45_EPR_G36 = 0;
-		rhsusf_100Rnd_762x51 = 3;
+		CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
 		ACE_EntrenchingTool = 0;
     };
 	
@@ -28,6 +28,6 @@ class support_MG_f : soldier_f
     {
         classname[] = { "rhssaf_kitbag_md2camo" };
         // List of items
-        rhsusf_100Rnd_762x51 = 3;
+        CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M = 3;
     };
 };

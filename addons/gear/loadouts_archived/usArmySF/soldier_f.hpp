@@ -7,10 +7,10 @@ class soldier_f : loadout_base
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_blockII_wd", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_d" };
-		muzzle = "rhsusf_acc_nt4_black";
+        classname[] = { "CUP_arifle_M4A1_SOMMOD_Grip_green", "CUP_arifle_M4A1_SOMMOD_Grip_black", "CUP_arifle_M4A1_SOMMOD_Grip_tan" };
+		muzzle = "CUP_muzzle_snds_SCAR_L";
         laser = "rhsusf_acc_anpeq15_bk";
-        ammo = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+        ammo = "CUP_30Rnd_556x45_Stanag";
 		bipod = "rhsusf_acc_kac_grip";
         
         class Scopes : Scopes
@@ -26,21 +26,21 @@ class soldier_f : loadout_base
     
     class Uniform : Uniform
     {
-        classname[] = { "rhs_uniform_g3_m81", "rhs_uniform_g3_blk", "rhs_uniform_g3_tan" };
+        classname[] = { "CUP_U_CRYE_G3C_M81", "CUP_U_CRYE_G3C_BLK", "CUP_U_CRYE_G3C_MC_V3" };
 		ACRE_PRC343 = 1;
     };
     
     class Vest : Vest
     {
-        classname = "rhsusf_mbav_Rifleman";
+        classname = "CUP_V_B_Interceptor_Rifleman_M81";
         // List of items
-        rhs_mag_30Rnd_556x45_Mk318_Stanag = 8;
+        CUP_30Rnd_556x45_Stanag = 8;
         SmokeShell = 2;
         rhs_mag_m67 = 2;
         ACE_EntrenchingTool = 1;
 		ACE_Canteen = 1;
     };
     
-    headgear[] = { "rhsusf_mich_bare_norotos_arc_alt", "rhsusf_mich_helmet_marpatwd_norotos_arc", "rhsusf_mich_bare_norotos_arc_alt_tan" };
-    facewear[] = { "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_gogg_tan" };
+    headgear[] = { "CUP_H_USArmy_MICH_GCOVERED_Headset_M81", "CUP_H_OpsCore_Black", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des" };
+    facewear[] = { "CUP_G_ESS_RGR", "CUP_G_ESS_RGR", "CUP_G_ESS_KHK_Scarf_Tan" };
 };

@@ -18,7 +18,7 @@ class spotter_f : soldier_f
 	class Backpack : Backpack
     {
         classname[] = { "rhssaf_kitbag_md2camo" };
-        rhsusf_5Rnd_300winmag_xm2010 = 10;
+        CUP_5Rnd_762x67_M2010_M = 10;
     };
 	
 };

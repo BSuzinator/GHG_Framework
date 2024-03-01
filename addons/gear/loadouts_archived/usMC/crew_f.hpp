@@ -31,8 +31,8 @@ class crew_f : soldier_f
         ACE_EntrenchingTool = 0;
     };
     
-    headgear[] = {"rhsusf_cvc_helmet", "rhsusf_cvc_green_helmet"};
-    facewear[] = {"rhsusf_shemagh2_tan", "rhsusf_shemagh2_grn"};
+    headgear[] = {"CUP_H_USArmy_HelmetACH_UCP", "CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP"};
+    facewear[] = {"rhsusf_shemagh2_tan", "CUP_G_Scarf_Face_Grn"};
     
     class Binoculars : Binoculars
     {

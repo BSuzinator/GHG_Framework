@@ -24,9 +24,9 @@ class pilot_f : soldier_f
     
 	class Weapon_2 : Weapon_2 
 	{ 
-		classname = "rhsusf_weap_m9";
+		classname = "CUP_hgun_M9";
         laser = "";
-        ammo = "rhsusf_mag_15Rnd_9x19_FMJ";
+        ammo = "CUP_15Rnd_9x19_M9";
 		class Scopes {}; 
 	};
 	
@@ -39,11 +39,11 @@ class pilot_f : soldier_f
     {
         classname = "V_Rangemaster_belt";
         // List of items
-        rhs_mag_30Rnd_556x45_M855A1_Stanag = 0;
+        CUP_30Rnd_556x45_Stanag = 0;
         rhs_mag_m67 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
-		rhsusf_mag_15Rnd_9x19_FMJ = 3;
+		CUP_15Rnd_9x19_M9 = 3;
 		SmokeShellRed = 1;
 		SmokeShellGreen = 1;
 		ACE_Chemlight_HiGreen = 1;

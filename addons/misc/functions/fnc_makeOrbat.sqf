@@ -15,7 +15,8 @@ private _ghgGroupIDs = [
 	"WOLF 1","WOLF 2","WOLF 3","WOLF 4",
 	"RAVN 1","RAVN 2","RAVN 3","RAVN 4",
 	"FLCN 1","FLCN 2","FLCN 3","FLCN 4",
-	"RPTR 1","RPTR 2","RPTR 3","RPTR 4"
+	"RPTR 1","RPTR 2","RPTR 3","RPTR 4",
+	"KNFS 1","KNFS 2","KNFS 3","KNFS 4"
 ];
 private _customGroups = [];
 _customGroups = getArray (missionConfigFile >> "CfgGHG" >> "customGroups");

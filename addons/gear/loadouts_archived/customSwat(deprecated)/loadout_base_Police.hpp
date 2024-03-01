@@ -6,9 +6,9 @@ class loadout_base_Police : loadout_base
     
 	class Weapon_2 : Weapon_2 // Everyone gets a flashlight instead of NVGS
 		{ 
-			classname = "rhsusf_weap_glock17g4";
+			classname = "CUP_hgun_Glock17_blk";
 			ammo = "rhsusf_mag_17Rnd_9x19_JHP";
-			laser = "acc_flashlight_pistol";
+			laser = "CUP_acc_Glock17_Flashlight";
 			class Scopes {}; 
 		};
     

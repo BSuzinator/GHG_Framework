@@ -7,13 +7,13 @@ class support_mort_f : soldier_f
 	
 	class Weapon_3 : Weapon_3 // Launcher
     {
-        classname = "ace_compat_rhs_usf3_m252_carry";
+        classname = "ace_csw_staticMortarCarry";
     };
 	
 	class Vest : Vest
     {
         // List of items
-		rhs_30Rnd_762x39mm_polymer = 6;
+		CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 6;
 		ACE_EntrenchingTool = 0;
 		ACE_Kestrel4500 = 1;
 		ACE_MapTools = 1;

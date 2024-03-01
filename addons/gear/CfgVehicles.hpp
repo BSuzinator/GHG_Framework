@@ -133,5 +133,7 @@ class CfgVehicles
     GHG_SIDE_CLASS(o)
     GHG_SIDE_CLASS(i)
 	
+	#include "gearUpPoint.hpp"
     #include "servicePoints.hpp"
+	#include "arsenals.hpp"
 };

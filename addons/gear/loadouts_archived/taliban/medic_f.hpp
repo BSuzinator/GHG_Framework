@@ -16,7 +16,7 @@ class medic_f : soldier_f
     
     class Backpack : Backpack
     {
-        classname = "LOP_ISTS_Sidor_Med";
+        classname = "B_FieldPack_cbr";
         // List of items
         ACE_elasticBandage = 32;
 		ACE_packingBandage = 32;

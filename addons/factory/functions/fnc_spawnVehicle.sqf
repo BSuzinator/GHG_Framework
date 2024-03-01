@@ -44,7 +44,7 @@ if !( (isNull _closestLand) && (isNull _closestShip) && (isNull _closestAir) ) t
 
 private _vehicle = createVehicle [_vehClass, _spawnPos, [], 0, "CAN_COLLIDE"];
 _vehicle setDir _spawnDir;
-_vehicle setPos getPos _vehicle;
+_vehicle setPosASL getPosASL _spawnPoint;
 _vehicle setVectorUp surfaceNormal _spawnPos;
 
 clearItemCargoGlobal _vehicle;

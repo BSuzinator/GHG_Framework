@@ -7,7 +7,7 @@ class mat_ammo : loadout_base_Swat
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname = "rhs_weap_m4a1_blockII_KAC_bk";
+        classname = "CUP_arifle_M4A1_SOMMOD_Grip_black_KAC_bk";
         ammo = "UK3CB_ACR_30rnd_556x45";
 		acog = "rhsusf_acc_compm4";
         

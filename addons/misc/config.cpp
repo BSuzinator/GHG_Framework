@@ -46,6 +46,11 @@ class CfgMainMenuSpotlight
 	delete Extraction_lxWS;
     delete Showcase_VR_lxWS;
     delete Showcase_Alchemist_lxWS;
+	delete vn_showcase_macv;
+	delete vn_showcase_macv_13;
+	delete vn_showcase_pavn;
+	delete vn_showcase_pavn_13;
+	delete vn_sogba;
 	
     class GHG_Connect
 	{

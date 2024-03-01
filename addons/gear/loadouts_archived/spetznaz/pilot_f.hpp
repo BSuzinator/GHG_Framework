@@ -40,7 +40,7 @@ class pilot_f : soldier_f
     {
         classname = "V_Rangemaster_belt";
         // List of item overrides
-        rhs_30Rnd_762x39mm_polymer = 0;
+        CUP_30Rnd_762x39_AK47_bakelite_M_polymer = 0;
         rhs_mag_rgd5 = 0;
         ACE_EntrenchingTool = 0;
         SmokeShell = 0;
