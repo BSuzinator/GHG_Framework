@@ -7,7 +7,7 @@
 
 private _function = {
 	params ["_modulePos","_attachedObject"];
-	if (_attachedObject isEqualTo objNull) exitWith {systemChat "No unit selected"};
+	//if (_attachedObject isEqualTo objNull) exitWith {systemChat "No unit selected"};
 	private _jammerFriendlyNames = ["CDF ZiL-131","Sand Humvee"];
 	private _jammerClassNames = ["CUP_B_MTVR_USA","CUP_B_nM1025_Unarmed_USA_DES"];
 
