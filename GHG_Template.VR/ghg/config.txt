@@ -79,19 +79,21 @@ disableRespawn=0;
 
 //Set Player Factions
 //List of acceptable factions: 
-// bokoHaram
-// macv
-// pmc
-// russian
-// serbian
-// spetznaz
-// taliban
-// usArmy
-// usArmySF
-// usMC
-// swat
-bluFaction = "usArmy";
-opfFaction = "usMC";
+//baf_RHS or baf_CUP
+//bokoHaram_RHS or bokoHaram_CUP
+//gendarmerieSwat_RHS or gendarmerieSwat_CUP
+//macv
+//pmc_RHS or pmc_CUP
+//russian_RHS or russian_CUP
+//serbian_RHS or serbian_CUP
+//spetznaz_RHS or spetznaz_CUP
+//taliban_RHS or taliban_CUP
+//usArmy_RHS or usArmy_CUP
+//usArmySF_RHS or usArmySF_CUP
+//usKorea_RHS or usKorea_CUP
+//usMC_RHS or usMC_CUP
+bluFaction = "usArmy_RHS";
+opfFaction = "usMC_CUP";
 indFaction = "macv";
 
 //Set Player Camo Pattern
