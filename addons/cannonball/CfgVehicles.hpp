@@ -1,31 +1,135 @@
+//"CUP_C_Golf4_Civ_sport_Base","CUP_C_Golf4_Civ_Base","CUP_C_Golf4_Base","Car_F","Car","LandVehicle"
 class CfgVehicles {
-	/*
-	class ThingX;
-	class rhs_pontoon_float : ThingX {
-		//Floaty One
-		ace_interaction_canPush = 1;
+	class LandVehicle;
+	class Car : LandVehicle {};
+	class Car_F : Car {
 		class ACE_Actions;
-		class ACE_Actions : ACE_Actions {
-            class GHG_PontoonLock {
-                displayName = "Lock Pontoon";
-                distance = 7;
-                position = "[0,0,0.5]";
-                condition = "_this # 0 animationSourcePhase 'fold_source' isEqualTo 0";
-                statement = QUOTE(_this call FUNC(pontoonLock));
-                exceptions[] = {"isNotSwimming"};
-            };
-			class ACE_MainActions;
-			class ACE_MainActions : ACE_MainActions {
-				class GHG_PontoonPush {
-					displayName = "Push";
-					distance = 7;
-					position = "[0,0,0]";
-					condition = "true";
-					statement = "[_target, _player] call ace_interaction_fnc_push;";
-					exceptions[] = {};
-				};
-			};
-        };
+		class ACE_SelfActions;
 	};
-	*/
+	class CUP_C_Golf4_Base : Car_F {
+		class ACE_SelfActions : ACE_SelfActions {
+			class GHG_CannonBallTree {
+                displayName = "Cannonball";
+                condition = QUOTE(GVAR(isRunning) || GVAR(runFinished));
+                statement = "";
+				
+				class GHG_Cannonball_Cancel {
+					displayName = "Cancel";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runCancel))
+				};
+				class GHG_Cannonball_Restart {
+					displayName = "Restart";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runRestart));
+				};
+				/*
+				class GHG_Cannonball_Repair {
+					displayName = "Repair";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runRepair));
+				};
+				*/
+				class GHG_Cannonball_End_Post {
+					displayName = "Post";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runPost))
+				};
+				class GHG_Cannonball_End_Retry {
+					displayName = "Retry";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runRestart));
+				};
+				class GHG_Cannonball_End_Quit {
+					displayName = "Quit";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runCancel));
+				};
+            };
+		};
+	};
+	class Hatchback_01_base_F : Car_F {
+		class ACE_SelfActions : ACE_SelfActions {
+			class GHG_CannonBallTree {
+                displayName = "Cannonball";
+                condition = QUOTE(GVAR(isRunning) || GVAR(runFinished));
+                statement = "";
+				
+				class GHG_Cannonball_Cancel {
+					displayName = "Cancel";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runCancel))
+				};
+				class GHG_Cannonball_Restart {
+					displayName = "Restart";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runRestart));
+				};
+				/*
+				class GHG_Cannonball_Repair {
+					displayName = "Repair";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runRepair));
+				};
+				*/
+				class GHG_Cannonball_End_Post {
+					displayName = "Post";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runPost))
+				};
+				class GHG_Cannonball_End_Retry {
+					displayName = "Retry";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runRestart));
+				};
+				class GHG_Cannonball_End_Quit {
+					displayName = "Quit";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runCancel));
+				};
+            };
+		};
+	};
+	class SUV_01_base_F : Car_F {
+		class ACE_SelfActions : ACE_SelfActions {
+			class GHG_CannonBallTree {
+                displayName = "Cannonball";
+                condition = QUOTE(GVAR(isRunning) || GVAR(runFinished));
+                statement = "";
+				
+				class GHG_Cannonball_Cancel {
+					displayName = "Cancel";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runCancel))
+				};
+				class GHG_Cannonball_Restart {
+					displayName = "Restart";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runRestart));
+				};
+				/*
+				class GHG_Cannonball_Repair {
+					displayName = "Repair";
+					condition = QGVAR(isRunning);
+					statement = QUOTE(_this call FUNC(runRepair));
+				};
+				*/
+				class GHG_Cannonball_End_Post {
+					displayName = "Post";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runPost))
+				};
+				class GHG_Cannonball_End_Retry {
+					displayName = "Retry";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runRestart));
+				};
+				class GHG_Cannonball_End_Quit {
+					displayName = "Quit";
+					condition = QGVAR(runFinished);
+					statement = QUOTE(_this call FUNC(runCancel));
+				};
+            };
+		};
+	};
 };

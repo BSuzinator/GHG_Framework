@@ -1,1 +1,11 @@
-//PREP(canPatDown);
+PREP(cannonballInit);
+PREP(getSettings);
+PREP(getSettingsCallback);
+PREP(raceStart);
+PREP(runBegin);
+PREP(runCancel);
+PREP(runCompleted);
+PREP(runRepair);
+PREP(runRestart);
+PREP(runPost);
+PREP(resetVars);
