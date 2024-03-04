@@ -9,6 +9,7 @@ private _weapons = getArray (configFile >> "CfgGameLoot" >> "Loot_Weapons");
 private _explosives = getArray (configFile >> "CfgGameLoot" >> "Loot_Explosives");
 private _grenades = getArray (configFile >> "CfgGameLoot" >> "Loot_Grenades");
 private _items = getArray (configFile >> "CfgGameLoot" >> "Loot_Items");
+private _rpitems = getArray (configFile >> "CfgGameLoot" >> "Loot_RP_Items");
 
 //{systemChat str _x} forEach [_landVehicles,_weapons,_explosives,_grenades,_items];
 
@@ -72,6 +73,7 @@ for "_i" from 1 to _vehicleCount do {
 	private _randGrenade = selectRandom _grenades;
 	private _randItem = selectRandom _items;
 	
+	
 	//systemChat str [_randWeap,_randExp,_randGrenade,_randItem];
 	
 	_newVeh addWeaponCargoGlobal [(_randWeap select 0),1];
@@ -81,6 +83,11 @@ for "_i" from 1 to _vehicleCount do {
 	_newVeh addItemCargoGlobal [_randExp, random 1];
 	_newVeh addItemCargoGlobal ["FirstAidKit", random 2];
 	_newVeh addItemCargoGlobal ["Medikit", random 2];
+	for "_k" from 1 to 3 do {
+		private _randRPItem = selectRandom _rpitems;
+		_newVeh addItemCargoGlobal [_randRPItem, random 2];
+	};
+	
 	
 	_newVeh setDir (random 360);
 	

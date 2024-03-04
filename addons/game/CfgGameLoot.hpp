@@ -1,24 +1,21 @@
 class CfgGameLoot {
 	
 	CivUniforms[] = {
-		"U_C_WorkerCoveralls", "UK3CB_ADC_C_Pants_U_16", "UK3CB_ADC_C_Pants_U_15", "UK3CB_ADC_C_Pants_U_22", "UK3CB_ADC_C_Pants_U_14", "UK3CB_ADC_C_Pants_U_24",
-		"UK3CB_ADC_C_Pants_U_17", "UK3CB_ADC_C_Pants_U_19", "UK3CB_ADC_C_Pants_U_21", "UK3CB_ADC_C_Pants_U_23", "UK3CB_ADC_C_Pants_U_10", "UK3CB_ADC_C_Pants_U_09",
-		"UK3CB_ADC_C_Pants_U_08", "UK3CB_ADC_C_Pants_U_25", "UK3CB_ADC_C_Pants_U_06", "UK3CB_ADC_C_Pants_U_13", "UK3CB_ADC_C_Pants_U_02", "UK3CB_ADC_C_Pants_U_01",
-		"UK3CB_ADC_C_Pants_U_12", "U_C_Poor_1", "UK3CB_ADC_C_Pants_U_11", "UK3CB_ADC_C_Pants_U_07", "UK3CB_MEI_B_U_Pants_01", "UK3CB_MEI_B_U_Pants_02",
-		"UK3CB_MEI_B_U_Pants_03", "UK3CB_MEI_B_U_Pants_04", "UK3CB_MEI_B_U_Pants_05", "UK3CB_MEI_B_U_Pants_06", "UK3CB_MEI_B_U_Pants_07", "UK3CB_MEI_B_U_Pants_08",
-		"UK3CB_ADC_C_Pants_U_03", "UK3CB_MEI_B_U_Pants_09", "UK3CB_MEI_B_U_Pants_10", "UK3CB_MEI_B_U_Pants_11", "UK3CB_ADC_C_Pants_U_04", "UK3CB_ADC_C_Pants_U_05",
-		"UK3CB_ADC_C_Pants_U_20", "U_C_Poor_2", "U_C_Man_casual_5_F", "U_C_Man_casual_4_F", "U_C_Man_casual_6_F", "U_C_man_sport_2_F", "U_C_man_sport_3_F",
+		"U_C_WorkerCoveralls", "CUP_U_O_CHDKZ_Lopotev", "CUP_U_C_Citizen_02", "CUP_U_C_Citizen_01", "CUP_U_C_Citizen_04", "CUP_U_C_Citizen_03",
+		"CUP_U_C_Priest_01", "CUP_O_TKI_Khet_Jeans_04", "CUP_O_TKI_Khet_Jeans_02", "CUP_O_TKI_Khet_Jeans_01", "CUP_O_TKI_Khet_Jeans_03", "CUP_O_TKI_Khet_Partug_04",
+		"CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_01", "CUP_O_TKI_Khet_Partug_07", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_03", "U_C_Poor_1", "CUP_U_C_Labcoat_02", "CUP_U_C_Labcoat_03", "CUP_U_C_Labcoat_01", "CUP_U_C_Mechanic_02",
+		"CUP_U_C_Mechanic_03", "CUP_U_C_Mechanic_01", "CUP_U_C_Pilot_01", "CUP_U_C_Profiteer_02", "CUP_U_C_Profiteer_03", "CUP_U_C_Profiteer_01",
+		"CUP_U_C_Profiteer_04", "CUP_U_C_racketeer_01", "CUP_U_C_racketeer_04", "CUP_U_C_racketeer_02", "CUP_U_C_racketeer_03", "CUP_U_C_Rocker_01",
+		"CUP_U_C_Rocker_03", "U_C_Poor_2", "U_C_Man_casual_5_F", "U_C_Man_casual_4_F", "U_C_Man_casual_6_F", "U_C_man_sport_2_F", "U_C_man_sport_3_F",
 		"U_C_man_sport_1_F", "U_C_Uniform_Scientist_02_formal_F", "U_C_Uniform_Scientist_02_F", "U_C_Uniform_Scientist_01_F", "U_C_Uniform_Scientist_01_formal_F",
-		"U_C_Scientist", "U_C_Mechanic_01_F", "U_OrestesBody", "UK3CB_NAP_B_U_Commander_Uniform_WDL", "UK3CB_ADC_C_Hunter_U_01", "UK3CB_ADC_C_Hunter_U_05",
-		"UK3CB_ADC_C_Hunter_U_03", "UK3CB_ADC_C_Hunter_U_04", "UK3CB_ADC_C_Hunter_U_02", "U_C_HunterBody_grn", "U_BG_Guerilla3_1", "U_BG_Guerilla2_3", 
-		"U_BG_Guerilla2_1", "U_BG_Guerilla2_2", "U_BG_Guerilla1_1", "UK3CB_ADC_C_Shorts_U_05", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_stripped", "UK3CB_ADC_C_Shorts_U_01",
-		"U_C_Poloshirt_salmon", "U_C_Poloshirt_redwhite", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_blue"
+		"U_C_Scientist", "U_C_Mechanic_01_F", "U_OrestesBody", "CUP_U_C_Rocker_02", "CUP_U_C_Rocker_04", "CUP_U_C_Suit_01",	"CUP_U_C_Suit_02", "CUP_U_C_Suit_03", "CUP_U_C_Functionary_jacket_02", "U_C_HunterBody_grn", "U_BG_Guerilla3_1", "U_BG_Guerilla2_3", "U_BG_Guerilla2_1", "U_BG_Guerilla2_2", "U_BG_Guerilla1_1", "CUP_U_C_Functionary_jacket_01", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_stripped", "CUP_U_C_Functionary_jacket_03",
+		"U_C_Poloshirt_salmon", "U_C_Poloshirt_redwhite", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_blue", "CUP_U_C_Tracksuit_02", "CUP_U_C_Tracksuit_01", "CUP_U_C_Tracksuit_04", "CUP_U_C_Tracksuit_03", "CUP_U_C_Villager_01", "CUP_U_C_Villager_04", "CUP_U_C_Villager_02", "CUP_U_C_Villager_03", "CUP_U_C_Woodlander_01", "CUP_U_C_Woodlander_02", "CUP_U_C_Woodlander_03", "CUP_U_C_Woodlander_04", "CUP_U_C_Worker_03", "CUP_U_C_Worker_04", "CUP_U_C_Worker_02", "CUP_U_C_Worker_01", 
 	};
 	
 	CivBackpacks[] = {
-		"B_FieldPack_blk", "B_FieldPack_cbr", "UK3CB_AAF_B_B_FIELDPACK_DIGI_BLK", "UK3CB_AAF_B_B_FIELDPACK_DIGI_BRN", "UK3CB_AAF_B_B_FIELDPACK_DIGI_GRN",
+		"B_FieldPack_blk", "B_FieldPack_cbr", "CUP_B_CivPack_WDL", "B_CivilianBackpack_01_Everyday_Astra_F", "B_CivilianBackpack_01_Everyday_Black_F",
 		"B_FieldPack_ghex_F", "B_FieldPack_ocamo", "B_FieldPack_khk", "B_FieldPack_oli", "IP_B_FieldPack_SnowHex", "IP_B_FieldPack_SnowTiger", 
-		"LOP_B_FP_MG42_tub", "B_FieldPack_oucamo"
+		"LOP_B_FP_MG42_tub", "B_FieldPack_oucamo", "B_CivilianBackpack_01_Everyday_Vrana_F", "B_CivilianBackpack_01_Everyday_IDAP_F", "B_CivilianBackpack_01_Sport_Blue_F", "B_CivilianBackpack_01_Sport_Green_F", "B_CivilianBackpack_01_Sport_Red_F"
 	};
 	
 	Loot_Weapons[] = {
@@ -43,6 +40,9 @@ class CfgGameLoot {
 		{ "rhs_weap_type94_new", "rhs_mag_6x8mm_mhp", 3 },
 		{ "vn_welrod", "vn_welrod_mag", 3 },
 		{ "Binocular", "", 3 },
+		{ "", "", -1 },
+		{ "CUP_hgun_Mk23", "CUP_12Rnd_45ACP_mk23", 3 },
+		{ "CUP_hgun_TaurusTracker455_gold", "CUP_6Rnd_45ACP_M", 3 },
 		{ "", "", -1 }
 	};
 	
@@ -52,6 +52,7 @@ class CfgGameLoot {
 		"rhsusf_m112x4_mag",
 		"SatchelCharge_Remote_Mag",
 		"ACE_FlareTripMine_Mag",
+		"CUP_TimeBomb_M",
 		""
 	};
 	
@@ -79,53 +80,59 @@ class CfgGameLoot {
 		"ACE_EntrenchingTool",
 		"ACE_Clacker",
 		"ACE_wirecutter",
+		"ACE_Cellphone",
 		"FirstAidKit",
 		"Medikit",
 		"GHG_game_antidote",
 		""
 	};
 	
+	Loot_RP_Items[] = {
+		"ACE_Sunflower_Seeds",
+		"ACE_Can_Franta",
+		"ACE_Can_RedGull",
+		"ACE_Can_Spirit",
+		"ACE_MRE_BeefStew",
+		"ACE_MRE_ChickenTikkaMasala",
+		"ACE_MRE_ChickenHerbDumplings",
+		"ACE_MRE_CreamChickenSoup",
+		"ACE_MRE_CreamTomatoSoup",
+		"ACE_MRE_LambCurry",
+		"ACE_MRE_MeatballsPasta",
+		"ACE_MRE_SteakVegetables",
+		"ACE_WaterBottle",
+		"ACE_Banana",
+		""
+	};
+	
 	Loot_LandVehicles[] = {
-		"UK3CB_C_Datsun_Closed",
-		"UK3CB_C_Datsun_Open",
-		"UK3CB_C_Hatchback",
+		"CUP_C_Datsun_4seat",
+		"CUP_C_Datsun",
+		"CUP_C_Golf4_random_Civ",
 		"C_Hatchback_01_F",
 		"C_Hatchback_01_sport_F",
-		"UK3CB_C_Hilux_Closed",
-		"UK3CB_C_Hilux_Open",
-		"UK3CB_C_Ikarus",
-		"UK3CB_C_Ikarus_RED",
+		"CUP_C_Pickup_unarmed_CIV",
+		"CUP_C_Octavia_CIV",
+		"CUP_C_Skoda_CR_CIV",
 		"C_Offroad_02_unarmed_F",
-		"UK3CB_C_Kamaz_Open",
-		"UK3CB_C_Kamaz_Covered",
+		"CUP_C_S1203_CIV_CR",
+		"CUP_C_Datsun_Covered",
 		"C_Truck_02_transport_F",
 		"C_Truck_02_covered_F",
-		"UK3CB_C_Lada",
-		"UK3CB_C_LandRover_Closed",
-		"UK3CB_C_LandRover_Open",
-		"UK3CB_Civ_LandRover_Soft_Red_A",
-		"UK3CB_Civ_LandRover_Soft_Green_A",
-		"UK3CB_Civ_LandRover_Soft_Blue_A",
-		"UK3CB_Civ_LandRover_Hard_Red_A",
-		"UK3CB_Civ_LandRover_Hard_Green_A",
-		"UK3CB_Civ_LandRover_Hard_Blue_A",
-		"UK3CB_C_Landcruiser",
-		"UK3CB_C_Octavia",
+		"CUP_C_Volha_CR_CIV",
+		"CUP_O_Hilux_unarmed_CR_CIV",
+		"CUP_C_Bus_City_CRCIV",
+		"CUP_C_Ikarus_Chernarus",
+		"CUP_C_SUV_CIV",
+		"CUP_C_Lada_CIV",
+		"CUP_C_LR_Transport_CTK",
+		"CUP_C_V3S_Open_TKC",
+		"CUP_C_V3S_Covered_TKC",
+		"CUP_I_SUV_UNO",
 		"C_Offroad_01_F",
-		"UK3CB_C_Pickup",
-		"UK3CB_C_V3S_Open",
-		"UK3CB_C_V3S_Closed",
-		"UK3CB_C_Sedan",
-		"UK3CB_C_Skoda",
-		"UK3CB_C_S1203",
 		"C_SUV_01_F",
-		"UK3CB_C_SUV",
 		"C_Van_01_transport_F",
 		"C_Van_01_box_F",
-		"UK3CB_C_UAZ_Closed",
-		"UK3CB_C_UAZ_Open",
-		"UK3CB_C_Golf",
-		"UK3CB_C_Gaz24",
 		"C_Van_02_transport_F",
 		"RHS_Ural_Civ_01",
 		"RHS_Ural_Open_Civ_01",
@@ -134,13 +141,13 @@ class CfgGameLoot {
 		"B_Quadbike_01_F"
 	};
 	Loot_SeaVehicles[] = {
-		"UK3CB_C_Fishing_Boat",
-		"UK3CB_C_Fishing_Vessel",
+		"CUP_C_Zodiac_CIV",
+		"CUP_C_PBX_CIV",
 		"C_Boat_Civil_01_F",
 		"rhsgref_civ_canoe",
 		"C_Rubberboat",
 		"C_Boat_Transport_02_F",
-		"UK3CB_C_Small_Boat_Closed",
+		"CUP_C_Fishing_Boat_Chernarus",
 		"UK3CB_C_Small_Boat_Open",
 		"UK3CB_C_Small_Boat_Wood",
 		"C_Scooter_Transport_01_F"
