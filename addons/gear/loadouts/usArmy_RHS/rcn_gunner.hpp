@@ -45,7 +45,7 @@ class rcn_gunner : loadout_base
     headgear[] = { "rhsusf_ach_bare_wood", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ucp", "rhsusf_ach_helmet_ucp" };
     facewear = "rhsusf_oakley_goggles_clr";
 	
-	class Binoculars : Weapon_1 // Yes, the binoculars are technically a weapon
+	class Binoculars : Binoculars // Yes, the binoculars are technically a weapon
     {
         classname = "ACE_Yardage450";
 
