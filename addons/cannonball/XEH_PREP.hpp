@@ -1,6 +1,8 @@
 PREP(cannonballInit);
 PREP(getSettings);
 PREP(getSettingsCallback);
+PREP(doRunPost);
+PREP(doRunPostCallback);
 PREP(raceStart);
 PREP(runBegin);
 PREP(runCancel);
