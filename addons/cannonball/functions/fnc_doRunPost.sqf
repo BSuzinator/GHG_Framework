@@ -13,7 +13,7 @@ if (isServer && hasInterface && !isDedicated) exitWith {diag_log "GHG: Local hos
 
 diag_log "[GHG]: starting doRunPost";
 
-private _query = format ["INSERT INTO cannonball_runs (steamID,raceClass,raceTime) VALUES (%1,%2,%3);",getPlayerUID player, GVAR(raceClass), GVAR(runTime)];
+private _query = format ["INSERT INTO cannonball_runs (steamID,raceClass,raceTime) VALUES ('%1','%2','%3');",getPlayerUID player, GVAR(raceClass), GVAR(runTime)];
 
 /*
 [_selfFieldDressings,_othersFieldDressings,_selfElasticBandages,_othersElasticBandages,_selfPackingBandages,_othersPackingBandages,_selfQuikclot,_othersQuikclot],
