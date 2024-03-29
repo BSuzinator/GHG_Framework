@@ -29,6 +29,12 @@ player setVariable [QGVARMAIN(unitSide), playerSide, true];
 	{ ["setPlayerRespawnTime", [5]] call CBA_fnc_globalEvent; }
 ] call zen_custom_modules_fnc_register;
 
+[
+	"Ghost Hawk Gaming",
+	"Respawn Players",
+	FUNC(respawnPlayerMenu)
+] call zen_custom_modules_fnc_register;
+
 if (playerSide == sideLogic) exitWith {};
 
 GVAR(optout) = false;

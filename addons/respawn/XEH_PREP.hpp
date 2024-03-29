@@ -1,4 +1,5 @@
 PREP(respawnInit);
+PREP(respawnPlayersMenu);
 PREP(respawnOptout);
 PREP(respawnUpdateUI);
 PREP(respawnHandler);
