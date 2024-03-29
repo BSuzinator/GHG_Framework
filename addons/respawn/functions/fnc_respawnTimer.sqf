@@ -6,6 +6,10 @@
 if ! (isServer) exitWith {};
 if ( getNumber( missionConfigFile >> "CfgGHG" >> "disableRespawn" ) != 0 ) exitWith {};
 
+//Permanent Respawn Disable
+if ( getNumber( missionConfigFile >> "CfgGHG" >> "isEvent" ) != 1 ) exitWith {};
+
+
 params ["_unit", "_optout"];
 
 // Ignore non-players
