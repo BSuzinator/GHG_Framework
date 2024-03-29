@@ -9,7 +9,7 @@ private _vehicle = _target;
 GVAR(endTime) = time;
 BIS_stopTimer = true;
 GVAR(runIncomplete) = true;
-hintSilent format ["Your time was:\n%1",RscFiringDrillTime_current];
+systemChat format ["Your time was:\n%1",RscFiringDrillTime_current];
 call BIS_fnc_VRFadeOut;
 
 _vehicle setPosATL getPosATL cannonballStart;
