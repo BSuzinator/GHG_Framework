@@ -170,6 +170,9 @@ class usArmy_RHS
     #include "..\loadout_base.hpp"
 
 	#include "squad_rifleman.hpp"
+	#include "squad_grenadier.hpp"
+	#include "squad_ftl.hpp"
+	#include "squad_sl.hpp"
 	#include "squad_lead.hpp"
 	#include "squad_medic.hpp"
 	#include "squad_ar.hpp"
@@ -177,7 +180,7 @@ class usArmy_RHS
 	#include "squad_at.hpp"
 	#include "squad_marksman.hpp"
 	#include "squad_aa.hpp"
-	#include "squad_grenadier.hpp"
+	#include "squad_assist.hpp"
 
 	#include "plt_lead.hpp"
 	#include "plt_fac.hpp"
