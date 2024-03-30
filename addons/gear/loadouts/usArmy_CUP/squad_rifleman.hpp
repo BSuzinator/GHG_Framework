@@ -1,5 +1,5 @@
 /*======================================
-	Loadout for Rifleman (usArmy)
+	Loadout for Rifleman (usArmy CUP)
 ======================================*/
 class squad_rifleman : loadout_base
 {

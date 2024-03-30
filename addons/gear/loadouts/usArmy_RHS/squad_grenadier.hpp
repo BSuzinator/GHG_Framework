@@ -1,12 +1,34 @@
 /*======================================
-	Loadout for Squad Grenedier (usArmy)
+	Loadout for Squad Grenedier (usArmy RHS)
 ======================================*/
-class squad_grenedier : squad_lead
+class squad_grenadier : squad_rifleman
 {
-	class Vest : Vest
+	class Weapon_1 : Weapon_1 // Rifle
     {
-		ACE_MapTools = 0;
-		ACE_EntrenchingTool = 1;
-		ACRE_PRC152 = 0;
+        classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
+        grenade = "rhs_mag_M441_HE";
     };
+    
+    class Uniform : Uniform
+    {
+        classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
+		ACRE_PRC343 = 1;
+    };
+    
+    class Vest : Vest
+    {
+        classname[] = { "rhsusf_mbav_grenadier", "rhsusf_mbav_grenadiern", "rhsusf_iotv_ocp_Grenadier", "rhsusf_iotv_ucp_Grenadier", "rhsusf_iotv_ucp_Grenadier" };
+        // List of items
+        rhs_mag_30Rnd_556x45_M855A1_Stanag = 8;
+        SmokeShell = 2;
+        rhs_mag_m67 = 2;
+        ACE_EntrenchingTool = 1;
+    };
+	class Backpack : Backpack
+    {
+        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
+        // List of items
+        rhs_mag_M441_HE = 25;
+    };
+	
 };
