@@ -1,12 +1,10 @@
 /*======================================
 	Loadout for Squad Grenedier (usArmy CUP)
 ======================================*/
-class squad_grenadier : squad_rifleman
+class squad_grenadier : squad_lead
 {
 	class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "CUP_arifle_M4A1_BUIS_camo_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_desert_GL"};
-        grenade = "CUP_1Rnd_HE_M203";
 		class Scopes : Scopes
         {
             red_dot = "CUP_optic_CompM4";
@@ -19,18 +17,22 @@ class squad_grenadier : squad_rifleman
     };
 	class Vest : Vest
     {
-        classname[] = { "CUP_V_B_IOTV_OCP_Grenadier_USArmy", "CUP_V_B_IOTV_OCP_Grenadier_USArmy", "CUP_V_B_IOTV_OEFCP_Grenadier_USArmy", "CUP_V_B_IOTV_UCP_Grenadier_USArmy", "CUP_V_B_IOTV_UCP_Grenadier_USArmy" };
-        // List of items
-        CUP_30Rnd_556x45_Stanag = 8;
-        SmokeShell = 2;
-        CUP_HandGrenade_M67 = 2;
-        ACE_EntrenchingTool = 1;
+        ACE_MapTools = 0;
+		ACE_EntrenchingTool = 0;
+		ACRE_PRC152 = 0;
     };
 	class Backpack : Backpack
     {
-        classname[] = { "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_OCP", "CUP_B_US_Assault_UCP", "CUP_B_US_Assault_UCP" };
-        // List of items
         CUP_1Rnd_HE_M203 = 30;
+		CUP_1Rnd_StarCluster_White_M203 = 0;
+        CUP_FlareGreen_M203 = 0;
+        CUP_FlareRed_M203 = 0;
+        CUP_1Rnd_SmokeRed_M203 = 0;
+        CUP_1Rnd_SmokeGreen_M203 = 0;
+        CUP_1Rnd_Smoke_M203 = 0;
     };
-
+	class Binoculars : Binoculars
+	{
+		classname = "";
+	};
 };

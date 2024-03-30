@@ -13,7 +13,7 @@ class ghg_crate_usArmySF_squad : ghg_crate_base
         CUP_200Rnd_TE4_Red_Tracer_556x45_M249 = 5;
         CUP_launch_M136 = 2;
         CUP_M136_M = 2;
-        CUP_1Rnd_HE_M203 = 8;
+        CUP_1Rnd_HE_M203 = 16;
 		CUP_1Rnd_StarCluster_White_M203 = 4;
 		CUP_FlareGreen_M203 = 2;
 		CUP_FlareRed_M203 = 2;
