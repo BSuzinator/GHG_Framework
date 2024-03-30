@@ -1,41 +1,26 @@
 /*======================================
 	Loadout for Squad Fireteam Leads (usArmy)
 ======================================*/
-class squad_ftlead : squad_rifleman
+class squad_ftlead : squad_lead
 {
     
     
     class Weapon_1 : Weapon_1 // Rifle
     {
-        classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
-        grenade = "rhs_mag_M441_HE";
-    };
+		class Scopes : Scopes
+        {
+            red_dot = "rhsusf_acc_compm4";
+            holo = "rhsusf_acc_eotech_xps3";
+			alt_holo = "";
+            red_dot_magnified = "rhsusf_acc_g33_t1";
+            holo_magnified = "rhsusf_acc_g33_xps3";
+            holo_alt_camo[] = { "rhsusf_acc_eotech_552_wd", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d" };
+        };
+	};
     
     class Vest : Vest
     {
-        classname[] = { "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Squadleader" };
-		ACE_MapTools = 1;
-		ACE_EntrenchingTool = 0;
 		ACRE_PRC152 = 0;
     };
-    
-    class Backpack : Backpack
-    {
-        classname[] = { "rhsusf_falconii", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc", "rhsusf_falconii_mc" };
-        // List of items
-        rhs_mag_M441_HE = 10;
-        rhs_mag_M585_white = 5;
-        rhs_mag_m661_green = 2;
-        rhs_mag_m662_red = 2;
-        rhs_mag_m713_Red = 2;
-        rhs_mag_m715_Green = 2;
-        rhs_mag_m714_White = 4;
-    };
-	
-	class Binoculars : Binoculars
-    {
-        classname = "Binocular";
-    };
-	
-    headgear[] = { "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_helmet_headset_ucp", "rhsusf_ach_helmet_headset_ucp" };
+
 };

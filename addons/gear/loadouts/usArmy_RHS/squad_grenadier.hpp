@@ -8,13 +8,7 @@ class squad_grenadier : squad_rifleman
         classname[] = { "rhs_weap_m4a1_M203s_wd", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s", "rhs_weap_m4a1_M203s_d"};
         grenade = "rhs_mag_M441_HE";
     };
-    
-    class Uniform : Uniform
-    {
-        classname[] = { "rhs_uniform_bdu_erdl", "rhs_uniform_acu_ocp", "rhs_uniform_acu_oefcp", "rhs_uniform_acu_ucp", "rhs_uniform_acu_ucpd" };
-		ACRE_PRC343 = 1;
-    };
-    
+
     class Vest : Vest
     {
         classname[] = { "rhsusf_mbav_grenadier", "rhsusf_mbav_grenadiern", "rhsusf_iotv_ocp_Grenadier", "rhsusf_iotv_ucp_Grenadier", "rhsusf_iotv_ucp_Grenadier" };
@@ -30,5 +24,5 @@ class squad_grenadier : squad_rifleman
         // List of items
         rhs_mag_M441_HE = 25;
     };
-	
+
 };

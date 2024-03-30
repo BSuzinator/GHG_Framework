@@ -7,6 +7,15 @@ class squad_grenadier : squad_rifleman
     {
         classname[] = { "CUP_arifle_M4A1_BUIS_camo_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_GL", "CUP_arifle_M4A1_BUIS_desert_GL"};
         grenade = "CUP_1Rnd_HE_M203";
+		class Scopes : Scopes
+        {
+            red_dot = "CUP_optic_CompM4";
+            holo = "CUP_optic_HoloBlack";
+			alt_holo = "";
+            red_dot_magnified = "CUP_optic_AIMM_COMPM4_BLK";
+            holo_magnified = "CUP_optic_G33_HWS_BLK";
+            holo_alt_camo[] = { "CUP_optic_Eotech553_Black" };
+        };
     };
 	class Vest : Vest
     {
@@ -23,9 +32,5 @@ class squad_grenadier : squad_rifleman
         // List of items
         CUP_1Rnd_HE_M203 = 30;
     };
-	
-	class Binoculars : Binoculars
-    {
-        classname = "Binocular";
-    };
+
 };
