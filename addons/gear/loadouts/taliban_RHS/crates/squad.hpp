@@ -10,7 +10,7 @@ class ghg_crate_taliban_squad : ghg_crate_base
 		vn_sks_t_mag = 4;
         rhs_mag_m67 = 8;
         rhs_mag_an_m8hc = 8;
-        rhs_75Rnd_762x39mm = 5;
+        rhs_60Rnd_545X39_7N22_AK = 5;
         rhs_weap_M80 = 2;
         rhs_m80_mag = 2;
         rhs_VOG25 = 8;
@@ -21,6 +21,5 @@ class ghg_crate_taliban_squad : ghg_crate_base
 		rhs_GRD40_Green = 2;
 		rhs_GRD40 = 4;
 		ACE_EarPlugs = 8;
-		diw_armor_plates_main_plate = 8;
     };
 };
