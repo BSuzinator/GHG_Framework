@@ -1,4 +1,5 @@
-#include "script_component.hpp"
+#
+include "script_component.hpp"
 
 class CfgPatches {
     class ADDON {
@@ -17,6 +18,8 @@ class CfgPatches {
         units[] = {};
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {};
+		// Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
+		skipWhenMissingDependencies = 0;
     };
 };
 
