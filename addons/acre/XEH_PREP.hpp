@@ -2,6 +2,7 @@ PREP(acreInit);
 PREP(acreBabelInit);
 PREP(acreOfficerGod);
 PREP(acreSetDefaultChannel);
+PREP(autoUseRacksEH);
 PREP(radioJammerInit);
 PREPMAIN(radioJammer);
 PREP(radioJammerEquip);

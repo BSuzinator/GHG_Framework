@@ -12,7 +12,7 @@ class CfgPatches {
 		requiredVersion = REQUIRED_VERSION; 
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
-		requiredAddons[] = { "ghg_main", "A3_Ui_F", "A3_Missions_F_Oldman", "A3_Ui_F_Orange", "A3_missions_f_aow","A3_missions_f_tacops","missions_f_lxws", "ui_f_vietnam", "ui_f_vietnam_c", "functions_f_vietnam", "rhs_pontoon", "rhs_kraz255", "BettIR_Core" };
+		requiredAddons[] = { "ghg_main", "A3_Ui_F", "A3_Missions_F_Oldman", "A3_Ui_F_Orange", "A3_missions_f_aow","A3_missions_f_tacops" };
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
 		units[] = {"ghg_spikestrip"};
 		// List of weapons (CfgWeapons classes) contained in the addon.
@@ -45,14 +45,6 @@ class CfgMainMenuSpotlight
     delete Tacops_Campaign_02;
     delete Tacops_Campaign_01;
     delete Tanks_Campaign_01;
-	delete Extraction_lxWS;
-    delete Showcase_VR_lxWS;
-    delete Showcase_Alchemist_lxWS;
-	delete vn_showcase_macv;
-	delete vn_showcase_macv_13;
-	delete vn_showcase_pavn;
-	delete vn_showcase_pavn_13;
-	delete vn_sogba;
 	
     class GHG_Connect
 	{
@@ -64,21 +56,7 @@ class CfgMainMenuSpotlight
 	};
 };
 
-// Have the SOG Vehicle Jukebox call the BIS display initializer so we can hook into it
-class vn_displayvehiclemusic {
-    onLoad =   "uinamespace setVariable ['vn_displayvehiclemusic', (_this#0)];   ['onload'] call VN_fnc_music;   ['onLoad',   _this, 'DisplayVehicleMusic', 'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');";
-    onUnload = "uinamespace setVariable ['vn_displayvehiclemusic', displayNull]; ['onunload'] call VN_fnc_music; ['onUnload', _this, 'DisplayVehicleMusic', 'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');";
-};
 
-class CfgFunctions {
-    class functions_f_vietnam {
-        class vn_music_functions {
-            class music_play {
-                file = "\x\ghg\addons\misc\functions\fn_vietnamPlayMusicOverride.sqf";
-            }
-        };
-    };
-};
 
 class CfgCommands {
     allowedHTMLLoadURIs[] += {

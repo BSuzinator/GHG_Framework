@@ -1,0 +1,9 @@
+class CfgMagazines
+{
+
+};
+
+class CfgMagazineWells
+{ 
+
+};
