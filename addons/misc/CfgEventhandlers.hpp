@@ -35,9 +35,3 @@ class Extended_InitPost_EventHandlers {
 	};
 
 };
-
-class Extended_GetIn_EventHandlers {
-	class Helicopter {
-		class helicopterAutoUseRacksEH { getIn = QUOTE(_this call FUNC(autoUseRacksEH)); };
-	};
-};

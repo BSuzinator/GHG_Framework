@@ -48,8 +48,5 @@ class CfgVehicles
 			delete Rack_2;
         };
 	};
-    
-    #include "sog\sog.hpp"
-	#include "cup\M1037sc.hpp"
-	#include "rhs\SICPS.hpp"
+
 };

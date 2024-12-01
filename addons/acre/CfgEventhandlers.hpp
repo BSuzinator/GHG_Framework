@@ -18,3 +18,9 @@ class Extended_PreStart_EventHandlers {
         init = QUOTE( call COMPILE_FILE(XEH_preStart) );
     };
 };
+
+class Extended_GetIn_EventHandlers {
+	class Helicopter {
+		class helicopterAutoUseRacksEH { getIn = QUOTE(_this call FUNC(autoUseRacksEH)); };
+	};
+};

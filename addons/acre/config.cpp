@@ -12,13 +12,13 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION; 
         // Required addons, used for setting load order.
         // When any of the addons is missing, pop-up warning will appear when launching the game.
-        requiredAddons[] = { "ghg_main", "acre_sys_rack", "acre_sys_prc77", "objects_f_vietnam_c", "wheeled_f_vietnam", "boat_f_vietnam", "air_f_vietnam", "armor_f_vietnam", "acre_ace_interact" };
+        requiredAddons[] = { "ghg_main", "acre_sys_rack", "acre_sys_prc77", "acre_ace_interact" };
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
         units[] = {};
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {};
 		// Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
-		skipWhenMissingDependencies = 0;
+		skipWhenMissingDependencies = 1;
     };
 };
 
