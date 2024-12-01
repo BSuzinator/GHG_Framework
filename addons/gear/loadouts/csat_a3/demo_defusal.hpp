@@ -24,5 +24,4 @@ class demo_defusal : squad_rifleman
         // List of items
     };
 	
-    headgear = "lxWS_H_PASGT_goggles_white_F";
 };
