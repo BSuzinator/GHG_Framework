@@ -14,7 +14,7 @@ class squad_marksman : squad_rifleman
         
         class Scopes : Scopes
         {
-            magnified[] = { "optic_AMS_snd", "optic_AMS_khk", "optic_AMS" };
+            magnified[] = { "optic_SOS", "optic_SOS_khk_F", "optic_SOS" };
         };
     };
     

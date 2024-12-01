@@ -15,7 +15,7 @@ class rcn_gunner : loadout_base
         
         class Scopes : Scopes
         {
-            sniper_optic[] = { "optic_LRPS", "optic_LRPS_tna_F", "optic_LRPS" };
+            sniper_optic[] = { "optic_AMS_snd", "optic_AMS_khk", "optic_AMS" };
         };
     };
     

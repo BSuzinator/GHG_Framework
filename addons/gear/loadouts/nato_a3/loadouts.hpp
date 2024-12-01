@@ -117,17 +117,17 @@ class nato_a3
 		//KNFS
 		boat_unarmed[] = {
 			//Assault Boat
-			{ "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F", "B_Boat_Transport_01_F" },
+			{ "B_Boat_Transport_01_F", "B_Boat_Transport_01_F" },
 			//RHIB
-			{ "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib", "rhsgref_hidf_rhib" }
+			{ "I_C_Boat_Transport_02_F", "I_C_Boat_Transport_02_F" }
 		};
 		boat_armed[] = {
 			//Gunboat
-			{ "B_T_VTOL_01_armed_F", "B_T_VTOL_01_armed_F", "B_T_VTOL_01_armed_F" }
+			{ "B_Boat_Armed_01_minigun_F", "B_Boat_Armed_01_minigun_F" }
 		};
 	};
 	
-    // Should be 25
+    // Should be 52
     #include "..\loadout_base.hpp"
 
 	#include "squad_rifleman.hpp"
