@@ -1,5 +1,6 @@
 class Loadouts
 {
+	#include "aaf_a3\loadouts.hpp"
 	#include "baf_CUP\loadouts.hpp"
 	#include "baf_RHS\loadouts.hpp"
 	#include "bafCW_RHS\loadouts.hpp"
@@ -7,9 +8,13 @@ class Loadouts
 	#include "bokoHaram_RHS\loadouts.hpp"
 	#include "cbrn_CUP\loadouts.hpp"
 	#include "cbrn_RHS\loadouts.hpp"
+	#include "csat_a3\loadouts.hpp"
+	#include "csat_a3_pacific\loadouts.hpp"
 	#include "gendarmerieSwat_CUP\loadouts.hpp"
 	#include "gendarmerieSwat_RHS\loadouts.hpp"
+	#include "ldf_a3\loadouts.hpp"
 	#include "macv\loadouts.hpp"
+	#include "nato_a3\loadouts.hpp"
 	#include "odst\loadouts.hpp"
 	#include "pmc_CUP\loadouts.hpp"
 	#include "pmc_RHS\loadouts.hpp"
