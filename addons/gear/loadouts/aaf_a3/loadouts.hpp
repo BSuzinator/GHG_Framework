@@ -2,7 +2,7 @@ class aaf_a3
 {
     version = 1;
     
-    camo[] = { "green" };
+    camo[] = { "digi" };
     
     class Magazines
     {

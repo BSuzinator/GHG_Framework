@@ -2,7 +2,7 @@ class ldf_a3
 {
     version = 1;
     
-    camo[] = { "green" };
+    camo[] = { "geometric" };
     
     class Magazines
     {
