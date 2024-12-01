@@ -22,6 +22,7 @@ class Loadouts
 	#include "russian_RHS\loadouts.hpp"
 	#include "serbian_CUP\loadouts.hpp"
 	#include "serbian_RHS\loadouts.hpp"
+	#include "snowTigers\loadouts.hpp"
 	#include "spetznaz_CUP\loadouts.hpp"
 	#include "spetznaz_RHS\loadouts.hpp"
 	#include "taliban_CUP\loadouts.hpp"
