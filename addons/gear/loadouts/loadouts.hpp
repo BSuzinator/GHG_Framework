@@ -2,7 +2,7 @@ class Loadouts
 {
 	#include "aaf_a3\loadouts.hpp"
 	#include "baf_CUP\loadouts.hpp"
-	#include "baf_RHS\loadouts.hpp"
+	#include "baf_RHS_3CBBAF\loadouts.hpp"
 	#include "bafCW_RHS\loadouts.hpp"
 	#include "bokoHaram_CUP\loadouts.hpp"
 	#include "bokoHaram_RHS\loadouts.hpp"

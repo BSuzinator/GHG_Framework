@@ -1,4 +1,4 @@
-class baf_RHS
+class baf_RHS_3CBBAF
 {
     version = 1;
     camo[] = { "mtp", "arctic", "tropical", "woodland", "desert" };
