@@ -1,1 +1,1 @@
-mklink /J "R:\SteamLibrary\steamapps\common\Arma 3\x\ghg" "G:\GhostHawkGaming\Arma\ghg"
+
