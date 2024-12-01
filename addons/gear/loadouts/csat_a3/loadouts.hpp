@@ -127,7 +127,7 @@ class csat_a3
 			//Assault Boat
 			{ "B_Boat_Transport_01_F", "B_Boat_Transport_01_F" },
 			//RHIB
-			{ "I_C_Boat_Transport_02_F", "I_C_Boat_Transport_02_F" },
+			{ "I_C_Boat_Transport_02_F", "I_C_Boat_Transport_02_F" }
 		};
 		boat_armed[] = {
 			//Gunboat

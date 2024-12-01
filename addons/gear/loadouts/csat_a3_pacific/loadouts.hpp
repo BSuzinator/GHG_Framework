@@ -109,7 +109,7 @@ class csat_a3_pacific
 			//Orca
 			{ "O_Heli_Light_02_dynamicLoadout_F" },
 			//Taru
-			{ "O_Heli_Attack_02_dynamicLoadout_F"" }
+			{ "O_Heli_Attack_02_dynamicLoadout_F" }
 		};
 		
 		//RPTR
@@ -131,7 +131,7 @@ class csat_a3_pacific
 			//Assault Boat
 			{ "O_T_Boat_Transport_01_F" },
 			//RHIB
-			{ "I_C_Boat_Transport_02_F" },
+			{ "I_C_Boat_Transport_02_F" }
 		};
 		boat_armed[] = {
 			//Gunboat

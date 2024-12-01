@@ -25,7 +25,7 @@ class ldf_a3
 			//Prowler Unarmed
 			{ "I_E_Van_02_transport_F" },
 			//Prowler Unarmed
-			{ "I_E_Van_02_vehicle_F" }
+			{ "I_E_Van_02_vehicle_F" },
 			//Prowler Unarmed
 			{ "I_E_Van_02_transport_MP_F" }
 		};
@@ -89,7 +89,7 @@ class ldf_a3
 			//Assault Boat
 			{ "I_Boat_Transport_01_F" },
 			//RHIB
-			{ "I_C_Boat_Transport_02_F" },
+			{ "I_C_Boat_Transport_02_F" }
 		};
 		boat_armed[] = {
 			//Gunboat

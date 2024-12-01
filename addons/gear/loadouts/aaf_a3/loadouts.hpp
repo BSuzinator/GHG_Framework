@@ -98,7 +98,7 @@ class aaf_a3
 			//Assault Boat
 			{ "I_Boat_Transport_01_F" },
 			//RHIB
-			{ "I_C_Boat_Transport_02_F" },
+			{ "I_C_Boat_Transport_02_F" }
 		};
 		boat_armed[] = {
 			//Gunboat
