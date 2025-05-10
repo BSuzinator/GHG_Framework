@@ -26,7 +26,7 @@ class CfgFunctions {
     class RHS {
         class functions {
             class cargoAttach {
-                file="\x\ghg\addons\specweap\functions\fn_cargoAttach.sqf";
+                file="\x\ghg\addons\compat_rhs\functions\fn_cargoAttach.sqf";
             };
         };
     };
