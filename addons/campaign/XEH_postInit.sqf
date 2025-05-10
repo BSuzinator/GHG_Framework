@@ -4,6 +4,8 @@
 	Author: CBA_3
 ======================================*/
 //Run on EVERY mission file
+[] call FUNC(baseSpawnModule);
+[] call FUNC(baseDumpModule);
 
 //Don't delete
 if ! ( GVARMAIN(is_mission_ghg) ) exitWith {};
