@@ -9,10 +9,13 @@ systemChat format ["Base Dump: Export Radius: %1", _exportRadius];
 private _exportData = [ systemTime,worldName,briefingName,[] ];
 
 {
-	_obj = _x;
-	_objArray = [typeOf _obj, getPosASL _obj, getDir _obj, vectorUp _obj];
-	_exportData # 3 pushBack _objArray;
-}forEach ((ASLToAGL _modulePos) nearObjects ["All", _exportRadius]);
+	private _searchType = _x;
+	{
+		_obj = _x;
+		_objArray = [typeOf _obj, getPosASL _obj, getDir _obj, vectorUp _obj, vectorDir _obj, getPos _obj];
+		_exportData # 3 pushBack _objArray;
+	}forEach ((ASLToAGL _modulePos) nearObjects [_searchType, _exportRadius]);
+} forEach ["LandVehicle", "Air", "Ship", "Thing"];
 
 private _profileExportData = profileNamespace getVariable [QGVAR(base_exports), []];
 

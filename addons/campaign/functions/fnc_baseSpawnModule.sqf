@@ -22,10 +22,13 @@ private _function = {
 		_allExportsDisplay pushback _listString;
 
 	} forEach _allExports;
-	
+	if (count _allExports == 0) then {
+		_allExports = ["Null"];
+		_allExportsDisplay = ["No Exports Found"];
+	};
 	
 	[
-		"End Mission",
+		"Spawn Base",
 		[
 			[
 				"LIST",
