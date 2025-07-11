@@ -13,11 +13,11 @@ private _repairVehicle = ["Repair Vehicle",FUNC(repairVehicle),"","",[],-1,true,
 private _initRacks = ["Init Racks",FUNC(initRacks),"","",[],-1,true,true];
 
 if (GVARMAIN(isAdmin) || GVARMAIN(isOfficer) || GVARMAIN(isJuniorOfficer)) then {
-	_subMenuOptions pushback _unflipVehicle;
 	_subMenuOptions pushback _refuelVehicle;
 	_subMenuOptions pushback _repairVehicle;
 	_subMenuOptions pushback _rearmVehicle;
 };
+_subMenuOptions pushback _unflipVehicle;
 _subMenuOptions pushback _initRacks;
 //Sort and return menu
 _subMenuOptions sort true;
