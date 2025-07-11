@@ -5,5 +5,4 @@ ADDON = false;
     Everything in this file is run once prior to the breifing
 	Author: CBA_3
 ======================================*/
-
 ADDON = true;

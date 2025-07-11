@@ -77,7 +77,7 @@ GVAR(ally_id) = -1;
                 // This needs to match how ACE calculates this: https://github.com/acemod/ACE3/blob/master/addons/medical_statemachine/functions/fnc_handleStateUnconscious.sqf#L37
                 private _wakeUpCheckInterval = 15;
                 if (ace_medical_spontaneousWakeUpEpinephrineBoost > 1) then {
-                    private _epiEffectiveness = [ACE_player, "Epinephrine", false] call ace_medical_status_fnc_getMedicationCount;
+                    private _epiEffectiveness = ([ACE_player, "Epinephrine", false] call ace_medical_status_fnc_getMedicationCount) select 1;
                     _wakeUpCheckInterval = _wakeUpCheckInterval * linearConversion [0, 1, _epiEffectiveness, 1, 1 / ace_medical_spontaneousWakeUpEpinephrineBoost, true];
                 };
                 

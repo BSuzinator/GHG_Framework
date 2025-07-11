@@ -26,7 +26,7 @@ class CfgFunctions {
     class functions_f_vietnam {
         class vn_bomb_hit_functions {
             class bomb_hit_blu82 {
-                file="\x\ghg\addons\specweap\functions\fn_blu82Hit.sqf";
+                file="\x\ghg\addons\compat_sog\functions\fn_blu82Hit.sqf";
             }
         };
 		class vn_music_functions {
@@ -48,3 +48,5 @@ class vn_displayvehiclemusic {
 #include "CfgEventhandlers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMainMenuSpotlight.hpp"
+
+#include "ACE_Medical_Injuries.hpp"

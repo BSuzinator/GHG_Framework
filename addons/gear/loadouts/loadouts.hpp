@@ -35,6 +35,7 @@ class Loadouts
     #include "usKorea_CUP\loadouts.hpp"
 	#include "usKorea_RHS\loadouts.hpp"
 	#include "usMC_CUP\loadouts.hpp"
+	#include "usMC_EF\loadouts.hpp"
 	#include "usMC_RHS\loadouts.hpp"
 	#include "vnSwat_RHS\loadouts.hpp"
 };

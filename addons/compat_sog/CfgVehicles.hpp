@@ -77,4 +77,15 @@ class CfgVehicles
             disassembleWeapon = "ace_compat_sog_m1919a6_carry";
         };
     };
+	
+	class Thing;
+    class ghg_anesthetic_dart : Thing
+    {
+        scope=1;
+        model = "x\ghg\addons\compat_sog\models\dart\dart.p3d";
+        
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        hiddenSelectionsMaterials[] = {};
+    };
 };

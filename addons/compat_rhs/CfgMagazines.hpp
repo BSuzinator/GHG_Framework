@@ -70,6 +70,18 @@ class CfgMagazines
         RPK_100RND_MAG_COMMON
     };
 	
+	class rhsgref_5Rnd_762x54_m38;
+    class ghg_5rnd_762x54_m38_anest : rhsgref_5Rnd_762x54_m38
+    {
+        author = GHG Team;
+		ammo = ghg_ammo_762x54_anest;
+		displayName = 5rnd Anesthetic Darts;
+		displayNameShort = 5rnd Anest.;
+		descriptionShort = Caliber 7.62x54mm Anest.br Rounds 5br Used in Mosin Nagant M38;
+        
+        initSpeed = 500;
+    };
+	
 	class rhs_mag_M229_7;
     class rhs_mag_M229_stun_7 : rhs_mag_M229_7 {
 		ammo = ghg_ammo_Hydra_STUN;
@@ -104,4 +116,10 @@ class CfgMagazineWells
             rhs_100Rnd_545x39_7U1_RPK
         };
     };
+	class CBA_762x54R_Mosin
+	{
+		GHG_Magazines[] = {
+			ghg_5rnd_762x54_m38_anest
+		};
+	}; 
 };
