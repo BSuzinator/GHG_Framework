@@ -1,3 +1,4 @@
+//PREP(antistasiSubMenu);
 PREP(debugRadioMenu);
 PREP(kickPlayerDialog);
 PREP(menuDialog);
@@ -10,3 +11,8 @@ PREP(spawnRadio);
 PREP(toggleRFF);
 PREP(unflipVehicle);
 PREP(vehicleSubmenu);
+PREP(A3A_selfAddMember);
+PREP(teleportSubmenu);
+PREP(teleportToGroupLead);
+PREP(teleportToGroupMember);
+PREP(teleportToRespawn);
